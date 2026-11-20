@@ -1,0 +1,242 @@
+{
+  "title": "1 Reyes Quiz bíblico - Capítulo 5",
+  "description": "Diez preguntas sobre 1 Reyes 5: el acuerdo de Salomón con Hiram rey de Tiro, la madera del Líbano y los obreros de la obra.",
+  "slug": "1-kings-quiz-part-5",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Quién envió sus siervos a Salomón cuando oyó que lo habían ungido por rey?",
+      "explanation": "Hiram rey de Tiro envió sus siervos a Salomón cuando oyó que lo habían ungido por rey en lugar de su padre, porque Hiram había siempre amado a David.",
+      "bibleReference": "1 Reyes 5:1",
+      "answers": [
+        {
+          "text": "Hiram, rey de Tiro",
+          "isCorrect": true
+        },
+        {
+          "text": "Faraón, rey de Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "Achîs, rey de Gath",
+          "isCorrect": false
+        },
+        {
+          "text": "Og, rey de Basán",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según Salomón, ¿por qué no pudo David edificar casa al nombre de Jehová?",
+      "explanation": "Salomón dijo que su padre David no pudo edificar casa al nombre de Jehová por las guerras que le cercaron.",
+      "bibleReference": "1 Reyes 5:3",
+      "answers": [
+        {
+          "text": "Porque no tenía madera",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque el pueblo se negó",
+          "isCorrect": false
+        },
+        {
+          "text": "Por las guerras que le cercaron",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque murió siendo muy joven",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quiénes, según Salomón, sabían labrar la madera como nadie entre ellos?",
+      "explanation": "Salomón pidió cedros del Líbano y dijo que ninguno había entre ellos que supiese labrar la madera como los Sidonios.",
+      "bibleReference": "1 Reyes 5:6",
+      "answers": [
+        {
+          "text": "Los Egipcios",
+          "isCorrect": false
+        },
+        {
+          "text": "Los Sidonios",
+          "isCorrect": true
+        },
+        {
+          "text": "Los Filisteos",
+          "isCorrect": false
+        },
+        {
+          "text": "Los Amorrheos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Hiram cuando oyó las palabras de Salomón?",
+      "explanation": "Hiram se holgó en gran manera y dijo: Bendito sea hoy Jehová, que dio hijo sabio a David sobre este pueblo tan grande.",
+      "bibleReference": "1 Reyes 5:7",
+      "answers": [
+        {
+          "text": "Negó la madera del cedro del Líbano",
+          "isCorrect": false
+        },
+        {
+          "text": "Pidió para sí la mitad del reino",
+          "isCorrect": false
+        },
+        {
+          "text": "Dijo que Salomón era aún muy joven",
+          "isCorrect": false
+        },
+        {
+          "text": "Bendijo a Jehová por el hijo sabio de David",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo dijo Hiram que llevaría la madera por la mar hasta el lugar señalado?",
+      "explanation": "Hiram dijo que sus siervos la llevarían desde el Líbano a la mar, y que él la pondría en balsas por la mar hasta el lugar señalado.",
+      "bibleReference": "1 Reyes 5:9",
+      "answers": [
+        {
+          "text": "En balsas",
+          "isCorrect": true
+        },
+        {
+          "text": "En carros",
+          "isCorrect": false
+        },
+        {
+          "text": "A hombros",
+          "isCorrect": false
+        },
+        {
+          "text": "En asnos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuánto trigo daba Salomón a Hiram cada año para el sustento de su familia?",
+      "explanation": "Salomón daba a Hiram veinte mil coros de trigo para el sustento de su familia y veinte coros de aceite limpio cada año.",
+      "bibleReference": "1 Reyes 5:11",
+      "answers": [
+        {
+          "text": "Veinte coros",
+          "isCorrect": false
+        },
+        {
+          "text": "Treinta mil coros",
+          "isCorrect": false
+        },
+        {
+          "text": "Veinte mil coros",
+          "isCorrect": true
+        },
+        {
+          "text": "Diez mil coros",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De cuántos hombres fue el tributo que el rey Salomón impuso a todo Israel?",
+      "explanation": "El rey Salomón impuso tributo a todo Israel, y el tributo fue de treinta mil hombres.",
+      "bibleReference": "1 Reyes 5:13",
+      "answers": [
+        {
+          "text": "Diez mil",
+          "isCorrect": false
+        },
+        {
+          "text": "Treinta mil",
+          "isCorrect": true
+        },
+        {
+          "text": "Setenta mil",
+          "isCorrect": false
+        },
+        {
+          "text": "Tres mil",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos cortadores tenía Salomón en el monte?",
+      "explanation": "El texto dice que Salomón tenía setenta mil que llevaban las cargas y ochenta mil cortadores en el monte.",
+      "bibleReference": "1 Reyes 5:15",
+      "answers": [
+        {
+          "text": "Setenta mil",
+          "isCorrect": false
+        },
+        {
+          "text": "Treinta mil",
+          "isCorrect": false
+        },
+        {
+          "text": "Ocho mil",
+          "isCorrect": false
+        },
+        {
+          "text": "Ochenta mil",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos eran los principales oficiales que tenían cargo del pueblo que hacía la obra?",
+      "explanation": "Sin contar a los que llevaban cargas y cortaban, los principales oficiales de Salomón sobre la obra eran tres mil y trescientos.",
+      "bibleReference": "1 Reyes 5:16",
+      "answers": [
+        {
+          "text": "Tres mil y trescientos",
+          "isCorrect": true
+        },
+        {
+          "text": "Mil y quinientos",
+          "isCorrect": false
+        },
+        {
+          "text": "Dos mil y doscientos",
+          "isCorrect": false
+        },
+        {
+          "text": "Treinta y tres mil",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué mandó el rey que trajesen para los cimientos de la casa?",
+      "explanation": "El rey mandó que trajesen grandes piedras, piedras de precio, para los cimientos de la casa, y piedras labradas.",
+      "bibleReference": "1 Reyes 5:17",
+      "answers": [
+        {
+          "text": "Madera de haya",
+          "isCorrect": false
+        },
+        {
+          "text": "Ladrillos cocidos",
+          "isCorrect": false
+        },
+        {
+          "text": "Grandes piedras de precio",
+          "isCorrect": true
+        },
+        {
+          "text": "Cedros del Líbano",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

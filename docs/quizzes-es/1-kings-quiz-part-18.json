@@ -1,0 +1,122 @@
+{
+  "title": "1 Reyes Quiz bíblico - Capítulo 18",
+  "description": "Diez preguntas sobre 1 Reyes 18: los cien profetas escondidos por Abdías, la prueba del fuego en el monte de Carmelo y la nube que subió de la mar.",
+  "slug": "1-kings-quiz-part-18",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": false,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué hizo Abdías cuando Jezabel destruía a los profetas de Jehová?",
+      "explanation": "Abdías tomó cien profetas, los escondió de cincuenta en cincuenta por cuevas y los sustentó a pan y agua.",
+      "bibleReference": "1 Reyes 18:4",
+      "answers": [
+        { "text": "Los envió a Judá con cartas del rey Achâb", "isCorrect": false },
+        { "text": "Los juntó a todos en el monte de Carmelo", "isCorrect": false },
+        { "text": "Escondió cien profetas en cuevas y los mantuvo a pan y agua", "isCorrect": true },
+        { "text": "Los llevó al arroyo de Cisón y allí los guardó", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué le dijo Achâb a Elías al verle, y qué le respondió Elías?",
+      "explanation": "Achâb le dijo: ¿Eres tú el que alborotas a Israel? Y Elías respondió que no era él, sino Achâb y la casa de su padre, por dejar los mandamientos de Jehová y seguir a los Baales.",
+      "bibleReference": "1 Reyes 18:17-18",
+      "answers": [
+        { "text": "Le llamó alborotador de Israel, y Elías le echó a él la culpa", "isCorrect": true },
+        { "text": "Le llamó su señor, y Elías le mandó callar delante del pueblo", "isCorrect": false },
+        { "text": "Le pidió lluvia, y Elías le dijo que no la tendría nunca", "isCorrect": false },
+        { "text": "Le llamó enemigo suyo, y Elías le pidió un presente", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿A quiénes mandó juntar Elías en el monte de Carmelo?",
+      "explanation": "Elías dijo que enviase y le juntase a todo Israel en el monte de Carmelo, con los cuatrocientos y cincuenta profetas de Baal y los cuatrocientos profetas de los bosques.",
+      "bibleReference": "1 Reyes 18:19",
+      "answers": [
+        { "text": "A los cien profetas que Abdías había escondido en cuevas", "isCorrect": false },
+        { "text": "A los ancianos de la tierra y a los capitanes de la guardia", "isCorrect": false },
+        { "text": "A los sacerdotes de los altos de Beth-el y de Dan", "isCorrect": false },
+        { "text": "A todo Israel, con los profetas de Baal y los de los bosques", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué preguntó Elías a todo el pueblo, y qué respondió el pueblo?",
+      "explanation": "Elías preguntó hasta cuándo claudicarían entre dos pensamientos, y les dijo que si Jehová era Dios le siguiesen, y si Baal, fuesen en pos de él; y el pueblo no respondió palabra.",
+      "bibleReference": "1 Reyes 18:21",
+      "answers": [
+        { "text": "Les preguntó quién era Dios, y respondieron que Baal", "isCorrect": false },
+        { "text": "Les preguntó hasta cuándo dudarían, y no respondieron nada", "isCorrect": true },
+        { "text": "Les preguntó si querían lluvia, y dijeron que sí", "isCorrect": false },
+        { "text": "Les preguntó por los profetas, y dijeron que estaban muertos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuál fue la prueba que propuso Elías, y qué dijo el pueblo?",
+      "explanation": "Propuso que cada parte invocase en el nombre de su Dios y que el Dios que respondiese por fuego fuese Dios; y todo el pueblo respondió: Bien dicho.",
+      "bibleReference": "1 Reyes 18:24",
+      "answers": [
+        { "text": "Que el Dios que respondiese por fuego fuese Dios; y les pareció bien", "isCorrect": true },
+        { "text": "Que el pueblo escogiese entre los dos altares; y ellos callaron", "isCorrect": false },
+        { "text": "Que el Dios que diese lluvia fuese Dios; y ellos se negaron", "isCorrect": false },
+        { "text": "Que los profetas se partiesen en dos bandos; y ellos lo pidieron", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué sucedió mientras los profetas de Baal invocaron desde la mañana hasta el medio día?",
+      "explanation": "No había voz ni quien respondiese, y entre tanto ellos andaban saltando cerca del altar que habían hecho.",
+      "bibleReference": "1 Reyes 18:26",
+      "answers": [
+        { "text": "Cayó fuego sobre su buey y sobre la leña", "isCorrect": false },
+        { "text": "El altar se quebró y la ceniza se derramó", "isCorrect": false },
+        { "text": "No hubo voz ni quien respondiese, y saltaban junto al altar", "isCorrect": true },
+        { "text": "Una nube bajó y cubrió el monte de Carmelo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿De qué se burlaba Elías al medio día cuando les decía que gritasen en alta voz?",
+      "explanation": "Elías dijo que gritasen en alta voz, porque era dios: quizá estaba conversando, o tenía algún empeño, o iba de camino, o acaso dormía y despertaría.",
+      "bibleReference": "1 Reyes 18:27",
+      "answers": [
+        { "text": "Decía que su dios se había ido a Sidón", "isCorrect": false },
+        { "text": "Decía que quizá conversaba, iba de camino o dormía", "isCorrect": true },
+        { "text": "Decía que su dios había muerto en la batalla", "isCorrect": false },
+        { "text": "Decía que su dios no sabía hablar su lengua", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuántas piedras tomó Elías para edificar el altar, y conforme a qué?",
+      "explanation": "Elías tomó doce piedras, conforme al número de las tribus de los hijos de Jacob, y con ellas edificó un altar en el nombre de Jehová.",
+      "bibleReference": "1 Reyes 18:31-32",
+      "answers": [
+        { "text": "Cuatro, conforme a los cántaros de agua", "isCorrect": false },
+        { "text": "Siete, conforme a las veces que miró el criado", "isCorrect": false },
+        { "text": "Dos, conforme a los bueyes del sacrificio", "isCorrect": false },
+        { "text": "Doce, conforme a las tribus de los hijos de Jacob", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Cuántos cántaros de agua mandó derramar Elías sobre el holocausto, y cuántas veces lo hicieron?",
+      "explanation": "Mandó henchir cuatro cántaros de agua y derramarla sobre el holocausto y sobre la leña, y se hizo tres veces.",
+      "bibleReference": "1 Reyes 18:34",
+      "answers": [
+        { "text": "Siete cántaros, y lo hicieron una vez", "isCorrect": false },
+        { "text": "Doce cántaros, y lo hicieron dos veces", "isCorrect": false },
+        { "text": "Cuatro cántaros, y lo hicieron tres veces", "isCorrect": true },
+        { "text": "Dos cántaros, y lo hicieron siete veces", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué vio el criado de Elías cuando miró hacia la mar la séptima vez?",
+      "explanation": "A la séptima vez dijo que veía una pequeña nube como la palma de la mano de un hombre, que subía de la mar.",
+      "bibleReference": "1 Reyes 18:43-44",
+      "answers": [
+        { "text": "Un gran viento que rompía los montes", "isCorrect": false },
+        { "text": "Una pequeña nube como la palma de la mano", "isCorrect": true },
+        { "text": "La flota que venía de Tharsis", "isCorrect": false },
+        { "text": "Un carro y gente de a caballo", "isCorrect": false }
+      ]
+    }
+  ]
+}

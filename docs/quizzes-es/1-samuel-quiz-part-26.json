@@ -1,0 +1,242 @@
+{
+  "title": "1 Samuel Quiz bíblico - Capítulo 26",
+  "description": "Diez preguntas sobre 1 Samuel 26: el campamento en Hachîla, la lanza y la botija de agua, y las voces de David a Abner.",
+  "slug": "1-samuel-quiz-part-26",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué dijeron los Zipheos a Saúl en Gabaa?",
+      "explanation": "Los Zipheos vinieron a Saúl en Gabaa y preguntaron si David no estaba escondido en el collado de Hachîla, delante del desierto.",
+      "bibleReference": "1 Samuel 26:1",
+      "answers": [
+        {
+          "text": "Que David estaba escondido en el collado de Hachîla",
+          "isCorrect": true
+        },
+        {
+          "text": "Que David había huido a la tierra de los Filisteos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que David estaba en los parajes fuertes de Engaddi",
+          "isCorrect": false
+        },
+        {
+          "text": "Que David se había metido en la ciudad de Keila",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos hombres escogidos de Israel llevó Saúl consigo al desierto de Ziph?",
+      "explanation": "Saúl se levantó y descendió al desierto de Ziph llevando consigo tres mil hombres escogidos de Israel para buscar a David.",
+      "bibleReference": "1 Samuel 26:2",
+      "answers": [
+        {
+          "text": "Seiscientos hombres",
+          "isCorrect": false
+        },
+        {
+          "text": "Tres mil hombres",
+          "isCorrect": true
+        },
+        {
+          "text": "Cuatrocientos hombres",
+          "isCorrect": false
+        },
+        {
+          "text": "Mil hombres",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo supo David con certeza que Saúl había venido?",
+      "explanation": "David entendió que Saúl le seguía en el desierto, y por tanto envió espías y entendió por cierto que Saúl había venido.",
+      "bibleReference": "1 Samuel 26:3-4",
+      "answers": [
+        {
+          "text": "Se lo dijo Abner hijo de Ner",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo vio desde la cumbre del monte",
+          "isCorrect": false
+        },
+        {
+          "text": "Envió espías",
+          "isCorrect": true
+        },
+        {
+          "text": "Consultó el ephod del sacerdote",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quién se ofreció a descender con David al campo de Saúl?",
+      "explanation": "David preguntó quién descendería con él a Saúl al campo, y Abisai hijo de Sarvia, hermano de Joab, dijo que descendería con él.",
+      "bibleReference": "1 Samuel 26:6",
+      "answers": [
+        {
+          "text": "Abner hijo de Ner",
+          "isCorrect": false
+        },
+        {
+          "text": "Joab, hermano de Abisai",
+          "isCorrect": false
+        },
+        {
+          "text": "Abiathar el sacerdote",
+          "isCorrect": false
+        },
+        {
+          "text": "Abisai hijo de Sarvia",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde estaba Saúl y dónde estaba su lanza cuando David y Abisai llegaron de noche?",
+      "explanation": "Saúl estaba tendido durmiendo en la trinchera, con su lanza hincada en tierra a su cabecera, y Abner y el pueblo estaban tendidos alrededor de él.",
+      "bibleReference": "1 Samuel 26:7",
+      "answers": [
+        {
+          "text": "En una cueva, con la lanza a la entrada",
+          "isCorrect": false
+        },
+        {
+          "text": "En su tienda, con la lanza en su mano",
+          "isCorrect": false
+        },
+        {
+          "text": "En la trinchera, con la lanza hincada a su cabecera",
+          "isCorrect": true
+        },
+        {
+          "text": "Debajo de un árbol, con la lanza junto al pueblo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué quería hacer Abisai, y qué le respondió David?",
+      "explanation": "Abisai quería herir a Saúl con la lanza de un solo golpe, pero David le dijo que no lo matase, porque nadie que extienda su mano contra el ungido de Jehová será inocente.",
+      "bibleReference": "1 Samuel 26:8-9",
+      "answers": [
+        {
+          "text": "Herirlo con la lanza; David dijo que no lo matase",
+          "isCorrect": true
+        },
+        {
+          "text": "Atarlo y llevarlo preso; David quiso dejarlo dormir",
+          "isCorrect": false
+        },
+        {
+          "text": "Despertar a Abner; David mandó callar a todos",
+          "isCorrect": false
+        },
+        {
+          "text": "Tomar su manto; David prefirió tomar su lanza",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué se llevó David de la cabecera de Saúl?",
+      "explanation": "David se llevó la lanza y la botija de agua de la cabecera de Saúl, y se fueron.",
+      "bibleReference": "1 Samuel 26:11-12",
+      "answers": [
+        {
+          "text": "La orilla de su manto",
+          "isCorrect": false
+        },
+        {
+          "text": "Su espada y su escudo",
+          "isCorrect": false
+        },
+        {
+          "text": "La lanza y la botija de agua",
+          "isCorrect": true
+        },
+        {
+          "text": "Su almete y su coraza",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿por qué nadie vio ni oyó nada mientras David tomaba aquellas cosas?",
+      "explanation": "No hubo nadie que viese, ni entendiese, ni velase, porque un profundo sueño enviado de Jehová había caído sobre ellos.",
+      "bibleReference": "1 Samuel 26:12",
+      "answers": [
+        {
+          "text": "Porque era noche oscura y estaban lejos",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque un profundo sueño enviado de Jehová cayó sobre ellos",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque todos habían bebido mucho vino",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque Abner había dejado el campo sin guardas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De qué reprendió David a Abner cuando le dio voces desde la cumbre del monte?",
+      "explanation": "David reprendió a Abner por no haber guardado al rey su señor, ya que uno del pueblo había entrado a matar a su señor el rey.",
+      "bibleReference": "1 Samuel 26:14-16",
+      "answers": [
+        {
+          "text": "De haber hablado mal de David al rey",
+          "isCorrect": false
+        },
+        {
+          "text": "De haber dejado huir a los Zipheos",
+          "isCorrect": false
+        },
+        {
+          "text": "De no haber guardado al rey su señor",
+          "isCorrect": true
+        },
+        {
+          "text": "De haber perdido la botija del agua",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según David, ¿a qué había salido a buscar el rey de Israel, y con qué comparó esa persecución?",
+      "explanation": "David dijo que el rey de Israel había salido a buscar una pulga, así como quien persigue una perdiz por los montes.",
+      "bibleReference": "1 Samuel 26:20",
+      "answers": [
+        {
+          "text": "A un perro muerto, como quien persigue una oveja",
+          "isCorrect": false
+        },
+        {
+          "text": "A un león, como quien persigue un oso del desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "A un cordero, como quien persigue una cabra montés",
+          "isCorrect": false
+        },
+        {
+          "text": "A una pulga, como quien persigue una perdiz por los montes",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "title": "1 Reyes Quiz bíblico - Capítulo 13",
+  "description": "Diez preguntas sobre 1 Reyes 13: el varón de Dios que clamó contra el altar de Beth-el, la mano seca de Jeroboam y el león del camino.",
+  "slug": "1-kings-quiz-part-13",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿De dónde vino el varón de Dios, y contra qué clamó por palabra de Jehová?",
+      "explanation": "Un varón de Dios vino de Judá a Beth-el por palabra de Jehová y clamó contra el altar, mientras Jeroboam estaba al altar para quemar perfumes.",
+      "bibleReference": "1 Reyes 13:1-2",
+      "answers": [
+        { "text": "Vino de Samaria y clamó contra el palacio real", "isCorrect": false },
+        { "text": "Vino de Silo y clamó contra la casa de Jehová", "isCorrect": false },
+        { "text": "Vino de Dan y clamó contra los sacerdotes", "isCorrect": false },
+        { "text": "Vino de Judá y clamó contra el altar de Beth-el", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Cómo se llamaría, según el varón de Dios, el hijo que nacería a la casa de David?",
+      "explanation": "Dijo que a la casa de David nacería un hijo llamado Josías, el cual sacrificaría sobre aquel altar a los sacerdotes de los altos.",
+      "bibleReference": "1 Reyes 13:2",
+      "answers": [
+        { "text": "Roboam", "isCorrect": false },
+        { "text": "Abiam", "isCorrect": false },
+        { "text": "Josías", "isCorrect": true },
+        { "text": "Josaphat", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuál fue la señal que dio aquel mismo día?",
+      "explanation": "Dio esta señal: que el altar se quebraría y la ceniza que estaba sobre él se derramaría.",
+      "bibleReference": "1 Reyes 13:3",
+      "answers": [
+        { "text": "Que caería fuego del cielo sobre el holocausto", "isCorrect": false },
+        { "text": "Que el altar se quebraría y la ceniza se derramaría", "isCorrect": true },
+        { "text": "Que el rey quedaría ciego delante del pueblo", "isCorrect": false },
+        { "text": "Que no habría lluvia ni rocío en aquellos años", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué le ocurrió a la mano de Jeroboam cuando la extendió y mandó prender al varón de Dios?",
+      "explanation": "La mano que había extendido contra él se le secó, de modo que no la pudo tornar a sí.",
+      "bibleReference": "1 Reyes 13:4",
+      "answers": [
+        { "text": "Se le secó y no la pudo tornar a sí", "isCorrect": true },
+        { "text": "Se le llenó de llagas y de lepra", "isCorrect": false },
+        { "text": "Le quedó llena de ceniza del altar", "isCorrect": false },
+        { "text": "Se le cubrió de sangre y de polvo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué pasó después de que el varón de Dios oró por el rey?",
+      "explanation": "El varón de Dios oró a la faz de Jehová, y la mano del rey se le recuperó y se tornó como antes.",
+      "bibleReference": "1 Reyes 13:6",
+      "answers": [
+        { "text": "La mano del rey quedó seca para siempre", "isCorrect": false },
+        { "text": "El rey murió aquel mismo día junto al altar", "isCorrect": false },
+        { "text": "La mano del rey se recuperó y quedó como antes", "isCorrect": true },
+        { "text": "El altar de Beth-el volvió a quedar entero", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Por qué el varón de Dios no quiso ir a casa del rey a comer?",
+      "explanation": "Dijo que por palabra de Jehová le estaba mandado no comer pan, ni beber agua, ni volver por el camino por donde había ido.",
+      "bibleReference": "1 Reyes 13:8-9",
+      "answers": [
+        { "text": "Porque el rey no le quiso dar ningún presente", "isCorrect": false },
+        { "text": "Porque tenía que volver a Judá antes de la noche", "isCorrect": false },
+        { "text": "Porque los sacerdotes de los altos se lo prohibían", "isCorrect": false },
+        { "text": "Porque le estaba mandado no comer pan ni beber agua allí", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Con qué palabras hizo volver el viejo profeta al varón de Dios?",
+      "explanation": "Le dijo que él también era profeta y que un ángel le había hablado por palabra de Jehová que le hiciera volver a su casa para que comiera pan y bebiera agua; pero le mintió.",
+      "bibleReference": "1 Reyes 13:18",
+      "answers": [
+        { "text": "Le dijo que un ángel le había hablado que le hiciera volver", "isCorrect": true },
+        { "text": "Le dijo que el rey Jeroboam ya se había arrepentido", "isCorrect": false },
+        { "text": "Le dijo que un león le esperaba en el otro camino", "isCorrect": false },
+        { "text": "Le dijo que Jehová había quitado aquel mandamiento", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué le anunció Jehová al varón de Dios por haber vuelto y comido pan?",
+      "explanation": "Jehová le dijo que, por cuanto había sido rebelde a su dicho, su cuerpo no entraría en el sepulcro de sus padres.",
+      "bibleReference": "1 Reyes 13:21-22",
+      "answers": [
+        { "text": "Que su casa sería barrida de Israel", "isCorrect": false },
+        { "text": "Que su cuerpo no entraría en el sepulcro de sus padres", "isCorrect": true },
+        { "text": "Que no volvería a hablar palabra de Jehová", "isCorrect": false },
+        { "text": "Que el altar de Beth-el quedaría en pie", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué le encontró en el camino cuando se iba, después de comer y beber?",
+      "explanation": "Yéndose, le topó un león en el camino y le mató; su cuerpo quedó echado en el camino, con el asno y el león junto a él.",
+      "bibleReference": "1 Reyes 13:24",
+      "answers": [
+        { "text": "Unos hombres que pasaban y lo apedrearon", "isCorrect": false },
+        { "text": "Los sacerdotes de los altos de Samaria", "isCorrect": false },
+        { "text": "Los hijos del viejo profeta de Beth-el", "isCorrect": false },
+        { "text": "Un león, que le mató en el camino", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué mandó el viejo profeta a sus hijos acerca de su propia sepultura?",
+      "explanation": "Les dijo que, cuando él muriese, lo enterraran en el sepulcro donde estaba sepultado el varón de Dios y pusieran sus huesos junto a los suyos.",
+      "bibleReference": "1 Reyes 13:31",
+      "answers": [
+        { "text": "Que lo enterraran junto al varón de Dios", "isCorrect": true },
+        { "text": "Que lo llevaran a sepultar a la tierra de Judá", "isCorrect": false },
+        { "text": "Que lo sepultaran junto al altar de Beth-el", "isCorrect": false },
+        { "text": "Que no lo enterraran hasta pasados siete días", "isCorrect": false }
+      ]
+    }
+  ]
+}

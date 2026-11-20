@@ -1,0 +1,242 @@
+{
+  "title": "2 Reyes Quiz bíblico - Capítulo 6",
+  "description": "Diez preguntas sobre 2 Reyes 6: el hierro que flotó, los planes del rey de Siria descubiertos, los carros de fuego en Dothán y el cerco de Samaria.",
+  "slug": "2-kings-quiz-part-6",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué le pasó a uno de los hijos de los profetas mientras cortaban madera junto al Jordán?",
+      "explanation": "Derribando uno un árbol, se le cayó el hacha en el agua, y dio voces diciendo que era prestada.",
+      "bibleReference": "2 Reyes 6:4-5",
+      "answers": [
+        {
+          "text": "Se le rompió la viga que cargaba",
+          "isCorrect": false
+        },
+        {
+          "text": "Cayó él mismo al río",
+          "isCorrect": false
+        },
+        {
+          "text": "Se le cayó el hacha en el agua",
+          "isCorrect": true
+        },
+        {
+          "text": "Perdió su manto en la corriente",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo el varón de Dios para recuperar el hierro?",
+      "explanation": "El varón de Dios preguntó dónde había caído, cortó un palo, lo echó allí e hizo nadar el hierro.",
+      "bibleReference": "2 Reyes 6:6",
+      "answers": [
+        {
+          "text": "Cortó un palo y lo echó en el agua",
+          "isCorrect": true
+        },
+        {
+          "text": "Echó sal en el agua",
+          "isCorrect": false
+        },
+        {
+          "text": "Hirió las aguas con su manto",
+          "isCorrect": false
+        },
+        {
+          "text": "Mandó al hombre zambullirse siete veces",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según un siervo del rey de Siria, ¿qué hacía el profeta Eliseo?",
+      "explanation": "Un siervo dijo que el profeta Eliseo, que estaba en Israel, declaraba al rey de Israel las palabras que el rey de Siria hablaba en su más secreta cámara.",
+      "bibleReference": "2 Reyes 6:12",
+      "answers": [
+        {
+          "text": "Enviaba espías al campamento de los Siros cada noche",
+          "isCorrect": false
+        },
+        {
+          "text": "Cercaba las ciudades de Siria con carros y caballos",
+          "isCorrect": false
+        },
+        {
+          "text": "Compraba las palabras de los siervos del rey de Siria",
+          "isCorrect": false
+        },
+        {
+          "text": "Contaba al rey de Israel lo que el rey de Siria hablaba en secreto",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde le dijeron al rey de Siria que estaba Eliseo?",
+      "explanation": "Al preguntar el rey dónde estaba, le fue dicho: He aquí él está en Dothán.",
+      "bibleReference": "2 Reyes 6:13",
+      "answers": [
+        {
+          "text": "En Samaria",
+          "isCorrect": false
+        },
+        {
+          "text": "En Dothán",
+          "isCorrect": true
+        },
+        {
+          "text": "En Gilgal",
+          "isCorrect": false
+        },
+        {
+          "text": "En el monte Carmelo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué respondió Eliseo a su criado cuando éste vio el ejército que cercaba la ciudad?",
+      "explanation": "Eliseo le dijo que no tuviese miedo, porque más eran los que estaban con ellos que los que estaban con los otros.",
+      "bibleReference": "2 Reyes 6:15-16",
+      "answers": [
+        {
+          "text": "Que eran más los que estaban con ellos",
+          "isCorrect": true
+        },
+        {
+          "text": "Que el rey de Israel vendría con sus carros",
+          "isCorrect": false
+        },
+        {
+          "text": "Que debían huir de la ciudad de noche",
+          "isCorrect": false
+        },
+        {
+          "text": "Que Jehová los heriría con ceguedad",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué vio el mozo cuando Jehová le abrió los ojos?",
+      "explanation": "Jehová abrió los ojos del mozo, y vio que el monte estaba lleno de gente de á caballo y de carros de fuego alrededor de Eliseo.",
+      "bibleReference": "2 Reyes 6:17",
+      "answers": [
+        {
+          "text": "Un torbellino que subía al cielo",
+          "isCorrect": false
+        },
+        {
+          "text": "Las aguas del Jordán apartadas",
+          "isCorrect": false
+        },
+        {
+          "text": "Un ejército de Egipto que venía",
+          "isCorrect": false
+        },
+        {
+          "text": "El monte lleno de carros de fuego",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Adónde guió Eliseo a los Siros heridos de ceguedad?",
+      "explanation": "Eliseo les dijo que le siguiesen y los guió á Samaria, donde Jehová les abrió los ojos.",
+      "bibleReference": "2 Reyes 6:18-19",
+      "answers": [
+        {
+          "text": "A Dothán",
+          "isCorrect": false
+        },
+        {
+          "text": "A Samaria",
+          "isCorrect": true
+        },
+        {
+          "text": "Al Jordán",
+          "isCorrect": false
+        },
+        {
+          "text": "A Damasco",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué mandó Eliseo que hiciera el rey de Israel con los Siros?",
+      "explanation": "Eliseo le dijo que no los hiriese, sino que pusiese delante de ellos pan y agua para que comiesen y bebiesen y se volviesen a sus señores.",
+      "bibleReference": "2 Reyes 6:22",
+      "answers": [
+        {
+          "text": "Que los hiriera a cuchillo",
+          "isCorrect": false
+        },
+        {
+          "text": "Que los pusiera en la cárcel",
+          "isCorrect": false
+        },
+        {
+          "text": "Que les diera pan y agua y los dejara ir",
+          "isCorrect": true
+        },
+        {
+          "text": "Que los enviara a trabajar en el muro",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por cuánto se vendía la cabeza de un asno durante el hambre en Samaria?",
+      "explanation": "Durante el cerco hubo grande hambre en Samaria, tanto que la cabeza de un asno era vendida por ochenta piezas de plata.",
+      "bibleReference": "2 Reyes 6:25",
+      "answers": [
+        {
+          "text": "Por cinco piezas de plata",
+          "isCorrect": false
+        },
+        {
+          "text": "Por un siclo",
+          "isCorrect": false
+        },
+        {
+          "text": "Por dos talentos de plata",
+          "isCorrect": false
+        },
+        {
+          "text": "Por ochenta piezas de plata",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué juró el rey de Israel acerca de Eliseo?",
+      "explanation": "El rey dijo: Así me haga Dios, y así me añada, si la cabeza de Eliseo hijo de Saphat quedare sobre él hoy.",
+      "bibleReference": "2 Reyes 6:31",
+      "answers": [
+        {
+          "text": "Que lo echaría en la cárcel con pan de angustia",
+          "isCorrect": false
+        },
+        {
+          "text": "Que aquel día la cabeza de Eliseo no quedaría sobre él",
+          "isCorrect": true
+        },
+        {
+          "text": "Que lo enviaría cautivo al rey de Siria",
+          "isCorrect": false
+        },
+        {
+          "text": "Que lo haría su consejero en Samaria",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

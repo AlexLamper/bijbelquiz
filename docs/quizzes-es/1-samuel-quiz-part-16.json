@@ -1,0 +1,122 @@
+{
+  "title": "1 Samuel Quiz bíblico - Capítulo 16",
+  "description": "Diez preguntas sobre 1 Samuel 16: Samuel enviado a Isaí de Beth-lehem, la unción de David y el arpa que daba alivio a Saúl.",
+  "slug": "1-samuel-quiz-part-16",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿A quién dijo Jehová que enviaría a Samuel, y de qué lugar era?",
+      "explanation": "Jehová le dijo que hinchiese su cuerno de aceite y viniese, porque lo enviaría a Isaí de Beth-lehem, pues de sus hijos se había provisto de rey.",
+      "bibleReference": "1 Samuel 16:1",
+      "answers": [
+        { "text": "A Eliab de Gabaa", "isCorrect": false },
+        { "text": "A Isaí de Beth-lehem", "isCorrect": true },
+        { "text": "A los ancianos de Rama", "isCorrect": false },
+        { "text": "A Agag de Amalec", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué le dijo Jehová que llevase consigo, para decir que venía a sacrificar?",
+      "explanation": "Samuel temía que Saúl lo matase, y Jehová le respondió que tomase consigo una becerra de la vacada y dijese: A sacrificar a Jehová he venido.",
+      "bibleReference": "1 Samuel 16:2",
+      "answers": [
+        { "text": "Un cordero de leche", "isCorrect": false },
+        { "text": "El cuerno del aceite", "isCorrect": false },
+        { "text": "Un par de bueyes", "isCorrect": false },
+        { "text": "Una becerra de la vacada", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Cómo le salieron a recibir los ancianos de la ciudad cuando llegó a Beth-lehem?",
+      "explanation": "Luego que llegó a Beth-lehem, los ancianos de la ciudad le salieron a recibir con miedo, y le preguntaron si su venida era pacífica.",
+      "bibleReference": "1 Samuel 16:4",
+      "answers": [
+        { "text": "Con miedo, preguntando si su venida era pacífica", "isCorrect": true },
+        { "text": "Con alegría, cantando delante de él", "isCorrect": false },
+        { "text": "Con enojo, negándose a santificarse", "isCorrect": false },
+        { "text": "Sin salir a recibirle a la ciudad", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Cuando Samuel vio a Eliab y dijo que delante de Jehová estaba su ungido, ¿qué le respondió Jehová?",
+      "explanation": "Jehová le dijo que no mirase a su parecer ni a lo grande de su estatura, porque Jehová no mira lo que el hombre mira, pues el hombre mira lo que está delante de sus ojos, mas Jehová mira el corazón.",
+      "bibleReference": "1 Samuel 16:6-7",
+      "answers": [
+        { "text": "Que aquel era el ungido delante de Jehová", "isCorrect": false },
+        { "text": "Que su estatura agradaba a Jehová", "isCorrect": false },
+        { "text": "Que Jehová mira el corazón, no el parecer", "isCorrect": true },
+        { "text": "Que llamase a los siete hijos de Isaí", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dos hijos hizo pasar Isaí delante de Samuel después de Eliab?",
+      "explanation": "Isaí llamó a Abinadab y lo hizo pasar delante de Samuel, el cual dijo que tampoco a él había elegido Jehová; luego hizo pasar a Samma, y dijo lo mismo.",
+      "bibleReference": "1 Samuel 16:8-9",
+      "answers": [
+        { "text": "Eliab y David", "isCorrect": false },
+        { "text": "Abinadab y Samma", "isCorrect": true },
+        { "text": "Isui y Melchi-sua", "isCorrect": false },
+        { "text": "Jonathán y Abner", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Isaí que hacía el menor de sus hijos, el que aún quedaba?",
+      "explanation": "Samuel preguntó si se habían acabado los mozos, e Isaí respondió que aún quedaba el menor, que apacentaba las ovejas.",
+      "bibleReference": "1 Samuel 16:11",
+      "answers": [
+        { "text": "Apacentaba las ovejas", "isCorrect": true },
+        { "text": "Tañía el arpa en Gabaa", "isCorrect": false },
+        { "text": "Guardaba el arca de Jehová", "isCorrect": false },
+        { "text": "Araba el campo tras los bueyes", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cómo describe el texto al que enviaron a buscar y trajeron delante de Samuel?",
+      "explanation": "Envió por él y lo introdujo; era rubio, de hermoso parecer y de bello aspecto, y entonces Jehová dijo a Samuel que se levantase y lo ungiese, porque aquel era.",
+      "bibleReference": "1 Samuel 16:12",
+      "answers": [
+        { "text": "Alto de hombros arriba sobre el pueblo", "isCorrect": false },
+        { "text": "Viejo y cano, mas de buen ánimo", "isCorrect": false },
+        { "text": "Pequeño y de aspecto despreciable", "isCorrect": false },
+        { "text": "Rubio, de hermoso parecer y de bello aspecto", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué tomó Samuel para ungirlo de entre sus hermanos?",
+      "explanation": "Samuel tomó el cuerno del aceite y lo ungió de entre sus hermanos, y desde aquel día en adelante el espíritu de Jehová tomó a David.",
+      "bibleReference": "1 Samuel 16:13",
+      "answers": [
+        { "text": "Una ampolla de aceite", "isCorrect": false },
+        { "text": "Una vasija de vino", "isCorrect": false },
+        { "text": "El cuerno del aceite", "isCorrect": true },
+        { "text": "Un panal de miel", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué mandó buscar Saúl a sus criados, según el consejo que le dieron?",
+      "explanation": "Los criados le propusieron que buscasen alguno que supiese tocar el arpa, para que tañese cuando viniese sobre él el espíritu malo; y Saúl les mandó buscar alguno que tañese bien y traérselo.",
+      "bibleReference": "1 Samuel 16:16-17",
+      "answers": [
+        { "text": "Alguno que tañese bien el arpa", "isCorrect": true },
+        { "text": "Un profeta que orase por él", "isCorrect": false },
+        { "text": "Un sacerdote que llevase el ephod", "isCorrect": false },
+        { "text": "Un hombre de guerra valiente", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué sucedía cuando el espíritu malo de parte de Dios venía sobre Saúl?",
+      "explanation": "David tomaba el arpa y tañía con su mano, y Saúl tenía refrigerio y estaba mejor, y el espíritu malo se apartaba de él.",
+      "bibleReference": "1 Samuel 16:23",
+      "answers": [
+        { "text": "Saúl ofrecía holocausto y sacrificios", "isCorrect": false },
+        { "text": "David tomaba el arpa y Saúl tenía refrigerio", "isCorrect": true },
+        { "text": "Los criados echaban suertes por él", "isCorrect": false },
+        { "text": "Samuel venía a orar por Saúl en Gabaa", "isCorrect": false }
+      ]
+    }
+  ]
+}

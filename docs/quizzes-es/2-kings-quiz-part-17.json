@@ -1,0 +1,122 @@
+{
+  "title": "2 Reyes Quiz bíblico - Capítulo 17",
+  "description": "Diez preguntas sobre 2 Reyes 17: Oseas último rey de Israel, la toma de Samaria, las causas del destierro y los pueblos traídos a Samaria.",
+  "slug": "2-kings-quiz-part-17",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cuántos años reinó Oseas hijo de Ela sobre Israel en Samaria?",
+      "explanation": "Oseas hijo de Ela comenzó a reinar en Samaria sobre Israel y reinó nueve años.",
+      "bibleReference": "2 Reyes 17:1",
+      "answers": [
+        { "text": "Tres años", "isCorrect": false },
+        { "text": "Seis años", "isCorrect": false },
+        { "text": "Nueve años", "isCorrect": true },
+        { "text": "Doce años", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Por qué detuvo y aprisionó el rey de Asiria a Oseas?",
+      "explanation": "El rey de Asiria halló que Oseas hacía conjuración, porque había enviado embajadores a So rey de Egipto y no pagaba el tributo como cada año.",
+      "bibleReference": "2 Reyes 17:4",
+      "answers": [
+        { "text": "Porque hacía conjuración y había enviado embajadores a Egipto", "isCorrect": true },
+        { "text": "Porque había quemado los templos de los altos de Samaria", "isCorrect": false },
+        { "text": "Porque había matado a los embajadores de Asiria", "isCorrect": false },
+        { "text": "Porque se había hecho rey sin consultar a Jehová", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuánto tiempo estuvo el rey de Asiria sobre Samaria antes de tomarla?",
+      "explanation": "El rey de Asiria partió contra todo el país, subió contra Samaria y estuvo sobre ella tres años.",
+      "bibleReference": "2 Reyes 17:5",
+      "answers": [
+        { "text": "Un año", "isCorrect": false },
+        { "text": "Tres años", "isCorrect": true },
+        { "text": "Seis meses", "isCorrect": false },
+        { "text": "Nueve años", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Dónde puso el rey de Asiria a los israelitas que transportó?",
+      "explanation": "El rey de Asiria transportó a Israel a Asiria y los puso en Hala, en Habor junto al río de Gozán, y en las ciudades de los Medos.",
+      "bibleReference": "2 Reyes 17:6",
+      "answers": [
+        { "text": "En Damasco y en la tierra de Kir", "isCorrect": false },
+        { "text": "En Babilonia, en Cutha y en Sepharvaim", "isCorrect": false },
+        { "text": "En Beth-el, en Thirsa y en Samaria", "isCorrect": false },
+        { "text": "En Hala, en Habor y en las ciudades de los Medos", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué protestaba Jehová contra Israel y contra Judá por mano de los profetas y los videntes?",
+      "explanation": "Jehová les decía: \"Volveos de vuestros malos caminos, y guardad mis mandamientos y mis ordenanzas\", conforme a las leyes que había prescrito a sus padres.",
+      "bibleReference": "2 Reyes 17:13",
+      "answers": [
+        { "text": "Que saldrían a pelear contra el rey de Asiria", "isCorrect": false },
+        { "text": "Que se volvieran de sus malos caminos y guardaran sus mandamientos", "isCorrect": true },
+        { "text": "Que edificaran altos en todas sus ciudades", "isCorrect": false },
+        { "text": "Que pagaran tributo a las gentes de alrededor", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué imágenes vaciadizas se hicieron los hijos de Israel al dejar los mandamientos de Jehová?",
+      "explanation": "Dejaron todos los mandamientos de Jehová su Dios y se hicieron vaciadizos dos becerros, y también bosques, y adoraron a todo el ejército del cielo y sirvieron a Baal.",
+      "bibleReference": "2 Reyes 17:16",
+      "answers": [
+        { "text": "Dos becerros", "isCorrect": true },
+        { "text": "Doce estatuas de plata", "isCorrect": false },
+        { "text": "Una serpiente de bronce", "isCorrect": false },
+        { "text": "Cuatro leones de oro", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Cuando Jehová quitó a Israel de delante de su rostro, ¿qué tribu quedó?",
+      "explanation": "Jehová se airó en gran manera contra Israel y los quitó de delante de su rostro, y no quedó sino sólo la tribu de Judá.",
+      "bibleReference": "2 Reyes 17:18",
+      "answers": [
+        { "text": "La tribu de Ephraim", "isCorrect": false },
+        { "text": "La tribu de Nephtalí", "isCorrect": false },
+        { "text": "La tribu de Judá", "isCorrect": true },
+        { "text": "La tribu de Benjamín", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué envió Jehová contra las gentes que el rey de Asiria puso en las ciudades de Samaria?",
+      "explanation": "Al principio, cuando comenzaron a habitar allí, como no temían a Jehová, Jehová envió contra ellos leones que los mataban.",
+      "bibleReference": "2 Reyes 17:25",
+      "answers": [
+        { "text": "Pestilencia en sus ciudades", "isCorrect": false },
+        { "text": "Partidas de Moabitas", "isCorrect": false },
+        { "text": "Hambre por tres años", "isCorrect": false },
+        { "text": "Leones que los mataban", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Dónde habitó el sacerdote que vino para enseñarles cómo habían de temer a Jehová?",
+      "explanation": "Vino uno de los sacerdotes que habían transportado de Samaria, habitó en Beth-el y les enseñó cómo habían de temer a Jehová.",
+      "bibleReference": "2 Reyes 17:28",
+      "answers": [
+        { "text": "En Beth-el", "isCorrect": true },
+        { "text": "En Samaria", "isCorrect": false },
+        { "text": "En Hamath", "isCorrect": false },
+        { "text": "En Jerusalem", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cómo describe el final del capítulo lo que hacían aquellas gentes?",
+      "explanation": "Temieron a Jehová y juntamente sirvieron a sus ídolos, y también sus hijos y sus nietos hicieron como sus padres.",
+      "bibleReference": "2 Reyes 17:41",
+      "answers": [
+        { "text": "Derribaron los templos de los altos", "isCorrect": false },
+        { "text": "Temían a Jehová y a la vez servían a sus ídolos", "isCorrect": true },
+        { "text": "Volvieron a la tierra de donde fueron traídos", "isCorrect": false },
+        { "text": "Enviaron a buscar sacerdotes a Jerusalem", "isCorrect": false }
+      ]
+    }
+  ]
+}

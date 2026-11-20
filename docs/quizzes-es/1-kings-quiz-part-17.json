@@ -1,0 +1,122 @@
+{
+  "title": "1 Reyes Quiz bíblico - Capítulo 17",
+  "description": "Diez preguntas sobre 1 Reyes 17: Elías junto al arroyo de Cherith, la viuda de Sarepta y el niño que revivió.",
+  "slug": "1-kings-quiz-part-17",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué anunció Elías Thisbita a Achâb?",
+      "explanation": "Elías le dijo que, vivo Jehová Dios de Israel delante del cual estaba, no habría lluvia ni rocío en aquellos años sino por su palabra.",
+      "bibleReference": "1 Reyes 17:1",
+      "answers": [
+        { "text": "Que no habría lluvia ni rocío sino por su palabra", "isCorrect": true },
+        { "text": "Que caería fuego del cielo sobre Samaria", "isCorrect": false },
+        { "text": "Que los perros lamerían la sangre del rey", "isCorrect": false },
+        { "text": "Que el reino sería roto de su mano", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Dónde le mandó Jehová esconderse, y quién le daría allí de comer?",
+      "explanation": "Jehová le dijo que se volviese al oriente y se escondiese en el arroyo de Cherith, que está delante del Jordán, y que había mandado a los cuervos que le diesen allí de comer.",
+      "bibleReference": "1 Reyes 17:3-4",
+      "answers": [
+        { "text": "En el monte Horeb, y un ángel", "isCorrect": false },
+        { "text": "En una cueva de Samaria, y Abdías", "isCorrect": false },
+        { "text": "En el arroyo de Cherith, y los cuervos", "isCorrect": true },
+        { "text": "En Sarepta de Sidón, y una viuda", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué le traían los cuervos, y en qué momentos del día?",
+      "explanation": "Los cuervos le traían pan y carne por la mañana, y pan y carne a la tarde; y bebía del arroyo.",
+      "bibleReference": "1 Reyes 17:6",
+      "answers": [
+        { "text": "Agua y miel, solo al medio día", "isCorrect": false },
+        { "text": "Pan y carne, por la mañana y a la tarde", "isCorrect": true },
+        { "text": "Harina y aceite, cada tres días", "isCorrect": false },
+        { "text": "Turrones y panes, una vez al día", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿por qué se secó el arroyo pasados algunos días?",
+      "explanation": "El arroyo se secó porque no había llovido sobre la tierra.",
+      "bibleReference": "1 Reyes 17:7",
+      "answers": [
+        { "text": "Porque el rey mandó cerrar sus fuentes", "isCorrect": false },
+        { "text": "Porque un gran viento rompió los montes", "isCorrect": false },
+        { "text": "Porque los cuervos dejaron de venir", "isCorrect": false },
+        { "text": "Porque no había llovido sobre la tierra", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿A dónde le mandó ir Jehová después, y quién le sustentaría allí?",
+      "explanation": "Jehová le dijo que se levantase y fuese a Sarepta de Sidón, donde moraría, porque había mandado allí a una mujer viuda que le sustentase.",
+      "bibleReference": "1 Reyes 17:9",
+      "answers": [
+        { "text": "A Jezreel, y el criado del rey", "isCorrect": false },
+        { "text": "A Beer-seba, y los hijos de los profetas", "isCorrect": false },
+        { "text": "A Sarepta de Sidón, y una mujer viuda", "isCorrect": true },
+        { "text": "A Galaad, y los moradores de la tierra", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué respondió la viuda que le quedaba en casa?",
+      "explanation": "Ella dijo que no tenía pan cocido, sino solamente un puñado de harina en la tinaja y un poco de aceite en una botija.",
+      "bibleReference": "1 Reyes 17:12",
+      "answers": [
+        { "text": "Un puñado de harina y un poco de aceite", "isCorrect": true },
+        { "text": "Diez panes y una botija de miel", "isCorrect": false },
+        { "text": "Un vaso de agua y nada más", "isCorrect": false },
+        { "text": "Dos bueyes y un poco de leña", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué le pidió Elías a la viuda que hiciera primero?",
+      "explanation": "Elías le dijo que no tuviese temor y que le hiciera a él primero una pequeña torta cocida debajo de la ceniza y se la trajese, y después haría para ella y para su hijo.",
+      "bibleReference": "1 Reyes 17:13",
+      "answers": [
+        { "text": "Que fuese a buscar agua al arroyo", "isCorrect": false },
+        { "text": "Que cogiese dos serojas para el fuego", "isCorrect": false },
+        { "text": "Que diese de comer antes a su hijo", "isCorrect": false },
+        { "text": "Que le hiciera a él primero una pequeña torta", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Jehová por medio de Elías acerca de la harina y del aceite?",
+      "explanation": "Dijo que la tinaja de la harina no escasearía ni se disminuiría la botija del aceite hasta el día en que Jehová diese lluvia sobre la haz de la tierra.",
+      "bibleReference": "1 Reyes 17:14",
+      "answers": [
+        { "text": "Que se acabarían al tercer día", "isCorrect": false },
+        { "text": "Que no escasearían hasta que Jehová diese lluvia", "isCorrect": true },
+        { "text": "Que los cuervos los traerían cada mañana", "isCorrect": false },
+        { "text": "Que debían repartirlos entre los profetas", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Elías en la cámara con el niño que había muerto?",
+      "explanation": "Se midió sobre el niño tres veces y clamó a Jehová, rogándole que el alma de aquel niño volviese a sus entrañas.",
+      "bibleReference": "1 Reyes 17:21",
+      "answers": [
+        { "text": "Se midió sobre el niño tres veces y clamó a Jehová", "isCorrect": true },
+        { "text": "Puso su manto sobre el niño y salió fuera", "isCorrect": false },
+        { "text": "Lo lavó con agua y lo ungió con aceite", "isCorrect": false },
+        { "text": "Lo tomó en brazos y lo llevó al arroyo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dijo la mujer a Elías cuando le devolvió a su hijo vivo?",
+      "explanation": "Ella dijo: Ahora conozco que tú eres varón de Dios, y que la palabra de Jehová es verdad en tu boca.",
+      "bibleReference": "1 Reyes 17:24",
+      "answers": [
+        { "text": "Que se fuese de su casa y no volviese más", "isCorrect": false },
+        { "text": "Que ahora conocía que él era varón de Dios", "isCorrect": true },
+        { "text": "Que no quería que su hijo volviese a enfermar", "isCorrect": false },
+        { "text": "Que seguiría a Jehová y dejaría a Baal", "isCorrect": false }
+      ]
+    }
+  ]
+}

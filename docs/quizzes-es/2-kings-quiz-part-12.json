@@ -1,0 +1,122 @@
+{
+  "title": "2 Reyes Quiz bíblico - Capítulo 12",
+  "description": "Diez preguntas sobre 2 Reyes 12: el reinado de Joas, el arca para reparar el templo y el tributo enviado a Hazael.",
+  "slug": "2-kings-quiz-part-12",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿En qué año de Jehú comenzó a reinar Joas?",
+      "explanation": "En el séptimo año de Jehú comenzó a reinar Joas, y reinó cuarenta años en Jerusalem.",
+      "bibleReference": "2 Reyes 12:1",
+      "answers": [
+        { "text": "En el tercer año", "isCorrect": false },
+        { "text": "En el séptimo año", "isCorrect": true },
+        { "text": "En el año veintitrés", "isCorrect": false },
+        { "text": "En el año treinta y siete", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cómo se llamaba la madre de Joas y de dónde era?",
+      "explanation": "El nombre de la madre de Joas fue Sibia, de Beer-seba.",
+      "bibleReference": "2 Reyes 12:1",
+      "answers": [
+        { "text": "Sibia, de Beer-seba", "isCorrect": true },
+        { "text": "Athalía, de Samaria", "isCorrect": false },
+        { "text": "Jerusa, de Hebrón", "isCorrect": false },
+        { "text": "Maachâ, de Silo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Quién dirigía a Joas durante todo el tiempo en que hizo lo recto en ojos de Jehová?",
+      "explanation": "Joas hizo lo recto en ojos de Jehová todo el tiempo que le dirigió el sacerdote Joiada.",
+      "bibleReference": "2 Reyes 12:2",
+      "answers": [
+        { "text": "El profeta Eliseo", "isCorrect": false },
+        { "text": "Hazael rey de Siria", "isCorrect": false },
+        { "text": "El sacerdote Joiada", "isCorrect": true },
+        { "text": "El notario del rey", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué seguía haciendo el pueblo en los altos, que no fueron quitados?",
+      "explanation": "Los altos no se quitaron, y el pueblo aún sacrificaba y quemaba perfumes en ellos.",
+      "bibleReference": "2 Reyes 12:3",
+      "answers": [
+        { "text": "Cantaba con salterios y trompetas", "isCorrect": false },
+        { "text": "Guardaba allí el dinero del templo", "isCorrect": false },
+        { "text": "Levantaba allí casas para los sacerdotes", "isCorrect": false },
+        { "text": "Sacrificaba y quemaba perfumes", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué no habían hecho todavía los sacerdotes en el año veintitrés del rey Joas?",
+      "explanation": "En el año veintitrés del rey Joas los sacerdotes aún no habían reparado las aberturas del templo.",
+      "bibleReference": "2 Reyes 12:6",
+      "answers": [
+        { "text": "No habían ofrecido los sacrificios del año", "isCorrect": false },
+        { "text": "No habían reparado las aberturas del templo", "isCorrect": true },
+        { "text": "No habían leído el libro de la ley al pueblo", "isCorrect": false },
+        { "text": "No habían contado el dinero del arca", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué hizo el pontífice Joiada para recoger el dinero?",
+      "explanation": "Joiada tomó un arca, le hizo un agujero en la tapa y la puso junto al altar, a la mano derecha de la entrada del templo de Jehová.",
+      "bibleReference": "2 Reyes 12:9",
+      "answers": [
+        { "text": "Tomó un arca y le hizo un agujero en la tapa", "isCorrect": true },
+        { "text": "Mandó pesar la plata en la puerta de la ciudad", "isCorrect": false },
+        { "text": "Repartió bolsas entre los que guardaban la puerta", "isCorrect": false },
+        { "text": "Hizo cavar un tesoro debajo del altar", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Quiénes contaban el dinero cuando veían que había mucho en el arca?",
+      "explanation": "Cuando veían que había mucho dinero en el arca, venían el notario del rey y el gran sacerdote, y contaban el dinero.",
+      "bibleReference": "2 Reyes 12:10",
+      "answers": [
+        { "text": "Los carpinteros y los maestros de la obra", "isCorrect": false },
+        { "text": "Los albañiles y los canteros", "isCorrect": false },
+        { "text": "Los que guardaban la puerta del templo", "isCorrect": false },
+        { "text": "El notario del rey y el gran sacerdote", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué no se hacía con el dinero que se traía a la casa de Jehová?",
+      "explanation": "De aquel dinero no se hacían tazas de plata, ni salterios, ni jofainas, ni trompetas, ni ningún otro vaso de oro o de plata para el templo.",
+      "bibleReference": "2 Reyes 12:13",
+      "answers": [
+        { "text": "No se compraba madera ni piedra de cantería", "isCorrect": false },
+        { "text": "No se pagaba a los que hacían la obra", "isCorrect": false },
+        { "text": "No se hacían tazas de plata ni trompetas", "isCorrect": true },
+        { "text": "No se cubrían los gastos de la casa", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Joas rey de Judá cuando Hazael puso su rostro para subir contra Jerusalem?",
+      "explanation": "Joas tomó las ofrendas dedicadas y todo el oro de los tesoros de la casa de Jehová y de la casa del rey, y lo envió a Hazael rey de Siria, y él se partió de Jerusalem.",
+      "bibleReference": "2 Reyes 12:17-18",
+      "answers": [
+        { "text": "Le envió las ofrendas dedicadas y el oro", "isCorrect": true },
+        { "text": "Salió a pelear contra él en Gath", "isCorrect": false },
+        { "text": "Pidió ayuda al rey de Israel", "isCorrect": false },
+        { "text": "Mandó cerrar las puertas del templo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Quién reinó en lugar de Joas después de que sus siervos lo mataron?",
+      "explanation": "Sus siervos conspiraron y mataron a Joas en la casa de Millo; lo sepultaron en la ciudad de David y reinó en su lugar Amasías su hijo.",
+      "bibleReference": "2 Reyes 12:20-21",
+      "answers": [
+        { "text": "Jozabad hijo de Somer", "isCorrect": false },
+        { "text": "Amasías su hijo", "isCorrect": true },
+        { "text": "Josachâr hijo de Simaath", "isCorrect": false },
+        { "text": "Joram su hermano", "isCorrect": false }
+      ]
+    }
+  ]
+}

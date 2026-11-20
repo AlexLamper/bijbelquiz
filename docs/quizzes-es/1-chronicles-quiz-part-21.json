@@ -1,0 +1,122 @@
+{
+  "title": "1 Crónicas Quiz bíblico - Capítulo 21",
+  "description": "Diez preguntas sobre 1 Crónicas 21: el censo que David mandó hacer, la pestilencia en Israel y el altar levantado en la era de Ornán.",
+  "slug": "1-chronicles-quiz-part-21",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el primer verso, ¿quién se levantó contra Israel e incitó a David a contar al pueblo?",
+      "explanation": "Satanás se levantó contra Israel é incitó á David á que contase á Israel.",
+      "bibleReference": "1 Crónicas 21:1",
+      "answers": [
+        { "text": "Satanás", "isCorrect": true },
+        { "text": "Joab", "isCorrect": false },
+        { "text": "Gad el vidente", "isCorrect": false },
+        { "text": "El ángel de Jehová", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Desde dónde hasta dónde mandó David que contaran a Israel?",
+      "explanation": "David dijo á Joab y á los príncipes del pueblo: Id, contad á Israel desde Beer-seba hasta Dan.",
+      "bibleReference": "1 Crónicas 21:2",
+      "answers": [
+        { "text": "Desde Sihor de Egipto hasta Hamath", "isCorrect": false },
+        { "text": "Desde Beer-seba hasta Dan", "isCorrect": true },
+        { "text": "Desde Hebrón hasta Jerusalem", "isCorrect": false },
+        { "text": "Desde Gabaón hasta Gezer", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué le respondió Joab al rey sobre ese mandamiento?",
+      "explanation": "Joab preguntó para qué procuraba su señor esto, que sería pernicioso á Israel, y deseó que Jehová añadiese á su pueblo cien veces otros tantos.",
+      "bibleReference": "1 Crónicas 21:3",
+      "answers": [
+        { "text": "Que lo haría de buena voluntad", "isCorrect": false },
+        { "text": "Que contaría solo á los Levitas", "isCorrect": false },
+        { "text": "Que aquello sería pernicioso á Israel", "isCorrect": true },
+        { "text": "Que el rey debía ir con él", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuántos hombres que sacaban espada se hallaron en Judá?",
+      "explanation": "De Judá se hallaron cuatrocientos y setenta mil hombres que sacaban espada.",
+      "bibleReference": "1 Crónicas 21:5",
+      "answers": [
+        { "text": "Cuatrocientos y veinte mil", "isCorrect": false },
+        { "text": "Setecientos y setenta mil", "isCorrect": false },
+        { "text": "Cuatro mil y setecientos", "isCorrect": false },
+        { "text": "Cuatrocientos y setenta mil", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿A quiénes no contó Joab, porque abominaba el mandamiento del rey?",
+      "explanation": "Entre estos no fueron contados los Levitas ni los hijos de Benjamín, porque Joab abominaba el mandamiento del rey.",
+      "bibleReference": "1 Crónicas 21:6",
+      "answers": [
+        { "text": "Los Levitas y los hijos de Benjamín", "isCorrect": true },
+        { "text": "Los hijos de Judá y de Simeón", "isCorrect": false },
+        { "text": "Los sacerdotes y los cantores", "isCorrect": false },
+        { "text": "Los de Gad y de Rubén", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuántas cosas le propuso Jehová a David por medio de Gad, para que escogiera una?",
+      "explanation": "Jehová mandó decir á David: Tres cosas te propongo; escoge de ellas una que yo haga contigo.",
+      "bibleReference": "1 Crónicas 21:10",
+      "answers": [
+        { "text": "Dos cosas", "isCorrect": false },
+        { "text": "Tres cosas", "isCorrect": true },
+        { "text": "Siete cosas", "isCorrect": false },
+        { "text": "Cuatro cosas", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿En manos de quién pidió David caer, porque sus misericordias son muchas en extremo?",
+      "explanation": "David dijo á Gad que estaba en grande angustia y rogó caer en la mano de Jehová, y no en manos de hombres.",
+      "bibleReference": "1 Crónicas 21:13",
+      "answers": [
+        { "text": "En manos de hombres", "isCorrect": false },
+        { "text": "En manos de los Filisteos", "isCorrect": false },
+        { "text": "En la mano de Jehová", "isCorrect": true },
+        { "text": "En manos del ángel", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuántos hombres de Israel cayeron cuando Jehová dio pestilencia en Israel?",
+      "explanation": "Jehová dió pestilencia en Israel, y cayeron de Israel setenta mil hombres.",
+      "bibleReference": "1 Crónicas 21:14",
+      "answers": [
+        { "text": "Siete mil", "isCorrect": false },
+        { "text": "Cien mil", "isCorrect": false },
+        { "text": "Cuarenta mil", "isCorrect": false },
+        { "text": "Setenta mil", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Cuando Jehová dijo al ángel: Basta ya, detén tu mano, ¿junto a qué lugar estaba el ángel?",
+      "explanation": "El ángel de Jehová estaba junto á la era de Ornán Jebuseo cuando Jehová le dijo: Basta ya, detén tu mano.",
+      "bibleReference": "1 Crónicas 21:16",
+      "answers": [
+        { "text": "Junto á la era de Ornán", "isCorrect": true },
+        { "text": "Junto á la era de Chidón", "isCorrect": false },
+        { "text": "Junto al altar de Gabaón", "isCorrect": false },
+        { "text": "Junto á la puerta de Jerusalem", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿De qué manera le respondió Jehová a David cuando invocó su nombre en el altar que había edificado?",
+      "explanation": "David edificó allí un altar á Jehová, ofreció holocaustos y sacrificios pacíficos é invocó á Jehová, el cual le respondió por fuego de los cielos en el altar del holocausto.",
+      "bibleReference": "1 Crónicas 21:27",
+      "answers": [
+        { "text": "Por una voz en la noche", "isCorrect": false },
+        { "text": "Por fuego de los cielos", "isCorrect": true },
+        { "text": "Por un sueño en Gabaón", "isCorrect": false },
+        { "text": "Por mano del profeta Gad", "isCorrect": false }
+      ]
+    }
+  ]
+}

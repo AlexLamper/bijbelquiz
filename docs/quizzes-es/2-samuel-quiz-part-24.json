@@ -1,0 +1,242 @@
+{
+  "title": "2 Samuel Quiz bíblico - Capítulo 24",
+  "description": "Diez preguntas sobre 2 Samuel 24: el censo del pueblo, la elección que hizo David, la pestilencia y el altar en la era de Arauna.",
+  "slug": "2-samuel-quiz-part-24",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿A quién mandó el rey rodear todas las tribus de Israel y contar el pueblo?",
+      "explanation": "El rey se lo dijo a Joab, general del ejército que tenía consigo: rodea todas las tribus de Israel y contad el pueblo.",
+      "bibleReference": "2 Samuel 24:2",
+      "answers": [
+        {
+          "text": "A Gad, vidente del rey",
+          "isCorrect": false
+        },
+        {
+          "text": "A Arauna el Jebuseo",
+          "isCorrect": false
+        },
+        {
+          "text": "A Joab, general del ejército",
+          "isCorrect": true
+        },
+        {
+          "text": "A los ancianos de Judá",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuánto tiempo pasó hasta que volvieron a Jerusalem, después de andar toda la tierra?",
+      "explanation": "El texto dice que volvieron a Jerusalem al cabo de nueve meses y veinte días.",
+      "bibleReference": "2 Samuel 24:8",
+      "answers": [
+        {
+          "text": "Nueve meses y veinte días",
+          "isCorrect": true
+        },
+        {
+          "text": "Tres meses y diez días",
+          "isCorrect": false
+        },
+        {
+          "text": "Siete meses justos",
+          "isCorrect": false
+        },
+        {
+          "text": "Un año entero",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según la cuenta que Joab dio al rey, ¿cuántos hombres fuertes que sacaban espada había en Israel?",
+      "explanation": "Joab dio la cuenta al rey: los de Israel fueron ochocientos mil hombres fuertes que sacaban espada.",
+      "bibleReference": "2 Samuel 24:9",
+      "answers": [
+        {
+          "text": "Quinientos mil",
+          "isCorrect": false
+        },
+        {
+          "text": "Ochocientos mil",
+          "isCorrect": true
+        },
+        {
+          "text": "Trescientos mil",
+          "isCorrect": false
+        },
+        {
+          "text": "Seiscientos mil",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo David a Jehová después de haber contado el pueblo?",
+      "explanation": "A David le punzó su corazón y dijo a Jehová que había pecado gravemente por haber hecho esto y que había obrado muy neciamente.",
+      "bibleReference": "2 Samuel 24:10",
+      "answers": [
+        {
+          "text": "Que el pueblo había pecado",
+          "isCorrect": false
+        },
+        {
+          "text": "Que Joab lo había engañado",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no sabía el número",
+          "isCorrect": false
+        },
+        {
+          "text": "Que había pecado gravemente",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Entre las tres cosas que Gad le propuso, ¿cuántos años de hambre en su tierra se le ofrecían?",
+      "explanation": "Gad preguntó a David si quería que le viniesen siete años de hambre en su tierra, o huir tres meses delante de sus enemigos, o tres días de pestilencia.",
+      "bibleReference": "2 Samuel 24:13",
+      "answers": [
+        {
+          "text": "Siete años",
+          "isCorrect": true
+        },
+        {
+          "text": "Tres años",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuarenta años",
+          "isCorrect": false
+        },
+        {
+          "text": "Diez años",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué pidió David caer en la mano de Jehová y no en manos de hombres?",
+      "explanation": "David dijo que estaba en grande angustia y pidió caer en la mano de Jehová, porque sus miseraciones son muchas.",
+      "bibleReference": "2 Samuel 24:14",
+      "answers": [
+        {
+          "text": "Porque el pueblo se lo pidió",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque Gad se lo aconsejó",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque sus miseraciones son muchas",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque temía a sus enemigos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos hombres del pueblo murieron por la pestilencia, desde Dan hasta Beer-seba?",
+      "explanation": "Jehová envió pestilencia a Israel y murieron del pueblo, desde Dan hasta Beer-seba, setenta mil hombres.",
+      "bibleReference": "2 Samuel 24:15",
+      "answers": [
+        {
+          "text": "Siete mil",
+          "isCorrect": false
+        },
+        {
+          "text": "Setenta mil",
+          "isCorrect": true
+        },
+        {
+          "text": "Setecientos",
+          "isCorrect": false
+        },
+        {
+          "text": "Diez mil",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Junto a qué lugar estaba el ángel de Jehová cuando se le dijo que detuviera su mano?",
+      "explanation": "Cuando Jehová dijo al ángel que bastaba y que detuviese su mano, el ángel estaba junto a la era de Arauna Jebuseo.",
+      "bibleReference": "2 Samuel 24:16",
+      "answers": [
+        {
+          "text": "Junto a la puerta de Beer-seba",
+          "isCorrect": false
+        },
+        {
+          "text": "Junto al arroyo de Gad",
+          "isCorrect": false
+        },
+        {
+          "text": "Junto a la fortaleza de Tiro",
+          "isCorrect": false
+        },
+        {
+          "text": "Junto a la era de Arauna Jebuseo",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Por cuánto compró David la era y los bueyes de Arauna?",
+      "explanation": "David no quiso recibirlos de regalo y compró la era y los bueyes por cincuenta siclos de plata.",
+      "bibleReference": "2 Samuel 24:24",
+      "answers": [
+        {
+          "text": "Por cincuenta siclos de plata",
+          "isCorrect": true
+        },
+        {
+          "text": "Por cien siclos de oro",
+          "isCorrect": false
+        },
+        {
+          "text": "Por treinta siclos de plata",
+          "isCorrect": false
+        },
+        {
+          "text": "Por un rebaño de ovejas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo David en aquel lugar, y qué pasó después con la plaga?",
+      "explanation": "David edificó allí un altar a Jehová y sacrificó holocaustos y pacíficos; Jehová se aplacó con la tierra y cesó la plaga de Israel.",
+      "bibleReference": "2 Samuel 24:25",
+      "answers": [
+        {
+          "text": "Sembró trigo y la plaga volvió",
+          "isCorrect": false
+        },
+        {
+          "text": "Levantó una casa y la plaga siguió",
+          "isCorrect": false
+        },
+        {
+          "text": "Edificó un altar y la plaga cesó",
+          "isCorrect": true
+        },
+        {
+          "text": "Puso una guarnición y la plaga creció",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

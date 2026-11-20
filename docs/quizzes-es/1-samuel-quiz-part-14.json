@@ -1,0 +1,122 @@
+{
+  "title": "1 Samuel Quiz bíblico - Capítulo 14",
+  "description": "Diez preguntas sobre 1 Samuel 14: Jonathán y su paje de armas en la guarnición de los filisteos, el juramento de Saúl y la miel del bosque.",
+  "slug": "1-samuel-quiz-part-14",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cómo se llamaban los dos peñascos agudos que había entre los pasos por donde Jonathán quería pasar?",
+      "explanation": "Entre los pasos había un peñasco agudo de una parte y otro de la otra parte: el uno se llamaba Boses y el otro Sene.",
+      "bibleReference": "1 Samuel 14:4",
+      "answers": [
+        { "text": "Migrón y Michmas", "isCorrect": false },
+        { "text": "Boses y Sene", "isCorrect": true },
+        { "text": "Beth-aven y Ajalón", "isCorrect": false },
+        { "text": "Boses y Migrón", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Jonathán a su paje de armas sobre la manera en que Jehová puede salvar?",
+      "explanation": "Jonathán le dijo que pasasen a la guarnición de aquellos incircuncisos, pues quizá Jehová obraría por ellos, porque no es difícil a Jehová salvar con multitud o con poco número.",
+      "bibleReference": "1 Samuel 14:6",
+      "answers": [
+        { "text": "No es difícil a Jehová salvar con poco número", "isCorrect": true },
+        { "text": "Jehová no salva sino con grande multitud", "isCorrect": false },
+        { "text": "Esperemos a que el pueblo suba con nosotros", "isCorrect": false },
+        { "text": "No conviene pasar a los incircuncisos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuál sería la señal de que Jehová los había entregado en sus manos?",
+      "explanation": "Jonathán dijo que si les decían que esperasen, se quedarían en su lugar; mas si les decían: Subid a nosotros, subirían, porque eso les sería por señal de que Jehová los había entregado.",
+      "bibleReference": "1 Samuel 14:9-10",
+      "answers": [
+        { "text": "Si les dicen: Esperad hasta que lleguemos", "isCorrect": false },
+        { "text": "Si los filisteos salen de las cavernas", "isCorrect": false },
+        { "text": "Si les dicen: Subid a nosotros", "isCorrect": true },
+        { "text": "Si el paje de armas sube primero", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿A cuántos hombres mataron Jonathán y su paje de armas en la primera rota?",
+      "explanation": "Esta fue la primera rota, en la cual Jonathán con su paje de armas mataron como unos veinte hombres en el espacio de una media yugada.",
+      "bibleReference": "1 Samuel 14:14",
+      "answers": [
+        { "text": "Como seiscientos hombres", "isCorrect": false },
+        { "text": "Como treinta mil hombres", "isCorrect": false },
+        { "text": "Como unos cien hombres", "isCorrect": false },
+        { "text": "Como unos veinte hombres", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Cuando Saúl mandó reconocer al pueblo, ¿quiénes faltaban?",
+      "explanation": "Saúl mandó al pueblo que reconociese quién de los suyos se había ido, y al reconocerlo hallaron que faltaban Jonathán y su paje de armas.",
+      "bibleReference": "1 Samuel 14:17",
+      "answers": [
+        { "text": "Jonathán y su paje de armas", "isCorrect": true },
+        { "text": "Achîas y los que llevaban el ephod", "isCorrect": false },
+        { "text": "Los hebreos que estaban con los filisteos", "isCorrect": false },
+        { "text": "Las centinelas de Gabaa de Benjamín", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué había conjurado Saúl al pueblo aquel día?",
+      "explanation": "Saúl había conjurado al pueblo diciendo que fuese maldito cualquiera que comiese pan hasta la tarde, hasta que él hubiese tomado venganza de sus enemigos.",
+      "bibleReference": "1 Samuel 14:24",
+      "answers": [
+        { "text": "Que nadie pasase el Jordán aquel día", "isCorrect": false },
+        { "text": "Que fuese maldito quien comiese pan hasta la tarde", "isCorrect": true },
+        { "text": "Que nadie tomase del despojo de los filisteos", "isCorrect": false },
+        { "text": "Que todos ayunasen siete días en Gilgal", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Jonathán en el bosque, sin haber oído el juramento de su padre?",
+      "explanation": "Jonathán no había oído cuando su padre conjuró al pueblo, y alargó la punta de la vara que traía en su mano, la mojó en un panal de miel y llevó su mano a su boca, y sus ojos fueron aclarados.",
+      "bibleReference": "1 Samuel 14:27",
+      "answers": [
+        { "text": "Comió del despojo de los filisteos", "isCorrect": false },
+        { "text": "Tomó una oveja del pueblo y la degolló", "isCorrect": false },
+        { "text": "Bebió agua del bosque con la mano", "isCorrect": false },
+        { "text": "Mojó la punta de su vara en un panal de miel", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿De qué avisaron a Saúl que el pueblo estaba haciendo con el despojo?",
+      "explanation": "El pueblo tomó ovejas, vacas y becerros, los mató en tierra y comió con sangre; y avisaron a Saúl que el pueblo pecaba contra Jehová comiendo con sangre.",
+      "bibleReference": "1 Samuel 14:32-33",
+      "answers": [
+        { "text": "Que repartía el despojo sin contarlo", "isCorrect": false },
+        { "text": "Que ofrecía holocaustos sin sacerdote", "isCorrect": false },
+        { "text": "Que pecaba contra Jehová comiendo con sangre", "isCorrect": true },
+        { "text": "Que escondía ovejas y vacas en las cuevas", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué edificó Saúl allí, y qué dice el texto de esa obra?",
+      "explanation": "Saúl edificó altar a Jehová, y aquel altar fue el primero que edificó a Jehová.",
+      "bibleReference": "1 Samuel 14:35",
+      "answers": [
+        { "text": "Un altar a Jehová, el primero que edificó", "isCorrect": true },
+        { "text": "Un trofeo de la victoria sobre los filisteos", "isCorrect": false },
+        { "text": "Una casa para el arca de Dios en Gabaa", "isCorrect": false },
+        { "text": "Una gran piedra para degollar el ganado", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dijo el pueblo a Saúl cuando él afirmó que Jonathán moriría?",
+      "explanation": "El pueblo dijo que Jonathán no había de morir, pues había hecho aquella salud grande en Israel, y que no caería un cabello de su cabeza en tierra; así lo libró el pueblo.",
+      "bibleReference": "1 Samuel 14:45",
+      "answers": [
+        { "text": "Que muera, pues quebrantó el juramento", "isCorrect": false },
+        { "text": "Que no caerá un cabello de su cabeza en tierra", "isCorrect": true },
+        { "text": "Que lo echen fuera del campo de Israel", "isCorrect": false },
+        { "text": "Que decida la suerte entre él y Saúl", "isCorrect": false }
+      ]
+    }
+  ]
+}

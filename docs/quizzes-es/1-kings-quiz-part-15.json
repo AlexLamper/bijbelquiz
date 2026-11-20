@@ -1,0 +1,122 @@
+{
+  "title": "1 Reyes Quiz bíblico - Capítulo 15",
+  "description": "Diez preguntas sobre 1 Reyes 15: el corto reinado de Abiam, las reformas de Asa, su alianza con Ben-adad y la conspiración de Baasa.",
+  "slug": "1-kings-quiz-part-15",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cuántos años reinó Abiam en Jerusalem?",
+      "explanation": "Abiam comenzó a reinar sobre Judá en el año dieciocho del rey Jeroboam hijo de Nabat, y reinó tres años en Jerusalem.",
+      "bibleReference": "1 Reyes 15:1-2",
+      "answers": [
+        { "text": "Veintidós años", "isCorrect": false },
+        { "text": "Dieciocho años", "isCorrect": false },
+        { "text": "Tres años", "isCorrect": true },
+        { "text": "Cuarenta y un años", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Al decir que David no se apartó de nada que Jehová le mandase, ¿qué excepción menciona el texto?",
+      "explanation": "David había hecho lo recto ante los ojos de Jehová y de ninguna cosa que le mandase se había apartado en todos los días de su vida, excepto el negocio de Uría Hetheo.",
+      "bibleReference": "1 Reyes 15:5",
+      "answers": [
+        { "text": "El negocio de Uría Hetheo", "isCorrect": true },
+        { "text": "La guerra contra los de Soba", "isCorrect": false },
+        { "text": "Los altos que no se quitaron", "isCorrect": false },
+        { "text": "El ídolo del torrente de Cedrón", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuántos años reinó Asa en Jerusalem?",
+      "explanation": "Asa comenzó a reinar sobre Judá en el año veinte de Jeroboam rey de Israel, y reinó cuarenta y un años en Jerusalem.",
+      "bibleReference": "1 Reyes 15:9-10",
+      "answers": [
+        { "text": "Veinte años", "isCorrect": false },
+        { "text": "Veinticuatro años", "isCorrect": false },
+        { "text": "Veintidós años", "isCorrect": false },
+        { "text": "Cuarenta y un años", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué quitó Asa de la tierra?",
+      "explanation": "Asa quitó los sodomitas de la tierra, y quitó todas las suciedades que sus padres habían hecho.",
+      "bibleReference": "1 Reyes 15:12",
+      "answers": [
+        { "text": "Los carros y la gente de a caballo", "isCorrect": false },
+        { "text": "Los sodomitas y las suciedades de sus padres", "isCorrect": true },
+        { "text": "Los sacerdotes que no eran de los hijos de Leví", "isCorrect": false },
+        { "text": "Los becerros de oro de Beth-el y de Dan", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Asa con su madre Maachâ y con el ídolo que ella había hecho?",
+      "explanation": "Privó a su madre Maachâ de ser princesa, porque había hecho un ídolo en un bosque, y deshizo el ídolo y lo quemó junto al torrente de Cedrón.",
+      "bibleReference": "1 Reyes 15:13",
+      "answers": [
+        { "text": "La envió a Thirsa y guardó el ídolo en el palacio", "isCorrect": false },
+        { "text": "La dejó como princesa y mandó esconder el ídolo", "isCorrect": false },
+        { "text": "La hizo apedrear y puso el ídolo en el bosque", "isCorrect": false },
+        { "text": "La privó de ser princesa y quemó el ídolo en el Cedrón", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué no se quitó en los días de Asa, aunque su corazón fue perfecto para con Jehová?",
+      "explanation": "Los altos no se quitaron; con todo, el corazón de Asa fue perfecto para con Jehová toda su vida.",
+      "bibleReference": "1 Reyes 15:14",
+      "answers": [
+        { "text": "Las estatuas del templo", "isCorrect": false },
+        { "text": "Los bosques de Samaria", "isCorrect": false },
+        { "text": "Los altos", "isCorrect": true },
+        { "text": "Los tributos del pueblo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué edificó Baasa rey de Israel cuando subió contra Judá, y con qué fin?",
+      "explanation": "Baasa subió contra Judá y edificó a Rama, para no dejar salir ni entrar a ninguno de Asa, rey de Judá.",
+      "bibleReference": "1 Reyes 15:17",
+      "answers": [
+        { "text": "Edificó a Rama, para que nadie saliese ni entrase a Asa", "isCorrect": true },
+        { "text": "Edificó a Mizpa, para guardar los tesoros reales", "isCorrect": false },
+        { "text": "Edificó a Thirsa, para morar allí con su casa", "isCorrect": false },
+        { "text": "Edificó a Gabaa, para hacer guerra a los Filisteos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿A quién envió Asa la plata y el oro de los tesoros, y qué le pidió?",
+      "explanation": "Envió la plata y el oro a Ben-adad, rey de Siria, que residía en Damasco, pidiéndole que rompiese su alianza con Baasa rey de Israel para que le dejase.",
+      "bibleReference": "1 Reyes 15:18-19",
+      "answers": [
+        { "text": "A Sisac rey de Egipto, que subiese contra Jerusalem", "isCorrect": false },
+        { "text": "A Ben-adad rey de Siria, que rompiese su alianza con Baasa", "isCorrect": true },
+        { "text": "A Josaphat su hijo, que juntase un ejército nuevo", "isCorrect": false },
+        { "text": "A Nadab rey de Israel, que le dejase edificar a Rama", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué edificó el rey Asa con la piedra y la madera que quitaron de Rama?",
+      "explanation": "Quitaron de Rama la piedra y la madera con que Baasa edificaba, y con ello el rey Asa edificó a Gabaa de Benjamín y a Mizpa.",
+      "bibleReference": "1 Reyes 15:22",
+      "answers": [
+        { "text": "La casa de Jehová y la casa real", "isCorrect": false },
+        { "text": "Las ciudades de los carros y Jerusalem", "isCorrect": false },
+        { "text": "Gabaa de Benjamín y Mizpa", "isCorrect": true },
+        { "text": "Sichêm en el monte de Ephraim y Penuel", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Quién hirió a Nadab en Gibbethón y reinó en lugar suyo?",
+      "explanation": "Baasa hijo de Ahía, el cual era de la casa de Issachâr, hizo conspiración contra Nadab y lo hirió en Gibbethón, y reinó en lugar suyo.",
+      "bibleReference": "1 Reyes 15:27-28",
+      "answers": [
+        { "text": "Baasa hijo de Ahía", "isCorrect": true },
+        { "text": "Zimri, comandante de los carros", "isCorrect": false },
+        { "text": "Omri, general del ejército", "isCorrect": false },
+        { "text": "Ela hijo de Baasa", "isCorrect": false }
+      ]
+    }
+  ]
+}

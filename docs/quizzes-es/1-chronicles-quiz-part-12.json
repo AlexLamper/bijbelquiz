@@ -1,0 +1,122 @@
+{
+  "title": "1 Crónicas Quiz bíblico - Capítulo 12",
+  "description": "Diez preguntas sobre 1 Crónicas 12: los valientes que se pasaron a David en Siclag y en la fortaleza, y las tribus que vinieron a Hebrón para hacerle rey.",
+  "slug": "1-chronicles-quiz-part-12",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿A qué lugar vinieron a David los primeros valientes del capítulo, cuando él aún estaba encerrado por causa de Saúl?",
+      "explanation": "Estos vinieron á David á Siclag, estando él aún encerrado por causa de Saúl hijo de Cis.",
+      "bibleReference": "1 Crónicas 12:1",
+      "answers": [
+        { "text": "A Siclag", "isCorrect": true },
+        { "text": "A Hebrón", "isCorrect": false },
+        { "text": "A Jerusalem", "isCorrect": false },
+        { "text": "A Gedor", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dice el texto sobre la manera en que peleaban estos valientes ayudadores de la guerra?",
+      "explanation": "Estaban armados de arcos y usaban de ambas manos en tirar piedras con honda y saetas con arco.",
+      "bibleReference": "1 Crónicas 12:2",
+      "answers": [
+        { "text": "Peleaban solamente con carros", "isCorrect": false },
+        { "text": "Usaban ambas manos con la honda y el arco", "isCorrect": true },
+        { "text": "Llevaban trompetas y címbalos", "isCorrect": false },
+        { "text": "Luchaban solamente a caballo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Con qué compara el texto los rostros de los hombres de Gad que huyeron a David?",
+      "explanation": "Eran muy valientes hombres de guerra, sus rostros como rostros de leones, y ligeros como las cabras monteses.",
+      "bibleReference": "1 Crónicas 12:8",
+      "answers": [
+        { "text": "Con rostros de ángeles", "isCorrect": false },
+        { "text": "Con la luz del sol", "isCorrect": false },
+        { "text": "Con rostros de leones", "isCorrect": true },
+        { "text": "Con rostros de niños", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿de cuántos hombres tenían cargo el menor y el mayor de los capitanes de Gad?",
+      "explanation": "Estos fueron capitanes del ejército de los hijos de Gad: el menor tenía cargo de cien hombres, y el mayor de mil.",
+      "bibleReference": "1 Crónicas 12:14",
+      "answers": [
+        { "text": "El menor de diez y el mayor de cien", "isCorrect": false },
+        { "text": "El menor de mil y el mayor de diez mil", "isCorrect": false },
+        { "text": "Los dos de quinientos hombres", "isCorrect": false },
+        { "text": "El menor de cien y el mayor de mil", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿En qué mes pasaron estos hombres el Jordán, cuando había salido sobre todas sus riberas?",
+      "explanation": "Estos pasaron el Jordán en el mes primero, cuando había salido sobre todas sus riberas.",
+      "bibleReference": "1 Crónicas 12:15",
+      "answers": [
+        { "text": "En el mes primero", "isCorrect": true },
+        { "text": "En el mes segundo", "isCorrect": false },
+        { "text": "En el mes séptimo", "isCorrect": false },
+        { "text": "En el mes décimo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿En quién se envistió el espíritu para responder a David: Por ti, oh David, y contigo, oh hijo de Isaí?",
+      "explanation": "Se envistió el espíritu en Amasai, príncipe de treinta, y él habló de paz a David y a sus ayudadores.",
+      "bibleReference": "1 Crónicas 12:18",
+      "answers": [
+        { "text": "En Ahiezer", "isCorrect": false },
+        { "text": "En Amasai", "isCorrect": true },
+        { "text": "En Ismaías", "isCorrect": false },
+        { "text": "En Elcana", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Con qué compara el texto el gran ejército que llegó a tener David, porque cada día le venía ayuda?",
+      "explanation": "Todos los días venía ayuda á David, hasta hacerse un grande ejército, como ejército de Dios.",
+      "bibleReference": "1 Crónicas 12:22",
+      "answers": [
+        { "text": "Con la arena del mar", "isCorrect": false },
+        { "text": "Con las estrellas del cielo", "isCorrect": false },
+        { "text": "Con un ejército de Dios", "isCorrect": true },
+        { "text": "Con un enjambre de abejas", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuántos hijos de Judá que traían escudo y lanza vinieron a David en Hebrón?",
+      "explanation": "De los hijos de Judá que traían escudo y lanza vinieron seis mil y ochocientos, á punto de guerra.",
+      "bibleReference": "1 Crónicas 12:23-24",
+      "answers": [
+        { "text": "Siete mil y ciento", "isCorrect": false },
+        { "text": "Cuatro mil y seiscientos", "isCorrect": false },
+        { "text": "Tres mil y setecientos", "isCorrect": false },
+        { "text": "Seis mil y ochocientos", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué se dice de los doscientos principales de los hijos de Issachâr?",
+      "explanation": "Eran entendidos en los tiempos y sabían lo que Israel debía hacer, y todos sus hermanos seguían su dicho.",
+      "bibleReference": "1 Crónicas 12:32",
+      "answers": [
+        { "text": "Eran entendidos en los tiempos", "isCorrect": true },
+        { "text": "Eran los más fuertes con la honda", "isCorrect": false },
+        { "text": "Tocaban las trompetas del arca", "isCorrect": false },
+        { "text": "Guardaban las puertas de Hebrón", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuánto tiempo estuvieron allí con David comiendo y bebiendo?",
+      "explanation": "Estuvieron allí con David tres días comiendo y bebiendo, porque sus hermanos habían prevenido para ellos.",
+      "bibleReference": "1 Crónicas 12:39",
+      "answers": [
+        { "text": "Un solo día", "isCorrect": false },
+        { "text": "Tres días", "isCorrect": true },
+        { "text": "Siete días", "isCorrect": false },
+        { "text": "Cuarenta días", "isCorrect": false }
+      ]
+    }
+  ]
+}

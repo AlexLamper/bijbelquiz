@@ -1,0 +1,122 @@
+{
+  "title": "2 Reyes Quiz bíblico - Capítulo 21",
+  "description": "Diez preguntas sobre 2 Reyes 21: los pecados de Manasés, la palabra de Jehová contra Jerusalem y el breve reinado de Amón.",
+  "slug": "2-kings-quiz-part-21",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cuántos años tenía Manasés cuando comenzó a reinar?",
+      "explanation": "De doce años era Manasés cuando comenzó a reinar, y reinó en Jerusalem cincuenta y cinco años.",
+      "bibleReference": "2 Reyes 21:1",
+      "answers": [
+        { "text": "Veinte años", "isCorrect": false },
+        { "text": "Doce años", "isCorrect": true },
+        { "text": "Veinte y dos años", "isCorrect": false },
+        { "text": "Veinticinco años", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cómo se llamaba la madre de Manasés?",
+      "explanation": "El nombre de la madre de Manasés fue Hepsiba.",
+      "bibleReference": "2 Reyes 21:1",
+      "answers": [
+        { "text": "Hepsiba", "isCorrect": true },
+        { "text": "Mesalemeth", "isCorrect": false },
+        { "text": "Abi", "isCorrect": false },
+        { "text": "Jecolía", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué volvió a edificar Manasés, que su padre Ezechîas había derribado?",
+      "explanation": "Manasés volvió a edificar los altos que Ezechîas su padre había derribado, levantó altares a Baal e hizo bosque, como había hecho Achâb rey de Israel.",
+      "bibleReference": "2 Reyes 21:3",
+      "answers": [
+        { "text": "El muro de Jerusalem", "isCorrect": false },
+        { "text": "La serpiente de bronce", "isCorrect": false },
+        { "text": "Los altos", "isCorrect": true },
+        { "text": "El reloj de Achâz", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Dónde edificó Manasés altares para todo el ejército del cielo?",
+      "explanation": "Manasés edificó altares para todo el ejército del cielo en los dos atrios de la casa de Jehová.",
+      "bibleReference": "2 Reyes 21:5",
+      "answers": [
+        { "text": "En el huerto de Uzza, junto a su casa", "isCorrect": false },
+        { "text": "Sobre los collados alrededor de Samaria", "isCorrect": false },
+        { "text": "En la ciudad de David, junto al muro", "isCorrect": false },
+        { "text": "En los dos atrios de la casa de Jehová", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Además de mirar en tiempos y ser agorero, ¿qué instituyó Manasés?",
+      "explanation": "Pasó a su hijo por fuego, miró en tiempos, fue agorero e instituyó pythones y adivinos, multiplicando el hacer lo malo en ojos de Jehová.",
+      "bibleReference": "2 Reyes 21:6",
+      "answers": [
+        { "text": "Sacerdotes de los altos tomados del pueblo bajo", "isCorrect": false },
+        { "text": "Pythones y adivinos", "isCorrect": true },
+        { "text": "Videntes y profetas de Baal", "isCorrect": false },
+        { "text": "Fiestas para el ejército del cielo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿A qué indujo Manasés al pueblo, según el texto?",
+      "explanation": "Ellos no escucharon, y Manasés los indujo a que hiciesen más mal que las gentes que Jehová destruyó delante de los hijos de Israel.",
+      "bibleReference": "2 Reyes 21:9",
+      "answers": [
+        { "text": "A hacer más mal que las gentes que Jehová destruyó", "isCorrect": true },
+        { "text": "A pagar tributo al rey de Babilonia cada año", "isCorrect": false },
+        { "text": "A dejar de subir a la casa de Jehová en Jerusalem", "isCorrect": false },
+        { "text": "A conspirar contra los profetas de Jehová", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Jehová del mal que traería sobre Jerusalem y sobre Judá?",
+      "explanation": "Jehová dijo: \"He aquí yo traigo tal mal sobre Jerusalem y sobre Judá, que el que lo oyere, le retiñirán ambos oídos\".",
+      "bibleReference": "2 Reyes 21:12",
+      "answers": [
+        { "text": "Que nadie en la tierra lo creería", "isCorrect": false },
+        { "text": "Que duraría cincuenta y cinco años", "isCorrect": false },
+        { "text": "Que al que lo oyera le retiñirían ambos oídos", "isCorrect": true },
+        { "text": "Que vendría sobre ellos en un solo día", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Con qué comparó Jehová la manera en que limpiaría a Jerusalem?",
+      "explanation": "Jehová dijo que limpiaría a Jerusalem como se limpia una escudilla, que después de limpiarla la vuelven sobre su haz.",
+      "bibleReference": "2 Reyes 21:13",
+      "answers": [
+        { "text": "Con el aventar de la era", "isCorrect": false },
+        { "text": "Con el fuego del horno", "isCorrect": false },
+        { "text": "Con el lavar de los vestidos", "isCorrect": false },
+        { "text": "Con el limpiar de una escudilla", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Dónde fue sepultado Manasés?",
+      "explanation": "Manasés durmió con sus padres y fue sepultado en el huerto de su casa, en el huerto de Uzza.",
+      "bibleReference": "2 Reyes 21:18",
+      "answers": [
+        { "text": "En el huerto de Uzza", "isCorrect": true },
+        { "text": "En la ciudad de David", "isCorrect": false },
+        { "text": "En Samaria con los reyes de Israel", "isCorrect": false },
+        { "text": "Junto al altar de la casa de Jehová", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué hizo el pueblo de la tierra después de que los siervos de Amón lo mataron en su casa?",
+      "explanation": "El pueblo de la tierra hirió a todos los que habían conspirado contra el rey Amón y puso por rey en su lugar a Josías su hijo.",
+      "bibleReference": "2 Reyes 21:23-24",
+      "answers": [
+        { "text": "Huyó a la tierra de Egipto con sus familias", "isCorrect": false },
+        { "text": "Hirió a los conspiradores y puso por rey a Josías", "isCorrect": true },
+        { "text": "Derribó los altares que Manasés había edificado", "isCorrect": false },
+        { "text": "Pidió un rey al rey de Asiria por sus embajadores", "isCorrect": false }
+      ]
+    }
+  ]
+}

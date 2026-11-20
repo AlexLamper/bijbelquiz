@@ -1,0 +1,242 @@
+{
+  "title": "1 Samuel Quiz bíblico - Capítulo 22",
+  "description": "Diez preguntas sobre 1 Samuel 22: la cueva de Adullam, la denuncia de Doeg y la matanza de los sacerdotes de Nob.",
+  "slug": "1-samuel-quiz-part-22",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿A qué lugar escapó David, donde vinieron sus hermanos y toda la casa de su padre?",
+      "explanation": "David se escapó a la cueva de Adullam, y cuando lo oyeron sus hermanos y toda la casa de su padre, vinieron allí a él.",
+      "bibleReference": "1 Samuel 22:1",
+      "answers": [
+        {
+          "text": "A la cueva de Adullam",
+          "isCorrect": true
+        },
+        {
+          "text": "Al bosque de Hareth",
+          "isCorrect": false
+        },
+        {
+          "text": "A la fortaleza de Mizpa",
+          "isCorrect": false
+        },
+        {
+          "text": "Al collado de Hachîla",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quiénes se juntaron con David allí, y de cuántos hombres llegó a ser capitán?",
+      "explanation": "Se juntaron con él todos los afligidos, los que estaban adeudados y los que se hallaban en amargura de espíritu; fue hecho capitán de ellos y tuvo consigo como cuatrocientos hombres.",
+      "bibleReference": "1 Samuel 22:2",
+      "answers": [
+        {
+          "text": "Los príncipes de Judá, y fueron como cien hombres",
+          "isCorrect": false
+        },
+        {
+          "text": "Los afligidos y adeudados, y fueron como cuatrocientos hombres",
+          "isCorrect": true
+        },
+        {
+          "text": "Los sacerdotes de Nob, y fueron como ochenta hombres",
+          "isCorrect": false
+        },
+        {
+          "text": "Los criados del rey, y fueron como seiscientos hombres",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pidió David al rey de Moab cuando fue a Mizpa de Moab?",
+      "explanation": "David rogó al rey de Moab que su padre y su madre estuvieran con ellos hasta que supiera lo que Dios haría de él.",
+      "bibleReference": "1 Samuel 22:3",
+      "answers": [
+        {
+          "text": "Que le diera armas para sus hombres",
+          "isCorrect": false
+        },
+        {
+          "text": "Que hiciera alianza con él contra Saúl",
+          "isCorrect": false
+        },
+        {
+          "text": "Que su padre y su madre se quedaran con ellos",
+          "isCorrect": true
+        },
+        {
+          "text": "Que le diera pan y provisión para el camino",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo el profeta Gad a David, y a dónde fue David después?",
+      "explanation": "Gad profeta le dijo que no se estuviese en aquella fortaleza, sino que se partiese y se fuese a tierra de Judá; David se partió y vino al bosque de Hareth.",
+      "bibleReference": "1 Samuel 22:5",
+      "answers": [
+        {
+          "text": "Que se quedara en la fortaleza, y se fue a Mizpa",
+          "isCorrect": false
+        },
+        {
+          "text": "Que fuese a Keila, y se fue a Nob",
+          "isCorrect": false
+        },
+        {
+          "text": "Que volviese a Gath, y se fue con Achîs",
+          "isCorrect": false
+        },
+        {
+          "text": "Que se fuese a tierra de Judá, y vino al bosque de Hareth",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde estaba Saúl cuando oyó que David había aparecido, y qué tenía en la mano?",
+      "explanation": "Saúl estaba entonces en Gabaa, debajo de un árbol en Rama, con su lanza en la mano y todos sus criados alrededor de él.",
+      "bibleReference": "1 Samuel 22:6",
+      "answers": [
+        {
+          "text": "En Gabaa debajo de un árbol, y tenía su lanza",
+          "isCorrect": true
+        },
+        {
+          "text": "En Nob junto al ephod, y tenía una espada",
+          "isCorrect": false
+        },
+        {
+          "text": "En su casa a la mesa, y tenía un arpa",
+          "isCorrect": false
+        },
+        {
+          "text": "En el desierto de Ziph, y tenía un arco",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo llamó Saúl a los criados que estaban alrededor de él al quejarse de que todos habían conspirado contra él?",
+      "explanation": "Saúl dijo a los criados que estaban en derredor de él: \"Oid ahora, hijos de Benjamín\", y les preguntó si el hijo de Isaí les daría tierras y viñas.",
+      "bibleReference": "1 Samuel 22:7",
+      "answers": [
+        {
+          "text": "Siervos de Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "Hijos de Benjamín",
+          "isCorrect": true
+        },
+        {
+          "text": "Tribunos y centuriones",
+          "isCorrect": false
+        },
+        {
+          "text": "Hombres de Judá",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué contó Doeg Idumeo que Ahimelech había hecho por el hijo de Isaí?",
+      "explanation": "Doeg dijo que había visto al hijo de Isaí venir a Nob, a Ahimelech hijo de Ahitob, el cual consultó por él a Jehová, le dio provisión y también le dio la espada de Goliath el Filisteo.",
+      "bibleReference": "1 Samuel 22:9-10",
+      "answers": [
+        {
+          "text": "Que lo había escondido en la casa de Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "Que lo había ungido por rey sobre Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Que había consultado por él, le dio provisión y la espada de Goliath",
+          "isCorrect": true
+        },
+        {
+          "text": "Que le había dado cien hombres y un ephod de lino",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hicieron los siervos del rey cuando Saúl les mandó matar a los sacerdotes de Jehová?",
+      "explanation": "Los siervos del rey no quisieron extender sus manos para matar a los sacerdotes de Jehová.",
+      "bibleReference": "1 Samuel 22:17",
+      "answers": [
+        {
+          "text": "No quisieron extender sus manos contra ellos",
+          "isCorrect": true
+        },
+        {
+          "text": "Los cercaron y los llevaron presos a Gabaa",
+          "isCorrect": false
+        },
+        {
+          "text": "Los mataron a todos aquel mismo día",
+          "isCorrect": false
+        },
+        {
+          "text": "Huyeron con ellos a la tierra de Judá",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A cuántos varones que vestían ephod de lino mató Doeg Idumeo aquel día?",
+      "explanation": "Doeg Idumeo arremetió contra los sacerdotes y mató aquel día ochenta y cinco varones que vestían ephod de lino.",
+      "bibleReference": "1 Samuel 22:18",
+      "answers": [
+        {
+          "text": "A cuatrocientos varones",
+          "isCorrect": false
+        },
+        {
+          "text": "A ochenta y cinco varones",
+          "isCorrect": true
+        },
+        {
+          "text": "A treinta varones",
+          "isCorrect": false
+        },
+        {
+          "text": "A doscientos varones",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quién escapó de aquella matanza y huyó a David con la noticia?",
+      "explanation": "Abiathar, uno de los hijos de Ahimelech hijo de Ahitob, escapó y huyó a David, y le contó que Saúl había muerto a los sacerdotes de Jehová.",
+      "bibleReference": "1 Samuel 22:20-21",
+      "answers": [
+        {
+          "text": "Gad profeta",
+          "isCorrect": false
+        },
+        {
+          "text": "Ahitob",
+          "isCorrect": false
+        },
+        {
+          "text": "Jonathán",
+          "isCorrect": false
+        },
+        {
+          "text": "Abiathar",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

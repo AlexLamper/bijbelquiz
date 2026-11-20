@@ -1,0 +1,242 @@
+{
+  "title": "1 Crónicas Quiz bíblico - Capítulo 5",
+  "description": "Diez preguntas sobre 1 Crónicas 5: los hijos de Rubén y de Gad, la guerra contra los Agarenos y la transmigración de las tribus del oriente.",
+  "slug": "1-chronicles-quiz-part-5",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Por qué los derechos de primogenitura de Rubén fueron dados a los hijos de José?",
+      "explanation": "Rubén era el primogénito de Israel, mas como violó el lecho de su padre, sus derechos de primogenitura fueron dados a los hijos de José, y no fué contado por primogénito.",
+      "bibleReference": "1 Crónicas 5:1",
+      "answers": [
+        {
+          "text": "Porque violó el lecho de su padre",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque fué trasportado por los Asirios",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque se rebeló contra el Dios de sus padres",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque no quiso salir a la batalla",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿quién fué el mayorazgo sobre sus hermanos y el príncipe de ellos?",
+      "explanation": "Judá fué el mayorazgo sobre sus hermanos y el príncipe de ellos, mas el derecho de primogenitura fué de José.",
+      "bibleReference": "1 Crónicas 5:2",
+      "answers": [
+        {
+          "text": "Rubén",
+          "isCorrect": false
+        },
+        {
+          "text": "José",
+          "isCorrect": false
+        },
+        {
+          "text": "Judá",
+          "isCorrect": true
+        },
+        {
+          "text": "Gad",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quiénes fueron los hijos de Rubén, primogénito de Israel?",
+      "explanation": "Los hijos de Rubén, primogénito de Israel, fueron Enoch, Phallu, Esrón y Charmi.",
+      "bibleReference": "1 Crónicas 5:3",
+      "answers": [
+        {
+          "text": "Semaías, Gog, Simi y Michâ",
+          "isCorrect": false
+        },
+        {
+          "text": "Enoch, Phallu, Esrón y Charmi",
+          "isCorrect": true
+        },
+        {
+          "text": "Joel, Sephán, Janai y Saphat",
+          "isCorrect": false
+        },
+        {
+          "text": "Epher, Isi, Eliel y Azriel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué habitó Bela desde el oriente hasta la entrada del desierto, desde el río Eufrates?",
+      "explanation": "Habitó desde el oriente hasta la entrada del desierto desde el río Eufrates, porque tenía muchos ganados en la tierra de Galaad.",
+      "bibleReference": "1 Crónicas 5:9",
+      "answers": [
+        {
+          "text": "Porque los Agarenos cayeron en su mano",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque era el principal de los Rubenitas",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque clamó a Dios en la guerra",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque tenía muchos ganados en la tierra de Galaad",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde habitaron los hijos de Gad, enfrente de los hijos de Rubén?",
+      "explanation": "Los hijos de Gad habitaron enfrente de ellos en la tierra de Basán hasta Salca.",
+      "bibleReference": "1 Crónicas 5:11",
+      "answers": [
+        {
+          "text": "En la tierra de Basán hasta Salca",
+          "isCorrect": true
+        },
+        {
+          "text": "En Aroer hasta Nebo y Baal-meón",
+          "isCorrect": false
+        },
+        {
+          "text": "En los ejidos de Sarón",
+          "isCorrect": false
+        },
+        {
+          "text": "En el río de Gozán y en Habor",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos hombres de Rubén, de Gad y de la media tribu de Manasés salían a batalla?",
+      "explanation": "Eran cuarenta y cuatro mil setecientos y sesenta hombres valientes, que traían escudo y espada, que entesaban arco y eran diestros en guerra.",
+      "bibleReference": "1 Crónicas 5:18",
+      "answers": [
+        {
+          "text": "Cincuenta mil quinientos y cuarenta",
+          "isCorrect": false
+        },
+        {
+          "text": "Veintiséis mil setecientos y treinta",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuarenta y cuatro mil setecientos y sesenta",
+          "isCorrect": true
+        },
+        {
+          "text": "Ciento cuarenta y cuatro mil",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿por qué les fué favorable Dios en la guerra contra los Agarenos?",
+      "explanation": "Fueron ayudados y los Agarenos se dieron en sus manos, porque clamaron a Dios en la guerra y Dios les fué favorable, porque esperaron en él.",
+      "bibleReference": "1 Crónicas 5:20",
+      "answers": [
+        {
+          "text": "Porque tenían muchos ganados en Galaad",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque clamaron a Dios en la guerra y esperaron en él",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque eran más que sus enemigos en número",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque habían edificado aldeas en Basán",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos camellos tomaron de los ganados de sus enemigos?",
+      "explanation": "Tomaron sus ganados: cincuenta mil camellos, doscientas cincuenta mil ovejas, dos mil asnos y cien mil personas.",
+      "bibleReference": "1 Crónicas 5:21",
+      "answers": [
+        {
+          "text": "Doscientos cincuenta mil",
+          "isCorrect": false
+        },
+        {
+          "text": "Dos mil quinientos",
+          "isCorrect": false
+        },
+        {
+          "text": "Cien mil",
+          "isCorrect": false
+        },
+        {
+          "text": "Cincuenta mil",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hicieron estas tribus contra el Dios de sus padres?",
+      "explanation": "Se rebelaron contra el Dios de sus padres y fornicaron siguiendo los dioses de los pueblos de la tierra, a los cuales había Jehová quitado de delante de ellos.",
+      "bibleReference": "1 Crónicas 5:25",
+      "answers": [
+        {
+          "text": "Fornicaron siguiendo los dioses de los pueblos de la tierra",
+          "isCorrect": true
+        },
+        {
+          "text": "Clamaron a él en la guerra y esperaron en él",
+          "isCorrect": false
+        },
+        {
+          "text": "Edificaron aldeas en los ejidos de Sarón",
+          "isCorrect": false
+        },
+        {
+          "text": "Contaron sus generaciones en días de Jothán",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A dónde llevó Thiglath-pilneser a los Rubenitas, a los Gaditas y a la media tribu de Manasés?",
+      "explanation": "Thiglath-pilneser rey de los Asirios los trasportó y los llevó a Halad, a Habor, a Ara y al río de Gozán, hasta hoy.",
+      "bibleReference": "1 Crónicas 5:26",
+      "answers": [
+        {
+          "text": "A Basán, a Senir y al monte de Hermón",
+          "isCorrect": false
+        },
+        {
+          "text": "A Aroer, a Nebo y a Baal-meón",
+          "isCorrect": false
+        },
+        {
+          "text": "A Halad, a Habor, a Ara y al río de Gozán",
+          "isCorrect": true
+        },
+        {
+          "text": "A Galaad, a Salca y a Sarón",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "2 Reyes Quiz bíblico - Capítulo 7",
+  "description": "Diez preguntas sobre 2 Reyes 7: la palabra de Eliseo sobre la harina y la cebada, los cuatro leprosos a la puerta y la huida del campo de los Siros.",
+  "slug": "2-kings-quiz-part-7",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué anunció Eliseo que pasaría al día siguiente a la puerta de Samaria?",
+      "explanation": "Eliseo dijo de parte de Jehová que al día siguiente, a aquellas horas, valdría el seah de flor de harina un siclo y dos seah de cebada un siclo.",
+      "bibleReference": "2 Reyes 7:1",
+      "answers": [
+        {
+          "text": "Que el rey de Siria moriría en su tienda",
+          "isCorrect": false
+        },
+        {
+          "text": "Que un seah de flor de harina valdría un siclo",
+          "isCorrect": true
+        },
+        {
+          "text": "Que caería fuego del cielo sobre el campo",
+          "isCorrect": false
+        },
+        {
+          "text": "Que el hambre duraría todavía siete años",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le respondió Eliseo al príncipe que dudó de su palabra?",
+      "explanation": "Al príncipe que preguntó si eso sería aunque Jehová hiciese ventanas en el cielo, Eliseo dijo que lo vería con sus ojos, mas no comería de ello.",
+      "bibleReference": "2 Reyes 7:2",
+      "answers": [
+        {
+          "text": "Que moriría de hambre en la ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "Que sería el primero en comer",
+          "isCorrect": false
+        },
+        {
+          "text": "Que lo vería con sus ojos, mas no comería de ello",
+          "isCorrect": true
+        },
+        {
+          "text": "Que el rey lo pondría a la puerta",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos hombres leprosos había a la entrada de la puerta?",
+      "explanation": "Había cuatro hombres leprosos a la entrada de la puerta, y se dijeron el uno al otro: ¿Para qué nos estamos aquí hasta que muramos?",
+      "bibleReference": "2 Reyes 7:3",
+      "answers": [
+        {
+          "text": "Cuatro",
+          "isCorrect": true
+        },
+        {
+          "text": "Dos",
+          "isCorrect": false
+        },
+        {
+          "text": "Siete",
+          "isCorrect": false
+        },
+        {
+          "text": "Cincuenta",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿por qué huyeron los Siros de su campamento?",
+      "explanation": "El Señor había hecho que en el campo de los Siros se oyese estruendo de carros, ruido de caballos y estrépito de grande ejército, y huyeron por salvar las vidas.",
+      "bibleReference": "2 Reyes 7:6",
+      "answers": [
+        {
+          "text": "Porque el rey de Israel los cercó de noche",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque hubo grande hambre en el campo",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque los leprosos les dieron voces",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque oyeron estruendo de carros y de caballos",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿A quiénes creyeron los Siros que el rey de Israel había pagado contra ellos?",
+      "explanation": "Los Siros se dijeron unos a otros que el rey de Israel había pagado contra ellos a los reyes de los Hetheos y a los reyes de los Egipcios.",
+      "bibleReference": "2 Reyes 7:6",
+      "answers": [
+        {
+          "text": "A los reyes de Judá y de Idumea",
+          "isCorrect": false
+        },
+        {
+          "text": "A los capitanes de los carros de Samaria",
+          "isCorrect": false
+        },
+        {
+          "text": "A los reyes de los Hetheos y de los Egipcios",
+          "isCorrect": true
+        },
+        {
+          "text": "A los reyes de Moab y de Ecrón",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hicieron primero los leprosos al llegar a las tiendas de los Siros?",
+      "explanation": "Los leprosos entraron en una tienda, comieron y bebieron, tomaron plata, oro y vestidos, y lo fueron a esconder.",
+      "bibleReference": "2 Reyes 7:8",
+      "answers": [
+        {
+          "text": "Dieron aviso a los guardas de la puerta",
+          "isCorrect": false
+        },
+        {
+          "text": "Comieron y bebieron y escondieron plata, oro y vestidos",
+          "isCorrect": true
+        },
+        {
+          "text": "Persiguieron a los Siros hasta el Jordán",
+          "isCorrect": false
+        },
+        {
+          "text": "Quemaron las tiendas del campamento",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué decidieron los leprosos ir a dar la nueva en casa del rey?",
+      "explanation": "Se dijeron el uno al otro que no hacían bien, porque aquel día era día de buena nueva y ellos callaban.",
+      "bibleReference": "2 Reyes 7:9",
+      "answers": [
+        {
+          "text": "Porque tenían miedo de los Siros",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque el rey los había enviado",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque querían repartir el botín",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque era día de buena nueva y ellos callaban",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué sospechó el rey cuando le llegó la noticia?",
+      "explanation": "El rey dijo a sus siervos que los Siros, sabiendo que tenían hambre, se habían escondido en el campo para tomarlos vivos al salir de la ciudad.",
+      "bibleReference": "2 Reyes 7:12",
+      "answers": [
+        {
+          "text": "Que los Siros se escondían para tomarlos vivos",
+          "isCorrect": true
+        },
+        {
+          "text": "Que los leprosos habían robado las tiendas",
+          "isCorrect": false
+        },
+        {
+          "text": "Que el profeta se había equivocado",
+          "isCorrect": false
+        },
+        {
+          "text": "Que Jehová había enviado fuego del cielo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué encontraron los enviados por el camino hasta el Jordán?",
+      "explanation": "Los enviados siguieron a los Siros hasta el Jordán y todo el camino estaba lleno de vestidos y enseres que los Siros habían arrojado con la premura.",
+      "bibleReference": "2 Reyes 7:15",
+      "answers": [
+        {
+          "text": "Los cuerpos de los Siros muertos",
+          "isCorrect": false
+        },
+        {
+          "text": "Caballos y asnos atados a las tiendas",
+          "isCorrect": false
+        },
+        {
+          "text": "Vestidos y enseres que los Siros habían arrojado",
+          "isCorrect": true
+        },
+        {
+          "text": "Las tiendas quemadas del campamento",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le ocurrió al príncipe a quien el rey puso a la puerta?",
+      "explanation": "El pueblo lo atropelló a la entrada y murió, conforme a lo que había dicho el varón de Dios.",
+      "bibleReference": "2 Reyes 7:17",
+      "answers": [
+        {
+          "text": "El pueblo lo atropelló y murió",
+          "isCorrect": true
+        },
+        {
+          "text": "Fue el primero en comprar harina",
+          "isCorrect": false
+        },
+        {
+          "text": "Huyó al campo de los Siros",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo encerraron en la cárcel",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "title": "1 Samuel Quiz bíblico - Capítulo 13",
+  "description": "Diez preguntas sobre 1 Samuel 13: los tres mil escogidos, el holocausto de Saúl en Gilgal, la reprensión de Samuel y la falta de herreros en Israel.",
+  "slug": "1-samuel-quiz-part-13",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cuántos hombres escogió Saúl de Israel y cómo se repartieron?",
+      "explanation": "Escogió tres mil de Israel: dos mil estuvieron con Saúl en Michmas y en el monte de Beth-el, y mil estuvieron con Jonathán en Gabaa de Benjamín.",
+      "bibleReference": "1 Samuel 13:2",
+      "answers": [
+        { "text": "Seis mil: tres mil con cada uno de ellos", "isCorrect": false },
+        { "text": "Treinta mil, todos con Saúl en Michmas", "isCorrect": false },
+        { "text": "Seiscientos, repartidos en tres escuadrones", "isCorrect": false },
+        { "text": "Tres mil: dos mil con Saúl y mil con Jonathán", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué hirió Jonathán, de modo que los filisteos lo oyeron?",
+      "explanation": "Jonathán hirió la guarnición de los filisteos que había en el collado, y los filisteos lo oyeron; entonces Saúl hizo tocar trompetas por toda la tierra.",
+      "bibleReference": "1 Samuel 13:3",
+      "answers": [
+        { "text": "El campo de los filisteos en Michmas", "isCorrect": false },
+        { "text": "La guarnición de los filisteos en el collado", "isCorrect": true },
+        { "text": "La ciudad de Gabaa de Benjamín", "isCorrect": false },
+        { "text": "Los escuadrones que iban a Beth-oron", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuántos carros y cuántos caballos juntaron los filisteos para pelear con Israel?",
+      "explanation": "Los filisteos se juntaron para pelear con Israel con treinta mil carros y seis mil caballos, y pueblo como la arena que está a la orilla de la mar en multitud.",
+      "bibleReference": "1 Samuel 13:5",
+      "answers": [
+        { "text": "Treinta mil carros y seis mil caballos", "isCorrect": true },
+        { "text": "Tres mil carros y seiscientos caballos", "isCorrect": false },
+        { "text": "Seis mil carros y treinta mil caballos", "isCorrect": false },
+        { "text": "Trescientos carros y treinta caballos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Dónde asentaron campo los filisteos cuando subieron?",
+      "explanation": "Subieron y asentaron campo en Michmas, al oriente de Beth-aven.",
+      "bibleReference": "1 Samuel 13:5",
+      "answers": [
+        { "text": "En Gilgal, junto al Jordán", "isCorrect": false },
+        { "text": "En el collado de Gabaa", "isCorrect": false },
+        { "text": "En Michmas, al oriente de Beth-aven", "isCorrect": true },
+        { "text": "En el valle de Seboim", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Dónde se escondió el pueblo de Israel al verse puesto en estrecho?",
+      "explanation": "Los hombres de Israel, viéndose puestos en estrecho, se escondieron en cuevas, en fosos, en peñascos, en rocas y en cisternas.",
+      "bibleReference": "1 Samuel 13:6",
+      "answers": [
+        { "text": "En las ciudades fuertes de Judá", "isCorrect": false },
+        { "text": "En cuevas, fosos, peñascos, rocas y cisternas", "isCorrect": true },
+        { "text": "En el monte de Beth-el y en Gabaa", "isCorrect": false },
+        { "text": "En las cuevas de Gilgal y de Michmas", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Saúl después de esperar siete días sin que Samuel llegase a Gilgal?",
+      "explanation": "Saúl esperó siete días conforme al plazo que Samuel había dicho; como Samuel no venía y el pueblo se le desertaba, mandó traer el holocausto y lo ofreció.",
+      "bibleReference": "1 Samuel 13:8-9",
+      "answers": [
+        { "text": "Ofreció él mismo el holocausto", "isCorrect": true },
+        { "text": "Salió a pelear contra Michmas", "isCorrect": false },
+        { "text": "Envió mensajeros a buscar a Samuel", "isCorrect": false },
+        { "text": "Pasó el Jordán a la tierra de Gad", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué le dijo Samuel a Saúl cuando supo lo que había hecho?",
+      "explanation": "Samuel le dijo que había hecho locamente y que no había guardado el mandamiento de Jehová su Dios, que él le había intimado.",
+      "bibleReference": "1 Samuel 13:13",
+      "answers": [
+        { "text": "Bien has hecho en implorar el favor de Jehová", "isCorrect": false },
+        { "text": "Espera aún siete días más en Gilgal", "isCorrect": false },
+        { "text": "Sube conmigo a Gabaa de Benjamín", "isCorrect": false },
+        { "text": "Locamente has hecho; no guardaste el mandamiento", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Samuel acerca del reino de Saúl y del varón que Jehová se había buscado?",
+      "explanation": "Samuel dijo que su reino no sería durable, y que Jehová se había buscado un varón según su corazón, al cual había mandado que fuese capitán sobre su pueblo.",
+      "bibleReference": "1 Samuel 13:14",
+      "answers": [
+        { "text": "Que su reino será confirmado para siempre", "isCorrect": false },
+        { "text": "Que reinará sobre Israel cuarenta años", "isCorrect": false },
+        { "text": "Que su reino no será durable", "isCorrect": true },
+        { "text": "Que su hijo Jonathán reinará tras él", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuánta gente contó Saúl que se hallaba con él después de que Samuel subió de Gilgal?",
+      "explanation": "Samuel se levantó y subió de Gilgal a Gabaa de Benjamín, y Saúl contó la gente que se hallaba con él: como seiscientos hombres.",
+      "bibleReference": "1 Samuel 13:15",
+      "answers": [
+        { "text": "Como seiscientos hombres", "isCorrect": true },
+        { "text": "Como tres mil hombres", "isCorrect": false },
+        { "text": "Como treinta mil hombres", "isCorrect": false },
+        { "text": "Como seis mil hombres", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Por qué no se hallaba herrero en toda la tierra de Israel?",
+      "explanation": "En toda la tierra de Israel no se hallaba herrero, porque los filisteos habían dicho que así los hebreos no harían espada ni lanza.",
+      "bibleReference": "1 Samuel 13:19",
+      "answers": [
+        { "text": "Porque todos los herreros habían muerto", "isCorrect": false },
+        { "text": "Para que los hebreos no hiciesen espada ni lanza", "isCorrect": true },
+        { "text": "Porque Saúl lo había prohibido en Gilgal", "isCorrect": false },
+        { "text": "Porque no había hierro en aquella tierra", "isCorrect": false }
+      ]
+    }
+  ]
+}

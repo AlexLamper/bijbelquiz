@@ -1,0 +1,122 @@
+{
+  "title": "1 Samuel Quiz bíblico - Capítulo 10",
+  "description": "Diez preguntas sobre 1 Samuel 10: la unción de Saúl, las señales que Samuel le anunció y la suerte echada en Mizpa.",
+  "slug": "1-samuel-quiz-part-10",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué tomó Samuel y derramó sobre la cabeza de Saúl?",
+      "explanation": "Samuel tomó una ampolla de aceite, la derramó sobre su cabeza y lo besó, y le dijo que Jehová lo había ungido por capitán sobre su heredad.",
+      "bibleReference": "1 Samuel 10:1",
+      "answers": [
+        { "text": "Una vasija de vino", "isCorrect": false },
+        { "text": "Una ampolla de aceite", "isCorrect": true },
+        { "text": "Agua sacada del pozo", "isCorrect": false },
+        { "text": "Un cuerno de sangre", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué le dirían los dos hombres que hallaría junto al sepulcro de Rachêl?",
+      "explanation": "Samuel le dijo que junto al sepulcro de Rachêl, en Selsah, dos hombres le dirían que las asnas que había ido a buscar se habían hallado.",
+      "bibleReference": "1 Samuel 10:2",
+      "answers": [
+        { "text": "Que su padre había muerto en Selsah", "isCorrect": false },
+        { "text": "Que los filisteos subían contra Israel", "isCorrect": false },
+        { "text": "Que Samuel le esperaba en Gilgal", "isCorrect": false },
+        { "text": "Que las asnas se habían hallado", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué llevaban los tres hombres que le saldrían al encuentro en la campiña de Tabor?",
+      "explanation": "Tres hombres que subían a Dios en Beth-el le saldrían al encuentro llevando el uno tres cabritos, el otro tres tortas de pan y el tercero una vasija de vino.",
+      "bibleReference": "1 Samuel 10:3",
+      "answers": [
+        { "text": "Tres cabritos, tres tortas de pan y una vasija de vino", "isCorrect": true },
+        { "text": "Tres panes, un odre de vino y un cabrito", "isCorrect": false },
+        { "text": "Dos panes y la cuarta parte de un siclo", "isCorrect": false },
+        { "text": "Un epha de harina y tres becerros", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuántos panes dijo Samuel que le darían aquellos hombres después de saludarle?",
+      "explanation": "Samuel le dijo que, luego que le hubiesen saludado, le darían dos panes, los cuales tomaría de manos de ellos.",
+      "bibleReference": "1 Samuel 10:4",
+      "answers": [
+        { "text": "Cinco panes", "isCorrect": false },
+        { "text": "Tres panes", "isCorrect": false },
+        { "text": "Dos panes", "isCorrect": true },
+        { "text": "Diez panes", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué instrumentos iban delante de la compañía de profetas que descendía del alto?",
+      "explanation": "Encontraría una compañía de profetas que descendían del alto, y delante de ellos salterio, adufe, flauta y arpa, y ellos profetizando.",
+      "bibleReference": "1 Samuel 10:5",
+      "answers": [
+        { "text": "Trompetas, panderos y címbalos", "isCorrect": false },
+        { "text": "Salterio, adufe, flauta y arpa", "isCorrect": true },
+        { "text": "Arpa, bocina y pandero", "isCorrect": false },
+        { "text": "Flauta, cuerno y címbalo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué le dijo Samuel que le sucedería cuando el espíritu de Jehová le arrebatase?",
+      "explanation": "Le dijo que el espíritu de Jehová le arrebataría, que profetizaría con ellos y que sería mudado en otro hombre.",
+      "bibleReference": "1 Samuel 10:6",
+      "answers": [
+        { "text": "Profetizaría y sería mudado en otro hombre", "isCorrect": true },
+        { "text": "Juzgaría a Israel todos los días de su vida", "isCorrect": false },
+        { "text": "Sanaría a los enfermos de Beth-el", "isCorrect": false },
+        { "text": "Edificaría altar a Jehová en Gilgal", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuántos días debía esperar Saúl en Gilgal hasta que Samuel viniese a él?",
+      "explanation": "Samuel le dijo que bajase delante de él a Gilgal y que esperase siete días, hasta que él viniese y le enseñase lo que había de hacer.",
+      "bibleReference": "1 Samuel 10:8",
+      "answers": [
+        { "text": "Tres días", "isCorrect": false },
+        { "text": "Un día", "isCorrect": false },
+        { "text": "Veinte días", "isCorrect": false },
+        { "text": "Siete días", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Cuando Saúl fue tomado y le buscaron sin hallarlo, ¿qué respondió Jehová sobre dónde estaba?",
+      "explanation": "Preguntaron otra vez a Jehová si aquel varón había aún de venir allí, y Jehová respondió que estaba escondido entre el bagaje.",
+      "bibleReference": "1 Samuel 10:21-22",
+      "answers": [
+        { "text": "Que se había vuelto a su casa", "isCorrect": false },
+        { "text": "Que estaba en el alto con los profetas", "isCorrect": false },
+        { "text": "Que estaba escondido entre el bagaje", "isCorrect": true },
+        { "text": "Que había salido al campo tras los bueyes", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué clamó el pueblo con alegría cuando Samuel lo presentó como el elegido de Jehová?",
+      "explanation": "Samuel preguntó al pueblo si había visto al que Jehová había elegido, pues no había semejante a él en todo el pueblo, y el pueblo clamó con alegría: Viva el rey.",
+      "bibleReference": "1 Samuel 10:24",
+      "answers": [
+        { "text": "Viva el rey", "isCorrect": true },
+        { "text": "Contra Jehová hemos pecado", "isCorrect": false },
+        { "text": "Hasta aquí nos ayudó Jehová", "isCorrect": false },
+        { "text": "Danos rey que nos juzgue", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Samuel con el derecho del reino después de recitarlo al pueblo?",
+      "explanation": "Samuel recitó al pueblo el derecho del reino, lo escribió en un libro y guardó el libro delante de Jehová.",
+      "bibleReference": "1 Samuel 10:25",
+      "answers": [
+        { "text": "Lo recitó cada año en las ciudades de Israel", "isCorrect": false },
+        { "text": "Lo escribió en un libro y lo guardó delante de Jehová", "isCorrect": true },
+        { "text": "Lo entregó a los ancianos de Benjamín", "isCorrect": false },
+        { "text": "Lo puso en la casa de Saúl en Gabaa", "isCorrect": false }
+      ]
+    }
+  ]
+}

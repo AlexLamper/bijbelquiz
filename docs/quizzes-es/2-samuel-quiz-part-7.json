@@ -1,0 +1,242 @@
+{
+  "title": "2 Samuel Quiz bíblico - Capítulo 7",
+  "description": "Diez preguntas sobre 2 Samuel 7: David quiere edificar una casa, la palabra de Jehová por Nathán y la oración del rey.",
+  "slug": "2-samuel-quiz-part-7",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué le dijo el rey al profeta Nathán sobre su casa y sobre el arca de Dios?",
+      "explanation": "El rey dijo a Nathán: \"Mira ahora, yo moro en edificios de cedro, y el arca de Dios está entre cortinas\".",
+      "bibleReference": "2 Samuel 7:2",
+      "answers": [
+        {
+          "text": "Que el arca debía volver a Gabaa",
+          "isCorrect": false
+        },
+        {
+          "text": "Que su casa era pequeña y el arca grande",
+          "isCorrect": false
+        },
+        {
+          "text": "Que el arca estaba en casa de Obed-edom",
+          "isCorrect": false
+        },
+        {
+          "text": "Que él moraba en cedro y el arca estaba entre cortinas",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le respondió Nathán al rey la primera vez?",
+      "explanation": "Nathán dijo al rey: \"Anda, y haz todo lo que está en tu corazón, que Jehová es contigo\".",
+      "bibleReference": "2 Samuel 7:3",
+      "answers": [
+        {
+          "text": "Que hiciese lo que estaba en su corazón",
+          "isCorrect": true
+        },
+        {
+          "text": "Que esperase una visión de la noche",
+          "isCorrect": false
+        },
+        {
+          "text": "Que consultase primero a los ancianos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no edificase nada a Jehová",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pregunta mandó Jehová que Nathán dijese a su siervo David?",
+      "explanation": "Jehová dijo: \"Ve y di á mi siervo David: Así ha dicho Jehová: ¿Tú me has de edificar casa en que yo more?\".",
+      "bibleReference": "2 Samuel 7:5",
+      "answers": [
+        {
+          "text": "\"¿Dónde está tu misericordia?\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"¿Tú me has de edificar casa en que yo more?\"",
+          "isCorrect": true
+        },
+        {
+          "text": "\"¿Por qué temes a tus enemigos?\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"¿Quién te hizo rey sobre Israel?\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde dijo Jehová que había andado desde que sacó a los hijos de Israel de Egipto?",
+      "explanation": "Jehová dijo que ciertamente no había habitado en casas desde aquel día, sino que anduvo en tienda y en tabernáculo.",
+      "bibleReference": "2 Samuel 7:6",
+      "answers": [
+        {
+          "text": "En casas de cedro",
+          "isCorrect": false
+        },
+        {
+          "text": "En la fortaleza de Sión",
+          "isCorrect": false
+        },
+        {
+          "text": "En tienda y en tabernáculo",
+          "isCorrect": true
+        },
+        {
+          "text": "En el templo de Silo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De dónde dijo Jehová que había tomado a David para hacerlo príncipe sobre Israel?",
+      "explanation": "Jehová dijo: \"Yo te tomé de la majada, de detrás de las ovejas, para que fueses príncipe sobre mi pueblo\".",
+      "bibleReference": "2 Samuel 7:8",
+      "answers": [
+        {
+          "text": "De la majada, de detrás de las ovejas",
+          "isCorrect": true
+        },
+        {
+          "text": "De la casa de Saúl en Gabaa",
+          "isCorrect": false
+        },
+        {
+          "text": "De entre los ancianos de Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "Del campo de los Filisteos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quién edificaría casa al nombre de Jehová, según esta palabra?",
+      "explanation": "Jehová dijo que establecería la simiente de David después de él, la cual procedería de sus entrañas, y que ella edificaría casa a su nombre.",
+      "bibleReference": "2 Samuel 7:12-13",
+      "answers": [
+        {
+          "text": "David mismo, antes de morir",
+          "isCorrect": false
+        },
+        {
+          "text": "El profeta Nathán",
+          "isCorrect": false
+        },
+        {
+          "text": "Los ancianos de Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "La simiente de David, después de él",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Jehová que sería él para aquel hijo, y aquel hijo para él?",
+      "explanation": "Jehová dijo: \"Yo le seré á él padre, y él me será á mí hijo\".",
+      "bibleReference": "2 Samuel 7:14",
+      "answers": [
+        {
+          "text": "Le sería señor, y él su siervo",
+          "isCorrect": false
+        },
+        {
+          "text": "Le sería escudo, y él su soldado",
+          "isCorrect": false
+        },
+        {
+          "text": "Le sería padre, y él le sería hijo",
+          "isCorrect": true
+        },
+        {
+          "text": "Le sería pastor, y él su oveja",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De quién dijo Jehová que había apartado su misericordia?",
+      "explanation": "Jehová dijo que su misericordia no se apartaría de él, como la apartó de Saúl, al cual quitó de delante de David.",
+      "bibleReference": "2 Samuel 7:15",
+      "answers": [
+        {
+          "text": "De Abner hijo de Ner",
+          "isCorrect": false
+        },
+        {
+          "text": "De Saúl",
+          "isCorrect": true
+        },
+        {
+          "text": "De Is-boseth",
+          "isCorrect": false
+        },
+        {
+          "text": "De los hijos de Sarvia",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué preguntó David cuando entró y se puso delante de Jehová?",
+      "explanation": "David dijo: \"Señor Jehová, ¿quién soy yo, y qué es mi casa, para que tú me traigas hasta aquí?\".",
+      "bibleReference": "2 Samuel 7:18",
+      "answers": [
+        {
+          "text": "Por qué tardaba su reino",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuándo caerían sus enemigos",
+          "isCorrect": false
+        },
+        {
+          "text": "Quién edificaría la casa",
+          "isCorrect": false
+        },
+        {
+          "text": "Quién era él y qué era su casa",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pidió David al final de su oración?",
+      "explanation": "David pidió que Jehová bendijese la casa de su siervo para que permaneciese perpetuamente delante de él.",
+      "bibleReference": "2 Samuel 7:29",
+      "answers": [
+        {
+          "text": "Que bendijese la casa de su siervo para siempre",
+          "isCorrect": true
+        },
+        {
+          "text": "Que le diese licencia para edificar el templo",
+          "isCorrect": false
+        },
+        {
+          "text": "Que le quitase el reino a la casa de Saúl",
+          "isCorrect": false
+        },
+        {
+          "text": "Que le enviase otra visión por Nathán",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

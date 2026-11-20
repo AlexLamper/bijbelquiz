@@ -1,0 +1,122 @@
+{
+  "title": "1 Reyes Quiz bíblico - Capítulo 11",
+  "description": "Diez preguntas sobre 1 Reyes 11: las mujeres extranjeras de Salomón, los adversarios que Jehová le suscitó y la capa rota de Ahías.",
+  "slug": "1-kings-quiz-part-11",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Además de la hija de Faraón, ¿a quiénes amó el rey Salomón?",
+      "explanation": "Salomón amó, a más de la hija de Faraón, muchas mujeres extranjeras: a las de Moab, a las de Ammón, a las de Idumea, a las de Sidón, y a las Hetheas.",
+      "bibleReference": "1 Reyes 11:1",
+      "answers": [
+        { "text": "A las hijas de los sacerdotes de Jerusalem", "isCorrect": false },
+        { "text": "A las hijas de los principales de la tribu de Judá", "isCorrect": false },
+        { "text": "A muchas mujeres extranjeras de Moab, Ammón, Idumea y Sidón", "isCorrect": true },
+        { "text": "A las hijas de los reyes de Arabia y de Tharsis", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuántas mujeres reinas y cuántas concubinas tuvo Salomón?",
+      "explanation": "Tuvo setecientas mujeres reinas y trescientas concubinas, y sus mujeres torcieron su corazón.",
+      "bibleReference": "1 Reyes 11:3",
+      "answers": [
+        { "text": "Setecientas reinas y trescientas concubinas", "isCorrect": true },
+        { "text": "Trescientas reinas y setecientas concubinas", "isCorrect": false },
+        { "text": "Doce reinas y sesenta concubinas", "isCorrect": false },
+        { "text": "Cien reinas y cien concubinas", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿a qué dioses siguió Salomón?",
+      "explanation": "Salomón siguió a Astaroth, diosa de los Sidonios, y a Milcom, abominación de los Ammonitas.",
+      "bibleReference": "1 Reyes 11:5",
+      "answers": [
+        { "text": "A Baal de los Filisteos y a Dagón de Gaza", "isCorrect": false },
+        { "text": "A los becerros de oro de Beth-el y de Dan", "isCorrect": false },
+        { "text": "A los dioses de Egipto y a los de Babilonia", "isCorrect": false },
+        { "text": "A Astaroth de los Sidonios y a Milcom de los Ammonitas", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué edificó Salomón en el monte que está enfrente de Jerusalem?",
+      "explanation": "Entonces edificó Salomón un alto a Chêmos, abominación de Moab, en el monte que está enfrente de Jerusalem.",
+      "bibleReference": "1 Reyes 11:7",
+      "answers": [
+        { "text": "Una torre de guardia para los capitanes", "isCorrect": false },
+        { "text": "Un alto a Chêmos, abominación de Moab", "isCorrect": true },
+        { "text": "Un segundo templo para la casa de Jehová", "isCorrect": false },
+        { "text": "Un palacio nuevo para la hija de Faraón", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuántas veces dice el texto que Jehová se había aparecido a Salomón?",
+      "explanation": "Jehová se enojó contra Salomón porque su corazón estaba desviado de Jehová Dios de Israel, que le había aparecido dos veces.",
+      "bibleReference": "1 Reyes 11:9",
+      "answers": [
+        { "text": "Dos veces", "isCorrect": true },
+        { "text": "Siete veces", "isCorrect": false },
+        { "text": "Una sola vez", "isCorrect": false },
+        { "text": "Doce veces", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué anunció Jehová a Salomón sobre el momento en que rompería el reino?",
+      "explanation": "Jehová dijo que no lo haría en los días de Salomón, por amor de David su padre, sino que lo rompería de la mano de su hijo.",
+      "bibleReference": "1 Reyes 11:11-12",
+      "answers": [
+        { "text": "Que lo rompería aquel mismo año en Jerusalem", "isCorrect": false },
+        { "text": "Que lo haría cuando Salomón llegara a ser viejo", "isCorrect": false },
+        { "text": "Que no lo haría en sus días, sino de la mano de su hijo", "isCorrect": true },
+        { "text": "Que no lo rompería nunca, por amor de David", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cómo se llamaba el adversario idumeo, de la sangre real, que Jehová suscitó a Salomón?",
+      "explanation": "Jehová suscitó un adversario a Salomón, a Adad, idumeo, de la sangre real, el cual estaba en Edom.",
+      "bibleReference": "1 Reyes 11:14",
+      "answers": [
+        { "text": "Rezón", "isCorrect": false },
+        { "text": "Adad", "isCorrect": true },
+        { "text": "Adad-ezer", "isCorrect": false },
+        { "text": "Joab", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cómo se llamó el hijo que la hermana de Thaphnes parió a Adad?",
+      "explanation": "La hermana de Thaphnes le parió a su hijo Genubath, al cual destetó Thaphnes dentro de la casa de Faraón.",
+      "bibleReference": "1 Reyes 11:20",
+      "answers": [
+        { "text": "Eliada", "isCorrect": false },
+        { "text": "Segub", "isCorrect": false },
+        { "text": "Nabat", "isCorrect": false },
+        { "text": "Genubath", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué hizo el profeta Ahías Silonita con su capa nueva al encontrar a Jeroboam?",
+      "explanation": "Ahías trabó de la capa nueva que tenía sobre sí y la rompió en doce pedazos, y dijo a Jeroboam que tomara para sí los diez pedazos.",
+      "bibleReference": "1 Reyes 11:30-31",
+      "answers": [
+        { "text": "La echó sobre los hombros de Jeroboam", "isCorrect": false },
+        { "text": "La extendió en el camino delante del rey", "isCorrect": false },
+        { "text": "La rompió en doce pedazos y le dio diez", "isCorrect": true },
+        { "text": "La partió en dos y guardó una mitad", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Cuando Salomón procuró matarle, ¿a dónde huyó Jeroboam?",
+      "explanation": "Jeroboam se levantó y huyó a Egipto, a Sisac rey de Egipto, y estuvo allí hasta la muerte de Salomón.",
+      "bibleReference": "1 Reyes 11:40",
+      "answers": [
+        { "text": "A Damasco, con Rezón hijo de Eliada", "isCorrect": false },
+        { "text": "A Egipto, a Sisac rey de Egipto", "isCorrect": true },
+        { "text": "A Silo, a la casa del profeta Ahías", "isCorrect": false },
+        { "text": "A Edom, con los siervos de su padre", "isCorrect": false }
+      ]
+    }
+  ]
+}

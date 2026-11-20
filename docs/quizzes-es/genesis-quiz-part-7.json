@@ -32,8 +32,8 @@
       ]
     },
     {
-      "text": "¿Cuántos animales limpios debía tomar Noé?",
-      "explanation": "De todo animal limpio debía tomar de siete en siete, macho y su hembra; de los que no son limpios, dos.",
+      "text": "¿De cuántos en cuántos mandó Jehová a Noé tomar de todo animal limpio?",
+      "explanation": "Jehová le mandó tomar de todo animal limpio de siete en siete, el macho y su hembra.",
       "bibleReference": "Génesis 7:2",
       "answers": [
         {
@@ -41,7 +41,7 @@
           "isCorrect": true
         },
         {
-          "text": "De dos en dos",
+          "text": "De cinco en cinco",
           "isCorrect": false
         },
         {

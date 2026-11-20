@@ -1,0 +1,242 @@
+{
+  "title": "1 Reyes Quiz bíblico - Capítulo 4",
+  "description": "Diez preguntas sobre 1 Reyes 4: los príncipes y gobernadores de Salomón, la provisión de su casa y la fama de su sabiduría.",
+  "slug": "1-kings-quiz-part-4",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Quién estaba sobre el ejército de Salomón?",
+      "explanation": "El texto dice que Benaía hijo de Joiada era sobre el ejército, y que Sadoc y Abiathar eran los sacerdotes.",
+      "bibleReference": "1 Reyes 4:4",
+      "answers": [
+        {
+          "text": "Azarías hijo de Sadoc",
+          "isCorrect": false
+        },
+        {
+          "text": "Josaphat hijo de Ahilud",
+          "isCorrect": false
+        },
+        {
+          "text": "Adoniram hijo de Abda",
+          "isCorrect": false
+        },
+        {
+          "text": "Benaía hijo de Joiada",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos gobernadores tenía Salomón sobre todo Israel para mantener al rey y a su casa?",
+      "explanation": "Salomón tenía doce gobernadores sobre todo Israel, y cada uno estaba obligado a abastecer por un mes en el año.",
+      "bibleReference": "1 Reyes 4:7",
+      "answers": [
+        {
+          "text": "Diez",
+          "isCorrect": false
+        },
+        {
+          "text": "Doce",
+          "isCorrect": true
+        },
+        {
+          "text": "Treinta",
+          "isCorrect": false
+        },
+        {
+          "text": "Sesenta",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántas grandes ciudades con muro y cerraduras de bronce había en la provincia de Argob?",
+      "explanation": "El hijo de Geber tenía también la provincia de Argob, que era en Basán: sesenta grandes ciudades con muro y cerraduras de bronce.",
+      "bibleReference": "1 Reyes 4:13",
+      "answers": [
+        {
+          "text": "Sesenta",
+          "isCorrect": true
+        },
+        {
+          "text": "Dieciséis",
+          "isCorrect": false
+        },
+        {
+          "text": "Veinte",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuarenta",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué compara el texto la multitud de Judá e Israel?",
+      "explanation": "El texto dice que Judá e Israel eran muchos, como la arena que está junto a la mar en multitud, comiendo, bebiendo y alegrándose.",
+      "bibleReference": "1 Reyes 4:20",
+      "answers": [
+        {
+          "text": "Con las estrellas del cielo",
+          "isCorrect": false
+        },
+        {
+          "text": "Con la hierba del campo",
+          "isCorrect": false
+        },
+        {
+          "text": "Con la arena junto a la mar",
+          "isCorrect": true
+        },
+        {
+          "text": "Con las aves del cielo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos coros de flor de harina gastaba cada día la despensa de Salomón?",
+      "explanation": "La despensa de Salomón era cada día treinta coros de flor de harina y sesenta coros de harina.",
+      "bibleReference": "1 Reyes 4:22",
+      "answers": [
+        {
+          "text": "Sesenta",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuarenta",
+          "isCorrect": false
+        },
+        {
+          "text": "Setenta",
+          "isCorrect": false
+        },
+        {
+          "text": "Treinta",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántas ovejas se nombran en la provisión del rey?",
+      "explanation": "El texto nombra diez bueyes engordados, veinte bueyes de pasto y cien ovejas, sin los ciervos, cabras, búfalos y aves engordadas.",
+      "bibleReference": "1 Reyes 4:23",
+      "answers": [
+        {
+          "text": "Diez",
+          "isCorrect": false
+        },
+        {
+          "text": "Cien",
+          "isCorrect": true
+        },
+        {
+          "text": "Veinte",
+          "isCorrect": false
+        },
+        {
+          "text": "Mil",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo vivían Judá e Israel todos los días de Salomón, según el texto?",
+      "explanation": "El texto dice que Judá e Israel vivían seguros, cada uno debajo de su parra y debajo de su higuera, desde Dan hasta Beer-seba.",
+      "bibleReference": "1 Reyes 4:25",
+      "answers": [
+        {
+          "text": "Seguros, debajo de su parra y su higuera",
+          "isCorrect": true
+        },
+        {
+          "text": "Repartidos en doce campamentos",
+          "isCorrect": false
+        },
+        {
+          "text": "Encerrados en ciudades con muro",
+          "isCorrect": false
+        },
+        {
+          "text": "Esparcidos por la tierra de Basán",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos caballos tenía Salomón en sus caballerizas para sus carros?",
+      "explanation": "El texto dice que Salomón tenía cuarenta mil caballos en sus caballerizas para sus carros, y doce mil jinetes.",
+      "bibleReference": "1 Reyes 4:26",
+      "answers": [
+        {
+          "text": "Doce mil",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuatro mil",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuarenta mil",
+          "isCorrect": true
+        },
+        {
+          "text": "Veinte mil",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántas parábolas propuso Salomón?",
+      "explanation": "El texto dice que propuso tres mil parábolas y que sus versos fueron mil y cinco.",
+      "bibleReference": "1 Reyes 4:32",
+      "answers": [
+        {
+          "text": "Mil y cinco",
+          "isCorrect": false
+        },
+        {
+          "text": "Quinientas",
+          "isCorrect": false
+        },
+        {
+          "text": "Diez mil",
+          "isCorrect": false
+        },
+        {
+          "text": "Tres mil",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿De qué disertó Salomón, desde el cedro del Líbano hasta el hisopo que nace en la pared?",
+      "explanation": "El texto dice que disertó de los árboles, desde el cedro del Líbano hasta el hisopo que nace en la pared.",
+      "bibleReference": "1 Reyes 4:33",
+      "answers": [
+        {
+          "text": "De las estrellas",
+          "isCorrect": false
+        },
+        {
+          "text": "De los árboles",
+          "isCorrect": true
+        },
+        {
+          "text": "De las piedras",
+          "isCorrect": false
+        },
+        {
+          "text": "De los ríos",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

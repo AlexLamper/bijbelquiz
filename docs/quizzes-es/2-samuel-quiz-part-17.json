@@ -1,0 +1,242 @@
+{
+  "title": "2 Samuel Quiz bíblico - Capítulo 17",
+  "description": "Diez preguntas sobre 2 Samuel 17: los dos consejos dados a Absalom, los mensajeros escondidos en el pozo de Bahurim y el fin de Achitophel.",
+  "slug": "2-samuel-quiz-part-17",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué propuso Achitophel a Absalom al comienzo del capítulo?",
+      "explanation": "Achitophel dijo que escogería doce mil hombres y seguiría a David aquella noche, para dar sobre él cuando estuviera cansado, atemorizarlo y herir al rey solo.",
+      "bibleReference": "2 Samuel 17:1-2",
+      "answers": [
+        {
+          "text": "Escoger doce mil hombres y seguir a David aquella misma noche",
+          "isCorrect": true
+        },
+        {
+          "text": "Esperar en Jerusalem hasta que David volviera",
+          "isCorrect": false
+        },
+        {
+          "text": "Juntar a todo Israel desde Dan hasta Beer-seba",
+          "isCorrect": false
+        },
+        {
+          "text": "Enviar sogas para arrastrar la ciudad hasta el arroyo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué comparó Husai la amargura de ánimo de David y de los suyos?",
+      "explanation": "Husai dijo a Absalom que su padre y los suyos eran hombres valientes y estaban con amargura de ánimo, como la osa en el campo cuando le han quitado los hijos.",
+      "bibleReference": "2 Samuel 17:8",
+      "answers": [
+        {
+          "text": "Con el rocío que cae sobre la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Con la arena de la orilla de la mar",
+          "isCorrect": false
+        },
+        {
+          "text": "Con la osa en el campo a la que le han quitado los hijos",
+          "isCorrect": true
+        },
+        {
+          "text": "Con el corazón de un león",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué aconsejó Husai que hiciera Absalom con todo Israel?",
+      "explanation": "Husai aconsejó que todo Israel se juntara a Absalom, desde Dan hasta Beer-seba, en multitud como la arena que está a la orilla de la mar, y que Absalom en persona fuera a la batalla.",
+      "bibleReference": "2 Samuel 17:11",
+      "answers": [
+        {
+          "text": "Que enviara sólo a los ancianos de Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Que se juntara todo Israel y que él mismo fuera a la batalla",
+          "isCorrect": true
+        },
+        {
+          "text": "Que se quedara en la ciudad y enviara a Achitophel",
+          "isCorrect": false
+        },
+        {
+          "text": "Que esperara hasta que David pasara el Jordán",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuál de los dos consejos escogieron Absalom y todos los de Israel?",
+      "explanation": "Absalom y todos los de Israel dijeron que el consejo de Husai era mejor que el de Achitophel, porque Jehová había ordenado que el acertado consejo de Achitophel se frustrara.",
+      "bibleReference": "2 Samuel 17:14",
+      "answers": [
+        {
+          "text": "El de Achitophel",
+          "isCorrect": false
+        },
+        {
+          "text": "El de los ancianos de Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "El de Sadoc y Abiathar",
+          "isCorrect": false
+        },
+        {
+          "text": "El de Husai",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde estaban Jonathán y Ahimaas cuando una criada les llevó el aviso?",
+      "explanation": "Jonathán y Ahimaas estaban junto a la fuente de Rogel, porque no podían mostrarse viniendo a la ciudad, y una criada les dio el aviso para el rey David.",
+      "bibleReference": "2 Samuel 17:17",
+      "answers": [
+        {
+          "text": "En los campos del desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "En la casa del rey, en Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "Junto a la fuente de Rogel",
+          "isCorrect": true
+        },
+        {
+          "text": "Al otro lado del Jordán",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo escondió la mujer de Bahurim a los dos mensajeros?",
+      "explanation": "Los dos se metieron en un pozo que había en el patio de una casa de Bahurim, y la mujer de la casa extendió una manta sobre la boca del pozo y tendió sobre ella el grano trillado, y no se descubrió el asunto.",
+      "bibleReference": "2 Samuel 17:18-19",
+      "answers": [
+        {
+          "text": "Se metieron en un pozo y ella lo cubrió con una manta y grano trillado",
+          "isCorrect": true
+        },
+        {
+          "text": "Los escondió en una cueva del monte, cerca del camino",
+          "isCorrect": false
+        },
+        {
+          "text": "Los vistió como criados suyos",
+          "isCorrect": false
+        },
+        {
+          "text": "Los envió a pasar por el vado de las aguas de noche",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo David en cuanto recibió el aviso de los mensajeros?",
+      "explanation": "David se levantó con todo el pueblo que estaba con él y pasaron el Jordán antes que amaneciese; ni siquiera faltó uno que no pasase el Jordán.",
+      "bibleReference": "2 Samuel 17:21-22",
+      "answers": [
+        {
+          "text": "Se escondió en una cueva del desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "Envió a Husai de vuelta a Absalom",
+          "isCorrect": false
+        },
+        {
+          "text": "Volvió a Jerusalem con el arca de Dios",
+          "isCorrect": false
+        },
+        {
+          "text": "Pasó el Jordán con todo el pueblo antes que amaneciese",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Achitophel al ver que su consejo no se había puesto por obra?",
+      "explanation": "Achitophel enalbardó su asno, se fue a su casa en su ciudad y, después de disponer acerca de su casa, se ahorcó y murió, y fue sepultado en el sepulcro de su padre.",
+      "bibleReference": "2 Samuel 17:23",
+      "answers": [
+        {
+          "text": "Se pasó al lado de David",
+          "isCorrect": false
+        },
+        {
+          "text": "Se fue a su casa, se ahorcó y murió",
+          "isCorrect": true
+        },
+        {
+          "text": "Salió a la batalla al frente de doce mil hombres",
+          "isCorrect": false
+        },
+        {
+          "text": "Huyó a tierra de Galaad",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quién constituyó Absalom sobre el ejército en lugar de Joab?",
+      "explanation": "Absalom constituyó a Amasa sobre el ejército en lugar de Joab; Amasa era hijo de un varón de Israel llamado Itra.",
+      "bibleReference": "2 Samuel 17:25",
+      "answers": [
+        {
+          "text": "A Amasa",
+          "isCorrect": true
+        },
+        {
+          "text": "A Abisai hijo de Sarvia",
+          "isCorrect": false
+        },
+        {
+          "text": "A Ittai Getheo",
+          "isCorrect": false
+        },
+        {
+          "text": "A Machîr hijo de Ammiel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hicieron Sobi, Machîr y Barzillai cuando David llegó a Mahanaim?",
+      "explanation": "Trajeron a David y al pueblo camas, tazas, vasijas de barro, trigo, cebada, harina, grano tostado, habas, lentejas, garbanzos tostados, miel, manteca, ovejas y quesos de vacas, porque decían que aquel pueblo estaba hambriento y cansado.",
+      "bibleReference": "2 Samuel 17:27-29",
+      "answers": [
+        {
+          "text": "Le pidieron que volviera a Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "Se juntaron al campo de Absalom en Galaad",
+          "isCorrect": false
+        },
+        {
+          "text": "Le trajeron camas, vasijas y comida para él y para el pueblo",
+          "isCorrect": true
+        },
+        {
+          "text": "Le trajeron carros y caballos para la batalla",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

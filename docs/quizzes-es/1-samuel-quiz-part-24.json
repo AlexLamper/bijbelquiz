@@ -1,0 +1,242 @@
+{
+  "title": "1 Samuel Quiz bíblico - Capítulo 24",
+  "description": "Diez preguntas sobre 1 Samuel 24: la cueva de Engaddi, la orilla del manto cortada y el llanto de Saúl.",
+  "slug": "1-samuel-quiz-part-24",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Dónde habitó David al subir de allí, según el primer verso?",
+      "explanation": "David subió de allí y habitó en los parajes fuertes en Engaddi.",
+      "bibleReference": "1 Samuel 24:1",
+      "answers": [
+        {
+          "text": "En los parajes fuertes en Engaddi",
+          "isCorrect": true
+        },
+        {
+          "text": "En el desierto de Maón",
+          "isCorrect": false
+        },
+        {
+          "text": "En el bosque de Hareth",
+          "isCorrect": false
+        },
+        {
+          "text": "En la cueva de Adullam",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos hombres escogidos de todo Israel tomó Saúl para ir en busca de David?",
+      "explanation": "Saúl tomó tres mil hombres escogidos de todo Israel y fue en busca de David y de los suyos por las cumbres de los peñascos de las cabras monteses.",
+      "bibleReference": "1 Samuel 24:3",
+      "answers": [
+        {
+          "text": "Seiscientos hombres",
+          "isCorrect": false
+        },
+        {
+          "text": "Tres mil hombres",
+          "isCorrect": true
+        },
+        {
+          "text": "Cuatrocientos hombres",
+          "isCorrect": false
+        },
+        {
+          "text": "Diez mil hombres",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde estaban David y los suyos cuando Saúl entró en la cueva del camino?",
+      "explanation": "Saúl llegó a una majada de ovejas donde había una cueva y entró en ella a cubrir sus pies, y David y los suyos estaban a los lados de la cueva.",
+      "bibleReference": "1 Samuel 24:4",
+      "answers": [
+        {
+          "text": "En las cumbres de los peñascos",
+          "isCorrect": false
+        },
+        {
+          "text": "Fuera, junto a la majada de ovejas",
+          "isCorrect": false
+        },
+        {
+          "text": "A los lados de la cueva",
+          "isCorrect": true
+        },
+        {
+          "text": "Escondidos en el bosque",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo David calladamente en la cueva?",
+      "explanation": "David se levantó y cortó calladamente la orilla del manto de Saúl.",
+      "bibleReference": "1 Samuel 24:5",
+      "answers": [
+        {
+          "text": "Tomó la lanza de Saúl",
+          "isCorrect": false
+        },
+        {
+          "text": "Cortó la orilla del manto de Saúl",
+          "isCorrect": true
+        },
+        {
+          "text": "Salió de la cueva sin ser visto",
+          "isCorrect": false
+        },
+        {
+          "text": "Puso una piedra en la entrada",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué dijo David a los suyos que no extendería su mano contra Saúl?",
+      "explanation": "David dijo que Jehová lo guardase de hacer tal cosa contra su señor, porque él es el ungido de Jehová.",
+      "bibleReference": "1 Samuel 24:7",
+      "answers": [
+        {
+          "text": "Porque es el ungido de Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque es el padre de Jonathán",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque traía tres mil hombres consigo",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque había jurado por Jehová no matarlo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo David al salir de la cueva detrás de Saúl?",
+      "explanation": "David dió voces a las espaldas de Saúl diciendo: \"¡Mi señor el rey!\", y cuando Saúl miró atrás, David inclinó su rostro a tierra e hizo reverencia.",
+      "bibleReference": "1 Samuel 24:9",
+      "answers": [
+        {
+          "text": "Huyó por el otro lado del monte",
+          "isCorrect": false
+        },
+        {
+          "text": "Mandó a los suyos que lo cercasen",
+          "isCorrect": false
+        },
+        {
+          "text": "Le dio voces y le hizo reverencia",
+          "isCorrect": true
+        },
+        {
+          "text": "Le mostró la lanza que le había quitado",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué proverbio de los antiguos citó David?",
+      "explanation": "David dijo: \"Como dice el proverbio de los antiguos: De los impíos saldrá la impiedad\", y añadió que su mano no sería contra Saúl.",
+      "bibleReference": "1 Samuel 24:14",
+      "answers": [
+        {
+          "text": "\"Jehová no salva con espada y lanza\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"¿También Saúl entre los profetas?\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"El que busca mi vida buscará la tuya\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"De los impíos saldrá la impiedad\"",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué dos cosas se comparó David al preguntar tras quién había salido el rey de Israel?",
+      "explanation": "David preguntó: \"¿Tras quién ha salido el rey de Israel? ¿á quién persigues? ¿á un perro muerto? ¿á una pulga?\"",
+      "bibleReference": "1 Samuel 24:15",
+      "answers": [
+        {
+          "text": "Con un perro muerto y una pulga",
+          "isCorrect": true
+        },
+        {
+          "text": "Con un cordero y un oso",
+          "isCorrect": false
+        },
+        {
+          "text": "Con una saeta y una piedra",
+          "isCorrect": false
+        },
+        {
+          "text": "Con un siervo pobre y un extranjero",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Saúl a David después de oír aquellas palabras y alzar su voz llorando?",
+      "explanation": "Saúl preguntó si no era aquella la voz de David, lloró, y le dijo que David era más justo que él, porque le había pagado con bien habiéndole él pagado con mal.",
+      "bibleReference": "1 Samuel 24:17-18",
+      "answers": [
+        {
+          "text": "Que ya no era su yerno",
+          "isCorrect": false
+        },
+        {
+          "text": "Que David era más justo que él",
+          "isCorrect": true
+        },
+        {
+          "text": "Que volvería a perseguirlo al día siguiente",
+          "isCorrect": false
+        },
+        {
+          "text": "Que le daría la mitad de su reino",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pidió Saúl que David le jurase por Jehová al final del capítulo?",
+      "explanation": "Saúl pidió que David jurase por Jehová que no cortaría su simiente después de él ni raería su nombre de la casa de su padre, y David se lo juró.",
+      "bibleReference": "1 Samuel 24:22",
+      "answers": [
+        {
+          "text": "Que volvería a comer a su mesa en la nueva luna",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no pelearía más contra los Filisteos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no entregaría Engaddi a los enemigos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no cortaría su simiente ni raería su nombre",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

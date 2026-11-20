@@ -1,0 +1,122 @@
+{
+  "title": "1 Samuel Quiz bíblico - Capítulo 8",
+  "description": "Diez preguntas sobre 1 Samuel 8: los hijos de Samuel como jueces, la petición de un rey y el derecho del rey que les fue declarado.",
+  "slug": "1-samuel-quiz-part-8",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cómo se llamaban los dos hijos que Samuel puso por jueces sobre Israel?",
+      "explanation": "El nombre de su hijo primogénito fue Joel, y el nombre del segundo, Abia.",
+      "bibleReference": "1 Samuel 8:1-2",
+      "answers": [
+        { "text": "Ophni y Phinees", "isCorrect": false },
+        { "text": "Eleazar y Abia", "isCorrect": false },
+        { "text": "Joel y Cis", "isCorrect": false },
+        { "text": "Joel y Abia", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿En qué lugar fueron jueces los hijos de Samuel?",
+      "explanation": "Los hijos de Samuel fueron jueces en Beer-sebah.",
+      "bibleReference": "1 Samuel 8:2",
+      "answers": [
+        { "text": "En Mizpa de Benjamín", "isCorrect": false },
+        { "text": "En Beer-sebah", "isCorrect": true },
+        { "text": "En Silo, delante del arca", "isCorrect": false },
+        { "text": "En Gilgal y en Beth-el", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué hicieron los hijos de Samuel en lugar de andar por los caminos de su padre?",
+      "explanation": "No anduvieron por los caminos de su padre, antes se ladearon tras la avaricia, recibiendo cohecho y pervirtiendo el derecho.",
+      "bibleReference": "1 Samuel 8:3",
+      "answers": [
+        { "text": "Se ladearon tras la avaricia y pervirtieron el derecho", "isCorrect": true },
+        { "text": "Anduvieron por los caminos de su padre Samuel", "isCorrect": false },
+        { "text": "Dejaron el juicio y se fueron a Beer-sebah", "isCorrect": false },
+        { "text": "Sirvieron a los dioses ajenos en Rama", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué pidieron a Samuel los ancianos de Israel que vinieron a él en Rama?",
+      "explanation": "Le dijeron que había envejecido y que sus hijos no andaban por sus caminos, y le pidieron que les constituyese un rey que los juzgase, como todas las gentes.",
+      "bibleReference": "1 Samuel 8:4-5",
+      "answers": [
+        { "text": "Que volviese a juzgar él mismo a Israel", "isCorrect": false },
+        { "text": "Que quitase a sus hijos del oficio de jueces", "isCorrect": false },
+        { "text": "Que les constituyese un rey que los juzgase", "isCorrect": true },
+        { "text": "Que subiese a pelear contra los filisteos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Samuel cuando le descontentó la palabra del pueblo?",
+      "explanation": "Descontentó a Samuel la palabra que dijeron, pidiéndole un rey que los juzgase, y Samuel oró a Jehová.",
+      "bibleReference": "1 Samuel 8:6",
+      "answers": [
+        { "text": "Despidió a los ancianos sin responderles", "isCorrect": false },
+        { "text": "Oró a Jehová", "isCorrect": true },
+        { "text": "Puso luto y ayunó aquel día", "isCorrect": false },
+        { "text": "Ungió luego a un rey sobre ellos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué le dijo Jehová a Samuel acerca de a quién había desechado el pueblo?",
+      "explanation": "Jehová le dijo que oyese la voz del pueblo en todo lo que le dijeren, porque no le habían desechado a él, sino a Jehová, para que no reinase sobre ellos.",
+      "bibleReference": "1 Samuel 8:7",
+      "answers": [
+        { "text": "Que no habían desechado a Samuel, sino a Jehová", "isCorrect": true },
+        { "text": "Que habían desechado a Samuel y a sus hijos", "isCorrect": false },
+        { "text": "Que no habían desechado a nadie en Israel", "isCorrect": false },
+        { "text": "Que habían desechado a los ancianos de Rama", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el derecho del rey, ¿qué haría el rey con los hijos del pueblo?",
+      "explanation": "Samuel declaró que el rey tomaría sus hijos y los pondría en sus carros y en su gente de a caballo, para que corriesen delante de su carro.",
+      "bibleReference": "1 Samuel 8:11",
+      "answers": [
+        { "text": "Los enviaría a servir en la casa de Jehová", "isCorrect": false },
+        { "text": "Los haría perfumadores y amasadores", "isCorrect": false },
+        { "text": "Los daría por siervos a los filisteos", "isCorrect": false },
+        { "text": "Los pondría en sus carros y en su gente de a caballo", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Para qué oficios dijo Samuel que el rey tomaría a las hijas del pueblo?",
+      "explanation": "Samuel dijo que el rey tomaría también sus hijas para que fuesen perfumadoras, cocineras y amasadoras.",
+      "bibleReference": "1 Samuel 8:13",
+      "answers": [
+        { "text": "Segadoras, hilanderas y tejedoras", "isCorrect": false },
+        { "text": "Siervas de sus eunucos y de sus siervos", "isCorrect": false },
+        { "text": "Perfumadoras, cocineras y amasadoras", "isCorrect": true },
+        { "text": "Cantoras, porteras y aguadoras", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Samuel que el rey haría con el rebaño, y en qué quedaría el pueblo?",
+      "explanation": "Samuel dijo que el rey diezmaría también su rebaño, y que ellos serían sus siervos.",
+      "bibleReference": "1 Samuel 8:17",
+      "answers": [
+        { "text": "Diezmaría el rebaño y ellos serían sus siervos", "isCorrect": true },
+        { "text": "Tomaría todo el rebaño y ellos quedarían libres", "isCorrect": false },
+        { "text": "Daría el rebaño a los sacerdotes de Israel", "isCorrect": false },
+        { "text": "Dejaría el rebaño y tomaría solo las viñas", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Después de que Jehová le mandó poner rey, ¿qué dijo Samuel a los varones de Israel?",
+      "explanation": "Jehová dijo a Samuel que oyese su voz y pusiese rey sobre ellos; entonces Samuel dijo a los varones de Israel que se fuesen cada uno a su ciudad.",
+      "bibleReference": "1 Samuel 8:22",
+      "answers": [
+        { "text": "Que se juntasen todos en Mizpa", "isCorrect": false },
+        { "text": "Idos cada uno a su ciudad", "isCorrect": true },
+        { "text": "Que escogiesen ellos mismos un rey", "isCorrect": false },
+        { "text": "Que esperasen allí hasta la mañana", "isCorrect": false }
+      ]
+    }
+  ]
+}

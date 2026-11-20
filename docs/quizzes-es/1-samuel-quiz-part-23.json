@@ -1,0 +1,242 @@
+{
+  "title": "1 Samuel Quiz bíblico - Capítulo 23",
+  "description": "Diez preguntas sobre 1 Samuel 23: la liberación de Keila, el ephod de Abiathar y la persecución en el desierto de Maón.",
+  "slug": "1-samuel-quiz-part-23",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué aviso dieron a David al comienzo del capítulo?",
+      "explanation": "Dieron aviso a David de que los Filisteos combatían a Keila y robaban las eras.",
+      "bibleReference": "1 Samuel 23:1",
+      "answers": [
+        {
+          "text": "Que los Filisteos combatían a Keila y robaban las eras",
+          "isCorrect": true
+        },
+        {
+          "text": "Que Saúl había muerto a los sacerdotes de Nob",
+          "isCorrect": false
+        },
+        {
+          "text": "Que los de Ziph lo habían descubierto al rey",
+          "isCorrect": false
+        },
+        {
+          "text": "Que los Filisteos habían tomado el collado de Hachîla",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le respondió Jehová cuando David le consultó si debía ir a herir a los Filisteos?",
+      "explanation": "Jehová respondió a David: \"Ve, hiere á los Filisteos, y libra á Keila.\"",
+      "bibleReference": "1 Samuel 23:2",
+      "answers": [
+        {
+          "text": "Que esperase hasta que Saúl se volviese",
+          "isCorrect": false
+        },
+        {
+          "text": "Que fuese a herir a los Filisteos y librase a Keila",
+          "isCorrect": true
+        },
+        {
+          "text": "Que se quedase en la tierra de Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "Que subiese primero al desierto de Ziph",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijeron a David los hombres que estaban con él?",
+      "explanation": "Los que estaban con David le dijeron que allí en Judá ya estaban con miedo, y cuánto más si fuesen a Keila contra el ejército de los Filisteos.",
+      "bibleReference": "1 Samuel 23:3",
+      "answers": [
+        {
+          "text": "Que irían con él sin temor ninguno",
+          "isCorrect": false
+        },
+        {
+          "text": "Que primero se consultase otra vez a Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "Que ya tenían miedo allí en Judá, cuánto más en Keila",
+          "isCorrect": true
+        },
+        {
+          "text": "Que se volviesen a la cueva de Adullam",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué trajo consigo Abiathar hijo de Ahimelech cuando huyó a David a Keila?",
+      "explanation": "Cuando Abiathar hijo de Ahimelech huyó a David a Keila, vino también con él el ephod.",
+      "bibleReference": "1 Samuel 23:6",
+      "answers": [
+        {
+          "text": "El ephod",
+          "isCorrect": true
+        },
+        {
+          "text": "La espada de Goliath",
+          "isCorrect": false
+        },
+        {
+          "text": "El arca de Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "Los panes de la proposición",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pensó Saúl cuando le dijeron que David había venido a Keila?",
+      "explanation": "Saúl dijo que Dios lo había traído a sus manos, porque David estaba encerrado, habiéndose metido en una ciudad con puertas y cerraduras.",
+      "bibleReference": "1 Samuel 23:7",
+      "answers": [
+        {
+          "text": "Que David se le había escapado otra vez",
+          "isCorrect": false
+        },
+        {
+          "text": "Que los de Keila lo defenderían",
+          "isCorrect": false
+        },
+        {
+          "text": "Que Dios lo había traído a sus manos",
+          "isCorrect": true
+        },
+        {
+          "text": "Que tendría que dejar de perseguirlo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijeron a Saúl los de Ziph que subieron a Gabaa?",
+      "explanation": "Los de Ziph subieron a decir a Saúl en Gabaa que David estaba escondido en su tierra, en las peñas del bosque, en el collado de Hachîla, que está a la mano derecha del desierto.",
+      "bibleReference": "1 Samuel 23:19",
+      "answers": [
+        {
+          "text": "Que David estaba escondido en el collado de Hachîla",
+          "isCorrect": true
+        },
+        {
+          "text": "Que David había salido de la tierra de Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "Que David se había metido en Keila con los suyos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que David estaba en el bosque de Hareth con Gad",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué respondió Jehová cuando David preguntó si los vecinos de Keila lo entregarían en manos de Saúl?",
+      "explanation": "David preguntó si los vecinos de Keila lo entregarían a él y a sus hombres en manos de Saúl, y Jehová respondió: \"Te entregarán.\"",
+      "bibleReference": "1 Samuel 23:12",
+      "answers": [
+        {
+          "text": "\"No los temas\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Te defenderán\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"No descenderá\"",
+          "isCorrect": false
+        },
+        {
+          "text": "\"Te entregarán\"",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos hombres tenía David cuando salió de Keila?",
+      "explanation": "David se levantó con sus hombres, que eran como seiscientos, y salieron de Keila y se fueron de una parte a otra.",
+      "bibleReference": "1 Samuel 23:13",
+      "answers": [
+        {
+          "text": "Como doscientos",
+          "isCorrect": false
+        },
+        {
+          "text": "Como tres mil",
+          "isCorrect": false
+        },
+        {
+          "text": "Como cuatrocientos",
+          "isCorrect": false
+        },
+        {
+          "text": "Como seiscientos",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Jonathán a David cuando vino a él al bosque y confortó su mano en Dios?",
+      "explanation": "Jonathán le dijo que no temiese, que la mano de su padre Saúl no lo hallaría, que David reinaría sobre Israel y que él mismo sería segundo después de él.",
+      "bibleReference": "1 Samuel 23:16-17",
+      "answers": [
+        {
+          "text": "Que David reinaría sobre Israel y él sería segundo después de él",
+          "isCorrect": true
+        },
+        {
+          "text": "Que los dos reinarían juntos sobre Israel y Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "Que David debía volverse a casa de su padre en Beth-lehem",
+          "isCorrect": false
+        },
+        {
+          "text": "Que Saúl ya no buscaba su alma y podía salir del bosque",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué dejó Saúl de perseguir a David en el desierto de Maón?",
+      "explanation": "Vino un mensajero a Saúl diciéndole que fuese luego, porque los Filisteos habían hecho una irrupción en el país; por eso Saúl se volvió de perseguir a David y partió contra los Filisteos.",
+      "bibleReference": "1 Samuel 23:27-28",
+      "answers": [
+        {
+          "text": "Porque los de Ziph le dijeron que David no estaba allí",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque un mensajero le avisó de una irrupción de los Filisteos",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque Jonathán le rogó que no lo persiguiese más",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque su gente se cansó en las peñas del monte",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

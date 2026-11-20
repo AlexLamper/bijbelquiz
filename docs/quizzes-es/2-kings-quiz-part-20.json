@@ -1,0 +1,122 @@
+{
+  "title": "2 Reyes Quiz bíblico - Capítulo 20",
+  "description": "Diez preguntas sobre 2 Reyes 20: la enfermedad de Ezechîas, la sombra que volvió atrás y los enviados de Babilonia.",
+  "slug": "2-kings-quiz-part-20",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué le dijo Isaías a Ezechîas cuando cayó enfermo de muerte?",
+      "explanation": "Isaías le dijo: \"Jehová dice así: Dispón de tu casa, porque has de morir, y no vivirás\".",
+      "bibleReference": "2 Reyes 20:1",
+      "answers": [
+        { "text": "Que dispusiera de su casa, porque había de morir", "isCorrect": true },
+        { "text": "Que llamara a los ancianos de los sacerdotes", "isCorrect": false },
+        { "text": "Que enviara letras al rey de Babilonia", "isCorrect": false },
+        { "text": "Que repartiera sus tesoros entre el pueblo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Ezechîas al oír ese anuncio?",
+      "explanation": "Volvió su rostro a la pared y oró a Jehová, y lloró Ezechîas con gran lloro.",
+      "bibleReference": "2 Reyes 20:2-3",
+      "answers": [
+        { "text": "Rasgó sus vestidos y se cubrió de saco", "isCorrect": false },
+        { "text": "Mandó llamar a los ancianos de los sacerdotes", "isCorrect": false },
+        { "text": "Volvió su rostro a la pared, oró y lloró", "isCorrect": true },
+        { "text": "Salió a la mitad del patio tras el profeta", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según la palabra que Jehová mandó decir a Ezechîas, ¿qué había oído y visto?",
+      "explanation": "Jehová dijo: \"Yo he oído tu oración, y he visto tus lágrimas: he aquí yo te sano; al tercer día subirás á la casa de Jehová\".",
+      "bibleReference": "2 Reyes 20:5",
+      "answers": [
+        { "text": "La blasfemia de los siervos del rey de Asiria", "isCorrect": false },
+        { "text": "Su oración y sus lágrimas", "isCorrect": true },
+        { "text": "Las letras extendidas en el templo", "isCorrect": false },
+        { "text": "El clamor del pueblo sobre el muro", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuántos años añadió Jehová a los días de Ezechîas?",
+      "explanation": "Jehová dijo: \"Y añadiré á tus días quince años, y te libraré á ti y á esta ciudad de mano del rey de Asiria\".",
+      "bibleReference": "2 Reyes 20:6",
+      "answers": [
+        { "text": "Tres años", "isCorrect": false },
+        { "text": "Diez años", "isCorrect": false },
+        { "text": "Veinte años", "isCorrect": false },
+        { "text": "Quince años", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué mandó Isaías poner sobre la llaga del rey?",
+      "explanation": "Isaías dijo: \"Tomad masa de higos\", y tomándola la pusieron sobre la llaga, y sanó.",
+      "bibleReference": "2 Reyes 20:7",
+      "answers": [
+        { "text": "Masa de higos", "isCorrect": true },
+        { "text": "Preciosos ungüentos", "isCorrect": false },
+        { "text": "Aceite y miel", "isCorrect": false },
+        { "text": "Legumbre verde", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Entre las dos opciones que le dio Isaías, ¿qué señal escogió Ezechîas?",
+      "explanation": "Ezechîas respondió que era fácil cosa que la sombra declinase diez grados, y pidió que la sombra volviese atrás diez grados.",
+      "bibleReference": "2 Reyes 20:9-10",
+      "answers": [
+        { "text": "Que la sombra avanzara diez grados", "isCorrect": false },
+        { "text": "Que la sombra volviera atrás diez grados", "isCorrect": true },
+        { "text": "Que la sombra se detuviera todo el día", "isCorrect": false },
+        { "text": "Que el sol se oscureciera al tercer día", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿En qué hizo Jehová volver la sombra diez grados atrás?",
+      "explanation": "El profeta Isaías clamó a Jehová, e hizo volver la sombra por los grados que había descendido en el reloj de Achâz, diez grados atrás.",
+      "bibleReference": "2 Reyes 20:11",
+      "answers": [
+        { "text": "En la puerta más alta de la casa de Jehová", "isCorrect": false },
+        { "text": "En el conducto del estanque de arriba", "isCorrect": false },
+        { "text": "En los dos atrios del templo", "isCorrect": false },
+        { "text": "En el reloj de Achâz", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué les mostró Ezechîas a los enviados del rey de Babilonia?",
+      "explanation": "Les mostró toda la casa de las cosas preciosas, la plata, el oro, la especiería y los preciosos ungüentos, y la casa de sus armas, y todo lo que había en sus tesoros: nada quedó sin mostrar.",
+      "bibleReference": "2 Reyes 20:13",
+      "answers": [
+        { "text": "Solo el estanque y el conducto de la ciudad", "isCorrect": false },
+        { "text": "Solo la casa de Jehová y sus altares", "isCorrect": false },
+        { "text": "Todos sus tesoros y la casa de sus armas", "isCorrect": true },
+        { "text": "Las letras y los presentes que había recibido", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué anunció Isaías que sucedería con todo lo que había en la casa del rey?",
+      "explanation": "Isaías dijo que vendrían días en que todo lo que estaba en su casa, y todo lo que sus padres habían atesorado, sería llevado a Babilonia, sin quedar nada.",
+      "bibleReference": "2 Reyes 20:17",
+      "answers": [
+        { "text": "Que todo sería llevado a Babilonia", "isCorrect": true },
+        { "text": "Que todo sería quemado en el huerto del rey", "isCorrect": false },
+        { "text": "Que todo sería dado al rey de Asiria", "isCorrect": false },
+        { "text": "Que todo quedaría para sus hijos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Quién reinó en lugar de Ezechîas cuando él durmió con sus padres?",
+      "explanation": "Ezechîas durmió con sus padres y reinó en su lugar Manasés su hijo.",
+      "bibleReference": "2 Reyes 20:21",
+      "answers": [
+        { "text": "Amón su hijo", "isCorrect": false },
+        { "text": "Manasés su hijo", "isCorrect": true },
+        { "text": "Josías su hijo", "isCorrect": false },
+        { "text": "Achâz su padre", "isCorrect": false }
+      ]
+    }
+  ]
+}

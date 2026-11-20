@@ -1,0 +1,242 @@
+{
+  "title": "1 Crónicas Quiz bíblico - Capítulo 1",
+  "description": "Diez preguntas sobre 1 Crónicas 1: las descendencias desde Adam hasta los hijos de Abraham, y los reyes y duques de Edom.",
+  "slug": "1-chronicles-quiz-part-1",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": false,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿De quién eran hijos Gomer, Magog, Javán, Tubal, Mesec y Thiras?",
+      "explanation": "El texto dice: los hijos de Japhet fueron Gomer, Magog, Dadai, Javán, Tubal, Mesec y Thiras.",
+      "bibleReference": "1 Crónicas 1:5",
+      "answers": [
+        {
+          "text": "De Sem",
+          "isCorrect": false
+        },
+        {
+          "text": "De Japhet",
+          "isCorrect": true
+        },
+        {
+          "text": "De Châm",
+          "isCorrect": false
+        },
+        {
+          "text": "De Canaán",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿quién engendró a Nimrod, el que comenzó a ser poderoso en la tierra?",
+      "explanation": "Chûs engendró a Nimrod, y éste comenzó a ser poderoso en la tierra.",
+      "bibleReference": "1 Crónicas 1:10",
+      "answers": [
+        {
+          "text": "Canaán",
+          "isCorrect": false
+        },
+        {
+          "text": "Misraim",
+          "isCorrect": false
+        },
+        {
+          "text": "Châm",
+          "isCorrect": false
+        },
+        {
+          "text": "Chûs",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿De quiénes salieron los Filisteos y los Caphtoreos?",
+      "explanation": "El texto nombra a Phetrusim y Casluim y añade que de éstos salieron los Filisteos y los Caphtoreos.",
+      "bibleReference": "1 Crónicas 1:11-12",
+      "answers": [
+        {
+          "text": "De Phetrusim y Casluim",
+          "isCorrect": true
+        },
+        {
+          "text": "De Ludim y Ananim",
+          "isCorrect": false
+        },
+        {
+          "text": "De Laabim y Nephtuim",
+          "isCorrect": false
+        },
+        {
+          "text": "De Seba y Dedán",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quién fue el primogénito de Canaán?",
+      "explanation": "Canaán engendró a Sidón, su primogénito.",
+      "bibleReference": "1 Crónicas 1:13",
+      "answers": [
+        {
+          "text": "El Hetheo",
+          "isCorrect": false
+        },
+        {
+          "text": "El Jebuseo",
+          "isCorrect": false
+        },
+        {
+          "text": "Sidón",
+          "isCorrect": true
+        },
+        {
+          "text": "El Amorrheo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué uno de los dos hijos de Heber recibió el nombre de Peleg?",
+      "explanation": "A Heber le nacieron dos hijos: el uno se llamó Peleg, por cuanto en sus días fué dividida la tierra, y su hermano se llamó Joctán.",
+      "bibleReference": "1 Crónicas 1:19",
+      "answers": [
+        {
+          "text": "Porque fue el primogénito de su casa",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque en sus días fué dividida la tierra",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque nació en tierra de Edom",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque llegó a ser poderoso en la tierra",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿quiénes eran los hijos de Abraham?",
+      "explanation": "Los hijos de Abraham fueron Isaac e Ismael.",
+      "bibleReference": "1 Crónicas 1:28",
+      "answers": [
+        {
+          "text": "Zimram y Madián",
+          "isCorrect": false
+        },
+        {
+          "text": "Peleg y Joctán",
+          "isCorrect": false
+        },
+        {
+          "text": "Nabajoth y Cedar",
+          "isCorrect": false
+        },
+        {
+          "text": "Isaac e Ismael",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo describe el texto a Cethura, que parió a Zimram, Jocsán, Medán, Madián, Isbac y Súa?",
+      "explanation": "El texto la llama Cethura, concubina de Abraham, y dice que ella parió a Zimram, Jocsán, Medán, Madián, Isbac y Súa.",
+      "bibleReference": "1 Crónicas 1:31",
+      "answers": [
+        {
+          "text": "Concubina de Abraham",
+          "isCorrect": true
+        },
+        {
+          "text": "Mujer de Isaac",
+          "isCorrect": false
+        },
+        {
+          "text": "Hermana de Lotán",
+          "isCorrect": false
+        },
+        {
+          "text": "Hija de Matred",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quiénes fueron los hijos de Isaac?",
+      "explanation": "Abraham engendró a Isaac, y los hijos de Isaac fueron Esaú e Israel.",
+      "bibleReference": "1 Crónicas 1:34",
+      "answers": [
+        {
+          "text": "Eliphas y Rehuel",
+          "isCorrect": false
+        },
+        {
+          "text": "Sem y Japhet",
+          "isCorrect": false
+        },
+        {
+          "text": "Esaú e Israel",
+          "isCorrect": true
+        },
+        {
+          "text": "Madián y Jocsán",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "De los reyes que reinaron en la tierra de Edom antes que reinase rey sobre los hijos de Israel, ¿quién se nombra primero?",
+      "explanation": "El primero que se nombra es Belah, hijo de Beor, y el nombre de su ciudad fué Dinaba.",
+      "bibleReference": "1 Crónicas 1:43",
+      "answers": [
+        {
+          "text": "Samla, de Masreca",
+          "isCorrect": false
+        },
+        {
+          "text": "Belah, hijo de Beor",
+          "isCorrect": true
+        },
+        {
+          "text": "Jobab, hijo de Zera",
+          "isCorrect": false
+        },
+        {
+          "text": "Husam, de la tierra de los Themanos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Al final del capítulo, después de la muerte de Adad, ¿quiénes sucedieron en Edom?",
+      "explanation": "Muerto Adad, sucedieron los duques en Edom: el duque Timna, el duque Alia, el duque Jetheth y los demás que el texto nombra.",
+      "bibleReference": "1 Crónicas 1:51",
+      "answers": [
+        {
+          "text": "Los hijos de Seir",
+          "isCorrect": false
+        },
+        {
+          "text": "Los reyes de Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Los Themanos",
+          "isCorrect": false
+        },
+        {
+          "text": "Los duques",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

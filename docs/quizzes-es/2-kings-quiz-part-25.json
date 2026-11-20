@@ -1,0 +1,242 @@
+{
+  "title": "2 Reyes Quiz bíblico - Capítulo 25",
+  "description": "Diez preguntas sobre 2 Reyes 25: el cerco y la caída de Jerusalem, la suerte de Sedecías, el gobierno de Gedalías y la liberación de Joachîn.",
+  "slug": "2-kings-quiz-part-25",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué prevaleció en la ciudad cercada, de modo que no hubo pan para el pueblo de la tierra?",
+      "explanation": "A los nueve del mes prevaleció el hambre en la ciudad, y no hubo pan para el pueblo de la tierra.",
+      "bibleReference": "2 Reyes 25:3",
+      "answers": [
+        {
+          "text": "La peste",
+          "isCorrect": false
+        },
+        {
+          "text": "El fuego",
+          "isCorrect": false
+        },
+        {
+          "text": "El hambre",
+          "isCorrect": true
+        },
+        {
+          "text": "La sequía",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde alcanzó el ejército de los Caldeos al rey que había huido?",
+      "explanation": "El ejército de los Caldeos siguió al rey y lo tomó en las llanuras de Jericó, habiéndose esparcido de él todo su ejército.",
+      "bibleReference": "2 Reyes 25:5",
+      "answers": [
+        {
+          "text": "En las llanuras de Jericó",
+          "isCorrect": true
+        },
+        {
+          "text": "En los huertos del rey",
+          "isCorrect": false
+        },
+        {
+          "text": "En tierra de Hamath",
+          "isCorrect": false
+        },
+        {
+          "text": "En Mizpa",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le hicieron a Sedecías después de degollar a sus hijos delante de él?",
+      "explanation": "Degollaron a los hijos de Sedecías en presencia suya; y a Sedecías le sacaron los ojos, y atado con cadenas lo llevaron a Babilonia.",
+      "bibleReference": "2 Reyes 25:7",
+      "answers": [
+        {
+          "text": "Lo dejaron libre en Jerusalem para que labrase las viñas",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo pusieron por gobernador del pueblo que quedó en Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo enviaron a Egipto con los capitanes de su ejército",
+          "isCorrect": false
+        },
+        {
+          "text": "Le sacaron los ojos y lo llevaron atado con cadenas a Babilonia",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Quién vino a Jerusalem y quemó la casa de Jehová y la casa del rey?",
+      "explanation": "En el mes quinto vino a Jerusalem Nabuzaradán, capitán de los de la guardia, siervo del rey de Babilonia, y quemó la casa de Jehová, la casa del rey y todas las casas de Jerusalem.",
+      "bibleReference": "2 Reyes 25:8-9",
+      "answers": [
+        {
+          "text": "Evil-merodach, rey de Babilonia",
+          "isCorrect": false
+        },
+        {
+          "text": "Nabuzaradán, capitán de los de la guardia",
+          "isCorrect": true
+        },
+        {
+          "text": "Gedalías, hijo de Ahicam",
+          "isCorrect": false
+        },
+        {
+          "text": "Saraías, el primer sacerdote",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo con los muros de Jerusalem todo el ejército de los Caldeos que estaba con el capitán de la guardia?",
+      "explanation": "Todo el ejército de los Caldeos que estaba con el capitán de la guardia derribó los muros de Jerusalem alrededor.",
+      "bibleReference": "2 Reyes 25:10",
+      "answers": [
+        {
+          "text": "Los derribó alrededor",
+          "isCorrect": true
+        },
+        {
+          "text": "Los reparó y los levantó de nuevo",
+          "isCorrect": false
+        },
+        {
+          "text": "Los dejó en pie sin tocarlos",
+          "isCorrect": false
+        },
+        {
+          "text": "Los cubrió de bronce",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué fin dejó Nabuzaradán en la tierra a algunos de los pobres?",
+      "explanation": "De los pobres de la tierra dejó Nabuzaradán, capitán de los de la guardia, para que labrasen las viñas y las tierras.",
+      "bibleReference": "2 Reyes 25:12",
+      "answers": [
+        {
+          "text": "Para que guardasen los muros",
+          "isCorrect": false
+        },
+        {
+          "text": "Para que sirviesen en la casa de Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "Para que labrasen las viñas y las tierras",
+          "isCorrect": true
+        },
+        {
+          "text": "Para que llevasen el metal a Babilonia",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuál era la altura de una de las columnas de la casa de Jehová?",
+      "explanation": "La altura de la una columna era diez y ocho codos, y encima tenía un capitel de bronce cuya altura era de tres codos.",
+      "bibleReference": "2 Reyes 25:17",
+      "answers": [
+        {
+          "text": "Tres codos",
+          "isCorrect": false
+        },
+        {
+          "text": "Diez y ocho codos",
+          "isCorrect": true
+        },
+        {
+          "text": "Sesenta codos",
+          "isCorrect": false
+        },
+        {
+          "text": "Veinte codos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo se llamaba el primer sacerdote que tomó el capitán de los de la guardia?",
+      "explanation": "El capitán de los de la guardia tomó a Saraías, primer sacerdote, y a Sophonías, segundo sacerdote, y tres guardas de la vajilla.",
+      "bibleReference": "2 Reyes 25:18",
+      "answers": [
+        {
+          "text": "Ahicam",
+          "isCorrect": false
+        },
+        {
+          "text": "Johanán",
+          "isCorrect": false
+        },
+        {
+          "text": "Sophonías",
+          "isCorrect": false
+        },
+        {
+          "text": "Saraías",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿A quién puso Nabucodonosor por gobernador del pueblo que quedó en tierra de Judá?",
+      "explanation": "Al pueblo que Nabucodonosor dejó en tierra de Judá, puso por gobernador a Gedalías, hijo de Ahicam, hijo de Saphán.",
+      "bibleReference": "2 Reyes 25:22",
+      "answers": [
+        {
+          "text": "A Gedalías, hijo de Ahicam",
+          "isCorrect": true
+        },
+        {
+          "text": "A Ismael, hijo de Nathanías",
+          "isCorrect": false
+        },
+        {
+          "text": "A Jaazanías, hijo de Maachâti",
+          "isCorrect": false
+        },
+        {
+          "text": "A Saraía, hijo de Tanhumet",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quién sacó a Joachîn de la casa de la cárcel y le habló bien?",
+      "explanation": "A los treinta y siete años de la trasportación de Joachîn, Evil-merodach rey de Babilonia, en el primer año de su reinado, levantó su cabeza y lo sacó de la casa de la cárcel, y le habló bien.",
+      "bibleReference": "2 Reyes 25:27-28",
+      "answers": [
+        {
+          "text": "Nabucodonosor rey de Babilonia",
+          "isCorrect": false
+        },
+        {
+          "text": "Nabuzaradán, capitán de la guardia",
+          "isCorrect": false
+        },
+        {
+          "text": "Evil-merodach rey de Babilonia",
+          "isCorrect": true
+        },
+        {
+          "text": "El rey de Egipto",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

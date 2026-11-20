@@ -10,15 +10,15 @@
   "questions": [
     {
       "text": "¿Qué mandó José antes de darse a conocer a sus hermanos?",
-      "explanation": "José no podía ya contenerse y clamó que hiciesen salir de con él a todos, y no quedó nadie con él.",
+      "explanation": "José no podía ya contenerse y clamó que todos saliesen de su presencia, y no quedó nadie con él.",
       "bibleReference": "Génesis 45:1",
       "answers": [
         {
-          "text": "Que trajeran su copa",
+          "text": "Que trajeran su copa de plata a la mesa",
           "isCorrect": false
         },
         {
-          "text": "Que todos salieran de con él",
+          "text": "Que todos salieran de su presencia",
           "isCorrect": true
         },
         {
@@ -26,7 +26,7 @@
           "isCorrect": false
         },
         {
-          "text": "Que pusieran pan",
+          "text": "Que pusieran pan en la mesa",
           "isCorrect": false
         }
       ]
@@ -49,7 +49,7 @@
           "isCorrect": false
         },
         {
-          "text": "No veréis más mi rostro",
+          "text": "No veréis más mi rostro sin vuestro hermano menor",
           "isCorrect": false
         }
       ]
@@ -101,7 +101,7 @@
       ]
     },
     {
-      "text": "¿Qué dijo José que Dios le había puesto en Egipto?",
+      "text": "¿Qué dijo José que Dios había hecho de él en Egipto?",
       "explanation": "José dijo que Dios le había puesto por padre de Faraón, por señor de toda su casa y por gobernador en toda la tierra de Egipto.",
       "bibleReference": "Génesis 45:8",
       "answers": [
@@ -114,7 +114,7 @@
           "isCorrect": false
         },
         {
-          "text": "Capitán de los de la guardia",
+          "text": "Capitán de los de la guardia y de los coperos de Faraón",
           "isCorrect": false
         },
         {
@@ -175,7 +175,7 @@
       "bibleReference": "Génesis 45:22",
       "answers": [
         {
-          "text": "Una copa de plata",
+          "text": "Una copa de plata como la de su casa",
           "isCorrect": false
         },
         {

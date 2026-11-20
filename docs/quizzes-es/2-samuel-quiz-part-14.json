@@ -1,0 +1,242 @@
+{
+  "title": "2 Samuel Quiz bíblico - Capítulo 14",
+  "description": "Diez preguntas sobre 2 Samuel 14: la mujer de Tecoa enviada por Joab, el regreso de Absalom de Gessur y el beso del rey.",
+  "slug": "2-samuel-quiz-part-14",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿De dónde tomó Joab a la mujer astuta que envió al rey?",
+      "explanation": "Joab hijo de Sarvia envió a Tecoa y tomó de allá una mujer astuta, y le pidió que se enlutara y se vistiera de ropas de luto.",
+      "bibleReference": "2 Samuel 14:1-2",
+      "answers": [
+        {
+          "text": "De Gessur",
+          "isCorrect": false
+        },
+        {
+          "text": "De Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "De Tecoa",
+          "isCorrect": true
+        },
+        {
+          "text": "De Ephraim",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según la historia que contó la mujer al rey, ¿qué les había pasado a sus dos hijos?",
+      "explanation": "La mujer dijo que sus dos hijos riñeron en el campo y que, no habiendo quien los despartiese, el uno hirió al otro y lo mató.",
+      "bibleReference": "2 Samuel 14:6",
+      "answers": [
+        {
+          "text": "Riñeron en el campo y el uno mató al otro",
+          "isCorrect": true
+        },
+        {
+          "text": "Los dos murieron en la guerra",
+          "isCorrect": false
+        },
+        {
+          "text": "Huyeron de la casa de su madre",
+          "isCorrect": false
+        },
+        {
+          "text": "La parentela los mató a los dos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le juró el rey a la mujer acerca de su hijo?",
+      "explanation": "El rey respondió: Vive Jehová, que no caerá ni un cabello de la cabeza de tu hijo en tierra.",
+      "bibleReference": "2 Samuel 14:11",
+      "answers": [
+        {
+          "text": "Que lo haría rey en Israel después de él",
+          "isCorrect": false
+        },
+        {
+          "text": "Que lo desterraría de la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Que lo entregaría a la parentela",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no caería ni un cabello de su cabeza en tierra",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué comparó la mujer el hecho de que los hombres mueren?",
+      "explanation": "La mujer dijo que de cierto morimos y somos como aguas derramadas por tierra, que no pueden volver a recogerse.",
+      "bibleReference": "2 Samuel 14:14",
+      "answers": [
+        {
+          "text": "Con el humo que se va y que nunca más vuelve",
+          "isCorrect": false
+        },
+        {
+          "text": "Con aguas derramadas por tierra que no pueden volver a recogerse",
+          "isCorrect": true
+        },
+        {
+          "text": "Con la hierba del campo que se seca pronto",
+          "isCorrect": false
+        },
+        {
+          "text": "Con un ascua que se apaga en la noche",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le preguntó el rey a la mujer cuando terminó de oírla?",
+      "explanation": "El rey le pidió que no le encubriera nada y le preguntó si la mano de Joab no había estado con ella en todas estas cosas.",
+      "bibleReference": "2 Samuel 14:18-19",
+      "answers": [
+        {
+          "text": "Si era viuda de verdad",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuántos años tenía el hijo que le quedaba",
+          "isCorrect": false
+        },
+        {
+          "text": "Si la mano de Joab había estado con ella en todo aquello",
+          "isCorrect": true
+        },
+        {
+          "text": "Quién le había dado las ropas de luto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le mandó entonces el rey a Joab?",
+      "explanation": "El rey dijo a Joab: He aquí yo hago esto: ve, y haz volver al mozo Absalom.",
+      "bibleReference": "2 Samuel 14:21",
+      "answers": [
+        {
+          "text": "Que fuera e hiciera volver al mozo Absalom",
+          "isCorrect": true
+        },
+        {
+          "text": "Que castigara a la mujer de Tecoa",
+          "isCorrect": false
+        },
+        {
+          "text": "Que saliera a la guerra contra Gessur",
+          "isCorrect": false
+        },
+        {
+          "text": "Que buscara al hijo de la mujer viuda",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Cuando Joab trajo a Absalom a Jerusalem, ¿qué dijo el rey?",
+      "explanation": "Joab fue a Gessur y volvió a Absalom a Jerusalem, pero el rey dijo que se fuera a su casa y no viera su rostro; y Absalom no vio el rostro del rey.",
+      "bibleReference": "2 Samuel 14:23-24",
+      "answers": [
+        {
+          "text": "Que lo recibiría con una fiesta",
+          "isCorrect": false
+        },
+        {
+          "text": "Que se fuera a su casa y no viera su rostro",
+          "isCorrect": true
+        },
+        {
+          "text": "Que volviera en seguida a Gessur",
+          "isCorrect": false
+        },
+        {
+          "text": "Que viviera en la casa real con él",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuánto pesaba el cabello de Absalom cuando se lo cortaba al fin de cada año?",
+      "explanation": "Absalom se cortaba el cabello al fin de cada año, porque le causaba molestia, y el cabello de su cabeza pesaba doscientos siclos de peso real.",
+      "bibleReference": "2 Samuel 14:26",
+      "answers": [
+        {
+          "text": "Un talento de oro",
+          "isCorrect": false
+        },
+        {
+          "text": "Cien siclos de peso real",
+          "isCorrect": false
+        },
+        {
+          "text": "Mil siclos de plata",
+          "isCorrect": false
+        },
+        {
+          "text": "Doscientos siclos de peso real",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué mandó hacer Absalom a sus siervos en las tierras de Joab?",
+      "explanation": "Como Joab no quiso venir a él, Absalom mandó a sus siervos que fueran a las tierras de Joab, donde tenía sus cebadas, y les pegaran fuego; y los siervos pegaron fuego a las tierras.",
+      "bibleReference": "2 Samuel 14:29-30",
+      "answers": [
+        {
+          "text": "Pegar fuego a las cebadas que Joab tenía allí",
+          "isCorrect": true
+        },
+        {
+          "text": "Segar las cebadas y llevárselas",
+          "isCorrect": false
+        },
+        {
+          "text": "Derribar la casa que Joab tenía allí",
+          "isCorrect": false
+        },
+        {
+          "text": "Llevarse los mulos de Joab",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo termina el capítulo, cuando Absalom por fin vino al rey?",
+      "explanation": "Joab vino al rey y se lo hizo saber; el rey llamó a Absalom, el cual vino e inclinó su rostro a tierra delante del rey, y el rey besó a Absalom.",
+      "bibleReference": "2 Samuel 14:33",
+      "answers": [
+        {
+          "text": "El rey lo echó fuera de Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "El rey no quiso hablar una palabra con él",
+          "isCorrect": false
+        },
+        {
+          "text": "Absalom inclinó su rostro a tierra y el rey lo besó",
+          "isCorrect": true
+        },
+        {
+          "text": "Absalom huyó otra vez a Gessur",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

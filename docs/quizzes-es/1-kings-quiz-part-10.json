@@ -1,0 +1,122 @@
+{
+  "title": "1 Reyes Quiz bíblico - Capítulo 10",
+  "description": "Diez preguntas sobre 1 Reyes 10: la visita de la reina de Seba, la madera de brasil de Ophir y las riquezas del rey Salomón.",
+  "slug": "1-kings-quiz-part-10",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Quién oyó la fama de Salomón y vino a probarle con preguntas?",
+      "explanation": "La reina de Seba oyó la fama de Salomón en el nombre de Jehová y vino a probarle con preguntas.",
+      "bibleReference": "1 Reyes 10:1",
+      "answers": [
+        { "text": "La reina de Seba", "isCorrect": true },
+        { "text": "La hija de Faraón", "isCorrect": false },
+        { "text": "La reina Thaphnes", "isCorrect": false },
+        { "text": "Los reyes de Arabia", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Con qué llegó la reina a Jerusalem?",
+      "explanation": "Vino a Jerusalem con muy grande comitiva, con camellos cargados de especias, y oro en grande abundancia, y piedras preciosas.",
+      "bibleReference": "1 Reyes 10:2",
+      "answers": [
+        { "text": "Con carros de hierro y gente de a caballo", "isCorrect": false },
+        { "text": "Con camellos cargados de especias, oro y piedras preciosas", "isCorrect": true },
+        { "text": "Con barcos cargados de cedros y lienzos", "isCorrect": false },
+        { "text": "Con rebaños de bueyes y ovejas para el altar", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿respondió Salomón a todas las preguntas de la reina?",
+      "explanation": "Salomón le declaró todas sus palabras: ninguna cosa se le escondió al rey, que no le declarase.",
+      "bibleReference": "1 Reyes 10:3",
+      "answers": [
+        { "text": "Solo contestó a la mitad de ellas", "isCorrect": false },
+        { "text": "Mandó a sus sabios que respondieran por él", "isCorrect": false },
+        { "text": "Sí, ninguna cosa se le escondió que no le declarase", "isCorrect": true },
+        { "text": "Le pidió tres días para pensar la respuesta", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dijo la reina al rey una vez que sus ojos lo habían visto todo?",
+      "explanation": "Ella dijo que no lo creía hasta que había venido y sus ojos lo habían visto, y que ni aun la mitad fue lo que se le dijo.",
+      "bibleReference": "1 Reyes 10:7",
+      "answers": [
+        { "text": "Que la fama era mayor que lo que había visto", "isCorrect": false },
+        { "text": "Que todo era tal como se lo habían contado", "isCorrect": false },
+        { "text": "Que no quería hablar más del asunto", "isCorrect": false },
+        { "text": "Que ni aun la mitad fue lo que se le había dicho", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Cuántos talentos de oro dio la reina de Seba al rey?",
+      "explanation": "Ella dio al rey ciento y veinte talentos de oro, y muy mucha especiería, y piedras preciosas.",
+      "bibleReference": "1 Reyes 10:10",
+      "answers": [
+        { "text": "Seiscientos sesenta talentos de oro", "isCorrect": false },
+        { "text": "Ciento y veinte talentos de oro", "isCorrect": true },
+        { "text": "Dos talentos de oro", "isCorrect": false },
+        { "text": "Trescientos talentos de oro", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué hizo el rey con la madera de brasil que llegó de Ophir?",
+      "explanation": "De la madera de brasil hizo el rey balaustres para la casa de Jehová y para las casas reales, y también arpas y salterios para los cantores.",
+      "bibleReference": "1 Reyes 10:11-12",
+      "answers": [
+        { "text": "Balaustres para la casa de Jehová, arpas y salterios", "isCorrect": true },
+        { "text": "Carros de guerra y escudos para la guardia", "isCorrect": false },
+        { "text": "Un muro alrededor de toda la ciudad de David", "isCorrect": false },
+        { "text": "Naves para la flota que salía a la mar", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuál era el peso del oro que Salomón recibía de renta cada año?",
+      "explanation": "El peso del oro que Salomón tenía de renta cada un año era seiscientos sesenta y seis talentos de oro.",
+      "bibleReference": "1 Reyes 10:14",
+      "answers": [
+        { "text": "Mil cuatrocientos talentos de oro", "isCorrect": false },
+        { "text": "Ciento y cincuenta talentos de oro", "isCorrect": false },
+        { "text": "Seiscientos sesenta y seis talentos de oro", "isCorrect": true },
+        { "text": "Doscientos treinta y dos talentos de oro", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿De qué material hizo el rey un gran trono, y con qué lo cubrió?",
+      "explanation": "Hizo el rey un gran trono de marfil, el cual cubrió de oro purísimo.",
+      "bibleReference": "1 Reyes 10:18",
+      "answers": [
+        { "text": "De cedro, y lo cubrió de plata", "isCorrect": false },
+        { "text": "De piedra, y lo cubrió de metal", "isCorrect": false },
+        { "text": "De madera de brasil, y lo cubrió de lienzos", "isCorrect": false },
+        { "text": "De marfil, y lo cubrió de oro purísimo", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué traía la flota que iba a Tharsis?",
+      "explanation": "Una vez cada tres años venía la flota de Tharsis y traía oro, plata, marfil, simios y pavos.",
+      "bibleReference": "1 Reyes 10:22",
+      "answers": [
+        { "text": "Oro, plata, marfil, simios y pavos", "isCorrect": true },
+        { "text": "Trigo, vino, aceite y ganado menor", "isCorrect": false },
+        { "text": "Cedros, cabrahigos, lino y púrpura", "isCorrect": false },
+        { "text": "Hierro, cobre, sal y betún", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuántos carros y cuántos jinetes tenía Salomón?",
+      "explanation": "Salomón juntó carros y gente de a caballo, y tenía mil cuatrocientos carros y doce mil jinetes.",
+      "bibleReference": "1 Reyes 10:26",
+      "answers": [
+        { "text": "Doscientos carros y seiscientos jinetes", "isCorrect": false },
+        { "text": "Treinta y dos carros y siete mil jinetes", "isCorrect": false },
+        { "text": "Trescientos carros y mil quinientos jinetes", "isCorrect": false },
+        { "text": "Mil cuatrocientos carros y doce mil jinetes", "isCorrect": true }
+      ]
+    }
+  ]
+}

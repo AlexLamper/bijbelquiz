@@ -1,0 +1,122 @@
+{
+  "title": "1 Crónicas Quiz bíblico - Capítulo 20",
+  "description": "Diez preguntas sobre 1 Crónicas 20: la toma de Rabba y la corona de su rey, y las guerras contra los Filisteos en Gezer y en Gath.",
+  "slug": "1-chronicles-quiz-part-20",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿En qué momento sacó Joab las fuerzas del ejército y destruyó la tierra de los hijos de Ammón?",
+      "explanation": "Fue á la vuelta del año, en el tiempo que suelen los reyes salir á la guerra, cuando Joab sacó las fuerzas del ejército.",
+      "bibleReference": "1 Crónicas 20:1",
+      "answers": [
+        { "text": "A la vuelta del año", "isCorrect": true },
+        { "text": "En el mes primero", "isCorrect": false },
+        { "text": "Al tercer día", "isCorrect": false },
+        { "text": "En tiempo de nieve", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué ciudad cercó Joab, y luego batió y destruyó?",
+      "explanation": "Joab vino y cercó á Rabba, y la batió y la destruyó.",
+      "bibleReference": "1 Crónicas 20:1",
+      "answers": [
+        { "text": "Gezer", "isCorrect": false },
+        { "text": "Rabba", "isCorrect": true },
+        { "text": "Gath", "isCorrect": false },
+        { "text": "Medeba", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Dónde estaba David mientras Joab batía aquella ciudad?",
+      "explanation": "El texto dice que David estaba en Jerusalem mientras Joab batía á Rabba y la destruía.",
+      "bibleReference": "1 Crónicas 20:1",
+      "answers": [
+        { "text": "En Rabba", "isCorrect": false },
+        { "text": "En Hebrón", "isCorrect": false },
+        { "text": "En Jerusalem", "isCorrect": true },
+        { "text": "En Gath", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuánto pesaba la corona que David tomó de la cabeza del rey de aquella ciudad?",
+      "explanation": "David tomó la corona de su rey de encima de su cabeza, y la halló de peso de un talento de oro.",
+      "bibleReference": "1 Crónicas 20:2",
+      "answers": [
+        { "text": "Seiscientos siclos de oro", "isCorrect": false },
+        { "text": "Mil talentos de plata", "isCorrect": false },
+        { "text": "Cien talentos de oro", "isCorrect": false },
+        { "text": "Un talento de oro", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Además del oro, ¿qué había en aquella corona?",
+      "explanation": "El texto dice que había en ella piedras preciosas, y la corona fué puesta sobre la cabeza de David.",
+      "bibleReference": "1 Crónicas 20:2",
+      "answers": [
+        { "text": "Piedras preciosas", "isCorrect": true },
+        { "text": "Letras de plata", "isCorrect": false },
+        { "text": "Flores de bronce", "isCorrect": false },
+        { "text": "Perlas del mar", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Con qué cortó David al pueblo que estaba en aquella ciudad?",
+      "explanation": "Sacó al pueblo que estaba en ella y los cortó con sierras, con trillos de hierro y segures, y lo mismo hizo á todas las ciudades de los hijos de Ammón.",
+      "bibleReference": "1 Crónicas 20:3",
+      "answers": [
+        { "text": "Con espadas y lanzas de bronce", "isCorrect": false },
+        { "text": "Con sierras, trillos de hierro y segures", "isCorrect": true },
+        { "text": "Con carros y caballos de guerra", "isCorrect": false },
+        { "text": "Con hondas y saetas de arco", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Quién hirió en Gezer a Sippai, del linaje de los gigantes?",
+      "explanation": "Se levantó guerra en Gezer con los Filisteos, é hirió Sibbecai Husathita á Sippai, del linaje de los gigantes.",
+      "bibleReference": "1 Crónicas 20:4",
+      "answers": [
+        { "text": "Elhanán hijo de Jair", "isCorrect": false },
+        { "text": "Jonathán hijo de Sima", "isCorrect": false },
+        { "text": "Sibbecai Husathita", "isCorrect": true },
+        { "text": "Abisai hijo de Sarvia", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿A quién hirió Elhanán hijo de Jair en la siguiente guerra con los Filisteos?",
+      "explanation": "Elhanán hijo de Jair hirió á Lahmi, hermano de Goliath Getheo, el asta de cuya lanza era como un enjullo de tejedores.",
+      "bibleReference": "1 Crónicas 20:5",
+      "answers": [
+        { "text": "A Sippai, del linaje de los gigantes", "isCorrect": false },
+        { "text": "A Sophach, general de Adarezer", "isCorrect": false },
+        { "text": "A Rapha, el gigante de Gath", "isCorrect": false },
+        { "text": "A Lahmi, hermano de Goliath Getheo", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Cuántos dedos tenía en total el hombre de grande estatura que había en Gath?",
+      "explanation": "En Gath hubo un hombre de grande estatura que tenía seis dedos en pies y manos, en todos veinticuatro.",
+      "bibleReference": "1 Crónicas 20:6",
+      "answers": [
+        { "text": "Veinticuatro en total", "isCorrect": true },
+        { "text": "Veinte en total", "isCorrect": false },
+        { "text": "Doce en total", "isCorrect": false },
+        { "text": "Dieciocho en total", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Quién hirió a aquel hombre que denostó a Israel?",
+      "explanation": "Él denostó á Israel, mas lo hirió Jonathán, hijo de Sima hermano de David.",
+      "bibleReference": "1 Crónicas 20:7",
+      "answers": [
+        { "text": "Sibbecai Husathita", "isCorrect": false },
+        { "text": "Jonathán, hijo de Sima", "isCorrect": true },
+        { "text": "Elhanán hijo de Jair", "isCorrect": false },
+        { "text": "Abisai hermano de Joab", "isCorrect": false }
+      ]
+    }
+  ]
+}

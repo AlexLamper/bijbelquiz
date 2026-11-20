@@ -32,24 +32,24 @@
       ]
     },
     {
-      "text": "¿De qué tribu era Bezaleel?",
-      "explanation": "El versículo dice que Bezaleel, hijo de Uri, hijo de Hur, era de la tribu de Judá.",
-      "bibleReference": "Éxodo 31:2",
+      "text": "En la lista de la obra encargada, ¿qué estaba sobre el arca del testimonio?",
+      "explanation": "La lista menciona el tabernáculo del testimonio, el arca del testimonio y la cubierta que está sobre ella, con todos los vasos del tabernáculo.",
+      "bibleReference": "Éxodo 31:7",
       "answers": [
         {
-          "text": "De Dan",
+          "text": "El candelero limpio",
           "isCorrect": false
         },
         {
-          "text": "De Leví",
+          "text": "El altar del perfume",
           "isCorrect": false
         },
         {
-          "text": "De Judá",
+          "text": "La cubierta",
           "isCorrect": true
         },
         {
-          "text": "De Rubén",
+          "text": "La fuente y su basa",
           "isCorrect": false
         }
       ]
@@ -170,24 +170,24 @@
       ]
     },
     {
-      "text": "¿Cuántos días se hacía obra según el versículo?",
-      "explanation": "El versículo dice: Seis días se hará obra, mas el día séptimo es sábado de reposo consagrado a Jehová.",
-      "bibleReference": "Éxodo 31:15",
+      "text": "Según la lista de la obra, ¿para quién eran las santas vestiduras?",
+      "explanation": "La lista incluye los vestidos del servicio y las santas vestiduras para Aarón el sacerdote, y también las vestiduras de sus hijos.",
+      "bibleReference": "Éxodo 31:10",
       "answers": [
         {
-          "text": "Siete",
+          "text": "Para los sabios de corazón",
           "isCorrect": false
         },
         {
-          "text": "Cinco",
+          "text": "Para Bezaleel y Aholiab",
           "isCorrect": false
         },
         {
-          "text": "Cuarenta",
+          "text": "Para todo el pueblo",
           "isCorrect": false
         },
         {
-          "text": "Seis",
+          "text": "Para Aarón el sacerdote",
           "isCorrect": true
         }
       ]

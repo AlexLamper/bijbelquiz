@@ -1,0 +1,122 @@
+{
+  "title": "2 Reyes Quiz bíblico - Capítulo 19",
+  "description": "Diez preguntas sobre 2 Reyes 19: Ezechîas ante Isaías, la carta extendida delante de Jehová y la noche en que el ángel hirió el campo de los Asirios.",
+  "slug": "2-kings-quiz-part-19",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué hizo el rey Ezechîas cuando oyó las palabras de Rabsaces?",
+      "explanation": "Cuando el rey Ezechîas lo oyó, rasgó sus vestidos, se cubrió de saco y entró en la casa de Jehová.",
+      "bibleReference": "2 Reyes 19:1",
+      "answers": [
+        { "text": "Salió a pelear contra el rey de Asiria", "isCorrect": false },
+        { "text": "Rasgó sus vestidos y entró en la casa de Jehová", "isCorrect": true },
+        { "text": "Envió un presente de plata a Lachîs", "isCorrect": false },
+        { "text": "Mandó callar a todo el pueblo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿A qué profeta envió Ezechîas a su mayordomo, al escriba y a los ancianos de los sacerdotes?",
+      "explanation": "Envió a Eliacim el mayordomo, a Sebna escriba y a los ancianos de los sacerdotes, vestidos de sacos, a Isaías profeta hijo de Amós.",
+      "bibleReference": "2 Reyes 19:2",
+      "answers": [
+        { "text": "A Isaías hijo de Amós", "isCorrect": true },
+        { "text": "A Jonás hijo de Amittai", "isCorrect": false },
+        { "text": "A Eliseo el varón de Dios", "isCorrect": false },
+        { "text": "A Urías el sacerdote", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cómo describió Ezechîas aquel día en su mensaje al profeta?",
+      "explanation": "Ezechîas dijo: \"Este día es día de angustia, y de reprensión, y de blasfemia\", porque los hijos habían venido hasta la rotura y la que pare no tenía fuerzas.",
+      "bibleReference": "2 Reyes 19:3",
+      "answers": [
+        { "text": "Como día de fiesta y de alegría", "isCorrect": false },
+        { "text": "Como día de ayuno y de sementera", "isCorrect": false },
+        { "text": "Como día de angustia, de reprensión y de blasfemia", "isCorrect": true },
+        { "text": "Como día de victoria sobre los Asirios", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué respondió Isaías que Jehová haría con el rey de Asiria?",
+      "explanation": "Isaías dijo que Jehová pondría en él un espíritu, oiría un rumor y se volvería a su tierra, y que allí Jehová haría que cayese a cuchillo.",
+      "bibleReference": "2 Reyes 19:7",
+      "answers": [
+        { "text": "Que lo entregaría en mano de los Filisteos", "isCorrect": false },
+        { "text": "Que lo haría enfermar de lepra en Nínive", "isCorrect": false },
+        { "text": "Que lo dejaría cercar la ciudad tres años", "isCorrect": false },
+        { "text": "Que oiría un rumor y se volvería a su tierra", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿De quién oyó decir el rey de Asiria que había salido para hacerle guerra?",
+      "explanation": "Oyó decir de Thiraca rey de Ethiopía: \"He aquí es salido para hacerte guerra\", y entonces volvió y envió embajadores a Ezechîas.",
+      "bibleReference": "2 Reyes 19:9",
+      "answers": [
+        { "text": "De Faraón rey de Egipto", "isCorrect": false },
+        { "text": "De Thiraca rey de Ethiopía", "isCorrect": true },
+        { "text": "Del rey de Hamath", "isCorrect": false },
+        { "text": "Del rey de Arphad", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Ezechîas con las letras que recibió de mano de los embajadores?",
+      "explanation": "Después de leerlas, Ezechîas subió a la casa de Jehová y las extendió delante de Jehová.",
+      "bibleReference": "2 Reyes 19:14",
+      "answers": [
+        { "text": "Subió a la casa de Jehová y las extendió delante de él", "isCorrect": true },
+        { "text": "Las quemó delante de los embajadores", "isCorrect": false },
+        { "text": "Las envió al profeta por sus siervos", "isCorrect": false },
+        { "text": "Las leyó a gran voz al pueblo sobre el muro", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "En su oración, ¿cómo se dirigió Ezechîas a Jehová Dios de Israel?",
+      "explanation": "Oró diciendo: \"Jehová Dios de Israel, que habitas entre los querubines, tú solo eres Dios de todos los reinos de la tierra\".",
+      "bibleReference": "2 Reyes 19:15",
+      "answers": [
+        { "text": "Como el que mora en el monte Carmel", "isCorrect": false },
+        { "text": "Como el que anduvo con David en Jerusalem", "isCorrect": false },
+        { "text": "Como el que habita entre los querubines", "isCorrect": true },
+        { "text": "Como el que se asienta sobre el Líbano", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según la palabra de Jehová contra el rey de Asiria, ¿qué le pondría en sus narices?",
+      "explanation": "Jehová dijo: \"pondré mi anzuelo en tus narices, y mi bocado en tus labios, y te haré volver por el camino por donde viniste\".",
+      "bibleReference": "2 Reyes 19:28",
+      "answers": [
+        { "text": "Una cuerda de lino", "isCorrect": false },
+        { "text": "Un velo de saco", "isCorrect": false },
+        { "text": "Una saeta de Jehová", "isCorrect": false },
+        { "text": "Su anzuelo", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿A cuántos hirió el ángel de Jehová en el campo de los Asirios aquella noche?",
+      "explanation": "Aquella misma noche salió el ángel de Jehová e hirió en el campo de los Asirios ciento ochenta y cinco mil; por la mañana estaban allí los cuerpos de los muertos.",
+      "bibleReference": "2 Reyes 19:35",
+      "answers": [
+        { "text": "A ciento ochenta y cinco mil", "isCorrect": true },
+        { "text": "A ciento veinte mil", "isCorrect": false },
+        { "text": "A cuarenta y dos mil", "isCorrect": false },
+        { "text": "A doscientos mil", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Quiénes hirieron a Sennachêrib mientras adoraba en el templo de Nisroch su dios?",
+      "explanation": "Mientras él adoraba en el templo de Nisroch su dios, Adramelech y Saresar sus hijos lo hirieron a cuchillo y huyeron a tierra de Ararat.",
+      "bibleReference": "2 Reyes 19:37",
+      "answers": [
+        { "text": "Sus siervos de la casa de Millo", "isCorrect": false },
+        { "text": "Adramelech y Saresar sus hijos", "isCorrect": true },
+        { "text": "Esar-hadón y Thiraca", "isCorrect": false },
+        { "text": "Thartán y Rabsaris", "isCorrect": false }
+      ]
+    }
+  ]
+}

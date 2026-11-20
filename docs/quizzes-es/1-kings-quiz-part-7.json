@@ -1,0 +1,242 @@
+{
+  "title": "1 Reyes Quiz bíblico - Capítulo 7",
+  "description": "Diez preguntas sobre 1 Reyes 7: las casas que edificó Salomón y la obra de bronce de Hiram para la casa de Jehová.",
+  "slug": "1-kings-quiz-part-7",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿En cuántos años edificó Salomón su propia casa?",
+      "explanation": "El capítulo empieza diciendo que después edificó Salomón su propia casa en trece años, y la acabó toda.",
+      "bibleReference": "1 Reyes 7:1",
+      "answers": [
+        {
+          "text": "En siete años",
+          "isCorrect": false
+        },
+        {
+          "text": "En cuatro años",
+          "isCorrect": false
+        },
+        {
+          "text": "En trece años",
+          "isCorrect": true
+        },
+        {
+          "text": "En veinte años",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos codos de longitud tenía la casa del bosque del Líbano?",
+      "explanation": "La casa del bosque del Líbano tenía cien codos de longitud, cincuenta codos de anchura y treinta codos de altura.",
+      "bibleReference": "1 Reyes 7:2",
+      "answers": [
+        {
+          "text": "Cien",
+          "isCorrect": true
+        },
+        {
+          "text": "Cincuenta",
+          "isCorrect": false
+        },
+        {
+          "text": "Treinta",
+          "isCorrect": false
+        },
+        {
+          "text": "Sesenta",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo llama el texto al pórtico del trono en que Salomón había de juzgar?",
+      "explanation": "Hizo el pórtico del trono en que había de juzgar, el pórtico del juicio, y lo vistió de cedro de suelo a suelo.",
+      "bibleReference": "1 Reyes 7:7",
+      "answers": [
+        {
+          "text": "El pórtico de las columnas",
+          "isCorrect": false
+        },
+        {
+          "text": "El pórtico del templo",
+          "isCorrect": false
+        },
+        {
+          "text": "El gran atrio",
+          "isCorrect": false
+        },
+        {
+          "text": "El pórtico del juicio",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿De qué tribu era la madre viuda de Hiram, al que el rey hizo venir de Tiro?",
+      "explanation": "Hiram era hijo de una viuda de la tribu de Nephtalí, y su padre había sido de Tiro; trabajaba en bronce y era lleno de sabiduría.",
+      "bibleReference": "1 Reyes 7:14",
+      "answers": [
+        {
+          "text": "De la tribu de Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "De la tribu de Nephtalí",
+          "isCorrect": true
+        },
+        {
+          "text": "De la tribu de Benjamín",
+          "isCorrect": false
+        },
+        {
+          "text": "De la tribu de Dan",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuál era la altura de cada una de las dos columnas de bronce?",
+      "explanation": "Vació dos columnas de bronce; la altura de cada cual era de diez y ocho codos, y a cada columna la rodeaba un hilo de doce codos.",
+      "bibleReference": "1 Reyes 7:15",
+      "answers": [
+        {
+          "text": "Cinco codos",
+          "isCorrect": false
+        },
+        {
+          "text": "Doce codos",
+          "isCorrect": false
+        },
+        {
+          "text": "Diez y ocho codos",
+          "isCorrect": true
+        },
+        {
+          "text": "Treinta codos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué nombre puso a la columna de la mano derecha del pórtico del templo?",
+      "explanation": "Cuando hubo alzado la columna de la mano derecha le puso por nombre Jachîn, y a la de la mano izquierda llamó Boaz.",
+      "bibleReference": "1 Reyes 7:21",
+      "answers": [
+        {
+          "text": "Jachîn",
+          "isCorrect": true
+        },
+        {
+          "text": "Boaz",
+          "isCorrect": false
+        },
+        {
+          "text": "Succoth",
+          "isCorrect": false
+        },
+        {
+          "text": "Sarthán",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Sobre qué estaba asentado el mar de fundición?",
+      "explanation": "El mar estaba asentado sobre doce bueyes: tres miraban al norte, tres al poniente, tres al mediodía y tres al oriente.",
+      "bibleReference": "1 Reyes 7:25",
+      "answers": [
+        {
+          "text": "Sobre diez basas",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre cuatro ruedas",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre dos columnas",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre doce bueyes",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos batos cabían en el mar de fundición?",
+      "explanation": "El grueso del mar era de un palmo, su labio era labrado como el labio de un cáliz, y cabían en él dos mil batos.",
+      "bibleReference": "1 Reyes 7:26",
+      "answers": [
+        {
+          "text": "Cuarenta",
+          "isCorrect": false
+        },
+        {
+          "text": "Dos mil",
+          "isCorrect": true
+        },
+        {
+          "text": "Cuatrocientos",
+          "isCorrect": false
+        },
+        {
+          "text": "Doce mil",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde hizo fundir el rey todas aquellas piezas de metal?",
+      "explanation": "Todo lo hizo fundir el rey en la llanura del Jordán, en tierra arcillosa, entre Succoth y Sarthán.",
+      "bibleReference": "1 Reyes 7:46",
+      "answers": [
+        {
+          "text": "En el monte del Líbano",
+          "isCorrect": false
+        },
+        {
+          "text": "En el gran atrio de la casa",
+          "isCorrect": false
+        },
+        {
+          "text": "En la llanura del Jordán",
+          "isCorrect": true
+        },
+        {
+          "text": "En la ciudad de David",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué puso Salomón en guarda en las tesorerías de la casa de Jehová?",
+      "explanation": "Salomón metió lo que David su padre había dedicado, es a saber, plata, oro y vasos, y lo puso todo en guarda en las tesorerías.",
+      "bibleReference": "1 Reyes 7:51",
+      "answers": [
+        {
+          "text": "Lo que David su padre había dedicado",
+          "isCorrect": true
+        },
+        {
+          "text": "El peso de todo el metal fundido",
+          "isCorrect": false
+        },
+        {
+          "text": "Las diez basas de bronce",
+          "isCorrect": false
+        },
+        {
+          "text": "Los panes de la proposición",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

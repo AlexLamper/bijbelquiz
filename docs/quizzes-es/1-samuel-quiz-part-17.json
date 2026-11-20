@@ -1,0 +1,242 @@
+{
+  "title": "1 Samuel Quiz bíblico - Capítulo 17",
+  "description": "Diez preguntas sobre 1 Samuel 17: el desafío del Filisteo de Gath, el encargo de Isaí y la victoria de David con la honda.",
+  "slug": "1-samuel-quiz-part-17",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": false,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Dónde asentaron el campo los Filisteos cuando juntaron sus ejércitos para la guerra?",
+      "explanation": "Los Filisteos se congregaron en Sochô, que es de Judá, y asentaron el campo entre Sochô y Azeca, en Ephes-dammim.",
+      "bibleReference": "1 Samuel 17:1",
+      "answers": [
+        {
+          "text": "Entre Sochô y Azeca, en Ephes-dammim",
+          "isCorrect": true
+        },
+        {
+          "text": "En Gath, junto a la puerta de la ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "En Beth-lehem de Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "En Ecrón, al lado del mar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo se llamaba el varón que salió del campo de los Filisteos y de qué ciudad era?",
+      "explanation": "Salió del campo de los Filisteos un varón llamado Goliath, de Gath, que tenía de altura seis codos y un palmo.",
+      "bibleReference": "1 Samuel 17:4",
+      "answers": [
+        {
+          "text": "Abner, de Rama",
+          "isCorrect": false
+        },
+        {
+          "text": "Goliath, de Gath",
+          "isCorrect": true
+        },
+        {
+          "text": "Samma, de Azeca",
+          "isCorrect": false
+        },
+        {
+          "text": "Adriel, de Ecrón",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuánto pesaba el hierro de la lanza del Filisteo?",
+      "explanation": "El asta de su lanza era como un enjullo de telar, y el hierro de su lanza pesaba seiscientos siclos de hierro.",
+      "bibleReference": "1 Samuel 17:7",
+      "answers": [
+        {
+          "text": "Cinco mil siclos de metal",
+          "isCorrect": false
+        },
+        {
+          "text": "Mil siclos de plata",
+          "isCorrect": false
+        },
+        {
+          "text": "Seiscientos siclos de hierro",
+          "isCorrect": true
+        },
+        {
+          "text": "Cien siclos de oro",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué ofreció el Filisteo si el hombre escogido por Israel lo vencía en el combate?",
+      "explanation": "El Filisteo propuso que, si aquel hombre podía pelear con él y lo vencía, los Filisteos serían siervos de Israel; y si él vencía, Israel les serviría.",
+      "bibleReference": "1 Samuel 17:8-9",
+      "answers": [
+        {
+          "text": "Que los Filisteos serían siervos de Israel",
+          "isCorrect": true
+        },
+        {
+          "text": "Que los Filisteos entregarían la ciudad de Gath",
+          "isCorrect": false
+        },
+        {
+          "text": "Que los Filisteos se volverían a su tierra con sus despojos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que los Filisteos pagarían un tributo de plata cada año",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿cuántos hijos tenía Isaí y qué lugar ocupaba David entre ellos?",
+      "explanation": "Isaí, el Ephrateo de Beth-lehem de Judá, tenía ocho hijos, y David era el menor de ellos.",
+      "bibleReference": "1 Samuel 17:12-14",
+      "answers": [
+        {
+          "text": "Tres hijos, y David era el primogénito",
+          "isCorrect": false
+        },
+        {
+          "text": "Siete hijos, y David era el segundo",
+          "isCorrect": false
+        },
+        {
+          "text": "Ocho hijos, y David era el menor",
+          "isCorrect": true
+        },
+        {
+          "text": "Diez hijos, y David era el tercero",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué mandó Isaí a David que llevara al capitán en el campamento?",
+      "explanation": "Isaí le mandó llevar diez quesos de leche al capitán, además del grano tostado y los panes para sus hermanos.",
+      "bibleReference": "1 Samuel 17:17-18",
+      "answers": [
+        {
+          "text": "Un cordero de la manada",
+          "isCorrect": false
+        },
+        {
+          "text": "Un odre de vino",
+          "isCorrect": false
+        },
+        {
+          "text": "Diez quesos de leche",
+          "isCorrect": true
+        },
+        {
+          "text": "Un epha de harina",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según lo que decían los de Israel, ¿qué haría el rey al que venciese a aquel hombre?",
+      "explanation": "Cada uno de los de Israel decía que el rey enriquecería con grandes riquezas al que lo venciese, le daría su hija y haría franca la casa de su padre en Israel.",
+      "bibleReference": "1 Samuel 17:25",
+      "answers": [
+        {
+          "text": "Lo haría llevar la lanza del rey y comer a su mesa cada día",
+          "isCorrect": false
+        },
+        {
+          "text": "Le daría la mitad de su reino y una casa en Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "Le entregaría todos los despojos del campamento de los Filisteos",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo enriquecería, le daría su hija y haría franca la casa de su padre",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo reaccionó Eliab cuando oyó a David hablar con aquellos hombres?",
+      "explanation": "Eliab, su hermano mayor, se encendió en ira contra David y le reprochó haber descendido allí y haber dejado aquellas pocas ovejas en el desierto.",
+      "bibleReference": "1 Samuel 17:28",
+      "answers": [
+        {
+          "text": "Se alegró y lo llevó ante el rey",
+          "isCorrect": false
+        },
+        {
+          "text": "Se encendió en ira contra él",
+          "isCorrect": true
+        },
+        {
+          "text": "Guardó silencio y se apartó",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo mandó volver con los quesos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué contó David a Saúl que había hecho mientras era pastor de las ovejas de su padre?",
+      "explanation": "David contó que cuando venía un león o un oso y tomaba un cordero de la manada, él salía tras la fiera, la hería y la mataba.",
+      "bibleReference": "1 Samuel 17:34-36",
+      "answers": [
+        {
+          "text": "Que había librado un cordero de la boca de un leopardo",
+          "isCorrect": false
+        },
+        {
+          "text": "Que había peleado contra los Filisteos con su honda",
+          "isCorrect": false
+        },
+        {
+          "text": "Que había guardado las ovejas sin perder ninguna en cuarenta días",
+          "isCorrect": false
+        },
+        {
+          "text": "Que mataba al león o al oso que tomaba un cordero de la manada",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué tomó David del arroyo antes de ir hacia el Filisteo, y dónde le hirió la piedra?",
+      "explanation": "David escogió cinco piedras lisas del arroyo, y con la honda tiró una que hirió al Filisteo en la frente, donde la piedra quedó hincada.",
+      "bibleReference": "1 Samuel 17:40; 1 Samuel 17:49",
+      "answers": [
+        {
+          "text": "Tres piedras, y la piedra le hirió en el hombro",
+          "isCorrect": false
+        },
+        {
+          "text": "Cinco piedras lisas, y la piedra le hirió en la frente",
+          "isCorrect": true
+        },
+        {
+          "text": "Siete piedras, y la piedra le hirió en la pierna",
+          "isCorrect": false
+        },
+        {
+          "text": "Dos piedras, y la piedra le hirió en el pecho",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

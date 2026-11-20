@@ -1,0 +1,122 @@
+{
+  "title": "1 Samuel Quiz bíblico - Capítulo 12",
+  "description": "Diez preguntas sobre 1 Samuel 12: el descargo de Samuel delante del pueblo, el repaso de las justicias de Jehová y los truenos en la siega de los trigos.",
+  "slug": "1-samuel-quiz-part-12",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cómo se describió Samuel a sí mismo al hablar a todo Israel?",
+      "explanation": "Samuel dijo que su rey iba ya delante de ellos, que él era ya viejo y cano, y que había andado delante de ellos desde su mocedad hasta aquel día.",
+      "bibleReference": "1 Samuel 12:2",
+      "answers": [
+        { "text": "Mancebo y hermoso", "isCorrect": false },
+        { "text": "Pobre y menospreciado", "isCorrect": false },
+        { "text": "Viejo y cano", "isCorrect": true },
+        { "text": "Fuerte y valeroso", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Sobre qué pidió Samuel que atestiguasen contra él delante de Jehová y de su ungido?",
+      "explanation": "Samuel les pidió que atestiguasen si había tomado el buey o el asno de alguno, o si había calumniado, agraviado o tomado cohecho de alguien.",
+      "bibleReference": "1 Samuel 12:3",
+      "answers": [
+        { "text": "Si había tomado el buey o el asno de alguno", "isCorrect": true },
+        { "text": "Si había dejado de orar por el pueblo", "isCorrect": false },
+        { "text": "Si había edificado altar en Gilgal", "isCorrect": false },
+        { "text": "Si había desechado al rey elegido", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué le respondió entonces el pueblo?",
+      "explanation": "El pueblo dijo que nunca los había calumniado ni agraviado, ni había tomado algo de mano de ningún hombre.",
+      "bibleReference": "1 Samuel 12:4",
+      "answers": [
+        { "text": "Has tomado el buey de muchos de nosotros", "isCorrect": false },
+        { "text": "Nunca nos has calumniado ni agraviado", "isCorrect": true },
+        { "text": "No podemos atestiguar delante de Jehová", "isCorrect": false },
+        { "text": "Jehová es testigo contra ti en este día", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según Samuel, ¿a quiénes envió Jehová para sacar a sus padres de Egipto?",
+      "explanation": "Samuel recordó que, cuando sus padres clamaron a Jehová, Jehová envió a Moisés y a Aarón, los cuales sacaron a sus padres de Egipto y los hicieron habitar en aquel lugar.",
+      "bibleReference": "1 Samuel 12:8",
+      "answers": [
+        { "text": "A Jephté y a Bedán", "isCorrect": false },
+        { "text": "A Jacob y a sus hijos", "isCorrect": false },
+        { "text": "A Josué y a Jerobaal", "isCorrect": false },
+        { "text": "A Moisés y a Aarón", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Cuando olvidaron a Jehová su Dios, ¿en manos de quiénes los vendió?",
+      "explanation": "Samuel dijo que, por haber olvidado a Jehová su Dios, él los vendió en mano de Sísara, capitán del ejército de Asor, en mano de los filisteos y en mano del rey de Moab.",
+      "bibleReference": "1 Samuel 12:9",
+      "answers": [
+        { "text": "De Sísara, los filisteos y el rey de Moab", "isCorrect": true },
+        { "text": "De Naas Ammonita y los amalecitas", "isCorrect": false },
+        { "text": "De los egipcios y de Faraón", "isCorrect": false },
+        { "text": "De Agag y los hombres de Gath", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿A quiénes dijo Samuel que Jehová envió para librarlos de sus enemigos?",
+      "explanation": "Samuel dijo que Jehová envió a Jerobaal, a Bedán, a Jephté y a Samuel, y los libró de mano de sus enemigos alrededor, y habitaron seguros.",
+      "bibleReference": "1 Samuel 12:11",
+      "answers": [
+        { "text": "A Eleazar, a Abinadab y a Eli", "isCorrect": false },
+        { "text": "A Eli y a los sacerdotes de Silo", "isCorrect": false },
+        { "text": "A Jerobaal, a Bedán, a Jephté y a Samuel", "isCorrect": true },
+        { "text": "A Joel, a Abia y a los jueces de Beer-sebah", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según Samuel, ¿qué rey venía contra ellos cuando le pidieron un rey?",
+      "explanation": "Samuel les recordó que, al ver que Naas, rey de los hijos de Ammón, venía contra ellos, le dijeron que un rey reinaría sobre ellos, siendo su rey Jehová su Dios.",
+      "bibleReference": "1 Samuel 12:12",
+      "answers": [
+        { "text": "El rey de Moab, enemigo de Israel", "isCorrect": false },
+        { "text": "Naas, rey de los hijos de Ammón", "isCorrect": true },
+        { "text": "Sísara, capitán del ejército de Asor", "isCorrect": false },
+        { "text": "Agag, el rey de los amalecitas", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dio Jehová aquel día, en la siega de los trigos, cuando Samuel clamó a él?",
+      "explanation": "Samuel clamó a Jehová y Jehová dio truenos y aguas en aquel día, y todo el pueblo temió en gran manera a Jehová y a Samuel.",
+      "bibleReference": "1 Samuel 12:17-18",
+      "answers": [
+        { "text": "Fuego sobre el altar", "isCorrect": false },
+        { "text": "Tinieblas en la tierra", "isCorrect": false },
+        { "text": "Una gran sequía", "isCorrect": false },
+        { "text": "Truenos y aguas", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué pidió entonces todo el pueblo a Samuel?",
+      "explanation": "Todo el pueblo le pidió que rogase por sus siervos a Jehová su Dios, para que no muriesen, porque a todos sus pecados habían añadido el mal de pedir rey.",
+      "bibleReference": "1 Samuel 12:19",
+      "answers": [
+        { "text": "Que rogase por ellos para que no muriesen", "isCorrect": true },
+        { "text": "Que quitase al rey que habían elegido", "isCorrect": false },
+        { "text": "Que volviese a juzgarlos en Mizpa", "isCorrect": false },
+        { "text": "Que escribiese sus palabras en un libro", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Samuel que hiciesen solamente, considerando cuán grandes cosas había hecho Jehová con ellos?",
+      "explanation": "Samuel les dijo: Solamente temed a Jehová, y servidle de verdad con todo vuestro corazón, porque considerad cuán grandes cosas ha hecho con vosotros.",
+      "bibleReference": "1 Samuel 12:24",
+      "answers": [
+        { "text": "Juntarse cada año en Mizpa para ayunar", "isCorrect": false },
+        { "text": "Temer a Jehová y servirle con todo el corazón", "isCorrect": true },
+        { "text": "Guardar silencio delante del ungido", "isCorrect": false },
+        { "text": "Apartarse en pos de las vanidades", "isCorrect": false }
+      ]
+    }
+  ]
+}

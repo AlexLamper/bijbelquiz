@@ -1,0 +1,242 @@
+{
+  "title": "1 Samuel Quiz bíblico - Capítulo 21",
+  "description": "Diez preguntas sobre 1 Samuel 21: el pan sagrado en Nob, la espada de Goliath y David fingiéndose loco ante Achîs.",
+  "slug": "1-samuel-quiz-part-21",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿A qué lugar vino David y con qué sacerdote se encontró allí?",
+      "explanation": "David vino a Nob, a Ahimelech sacerdote, y Ahimelech se sorprendió de su encuentro.",
+      "bibleReference": "1 Samuel 21:1",
+      "answers": [
+        {
+          "text": "A Nob, con Ahimelech",
+          "isCorrect": true
+        },
+        {
+          "text": "A Rama, con Samuel",
+          "isCorrect": false
+        },
+        {
+          "text": "A Gabaa, con Abiathar",
+          "isCorrect": false
+        },
+        {
+          "text": "A Silo, con Ahitob",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué sorprendió a Ahimelech cuando vio llegar a David?",
+      "explanation": "Ahimelech se sorprendió de su encuentro y le preguntó cómo venía él solo, sin nadie con él.",
+      "bibleReference": "1 Samuel 21:1",
+      "answers": [
+        {
+          "text": "Que traía la espada del Filisteo",
+          "isCorrect": false
+        },
+        {
+          "text": "Que venía solo, sin nadie con él",
+          "isCorrect": true
+        },
+        {
+          "text": "Que venía vestido como un siervo del rey",
+          "isCorrect": false
+        },
+        {
+          "text": "Que llegaba de noche al santuario",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué explicación dio David al sacerdote sobre su viaje?",
+      "explanation": "David dijo que el rey le había encomendado un negocio y le había mandado que nadie supiera nada de aquel negocio, y que él había señalado a los criados un cierto lugar.",
+      "bibleReference": "1 Samuel 21:2",
+      "answers": [
+        {
+          "text": "Que huía de la presencia del rey",
+          "isCorrect": false
+        },
+        {
+          "text": "Que iba a Beth-lehem al sacrificio de su linaje",
+          "isCorrect": false
+        },
+        {
+          "text": "Que el rey le había encomendado un negocio secreto",
+          "isCorrect": true
+        },
+        {
+          "text": "Que buscaba a sus hermanos en el campamento",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos panes pidió David al sacerdote?",
+      "explanation": "David preguntó qué tenía a mano y le pidió cinco panes, o lo que se hallase.",
+      "bibleReference": "1 Samuel 21:3",
+      "answers": [
+        {
+          "text": "Diez panes",
+          "isCorrect": false
+        },
+        {
+          "text": "Cinco panes",
+          "isCorrect": true
+        },
+        {
+          "text": "Dos panes",
+          "isCorrect": false
+        },
+        {
+          "text": "Doce panes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué clase de pan dijo el sacerdote que era lo único que tenía a mano?",
+      "explanation": "El sacerdote respondió que no tenía pan común a la mano, sino solamente pan sagrado, y que lo daría si los criados se habían guardado de mujeres.",
+      "bibleReference": "1 Samuel 21:4",
+      "answers": [
+        {
+          "text": "Pan sagrado",
+          "isCorrect": true
+        },
+        {
+          "text": "Pan común",
+          "isCorrect": false
+        },
+        {
+          "text": "Grano tostado",
+          "isCorrect": false
+        },
+        {
+          "text": "Panes calientes del día",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué panes eran los que el sacerdote tenía allí y le dio a David?",
+      "explanation": "Allí no había otro pan que los panes de la proposición, que habían sido quitados de delante de Jehová para poner panes calientes en su lugar.",
+      "bibleReference": "1 Samuel 21:6",
+      "answers": [
+        {
+          "text": "Los panes del camino de los mozos",
+          "isCorrect": false
+        },
+        {
+          "text": "Los panes guardados en el ephod",
+          "isCorrect": false
+        },
+        {
+          "text": "Los panes de la proposición",
+          "isCorrect": true
+        },
+        {
+          "text": "Los panes del sacrificio aniversario",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quién era el siervo de Saúl que aquel día estaba allí detenido delante de Jehová?",
+      "explanation": "Aquel día estaba allí detenido delante de Jehová uno de los siervos de Saúl llamado Doeg, Idumeo, principal de los pastores de Saúl.",
+      "bibleReference": "1 Samuel 21:7",
+      "answers": [
+        {
+          "text": "Abner, general del ejército",
+          "isCorrect": false
+        },
+        {
+          "text": "Abiathar, hijo del sacerdote",
+          "isCorrect": false
+        },
+        {
+          "text": "Adriel Meholatita",
+          "isCorrect": false
+        },
+        {
+          "text": "Doeg, Idumeo",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde estaba guardada la espada de Goliath que el sacerdote ofreció a David?",
+      "explanation": "El sacerdote dijo que la espada de Goliath el Filisteo, al que David venció en el valle del Alcornoque, estaba allí envuelta en un velo detrás del ephod.",
+      "bibleReference": "1 Samuel 21:9",
+      "answers": [
+        {
+          "text": "Envuelta en un velo detrás del ephod",
+          "isCorrect": true
+        },
+        {
+          "text": "Colgada en la tienda del rey",
+          "isCorrect": false
+        },
+        {
+          "text": "Guardada en el arca de Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "Puesta junto a la puerta de la ciudad",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijeron los siervos de Achîs cuando David llegó a Gath?",
+      "explanation": "Los siervos de Achîs preguntaron si no era aquel David, el rey de la tierra, a quien cantaban en corros: \"Hirió Saúl sus miles, y David sus diez miles.\"",
+      "bibleReference": "1 Samuel 21:10-11",
+      "answers": [
+        {
+          "text": "Que era un siervo enviado por el rey Saúl",
+          "isCorrect": false
+        },
+        {
+          "text": "Que era el sacerdote que huía de Nob",
+          "isCorrect": false
+        },
+        {
+          "text": "Que era el escudero del gigante de Gath",
+          "isCorrect": false
+        },
+        {
+          "text": "Que era aquel David de quien cantaban en corros",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo David delante de los siervos de Achîs por el gran temor que tuvo?",
+      "explanation": "David mudó su habla delante de ellos, se fingió loco entre sus manos, escribía en las portadas de las puertas y dejaba correr su saliva por su barba.",
+      "bibleReference": "1 Samuel 21:12-13",
+      "answers": [
+        {
+          "text": "Se escondió en una cueva del camino",
+          "isCorrect": false
+        },
+        {
+          "text": "Pidió al rey de Gath que lo tomase por siervo",
+          "isCorrect": false
+        },
+        {
+          "text": "Mudó su habla y se fingió loco entre sus manos",
+          "isCorrect": true
+        },
+        {
+          "text": "Entregó la espada del Filisteo a los siervos",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

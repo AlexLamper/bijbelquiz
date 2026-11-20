@@ -1,0 +1,242 @@
+{
+  "title": "1 Crónicas Quiz bíblico - Capítulo 2",
+  "description": "Diez preguntas sobre 1 Crónicas 2: los hijos de Israel, la descendencia de Judá hasta David y las familias de Hesrón y de Caleb.",
+  "slug": "1-chronicles-quiz-part-2",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué dice el texto acerca de Er, el primogénito de Judá?",
+      "explanation": "Er, primogénito de Judá, fué malo delante de Jehová, y Jehová lo mató.",
+      "bibleReference": "1 Crónicas 2:3",
+      "answers": [
+        {
+          "text": "Que fué malo delante de Jehová y que Jehová lo mató",
+          "isCorrect": true
+        },
+        {
+          "text": "Que fué príncipe de los hijos de Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "Que murió sin hijos en Galaad",
+          "isCorrect": false
+        },
+        {
+          "text": "Que alborotó a Israel con el anatema",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos hijos de Judá cuenta el texto en total?",
+      "explanation": "Después de nombrar a Er, Onán y Sela, y a Phares y Zara que le parió Thamar su nuera, el texto dice que todos los hijos de Judá fueron cinco.",
+      "bibleReference": "1 Crónicas 2:4",
+      "answers": [
+        {
+          "text": "Tres",
+          "isCorrect": false
+        },
+        {
+          "text": "Doce",
+          "isCorrect": false
+        },
+        {
+          "text": "Cinco",
+          "isCorrect": true
+        },
+        {
+          "text": "Siete",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quién alborotó a Israel porque prevaricó en el anatema?",
+      "explanation": "Hijo de Chârmi fué Achâr, el que alborotó a Israel porque prevaricó en el anatema.",
+      "bibleReference": "1 Crónicas 2:7",
+      "answers": [
+        {
+          "text": "Chârmi",
+          "isCorrect": false
+        },
+        {
+          "text": "Achâr",
+          "isCorrect": true
+        },
+        {
+          "text": "Ethán",
+          "isCorrect": false
+        },
+        {
+          "text": "Azaría",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según la lista de los hijos de Isaí, ¿qué lugar ocupa David?",
+      "explanation": "El texto nombra a Eliab el primogénito, Abinadab el segundo, Sima el tercero, Nathanael el cuarto, Radai el quinto, Osem el sexto y David el séptimo.",
+      "bibleReference": "1 Crónicas 2:13-15",
+      "answers": [
+        {
+          "text": "El primero",
+          "isCorrect": false
+        },
+        {
+          "text": "El tercero",
+          "isCorrect": false
+        },
+        {
+          "text": "El quinto",
+          "isCorrect": false
+        },
+        {
+          "text": "El séptimo",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Quiénes eran los tres hijos de Sarvia?",
+      "explanation": "Los hijos de Sarvia fueron tres: Abisai, Joab y Asael.",
+      "bibleReference": "1 Crónicas 2:16",
+      "answers": [
+        {
+          "text": "Abisai, Joab y Asael",
+          "isCorrect": true
+        },
+        {
+          "text": "Jeser, Sobad y Ardón",
+          "isCorrect": false
+        },
+        {
+          "text": "Ram, Buna y Orem",
+          "isCorrect": false
+        },
+        {
+          "text": "Harán, Mosa y Gazez",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quién fue el padre de Amasa, el hijo de Abigail?",
+      "explanation": "Abigail engendró a Amasa, cuyo padre fué Jether Ismaelita.",
+      "bibleReference": "1 Crónicas 2:17",
+      "answers": [
+        {
+          "text": "Caleb hijo de Hesrón",
+          "isCorrect": false
+        },
+        {
+          "text": "Isaí",
+          "isCorrect": false
+        },
+        {
+          "text": "Jether Ismaelita",
+          "isCorrect": true
+        },
+        {
+          "text": "Jarha el Egipcio",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántas ciudades tuvo Jair en la tierra de Galaad?",
+      "explanation": "Segub engendró a Jair, el cual tuvo veintitrés ciudades en la tierra de Galaad.",
+      "bibleReference": "1 Crónicas 2:22",
+      "answers": [
+        {
+          "text": "Sesenta",
+          "isCorrect": false
+        },
+        {
+          "text": "Veintitrés",
+          "isCorrect": true
+        },
+        {
+          "text": "Doce",
+          "isCorrect": false
+        },
+        {
+          "text": "Treinta",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Como Sesán no tuvo hijos sino hijas, ¿a quién dió por mujer a su hija?",
+      "explanation": "Sesán no tuvo hijos sino hijas, y tuvo un siervo Egipcio llamado Jarha, al cual dió por mujer a su hija; y ella le parió a Athai.",
+      "bibleReference": "1 Crónicas 2:34-35",
+      "answers": [
+        {
+          "text": "A Athai, hijo de Nathán",
+          "isCorrect": false
+        },
+        {
+          "text": "A Alai, hijo de Sesam",
+          "isCorrect": false
+        },
+        {
+          "text": "A Obed, hijo de Ephlal",
+          "isCorrect": false
+        },
+        {
+          "text": "A Jarha, su siervo Egipcio",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo se llamaba la hija de Caleb que nombra el texto?",
+      "explanation": "El texto dice que Achsa fué hija de Caleb.",
+      "bibleReference": "1 Crónicas 2:49",
+      "answers": [
+        {
+          "text": "Achsa",
+          "isCorrect": true
+        },
+        {
+          "text": "Azuba",
+          "isCorrect": false
+        },
+        {
+          "text": "Maachâ",
+          "isCorrect": false
+        },
+        {
+          "text": "Ephrata",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Al final del capítulo, ¿dónde moraban las familias de los escribas?",
+      "explanation": "Las familias de los escribas moraban en Jabes: los Thiratheos, Simatheos y Sucatheos.",
+      "bibleReference": "1 Crónicas 2:55",
+      "answers": [
+        {
+          "text": "En Beth-lehem",
+          "isCorrect": false
+        },
+        {
+          "text": "En Chîriath-jearim",
+          "isCorrect": false
+        },
+        {
+          "text": "En Jabes",
+          "isCorrect": true
+        },
+        {
+          "text": "En Tecoa",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

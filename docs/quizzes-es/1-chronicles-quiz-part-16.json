@@ -1,0 +1,122 @@
+{
+  "title": "1 Crónicas Quiz bíblico - Capítulo 16",
+  "description": "Diez preguntas sobre 1 Crónicas 16: el arca puesta en la tienda, el cántico de alabanza que David entregó a Asaph y los ministros dejados en Gabaón.",
+  "slug": "1-chronicles-quiz-part-16",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué repartió David a cada uno de Israel, tanto a los hombres como a las mujeres?",
+      "explanation": "David repartió á todo Israel, así á hombres como á mujeres, á cada uno una torta de pan, una pieza de carne y un frasco de vino.",
+      "bibleReference": "1 Crónicas 16:3",
+      "answers": [
+        { "text": "Pan, una pieza de carne y un frasco de vino", "isCorrect": true },
+        { "text": "Un cordero y una medida de harina", "isCorrect": false },
+        { "text": "Pan y agua para el camino", "isCorrect": false },
+        { "text": "Aceite, higos y pasas en abundancia", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Quién era el primero de los ministros de los Levitas puestos delante del arca de Jehová?",
+      "explanation": "Asaph era el primero de los ministros puestos delante del arca, y el segundo después de él Zachârías.",
+      "bibleReference": "1 Crónicas 16:5",
+      "answers": [
+        { "text": "Hemán", "isCorrect": false },
+        { "text": "Asaph", "isCorrect": true },
+        { "text": "Jeduthún", "isCorrect": false },
+        { "text": "Zachârías", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué sacerdotes estaban continuamente con trompetas delante del arca del pacto de Dios?",
+      "explanation": "Benaías también y Jahaziel, sacerdotes, estaban continuamente con trompetas delante del arca del pacto de Dios.",
+      "bibleReference": "1 Crónicas 16:6",
+      "answers": [
+        { "text": "Asaph y Zachârías", "isCorrect": false },
+        { "text": "Sadoc y Abiathar", "isCorrect": false },
+        { "text": "Benaías y Jahaziel", "isCorrect": true },
+        { "text": "Hemán y Jeduthún", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el cántico, además de buscar a Jehová y su fortaleza, ¿qué se debe buscar continuamente?",
+      "explanation": "El cántico dice: Buscad á Jehová y su fortaleza; buscad su rostro continuamente.",
+      "bibleReference": "1 Crónicas 16:11",
+      "answers": [
+        { "text": "Su altar", "isCorrect": false },
+        { "text": "Su arca", "isCorrect": false },
+        { "text": "Su morada", "isCorrect": false },
+        { "text": "Su rostro", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el cántico, ¿con quién concertó Dios el pacto y a quién hizo su juramento?",
+      "explanation": "El cántico habla del pacto que concertó con Abraham y de su juramento á Isaac.",
+      "bibleReference": "1 Crónicas 16:16",
+      "answers": [
+        { "text": "Con Abraham, con juramento á Isaac", "isCorrect": true },
+        { "text": "Con Noé, con juramento á Sem", "isCorrect": false },
+        { "text": "Con Moisés, con juramento á Aarón", "isCorrect": false },
+        { "text": "Con David, con juramento á Salomón", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el cántico, ¿qué tierra prometió Dios dar como suerte de su herencia?",
+      "explanation": "El cántico dice: A ti daré la tierra de Canaán, suerte de vuestra herencia.",
+      "bibleReference": "1 Crónicas 16:18",
+      "answers": [
+        { "text": "La tierra de Egipto", "isCorrect": false },
+        { "text": "La tierra de Canaán", "isCorrect": true },
+        { "text": "La tierra de Hamath", "isCorrect": false },
+        { "text": "La tierra de Moab", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Dios acerca de sus ungidos y de sus profetas, según el cántico?",
+      "explanation": "El cántico dice: No toquéis, dijo, á mis ungidos, ni hagáis mal á mis profetas.",
+      "bibleReference": "1 Crónicas 16:22",
+      "answers": [
+        { "text": "No olvidéis mi alianza, ni mis juicios", "isCorrect": false },
+        { "text": "No sirváis á los dioses de los pueblos", "isCorrect": false },
+        { "text": "No toquéis á mis ungidos, ni hagáis mal á mis profetas", "isCorrect": true },
+        { "text": "No temáis á los reyes de la tierra", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el cántico, ¿qué son todos los dioses de los pueblos, y qué hizo Jehová?",
+      "explanation": "El cántico dice que todos los dioses de los pueblos son nada, mas Jehová hizo los cielos.",
+      "bibleReference": "1 Crónicas 16:26",
+      "answers": [
+        { "text": "Son fuertes, mas Jehová es más fuerte", "isCorrect": false },
+        { "text": "Son de oro, y Jehová los quemó", "isCorrect": false },
+        { "text": "Son muchos, y Jehová es uno", "isCorrect": false },
+        { "text": "Son nada, y Jehová hizo los cielos", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿A quién dejó David delante del tabernáculo de Jehová, en el alto que estaba en Gabaón?",
+      "explanation": "David dejó allí á Sadoc el sacerdote y á sus hermanos los sacerdotes, delante del tabernáculo de Jehová en el alto que estaba en Gabaón.",
+      "bibleReference": "1 Crónicas 16:39",
+      "answers": [
+        { "text": "A Sadoc el sacerdote", "isCorrect": true },
+        { "text": "A Asaph y sus hermanos", "isCorrect": false },
+        { "text": "A Obed-edom hijo de Jeduthún", "isCorrect": false },
+        { "text": "A Benaías y Jahaziel", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué hizo David cuando todo el pueblo se fue cada uno a su casa?",
+      "explanation": "Todo el pueblo se fué cada uno á su casa, y David se volvió para bendecir su casa.",
+      "bibleReference": "1 Crónicas 16:43",
+      "answers": [
+        { "text": "Se quedó delante del arca", "isCorrect": false },
+        { "text": "Se volvió para bendecir su casa", "isCorrect": true },
+        { "text": "Fue á Gabaón á sacrificar", "isCorrect": false },
+        { "text": "Envió á Joab á la guerra", "isCorrect": false }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "title": "2 Reyes Quiz bíblico - Capítulo 15",
+  "description": "Diez preguntas sobre 2 Reyes 15: la lepra de Azarías, las conjuraciones en Israel, el tributo a Phul y el reinado de Jotham.",
+  "slug": "2-kings-quiz-part-15",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cuántos años reinó Azarías en Jerusalem?",
+      "explanation": "Cuando Azarías comenzó a reinar era de dieciséis años, y reinó cincuenta y dos años en Jerusalem.",
+      "bibleReference": "2 Reyes 15:2",
+      "answers": [
+        { "text": "Dieciséis años", "isCorrect": false },
+        { "text": "Veinte años", "isCorrect": false },
+        { "text": "Cincuenta y dos años", "isCorrect": true },
+        { "text": "Cuarenta y un años", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué le hizo Jehová al rey Azarías, de modo que habitó en casa separada?",
+      "explanation": "Jehová hirió al rey con lepra, y fue leproso hasta el día de su muerte, y habitó en casa separada.",
+      "bibleReference": "2 Reyes 15:5",
+      "answers": [
+        { "text": "Lo hirió con lepra", "isCorrect": true },
+        { "text": "Lo hirió de ceguera", "isCorrect": false },
+        { "text": "Le quitó la palabra", "isCorrect": false },
+        { "text": "Lo entregó en mano de Siria", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Mientras el rey estaba leproso, ¿quién tenía el cargo del palacio y gobernaba al pueblo de la tierra?",
+      "explanation": "Jotham hijo del rey tenía el cargo del palacio y gobernaba al pueblo de la tierra.",
+      "bibleReference": "2 Reyes 15:5",
+      "answers": [
+        { "text": "Sadoc, el padre de Jerusa", "isCorrect": false },
+        { "text": "Amasías su padre", "isCorrect": false },
+        { "text": "Jecolía su madre", "isCorrect": false },
+        { "text": "Jotham hijo del rey", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Cuánto tiempo reinó Zachârías hijo de Jeroboam sobre Israel?",
+      "explanation": "Zachârías hijo de Jeroboam reinó sobre Israel seis meses.",
+      "bibleReference": "2 Reyes 15:8",
+      "answers": [
+        { "text": "Un mes", "isCorrect": false },
+        { "text": "Seis meses", "isCorrect": true },
+        { "text": "Dos años", "isCorrect": false },
+        { "text": "Diez años", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Quién se conjuró contra Zachârías, lo mató y reinó en su lugar?",
+      "explanation": "Sallum hijo de Jabes se conjuró contra él, lo hirió en presencia de su pueblo, lo mató y reinó en su lugar.",
+      "bibleReference": "2 Reyes 15:10",
+      "answers": [
+        { "text": "Manahem hijo de Gadi", "isCorrect": false },
+        { "text": "Peka hijo de Remalías", "isCorrect": false },
+        { "text": "Sallum hijo de Jabes", "isCorrect": true },
+        { "text": "Oseas hijo de Ela", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué palabra había hablado Jehová a Jehú, que se cumplió así?",
+      "explanation": "Esta fue la palabra de Jehová que había hablado a Jehú: \"Tus hijos hasta la cuarta generación se sentarán en el trono de Israel\"; y fue así.",
+      "bibleReference": "2 Reyes 15:12",
+      "answers": [
+        { "text": "Que sus hijos se sentarían en el trono hasta la cuarta generación", "isCorrect": true },
+        { "text": "Que su casa sería destruida en un solo día por los Asirios", "isCorrect": false },
+        { "text": "Que reinaría cuarenta años en Samaria sobre todo Israel", "isCorrect": false },
+        { "text": "Que su hijo edificaría una casa a Jehová en Jerusalem", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dio Manahem a Phul rey de Asiria para que le ayudara a confirmarse en el reino?",
+      "explanation": "Manahem dio a Phul mil talentos de plata para que le ayudara a confirmarse en el reino.",
+      "bibleReference": "2 Reyes 15:19",
+      "answers": [
+        { "text": "Cincuenta siclos de oro", "isCorrect": false },
+        { "text": "Todos los vasos de la casa de Jehová", "isCorrect": false },
+        { "text": "Las ciudades de Galaad y Galilea", "isCorrect": false },
+        { "text": "Mil talentos de plata", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Quién conspiró contra Pekaía y lo hirió en el palacio de la casa real en Samaria?",
+      "explanation": "Peka hijo de Remalías, capitán suyo, lo hirió en Samaria en el palacio de la casa real, lo mató y reinó en su lugar.",
+      "bibleReference": "2 Reyes 15:25",
+      "answers": [
+        { "text": "Argob, uno de los Galaaditas", "isCorrect": false },
+        { "text": "Peka hijo de Remalías, su capitán", "isCorrect": true },
+        { "text": "Manahem hijo de Gadi, de Thirsa", "isCorrect": false },
+        { "text": "Resín rey de Siria", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Tiglath-pileser con la gente de las ciudades que tomó en los días de Peka?",
+      "explanation": "Tiglath-pileser rey de los Asirios tomó Ahión, Abel-beth-maachâ, Janoa, Cedes, Asor, Galaad, Galilea y toda la tierra de Nephtalí, y los transportó a Asiria.",
+      "bibleReference": "2 Reyes 15:29",
+      "answers": [
+        { "text": "Los transportó a Asiria", "isCorrect": true },
+        { "text": "Les impuso cincuenta siclos de plata", "isCorrect": false },
+        { "text": "Los dejó en sus ciudades sin tocarlos", "isCorrect": false },
+        { "text": "Los llevó cautivos a Damasco", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué edificó Jotham, aunque los altos no fueron quitados?",
+      "explanation": "El pueblo aún sacrificaba y quemaba perfumes en los altos; Jotham edificó la puerta más alta de la casa de Jehová.",
+      "bibleReference": "2 Reyes 15:35",
+      "answers": [
+        { "text": "El muro de la ciudad de David", "isCorrect": false },
+        { "text": "La puerta más alta de la casa de Jehová", "isCorrect": true },
+        { "text": "Una casa separada para el rey leproso", "isCorrect": false },
+        { "text": "Un altar nuevo delante del templo", "isCorrect": false }
+      ]
+    }
+  ]
+}

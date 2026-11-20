@@ -1,0 +1,242 @@
+{
+  "title": "1 Reyes Quiz bíblico - Capítulo 9",
+  "description": "Diez preguntas sobre 1 Reyes 9: la segunda aparición de Jehová a Salomón, las ciudades dadas a Hiram y los navíos que fueron a Ophir.",
+  "slug": "1-kings-quiz-part-9",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Dónde se le había aparecido Jehová a Salomón antes de esta segunda vez?",
+      "explanation": "El texto dice que Jehová apareció a Salomón la segunda vez, como le había aparecido en Gabaón.",
+      "bibleReference": "1 Reyes 9:2",
+      "answers": [
+        {
+          "text": "En Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "En Gabaón",
+          "isCorrect": true
+        },
+        {
+          "text": "En Sión",
+          "isCorrect": false
+        },
+        {
+          "text": "En Tiro",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Jehová que estaría en aquella casa todos los días?",
+      "explanation": "Jehová dijo que había santificado aquella casa para poner su nombre en ella para siempre, y que en ella estarían sus ojos y su corazón todos los días.",
+      "bibleReference": "1 Reyes 9:3",
+      "answers": [
+        {
+          "text": "El arca y las tablas",
+          "isCorrect": false
+        },
+        {
+          "text": "La nube y el fuego",
+          "isCorrect": false
+        },
+        {
+          "text": "Los querubines de oro",
+          "isCorrect": false
+        },
+        {
+          "text": "Sus ojos y su corazón",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Si el pueblo se apartaba y servía a dioses ajenos, ¿qué sería Israel para todos los pueblos?",
+      "explanation": "Jehová dijo que cortaría a Israel de sobre la haz de la tierra y que Israel sería por proverbio y fábula a todos los pueblos.",
+      "bibleReference": "1 Reyes 9:7",
+      "answers": [
+        {
+          "text": "Proverbio y fábula",
+          "isCorrect": true
+        },
+        {
+          "text": "Luz y bendición",
+          "isCorrect": false
+        },
+        {
+          "text": "Ejemplo de justicia",
+          "isCorrect": false
+        },
+        {
+          "text": "Pueblo de reposo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Al cabo de cuántos años había edificado Salomón las dos casas?",
+      "explanation": "El texto dice que aconteció al cabo de veinte años, en que Salomón había edificado las dos casas: la casa de Jehová y la casa real.",
+      "bibleReference": "1 Reyes 9:10",
+      "answers": [
+        {
+          "text": "Siete",
+          "isCorrect": false
+        },
+        {
+          "text": "Trece",
+          "isCorrect": false
+        },
+        {
+          "text": "Veinte",
+          "isCorrect": true
+        },
+        {
+          "text": "Cuarenta",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dio el rey Salomón a Hiram rey de Tiro?",
+      "explanation": "El texto dice que el rey Salomón dio a Hiram veinte ciudades en tierra de Galilea.",
+      "bibleReference": "1 Reyes 9:11",
+      "answers": [
+        {
+          "text": "Veinte talentos de oro",
+          "isCorrect": false
+        },
+        {
+          "text": "Veinte ciudades en Galilea",
+          "isCorrect": true
+        },
+        {
+          "text": "Madera de cedro y de haya",
+          "isCorrect": false
+        },
+        {
+          "text": "Navíos en el mar Bermejo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué nombre puso Hiram a aquellas ciudades que no le contentaron?",
+      "explanation": "Hiram preguntó qué ciudades eran aquellas que le había dado, y les puso por nombre la tierra de Cabul, hasta hoy.",
+      "bibleReference": "1 Reyes 9:13",
+      "answers": [
+        {
+          "text": "La tierra de Edom",
+          "isCorrect": false
+        },
+        {
+          "text": "La tierra de Millo",
+          "isCorrect": false
+        },
+        {
+          "text": "La tierra de Ophir",
+          "isCorrect": false
+        },
+        {
+          "text": "La tierra de Cabul",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué ciudad tomó y quemó Faraón rey de Egipto para darla en don a su hija?",
+      "explanation": "Faraón rey de Egipto había subido y tomado a Gezer, la había quemado y la dio en don a su hija, la mujer de Salomón.",
+      "bibleReference": "1 Reyes 9:16",
+      "answers": [
+        {
+          "text": "Gezer",
+          "isCorrect": true
+        },
+        {
+          "text": "Hasor",
+          "isCorrect": false
+        },
+        {
+          "text": "Megiddo",
+          "isCorrect": false
+        },
+        {
+          "text": "Baalath",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos eran los jefes y prepósitos que Salomón había puesto sobre las obras?",
+      "explanation": "Los que Salomón había hecho jefes y prepósitos sobre las obras eran quinientos y cincuenta, y estaban sobre el pueblo que trabajaba.",
+      "bibleReference": "1 Reyes 9:23",
+      "answers": [
+        {
+          "text": "Cincuenta y cinco",
+          "isCorrect": false
+        },
+        {
+          "text": "Quinientos y cinco",
+          "isCorrect": false
+        },
+        {
+          "text": "Quinientos y cincuenta",
+          "isCorrect": true
+        },
+        {
+          "text": "Cinco mil y cincuenta",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde hizo el rey Salomón sus navíos?",
+      "explanation": "El rey Salomón hizo navíos en Ezión-geber, que es junto a Elath, en la ribera del mar Bermejo, en la tierra de Edom.",
+      "bibleReference": "1 Reyes 9:26",
+      "answers": [
+        {
+          "text": "En la ribera de Tiro",
+          "isCorrect": false
+        },
+        {
+          "text": "En Ezión-geber",
+          "isCorrect": true
+        },
+        {
+          "text": "En el puerto de Ophir",
+          "isCorrect": false
+        },
+        {
+          "text": "En la costa de Gezer",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuánto oro trajeron al rey Salomón desde Ophir?",
+      "explanation": "Los que fueron a Ophir tomaron de allí oro, cuatrocientos y veinte talentos, y lo trajeron al rey Salomón.",
+      "bibleReference": "1 Reyes 9:28",
+      "answers": [
+        {
+          "text": "Ciento y veinte talentos",
+          "isCorrect": false
+        },
+        {
+          "text": "Doscientos y veinte talentos",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuatro mil y veinte talentos",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuatrocientos y veinte talentos",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

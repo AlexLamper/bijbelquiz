@@ -1,0 +1,122 @@
+{
+  "title": "2 Reyes Quiz bíblico - Capítulo 22",
+  "description": "Diez preguntas sobre 2 Reyes 22: Josías rey de Judá, el libro de la ley hallado en el templo y la respuesta de la profetisa Hulda.",
+  "slug": "2-kings-quiz-part-22",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cuántos años tenía Josías cuando comenzó a reinar?",
+      "explanation": "Cuando Josías comenzó a reinar era de ocho años, y reinó en Jerusalem treinta y un años.",
+      "bibleReference": "2 Reyes 22:1",
+      "answers": [
+        { "text": "Doce años", "isCorrect": false },
+        { "text": "Dieciocho años", "isCorrect": false },
+        { "text": "Ocho años", "isCorrect": true },
+        { "text": "Veintitrés años", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿A quién envió el rey a la casa de Jehová para tratar del dinero recogido?",
+      "explanation": "A los dieciocho años del rey Josías, el rey envió a Saphán hijo de Azalía, hijo de Mesullam, escriba, a la casa de Jehová.",
+      "bibleReference": "2 Reyes 22:3",
+      "answers": [
+        { "text": "A Saphán el escriba", "isCorrect": true },
+        { "text": "A Asaía siervo del rey", "isCorrect": false },
+        { "text": "A Achbor hijo de Michâía", "isCorrect": false },
+        { "text": "A Ahicam hijo de Saphán", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Por qué no se había de contar el dinero confiado a los que hacían la obra?",
+      "explanation": "El rey mandó que no se les contase el dinero cuyo manejo se les confiaba, porque ellos procedían con fidelidad.",
+      "bibleReference": "2 Reyes 22:7",
+      "answers": [
+        { "text": "Porque los guardianes de la puerta ya lo habían contado", "isCorrect": false },
+        { "text": "Porque procedían con fidelidad", "isCorrect": true },
+        { "text": "Porque el sumo sacerdote respondía por ellos", "isCorrect": false },
+        { "text": "Porque era poco el dinero que se les daba", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dijo el sumo sacerdote Hilcías que había hallado en la casa de Jehová?",
+      "explanation": "Hilcías dijo a Saphán escriba: \"El libro de la ley he hallado en la casa de Jehová\", y le dio el libro.",
+      "bibleReference": "2 Reyes 22:8",
+      "answers": [
+        { "text": "Los vasos hechos para Baal", "isCorrect": false },
+        { "text": "El arca del dinero del pueblo", "isCorrect": false },
+        { "text": "Las crónicas de los reyes de Judá", "isCorrect": false },
+        { "text": "El libro de la ley", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Quién leyó el libro delante del rey?",
+      "explanation": "Saphán escriba declaró al rey que Hilcías el sacerdote le había dado un libro, y Saphán lo leyó delante del rey.",
+      "bibleReference": "2 Reyes 22:10",
+      "answers": [
+        { "text": "Hilcías el sacerdote", "isCorrect": false },
+        { "text": "Saphán el escriba", "isCorrect": true },
+        { "text": "Hulda la profetisa", "isCorrect": false },
+        { "text": "El rey Josías mismo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué hizo el rey cuando oyó las palabras del libro de la ley?",
+      "explanation": "Cuando el rey hubo oído las palabras del libro de la ley, rasgó sus vestidos.",
+      "bibleReference": "2 Reyes 22:11",
+      "answers": [
+        { "text": "Rasgó sus vestidos", "isCorrect": true },
+        { "text": "Mandó esconder el libro", "isCorrect": false },
+        { "text": "Subió al altar a sacrificar", "isCorrect": false },
+        { "text": "Reprendió al sumo sacerdote", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué mandó el rey a Hilcías y a los hombres que envió con él?",
+      "explanation": "Les dijo: \"Id, y preguntad á Jehová por mí, y por el pueblo, y por todo Judá, acerca de las palabras de este libro que se ha hallado\".",
+      "bibleReference": "2 Reyes 22:13",
+      "answers": [
+        { "text": "Que leyeran el libro a todo el pueblo", "isCorrect": false },
+        { "text": "Que quemaran los altares de los altos", "isCorrect": false },
+        { "text": "Que recogieran más dinero para el templo", "isCorrect": false },
+        { "text": "Que preguntaran a Jehová acerca de ese libro", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿A qué profetisa fueron Hilcías y los enviados del rey?",
+      "explanation": "Fueron a Hulda profetisa, mujer de Sallum hijo de Ticva hijo de Araas, guarda de las vestiduras, que moraba en Jerusalem en la segunda parte de la ciudad.",
+      "bibleReference": "2 Reyes 22:14",
+      "answers": [
+        { "text": "A Idida hija de Adaía", "isCorrect": false },
+        { "text": "A Amutal hija de Jeremías", "isCorrect": false },
+        { "text": "A Hulda, mujer de Sallum", "isCorrect": true },
+        { "text": "A Zebuda hija de Pedaia", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según la respuesta de Jehová, ¿por qué se había encendido su furor contra aquel lugar?",
+      "explanation": "Jehová dijo que lo habían dejado y habían quemado perfumes a dioses ajenos, provocándole a ira en toda obra de sus manos.",
+      "bibleReference": "2 Reyes 22:17",
+      "answers": [
+        { "text": "Porque lo dejaron y quemaron perfumes a dioses ajenos", "isCorrect": true },
+        { "text": "Porque no habían reparado las aberturas del templo", "isCorrect": false },
+        { "text": "Porque habían escondido el libro de la ley", "isCorrect": false },
+        { "text": "Porque habían hecho pacto con el rey de Egipto", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué le prometió Jehová al rey, porque su corazón se enterneció y se humilló?",
+      "explanation": "Jehová le dijo que lo recogería con sus padres y sería recogido a su sepulcro en paz, y que sus ojos no verían todo el mal que él traería sobre aquel lugar.",
+      "bibleReference": "2 Reyes 22:19-20",
+      "answers": [
+        { "text": "Que añadiría quince años a sus días", "isCorrect": false },
+        { "text": "Que no vería el mal que vendría sobre aquel lugar", "isCorrect": true },
+        { "text": "Que apagaría del todo su furor contra Judá", "isCorrect": false },
+        { "text": "Que le daría una señal en el reloj de Achâz", "isCorrect": false }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "title": "2 Reyes Quiz bíblico - Capítulo 13",
+  "description": "Diez preguntas sobre 2 Reyes 13: Joachâz y Joas reyes de Israel, las saetas de Eliseo y el muerto que revivió en su sepulcro.",
+  "slug": "2-kings-quiz-part-13",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Quién comenzó a reinar sobre Israel en Samaria, hijo de Jehú?",
+      "explanation": "Joachâz hijo de Jehú comenzó a reinar sobre Israel en Samaria, y reinó diecisiete años.",
+      "bibleReference": "2 Reyes 13:1",
+      "answers": [
+        { "text": "Joachâz", "isCorrect": true },
+        { "text": "Jeroboam", "isCorrect": false },
+        { "text": "Amasías", "isCorrect": false },
+        { "text": "Ochôzías", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿En mano de quiénes entregó Jehová a Israel cuando se encendió su furor?",
+      "explanation": "Jehová los entregó en mano de Hazael rey de Siria y en mano de Ben-adad hijo de Hazael, por largo tiempo.",
+      "bibleReference": "2 Reyes 13:3",
+      "answers": [
+        { "text": "De los Moabitas y de los Idumeos", "isCorrect": false },
+        { "text": "Del rey de Asiria y de los Filisteos", "isCorrect": false },
+        { "text": "De Hazael y de Ben-adad su hijo", "isCorrect": true },
+        { "text": "De Jeroboam hijo de Nabat", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué pasó cuando Joachâz oró a la faz de Jehová?",
+      "explanation": "Jehová lo oyó, porque miró la aflicción de Israel, pues el rey de Siria los afligía.",
+      "bibleReference": "2 Reyes 13:4",
+      "answers": [
+        { "text": "Jehová no quiso responderle", "isCorrect": false },
+        { "text": "Jehová lo oyó y miró la aflicción de Israel", "isCorrect": true },
+        { "text": "Jehová le mandó un profeta con una reprensión", "isCorrect": false },
+        { "text": "Jehová le dio diez años de paz con Siria", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuántos hombres de a caballo le habían quedado a Joachâz?",
+      "explanation": "No le había quedado gente a Joachâz sino cincuenta hombres de a caballo, diez carros y diez mil hombres de a pie.",
+      "bibleReference": "2 Reyes 13:7",
+      "answers": [
+        { "text": "Doscientos", "isCorrect": false },
+        { "text": "Mil quinientos", "isCorrect": false },
+        { "text": "Diez mil", "isCorrect": false },
+        { "text": "Cincuenta", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Joas rey de Israel llorando delante de Eliseo enfermo?",
+      "explanation": "Joas descendió a él y, llorando delante de él, dijo: \"¡Padre mío, padre mío, carro de Israel y su gente de á caballo!\"",
+      "bibleReference": "2 Reyes 13:14",
+      "answers": [
+        { "text": "\"Sáname, porque he pecado contra Jehová\"", "isCorrect": false },
+        { "text": "\"¡Padre mío, padre mío, carro de Israel y su gente de á caballo!\"", "isCorrect": true },
+        { "text": "\"¿Quién nos librará de la mano de Siria?\"", "isCorrect": false },
+        { "text": "\"Deja tu espíritu sobre mí antes de morir\"", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué ventana mandó Eliseo abrir al rey antes de tirar la saeta?",
+      "explanation": "Eliseo le dijo: \"Abre la ventana de hacia el oriente\", y cuando él la abrió le dijo: \"Tira\".",
+      "bibleReference": "2 Reyes 13:17",
+      "answers": [
+        { "text": "La de hacia el oriente", "isCorrect": true },
+        { "text": "La de hacia el occidente", "isCorrect": false },
+        { "text": "La que mira al desierto", "isCorrect": false },
+        { "text": "La más alta de la casa de Jehová", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿En qué lugar dijo Eliseo que el rey heriría a los Siros hasta consumirlos?",
+      "explanation": "Eliseo dijo: \"Saeta de salud de Jehová, y saeta de salud contra Siria: porque herirás á los Siros en Aphec, hasta consumirlos\".",
+      "bibleReference": "2 Reyes 13:17",
+      "answers": [
+        { "text": "En Samaria", "isCorrect": false },
+        { "text": "En Beth-semes", "isCorrect": false },
+        { "text": "En Gath", "isCorrect": false },
+        { "text": "En Aphec", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Por qué se enojó el varón de Dios con el rey cuando este hirió la tierra?",
+      "explanation": "El rey hirió la tierra tres veces y cesó; Eliseo le dijo que si hubiera herido cinco o seis veces habría herido a Siria hasta no quedar ninguno, pero ahora solo la heriría tres veces.",
+      "bibleReference": "2 Reyes 13:18-19",
+      "answers": [
+        { "text": "Porque hirió la tierra con el arco y no con las saetas", "isCorrect": false },
+        { "text": "Porque no quiso poner su mano sobre el arco", "isCorrect": false },
+        { "text": "Porque hirió solo tres veces en vez de cinco o seis", "isCorrect": true },
+        { "text": "Porque tiró la saeta hacia el occidente", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué le sucedió al hombre que fue arrojado en el sepulcro de Eliseo?",
+      "explanation": "Cuando el muerto llegó a tocar los huesos de Eliseo, revivió y se levantó sobre sus pies.",
+      "bibleReference": "2 Reyes 13:21",
+      "answers": [
+        { "text": "Revivió y se levantó sobre sus pies", "isCorrect": true },
+        { "text": "Los Moabitas se lo llevaron cautivo", "isCorrect": false },
+        { "text": "Fue sepultado en Samaria con los reyes", "isCorrect": false },
+        { "text": "Los huesos de Eliseo se deshicieron", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuántas veces batió Joas a Ben-adad, recuperando las ciudades de Israel?",
+      "explanation": "Joas tomó de mano de Ben-adad las ciudades que este había tomado de su padre: tres veces lo batió y restituyó las ciudades a Israel.",
+      "bibleReference": "2 Reyes 13:25",
+      "answers": [
+        { "text": "Una vez", "isCorrect": false },
+        { "text": "Tres veces", "isCorrect": true },
+        { "text": "Cinco veces", "isCorrect": false },
+        { "text": "Siete veces", "isCorrect": false }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "title": "1 Samuel Quiz bíblico - Capítulo 5",
+  "description": "Diez preguntas sobre 1 Samuel 5: el arca en la casa de Dagón, la plaga sobre Asdod y el arca enviada a Gath y a Ecrón.",
+  "slug": "1-samuel-quiz-part-5",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Desde qué lugar llevaron los filisteos el arca de Dios a Asdod?",
+      "explanation": "Los filisteos, tomada el arca de Dios, la trajeron desde Eben-ezer a Asdod.",
+      "bibleReference": "1 Samuel 5:1",
+      "answers": [
+        { "text": "Desde Eben-ezer", "isCorrect": true },
+        { "text": "Desde Silo", "isCorrect": false },
+        { "text": "Desde Gath", "isCorrect": false },
+        { "text": "Desde Ecrón", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿En qué casa metieron los filisteos el arca de Dios al llegar a Asdod?",
+      "explanation": "Tomaron el arca de Dios y la metieron en la casa de Dagón, y la pusieron junto a Dagón.",
+      "bibleReference": "1 Samuel 5:2",
+      "answers": [
+        { "text": "En la casa de Baal", "isCorrect": false },
+        { "text": "En la casa de Abinadab", "isCorrect": false },
+        { "text": "En la casa de Dagón", "isCorrect": true },
+        { "text": "En el templo de Astaroth", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué vieron los de Asdod cuando se levantaron de mañana el día siguiente?",
+      "explanation": "Al levantarse de mañana vieron a Dagón postrado en tierra delante del arca de Jehová, y lo volvieron a su lugar.",
+      "bibleReference": "1 Samuel 5:3",
+      "answers": [
+        { "text": "El arca abierta en medio del templo", "isCorrect": false },
+        { "text": "A Dagón postrado en tierra delante del arca", "isCorrect": true },
+        { "text": "A Dagón en pie sobre el umbral del templo", "isCorrect": false },
+        { "text": "El umbral del templo quebrado en pedazos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Al segundo día, ¿qué partes de Dagón estaban cortadas sobre el umbral?",
+      "explanation": "Dagón había caído postrado otra vez, y su cabeza y las dos palmas de sus manos estaban cortadas sobre el umbral, quedándole el tronco solamente.",
+      "bibleReference": "1 Samuel 5:4",
+      "answers": [
+        { "text": "Los dos pies y el brazo derecho", "isCorrect": false },
+        { "text": "La cabeza y los dos hombros", "isCorrect": false },
+        { "text": "Las dos manos y los dos pies", "isCorrect": false },
+        { "text": "La cabeza y las dos palmas de sus manos", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué dejaron de hacer por esta causa los sacerdotes de Dagón y cuantos entran en su templo?",
+      "explanation": "Por esta causa los sacerdotes de Dagón y todos los que entran en el templo de Dagón no pisan el umbral en Asdod, hasta hoy.",
+      "bibleReference": "1 Samuel 5:5",
+      "answers": [
+        { "text": "No pisan el umbral de Dagón en Asdod", "isCorrect": true },
+        { "text": "No entran más en el templo de Asdod", "isCorrect": false },
+        { "text": "No ofrecen sacrificios sobre el umbral", "isCorrect": false },
+        { "text": "No levantan la imagen caída de Dagón", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Con qué hirió la mano de Jehová a los de Asdod y a todos sus términos?",
+      "explanation": "La mano de Jehová se agravó sobre los de Asdod, y los destruyó y los hirió con hemorroides en Asdod y en todos sus términos.",
+      "bibleReference": "1 Samuel 5:6",
+      "answers": [
+        { "text": "Con sequía", "isCorrect": false },
+        { "text": "Con fuego del cielo", "isCorrect": false },
+        { "text": "Con una plaga de langostas", "isCorrect": false },
+        { "text": "Con hemorroides", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué dijeron los de Asdod al ver lo que estaba sucediendo?",
+      "explanation": "Los de Asdod dijeron que el arca del Dios de Israel no quedase con ellos, porque su mano era dura sobre ellos y sobre su dios Dagón.",
+      "bibleReference": "1 Samuel 5:7",
+      "answers": [
+        { "text": "Llamemos a los sacerdotes y adivinos de Dagón", "isCorrect": false },
+        { "text": "No quede con nosotros el arca del Dios de Israel", "isCorrect": true },
+        { "text": "Pongamos el arca junto a nuestro dios Dagón", "isCorrect": false },
+        { "text": "Edifiquemos un templo nuevo para el arca", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué respondieron los príncipes de los filisteos cuando se les preguntó qué hacer con el arca?",
+      "explanation": "Los príncipes de los filisteos respondieron que el arca del Dios de Israel pasase a Gath, y allá la pasaron.",
+      "bibleReference": "1 Samuel 5:8",
+      "answers": [
+        { "text": "Que el arca volviese a Eben-ezer", "isCorrect": false },
+        { "text": "Que el arca quedase en Asdod", "isCorrect": false },
+        { "text": "Que el arca pasase a Gath", "isCorrect": true },
+        { "text": "Que el arca pasase a Ascalón", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dieron voces los ecronitas cuando el arca de Dios llegó a Ecrón?",
+      "explanation": "Cuando el arca de Dios vino a Ecrón, los ecronitas dieron voces diciendo que habían pasado a ellos el arca del Dios de Israel para matarlos a ellos y a su pueblo.",
+      "bibleReference": "1 Samuel 5:10",
+      "answers": [
+        { "text": "Traed el arca al templo de nuestro dios", "isCorrect": false },
+        { "text": "Bendito el Dios de Israel que nos visita", "isCorrect": false },
+        { "text": "Juntemos los príncipes para pelear con Israel", "isCorrect": false },
+        { "text": "Han pasado a mí el arca del Dios de Israel por matarme", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué mandaron decir los príncipes de los filisteos cuando se juntaron por causa de Ecrón?",
+      "explanation": "Enviaron a juntar a todos los príncipes de los filisteos, diciendo que despachasen el arca del Dios de Israel y que se tornase a su lugar, para que no los matase.",
+      "bibleReference": "1 Samuel 5:11",
+      "answers": [
+        { "text": "Que la escondiesen en el templo de Dagón", "isCorrect": false },
+        { "text": "Que despachasen el arca y se tornase a su lugar", "isCorrect": true },
+        { "text": "Que la llevasen de nuevo a la ciudad de Gath", "isCorrect": false },
+        { "text": "Que la quemasen fuera de la ciudad", "isCorrect": false }
+      ]
+    }
+  ]
+}

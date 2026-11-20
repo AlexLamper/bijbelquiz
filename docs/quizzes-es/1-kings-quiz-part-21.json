@@ -1,0 +1,122 @@
+{
+  "title": "1 Reyes Quiz bíblico - Capítulo 21",
+  "description": "Diez preguntas sobre 1 Reyes 21: la viña de Naboth de Jezreel, las cartas de Jezabel y la palabra de Elías contra la casa de Achâb.",
+  "slug": "1-kings-quiz-part-21",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué pidió Achâb a Naboth de Jezreel, y para qué lo quería?",
+      "explanation": "Achâb le pidió su viña para un huerto de legumbres, porque estaba cercana, junto a su casa, y le ofreció otra viña mejor o el pago de su valor en dinero.",
+      "bibleReference": "1 Reyes 21:2",
+      "answers": [
+        { "text": "Su viña, para hacer de ella un huerto de legumbres", "isCorrect": true },
+        { "text": "Su casa, para ensanchar el palacio de Samaria", "isCorrect": false },
+        { "text": "Su campo, para asentar allí el campo del ejército", "isCorrect": false },
+        { "text": "Su heredad, para edificar un altar a Baal", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué le respondió Naboth al rey?",
+      "explanation": "Naboth respondió a Achâb: Guárdeme Jehová de que yo te dé a ti la heredad de mis padres.",
+      "bibleReference": "1 Reyes 21:3",
+      "answers": [
+        { "text": "Que se la daría si le pagaba su valor en dinero", "isCorrect": false },
+        { "text": "Que le daría otra viña mejor en su lugar", "isCorrect": false },
+        { "text": "Que Jehová le guardase de darle la heredad de sus padres", "isCorrect": true },
+        { "text": "Que lo pensaría y respondería al tercer día", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cómo vino Achâb a su casa después de aquella respuesta, y qué hizo?",
+      "explanation": "Vino a su casa triste y enojado por la palabra que Naboth le había respondido, se acostó en su cama, volvió su rostro y no comió pan.",
+      "bibleReference": "1 Reyes 21:4",
+      "answers": [
+        { "text": "Vino alegre, y mandó llamar a los ancianos", "isCorrect": false },
+        { "text": "Vino triste y enojado, se acostó y no comió pan", "isCorrect": true },
+        { "text": "Vino humillado, con saco sobre su carne", "isCorrect": false },
+        { "text": "Vino corriendo delante del carro hasta Jezreel", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué le dijo su mujer Jezabel cuando le vio tan triste?",
+      "explanation": "Jezabel le dijo que se levantase, comiese pan y se alegrase, y que ella le daría la viña de Naboth de Jezreel.",
+      "bibleReference": "1 Reyes 21:7",
+      "answers": [
+        { "text": "Que se olvidase de la viña y del dueño", "isCorrect": false },
+        { "text": "Que fuese él mismo a hablar otra vez con Naboth", "isCorrect": false },
+        { "text": "Que escribiese cartas a los ancianos de la ciudad", "isCorrect": false },
+        { "text": "Que comiese y se alegrase, que ella le daría la viña", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿En nombre de quién escribió Jezabel las cartas, y con qué las selló?",
+      "explanation": "Ella escribió cartas en nombre de Achâb, las selló con su anillo y las envió a los ancianos y a los principales que moraban en la ciudad con Naboth.",
+      "bibleReference": "1 Reyes 21:8",
+      "answers": [
+        { "text": "En nombre de Naboth, y las selló con su propio nombre", "isCorrect": false },
+        { "text": "En nombre de los ancianos, y las selló con cera", "isCorrect": false },
+        { "text": "En nombre de Achâb, y las selló con su anillo", "isCorrect": true },
+        { "text": "En nombre de Baal, y las selló con el sello del templo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué mandaban hacer las cartas que ella escribió?",
+      "explanation": "Mandaban proclamar ayuno, poner a Naboth a la cabecera del pueblo y poner delante de él dos hombres perversos que atestiguasen que había blasfemado a Dios y al rey, para sacarlo y apedrearlo.",
+      "bibleReference": "1 Reyes 21:9-10",
+      "answers": [
+        { "text": "Proclamar ayuno y hacer que dos perversos testificasen contra él", "isCorrect": true },
+        { "text": "Pagarle su viña con plata de los tesoros reales", "isCorrect": false },
+        { "text": "Echarle de la ciudad y repartir su heredad al pueblo", "isCorrect": false },
+        { "text": "Llevarle preso a Samaria delante del rey Achâb", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué hicieron con Naboth después de aquel testimonio?",
+      "explanation": "Lo sacaron fuera de la ciudad y lo apedrearon con piedras, y murió.",
+      "bibleReference": "1 Reyes 21:13",
+      "answers": [
+        { "text": "Le quitaron la viña y le dejaron ir en paz", "isCorrect": false },
+        { "text": "Le pusieron a la cabecera del pueblo y le juzgaron otra vez", "isCorrect": false },
+        { "text": "Le enviaron preso a los principales de su ciudad", "isCorrect": false },
+        { "text": "Lo sacaron fuera de la ciudad y lo apedrearon, y murió", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué debía decir Elías a Achâb acerca de su propia sangre?",
+      "explanation": "Jehová le mandó decirle que en el mismo lugar donde los perros lamieron la sangre de Naboth, los perros lamerían también su sangre.",
+      "bibleReference": "1 Reyes 21:19",
+      "answers": [
+        { "text": "Que su sangre sería derramada sobre el altar de Baal", "isCorrect": false },
+        { "text": "Que los perros lamerían su sangre en el mismo lugar", "isCorrect": true },
+        { "text": "Que su cuerpo no entraría en el sepulcro de sus padres", "isCorrect": false },
+        { "text": "Que su sangre pagaría por la vida de Ben-adad", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué habló Jehová acerca de Jezabel?",
+      "explanation": "De Jezabel también habló Jehová, diciendo: Los perros comerán a Jezabel en la barbacana de Jezreel.",
+      "bibleReference": "1 Reyes 21:23",
+      "answers": [
+        { "text": "Que los perros la comerían en la barbacana de Jezreel", "isCorrect": true },
+        { "text": "Que sería privada de ser princesa en Samaria", "isCorrect": false },
+        { "text": "Que moriría en el palacio de la casa real", "isCorrect": false },
+        { "text": "Que sería apedreada por los ancianos de la ciudad", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Cuando Achâb oyó estas palabras y se humilló, ¿qué dijo Jehová a Elías?",
+      "explanation": "Achâb rasgó sus vestidos, puso saco sobre su carne, ayunó y anduvo humillado; y Jehová dijo que, por cuanto se había humillado, no traería el mal en sus días, sino en los días de su hijo.",
+      "bibleReference": "1 Reyes 21:27-29",
+      "answers": [
+        { "text": "Que ya no traería ningún mal sobre su casa", "isCorrect": false },
+        { "text": "Que traería el mal en los días de su hijo", "isCorrect": true },
+        { "text": "Que le devolvería la viña a la casa de Naboth", "isCorrect": false },
+        { "text": "Que moriría aquel mismo día en Jezreel", "isCorrect": false }
+      ]
+    }
+  ]
+}

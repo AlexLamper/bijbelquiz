@@ -1,0 +1,122 @@
+{
+  "title": "1 Reyes Quiz bíblico - Capítulo 19",
+  "description": "Diez preguntas sobre 1 Reyes 19: la huida de Elías ante Jezabel, el enebro del desierto, el silbo apacible en Horeb y el llamamiento de Eliseo.",
+  "slug": "1-kings-quiz-part-19",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué le envió a decir Jezabel a Elías por un mensajero?",
+      "explanation": "Jezabel le envió a decir que así le hicieran los dioses y así le añadieran si al día siguiente a aquellas horas no hubiese puesto su persona como la de uno de aquellos profetas.",
+      "bibleReference": "1 Reyes 19:2",
+      "answers": [
+        { "text": "Que viniese a Samaria a comer en su mesa", "isCorrect": false },
+        { "text": "Que al día siguiente le quitaría la vida", "isCorrect": true },
+        { "text": "Que los perros lamerían su sangre en Jezreel", "isCorrect": false },
+        { "text": "Que saliese de Israel y no volviese jamás", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿A qué lugar vino Elías huyendo por salvar su vida, y qué dejó allí?",
+      "explanation": "Viendo el peligro, se levantó y se fue por salvar su vida, y vino a Beer-seba, que es en Judá, y dejó allí su criado.",
+      "bibleReference": "1 Reyes 19:3",
+      "answers": [
+        { "text": "A Jezreel, y dejó allí su manto", "isCorrect": false },
+        { "text": "A Sarepta, y dejó allí la botija del aceite", "isCorrect": false },
+        { "text": "Al Carmelo, y dejó allí el altar", "isCorrect": false },
+        { "text": "A Beer-seba, y dejó allí su criado", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Debajo de qué se sentó Elías en el desierto, y qué pidió a Jehová?",
+      "explanation": "Se fue por el desierto un día de camino y se sentó debajo de un enebro, y deseando morirse pidió a Jehová que quitase su alma, diciendo que no era mejor que sus padres.",
+      "bibleReference": "1 Reyes 19:4",
+      "answers": [
+        { "text": "Debajo de un enebro, y pidió que quitase su alma", "isCorrect": true },
+        { "text": "Debajo de un alcornoque, y pidió agua para beber", "isCorrect": false },
+        { "text": "Debajo de un árbol frondoso, y pidió lluvia", "isCorrect": false },
+        { "text": "Debajo de una peña, y pidió fuego del cielo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué halló Elías a su cabecera cuando un ángel le tocó y le dijo que se levantase y comiese?",
+      "explanation": "Él miró y halló a su cabecera una torta cocida sobre las ascuas y un vaso de agua; comió y bebió, y se volvió a dormir.",
+      "bibleReference": "1 Reyes 19:5-6",
+      "answers": [
+        { "text": "Pan y carne que le traían los cuervos", "isCorrect": false },
+        { "text": "Un puñado de harina y un poco de aceite", "isCorrect": false },
+        { "text": "Una torta cocida sobre las ascuas y un vaso de agua", "isCorrect": true },
+        { "text": "Diez panes, turrones y una botija de miel", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuánto caminó Elías con la fortaleza de aquella comida, y hasta dónde llegó?",
+      "explanation": "Se levantó, comió y bebió, y caminó con la fortaleza de aquella comida cuarenta días y cuarenta noches, hasta el monte de Dios, Horeb.",
+      "bibleReference": "1 Reyes 19:8",
+      "answers": [
+        { "text": "Siete días y siete noches, hasta Damasco", "isCorrect": false },
+        { "text": "Tres días y tres noches, hasta el Jordán", "isCorrect": false },
+        { "text": "Un día de camino, hasta Beer-seba", "isCorrect": false },
+        { "text": "Cuarenta días y cuarenta noches, hasta Horeb", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué le dijo la palabra de Jehová cuando Elías estaba en la cueva?",
+      "explanation": "Allí se metió en una cueva, y fue a él palabra de Jehová, el cual le dijo: ¿Qué haces aquí, Elías?",
+      "bibleReference": "1 Reyes 19:9",
+      "answers": [
+        { "text": "Le mandó volver corriendo a Jezreel", "isCorrect": false },
+        { "text": "Le preguntó qué hacía allí", "isCorrect": true },
+        { "text": "Le mandó subir a la cumbre del monte", "isCorrect": false },
+        { "text": "Le dijo que comiese y bebiese otra vez", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué respondió Elías acerca de sí mismo y de los hijos de Israel?",
+      "explanation": "Dijo que había sentido un vivo celo por Jehová Dios de los ejércitos, que los hijos de Israel habían dejado su alianza, derribado sus altares y muerto a cuchillo sus profetas, y que solo él había quedado y le buscaban para quitarle la vida.",
+      "bibleReference": "1 Reyes 19:10",
+      "answers": [
+        { "text": "Que el pueblo se había vuelto a Jehová en el Carmelo", "isCorrect": false },
+        { "text": "Que no sabía por qué Jehová le había traído allí", "isCorrect": false },
+        { "text": "Que solo él había quedado y le buscaban para matarle", "isCorrect": true },
+        { "text": "Que había siete mil hombres fieles con él en el monte", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué vino tras el fuego, cuando Jehová pasó delante de Elías?",
+      "explanation": "Jehová no estaba en el viento, ni en el terremoto, ni en el fuego; y tras el fuego vino un silbo apacible y delicado.",
+      "bibleReference": "1 Reyes 19:11-12",
+      "answers": [
+        { "text": "Un silbo apacible y delicado", "isCorrect": true },
+        { "text": "Un grande y poderoso viento", "isCorrect": false },
+        { "text": "Un terremoto que quebraba las peñas", "isCorrect": false },
+        { "text": "Una gran lluvia sobre la tierra", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿A quiénes mandó Jehová que Elías ungiese?",
+      "explanation": "Jehová le mandó ungir a Hazael por rey de Siria, a Jehú hijo de Nimsi por rey sobre Israel, y a Eliseo hijo de Saphat para que fuese profeta en lugar de él.",
+      "bibleReference": "1 Reyes 19:15-16",
+      "answers": [
+        { "text": "A Achâb, a Jezabel y a Abdías su mayordomo", "isCorrect": false },
+        { "text": "A Hazael, a Jehú hijo de Nimsi y a Eliseo hijo de Saphat", "isCorrect": true },
+        { "text": "A Ben-adad, a Naboth de Jezreel y a su propio criado", "isCorrect": false },
+        { "text": "A los siete mil que no se encorvaron a Baal", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué estaba haciendo Eliseo cuando Elías lo halló, y qué hizo Elías al pasar?",
+      "explanation": "Elías halló a Eliseo hijo de Saphat, que araba con doce yuntas delante de sí, y pasando por delante de él echó sobre él su manto.",
+      "bibleReference": "1 Reyes 19:19",
+      "answers": [
+        { "text": "Araba con doce yuntas, y Elías echó sobre él su manto", "isCorrect": true },
+        { "text": "Cogía serojas, y Elías le pidió agua en un vaso", "isCorrect": false },
+        { "text": "Guardaba ovejas, y Elías le ungió con aceite", "isCorrect": false },
+        { "text": "Dormía en el campo, y Elías le tocó y le despertó", "isCorrect": false }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "title": "1 Samuel Quiz bíblico - Capítulo 7",
+  "description": "Diez preguntas sobre 1 Samuel 7: el arca en casa de Abinadab, la reunión en Mizpa, la victoria sobre los filisteos y la piedra Eben-ezer.",
+  "slug": "1-samuel-quiz-part-7",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿En casa de quién metieron el arca de Jehová los de Chîriath-jearim?",
+      "explanation": "Los de Chîriath-jearim llevaron el arca de Jehová y la metieron en casa de Abinadab, situada en el collado.",
+      "bibleReference": "1 Samuel 7:1",
+      "answers": [
+        { "text": "En casa de Josué Beth-semita", "isCorrect": false },
+        { "text": "En casa de Elcana", "isCorrect": false },
+        { "text": "En casa de Abinadab", "isCorrect": true },
+        { "text": "En casa de Eli", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿A quién santificaron para que guardase el arca de Jehová?",
+      "explanation": "Santificaron a Eleazar, hijo de Abinadab, para que guardase el arca de Jehová.",
+      "bibleReference": "1 Samuel 7:1",
+      "answers": [
+        { "text": "A Eleazar, el hijo de Abinadab", "isCorrect": true },
+        { "text": "A Samuel, el hijo de Elcana", "isCorrect": false },
+        { "text": "A Phinees, el hijo de Eli", "isCorrect": false },
+        { "text": "A un levita de Beth-semes", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuántos años pasaron desde que el arca llegó a Chîriath-jearim?",
+      "explanation": "Desde el día que el arca llegó a Chîriath-jearim pasaron muchos días, veinte años, y toda la casa de Israel lamentaba en pos de Jehová.",
+      "bibleReference": "1 Samuel 7:2",
+      "answers": [
+        { "text": "Siete meses", "isCorrect": false },
+        { "text": "Cuarenta años", "isCorrect": false },
+        { "text": "Diez años", "isCorrect": false },
+        { "text": "Veinte años", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué pidió Samuel a la casa de Israel que quitasen de entre ellos?",
+      "explanation": "Samuel les dijo que, si de todo su corazón se volvían a Jehová, quitasen de entre ellos los dioses ajenos y a Astaroth, y sirviesen a él solo.",
+      "bibleReference": "1 Samuel 7:3",
+      "answers": [
+        { "text": "El arca y la caja de las alhajas de oro", "isCorrect": false },
+        { "text": "Los dioses ajenos y a Astaroth", "isCorrect": true },
+        { "text": "Los altares que habían hecho en Rama", "isCorrect": false },
+        { "text": "Las imágenes de oro de los filisteos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Dónde mandó Samuel juntar a todo Israel para orar por ellos a Jehová?",
+      "explanation": "Samuel dijo que juntasen a todo Israel en Mizpa, y que él oraría por ellos a Jehová.",
+      "bibleReference": "1 Samuel 7:5",
+      "answers": [
+        { "text": "En Mizpa", "isCorrect": true },
+        { "text": "En Gilgal", "isCorrect": false },
+        { "text": "En Beth-el", "isCorrect": false },
+        { "text": "En Rama", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Una vez juntos allí, ¿qué hicieron con el agua y qué confesaron?",
+      "explanation": "Juntándose en Mizpa sacaron agua y la derramaron delante de Jehová, ayunaron aquel día y dijeron: Contra Jehová hemos pecado.",
+      "bibleReference": "1 Samuel 7:6",
+      "answers": [
+        { "text": "Bebieron el agua del pozo y dieron gracias", "isCorrect": false },
+        { "text": "Lavaron el arca con agua y la santificaron", "isCorrect": false },
+        { "text": "Sacaron agua y la derramaron delante de Jehová", "isCorrect": true },
+        { "text": "Rociaron con agua el altar de Beth-el", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué sacrificó Samuel entero a Jehová en holocausto por Israel?",
+      "explanation": "Samuel tomó un cordero de leche y lo sacrificó entero a Jehová en holocausto, y clamó a Jehová por Israel, y Jehová le oyó.",
+      "bibleReference": "1 Samuel 7:9",
+      "answers": [
+        { "text": "Un becerro de la manada", "isCorrect": false },
+        { "text": "Un cordero de leche", "isCorrect": true },
+        { "text": "Dos vacas que criaban", "isCorrect": false },
+        { "text": "Un carnero de los rebaños", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Jehová aquel día cuando los filisteos llegaron para pelear?",
+      "explanation": "Mientras Samuel sacrificaba el holocausto, Jehová tronó aquel día con grande estruendo sobre los filisteos y los desbarató, y fueron vencidos delante de Israel.",
+      "bibleReference": "1 Samuel 7:10",
+      "answers": [
+        { "text": "Envió granizo sobre el campo de batalla", "isCorrect": false },
+        { "text": "Cubrió de tinieblas todo el valle", "isCorrect": false },
+        { "text": "Hirió a los filisteos con hemorroides", "isCorrect": false },
+        { "text": "Tronó con grande estruendo y los desbarató", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué nombre puso Samuel a la piedra que colocó entre Mizpa y Sen?",
+      "explanation": "Samuel tomó una piedra y la puso entre Mizpa y Sen, y le puso por nombre Eben-ezer, diciendo: Hasta aquí nos ayudó Jehová.",
+      "bibleReference": "1 Samuel 7:12",
+      "answers": [
+        { "text": "Beth-car", "isCorrect": false },
+        { "text": "Eben-ezer", "isCorrect": true },
+        { "text": "Astaroth", "isCorrect": false },
+        { "text": "Beth-semes", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿A qué lugar volvía Samuel, donde estaba su casa y donde edificó altar a Jehová?",
+      "explanation": "Samuel se volvía a Rama, porque allí estaba su casa, y allí juzgaba a Israel y edificó altar a Jehová.",
+      "bibleReference": "1 Samuel 7:17",
+      "answers": [
+        { "text": "A Gilgal", "isCorrect": false },
+        { "text": "A Rama", "isCorrect": true },
+        { "text": "A Mizpa", "isCorrect": false },
+        { "text": "A Beth-el", "isCorrect": false }
+      ]
+    }
+  ]
+}

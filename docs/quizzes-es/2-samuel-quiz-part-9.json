@@ -1,0 +1,242 @@
+{
+  "title": "2 Samuel Quiz bíblico - Capítulo 9",
+  "description": "Diez preguntas sobre 2 Samuel 9: David busca a alguien de la casa de Saúl y hace misericordia con Mephi-boseth, el hijo de Jonathán.",
+  "slug": "2-samuel-quiz-part-9",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué preguntó David acerca de la casa de Saúl?",
+      "explanation": "David dijo: \"¿Ha quedado alguno de la casa de Saúl, á quien haga yo misericordia por amor de Jonathán?\".",
+      "bibleReference": "2 Samuel 9:1",
+      "answers": [
+        {
+          "text": "Si quedaba alguien que le hiciese guerra",
+          "isCorrect": false
+        },
+        {
+          "text": "Si quedaba alguien con derecho al trono",
+          "isCorrect": false
+        },
+        {
+          "text": "Si quedaba alguno a quien hacer misericordia",
+          "isCorrect": true
+        },
+        {
+          "text": "Si quedaba alguien que supiese de Saúl",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo se llamaba el siervo de la casa de Saúl al que llamaron ante David?",
+      "explanation": "Había un siervo de la casa de Saúl que se llamaba Siba, y el rey le preguntó: \"¿Eres tú Siba?\".",
+      "bibleReference": "2 Samuel 9:2",
+      "answers": [
+        {
+          "text": "Machîr",
+          "isCorrect": false
+        },
+        {
+          "text": "Amiel",
+          "isCorrect": false
+        },
+        {
+          "text": "Paltiel",
+          "isCorrect": false
+        },
+        {
+          "text": "Siba",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué respondió Siba cuando el rey le preguntó si quedaba alguien de la casa de Saúl?",
+      "explanation": "Siba respondió al rey que aún había quedado un hijo de Jonathán, lisiado de los pies.",
+      "bibleReference": "2 Samuel 9:3",
+      "answers": [
+        {
+          "text": "Que quedaba un hijo de Jonathán, lisiado de los pies",
+          "isCorrect": true
+        },
+        {
+          "text": "Que no quedaba nadie de aquella casa",
+          "isCorrect": false
+        },
+        {
+          "text": "Que quedaban quince hijos y veinte siervos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que quedaba un hermano de Is-boseth en Hebrón",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿En casa de quién, y en qué lugar, estaba el hijo de Jonathán?",
+      "explanation": "Siba respondió al rey: \"He aquí, está en casa de Machîr hijo de Amiel, en Lodebar\".",
+      "bibleReference": "2 Samuel 9:4",
+      "answers": [
+        {
+          "text": "En casa de Siba, en Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "En casa de Machîr hijo de Amiel, en Lodebar",
+          "isCorrect": true
+        },
+        {
+          "text": "En casa de Abinadab, en Gabaa",
+          "isCorrect": false
+        },
+        {
+          "text": "En casa de Obed-edom, en la ciudad de David",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Mephi-boseth cuando vino ante David?",
+      "explanation": "Venido Mephi-boseth, hijo de Jonathán hijo de Saúl, á David, se postró sobre su rostro é hizo reverencia.",
+      "bibleReference": "2 Samuel 9:6",
+      "answers": [
+        {
+          "text": "Rompió sus vestidos y lloró",
+          "isCorrect": false
+        },
+        {
+          "text": "Pidió que le devolviesen el reino",
+          "isCorrect": false
+        },
+        {
+          "text": "Se quedó callado delante del rey",
+          "isCorrect": false
+        },
+        {
+          "text": "Se postró sobre su rostro e hizo reverencia",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dos cosas le prometió David a Mephi-boseth?",
+      "explanation": "David le dijo que no tuviese temor, que le haría volver todas las tierras de Saúl su padre y que comería siempre pan a su mesa.",
+      "bibleReference": "2 Samuel 9:7",
+      "answers": [
+        {
+          "text": "Las tierras de Saúl y comer siempre a su mesa",
+          "isCorrect": true
+        },
+        {
+          "text": "El trono de Israel y la casa de Hebrón",
+          "isCorrect": false
+        },
+        {
+          "text": "Un campo en Lodebar y quince siervos",
+          "isCorrect": false
+        },
+        {
+          "text": "La ciudad de David y la mitad del reino",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué se comparó Mephi-boseth al inclinarse ante el rey?",
+      "explanation": "Él se inclinó y dijo: \"¿Quién es tu siervo, para que mires á un perro muerto como yo?\".",
+      "bibleReference": "2 Samuel 9:8",
+      "answers": [
+        {
+          "text": "Con un cordero perdido",
+          "isCorrect": false
+        },
+        {
+          "text": "Con un siervo extranjero",
+          "isCorrect": false
+        },
+        {
+          "text": "Con un perro muerto",
+          "isCorrect": true
+        },
+        {
+          "text": "Con una oveja de la majada",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos hijos y cuántos siervos tenía Siba?",
+      "explanation": "Siba tenía quince hijos y veinte siervos.",
+      "bibleReference": "2 Samuel 9:10",
+      "answers": [
+        {
+          "text": "Veinte hijos y quince siervos",
+          "isCorrect": false
+        },
+        {
+          "text": "Quince hijos y veinte siervos",
+          "isCorrect": true
+        },
+        {
+          "text": "Doce hijos y treinta siervos",
+          "isCorrect": false
+        },
+        {
+          "text": "Cinco hijos y diez siervos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo se llamaba el hijo pequeño de Mephi-boseth?",
+      "explanation": "Mephi-boseth tenía un hijo pequeño que se llamaba Michâ.",
+      "bibleReference": "2 Samuel 9:12",
+      "answers": [
+        {
+          "text": "Michâ",
+          "isCorrect": true
+        },
+        {
+          "text": "Michâl",
+          "isCorrect": false
+        },
+        {
+          "text": "Machîr",
+          "isCorrect": false
+        },
+        {
+          "text": "Amiel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde moraba Mephi-boseth, y cómo estaba de sus pies?",
+      "explanation": "Mephi-boseth moraba en Jerusalem, porque comía siempre á la mesa del rey, y era cojo de ambos pies.",
+      "bibleReference": "2 Samuel 9:13",
+      "answers": [
+        {
+          "text": "En Lodebar, y era cojo de un pie",
+          "isCorrect": false
+        },
+        {
+          "text": "En Hebrón, y estaba sano de sus pies",
+          "isCorrect": false
+        },
+        {
+          "text": "En Gittaim, y era cojo de ambos pies",
+          "isCorrect": false
+        },
+        {
+          "text": "En Jerusalem, y era cojo de ambos pies",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

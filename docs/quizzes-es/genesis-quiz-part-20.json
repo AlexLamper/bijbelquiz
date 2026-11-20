@@ -10,8 +10,8 @@
   "questions": [
     {
       "text": "¿Qué dijo Abraham de Sara su mujer cuando habitó como forastero en Gerar?",
-      "explanation": "Abraham dijo de Sara su mujer: Mi hermana es; y Abimelech, rey de Gerar, envió y la tomó.",
-      "bibleReference": "Génesis 20:2",
+      "explanation": "Abraham asentó entre Cades y Shur y habitó como forastero en Gerar, y dijo de Sara su mujer: Mi hermana es.",
+      "bibleReference": "Génesis 20:1-2",
       "answers": [
         {
           "text": "Es mi sierva",
@@ -32,24 +32,24 @@
       ]
     },
     {
-      "text": "¿Quién tomó a Sara?",
-      "explanation": "Abimelech, rey de Gerar, envió y tomó a Sara.",
-      "bibleReference": "Génesis 20:2",
+      "text": "¿Qué hizo Abimelech cuando se levantó de mañana?",
+      "explanation": "Abimelech se levantó de mañana, llamó a todos sus siervos y dijo todas estas palabras en los oídos de ellos, y los hombres temieron en gran manera.",
+      "bibleReference": "Génesis 20:8",
       "answers": [
         {
-          "text": "Faraón, rey de Egipto",
+          "text": "Echó a Abraham y a Sara de toda su tierra",
           "isCorrect": false
         },
         {
-          "text": "Abimelech, rey de Gerar",
+          "text": "Llamó a todos sus siervos y se lo contó",
           "isCorrect": true
         },
         {
-          "text": "Phicol, príncipe del ejército",
+          "text": "Mandó edificar un altar junto a la puerta de Gerar",
           "isCorrect": false
         },
         {
-          "text": "Bera, rey de Sodoma",
+          "text": "Guardó silencio y no dijo nada a sus siervos",
           "isCorrect": false
         }
       ]

@@ -1,0 +1,242 @@
+{
+  "title": "2 Reyes Quiz bíblico - Capítulo 3",
+  "description": "Diez preguntas sobre 2 Reyes 3: la rebelión de Mesa rey de Moab, la sed de los tres reyes en el desierto y el agua que Eliseo anunció.",
+  "slug": "2-kings-quiz-part-3",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cuántos años reinó Joram hijo de Achâb sobre Israel?",
+      "explanation": "Joram hijo de Achâb comenzó a reinar en Samaria sobre Israel el año dieciocho de Josaphat rey de Judá, y reinó doce años.",
+      "bibleReference": "2 Reyes 3:1",
+      "answers": [
+        {
+          "text": "Dos años",
+          "isCorrect": false
+        },
+        {
+          "text": "Veintiocho años",
+          "isCorrect": false
+        },
+        {
+          "text": "Ocho años",
+          "isCorrect": false
+        },
+        {
+          "text": "Doce años",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué quitó Joram que su padre había hecho?",
+      "explanation": "Joram hizo lo malo en ojos de Jehová, aunque no como su padre y su madre, porque quitó las estatuas de Baal que su padre había hecho.",
+      "bibleReference": "2 Reyes 3:2",
+      "answers": [
+        {
+          "text": "Los becerros de oro de Beth-el",
+          "isCorrect": false
+        },
+        {
+          "text": "Las estatuas de Baal",
+          "isCorrect": true
+        },
+        {
+          "text": "Los altos de Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "La casa de marfil",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pagaba Mesa rey de Moab al rey de Israel?",
+      "explanation": "Mesa rey de Moab era propietario de ganados y pagaba al rey de Israel cien mil corderos y cien mil carneros con sus vellones.",
+      "bibleReference": "2 Reyes 3:4",
+      "answers": [
+        {
+          "text": "Cien mil corderos y cien mil carneros",
+          "isCorrect": true
+        },
+        {
+          "text": "Diez talentos de plata y seis mil piezas de oro",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuarenta camellos cargados de bienes",
+          "isCorrect": false
+        },
+        {
+          "text": "Veinte panes de cebada y trigo nuevo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué les faltó a los reyes tras andar siete días de camino por el desierto?",
+      "explanation": "Después de rodear siete días de camino por el desierto, les faltó el agua para el ejército y para las bestias que los seguían.",
+      "bibleReference": "2 Reyes 3:9",
+      "answers": [
+        {
+          "text": "El pan",
+          "isCorrect": false
+        },
+        {
+          "text": "Los carros",
+          "isCorrect": false
+        },
+        {
+          "text": "El agua",
+          "isCorrect": true
+        },
+        {
+          "text": "Los caballos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo presentó a Eliseo uno de los siervos del rey de Israel?",
+      "explanation": "Un siervo dijo que allí estaba Eliseo hijo de Saphat, que daba agua á manos á Elías.",
+      "bibleReference": "2 Reyes 3:11",
+      "answers": [
+        {
+          "text": "Como el profeta que ungió a Jehú",
+          "isCorrect": false
+        },
+        {
+          "text": "Como el que daba agua a manos a Elías",
+          "isCorrect": true
+        },
+        {
+          "text": "Como un varón velloso con cinto de cuero",
+          "isCorrect": false
+        },
+        {
+          "text": "Como el sacerdote de la casa de Jehová",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pidió Eliseo que le trajesen antes de hablar?",
+      "explanation": "Eliseo pidió que le trajesen un tañedor, y mientras el tañedor tocaba, la mano de Jehová fué sobre él.",
+      "bibleReference": "2 Reyes 3:15",
+      "answers": [
+        {
+          "text": "Una botija con sal",
+          "isCorrect": false
+        },
+        {
+          "text": "Un presente de plata",
+          "isCorrect": false
+        },
+        {
+          "text": "Un holocausto para el altar",
+          "isCorrect": false
+        },
+        {
+          "text": "Un tañedor",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué mandó hacer Eliseo en aquel valle?",
+      "explanation": "Eliseo dijo de parte de Jehová: Haced en este valle muchas acequias.",
+      "bibleReference": "2 Reyes 3:16",
+      "answers": [
+        {
+          "text": "Muchas acequias",
+          "isCorrect": true
+        },
+        {
+          "text": "Un altar de piedras",
+          "isCorrect": false
+        },
+        {
+          "text": "Un pozo muy profundo",
+          "isCorrect": false
+        },
+        {
+          "text": "Un muro de defensa",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según la palabra de Jehová, ¿qué no verían aunque el valle se llenaría de agua?",
+      "explanation": "Jehová dijo que no verían viento ni verían lluvia, y que aquel valle sería lleno de agua para ellos, sus bestias y sus ganados.",
+      "bibleReference": "2 Reyes 3:17",
+      "answers": [
+        {
+          "text": "Ni sol ni luna",
+          "isCorrect": false
+        },
+        {
+          "text": "Ni nubes ni truenos",
+          "isCorrect": false
+        },
+        {
+          "text": "Ni viento ni lluvia",
+          "isCorrect": true
+        },
+        {
+          "text": "Ni ríos ni fuentes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pensaron los de Moab al ver por la mañana las aguas rojas como sangre?",
+      "explanation": "Los de Moab dijeron: ¡Sangre es esta de espada! Los reyes se han revuelto, y cada uno ha muerto á su compañero.",
+      "bibleReference": "2 Reyes 3:22-23",
+      "answers": [
+        {
+          "text": "Que Jehová había secado el valle",
+          "isCorrect": false
+        },
+        {
+          "text": "Que los reyes se habían matado entre sí",
+          "isCorrect": true
+        },
+        {
+          "text": "Que un ejército de Egipto venía",
+          "isCorrect": false
+        },
+        {
+          "text": "Que la tierra estaba enferma",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo el rey de Moab cuando vio que la batalla lo vencía?",
+      "explanation": "El rey de Moab arrebató a su primogénito, que había de reinar en su lugar, y lo sacrificó en holocausto sobre el muro.",
+      "bibleReference": "2 Reyes 3:27",
+      "answers": [
+        {
+          "text": "Pidió paz al rey de Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Huyó de noche a Kir-hareseth",
+          "isCorrect": false
+        },
+        {
+          "text": "Entregó setecientos hombres como rehenes",
+          "isCorrect": false
+        },
+        {
+          "text": "Sacrificó a su primogénito sobre el muro",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "1 Reyes Quiz bíblico - Capítulo 1",
+  "description": "Diez preguntas sobre 1 Reyes 1: la vejez de David, la pretensión de Adonía y la unción de Salomón en Gihón.",
+  "slug": "1-kings-quiz-part-1",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": false,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿A quién hallaron por todo el término de Israel para que abrigase al rey David?",
+      "explanation": "Buscaron una moza hermosa por todo el término de Israel, hallaron a Abisag Sunamita y la trajeron al rey.",
+      "bibleReference": "1 Reyes 1:3",
+      "answers": [
+        {
+          "text": "A Abisag Sunamita",
+          "isCorrect": true
+        },
+        {
+          "text": "A Bath-sheba de Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "A Haggith, madre de Adonía",
+          "isCorrect": false
+        },
+        {
+          "text": "A una hija de Sadoc sacerdote",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Adonía hijo de Haggith cuando se levantó?",
+      "explanation": "Adonía se levantó diciendo: Yo reinaré; y se hizo de carros, gente de a caballo y cincuenta hombres que corriesen delante de él.",
+      "bibleReference": "1 Reyes 1:5",
+      "answers": [
+        {
+          "text": "Yo serviré al rey",
+          "isCorrect": false
+        },
+        {
+          "text": "Yo iré a Gihón",
+          "isCorrect": false
+        },
+        {
+          "text": "Yo reinaré",
+          "isCorrect": true
+        },
+        {
+          "text": "Yo edificaré la casa",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿quiénes tenían tratos con Adonía y lo ayudaban?",
+      "explanation": "El texto dice que Adonía tenía tratos con Joab hijo de Sarvia y con Abiathar sacerdote, los cuales le ayudaban.",
+      "bibleReference": "1 Reyes 1:7",
+      "answers": [
+        {
+          "text": "Sadoc y Nathán profeta",
+          "isCorrect": false
+        },
+        {
+          "text": "Joab y Abiathar sacerdote",
+          "isCorrect": true
+        },
+        {
+          "text": "Benaía y Semei",
+          "isCorrect": false
+        },
+        {
+          "text": "Salomón y Bath-sheba",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quién habló Nathán profeta para avisarle de que Adonía reinaba?",
+      "explanation": "Nathán habló a Bath-sheba, madre de Salomón, y le dijo que Adonía reinaba sin saberlo David.",
+      "bibleReference": "1 Reyes 1:11",
+      "answers": [
+        {
+          "text": "A Abisag Sunamita",
+          "isCorrect": false
+        },
+        {
+          "text": "A Joab hijo de Sarvia",
+          "isCorrect": false
+        },
+        {
+          "text": "A Abiathar sacerdote",
+          "isCorrect": false
+        },
+        {
+          "text": "A Bath-sheba, madre de Salomón",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué juró el rey David delante de Bath-sheba que haría aquel mismo día?",
+      "explanation": "El rey juró que, como se lo había jurado por Jehová Dios de Israel, su hijo Salomón reinaría después de él y se sentaría en su trono.",
+      "bibleReference": "1 Reyes 1:30",
+      "answers": [
+        {
+          "text": "Que Salomón reinaría después de él",
+          "isCorrect": true
+        },
+        {
+          "text": "Que Adonía sería príncipe de Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no habría más rey en Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Que repartiría el reino en dos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿En qué animal mandó el rey que hiciesen subir a Salomón, y adónde debían llevarlo?",
+      "explanation": "El rey mandó hacer subir a Salomón en su mula y llevarlo a Gihón, para que allí lo ungiesen por rey.",
+      "bibleReference": "1 Reyes 1:33",
+      "answers": [
+        {
+          "text": "En un carro, a Beer-seba",
+          "isCorrect": false
+        },
+        {
+          "text": "En un camello, a Hebrón",
+          "isCorrect": false
+        },
+        {
+          "text": "En su mula, a Gihón",
+          "isCorrect": true
+        },
+        {
+          "text": "En un caballo, a Silo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué tomó Sadoc sacerdote para ungir a Salomón?",
+      "explanation": "Sadoc sacerdote tomó el cuerno del aceite del tabernáculo y ungió a Salomón, y tocaron trompeta.",
+      "bibleReference": "1 Reyes 1:39",
+      "answers": [
+        {
+          "text": "El agua de la fuente de Rogel",
+          "isCorrect": false
+        },
+        {
+          "text": "El cuerno del aceite del tabernáculo",
+          "isCorrect": true
+        },
+        {
+          "text": "El vino de la mesa del rey",
+          "isCorrect": false
+        },
+        {
+          "text": "El bálsamo de los montes de Judá",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué instrumento cantaba la gente que subió en pos de Salomón?",
+      "explanation": "Todo el pueblo subió en pos de él y la gente cantaba con flautas, haciendo grandes alegrías.",
+      "bibleReference": "1 Reyes 1:40",
+      "answers": [
+        {
+          "text": "Con arpas",
+          "isCorrect": false
+        },
+        {
+          "text": "Con panderos",
+          "isCorrect": false
+        },
+        {
+          "text": "Con címbalos",
+          "isCorrect": false
+        },
+        {
+          "text": "Con flautas",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Adonía cuando tuvo miedo de la presencia de Salomón?",
+      "explanation": "Adonía, temiendo de la presencia de Salomón, se levantó, se fue y cogió los cornijales del altar.",
+      "bibleReference": "1 Reyes 1:50",
+      "answers": [
+        {
+          "text": "Cogió los cornijales del altar",
+          "isCorrect": true
+        },
+        {
+          "text": "Huyó a la tierra de Moab",
+          "isCorrect": false
+        },
+        {
+          "text": "Se escondió en la fuente de Rogel",
+          "isCorrect": false
+        },
+        {
+          "text": "Mandó llamar a Joab",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le dijo Salomón a Adonía cuando lo trajeron del altar?",
+      "explanation": "Lo trajeron del altar, él se inclinó al rey Salomón, y Salomón le dijo: Vete a tu casa.",
+      "bibleReference": "1 Reyes 1:53",
+      "answers": [
+        {
+          "text": "Siéntate a mi mesa",
+          "isCorrect": false
+        },
+        {
+          "text": "Sal de mi tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Vete a tu casa",
+          "isCorrect": true
+        },
+        {
+          "text": "Guarda tú el altar",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "title": "1 Crónicas Quiz bíblico - Capítulo 18",
+  "description": "Diez preguntas sobre 1 Crónicas 18: las victorias de David sobre los Filisteos, Moab y Adarezer, el oro dedicado a Jehová y los oficiales de su reino.",
+  "slug": "1-chronicles-quiz-part-18",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué ciudad tomó David de mano de los Filisteos cuando los hirió y los humilló?",
+      "explanation": "David hirió á los Filisteos y los humilló, y tomó á Gath y sus villas de mano de los Filisteos.",
+      "bibleReference": "1 Crónicas 18:1",
+      "answers": [
+        { "text": "Gath y sus villas", "isCorrect": true },
+        { "text": "Gezer y sus villas", "isCorrect": false },
+        { "text": "Rabba y sus villas", "isCorrect": false },
+        { "text": "Damasco y sus villas", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué les pasó a los Moabitas cuando David hirió a Moab?",
+      "explanation": "También hirió á Moab, y los Moabitas fueron siervos de David trayéndole presentes.",
+      "bibleReference": "1 Crónicas 18:2",
+      "answers": [
+        { "text": "Huyeron al desierto de Judá", "isCorrect": false },
+        { "text": "Fueron hechos siervos de David", "isCorrect": true },
+        { "text": "Concertaron paz con los Filisteos", "isCorrect": false },
+        { "text": "Fueron llevados á Jerusalem", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿A qué rey hirió David en Hamath, cuando aquel iba a asegurar su dominio al río de Eufrates?",
+      "explanation": "David hirió á Adarezer rey de Soba, en Hamath, yendo él á asegurar su dominio al río de Eufrates.",
+      "bibleReference": "1 Crónicas 18:3",
+      "answers": [
+        { "text": "A Hiram rey de Tiro", "isCorrect": false },
+        { "text": "A Tou rey de Hamath", "isCorrect": false },
+        { "text": "A Adarezer rey de Soba", "isCorrect": true },
+        { "text": "A Naas rey de los Ammonitas", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué le tomó David a aquel rey en esa batalla?",
+      "explanation": "David le tomó mil carros, siete mil de á caballo y veinte mil hombres de á pie.",
+      "bibleReference": "1 Crónicas 18:4",
+      "answers": [
+        { "text": "Treinta y dos mil carros y mil de á caballo", "isCorrect": false },
+        { "text": "Siete mil carros y cuarenta mil de á pie", "isCorrect": false },
+        { "text": "Cien carros y veintidós mil de á pie", "isCorrect": false },
+        { "text": "Mil carros, siete mil de á caballo y veinte mil de á pie", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿A cuántos Siros de Damasco hirió David cuando vinieron en ayuda de Adarezer?",
+      "explanation": "Viniendo los Siros de Damasco en ayuda de Adarezer rey de Soba, David hirió de los Siros veintidós mil hombres.",
+      "bibleReference": "1 Crónicas 18:5",
+      "answers": [
+        { "text": "Veintidós mil", "isCorrect": true },
+        { "text": "Dieciocho mil", "isCorrect": false },
+        { "text": "Siete mil", "isCorrect": false },
+        { "text": "Cuarenta mil", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Salomón con el metal que David tomó de Thibath y de Chûn?",
+      "explanation": "De Thibath y de Chûn, ciudades de Adarezer, tomó David mucho metal, de que Salomón hizo el mar de bronce, las columnas y vasos de bronce.",
+      "bibleReference": "1 Crónicas 18:8",
+      "answers": [
+        { "text": "Los escudos de oro del templo", "isCorrect": false },
+        { "text": "El mar de bronce y las columnas", "isCorrect": true },
+        { "text": "La corona del rey de Rabba", "isCorrect": false },
+        { "text": "Las puertas de la casa de Jehová", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Quién envió a su hijo Adoram para saludar y bendecir al rey David por haber vencido a Adarezer?",
+      "explanation": "Tou rey de Hamath oyó que David había deshecho el ejército de Adarezer, y envió á Adoram su hijo al rey David á saludarle y á bendecirle.",
+      "bibleReference": "1 Crónicas 18:9-10",
+      "answers": [
+        { "text": "Hiram rey de Tiro", "isCorrect": false },
+        { "text": "Hanán hijo de Naas", "isCorrect": false },
+        { "text": "Tou rey de Hamath", "isCorrect": true },
+        { "text": "Sophach el general", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Quién hirió a dieciocho mil Idumeos en el valle de la Sal?",
+      "explanation": "Abisai hijo de Sarvia hirió en el valle de la Sal dieciocho mil Idumeos.",
+      "bibleReference": "1 Crónicas 18:12",
+      "answers": [
+        { "text": "Joab hijo de Sarvia", "isCorrect": false },
+        { "text": "Benaías hijo de Joiada", "isCorrect": false },
+        { "text": "Josaphat hijo de Ahilud", "isCorrect": false },
+        { "text": "Abisai hijo de Sarvia", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según la lista final, ¿quién era general del ejército y quién canciller?",
+      "explanation": "Joab hijo de Sarvia era general del ejército, y Josaphat hijo de Ahilud, canciller.",
+      "bibleReference": "1 Crónicas 18:15",
+      "answers": [
+        { "text": "Joab era general y Josaphat canciller", "isCorrect": true },
+        { "text": "Sadoc era general y Sausa canciller", "isCorrect": false },
+        { "text": "Benaías era general y Joab canciller", "isCorrect": false },
+        { "text": "Abisai era general y Abimelec canciller", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Quién estaba sobre los Ceretheos y Peletheos?",
+      "explanation": "Benaías hijo de Joiada era sobre los Ceretheos y Peletheos.",
+      "bibleReference": "1 Crónicas 18:17",
+      "answers": [
+        { "text": "Sadoc hijo de Achîtob", "isCorrect": false },
+        { "text": "Benaías hijo de Joiada", "isCorrect": true },
+        { "text": "Abimelec hijo de Abiathar", "isCorrect": false },
+        { "text": "Josaphat hijo de Ahilud", "isCorrect": false }
+      ]
+    }
+  ]
+}

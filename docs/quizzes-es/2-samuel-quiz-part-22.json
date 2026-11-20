@@ -1,0 +1,242 @@
+{
+  "title": "2 Samuel Quiz bíblico - Capítulo 22",
+  "description": "Diez preguntas sobre 2 Samuel 22: el cántico de David, Jehová como roca y fortaleza, y la liberación de todos sus enemigos.",
+  "slug": "2-samuel-quiz-part-22",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿De qué manos dice el texto que Jehová había librado a David el día en que cantó estas palabras?",
+      "explanation": "David habló este cántico el día que Jehová le había librado de la mano de todos sus enemigos y de la mano de Saúl.",
+      "bibleReference": "2 Samuel 22:1",
+      "answers": [
+        {
+          "text": "De la mano de todos sus enemigos y de la de Saúl",
+          "isCorrect": true
+        },
+        {
+          "text": "De la mano de sus hermanos y de la de su padre",
+          "isCorrect": false
+        },
+        {
+          "text": "De la mano de los jueces y de la de los ancianos",
+          "isCorrect": false
+        },
+        {
+          "text": "De la mano de los sacerdotes y de la de los reyes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Al empezar el cántico, ¿qué tres cosas dice David que Jehová es para él?",
+      "explanation": "David dijo: Jehová es mi roca, y mi fortaleza, y mi libertador.",
+      "bibleReference": "2 Samuel 22:2",
+      "answers": [
+        {
+          "text": "Su torre, su carro y su corona",
+          "isCorrect": false
+        },
+        {
+          "text": "Su rey, su juez y su testigo",
+          "isCorrect": false
+        },
+        {
+          "text": "Su roca, su fortaleza y su libertador",
+          "isCorrect": true
+        },
+        {
+          "text": "Su pastor, su copa y su heredad",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Cuando David tuvo angustia y clamó a su Dios, ¿desde dónde oyó Jehová su voz?",
+      "explanation": "El texto dice que él oyó su voz desde su templo, y que su clamor llegó a sus oídos.",
+      "bibleReference": "2 Samuel 22:7",
+      "answers": [
+        {
+          "text": "Desde la cumbre de un monte",
+          "isCorrect": false
+        },
+        {
+          "text": "Desde su templo",
+          "isCorrect": true
+        },
+        {
+          "text": "Desde medio de una nube",
+          "isCorrect": false
+        },
+        {
+          "text": "Desde el campamento",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el cántico, ¿qué subió de las narices de Dios cuando se airó?",
+      "explanation": "El texto dice que subió humo de sus narices, y de su boca fuego consumidor.",
+      "bibleReference": "2 Samuel 22:9",
+      "answers": [
+        {
+          "text": "Niebla",
+          "isCorrect": false
+        },
+        {
+          "text": "Granizo",
+          "isCorrect": false
+        },
+        {
+          "text": "Polvo",
+          "isCorrect": false
+        },
+        {
+          "text": "Humo",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Sobre qué dice el cántico que Jehová subió antes de volar?",
+      "explanation": "El texto dice que subió sobre el querubín y voló, y que se apareció sobre las alas del viento.",
+      "bibleReference": "2 Samuel 22:11",
+      "answers": [
+        {
+          "text": "Sobre el querubín",
+          "isCorrect": true
+        },
+        {
+          "text": "Sobre un carro de fuego",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre un trono de marfil",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre el humo del altar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice David que es Jehová para él, el que da luz a sus tinieblas?",
+      "explanation": "David dice: tú eres mi lámpara, oh Jehová; Jehová da luz a mis tinieblas.",
+      "bibleReference": "2 Samuel 22:29",
+      "answers": [
+        {
+          "text": "Su sol",
+          "isCorrect": false
+        },
+        {
+          "text": "Su lámpara",
+          "isCorrect": true
+        },
+        {
+          "text": "Su estrella",
+          "isCorrect": false
+        },
+        {
+          "text": "Su aurora",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo dice el cántico que Dios hace los pies de David?",
+      "explanation": "El texto dice que él es el que hace sus pies como de ciervas y el que le asienta en sus alturas.",
+      "bibleReference": "2 Samuel 22:34",
+      "answers": [
+        {
+          "text": "Como de leones",
+          "isCorrect": false
+        },
+        {
+          "text": "Como de águilas",
+          "isCorrect": false
+        },
+        {
+          "text": "Como de bronce",
+          "isCorrect": false
+        },
+        {
+          "text": "Como de ciervas",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Cuando los enemigos miraron y clamaron a Jehová, ¿qué sucedió según el texto?",
+      "explanation": "El texto dice que no hubo quien los librase; clamaron a Jehová, mas no les respondió.",
+      "bibleReference": "2 Samuel 22:42",
+      "answers": [
+        {
+          "text": "Que los libró al instante",
+          "isCorrect": false
+        },
+        {
+          "text": "Que les envió un profeta",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no les respondió",
+          "isCorrect": true
+        },
+        {
+          "text": "Que les dio tiempo de huir",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Después de librarlo de las contiendas de pueblos, ¿para qué dice David que Jehová lo guardó?",
+      "explanation": "David dice que Jehová lo guardó para que fuese cabeza de gentes, y que pueblos que no conocía le sirvieron.",
+      "bibleReference": "2 Samuel 22:44",
+      "answers": [
+        {
+          "text": "Para que fuese cabeza de gentes",
+          "isCorrect": true
+        },
+        {
+          "text": "Para que edificase una casa",
+          "isCorrect": false
+        },
+        {
+          "text": "Para que repartiese la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Para que escribiese un libro",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quién y a cuya descendencia hace misericordia Jehová, según el final del cántico?",
+      "explanation": "El último versículo dice que Jehová hace misericordia a su ungido, a David, y a su simiente, para siempre.",
+      "bibleReference": "2 Samuel 22:51",
+      "answers": [
+        {
+          "text": "A Saúl y a toda su casa",
+          "isCorrect": false
+        },
+        {
+          "text": "A los extraños que le obedecían",
+          "isCorrect": false
+        },
+        {
+          "text": "A los pueblos que no le conocían",
+          "isCorrect": false
+        },
+        {
+          "text": "A David y a su simiente",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

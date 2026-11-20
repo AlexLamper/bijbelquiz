@@ -1,0 +1,122 @@
+{
+  "title": "1 Samuel Quiz bíblico - Capítulo 11",
+  "description": "Diez preguntas sobre 1 Samuel 11: Naas Ammonita contra Jabes de Galaad, la ira de Saúl, la victoria al calentar el sol y el reino renovado en Gilgal.",
+  "slug": "1-samuel-quiz-part-11",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Quién subió y asentó campo contra Jabes de Galaad?",
+      "explanation": "Subió Naas Ammonita y asentó campo contra Jabes de Galaad, y todos los de Jabes le pidieron que hiciese alianza con ellos.",
+      "bibleReference": "1 Samuel 11:1",
+      "answers": [
+        { "text": "Agag, rey de Amalec", "isCorrect": false },
+        { "text": "Un príncipe de los filisteos", "isCorrect": false },
+        { "text": "Naas Ammonita", "isCorrect": true },
+        { "text": "Cis, el padre de Saúl", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Con qué condición respondió que haría alianza con los de Jabes?",
+      "explanation": "Naas Ammonita respondió que haría alianza con ellos con la condición de sacar a cada uno de todos ellos el ojo derecho, y poner esa afrenta sobre todo Israel.",
+      "bibleReference": "1 Samuel 11:2",
+      "answers": [
+        { "text": "Que a cada uno le sacase el ojo derecho", "isCorrect": true },
+        { "text": "Que le diesen la mitad de sus ganados", "isCorrect": false },
+        { "text": "Que le entregasen a sus hijos por siervos", "isCorrect": false },
+        { "text": "Que derribasen el muro de la ciudad", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué plazo pidieron los ancianos de Jabes, y para qué?",
+      "explanation": "Los ancianos de Jabes le pidieron siete días para enviar mensajeros a todos los términos de Israel, y dijeron que si nadie los defendía saldrían a él.",
+      "bibleReference": "1 Samuel 11:3",
+      "answers": [
+        { "text": "Tres días para juntar su ejército", "isCorrect": false },
+        { "text": "Siete días para enviar mensajeros a Israel", "isCorrect": true },
+        { "text": "Siete meses para pagar su tributo", "isCorrect": false },
+        { "text": "Un día para abrir las puertas de la ciudad", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿De dónde venía Saúl cuando le contaron las palabras de los hombres de Jabes?",
+      "explanation": "Saúl venía del campo, tras los bueyes, y preguntó qué tenía el pueblo que lloraba; entonces le contaron las palabras de los hombres de Jabes.",
+      "bibleReference": "1 Samuel 11:5",
+      "answers": [
+        { "text": "Del alto, tras los profetas", "isCorrect": false },
+        { "text": "De Gilgal, tras los sacrificios", "isCorrect": false },
+        { "text": "De Bezec, tras el ejército", "isCorrect": false },
+        { "text": "Del campo, tras los bueyes", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué envió Saúl por todos los términos de Israel por mano de mensajeros?",
+      "explanation": "Saúl tomó un par de bueyes, los cortó en piezas y las envió por todos los términos de Israel, diciendo que así se haría con los bueyes de quien no saliese en pos de él y de Samuel.",
+      "bibleReference": "1 Samuel 11:7",
+      "answers": [
+        { "text": "Un par de bueyes cortado en piezas", "isCorrect": true },
+        { "text": "Una ampolla de aceite y dos panes", "isCorrect": false },
+        { "text": "Cartas escritas en un libro", "isCorrect": false },
+        { "text": "Mensajeros con palabras de paz", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Al contarlos en Bezec, ¿cuántos eran los hijos de Israel y cuántos los hombres de Judá?",
+      "explanation": "Los contó en Bezec: fueron los hijos de Israel trescientos mil, y treinta mil los hombres de Judá.",
+      "bibleReference": "1 Samuel 11:8",
+      "answers": [
+        { "text": "Treinta mil, y tres mil los de Judá", "isCorrect": false },
+        { "text": "Cien mil, y diez mil los de Judá", "isCorrect": false },
+        { "text": "Trescientos mil, y treinta mil los de Judá", "isCorrect": true },
+        { "text": "Trescientos, y treinta los de Judá", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué respuesta llevaron los mensajeros a los de Jabes de Galaad?",
+      "explanation": "Les mandaron decir a los de Jabes de Galaad que al día siguiente, en calentando el sol, tendrían salvamento; y al oírlo se holgaron.",
+      "bibleReference": "1 Samuel 11:9",
+      "answers": [
+        { "text": "Que nadie en Israel podía defenderlos", "isCorrect": false },
+        { "text": "Mañana en calentando el sol tendréis salvamento", "isCorrect": true },
+        { "text": "Que saliesen a Naas dentro de siete días", "isCorrect": false },
+        { "text": "Que huyesen de noche a los montes", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿En cuántos escuadrones dispuso Saúl al pueblo el día siguiente?",
+      "explanation": "El día siguiente Saúl dispuso el pueblo en tres escuadrones, y entraron en medio del real a la vela de la mañana e hirieron a los ammonitas.",
+      "bibleReference": "1 Samuel 11:11",
+      "answers": [
+        { "text": "En dos escuadrones", "isCorrect": false },
+        { "text": "En cinco escuadrones", "isCorrect": false },
+        { "text": "En siete escuadrones", "isCorrect": false },
+        { "text": "En tres escuadrones", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "El pueblo pidió a Samuel que le entregase a ciertos hombres para matarlos. ¿Qué dijo Saúl?",
+      "explanation": "Saúl dijo que aquel día no moriría ninguno, porque aquel día Jehová había obrado salud en Israel.",
+      "bibleReference": "1 Samuel 11:12-13",
+      "answers": [
+        { "text": "No morirá hoy ninguno, porque hoy Jehová ha obrado salud", "isCorrect": true },
+        { "text": "Dadme esos hombres y los mataré yo mismo", "isCorrect": false },
+        { "text": "Que mueran todos los que me tuvieron en poco", "isCorrect": false },
+        { "text": "Samuel decidirá qué hacer con ellos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿A qué lugar dijo Samuel al pueblo que fuesen para renovar allí el reino?",
+      "explanation": "Samuel dijo al pueblo que fuesen a Gilgal para renovar allí el reino, y allí invistieron a Saúl por rey delante de Jehová.",
+      "bibleReference": "1 Samuel 11:14-15",
+      "answers": [
+        { "text": "A Mizpa", "isCorrect": false },
+        { "text": "A Gilgal", "isCorrect": true },
+        { "text": "A Gabaa", "isCorrect": false },
+        { "text": "A Bezec", "isCorrect": false }
+      ]
+    }
+  ]
+}

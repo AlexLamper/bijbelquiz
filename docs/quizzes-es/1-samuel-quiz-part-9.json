@@ -1,0 +1,122 @@
+{
+  "title": "1 Samuel Quiz bíblico - Capítulo 9",
+  "description": "Diez preguntas sobre 1 Samuel 9: Saúl hijo de Cis buscando las asnas perdidas, su encuentro con el vidente Samuel y la comida en el alto.",
+  "slug": "1-samuel-quiz-part-9",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cómo se llamaba el varón de Benjamín, hijo de Abiel, del que habla el texto?",
+      "explanation": "Había un varón de Benjamín, hombre valeroso, que se llamaba Cis, hijo de Abiel, hijo de Seor.",
+      "bibleReference": "1 Samuel 9:1",
+      "answers": [
+        { "text": "Cis", "isCorrect": true },
+        { "text": "Seor", "isCorrect": false },
+        { "text": "Aphia", "isCorrect": false },
+        { "text": "Bechôra", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dice el texto de la estatura de Saúl entre el pueblo?",
+      "explanation": "Saúl era mancebo y hermoso, y entre los hijos de Israel no había otro más hermoso que él: del hombro arriba sobrepujaba a cualquiera del pueblo.",
+      "bibleReference": "1 Samuel 9:2",
+      "answers": [
+        { "text": "Era el más pequeño de todos los hijos de Cis", "isCorrect": false },
+        { "text": "Era más bajo que cualquiera del pueblo", "isCorrect": false },
+        { "text": "Del hombro arriba sobrepujaba a cualquiera del pueblo", "isCorrect": true },
+        { "text": "Era un hombre anciano y de mucha edad", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué se le había perdido a Cis, y qué mandó buscar a su hijo Saúl?",
+      "explanation": "Se habían perdido las asnas de Cis, padre de Saúl, por lo que Cis dijo a Saúl que tomase consigo alguno de los criados y fuese a buscar las asnas.",
+      "bibleReference": "1 Samuel 9:3",
+      "answers": [
+        { "text": "Sus ovejas", "isCorrect": false },
+        { "text": "Sus asnas", "isCorrect": true },
+        { "text": "Sus vacas", "isCorrect": false },
+        { "text": "Sus camellos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Por qué tierras pasaron sin hallar lo que buscaban?",
+      "explanation": "Pasó al monte de Ephraim y de allí a la tierra de Salisa, y no las hallaron; pasaron luego por la tierra de Saalim, y tampoco, y después por la tierra de Benjamín, y no las encontraron.",
+      "bibleReference": "1 Samuel 9:4",
+      "answers": [
+        { "text": "Judá, Silo, Rama y Mizpa", "isCorrect": false },
+        { "text": "Gath, Ecrón, Asdod y Gaza", "isCorrect": false },
+        { "text": "Beer-sebah, Gilgal, Beth-el y Sen", "isCorrect": false },
+        { "text": "Ephraim, Salisa, Saalim y Benjamín", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué dijo el criado que había en aquella ciudad cuando Saúl quería volverse?",
+      "explanation": "El criado le respondió que en aquella ciudad había un hombre de Dios, varón insigne, y que todas las cosas que él dijere sin duda vendrían.",
+      "bibleReference": "1 Samuel 9:6",
+      "answers": [
+        { "text": "Un hombre de Dios, varón insigne", "isCorrect": true },
+        { "text": "Un sacerdote de la casa de Eli", "isCorrect": false },
+        { "text": "Un adivino de los filisteos", "isCorrect": false },
+        { "text": "Un capitán de mil hombres", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dijo el criado que tenía en su mano para dar al varón de Dios?",
+      "explanation": "El criado respondió a Saúl que en su mano se hallaba la cuarta parte de un siclo de plata, y que eso daría al varón de Dios para que les declarase su camino.",
+      "bibleReference": "1 Samuel 9:8",
+      "answers": [
+        { "text": "Un epha de harina y una vasija de vino", "isCorrect": false },
+        { "text": "La cuarta parte de un siclo de plata", "isCorrect": true },
+        { "text": "Cinco panes de las alforjas", "isCorrect": false },
+        { "text": "Un siclo de oro y un cordero", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿cómo se llamaba antiguamente en Israel al que ahora se llama profeta?",
+      "explanation": "Antiguamente en Israel, quien iba a consultar a Dios decía: Venid y vamos hasta el vidente, porque el que ahora se llama profeta antiguamente era llamado vidente.",
+      "bibleReference": "1 Samuel 9:9",
+      "answers": [
+        { "text": "Varón insigne", "isCorrect": false },
+        { "text": "Adivino", "isCorrect": false },
+        { "text": "Vidente", "isCorrect": true },
+        { "text": "Juez", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué le había revelado Jehová a Samuel un día antes de que Saúl viniese?",
+      "explanation": "Jehová le había revelado que al día siguiente, a la misma hora, le enviaría un varón de la tierra de Benjamín, al cual ungiría por príncipe sobre su pueblo Israel.",
+      "bibleReference": "1 Samuel 9:15-16",
+      "answers": [
+        { "text": "Que los filisteos subirían a pelear contra Israel", "isCorrect": false },
+        { "text": "Que pusiese por jueces a los hijos de Samuel", "isCorrect": false },
+        { "text": "Que las asnas de Cis se habían hallado en Suph", "isCorrect": false },
+        { "text": "Que le enviaría un varón de Benjamín para ungirlo", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué respondió Saúl sobre su tribu y su familia cuando Samuel le habló así?",
+      "explanation": "Saúl respondió preguntando si no era hijo de Benjamín, de las más pequeñas tribus de Israel, y si su familia no era la más pequeña de todas las de aquella tribu.",
+      "bibleReference": "1 Samuel 9:21",
+      "answers": [
+        { "text": "Que es de Ephraim, la mayor de las tribus", "isCorrect": false },
+        { "text": "Que es de Benjamín, de las más pequeñas tribus", "isCorrect": true },
+        { "text": "Que su familia es la más grande de Benjamín", "isCorrect": false },
+        { "text": "Que es de Judá, la tribu de los reyes", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué alzó el cocinero y puso delante de Saúl en el alto?",
+      "explanation": "El cocinero alzó una espaldilla, con lo que estaba sobre ella, y la puso delante de Saúl, y Samuel le dijo que aquello estaba reservado para él.",
+      "bibleReference": "1 Samuel 9:23-24",
+      "answers": [
+        { "text": "Una espaldilla con lo que estaba sobre ella", "isCorrect": true },
+        { "text": "Un cordero de leche asado al fuego", "isCorrect": false },
+        { "text": "Pan de las alforjas y agua del pozo", "isCorrect": false },
+        { "text": "Treinta panes de la mesa de los convidados", "isCorrect": false }
+      ]
+    }
+  ]
+}

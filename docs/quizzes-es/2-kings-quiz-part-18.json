@@ -1,0 +1,122 @@
+{
+  "title": "2 Reyes Quiz bíblico - Capítulo 18",
+  "description": "Diez preguntas sobre 2 Reyes 18: las reformas de Ezechîas, la toma de Samaria, el tributo a Sennachêrib y el discurso de Rabsaces.",
+  "slug": "2-kings-quiz-part-18",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cómo se llamaba la madre de Ezechîas?",
+      "explanation": "El nombre de la madre de Ezechîas fue Abi hija de Zachârías.",
+      "bibleReference": "2 Reyes 18:2",
+      "answers": [
+        { "text": "Abi hija de Zachârías", "isCorrect": true },
+        { "text": "Jerusa hija de Sadoc", "isCorrect": false },
+        { "text": "Sibia, de Beer-seba", "isCorrect": false },
+        { "text": "Jecolía, de Jerusalem", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué nombre se le daba a la serpiente de bronce que Ezechîas hizo pedazos?",
+      "explanation": "Ezechîas hizo pedazos la serpiente de bronce que había hecho Moisés, porque hasta entonces los hijos de Israel le quemaban perfumes; y la llamó por nombre Nehustán.",
+      "bibleReference": "2 Reyes 18:4",
+      "answers": [
+        { "text": "Nisroch", "isCorrect": false },
+        { "text": "Asima", "isCorrect": false },
+        { "text": "Nehustán", "isCorrect": true },
+        { "text": "Nergal", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dice el texto de Ezechîas al compararlo con los reyes de Judá?",
+      "explanation": "Ezechîas puso su esperanza en Jehová Dios de Israel, y ni antes ni después de él hubo otro como él en todos los reyes de Judá.",
+      "bibleReference": "2 Reyes 18:5",
+      "answers": [
+        { "text": "Que fue como Achâz su padre", "isCorrect": false },
+        { "text": "Que no hubo otro como él, ni antes ni después", "isCorrect": true },
+        { "text": "Que fue el último de los reyes de Judá", "isCorrect": false },
+        { "text": "Que reinó más años que todos ellos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Hasta dónde hirió Ezechîas a los Filisteos?",
+      "explanation": "Hirió a los Filisteos hasta Gaza y sus términos, desde las torres de las atalayas hasta la ciudad fortalecida.",
+      "bibleReference": "2 Reyes 18:8",
+      "answers": [
+        { "text": "Hasta Damasco y sus aldeas", "isCorrect": false },
+        { "text": "Hasta la ciudad de Lachîs", "isCorrect": false },
+        { "text": "Hasta el río de Gozán", "isCorrect": false },
+        { "text": "Hasta Gaza y sus términos", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Al cabo de cuánto tiempo fue tomada Samaria después de que Salmanasar la cercó?",
+      "explanation": "Salmanasar rey de los Asirios subió contra Samaria y la cercó, y la tomaron al cabo de tres años, en el sexto año de Ezechîas.",
+      "bibleReference": "2 Reyes 18:9-10",
+      "answers": [
+        { "text": "Al cabo de tres años", "isCorrect": true },
+        { "text": "Al cabo de un año", "isCorrect": false },
+        { "text": "Al cabo de seis meses", "isCorrect": false },
+        { "text": "Al cabo de nueve años", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué impuso el rey de Asiria a Ezechîas cuando este le dijo que había pecado?",
+      "explanation": "El rey de Asiria impuso a Ezechîas rey de Judá trescientos talentos de plata y treinta talentos de oro.",
+      "bibleReference": "2 Reyes 18:14",
+      "answers": [
+        { "text": "Mil talentos de plata", "isCorrect": false },
+        { "text": "Trescientos talentos de plata y treinta de oro", "isCorrect": true },
+        { "text": "Cincuenta siclos de plata por cada hombre", "isCorrect": false },
+        { "text": "Dos mil caballos con sus jinetes", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Además de la plata, ¿qué más dio Ezechîas al rey de Asiria?",
+      "explanation": "Ezechîas descompuso las puertas del templo de Jehová y los quiciales que él mismo había cubierto de oro, y lo dio al rey de Asiria.",
+      "bibleReference": "2 Reyes 18:16",
+      "answers": [
+        { "text": "Los bueyes de bronce del templo", "isCorrect": false },
+        { "text": "Rehenes de entre los hijos del rey", "isCorrect": false },
+        { "text": "Las imágenes y los bosques de los altos", "isCorrect": false },
+        { "text": "El oro de las puertas y los quiciales del templo", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Quién salió al encuentro de los enviados del rey de Asiria como mayordomo?",
+      "explanation": "Cuando llamaron al rey, salió a ellos Eliacim hijo de Hilcías, que era mayordomo, con Sebna escriba y Joah hijo de Asaph, canciller.",
+      "bibleReference": "2 Reyes 18:18",
+      "answers": [
+        { "text": "Sebna el escriba", "isCorrect": false },
+        { "text": "Joah hijo de Asaph", "isCorrect": false },
+        { "text": "Eliacim hijo de Hilcías", "isCorrect": true },
+        { "text": "Urías el sacerdote", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Con qué comparó Rabsaces la confianza de Judá en Egipto?",
+      "explanation": "Rabsaces dijo que confiaban en un bordón de caña cascada, que si alguno se apoyare en él, le entraría por la mano y se le pasaría; tal era Faraón rey de Egipto.",
+      "bibleReference": "2 Reyes 18:21",
+      "answers": [
+        { "text": "Con un bordón de caña cascada", "isCorrect": true },
+        { "text": "Con heno de los tejados", "isCorrect": false },
+        { "text": "Con un pozo sin agua", "isCorrect": false },
+        { "text": "Con una casa sobre la arena", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué le pidieron a Rabsaces los hombres de Ezechîas sobre la lengua en que hablaba?",
+      "explanation": "Le rogaron que hablase a sus siervos en siriaco, porque ellos lo entendían, y que no hablase con ellos en judaico a oídos del pueblo que estaba sobre el muro.",
+      "bibleReference": "2 Reyes 18:26",
+      "answers": [
+        { "text": "Que hablase en judaico para que todos lo oyeran", "isCorrect": false },
+        { "text": "Que hablase en siriaco y no en judaico", "isCorrect": true },
+        { "text": "Que escribiese sus palabras en una carta", "isCorrect": false },
+        { "text": "Que callase hasta que el rey saliera a él", "isCorrect": false }
+      ]
+    }
+  ]
+}

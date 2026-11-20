@@ -1,0 +1,242 @@
+{
+  "title": "1 Samuel Quiz bíblico - Capítulo 25",
+  "description": "Diez preguntas sobre 1 Samuel 25: la muerte de Samuel, la dureza de Nabal y la prudencia de Abigail.",
+  "slug": "1-samuel-quiz-part-25",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Dónde sepultaron a Samuel cuando murió, y a dónde se fue David?",
+      "explanation": "Todo Israel se juntó, lloró a Samuel y lo sepultó en su casa en Rama; luego David se levantó y se fue al desierto de Parán.",
+      "bibleReference": "1 Samuel 25:1",
+      "answers": [
+        {
+          "text": "En su casa en Rama, y David se fue al desierto de Parán",
+          "isCorrect": true
+        },
+        {
+          "text": "En Nob, y David se fue al Carmelo",
+          "isCorrect": false
+        },
+        {
+          "text": "En Gabaa, y David se fue al desierto de Ziph",
+          "isCorrect": false
+        },
+        {
+          "text": "En Beth-lehem, y David se fue a Engaddi",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántas ovejas y cuántas cabras tenía aquel hombre rico de Maón?",
+      "explanation": "En Maón había un hombre muy rico, con su hacienda en el Carmelo, que tenía tres mil ovejas y mil cabras.",
+      "bibleReference": "1 Samuel 25:2",
+      "answers": [
+        {
+          "text": "Mil ovejas y tres mil cabras",
+          "isCorrect": false
+        },
+        {
+          "text": "Tres mil ovejas y mil cabras",
+          "isCorrect": true
+        },
+        {
+          "text": "Cuatrocientas ovejas y cien cabras",
+          "isCorrect": false
+        },
+        {
+          "text": "Dos mil ovejas y doscientas cabras",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo describe el texto a Nabal y a su mujer Abigail?",
+      "explanation": "Abigail era mujer de buen entendimiento y de buena gracia, mientras el hombre era duro y de malos hechos, y era del linaje de Caleb.",
+      "bibleReference": "1 Samuel 25:3",
+      "answers": [
+        {
+          "text": "Los dos eran de buen entendimiento y de buena gracia",
+          "isCorrect": false
+        },
+        {
+          "text": "Él era hombre generoso y ella mujer de pocas palabras",
+          "isCorrect": false
+        },
+        {
+          "text": "Ella de buen entendimiento, y él duro y de malos hechos",
+          "isCorrect": true
+        },
+        {
+          "text": "Ella era del linaje de Caleb, y él era un extranjero",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos criados envió David al Carmelo y qué les mandó pedir?",
+      "explanation": "David envió diez criados para saludar a Nabal en su nombre y pedirle que diese lo que tuviese a mano a sus siervos y a su hijo David.",
+      "bibleReference": "1 Samuel 25:5, 1 Samuel 25:8",
+      "answers": [
+        {
+          "text": "Cuatro criados, para pedirle pan y agua",
+          "isCorrect": false
+        },
+        {
+          "text": "Veinte criados, para pedirle sus ovejas",
+          "isCorrect": false
+        },
+        {
+          "text": "Diez criados, para pedirle lo que tuviese a mano",
+          "isCorrect": true
+        },
+        {
+          "text": "Dos criados, para pedirle paz y alianza",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué respondió Nabal a los criados de David?",
+      "explanation": "Nabal preguntó quién era David y quién el hijo de Isaí, y dijo que no iba a dar su pan, su agua y su víctima a hombres que no sabía de dónde eran.",
+      "bibleReference": "1 Samuel 25:10-11",
+      "answers": [
+        {
+          "text": "Que les daría parte de su víctima al acabar el esquileo",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no daría su pan y su agua a hombres desconocidos",
+          "isCorrect": true
+        },
+        {
+          "text": "Que primero quería hablar con su mujer Abigail",
+          "isCorrect": false
+        },
+        {
+          "text": "Que iría él mismo al desierto a saludar a David",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos hombres subieron tras David con la espada ceñida, y cuántos quedaron con el bagaje?",
+      "explanation": "David mandó que cada uno ciñese su espada; como cuatrocientos hombres subieron tras él y dejaron doscientos con el bagaje.",
+      "bibleReference": "1 Samuel 25:13",
+      "answers": [
+        {
+          "text": "Como cuatrocientos subieron y doscientos quedaron",
+          "isCorrect": true
+        },
+        {
+          "text": "Como seiscientos subieron y cien quedaron",
+          "isCorrect": false
+        },
+        {
+          "text": "Como doscientos subieron y cuatrocientos quedaron",
+          "isCorrect": false
+        },
+        {
+          "text": "Como tres mil subieron y mil quedaron",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo a Abigail el criado que le dio aviso acerca de los hombres de David?",
+      "explanation": "El criado contó a Abigail que aquellos hombres les habían sido muy buenos, que nunca les hicieron fuerza ni les faltó nada, y que les habían sido por muro de día y de noche.",
+      "bibleReference": "1 Samuel 25:14-16",
+      "answers": [
+        {
+          "text": "Que les habían robado parte del ganado",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no los conocían de nada",
+          "isCorrect": false
+        },
+        {
+          "text": "Que les habían pedido pan y vino cada día",
+          "isCorrect": false
+        },
+        {
+          "text": "Que les habían sido por muro de día y de noche",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué llevó Abigail a David sin decir nada a su marido?",
+      "explanation": "Abigail tomó doscientos panes, dos cueros de vino, cinco ovejas guisadas, cinco medidas de grano tostado, cien hilos de uvas pasas y doscientos panes de higos secos, y lo cargó en asnos.",
+      "bibleReference": "1 Samuel 25:18-19",
+      "answers": [
+        {
+          "text": "Cinco panes y un cordero de la manada de su marido",
+          "isCorrect": false
+        },
+        {
+          "text": "Doscientos panes, vino, ovejas guisadas y uvas pasas",
+          "isCorrect": true
+        },
+        {
+          "text": "Las tres mil ovejas y las mil cabras de su marido",
+          "isCorrect": false
+        },
+        {
+          "text": "Diez quesos de leche y un epha de grano tostado",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo David a Abigail después de oír su razonamiento?",
+      "explanation": "David bendijo a Jehová por haberla enviado y bendijo su razonamiento, porque ella le había estorbado el ir a derramar sangre y vengarse por su propia mano.",
+      "bibleReference": "1 Samuel 25:32-33",
+      "answers": [
+        {
+          "text": "Que volviera con la bendición a su casa sin ser oída",
+          "isCorrect": false
+        },
+        {
+          "text": "Que de todos modos subiría contra la casa de Nabal",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no quería recibir nada de la mano de Nabal",
+          "isCorrect": false
+        },
+        {
+          "text": "Que ella le había estorbado el derramar sangre",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le pasó a Nabal cuando su mujer le refirió aquellas cosas a la mañana?",
+      "explanation": "Cuando el vino había salido de Nabal y su mujer le refirió lo sucedido, se le amorteció el corazón y quedó como una piedra; pasados diez días Jehová lo hirió y murió.",
+      "bibleReference": "1 Samuel 25:37-38",
+      "answers": [
+        {
+          "text": "Se le amorteció el corazón y quedó como una piedra",
+          "isCorrect": true
+        },
+        {
+          "text": "Se enojó y echó a Abigail de su casa",
+          "isCorrect": false
+        },
+        {
+          "text": "Salió a buscar a David al desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "Mandó llevar panes y vino a los hombres de David",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

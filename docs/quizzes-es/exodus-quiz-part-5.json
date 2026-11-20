@@ -101,24 +101,24 @@
       ]
     },
     {
-      "text": "¿Qué pasó con la tarea de ladrillo cuando se les quitó la paja?",
+      "text": "¿Qué ordenó Faraón acerca de la tarea de ladrillo al quitarles la paja?",
       "explanation": "Faraón mandó ponerles la misma tarea de ladrillo que hacían antes, sin disminuirles nada.",
-      "bibleReference": "Éxodo 5:8",
+      "bibleReference": "Éxodo 5:7-8",
       "answers": [
         {
-          "text": "Se redujo a la mitad",
+          "text": "Que se redujera a la mitad",
           "isCorrect": false
         },
         {
-          "text": "Se dobló cada día",
+          "text": "Que se doblara cada día",
           "isCorrect": false
         },
         {
-          "text": "Siguió siendo la misma de antes",
+          "text": "Que siguiera siendo la misma de antes",
           "isCorrect": true
         },
         {
-          "text": "Se suspendió por tres días",
+          "text": "Que se suspendiera por tres días",
           "isCorrect": false
         }
       ]

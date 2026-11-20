@@ -1,0 +1,122 @@
+{
+  "title": "2 Reyes Quiz bíblico - Capítulo 23",
+  "description": "Diez preguntas sobre 2 Reyes 23: la alianza junto a la columna, la reforma de Josías, la pascua en Jerusalem y su muerte en Megiddo.",
+  "slug": "2-kings-quiz-part-23",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué leyó el rey en la casa de Jehová delante de todo el pueblo?",
+      "explanation": "El rey subió a la casa de Jehová con todos los varones de Judá y los moradores de Jerusalem, y leyó, oyéndolo ellos, todas las palabras del libro del pacto que había sido hallado en la casa de Jehová.",
+      "bibleReference": "2 Reyes 23:2",
+      "answers": [
+        { "text": "Todas las palabras del libro del pacto", "isCorrect": true },
+        { "text": "Las crónicas de los reyes de Judá", "isCorrect": false },
+        { "text": "La carta del rey de Asiria", "isCorrect": false },
+        { "text": "Los cantos de la casa de Jehová", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué hizo el rey puesto en pie junto a la columna?",
+      "explanation": "Puesto en pie junto a la columna, hizo alianza delante de Jehová de ir en pos de él y guardar sus mandamientos, sus testimonios y sus estatutos con todo el corazón y toda el alma; y todo el pueblo confirmó el pacto.",
+      "bibleReference": "2 Reyes 23:3",
+      "answers": [
+        { "text": "Ofreció un holocausto por todo Judá", "isCorrect": false },
+        { "text": "Ungió a los sacerdotes de segundo orden", "isCorrect": false },
+        { "text": "Hizo alianza delante de Jehová", "isCorrect": true },
+        { "text": "Mandó callar a los ancianos de Judá", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué hizo el rey con los vasos que habían sido hechos para Baal y para el bosque?",
+      "explanation": "Mandó sacarlos del templo de Jehová y los quemó fuera de Jerusalem en el campo de Cedrón, e hizo llevar sus cenizas a Beth-el.",
+      "bibleReference": "2 Reyes 23:4",
+      "answers": [
+        { "text": "Los repartió entre los guardianes de la puerta", "isCorrect": false },
+        { "text": "Los quemó en el campo de Cedrón", "isCorrect": true },
+        { "text": "Los envió como presente a Egipto", "isCorrect": false },
+        { "text": "Los escondió en los dos atrios del templo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Desde dónde hasta dónde profanó el rey los altos donde los sacerdotes quemaban perfumes?",
+      "explanation": "Hizo venir a todos los sacerdotes de las ciudades de Judá y profanó los altos donde los sacerdotes quemaban perfumes, desde Gabaa hasta Beer-seba.",
+      "bibleReference": "2 Reyes 23:8",
+      "answers": [
+        { "text": "Desde Samaria hasta Jerusalem", "isCorrect": false },
+        { "text": "Desde Beth-el hasta Megiddo", "isCorrect": false },
+        { "text": "Desde Gaza hasta el torrente de Cedrón", "isCorrect": false },
+        { "text": "Desde Gabaa hasta Beer-seba", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué lugar profanó el rey para que nadie pasara por fuego a su hijo o a su hija a Moloch?",
+      "explanation": "Profanó a Topheth, que está en el valle del hijo de Hinnom, para que ninguno pasase su hijo o su hija por fuego a Moloch.",
+      "bibleReference": "2 Reyes 23:10",
+      "answers": [
+        { "text": "Al valle de las Salinas, en el término de Edom", "isCorrect": false },
+        { "text": "A Topheth, en el valle del hijo de Hinnom", "isCorrect": true },
+        { "text": "A la ciudad de Hebrón, en la montaña de Judá", "isCorrect": false },
+        { "text": "Al campo del batanero, junto al estanque de arriba", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué quitó el rey de la entrada del templo, que los reyes de Judá habían dedicado al sol?",
+      "explanation": "Quitó los caballos que los reyes de Judá habían dedicado al sol a la entrada del templo de Jehová, y quemó al fuego los carros del sol.",
+      "bibleReference": "2 Reyes 23:11",
+      "answers": [
+        { "text": "Los caballos", "isCorrect": true },
+        { "text": "Las columnas de bronce", "isCorrect": false },
+        { "text": "Los vasos de oro", "isCorrect": false },
+        { "text": "Las puertas doradas", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Josías cuando le mostraron el sepulcro del varón de Dios que vino de Judá?",
+      "explanation": "Josías dijo: \"Dejadlo; ninguno mueva sus huesos\"; y así fueron preservados sus huesos y los huesos del profeta que había venido de Samaria.",
+      "bibleReference": "2 Reyes 23:17-18",
+      "answers": [
+        { "text": "Que quemaran también esos huesos sobre el altar", "isCorrect": false },
+        { "text": "Que escribieran su nombre en el título", "isCorrect": false },
+        { "text": "Que nadie moviera sus huesos", "isCorrect": true },
+        { "text": "Que lo llevaran a sepultar en Jerusalem", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué mandó el rey a todo el pueblo, conforme a lo escrito en el libro de la alianza?",
+      "explanation": "El rey mandó a todo el pueblo: \"Haced la pascua á Jehová vuestro Dios, conforme á lo que está escrito en el libro de esta alianza\".",
+      "bibleReference": "2 Reyes 23:21",
+      "answers": [
+        { "text": "Que subieran a reparar la casa de Jehová", "isCorrect": false },
+        { "text": "Que trajeran su dinero al arca del templo", "isCorrect": false },
+        { "text": "Que derribaran los altos de sus ciudades", "isCorrect": false },
+        { "text": "Que hicieran la pascua a Jehová su Dios", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Dónde mató Faraón Nechâo al rey Josías?",
+      "explanation": "Faraón Nechâo subió contra el rey de Asiria al río Eufrates y el rey Josías salió contra él, pero en cuanto lo vio lo mató en Megiddo.",
+      "bibleReference": "2 Reyes 23:29",
+      "answers": [
+        { "text": "En Megiddo", "isCorrect": true },
+        { "text": "En Ribla", "isCorrect": false },
+        { "text": "En el río Eufrates", "isCorrect": false },
+        { "text": "En Libna", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué nombre le puso Faraón Nechâo a Eliacim hijo de Josías al hacerlo rey?",
+      "explanation": "Faraón Nechâo puso por rey a Eliacim hijo de Josías y le mudó el nombre en el de Joacim; y tomó a Joachâz y lo llevó a Egipto, donde murió.",
+      "bibleReference": "2 Reyes 23:34",
+      "answers": [
+        { "text": "Joachâz", "isCorrect": false },
+        { "text": "Joacim", "isCorrect": true },
+        { "text": "Josías", "isCorrect": false },
+        { "text": "Nathan-melech", "isCorrect": false }
+      ]
+    }
+  ]
+}

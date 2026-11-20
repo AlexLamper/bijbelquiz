@@ -1,0 +1,122 @@
+{
+  "title": "1 Crónicas Quiz bíblico - Capítulo 17",
+  "description": "Diez preguntas sobre 1 Crónicas 17: la palabra de Jehová a Nathán sobre la casa que David no edificaría, la promesa a su simiente y la oración de David.",
+  "slug": "1-chronicles-quiz-part-17",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿A qué profeta dijo David que él habitaba en casa de cedro mientras el arca estaba debajo de cortinas?",
+      "explanation": "Morando David en su casa, dijo al profeta Nathán que él habitaba en casa de cedro y el arca del pacto de Jehová debajo de cortinas.",
+      "bibleReference": "1 Crónicas 17:1",
+      "answers": [
+        { "text": "A Nathán", "isCorrect": true },
+        { "text": "A Gad", "isCorrect": false },
+        { "text": "A Samuel", "isCorrect": false },
+        { "text": "A Asaph", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué le respondió el profeta a David en aquel momento?",
+      "explanation": "Nathán dijo á David: Haz todo lo que está en tu corazón, porque Dios es contigo.",
+      "bibleReference": "1 Crónicas 17:2",
+      "answers": [
+        { "text": "Espera la palabra de Jehová", "isCorrect": false },
+        { "text": "Haz todo lo que está en tu corazón", "isCorrect": true },
+        { "text": "No edifiques casa á Jehová", "isCorrect": false },
+        { "text": "Consulta primero á los Levitas", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuándo vino la palabra de Dios al profeta?",
+      "explanation": "En aquella misma noche fué palabra de Dios á Nathán.",
+      "bibleReference": "1 Crónicas 17:3",
+      "answers": [
+        { "text": "Al tercer día", "isCorrect": false },
+        { "text": "A la vuelta del año", "isCorrect": false },
+        { "text": "En aquella misma noche", "isCorrect": true },
+        { "text": "En el mes primero", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué debía decirle el profeta a David de parte de Jehová?",
+      "explanation": "Jehová mandó decir á David su siervo: Tú no me edificarás casa en que habite.",
+      "bibleReference": "1 Crónicas 17:4",
+      "answers": [
+        { "text": "Edifícame casa de cedro en Jerusalem", "isCorrect": false },
+        { "text": "Trae el arca á la casa de cedro", "isCorrect": false },
+        { "text": "Deja el reino á tu hijo ahora", "isCorrect": false },
+        { "text": "Tú no me edificarás casa en que habite", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según Jehová de los ejércitos, ¿de dónde había tomado a David para hacerlo príncipe sobre Israel?",
+      "explanation": "Jehová dijo: Yo te tomé de la majada, de detrás del ganado, para que fueses príncipe sobre mi pueblo Israel.",
+      "bibleReference": "1 Crónicas 17:7",
+      "answers": [
+        { "text": "De la majada, de detrás del ganado", "isCorrect": true },
+        { "text": "De la casa de su padre en Beth-lehem", "isCorrect": false },
+        { "text": "Del campo de los Filisteos", "isCorrect": false },
+        { "text": "De entre los jueces de Israel", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué le hizo saber Jehová a David, además de prometer que humillaría a sus enemigos?",
+      "explanation": "Jehová dijo que humillaría á todos sus enemigos, y le hizo saber además que Jehová le había de edificar casa.",
+      "bibleReference": "1 Crónicas 17:10",
+      "answers": [
+        { "text": "Que Jehová humillaría á Nathán", "isCorrect": false },
+        { "text": "Que Jehová le edificaría casa", "isCorrect": true },
+        { "text": "Que él mismo edificaría el templo", "isCorrect": false },
+        { "text": "Que los jueces volverían á Israel", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Jehová sobre el hijo que levantaría después de David y que le edificaría casa?",
+      "explanation": "Jehová dijo de él: Yo le seré por padre, y él me será por hijo; y no quitaré de él mi misericordia.",
+      "bibleReference": "1 Crónicas 17:12-13",
+      "answers": [
+        { "text": "Él será profeta en Israel", "isCorrect": false },
+        { "text": "Él será juez sobre mi pueblo", "isCorrect": false },
+        { "text": "Yo le seré por padre, y él me será por hijo", "isCorrect": true },
+        { "text": "Él llevará el arca de Jehová", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Con qué pregunta comenzó David su oración cuando estuvo delante de Jehová?",
+      "explanation": "El rey David dijo: Jehová Dios, quién soy yo, y cuál es mi casa, que me has traído hasta este lugar.",
+      "bibleReference": "1 Crónicas 17:16",
+      "answers": [
+        { "text": "Qué he de hacer con el arca", "isCorrect": false },
+        { "text": "Por qué me has desechado", "isCorrect": false },
+        { "text": "Hasta cuándo, oh Jehová", "isCorrect": false },
+        { "text": "Quién soy yo, y cuál es mi casa", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué dijo David sobre Jehová, según todas las cosas que habían oído con sus oídos?",
+      "explanation": "David dijo: Jehová, no hay semejante á ti, ni hay Dios sino tú, según todas las cosas que hemos oído con nuestros oídos.",
+      "bibleReference": "1 Crónicas 17:20",
+      "answers": [
+        { "text": "No hay semejante á ti, ni hay Dios sino tú", "isCorrect": true },
+        { "text": "Tu misericordia es eterna, oh Jehová", "isCorrect": false },
+        { "text": "Grande es Jehová entre los dioses", "isCorrect": false },
+        { "text": "Tus juicios son en toda la tierra", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Al final de su oración, ¿qué dice David de la casa de su siervo que Jehová ha bendecido?",
+      "explanation": "David dice que Jehová ha querido bendecir la casa de su siervo y la ha bendecido, y que será bendita para siempre.",
+      "bibleReference": "1 Crónicas 17:27",
+      "answers": [
+        { "text": "Que será quitada de delante de ti", "isCorrect": false },
+        { "text": "Que será bendita para siempre", "isCorrect": true },
+        { "text": "Que se edificará en Gabaón", "isCorrect": false },
+        { "text": "Que durará solo tres días", "isCorrect": false }
+      ]
+    }
+  ]
+}

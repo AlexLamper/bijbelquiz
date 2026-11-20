@@ -1,0 +1,242 @@
+{
+  "title": "2 Samuel Quiz bíblico - Capítulo 2",
+  "description": "Diez preguntas sobre 2 Samuel 2: David ungido en Hebrón, Is-boseth alzado por Abner y la pelea junto al estanque de Gabaón.",
+  "slug": "2-samuel-quiz-part-2",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿A qué ciudad le dijo Jehová a David que subiese?",
+      "explanation": "David consultó a Jehová si subiría a alguna de las ciudades de Judá, y Jehová le dijo: \"A Hebrón\".",
+      "bibleReference": "2 Samuel 2:1",
+      "answers": [
+        {
+          "text": "A Hebrón",
+          "isCorrect": true
+        },
+        {
+          "text": "A Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "A Siclag",
+          "isCorrect": false
+        },
+        {
+          "text": "A Mahanaim",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quiénes ungieron a David por rey sobre la casa de Judá?",
+      "explanation": "Vinieron los varones de Judá y ungieron allí a David por rey sobre la casa de Judá.",
+      "bibleReference": "2 Samuel 2:4",
+      "answers": [
+        {
+          "text": "Los ancianos de Benjamín",
+          "isCorrect": false
+        },
+        {
+          "text": "Los varones de Judá",
+          "isCorrect": true
+        },
+        {
+          "text": "Los siervos de Is-boseth",
+          "isCorrect": false
+        },
+        {
+          "text": "Los hombres de Jabes de Galaad",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quiénes envió David mensajeros para bendecirlos por haber sepultado a Saúl?",
+      "explanation": "Avisaron a David que los de Jabes de Galaad habían sepultado a Saúl, y él les envió mensajeros llamándolos benditos de Jehová.",
+      "bibleReference": "2 Samuel 2:4-5",
+      "answers": [
+        {
+          "text": "A los varones de Hebrón",
+          "isCorrect": false
+        },
+        {
+          "text": "A los siervos de Abner",
+          "isCorrect": false
+        },
+        {
+          "text": "A los de Jabes de Galaad",
+          "isCorrect": true
+        },
+        {
+          "text": "A los ancianos de Gabaón",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quién tomó Abner hijo de Ner y alzó por rey?",
+      "explanation": "Abner hijo de Ner, general del ejército de Saúl, tomó a Is-boseth hijo de Saúl y lo alzó por rey sobre Galaad y sobre todo Israel.",
+      "bibleReference": "2 Samuel 2:8-9",
+      "answers": [
+        {
+          "text": "A Mephi-boseth hijo de Jonathán",
+          "isCorrect": false
+        },
+        {
+          "text": "A Joab hijo de Sarvia",
+          "isCorrect": false
+        },
+        {
+          "text": "A Paltiel hijo de Lais",
+          "isCorrect": false
+        },
+        {
+          "text": "A Is-boseth hijo de Saúl",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos años tenía Is-boseth cuando comenzó a reinar sobre Israel?",
+      "explanation": "De cuarenta años era Is-boseth hijo de Saúl cuando comenzó a reinar sobre Israel, y reinó dos años.",
+      "bibleReference": "2 Samuel 2:10",
+      "answers": [
+        {
+          "text": "Treinta años",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuarenta años",
+          "isCorrect": true
+        },
+        {
+          "text": "Veinte años",
+          "isCorrect": false
+        },
+        {
+          "text": "Cincuenta años",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuánto tiempo reinó David en Hebrón sobre la casa de Judá?",
+      "explanation": "El número de los días que David reinó en Hebrón sobre la casa de Judá fue siete años y seis meses.",
+      "bibleReference": "2 Samuel 2:11",
+      "answers": [
+        {
+          "text": "Siete años y seis meses",
+          "isCorrect": true
+        },
+        {
+          "text": "Dos años enteros",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuarenta años cumplidos",
+          "isCorrect": false
+        },
+        {
+          "text": "Treinta y tres años",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Junto a qué se encontraron Joab y los siervos de Is-boseth?",
+      "explanation": "Joab hijo de Sarvia y los siervos de David salieron y los encontraron junto al estanque de Gabaón, y se pararon a uno y otro lado.",
+      "bibleReference": "2 Samuel 2:13",
+      "answers": [
+        {
+          "text": "Junto al pozo de Sira",
+          "isCorrect": false
+        },
+        {
+          "text": "Junto a la fuente de Jezreel",
+          "isCorrect": false
+        },
+        {
+          "text": "Junto al torrente de Besor",
+          "isCorrect": false
+        },
+        {
+          "text": "Junto al estanque de Gabaón",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo describe el texto a Asael, uno de los tres hijos de Sarvia?",
+      "explanation": "Dice que Asael era suelto de pies como un corzo del campo.",
+      "bibleReference": "2 Samuel 2:18",
+      "answers": [
+        {
+          "text": "Más fuerte que un león del desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "Diestro con el arco y la espada",
+          "isCorrect": false
+        },
+        {
+          "text": "Suelto de pies como un corzo del campo",
+          "isCorrect": true
+        },
+        {
+          "text": "Más ligero que las águilas del cielo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué hirió Abner a Asael, que no quería apartarse de en pos de él?",
+      "explanation": "Abner lo hirió con el regatón de la lanza por la quinta costilla, y la lanza le salió por las espaldas.",
+      "bibleReference": "2 Samuel 2:23",
+      "answers": [
+        {
+          "text": "Con el regatón de la lanza",
+          "isCorrect": true
+        },
+        {
+          "text": "Con la espada de su hermano Joab",
+          "isCorrect": false
+        },
+        {
+          "text": "Con una piedra de la campiña",
+          "isCorrect": false
+        },
+        {
+          "text": "Con una flecha de su arco",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos hombres faltaron de los siervos de David cuando Joab juntó al pueblo?",
+      "explanation": "Al juntar todo el pueblo faltaron de los siervos de David diecinueve hombres, y Asael.",
+      "bibleReference": "2 Samuel 2:30",
+      "answers": [
+        {
+          "text": "Doce hombres, y Asael",
+          "isCorrect": false
+        },
+        {
+          "text": "Trescientos sesenta hombres, y Asael",
+          "isCorrect": false
+        },
+        {
+          "text": "Veinte hombres, y Asael",
+          "isCorrect": false
+        },
+        {
+          "text": "Diecinueve hombres, y Asael",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

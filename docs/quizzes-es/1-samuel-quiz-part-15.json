@@ -1,0 +1,122 @@
+{
+  "title": "1 Samuel Quiz bíblico - Capítulo 15",
+  "description": "Diez preguntas sobre 1 Samuel 15: la guerra contra Amalec, el ganado perdonado, la palabra de que el obedecer es mejor que los sacrificios y el fin de Agag.",
+  "slug": "1-samuel-quiz-part-15",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿A quién mandó Jehová por medio de Samuel que Saúl fuese a herir?",
+      "explanation": "Samuel le dijo que así había dicho Jehová de los ejércitos, acordándose de lo que Amalec hizo a Israel, y que fuese e hiriese a Amalec.",
+      "bibleReference": "1 Samuel 15:2-3",
+      "answers": [
+        { "text": "A Amalec", "isCorrect": true },
+        { "text": "A los filisteos", "isCorrect": false },
+        { "text": "A los ammonitas", "isCorrect": false },
+        { "text": "A los cineos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿A cuánta gente reconoció Saúl en Telaim?",
+      "explanation": "Saúl juntó el pueblo y lo reconoció en Telaim: doscientos mil de a pie y diez mil hombres de Judá.",
+      "bibleReference": "1 Samuel 15:4",
+      "answers": [
+        { "text": "Trescientos mil y treinta mil de Judá", "isCorrect": false },
+        { "text": "Dos mil de a pie y mil de Judá", "isCorrect": false },
+        { "text": "Doscientos mil de a pie y diez mil de Judá", "isCorrect": true },
+        { "text": "Seiscientos hombres y mil de Judá", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿A quién mandó Saúl que se apartase de entre los de Amalec para no ser destruido?",
+      "explanation": "Saúl dijo al Cineo que se apartase y saliese de entre los de Amalec, porque él había hecho misericordia con todos los hijos de Israel cuando subían de Egipto.",
+      "bibleReference": "1 Samuel 15:6",
+      "answers": [
+        { "text": "Al Amorrheo", "isCorrect": false },
+        { "text": "Al Cineo", "isCorrect": true },
+        { "text": "Al Ammonita", "isCorrect": false },
+        { "text": "Al Beth-semita", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿A quién tomó Saúl vivo, mientras mataba a filo de espada a todo el pueblo?",
+      "explanation": "Saúl tomó vivo a Agag, rey de Amalec, mas a todo el pueblo lo mató a filo de espada.",
+      "bibleReference": "1 Samuel 15:8",
+      "answers": [
+        { "text": "A Naas, rey de Ammón", "isCorrect": false },
+        { "text": "A Abner, hijo de Ner", "isCorrect": false },
+        { "text": "Al rey de Moab", "isCorrect": false },
+        { "text": "A Agag, rey de Amalec", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué palabra de Jehová vino a Samuel acerca de Saúl?",
+      "explanation": "Jehová dijo que le pesaba de haber puesto por rey a Saúl, porque se había vuelto de en pos de él y no había cumplido sus palabras; y Samuel se apesadumbró y clamó toda aquella noche.",
+      "bibleReference": "1 Samuel 15:11",
+      "answers": [
+        { "text": "Pésame de haber puesto por rey a Saúl", "isCorrect": true },
+        { "text": "Saúl ha cumplido todas mis palabras", "isCorrect": false },
+        { "text": "Confirmaré el reino de Saúl para siempre", "isCorrect": false },
+        { "text": "Ve y unge a otro rey en Beth-lehem", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Cuando Saúl dijo que había cumplido la palabra de Jehová, ¿qué le preguntó Samuel?",
+      "explanation": "Samuel le preguntó qué balido de ganados y bramido de bueyes era aquel que él oía con sus oídos.",
+      "bibleReference": "1 Samuel 15:14",
+      "answers": [
+        { "text": "¿Por qué has venido al Carmel, y no a Gilgal?", "isCorrect": false },
+        { "text": "¿Quién te ha levantado el trofeo en el Carmel?", "isCorrect": false },
+        { "text": "¿Qué balido de ganados y bramido de bueyes oigo?", "isCorrect": true },
+        { "text": "¿Dónde está Agag, rey de Amalec?", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según las palabras de Samuel, ¿qué es mejor que los sacrificios?",
+      "explanation": "Samuel preguntó si Jehová tiene tanto contentamiento con los holocaustos y víctimas como en obedecer a sus palabras, y dijo que ciertamente el obedecer es mejor que los sacrificios.",
+      "bibleReference": "1 Samuel 15:22",
+      "answers": [
+        { "text": "Los holocaustos", "isCorrect": false },
+        { "text": "El obedecer", "isCorrect": true },
+        { "text": "El sebo de los carneros", "isCorrect": false },
+        { "text": "Las víctimas pacíficas", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Samuel que Jehová había hecho, por cuanto Saúl desechó su palabra?",
+      "explanation": "Samuel dijo que, por cuanto Saúl había desechado la palabra de Jehová, él también lo había desechado para que no fuese rey.",
+      "bibleReference": "1 Samuel 15:23",
+      "answers": [
+        { "text": "Que le perdonará su pecado en Gilgal", "isCorrect": false },
+        { "text": "Que le dará mayor reino que a ninguno", "isCorrect": false },
+        { "text": "Que su hijo reinará en su lugar", "isCorrect": false },
+        { "text": "Que lo ha desechado para que no sea rey", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Samuel cuando Saúl echó mano de la orla de su capa y esta se desgarró?",
+      "explanation": "Samuel le dijo que Jehová había desgarrado aquel día de él el reino de Israel, y que lo había dado a su prójimo mejor que él.",
+      "bibleReference": "1 Samuel 15:27-28",
+      "answers": [
+        { "text": "Jehová ha desgarrado hoy de ti el reino de Israel", "isCorrect": true },
+        { "text": "Así será desgarrada la capa de tu enemigo", "isCorrect": false },
+        { "text": "Vuelve conmigo para que adore a Jehová", "isCorrect": false },
+        { "text": "Tu reino será confirmado para siempre", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Samuel con Agag delante de Jehová en Gilgal?",
+      "explanation": "Samuel mandó que le trajesen a Agag, rey de Amalec, y lo cortó en pedazos delante de Jehová en Gilgal.",
+      "bibleReference": "1 Samuel 15:32-33",
+      "answers": [
+        { "text": "Lo envió vivo a su casa en Gabaa", "isCorrect": false },
+        { "text": "Lo cortó en pedazos delante de Jehová", "isCorrect": true },
+        { "text": "Lo entregó al pueblo para que lo guardase", "isCorrect": false },
+        { "text": "Lo dejó libre por ruego de Saúl", "isCorrect": false }
+      ]
+    }
+  ]
+}

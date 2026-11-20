@@ -1,0 +1,242 @@
+{
+  "title": "2 Samuel Quiz bíblico - Capítulo 1",
+  "description": "Diez preguntas sobre 2 Samuel 1: la noticia de la muerte de Saúl, la suerte del mancebo Amalecita y la endecha de David.",
+  "slug": "2-samuel-quiz-part-1",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": false,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿De dónde había vuelto David cuando estuvo dos días en Siclag?",
+      "explanation": "Después de la muerte de Saúl, David volvió de la derrota de los Amalecitas y estuvo dos días en Siclag.",
+      "bibleReference": "2 Samuel 1:1",
+      "answers": [
+        {
+          "text": "De la derrota de los Amalecitas",
+          "isCorrect": true
+        },
+        {
+          "text": "De la casa de Achîs en Gath",
+          "isCorrect": false
+        },
+        {
+          "text": "Del monte de Gilboa",
+          "isCorrect": false
+        },
+        {
+          "text": "Del campo de los Filisteos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo llegó ante David el hombre que venía del campo de Saúl?",
+      "explanation": "Vino uno del campo de Saúl con los vestidos rotos y tierra sobre su cabeza, y se postró en tierra e hizo reverencia.",
+      "bibleReference": "2 Samuel 1:2",
+      "answers": [
+        {
+          "text": "Vestido de lino y con una trompeta",
+          "isCorrect": false
+        },
+        {
+          "text": "Con los vestidos rotos y tierra sobre su cabeza",
+          "isCorrect": true
+        },
+        {
+          "text": "Con la espada de Saúl en la mano",
+          "isCorrect": false
+        },
+        {
+          "text": "Montado sobre un camello del rey",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué noticia dio aquel hombre sobre Saúl y Jonathán?",
+      "explanation": "Respondió que el pueblo huyó de la batalla, que muchos cayeron, y que también Saúl y Jonathán su hijo habían muerto.",
+      "bibleReference": "2 Samuel 1:4",
+      "answers": [
+        {
+          "text": "Que estaban heridos pero vivos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que habían sido llevados cautivos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que ambos habían muerto",
+          "isCorrect": true
+        },
+        {
+          "text": "Que habían vencido a los Filisteos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde dijo el mancebo que halló a Saúl recostado sobre su lanza?",
+      "explanation": "El mancebo respondió que casualmente vino al monte de Gilboa y halló a Saúl recostado sobre su lanza.",
+      "bibleReference": "2 Samuel 1:6",
+      "answers": [
+        {
+          "text": "En las plazas de Ascalón",
+          "isCorrect": false
+        },
+        {
+          "text": "En el valle de Raphaim",
+          "isCorrect": false
+        },
+        {
+          "text": "Junto al muro de Beth-san",
+          "isCorrect": false
+        },
+        {
+          "text": "En el monte de Gilboa",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué respondió el mancebo cuando Saúl le preguntó quién era?",
+      "explanation": "Saúl le preguntó quién era, y él respondió: \"Soy Amalecita\".",
+      "bibleReference": "2 Samuel 1:8",
+      "answers": [
+        {
+          "text": "Que era Amalecita",
+          "isCorrect": true
+        },
+        {
+          "text": "Que era Filisteo",
+          "isCorrect": false
+        },
+        {
+          "text": "Que era de Jabes de Galaad",
+          "isCorrect": false
+        },
+        {
+          "text": "Que era siervo de Jonathán",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dos cosas dijo el mancebo que había traído a David desde donde estaba Saúl?",
+      "explanation": "Dijo que tomó la corona que Saúl tenía en su cabeza y la ajorca que traía en su brazo, y que las había traído a su señor.",
+      "bibleReference": "2 Samuel 1:10",
+      "answers": [
+        {
+          "text": "Su espada y su escudo",
+          "isCorrect": false
+        },
+        {
+          "text": "Su corona y su ajorca",
+          "isCorrect": true
+        },
+        {
+          "text": "Su lanza y su manto",
+          "isCorrect": false
+        },
+        {
+          "text": "Su arco y su cinto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Hasta cuándo lloraron y ayunaron David y los que estaban con él?",
+      "explanation": "Lloraron, lamentaron y ayunaron hasta la tarde por Saúl, por Jonathán y por el pueblo de Jehová.",
+      "bibleReference": "2 Samuel 1:12",
+      "answers": [
+        {
+          "text": "Hasta el día siguiente",
+          "isCorrect": false
+        },
+        {
+          "text": "Durante siete días",
+          "isCorrect": false
+        },
+        {
+          "text": "Durante tres días y tres noches",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta la tarde",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué reprendió David al mancebo antes de mandar que lo matasen?",
+      "explanation": "David le preguntó cómo no tuvo temor de extender su mano para matar al ungido de Jehová, y luego mandó a uno de los mancebos que lo hiriese.",
+      "bibleReference": "2 Samuel 1:14-15",
+      "answers": [
+        {
+          "text": "Porque había huido de la batalla",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque había robado las armas del rey",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque extendió su mano contra el ungido de Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque había mentido sobre la batalla",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿En qué dos lugares dijo David que no se diesen las nuevas?",
+      "explanation": "David dijo: \"No lo denunciéis en Gath, no deis las nuevas en las plazas de Ascalón\".",
+      "bibleReference": "2 Samuel 1:20",
+      "answers": [
+        {
+          "text": "En Gath y en las plazas de Ascalón",
+          "isCorrect": true
+        },
+        {
+          "text": "En Hebrón y en las ciudades de Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "En Jezreel y en el muro de Beth-san",
+          "isCorrect": false
+        },
+        {
+          "text": "En Jabes de Galaad y en Gabaón",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo David del amor de Jonathán en su endecha?",
+      "explanation": "David dijo a Jonathán que le fue muy dulce, y que su amor le fue más maravilloso que el amor de las mujeres.",
+      "bibleReference": "2 Samuel 1:26",
+      "answers": [
+        {
+          "text": "Que fue como el amor de un padre",
+          "isCorrect": false
+        },
+        {
+          "text": "Que fue más fuerte que la muerte",
+          "isCorrect": false
+        },
+        {
+          "text": "Que fue como el amor de un hermano menor",
+          "isCorrect": false
+        },
+        {
+          "text": "Que fue más maravilloso que el amor de las mujeres",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

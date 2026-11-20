@@ -72,15 +72,15 @@
           "isCorrect": false
         },
         {
-          "text": "Que fuera quemado",
+          "text": "Que fuera quemado delante de aquel varón en la ciudad",
           "isCorrect": false
         }
       ]
     },
     {
-      "text": "¿Qué respondió el mayordomo a esa propuesta?",
+      "text": "¿Qué respondió el mayordomo acerca de aquel en quien se hallase la copa?",
       "explanation": "Él dijo que aquél en quien se hallase sería su siervo, y que los demás serían sin culpa.",
-      "bibleReference": "Génesis 44:10",
+      "bibleReference": "Génesis 44:9-10",
       "answers": [
         {
           "text": "Que solo ese sería su siervo",
@@ -126,10 +126,10 @@
     {
       "text": "¿Qué hicieron los hermanos cuando la copa fue hallada?",
       "explanation": "Ellos rasgaron sus vestidos, cargó cada uno su asno y volvieron a la ciudad.",
-      "bibleReference": "Génesis 44:13",
+      "bibleReference": "Génesis 44:12-13",
       "answers": [
         {
-          "text": "Siguieron su camino hacia Canaán",
+          "text": "Siguieron su camino hacia la tierra de Canaán sin volver",
           "isCorrect": false
         },
         {
@@ -149,7 +149,7 @@
     {
       "text": "¿Qué dijo Judá cuando se postraron delante de José?",
       "explanation": "Judá dijo que Dios había hallado la maldad de sus siervos, y que ellos eran siervos de su señor, también aquél en cuyo poder fue hallada la copa.",
-      "bibleReference": "Génesis 44:16",
+      "bibleReference": "Génesis 44:14-16",
       "answers": [
         {
           "text": "Que la copa no era suya",
@@ -193,8 +193,8 @@
       ]
     },
     {
-      "text": "Según Judá, ¿qué pensaba su padre del hijo que había salido de con él?",
-      "explanation": "El padre les había dicho que uno salió de con él y que pensaba de cierto que fue despedazado, y que hasta entonces no le había visto.",
+      "text": "Según Judá, ¿qué pensaba su padre del hijo que se había ido de su lado?",
+      "explanation": "El padre les había dicho que uno de sus hijos se fue de su lado y que pensaba de cierto que fue despedazado, y que hasta entonces no le había visto.",
       "bibleReference": "Génesis 44:28",
       "answers": [
         {
@@ -221,7 +221,7 @@
       "bibleReference": "Génesis 44:33",
       "answers": [
         {
-          "text": "Que todos quedaran presos",
+          "text": "Que todos quedaran presos hasta que volviese su padre",
           "isCorrect": false
         },
         {

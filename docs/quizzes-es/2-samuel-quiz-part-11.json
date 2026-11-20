@@ -1,0 +1,242 @@
+{
+  "title": "2 Samuel Quiz bíblico - Capítulo 11",
+  "description": "Diez preguntas sobre 2 Samuel 11: David ve a Bath-sheba desde el terrado, la negativa de Uría Hetheo y la carta que lo lleva a la muerte.",
+  "slug": "2-samuel-quiz-part-11",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Dónde se quedó David mientras Joab y todo Israel ponían cerco a Rabba?",
+      "explanation": "David envió a Joab, a sus siervos y a todo Israel, que destruyeron a los Ammonitas y pusieron cerco a Rabba, pero David se quedó en Jerusalem.",
+      "bibleReference": "2 Samuel 11:1",
+      "answers": [
+        {
+          "text": "En Jerusalem",
+          "isCorrect": true
+        },
+        {
+          "text": "En Rabba, con el ejército",
+          "isCorrect": false
+        },
+        {
+          "text": "En Jericó",
+          "isCorrect": false
+        },
+        {
+          "text": "En el campo de los Ammonitas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Desde dónde vio David a la mujer que se estaba lavando?",
+      "explanation": "David se levantó de su cama a la hora de la tarde y se paseaba por el terrado de la casa real, y desde el terrado vio a una mujer muy hermosa que se estaba lavando.",
+      "bibleReference": "2 Samuel 11:2",
+      "answers": [
+        {
+          "text": "Desde la puerta de la ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "Desde el terrado de la casa real",
+          "isCorrect": true
+        },
+        {
+          "text": "Desde el muro de Rabba",
+          "isCorrect": false
+        },
+        {
+          "text": "Desde su tienda en el campo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le respondieron a David cuando envió a preguntar por aquella mujer?",
+      "explanation": "Le dijeron que aquella era Bath-sheba hija de Eliam, mujer de Uría Hetheo.",
+      "bibleReference": "2 Samuel 11:3",
+      "answers": [
+        {
+          "text": "Que era una extranjera sin familia",
+          "isCorrect": false
+        },
+        {
+          "text": "Que era hija de Joab, el general del rey",
+          "isCorrect": false
+        },
+        {
+          "text": "Que era Bath-sheba hija de Eliam, mujer de Uría Hetheo",
+          "isCorrect": true
+        },
+        {
+          "text": "Que era la mujer de Eliam Hetheo, un siervo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le hizo saber la mujer a David poco después?",
+      "explanation": "La mujer concibió y lo envió a hacer saber a David, diciendo: Yo estoy embarazada.",
+      "bibleReference": "2 Samuel 11:5",
+      "answers": [
+        {
+          "text": "Que su marido había muerto",
+          "isCorrect": false
+        },
+        {
+          "text": "Que quería volver al campamento",
+          "isCorrect": false
+        },
+        {
+          "text": "Que estaba enferma",
+          "isCorrect": false
+        },
+        {
+          "text": "Que estaba embarazada",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le dijo David a Uría después de preguntarle por la guerra?",
+      "explanation": "David le dijo a Uría que descendiera a su casa y lavara sus pies; y al salir Uría de casa del rey, vino tras él comida real.",
+      "bibleReference": "2 Samuel 11:8",
+      "answers": [
+        {
+          "text": "Que descendiera a su casa y lavara sus pies",
+          "isCorrect": true
+        },
+        {
+          "text": "Que volviera en seguida al ejército",
+          "isCorrect": false
+        },
+        {
+          "text": "Que se quedara a dormir en el palacio",
+          "isCorrect": false
+        },
+        {
+          "text": "Que tomara el mando del ejército",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué razón dio Uría para no entrar en su casa?",
+      "explanation": "Uría respondió que el arca, Israel y Judá estaban debajo de tiendas y que Joab y los siervos de su señor estaban sobre la haz del campo, y que por eso no iba a entrar en su casa a comer, beber y dormir con su mujer.",
+      "bibleReference": "2 Samuel 11:11",
+      "answers": [
+        {
+          "text": "Que el rey mismo se lo había prohibido aquella noche",
+          "isCorrect": false
+        },
+        {
+          "text": "Que el arca, Israel y Judá estaban debajo de tiendas y Joab en el campo",
+          "isCorrect": true
+        },
+        {
+          "text": "Que su casa estaba demasiado lejos de Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "Que estaba herido y no podía caminar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo David con Uría el día que lo retuvo en Jerusalem?",
+      "explanation": "David convidó a Uría y le hizo comer y beber delante de sí hasta embriagarlo, pero Uría salió a dormir en su cama con los siervos de su señor y no descendió a su casa.",
+      "bibleReference": "2 Samuel 11:13",
+      "answers": [
+        {
+          "text": "Lo encerró aquella noche en la casa real",
+          "isCorrect": false
+        },
+        {
+          "text": "Le dio dinero y vestidos nuevos",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo convidó y le hizo comer y beber hasta embriagarlo",
+          "isCorrect": true
+        },
+        {
+          "text": "Lo envió de vuelta al campo aquella noche",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué ordenaba la carta que David envió a Joab por mano de Uría?",
+      "explanation": "En la carta David escribió que pusieran a Uría delante de la fuerza de la batalla y lo desampararan, para que fuese herido y muriera.",
+      "bibleReference": "2 Samuel 11:14-15",
+      "answers": [
+        {
+          "text": "Que levantaran el cerco de la ciudad y volvieran a Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "Que nombraran a Uría general de todo el ejército de Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Que enviaran a Uría de vuelta a Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "Que pusieran a Uría delante de la fuerza de la batalla y lo desampararan para que muriera",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué mandó decir David a Joab cuando supo por el mensajero que Uría había muerto?",
+      "explanation": "David mandó decir a Joab que no tuviera pesar por esto, porque la espada suele consumir de igual manera, y que esforzara la batalla contra la ciudad hasta rendirla.",
+      "bibleReference": "2 Samuel 11:25",
+      "answers": [
+        {
+          "text": "Que no tuviera pesar y esforzara la batalla contra la ciudad hasta rendirla",
+          "isCorrect": true
+        },
+        {
+          "text": "Que volviera inmediatamente a Jerusalem con el ejército",
+          "isCorrect": false
+        },
+        {
+          "text": "Que castigara a los flecheros que tiraron desde el muro",
+          "isCorrect": false
+        },
+        {
+          "text": "Que hiciera paz con los Ammonitas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo termina el capítulo al hablar de lo que David había hecho?",
+      "explanation": "Pasado el luto, David recogió a la mujer de Uría en su casa y ella le parió un hijo; pero esto que David había hecho fue desagradable a los ojos de Jehová.",
+      "bibleReference": "2 Samuel 11:26-27",
+      "answers": [
+        {
+          "text": "Diciendo que Jehová bendijo a David por ello",
+          "isCorrect": false
+        },
+        {
+          "text": "Diciendo que el pueblo se alegró de la boda",
+          "isCorrect": false
+        },
+        {
+          "text": "Diciendo que Joab reprendió a David en Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "Diciendo que fue desagradable a los ojos de Jehová",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

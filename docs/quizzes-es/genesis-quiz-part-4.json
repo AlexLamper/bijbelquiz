@@ -32,29 +32,6 @@
       ]
     },
     {
-      "text": "¿Cuál era el oficio de Caín?",
-      "explanation": "El texto dice que Caín fue labrador de la tierra y Abel pastor de ovejas.",
-      "bibleReference": "Génesis 4:2",
-      "answers": [
-        {
-          "text": "Pastor de ovejas",
-          "isCorrect": false
-        },
-        {
-          "text": "Labrador de la tierra",
-          "isCorrect": true
-        },
-        {
-          "text": "Acicalador de metal",
-          "isCorrect": false
-        },
-        {
-          "text": "Padre de los músicos",
-          "isCorrect": false
-        }
-      ]
-    },
-    {
       "text": "¿Qué trajo Abel como ofrenda?",
       "explanation": "Abel trajo de los primogénitos de sus ovejas y de su grosura, y Jehová miró con agrado a Abel y a su ofrenda.",
       "bibleReference": "Génesis 4:4",
@@ -91,11 +68,11 @@
           "isCorrect": false
         },
         {
-          "text": "Edificó una ciudad nueva",
+          "text": "Se alegró y dio gracias a Jehová",
           "isCorrect": false
         },
         {
-          "text": "Huyó a la tierra de Nod",
+          "text": "Guardó silencio y no dijo nada",
           "isCorrect": false
         }
       ]
@@ -211,6 +188,29 @@
         },
         {
           "text": "Jabal y Jubal",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De quiénes fue padre Jubal, el hermano de Jabal?",
+      "explanation": "El texto dice que Jubal fue padre de todos los que manejan arpa y órgano.",
+      "bibleReference": "Génesis 4:21",
+      "answers": [
+        {
+          "text": "De los que habitan en tiendas y crían ganados",
+          "isCorrect": false
+        },
+        {
+          "text": "De todos los que manejan arpa y órgano",
+          "isCorrect": true
+        },
+        {
+          "text": "De los acicaladores de metal y de hierro",
+          "isCorrect": false
+        },
+        {
+          "text": "De los labradores de la tierra",
           "isCorrect": false
         }
       ]

@@ -1,0 +1,122 @@
+{
+  "title": "1 Crónicas Quiz bíblico - Capítulo 14",
+  "description": "Diez preguntas sobre 1 Crónicas 14: la casa que Hiram envió a edificar, los hijos de David en Jerusalem y las dos victorias sobre los Filisteos.",
+  "slug": "1-chronicles-quiz-part-14",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Quién envió embajadores a David con madera de cedro, albañiles y carpinteros para edificarle una casa?",
+      "explanation": "Hiram rey de Tiro envió embajadores á David, y madera de cedro, y albañiles y carpinteros, que le edificasen una casa.",
+      "bibleReference": "1 Crónicas 14:1",
+      "answers": [
+        { "text": "Hiram rey de Tiro", "isCorrect": true },
+        { "text": "Tou rey de Hamath", "isCorrect": false },
+        { "text": "Adarezer rey de Soba", "isCorrect": false },
+        { "text": "Naas rey de los Ammonitas", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Después de esto, ¿qué entendió David?",
+      "explanation": "David entendió que Jehová lo había confirmado por rey sobre Israel y que había ensalzado su reino sobre su pueblo.",
+      "bibleReference": "1 Crónicas 14:2",
+      "answers": [
+        { "text": "Que debía edificar casa á Jehová", "isCorrect": false },
+        { "text": "Que Jehová lo había confirmado por rey", "isCorrect": true },
+        { "text": "Que Hiram era mayor que él", "isCorrect": false },
+        { "text": "Que los Filisteos ya no vendrían", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuáles son los cuatro primeros nombres de los hijos que le nacieron a David en Jerusalem?",
+      "explanation": "Los nombres de los que le nacieron en Jerusalem comienzan con Samua, Sobab, Nathán y Salomón.",
+      "bibleReference": "1 Crónicas 14:4",
+      "answers": [
+        { "text": "Amnón, Chileab, Absalón, Adonías", "isCorrect": false },
+        { "text": "Joab, Abisai, Asael, Benaías", "isCorrect": false },
+        { "text": "Samua, Sobab, Nathán, Salomón", "isCorrect": true },
+        { "text": "Eser, Obadías, Eliab, Attai", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué hicieron los Filisteos al oír que David había sido ungido rey sobre todo Israel?",
+      "explanation": "Oyendo los Filisteos que David había sido ungido por rey sobre todo Israel, subieron todos en busca de David.",
+      "bibleReference": "1 Crónicas 14:8",
+      "answers": [
+        { "text": "Enviaron presentes á David", "isCorrect": false },
+        { "text": "Huyeron hasta Gezer", "isCorrect": false },
+        { "text": "Pidieron paz con David", "isCorrect": false },
+        { "text": "Subieron todos en busca de David", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Por dónde se extendieron los Filisteos cuando vinieron?",
+      "explanation": "Vinieron los Filisteos y extendiéronse por el valle de Raphaim.",
+      "bibleReference": "1 Crónicas 14:9",
+      "answers": [
+        { "text": "Por el valle de Raphaim", "isCorrect": true },
+        { "text": "Por el valle de la Sal", "isCorrect": false },
+        { "text": "Por la era de Chidón", "isCorrect": false },
+        { "text": "Por el desierto de Judá", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Cuando David preguntó si debía subir contra los Filisteos, ¿qué le respondió Jehová?",
+      "explanation": "Jehová le dijo: Sube, que yo los entregaré en tus manos.",
+      "bibleReference": "1 Crónicas 14:10",
+      "answers": [
+        { "text": "No subas, porque no estaré contigo", "isCorrect": false },
+        { "text": "Sube, que yo los entregaré en tus manos", "isCorrect": true },
+        { "text": "Espera tres días en Jerusalem", "isCorrect": false },
+        { "text": "Vuelve á la fortaleza de Sión", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué nombre pusieron al lugar donde David hirió a los Filisteos la primera vez?",
+      "explanation": "Subieron á Baal-perasim, y allí los hirió David; por eso llamaron el nombre de aquel lugar Baal-perasim.",
+      "bibleReference": "1 Crónicas 14:11",
+      "answers": [
+        { "text": "Pérez-uzza", "isCorrect": false },
+        { "text": "Era de Chidón", "isCorrect": false },
+        { "text": "Baal-perasim", "isCorrect": true },
+        { "text": "Valle de Raphaim", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dijo David que se hiciera con los dioses que los Filisteos dejaron allí?",
+      "explanation": "Los Filisteos dejaron allí sus dioses, y David dijo que los quemasen al fuego.",
+      "bibleReference": "1 Crónicas 14:12",
+      "answers": [
+        { "text": "Que los llevasen á Jerusalem", "isCorrect": false },
+        { "text": "Que los diesen á Hiram", "isCorrect": false },
+        { "text": "Que los echasen al Jordán", "isCorrect": false },
+        { "text": "Que los quemasen al fuego", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Cuando los Filisteos volvieron a extenderse por el valle, ¿qué le dijo Dios a David?",
+      "explanation": "Dios le dijo: No subas tras ellos, sino rodéalos, para venir á ellos por delante de los morales.",
+      "bibleReference": "1 Crónicas 14:13-14",
+      "answers": [
+        { "text": "No subas tras ellos, sino rodéalos", "isCorrect": true },
+        { "text": "Quédate en Jerusalem y no pelees", "isCorrect": false },
+        { "text": "Envía á Joab delante de ti", "isCorrect": false },
+        { "text": "Sube derecho contra ellos otra vez", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Desde dónde hasta dónde hirieron el campo de los Filisteos?",
+      "explanation": "David hizo como Dios le mandó, é hirieron el campo de los Filisteos desde Gabaón hasta Gezer.",
+      "bibleReference": "1 Crónicas 14:16",
+      "answers": [
+        { "text": "Desde Hebrón hasta Gath", "isCorrect": false },
+        { "text": "Desde Gabaón hasta Gezer", "isCorrect": true },
+        { "text": "Desde Sión hasta Millo", "isCorrect": false },
+        { "text": "Desde Dan hasta Beer-seba", "isCorrect": false }
+      ]
+    }
+  ]
+}

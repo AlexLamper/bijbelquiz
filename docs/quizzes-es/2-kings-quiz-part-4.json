@@ -1,0 +1,242 @@
+{
+  "title": "2 Reyes Quiz bíblico - Capítulo 4",
+  "description": "Diez preguntas sobre 2 Reyes 4: la botija de aceite de la viuda, la cámara de la Sunamita, el hijo devuelto a la vida y la comida multiplicada.",
+  "slug": "2-kings-quiz-part-4",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué quería tomar el acreedor de la mujer que clamó a Eliseo?",
+      "explanation": "La mujer dijo que su marido había muerto y que el acreedor había venido para tomarse dos hijos suyos por siervos.",
+      "bibleReference": "2 Reyes 4:1",
+      "answers": [
+        {
+          "text": "Sus dos hijos por siervos",
+          "isCorrect": true
+        },
+        {
+          "text": "Su casa y sus tierras",
+          "isCorrect": false
+        },
+        {
+          "text": "Su botija de aceite",
+          "isCorrect": false
+        },
+        {
+          "text": "Los vasos de sus vecinos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo la mujer que tenía en casa?",
+      "explanation": "A la pregunta de Eliseo, la mujer respondió que su sierva no tenía nada en casa, sino una botija de aceite.",
+      "bibleReference": "2 Reyes 4:2",
+      "answers": [
+        {
+          "text": "Un puñado de harina",
+          "isCorrect": false
+        },
+        {
+          "text": "Una botija de aceite",
+          "isCorrect": true
+        },
+        {
+          "text": "Dos panes de cebada",
+          "isCorrect": false
+        },
+        {
+          "text": "Un talento de plata",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuándo cesó el aceite?",
+      "explanation": "Cuando los vasos fueron llenos, el hijo dijo que no había más vasos, y entonces cesó el aceite.",
+      "bibleReference": "2 Reyes 4:6",
+      "answers": [
+        {
+          "text": "Cuando se cerró la puerta",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuando llegó el acreedor",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuando no hubo más vasos",
+          "isCorrect": true
+        },
+        {
+          "text": "Cuando Eliseo entró en la casa",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pidió la mujer de Sunem a su marido que hicieran para Eliseo?",
+      "explanation": "Ella le pidió que hicieran una pequeña cámara de paredes y pusieran en ella cama, mesa, silla y candelero.",
+      "bibleReference": "2 Reyes 4:8-10",
+      "answers": [
+        {
+          "text": "Una tienda de pieles junto al camino",
+          "isCorrect": false
+        },
+        {
+          "text": "Un asiento a la puerta de la casa",
+          "isCorrect": false
+        },
+        {
+          "text": "Un altar de piedras en medio del huerto",
+          "isCorrect": false
+        },
+        {
+          "text": "Una pequeña cámara con cama, mesa, silla y candelero",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le anunció Eliseo a la Sunamita?",
+      "explanation": "Eliseo le dijo que a aquel tiempo, según el tiempo de la vida, abrazaría un hijo, y ella le pidió que no hiciese burla de su sierva.",
+      "bibleReference": "2 Reyes 4:16",
+      "answers": [
+        {
+          "text": "Que hablaría por ella al rey",
+          "isCorrect": false
+        },
+        {
+          "text": "Que abrazaría un hijo",
+          "isCorrect": true
+        },
+        {
+          "text": "Que su marido sanaría",
+          "isCorrect": false
+        },
+        {
+          "text": "Que tendría pan en tiempo de hambre",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo el niño a su padre antes de morir?",
+      "explanation": "El niño salió a su padre, a los segadores, y le dijo: ¡Mi cabeza, mi cabeza! Y su padre mandó llevarlo a su madre.",
+      "bibleReference": "2 Reyes 4:19",
+      "answers": [
+        {
+          "text": "¡Mi cabeza, mi cabeza!",
+          "isCorrect": true
+        },
+        {
+          "text": "¡Varón de Dios, la muerte en la olla!",
+          "isCorrect": false
+        },
+        {
+          "text": "¡Padre mío, padre mío!",
+          "isCorrect": false
+        },
+        {
+          "text": "¿Tienes paz?",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Giezi con el bordón de Eliseo?",
+      "explanation": "Giezi fue delante y puso el bordón sobre el rostro del niño, mas el niño no tenía voz ni sentido.",
+      "bibleReference": "2 Reyes 4:29-31",
+      "answers": [
+        {
+          "text": "Lo echó en las aguas del Jordán",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo entregó a la madre del niño",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo puso sobre el rostro del niño",
+          "isCorrect": true
+        },
+        {
+          "text": "Lo dejó en la cámara de la casa",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo el joven cuando Eliseo se tendió sobre él la segunda vez?",
+      "explanation": "Eliseo subió y se tendió sobre él, y el joven estornudó siete veces y abrió sus ojos.",
+      "bibleReference": "2 Reyes 4:35",
+      "answers": [
+        {
+          "text": "Se levantó y comió pan",
+          "isCorrect": false
+        },
+        {
+          "text": "Llamó a su madre a voces",
+          "isCorrect": false
+        },
+        {
+          "text": "Se sentó sobre las rodillas de Eliseo",
+          "isCorrect": false
+        },
+        {
+          "text": "Estornudó siete veces y abrió sus ojos",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué echó Eliseo en la olla para quitar el mal del potaje?",
+      "explanation": "Eliseo mandó traer harina, la esparció en la olla y dijo que dieran de comer a la gente; y no hubo más mal en la olla.",
+      "bibleReference": "2 Reyes 4:41",
+      "answers": [
+        {
+          "text": "Harina",
+          "isCorrect": true
+        },
+        {
+          "text": "Sal",
+          "isCorrect": false
+        },
+        {
+          "text": "Aceite",
+          "isCorrect": false
+        },
+        {
+          "text": "Agua del Jordán",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos panes de cebada trajo el hombre de Baal-salisa?",
+      "explanation": "Un hombre de Baal-salisa trajo al varón de Dios panes de primicias: veinte panes de cebada y trigo nuevo en su espiga.",
+      "bibleReference": "2 Reyes 4:42",
+      "answers": [
+        {
+          "text": "Cien",
+          "isCorrect": false
+        },
+        {
+          "text": "Cinco",
+          "isCorrect": false
+        },
+        {
+          "text": "Veinte",
+          "isCorrect": true
+        },
+        {
+          "text": "Doce",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "2 Samuel Quiz bíblico - Capítulo 3",
+  "description": "Diez preguntas sobre 2 Samuel 3: los hijos de David en Hebrón, la ruptura entre Abner e Is-boseth y la muerte de Abner.",
+  "slug": "2-samuel-quiz-part-3",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Durante la larga guerra, ¿qué pasaba con las casas de Saúl y de David?",
+      "explanation": "Hubo larga guerra entre las dos casas: David se iba fortificando y la casa de Saúl iba en disminución.",
+      "bibleReference": "2 Samuel 3:1",
+      "answers": [
+        {
+          "text": "David se fortificaba y la casa de Saúl disminuía",
+          "isCorrect": true
+        },
+        {
+          "text": "Las dos casas se fortificaban por igual",
+          "isCorrect": false
+        },
+        {
+          "text": "La casa de Saúl crecía y David disminuía",
+          "isCorrect": false
+        },
+        {
+          "text": "Las dos casas hicieron alianza en seguida",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quién fue el primogénito que le nació a David en Hebrón, y de qué madre?",
+      "explanation": "Su primogénito fué Ammón, de Ahinoam Jezreelita.",
+      "bibleReference": "2 Samuel 3:2",
+      "answers": [
+        {
+          "text": "Chileab, de Haggith",
+          "isCorrect": false
+        },
+        {
+          "text": "Ammón, de Ahinoam Jezreelita",
+          "isCorrect": true
+        },
+        {
+          "text": "Absalóm, de Abital",
+          "isCorrect": false
+        },
+        {
+          "text": "Adonías, de Egla",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De quién era hija Maachâ, la madre de Absalóm?",
+      "explanation": "El tercero fué Absalóm, hijo de Maachâ, hija de Talmai rey de Gessur.",
+      "bibleReference": "2 Samuel 3:3",
+      "answers": [
+        {
+          "text": "De Nabal del Carmelo",
+          "isCorrect": false
+        },
+        {
+          "text": "De Aja, padre de Rispa",
+          "isCorrect": false
+        },
+        {
+          "text": "De Talmai rey de Gessur",
+          "isCorrect": true
+        },
+        {
+          "text": "De Ner, padre de Abner",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De qué acusó Is-boseth a Abner?",
+      "explanation": "Is-boseth dijo a Abner: \"¿Por qué has entrado á la concubina de mi padre?\", que se llamaba Rispa, hija de Aja.",
+      "bibleReference": "2 Samuel 3:7",
+      "answers": [
+        {
+          "text": "De haber entregado el reino a los Filisteos",
+          "isCorrect": false
+        },
+        {
+          "text": "De haber matado a Asael en la batalla",
+          "isCorrect": false
+        },
+        {
+          "text": "De haber tomado las armas del rey",
+          "isCorrect": false
+        },
+        {
+          "text": "De haber entrado a la concubina de su padre",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pidió David a Abner como condición para hacer alianza con él?",
+      "explanation": "David dijo que haría alianza, mas le pidió una cosa: que no viniese a verlo sin traer primero a Michâl la hija de Saúl.",
+      "bibleReference": "2 Samuel 3:13",
+      "answers": [
+        {
+          "text": "Que le entregase a Is-boseth",
+          "isCorrect": false
+        },
+        {
+          "text": "Que le trajese a Michâl la hija de Saúl",
+          "isCorrect": true
+        },
+        {
+          "text": "Que le diese toda la tierra de Benjamín",
+          "isCorrect": false
+        },
+        {
+          "text": "Que viniese con todo el ejército de Israel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué dijo David que había desposado a Michâl?",
+      "explanation": "David envió a decir a Is-boseth: \"Restitúyeme á mi mujer Michâl, la cual yo desposé conmigo por cien prepucios de Filisteos\".",
+      "bibleReference": "2 Samuel 3:14",
+      "answers": [
+        {
+          "text": "Por cien prepucios de Filisteos",
+          "isCorrect": true
+        },
+        {
+          "text": "Por mil siclos de plata",
+          "isCorrect": false
+        },
+        {
+          "text": "Por veinte hombres valientes",
+          "isCorrect": false
+        },
+        {
+          "text": "Por los escudos de oro de Soba",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Hasta dónde fue Paltiel siguiendo y llorando a Michâl?",
+      "explanation": "Su marido fué con ella, siguiéndola y llorando hasta Bahurim, y allí Abner le dijo que se volviese.",
+      "bibleReference": "2 Samuel 3:16",
+      "answers": [
+        {
+          "text": "Hasta Mahanaim",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta el pozo de Sira",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta Gittaim",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta Bahurim",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos hombres vinieron con Abner a David en Hebrón?",
+      "explanation": "Vino Abner á David en Hebrón, y con él veinte hombres, y David hizo banquete a Abner y a los que habían venido con él.",
+      "bibleReference": "2 Samuel 3:20",
+      "answers": [
+        {
+          "text": "Doce hombres",
+          "isCorrect": false
+        },
+        {
+          "text": "Treinta hombres",
+          "isCorrect": false
+        },
+        {
+          "text": "Veinte hombres",
+          "isCorrect": true
+        },
+        {
+          "text": "Seiscientos hombres",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde hirió Joab a Abner, y por causa de quién?",
+      "explanation": "Joab lo apartó al medio de la puerta de Hebrón, hablando con él blandamente, y allí le hirió por la quinta costilla a causa de la muerte de Asael su hermano.",
+      "bibleReference": "2 Samuel 3:27",
+      "answers": [
+        {
+          "text": "En medio de la puerta, por la muerte de Asael",
+          "isCorrect": true
+        },
+        {
+          "text": "En el banquete del rey, por envidia del reino",
+          "isCorrect": false
+        },
+        {
+          "text": "Junto al pozo de Sira, por mandato del rey",
+          "isCorrect": false
+        },
+        {
+          "text": "En el campo de batalla, por la muerte de Saúl",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué mandó David a Joab y al pueblo cuando Abner murió?",
+      "explanation": "David les dijo: \"Romped vuestros vestidos, y ceñíos de sacos, y haced duelo delante de Abner\", y el rey iba detrás del féretro.",
+      "bibleReference": "2 Samuel 3:31",
+      "answers": [
+        {
+          "text": "Que callasen y no dijesen nada",
+          "isCorrect": false
+        },
+        {
+          "text": "Que llevasen el cuerpo a Gabaón",
+          "isCorrect": false
+        },
+        {
+          "text": "Que ayunasen siete días en Hebrón",
+          "isCorrect": false
+        },
+        {
+          "text": "Que rompiesen sus vestidos y hiciesen duelo",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

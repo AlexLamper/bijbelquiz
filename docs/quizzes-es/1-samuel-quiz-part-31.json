@@ -1,0 +1,242 @@
+{
+  "title": "1 Samuel Quiz bíblico - Capítulo 31",
+  "description": "Diez preguntas sobre 1 Samuel 31: la derrota en Gilboa, la muerte de Saúl y sus hijos y lo que hicieron los de Jabes.",
+  "slug": "1-samuel-quiz-part-31",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Dónde cayeron muertos los de Israel al huir delante de los Filisteos?",
+      "explanation": "Los de Israel huyeron delante de los Filisteos y cayeron muertos en el monte de Gilboa.",
+      "bibleReference": "1 Samuel 31:1",
+      "answers": [
+        {
+          "text": "En el monte de Gilboa",
+          "isCorrect": true
+        },
+        {
+          "text": "En el valle de la sal",
+          "isCorrect": false
+        },
+        {
+          "text": "En el valle de Raphaim",
+          "isCorrect": false
+        },
+        {
+          "text": "Junto al torrente de Besor",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A cuáles hijos de Saúl mataron los Filisteos al seguirlo?",
+      "explanation": "Siguiendo los Filisteos á Saúl y á sus hijos, mataron á Jonathán, y á Abinadab, y á Melchîsua.",
+      "bibleReference": "1 Samuel 31:2",
+      "answers": [
+        {
+          "text": "A Is-boseth, Jonathán y Abinadab",
+          "isCorrect": false
+        },
+        {
+          "text": "A Jonathán, Abinadab y Melchîsua",
+          "isCorrect": true
+        },
+        {
+          "text": "A Jonathán, Abner y Melchîsua",
+          "isCorrect": false
+        },
+        {
+          "text": "A Abinadab, Uzza y Ahio",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quiénes alcanzaron a Saúl cuando la batalla se agravó sobre él?",
+      "explanation": "Se agravó la batalla sobre Saúl y le alcanzaron los flecheros, y tuvo gran temor de ellos.",
+      "bibleReference": "1 Samuel 31:3",
+      "answers": [
+        {
+          "text": "Los carros de los Filisteos",
+          "isCorrect": false
+        },
+        {
+          "text": "La gente de á caballo",
+          "isCorrect": false
+        },
+        {
+          "text": "Los flecheros",
+          "isCorrect": true
+        },
+        {
+          "text": "Los príncipes de los Filisteos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pidió Saúl a su escudero?",
+      "explanation": "Saúl dijo a su escudero que sacase su espada y lo pasase con ella, para que no viniesen los incircuncisos a escarnecerlo.",
+      "bibleReference": "1 Samuel 31:4",
+      "answers": [
+        {
+          "text": "Que huyese al otro lado del Jordán",
+          "isCorrect": false
+        },
+        {
+          "text": "Que llamase a sus hijos a la batalla",
+          "isCorrect": false
+        },
+        {
+          "text": "Que escondiese las armas del rey",
+          "isCorrect": false
+        },
+        {
+          "text": "Que sacase su espada y lo pasase con ella",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Saúl cuando su escudero no quiso hacerlo?",
+      "explanation": "Como su escudero no quería, por el gran temor que tenía, Saúl tomó la espada y se echó sobre ella.",
+      "bibleReference": "1 Samuel 31:4",
+      "answers": [
+        {
+          "text": "Se entregó a los Filisteos",
+          "isCorrect": false
+        },
+        {
+          "text": "Tomó la espada y se echó sobre ella",
+          "isCorrect": true
+        },
+        {
+          "text": "Huyó al otro lado del Jordán",
+          "isCorrect": false
+        },
+        {
+          "text": "Pidió socorro a los flecheros",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo el escudero al ver a Saúl muerto?",
+      "explanation": "Viendo su escudero á Saúl muerto, él también se echó sobre su espada y murió con él.",
+      "bibleReference": "1 Samuel 31:5",
+      "answers": [
+        {
+          "text": "Se echó también sobre su espada y murió",
+          "isCorrect": true
+        },
+        {
+          "text": "Llevó el cuerpo de Saúl a Jabes",
+          "isCorrect": false
+        },
+        {
+          "text": "Avisó a los hombres de Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Tomó las armas de Saúl y huyó",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hicieron los de Israel que estaban al otro lado del valle y del Jordán?",
+      "explanation": "Viendo que Israel había huído y que Saúl y sus hijos eran muertos, dejaron las ciudades y huyeron, y los Filisteos vinieron y habitaron en ellas.",
+      "bibleReference": "1 Samuel 31:7",
+      "answers": [
+        {
+          "text": "Reunieron un nuevo ejército",
+          "isCorrect": false
+        },
+        {
+          "text": "Fueron a buscar el cuerpo de Saúl",
+          "isCorrect": false
+        },
+        {
+          "text": "Ungieron a otro rey en Gilboa",
+          "isCorrect": false
+        },
+        {
+          "text": "Dejaron las ciudades y huyeron",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde pusieron los Filisteos las armas de Saúl?",
+      "explanation": "Los Filisteos pusieron las armas de Saúl en el templo de Astaroth.",
+      "bibleReference": "1 Samuel 31:10",
+      "answers": [
+        {
+          "text": "En el muro de Beth-san",
+          "isCorrect": false
+        },
+        {
+          "text": "En el templo de Dagón",
+          "isCorrect": false
+        },
+        {
+          "text": "En el templo de Astaroth",
+          "isCorrect": true
+        },
+        {
+          "text": "En la casa de Achîs",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde colgaron los Filisteos el cuerpo de Saúl?",
+      "explanation": "Los Filisteos colgaron el cuerpo de Saúl en el muro de Beth-san.",
+      "bibleReference": "1 Samuel 31:10",
+      "answers": [
+        {
+          "text": "En el muro de Beth-san",
+          "isCorrect": true
+        },
+        {
+          "text": "En la puerta de Hebrón",
+          "isCorrect": false
+        },
+        {
+          "text": "En el monte de Gilboa",
+          "isCorrect": false
+        },
+        {
+          "text": "En el muro de Jabes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hicieron los hombres de Jabes con los huesos de Saúl y de sus hijos?",
+      "explanation": "Tomando sus huesos, los sepultaron debajo de un árbol en Jabes, y ayunaron siete días.",
+      "bibleReference": "1 Samuel 31:13",
+      "answers": [
+        {
+          "text": "Los llevaron a Hebrón y lloraron tres días",
+          "isCorrect": false
+        },
+        {
+          "text": "Los quemaron en Beth-san y ayunaron un día",
+          "isCorrect": false
+        },
+        {
+          "text": "Los guardaron en el templo de sus ídolos",
+          "isCorrect": false
+        },
+        {
+          "text": "Los sepultaron debajo de un árbol en Jabes y ayunaron siete días",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

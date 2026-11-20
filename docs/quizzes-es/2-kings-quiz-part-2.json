@@ -1,0 +1,242 @@
+{
+  "title": "2 Reyes Quiz bíblico - Capítulo 2",
+  "description": "Diez preguntas sobre 2 Reyes 2: el camino de Elías y Eliseo hasta el Jordán, el carro de fuego, el manto recogido y las primeras señales de Eliseo.",
+  "slug": "2-kings-quiz-part-2",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cómo quiso Jehová alzar a Elías al cielo?",
+      "explanation": "El capítulo empieza diciendo que Jehová quiso alzar á Elías en un torbellino al cielo.",
+      "bibleReference": "2 Reyes 2:1",
+      "answers": [
+        {
+          "text": "En un carro tirado por bueyes",
+          "isCorrect": false
+        },
+        {
+          "text": "En un torbellino",
+          "isCorrect": true
+        },
+        {
+          "text": "En una nube de humo",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre las aguas del Jordán",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué respondía Eliseo cada vez que Elías le pedía quedarse atrás?",
+      "explanation": "Eliseo respondía: Vive Jehová, y vive tu alma, que no te dejaré.",
+      "bibleReference": "2 Reyes 2:2",
+      "answers": [
+        {
+          "text": "Que volvería a Gilgal",
+          "isCorrect": false
+        },
+        {
+          "text": "Que esperaría junto al Jordán",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no le dejaría",
+          "isCorrect": true
+        },
+        {
+          "text": "Que iría a buscar a los hijos de los profetas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Elías para que las aguas del Jordán se apartaran?",
+      "explanation": "Elías tomó su manto, lo dobló e hirió las aguas, que se apartaron á uno y á otro lado, y pasaron ambos en seco.",
+      "bibleReference": "2 Reyes 2:8",
+      "answers": [
+        {
+          "text": "Dobló su manto y con él hirió las aguas",
+          "isCorrect": true
+        },
+        {
+          "text": "Echó sal en medio de la corriente",
+          "isCorrect": false
+        },
+        {
+          "text": "Oró en voz alta durante tres días",
+          "isCorrect": false
+        },
+        {
+          "text": "Mandó a cincuenta varones abrir camino",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pidió Eliseo antes de que Elías le fuera quitado?",
+      "explanation": "Eliseo pidió que las dos partes del espíritu de Elías fueran sobre él, y Elías respondió que había pedido cosa difícil.",
+      "bibleReference": "2 Reyes 2:9",
+      "answers": [
+        {
+          "text": "Que le dejara su manto",
+          "isCorrect": false
+        },
+        {
+          "text": "Que le diera la mitad de sus bienes",
+          "isCorrect": false
+        },
+        {
+          "text": "Que le mostrara el camino al cielo",
+          "isCorrect": false
+        },
+        {
+          "text": "Que las dos partes de su espíritu fuesen sobre él",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué apartó a Elías y a Eliseo mientras iban hablando?",
+      "explanation": "Mientras iban hablando, un carro de fuego con caballos de fuego apartó á los dos, y Elías subió al cielo en un torbellino.",
+      "bibleReference": "2 Reyes 2:11",
+      "answers": [
+        {
+          "text": "Una nube muy espesa y oscura",
+          "isCorrect": false
+        },
+        {
+          "text": "Un ejército de los Siros a caballo",
+          "isCorrect": false
+        },
+        {
+          "text": "Un carro de fuego con caballos de fuego",
+          "isCorrect": true
+        },
+        {
+          "text": "Un río que creció de repente",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué clamó Eliseo cuando vio lo que sucedía?",
+      "explanation": "Eliseo clamaba: ¡Padre mío, padre mío, carro de Israel y su gente de á caballo! Y nunca más le vió.",
+      "bibleReference": "2 Reyes 2:12",
+      "answers": [
+        {
+          "text": "Vive Jehová, y vive tu alma, que no te dejaré",
+          "isCorrect": false
+        },
+        {
+          "text": "¡Padre mío, padre mío, carro de Israel y su gente de á caballo!",
+          "isCorrect": true
+        },
+        {
+          "text": "¿Dónde está Jehová, el Dios de Elías?",
+          "isCorrect": false
+        },
+        {
+          "text": "Así ha dicho Jehová: Yo sané estas aguas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Eliseo al herir las aguas con el manto que se le había caído a Elías?",
+      "explanation": "Eliseo tomó el manto de Elías, hirió las aguas y dijo: ¿Dónde está Jehová, el Dios de Elías? Y las aguas se apartaron.",
+      "bibleReference": "2 Reyes 2:14",
+      "answers": [
+        {
+          "text": "Traedme una botija nueva y sal",
+          "isCorrect": false
+        },
+        {
+          "text": "Vive Jehová, que no te dejaré",
+          "isCorrect": false
+        },
+        {
+          "text": "Yo sané estas aguas para siempre",
+          "isCorrect": false
+        },
+        {
+          "text": "¿Dónde está Jehová, el Dios de Elías?",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pidió Eliseo que le trajeran para sanar las aguas de la ciudad?",
+      "explanation": "Eliseo pidió una botija nueva con sal dentro, y echó la sal en los manaderos de las aguas.",
+      "bibleReference": "2 Reyes 2:20",
+      "answers": [
+        {
+          "text": "Una botija nueva con sal",
+          "isCorrect": true
+        },
+        {
+          "text": "Un vaso lleno de aceite",
+          "isCorrect": false
+        },
+        {
+          "text": "Una vara de madera seca",
+          "isCorrect": false
+        },
+        {
+          "text": "Harina para echar en el agua",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le gritaban los muchachos de la ciudad cuando subía a Beth-el?",
+      "explanation": "Los muchachos salieron de la ciudad y se burlaban de él diciendo: ¡Calvo, sube! ¡calvo, sube!",
+      "bibleReference": "2 Reyes 2:23",
+      "answers": [
+        {
+          "text": "¡Varón de Dios, desciende!",
+          "isCorrect": false
+        },
+        {
+          "text": "¡Viva el rey, viva el rey!",
+          "isCorrect": false
+        },
+        {
+          "text": "¡Calvo, sube! ¡calvo, sube!",
+          "isCorrect": true
+        },
+        {
+          "text": "¡Padre mío, padre mío!",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A cuántos muchachos despedazaron los dos osos que salieron del monte?",
+      "explanation": "Después de que Eliseo los maldijo en el nombre de Jehová, salieron dos osos del monte y despedazaron a cuarenta y dos muchachos.",
+      "bibleReference": "2 Reyes 2:24",
+      "answers": [
+        {
+          "text": "A cuarenta y dos",
+          "isCorrect": true
+        },
+        {
+          "text": "A cincuenta y dos",
+          "isCorrect": false
+        },
+        {
+          "text": "A veinticuatro",
+          "isCorrect": false
+        },
+        {
+          "text": "A setenta y dos",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "title": "2 Reyes Quiz bíblico - Capítulo 14",
+  "description": "Diez preguntas sobre 2 Reyes 14: Amasías de Judá, la parábola del cardillo y el cedro, la derrota en Beth-semes y el reinado de Jeroboam.",
+  "slug": "2-kings-quiz-part-14",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cuántos años tenía Amasías cuando comenzó a reinar?",
+      "explanation": "Cuando Amasías comenzó a reinar era de veinticinco años, y reinó veintinueve años en Jerusalem.",
+      "bibleReference": "2 Reyes 14:2",
+      "answers": [
+        { "text": "Dieciséis años", "isCorrect": false },
+        { "text": "Veinticinco años", "isCorrect": true },
+        { "text": "Veintinueve años", "isCorrect": false },
+        { "text": "Cuarenta años", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Por qué no mató Amasías a los hijos de los que habían matado a su padre?",
+      "explanation": "No los mató conforme a lo escrito en el libro de la ley de Moisés, donde Jehová mandó que no se mataría a los padres por los hijos ni a los hijos por los padres, sino que cada uno moriría por su pecado.",
+      "bibleReference": "2 Reyes 14:6",
+      "answers": [
+        { "text": "Porque así estaba escrito en el libro de la ley de Moisés", "isCorrect": true },
+        { "text": "Porque un profeta se lo prohibió en Jerusalem", "isCorrect": false },
+        { "text": "Porque habían huido a la tierra de Israel", "isCorrect": false },
+        { "text": "Porque el pueblo de Judá los había escondido", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué nombre dio Amasías a Sela después de tomarla por guerra?",
+      "explanation": "Amasías hirió diez mil Idumeos en el valle de las Salinas, tomó a Sela por guerra y la llamó Jocteel.",
+      "bibleReference": "2 Reyes 14:7",
+      "answers": [
+        { "text": "Elath", "isCorrect": false },
+        { "text": "Gath-hepher", "isCorrect": false },
+        { "text": "Jocteel", "isCorrect": true },
+        { "text": "Beth-semes", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué mensaje envió Amasías con sus embajadores a Joas rey de Israel?",
+      "explanation": "Amasías envió embajadores a Joas diciendo: \"Ven, y veámonos de rostro\".",
+      "bibleReference": "2 Reyes 14:8",
+      "answers": [
+        { "text": "\"Ayúdame contra los Idumeos\"", "isCorrect": false },
+        { "text": "\"Devuélveme los vasos de la casa de Jehová\"", "isCorrect": false },
+        { "text": "\"Haya paz entre tú y yo\"", "isCorrect": false },
+        { "text": "\"Ven, y veámonos de rostro\"", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "En la respuesta de Joas, ¿qué pidió el cardillo del Líbano al cedro del Líbano?",
+      "explanation": "En la respuesta de Joas, el cardillo que está en el Líbano envió a decir al cedro: \"Da tu hija por mujer á mi hijo\".",
+      "bibleReference": "2 Reyes 14:9",
+      "answers": [
+        { "text": "Que le diera lugar para crecer en el monte", "isCorrect": false },
+        { "text": "Que diera su hija por mujer a su hijo", "isCorrect": true },
+        { "text": "Que le enviara madera para su casa", "isCorrect": false },
+        { "text": "Que echara fuera a las bestias fieras", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Dónde se vieron de rostro Joas rey de Israel y Amasías rey de Judá?",
+      "explanation": "Joas subió, y él y Amasías se vieron de rostro en Beth-semes, que es de Judá; y Judá cayó delante de Israel.",
+      "bibleReference": "2 Reyes 14:11-12",
+      "answers": [
+        { "text": "En Beth-semes", "isCorrect": true },
+        { "text": "En Samaria", "isCorrect": false },
+        { "text": "En el valle de las Salinas", "isCorrect": false },
+        { "text": "En Lachîs", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuántos codos del muro de Jerusalem rompió Joas rey de Israel?",
+      "explanation": "Joas vino a Jerusalem y rompió el muro desde la puerta de Ephraim hasta la puerta de la esquina, cuatrocientos codos.",
+      "bibleReference": "2 Reyes 14:13",
+      "answers": [
+        { "text": "Trescientos codos", "isCorrect": false },
+        { "text": "Doscientos codos", "isCorrect": false },
+        { "text": "Setecientos codos", "isCorrect": false },
+        { "text": "Cuatrocientos codos", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Adónde huyó Amasías y dónde lo mataron?",
+      "explanation": "Hicieron conspiración contra él en Jerusalem y él huyó a Lachîs, pero enviaron tras él a Lachîs y allá lo mataron.",
+      "bibleReference": "2 Reyes 14:19",
+      "answers": [
+        { "text": "A Sela, y lo mataron allí", "isCorrect": false },
+        { "text": "A Samaria, y lo mataron allí", "isCorrect": false },
+        { "text": "A Lachîs, y lo mataron allí", "isCorrect": true },
+        { "text": "A Elath, y lo mataron allí", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuántos años tenía Azarías cuando el pueblo de Judá lo hizo rey?",
+      "explanation": "Todo el pueblo de Judá tomó a Azarías, que era de diez y seis años, y lo hizo rey en lugar de Amasías su padre.",
+      "bibleReference": "2 Reyes 14:21",
+      "answers": [
+        { "text": "Diez y seis años", "isCorrect": true },
+        { "text": "Veinticinco años", "isCorrect": false },
+        { "text": "Veintinueve años", "isCorrect": false },
+        { "text": "Quince años", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Por medio de qué siervo había hablado Jehová la palabra que Jeroboam cumplió al restituir los términos de Israel?",
+      "explanation": "Jeroboam restituyó los términos de Israel desde la entrada de Amath hasta la mar de la llanura, conforme a la palabra que Jehová había hablado por su siervo Jonás hijo de Amittai, profeta de Gath-hepher.",
+      "bibleReference": "2 Reyes 14:25",
+      "answers": [
+        { "text": "Eliseo, el varón de Dios", "isCorrect": false },
+        { "text": "Jonás hijo de Amittai", "isCorrect": true },
+        { "text": "Moisés, en el libro de la ley", "isCorrect": false },
+        { "text": "Joiada el sacerdote", "isCorrect": false }
+      ]
+    }
+  ]
+}

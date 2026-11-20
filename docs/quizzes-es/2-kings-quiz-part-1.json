@@ -1,0 +1,242 @@
+{
+  "title": "2 Reyes Quiz bíblico - Capítulo 1",
+  "description": "Diez preguntas sobre 2 Reyes 1: la caída de Ochôzías, los mensajeros enviados a Ecrón y las palabras de Elías Thisbita a los capitanes de cincuenta.",
+  "slug": "2-kings-quiz-part-1",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": false,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Quién se rebeló contra Israel después de la muerte de Achâb?",
+      "explanation": "Después de la muerte de Achâb, Moab se rebeló contra Israel.",
+      "bibleReference": "2 Reyes 1:1",
+      "answers": [
+        {
+          "text": "Siria",
+          "isCorrect": false
+        },
+        {
+          "text": "Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "Moab",
+          "isCorrect": true
+        },
+        {
+          "text": "Ecrón",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo quedó enfermo Ochôzías?",
+      "explanation": "Ochôzías cayó por las celosías de una sala de la casa que tenía en Samaria y quedó enfermo.",
+      "bibleReference": "2 Reyes 1:2",
+      "answers": [
+        {
+          "text": "Cayó por las celosías de una sala",
+          "isCorrect": true
+        },
+        {
+          "text": "Le hirió una flecha de los Siros",
+          "isCorrect": false
+        },
+        {
+          "text": "Cayó de su carro en la batalla",
+          "isCorrect": false
+        },
+        {
+          "text": "Se despeñó desde el muro de Samaria",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A qué dios envió Ochôzías a consultar sobre su enfermedad?",
+      "explanation": "Envió mensajeros a consultar á Baal-zebub dios de Ecrón para saber si sanaría de su enfermedad.",
+      "bibleReference": "2 Reyes 1:2",
+      "answers": [
+        {
+          "text": "A Rimmón, dios de Damasco",
+          "isCorrect": false
+        },
+        {
+          "text": "A Jehová, por medio de un profeta",
+          "isCorrect": false
+        },
+        {
+          "text": "A los becerros de Beth-el",
+          "isCorrect": false
+        },
+        {
+          "text": "A Baal-zebub, dios de Ecrón",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿A quién habló el ángel de Jehová para que saliera al encuentro de los mensajeros?",
+      "explanation": "El ángel de Jehová habló á Elías Thisbita y le mandó subir a encontrarse con los mensajeros del rey de Samaria.",
+      "bibleReference": "2 Reyes 1:3",
+      "answers": [
+        {
+          "text": "Al capitán de cincuenta",
+          "isCorrect": false
+        },
+        {
+          "text": "A Elías Thisbita",
+          "isCorrect": true
+        },
+        {
+          "text": "Al rey Ochôzías",
+          "isCorrect": false
+        },
+        {
+          "text": "A los mensajeros del rey",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué anunció Jehová a Ochôzías acerca del lecho en que había subido?",
+      "explanation": "Jehová dijo que del lecho en que había subido no descendería, antes moriría ciertamente.",
+      "bibleReference": "2 Reyes 1:4",
+      "answers": [
+        {
+          "text": "Que no descendería de él, sino que moriría",
+          "isCorrect": true
+        },
+        {
+          "text": "Que sanaría dentro de tres días",
+          "isCorrect": false
+        },
+        {
+          "text": "Que viviría todavía dos años",
+          "isCorrect": false
+        },
+        {
+          "text": "Que su hijo reinaría en su lugar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo describieron los mensajeros al varón que les había hablado?",
+      "explanation": "Los mensajeros dijeron que era un varón velloso que ceñía sus lomos con un cinto de cuero, y el rey reconoció que era Elías Thisbita.",
+      "bibleReference": "2 Reyes 1:8",
+      "answers": [
+        {
+          "text": "Un varón vestido de ropas reales",
+          "isCorrect": false
+        },
+        {
+          "text": "Un varón calvo con un manto blanco",
+          "isCorrect": false
+        },
+        {
+          "text": "Un varón joven con una alcuza de aceite",
+          "isCorrect": false
+        },
+        {
+          "text": "Un varón velloso con un cinto de cuero",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde estaba Elías cuando llegó el primer capitán de cincuenta?",
+      "explanation": "El capitán de cincuenta subió a Elías, que estaba sentado en la cumbre del monte.",
+      "bibleReference": "2 Reyes 1:9",
+      "answers": [
+        {
+          "text": "A la puerta de Samaria",
+          "isCorrect": false
+        },
+        {
+          "text": "Sentado en la cumbre del monte",
+          "isCorrect": true
+        },
+        {
+          "text": "Junto al río Jordán",
+          "isCorrect": false
+        },
+        {
+          "text": "En la casa del rey",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué les pasó al primer capitán de cincuenta y a sus cincuenta?",
+      "explanation": "Elías dijo que si él era varón de Dios descendiese fuego del cielo, y descendió fuego del cielo que lo consumió a él y a sus cincuenta.",
+      "bibleReference": "2 Reyes 1:10",
+      "answers": [
+        {
+          "text": "Llevaron a Elías ante el rey",
+          "isCorrect": false
+        },
+        {
+          "text": "Huyeron al ver a Elías",
+          "isCorrect": false
+        },
+        {
+          "text": "Descendió fuego del cielo y los consumió",
+          "isCorrect": true
+        },
+        {
+          "text": "Fueron perdonados al rogar por su vida",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo el tercer capitán de cincuenta al subir a Elías?",
+      "explanation": "El tercer capitán de cincuenta se hincó de rodillas delante de Elías y le rogó que su vida y la de sus cincuenta siervos fuesen de valor delante de sus ojos.",
+      "bibleReference": "2 Reyes 1:13",
+      "answers": [
+        {
+          "text": "Mandó prender a Elías en el monte",
+          "isCorrect": false
+        },
+        {
+          "text": "Le hirió en la mejilla con la mano",
+          "isCorrect": false
+        },
+        {
+          "text": "Le ofreció un presente de plata",
+          "isCorrect": false
+        },
+        {
+          "text": "Se hincó de rodillas y rogó por su vida",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿por qué reinó Joram en lugar de Ochôzías?",
+      "explanation": "Ochôzías murió conforme a la palabra de Jehová que había hablado Elías, y Joram reinó en su lugar porque Ochôzías no tenía hijo.",
+      "bibleReference": "2 Reyes 1:17",
+      "answers": [
+        {
+          "text": "Porque el pueblo lo eligió por rey",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque Ochôzías no tenía hijo",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque Elías lo había ungido",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque era hermano del rey de Judá",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

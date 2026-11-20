@@ -1,0 +1,242 @@
+{
+  "title": "1 Reyes Quiz bíblico - Capítulo 6",
+  "description": "Diez preguntas sobre 1 Reyes 6: la edificación de la casa de Jehová, sus medidas, el oráculo y los querubines de madera de oliva.",
+  "slug": "1-kings-quiz-part-6",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿En qué mes comenzó Salomón a edificar la casa de Jehová?",
+      "explanation": "Fue en el cuarto año del principio de su reino, en el mes de Ziph, que es el mes segundo, cuando comenzó a edificar la casa de Jehová.",
+      "bibleReference": "1 Reyes 6:1",
+      "answers": [
+        {
+          "text": "En el mes de Bul",
+          "isCorrect": false
+        },
+        {
+          "text": "En el mes de Ziph",
+          "isCorrect": true
+        },
+        {
+          "text": "En el mes séptimo",
+          "isCorrect": false
+        },
+        {
+          "text": "En el mes primero",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos codos de largo tuvo la casa que el rey Salomón edificó a Jehová?",
+      "explanation": "La casa tuvo sesenta codos de largo, veinte de ancho y treinta codos de alto.",
+      "bibleReference": "1 Reyes 6:2",
+      "answers": [
+        {
+          "text": "Veinte",
+          "isCorrect": false
+        },
+        {
+          "text": "Treinta",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuarenta",
+          "isCorrect": false
+        },
+        {
+          "text": "Sesenta",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo eran las ventanas que hizo a la casa?",
+      "explanation": "El texto dice que hizo a la casa ventanas anchas por de dentro y estrechas por de fuera.",
+      "bibleReference": "1 Reyes 6:4",
+      "answers": [
+        {
+          "text": "Iguales por dentro y por fuera",
+          "isCorrect": false
+        },
+        {
+          "text": "Redondas y cubiertas de oro",
+          "isCorrect": false
+        },
+        {
+          "text": "Anchas por dentro y estrechas por fuera",
+          "isCorrect": true
+        },
+        {
+          "text": "Estrechas y cerradas con cadenas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué no se oyó en la casa mientras la edificaban?",
+      "explanation": "La fabricaron de piedras que traían ya acabadas, de tal manera que ni martillos ni hachas ni ningún otro instrumento de hierro se oyeron en la casa.",
+      "bibleReference": "1 Reyes 6:7",
+      "answers": [
+        {
+          "text": "Ni martillos ni hachas",
+          "isCorrect": true
+        },
+        {
+          "text": "Ni voces ni cánticos",
+          "isCorrect": false
+        },
+        {
+          "text": "Ni trompetas ni flautas",
+          "isCorrect": false
+        },
+        {
+          "text": "Ni mazos ni cuerdas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué prometió Jehová hacer si Salomón andaba en sus estatutos y guardaba sus mandamientos?",
+      "explanation": "Jehová dijo que tendría firme con él la palabra que habló a David su padre, que habitaría en medio de los hijos de Israel y que no dejaría a su pueblo.",
+      "bibleReference": "1 Reyes 6:12-13",
+      "answers": [
+        {
+          "text": "Alargar los días del rey sobre Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Habitar en medio de los hijos de Israel",
+          "isCorrect": true
+        },
+        {
+          "text": "Dar reposo a todas las naciones",
+          "isCorrect": false
+        },
+        {
+          "text": "Acabar la casa en un solo año",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo llama el texto al oráculo que se fabricó dentro de la casa?",
+      "explanation": "El texto dice que se fabricó en la casa un oráculo, que es el lugar santísimo.",
+      "bibleReference": "1 Reyes 6:16",
+      "answers": [
+        {
+          "text": "El pórtico",
+          "isCorrect": false
+        },
+        {
+          "text": "El atrio interior",
+          "isCorrect": false
+        },
+        {
+          "text": "La cámara del rey",
+          "isCorrect": false
+        },
+        {
+          "text": "El lugar santísimo",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué entalladuras tenía la casa, que estaba cubierta de cedro por dentro?",
+      "explanation": "La casa estaba cubierta de cedro por de dentro y tenía entalladuras de calabazas silvestres y de botones de flores; todo era cedro y ninguna piedra se veía.",
+      "bibleReference": "1 Reyes 6:18",
+      "answers": [
+        {
+          "text": "Leones y bueyes de bronce",
+          "isCorrect": false
+        },
+        {
+          "text": "Ruedas y granadas de plata",
+          "isCorrect": false
+        },
+        {
+          "text": "Calabazas silvestres y botones de flores",
+          "isCorrect": true
+        },
+        {
+          "text": "Letras y nombres de las tribus",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Para qué adornó Salomón el oráculo en medio de la casa?",
+      "explanation": "Adornó el oráculo por de dentro en medio de la casa para poner allí el arca del pacto de Jehová.",
+      "bibleReference": "1 Reyes 6:19",
+      "answers": [
+        {
+          "text": "Para poner allí el arca del pacto",
+          "isCorrect": true
+        },
+        {
+          "text": "Para guardar allí el oro del rey",
+          "isCorrect": false
+        },
+        {
+          "text": "Para sentarse allí a juzgar",
+          "isCorrect": false
+        },
+        {
+          "text": "Para poner allí la mesa del rey",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De qué madera eran los dos querubines que hizo en el oráculo?",
+      "explanation": "Hizo en el oráculo dos querubines de madera de oliva, cada uno de altura de diez codos.",
+      "bibleReference": "1 Reyes 6:23",
+      "answers": [
+        {
+          "text": "De madera de cedro",
+          "isCorrect": false
+        },
+        {
+          "text": "De madera de oliva",
+          "isCorrect": true
+        },
+        {
+          "text": "De madera de haya",
+          "isCorrect": false
+        },
+        {
+          "text": "De madera de palma",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿En cuántos años edificó Salomón la casa, según el final del capítulo?",
+      "explanation": "En el undécimo año, en el mes de Bul, fue acabada la casa con todas sus pertenencias; la edificó en siete años.",
+      "bibleReference": "1 Reyes 6:38",
+      "answers": [
+        {
+          "text": "En cuatro años",
+          "isCorrect": false
+        },
+        {
+          "text": "En once años",
+          "isCorrect": false
+        },
+        {
+          "text": "En veinte años",
+          "isCorrect": false
+        },
+        {
+          "text": "En siete años",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

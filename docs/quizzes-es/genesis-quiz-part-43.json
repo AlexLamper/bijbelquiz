@@ -9,7 +9,7 @@
   "status": "draft",
   "questions": [
     {
-      "text": "¿Qué dijo su padre cuando acabaron de comer el trigo traído de Egipto?",
+      "text": "¿Qué les dijo su padre cuando acabaron de comer el trigo que habían traído de Egipto?",
       "explanation": "Su padre les dijo que volviesen y comprasen para ellos un poco de alimento.",
       "bibleReference": "Génesis 43:2",
       "answers": [
@@ -41,7 +41,7 @@
           "isCorrect": true
         },
         {
-          "text": "Que no volviesen nunca más",
+          "text": "Que no volviesen nunca más a comprar alimento",
           "isCorrect": false
         },
         {
@@ -57,7 +57,7 @@
     {
       "text": "¿Qué ofreció Judá a su padre acerca del mozo?",
       "explanation": "Judá dijo que él lo fiaba, que a él le pediría cuenta de él, y que si no se lo volviese sería el culpante todos los días.",
-      "bibleReference": "Génesis 43:9",
+      "bibleReference": "Génesis 43:8-9",
       "answers": [
         {
           "text": "Quedarse en Canaán",
@@ -95,7 +95,7 @@
           "isCorrect": false
         },
         {
-          "text": "Trigo, pan, vino y aceite de oliva",
+          "text": "Trigo, pan, vino, aceite de oliva y piezas de plata",
           "isCorrect": false
         }
       ]
@@ -137,7 +137,7 @@
           "isCorrect": false
         },
         {
-          "text": "Encerrarlos en la cárcel",
+          "text": "Encerrarlos en la cárcel hasta el medio día",
           "isCorrect": false
         },
         {
@@ -156,7 +156,7 @@
           "isCorrect": true
         },
         {
-          "text": "Por haber traído a Benjamín",
+          "text": "Por haber traído consigo a su hermano Benjamín",
           "isCorrect": false
         },
         {

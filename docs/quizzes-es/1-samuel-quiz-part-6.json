@@ -1,0 +1,122 @@
+{
+  "title": "1 Samuel Quiz bíblico - Capítulo 6",
+  "description": "Diez preguntas sobre 1 Samuel 6: la expiación de oro de los filisteos, el carro nuevo con dos vacas y la llegada del arca a Beth-semes.",
+  "slug": "1-samuel-quiz-part-6",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cuánto tiempo estuvo el arca de Jehová en la tierra de los filisteos?",
+      "explanation": "El arca de Jehová estuvo en la tierra de los filisteos siete meses.",
+      "bibleReference": "1 Samuel 6:1",
+      "answers": [
+        { "text": "Veinte años", "isCorrect": false },
+        { "text": "Siete meses", "isCorrect": true },
+        { "text": "Siete días", "isCorrect": false },
+        { "text": "Siete años", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿A quiénes llamaron los filisteos para preguntar qué harían del arca de Jehová?",
+      "explanation": "Los filisteos llamaron a los sacerdotes y adivinos y les preguntaron qué harían del arca de Jehová y cómo la habían de enviar a su lugar.",
+      "bibleReference": "1 Samuel 6:2",
+      "answers": [
+        { "text": "A los levitas de Beth-semes", "isCorrect": false },
+        { "text": "A los ancianos de Ecrón", "isCorrect": false },
+        { "text": "A los segadores del valle", "isCorrect": false },
+        { "text": "A los sacerdotes y adivinos", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué expiación dijeron que debían pagar, conforme al número de los príncipes de los filisteos?",
+      "explanation": "Respondieron que, conforme al número de los príncipes de los filisteos, pagasen cinco hemorroides de oro y cinco ratones de oro.",
+      "bibleReference": "1 Samuel 6:4",
+      "answers": [
+        { "text": "Cinco hemorroides de oro y cinco ratones de oro", "isCorrect": true },
+        { "text": "Cinco becerros de oro y cinco carros nuevos", "isCorrect": false },
+        { "text": "Diez hemorroides de oro y diez ratones de oro", "isCorrect": false },
+        { "text": "Cinco vacas y cinco panes de oro", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Con quiénes compararon el endurecer el corazón delante del Dios de Israel?",
+      "explanation": "Les preguntaron por qué endurecían su corazón como los egipcios y Faraón endurecieron el suyo, pues al fin los dejaron ir.",
+      "bibleReference": "1 Samuel 6:6",
+      "answers": [
+        { "text": "Con los amorrheos de la tierra", "isCorrect": false },
+        { "text": "Con los sacerdotes de Dagón", "isCorrect": false },
+        { "text": "Con los egipcios y Faraón", "isCorrect": true },
+        { "text": "Con los hijos de Israel en Mizpa", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué debían preparar y qué animales debían uncir para enviar el arca?",
+      "explanation": "Debían hacer un carro nuevo y tomar dos vacas que criaban, a las cuales no había sido puesto yugo, y uncirlas al carro.",
+      "bibleReference": "1 Samuel 6:7",
+      "answers": [
+        { "text": "Un carro viejo y dos asnos de carga", "isCorrect": false },
+        { "text": "Un carro nuevo y dos vacas sin yugo", "isCorrect": true },
+        { "text": "Una barca nueva y dos becerros tiernos", "isCorrect": false },
+        { "text": "Un carro nuevo y cinco vacas con yugo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cómo fueron las vacas por el camino de Beth-semes?",
+      "explanation": "Las vacas se encaminaron por el camino de Beth-semes e iban por un mismo camino, andando y bramando, sin apartarse ni a diestra ni a siniestra.",
+      "bibleReference": "1 Samuel 6:12",
+      "answers": [
+        { "text": "Andando y bramando, sin apartarse ni a diestra ni a siniestra", "isCorrect": true },
+        { "text": "Corriendo y apartándose a diestra y a siniestra del camino", "isCorrect": false },
+        { "text": "Despacio, guiadas por los príncipes de los filisteos", "isCorrect": false },
+        { "text": "Volviéndose cada una a buscar a sus becerros en casa", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué estaban haciendo los de Beth-semes cuando alzaron sus ojos y vieron el arca?",
+      "explanation": "Los de Beth-semes segaban el trigo en el valle, y alzando sus ojos vieron el arca y se holgaron cuando la vieron.",
+      "bibleReference": "1 Samuel 6:13",
+      "answers": [
+        { "text": "Edificaban un altar en el collado", "isCorrect": false },
+        { "text": "Ayunaban delante de Jehová", "isCorrect": false },
+        { "text": "Segaban el trigo en el valle", "isCorrect": true },
+        { "text": "Peleaban contra los filisteos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué hicieron con el carro y con las vacas en el campo de Josué Beth-semita?",
+      "explanation": "El carro paró allí, junto a una gran piedra; cortaron la madera del carro y ofrecieron las vacas en holocausto a Jehová.",
+      "bibleReference": "1 Samuel 6:14",
+      "answers": [
+        { "text": "Devolvieron el carro y las vacas a los filisteos", "isCorrect": false },
+        { "text": "Guardaron el carro junto a la gran piedra del campo", "isCorrect": false },
+        { "text": "Llevaron el carro y las vacas a Chîriath-jearim", "isCorrect": false },
+        { "text": "Cortaron la madera del carro y ofrecieron las vacas", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Por qué hirió Dios a los hombres de Beth-semes?",
+      "explanation": "Dios hirió a los de Beth-semes porque habían mirado en el arca de Jehová, y el pueblo puso luto por tan gran plaga.",
+      "bibleReference": "1 Samuel 6:19",
+      "answers": [
+        { "text": "Porque habían mirado en el arca de Jehová", "isCorrect": true },
+        { "text": "Porque no quisieron recibir el arca", "isCorrect": false },
+        { "text": "Porque sirvieron a Dagón en el valle", "isCorrect": false },
+        { "text": "Porque segaron el trigo en el día santo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿A quiénes enviaron mensajeros los de Beth-semes para que se llevasen el arca?",
+      "explanation": "Enviaron mensajeros a los de Chîriath-jearim, diciéndoles que los filisteos habían vuelto el arca de Jehová y que descendiesen a llevarla.",
+      "bibleReference": "1 Samuel 6:21",
+      "answers": [
+        { "text": "A los ancianos de Mizpa", "isCorrect": false },
+        { "text": "A los de Chîriath-jearim", "isCorrect": true },
+        { "text": "A los sacerdotes de Silo", "isCorrect": false },
+        { "text": "A los levitas de Gilgal", "isCorrect": false }
+      ]
+    }
+  ]
+}

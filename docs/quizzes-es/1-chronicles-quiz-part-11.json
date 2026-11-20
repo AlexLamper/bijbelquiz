@@ -1,0 +1,122 @@
+{
+  "title": "1 Crónicas Quiz bíblico - Capítulo 11",
+  "description": "Diez preguntas sobre 1 Crónicas 11: David ungido rey en Hebrón, la toma de la fortaleza de Sión y las hazañas de sus valientes.",
+  "slug": "1-chronicles-quiz-part-11",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿En qué lugar se juntó todo Israel con David al comienzo del capítulo?",
+      "explanation": "Todo Israel se juntó á David en Hebrón y le dijo que eran su hueso y su carne.",
+      "bibleReference": "1 Crónicas 11:1",
+      "answers": [
+        { "text": "En Hebrón", "isCorrect": true },
+        { "text": "En Siclag", "isCorrect": false },
+        { "text": "En Gabaón", "isCorrect": false },
+        { "text": "En Betel", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿por mano de quién había hablado Jehová la palabra conforme a la cual ungieron a David por rey?",
+      "explanation": "Los ancianos ungieron á David por rey sobre Israel conforme á la palabra de Jehová por mano de Samuel.",
+      "bibleReference": "1 Crónicas 11:3",
+      "answers": [
+        { "text": "Por mano de Gad", "isCorrect": false },
+        { "text": "Por mano de Nathán", "isCorrect": false },
+        { "text": "Por mano de Samuel", "isCorrect": true },
+        { "text": "Por mano de Moisés", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Con qué otro nombre llama el texto a la ciudad de Jerusalem cuando David va hacia ella?",
+      "explanation": "David fué con todo Israel á Jerusalem, la cual es Jebus, donde habitaba el Jebuseo.",
+      "bibleReference": "1 Crónicas 11:4",
+      "answers": [
+        { "text": "Hamath", "isCorrect": false },
+        { "text": "Jebus", "isCorrect": true },
+        { "text": "Adullam", "isCorrect": false },
+        { "text": "Gezer", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Quién subió primero contra el Jebuseo y por eso fue hecho jefe?",
+      "explanation": "David había dicho que el primero que hiriese al Jebuseo sería cabeza y jefe; Joab hijo de Sarvia subió el primero y fué hecho jefe.",
+      "bibleReference": "1 Crónicas 11:6",
+      "answers": [
+        { "text": "Abisai", "isCorrect": false },
+        { "text": "Benaías", "isCorrect": false },
+        { "text": "Eleazar", "isCorrect": false },
+        { "text": "Joab", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Desde dónde y hasta dónde edificó David la ciudad alrededor?",
+      "explanation": "David edificó la ciudad alrededor, desde Millo hasta la cerca, y Joab reparó el resto de la ciudad.",
+      "bibleReference": "1 Crónicas 11:8",
+      "answers": [
+        { "text": "Desde Millo hasta la cerca", "isCorrect": true },
+        { "text": "Desde la era hasta la puerta", "isCorrect": false },
+        { "text": "Desde el valle hasta la peña", "isCorrect": false },
+        { "text": "Desde Sión hasta Gabaón", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Contra cuántos hombres blandió Jasobam su lanza una vez, matándolos?",
+      "explanation": "Jasobam hijo de Hachmoni, caudillo de los treinta, blandió su lanza una vez contra trescientos, á los cuales mató.",
+      "bibleReference": "1 Crónicas 11:11",
+      "answers": [
+        { "text": "Contra treinta", "isCorrect": false },
+        { "text": "Contra trescientos", "isCorrect": true },
+        { "text": "Contra cien", "isCorrect": false },
+        { "text": "Contra tres mil", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿De qué estaba llena la suerte de tierra que Eleazar defendió en Pasdammin?",
+      "explanation": "Había allí una suerte de tierra llena de cebada, y ellos se pusieron en medio de la haza y la defendieron.",
+      "bibleReference": "1 Crónicas 11:13-14",
+      "answers": [
+        { "text": "De trigo", "isCorrect": false },
+        { "text": "De lentejas", "isCorrect": false },
+        { "text": "De viñas", "isCorrect": false },
+        { "text": "De cebada", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué deseó David cuando estaba en la fortaleza y había guarnición de Filisteos en Beth-lehem?",
+      "explanation": "David dijo: Quién me diera á beber de las aguas del pozo de Beth-lehem, que está á la puerta.",
+      "bibleReference": "1 Crónicas 11:16-17",
+      "answers": [
+        { "text": "Vino de las viñas de Hebrón", "isCorrect": false },
+        { "text": "Agua del río Jordán", "isCorrect": false },
+        { "text": "Agua del pozo de Beth-lehem", "isCorrect": true },
+        { "text": "Agua del pozo de Gabaón", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué hizo David con el agua que los tres valientes le trajeron?",
+      "explanation": "David no la quiso beber, sino que la derramó á Jehová, diciendo que no había de beber la sangre de aquellos varones.",
+      "bibleReference": "1 Crónicas 11:18-19",
+      "answers": [
+        { "text": "La derramó á Jehová", "isCorrect": true },
+        { "text": "La bebió toda", "isCorrect": false },
+        { "text": "La dio a Joab", "isCorrect": false },
+        { "text": "La guardó en la fortaleza", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿De qué estatura era el Egipcio al que venció Benaías hijo de Joiada?",
+      "explanation": "Benaías venció á un Egipcio, hombre de cinco codos de estatura, que traía una lanza como un enjullo de tejedor.",
+      "bibleReference": "1 Crónicas 11:23",
+      "answers": [
+        { "text": "De cuatro codos", "isCorrect": false },
+        { "text": "De cinco codos", "isCorrect": true },
+        { "text": "De seis codos", "isCorrect": false },
+        { "text": "De siete codos", "isCorrect": false }
+      ]
+    }
+  ]
+}

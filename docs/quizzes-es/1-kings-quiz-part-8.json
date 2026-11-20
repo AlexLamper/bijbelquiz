@@ -1,0 +1,242 @@
+{
+  "title": "1 Reyes Quiz bíblico - Capítulo 8",
+  "description": "Diez preguntas sobre 1 Reyes 8: el arca llevada al oráculo, la nube que llenó la casa, la oración de Salomón y la fiesta de la dedicación.",
+  "slug": "1-kings-quiz-part-8",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿En qué mes se juntaron al rey Salomón todos los varones de Israel?",
+      "explanation": "Se juntaron al rey Salomón todos los varones de Israel en el mes de Ethanim, que es el mes séptimo, en el día solemne.",
+      "bibleReference": "1 Reyes 8:2",
+      "answers": [
+        {
+          "text": "En el mes de Ethanim",
+          "isCorrect": true
+        },
+        {
+          "text": "En el mes de Ziph",
+          "isCorrect": false
+        },
+        {
+          "text": "En el mes de Bul",
+          "isCorrect": false
+        },
+        {
+          "text": "En el mes primero",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde metieron los sacerdotes el arca del pacto de Jehová?",
+      "explanation": "Los sacerdotes metieron el arca en su lugar, en el oráculo de la casa, en el lugar santísimo, debajo de las alas de los querubines.",
+      "bibleReference": "1 Reyes 8:6",
+      "answers": [
+        {
+          "text": "En el atrio, delante del altar",
+          "isCorrect": false
+        },
+        {
+          "text": "En el pórtico del juicio",
+          "isCorrect": false
+        },
+        {
+          "text": "Debajo de las alas de los querubines",
+          "isCorrect": true
+        },
+        {
+          "text": "En la ciudad de David",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué había en el arca, según el texto?",
+      "explanation": "En el arca ninguna cosa había más que las dos tablas de piedra que Moisés había puesto allí en Horeb.",
+      "bibleReference": "1 Reyes 8:9",
+      "answers": [
+        {
+          "text": "La vara de Moisés",
+          "isCorrect": false
+        },
+        {
+          "text": "Las dos tablas de piedra",
+          "isCorrect": true
+        },
+        {
+          "text": "El libro de la ley",
+          "isCorrect": false
+        },
+        {
+          "text": "Un vaso de aceite",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué no pudieron los sacerdotes quedarse a ministrar en la casa?",
+      "explanation": "Los sacerdotes no pudieron estar para ministrar por causa de la nube, porque la gloria de Jehová había henchido la casa.",
+      "bibleReference": "1 Reyes 8:11",
+      "answers": [
+        {
+          "text": "Por el humo del altar",
+          "isCorrect": false
+        },
+        {
+          "text": "Por la multitud del pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "Por el peso del arca",
+          "isCorrect": false
+        },
+        {
+          "text": "Por causa de la nube",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según lo que Jehová dijo a David, ¿quién edificaría la casa a su nombre?",
+      "explanation": "Jehová dijo a David que él no edificaría la casa, sino su hijo, el que saldría de sus lomos.",
+      "bibleReference": "1 Reyes 8:19",
+      "answers": [
+        {
+          "text": "Su hijo",
+          "isCorrect": true
+        },
+        {
+          "text": "David mismo",
+          "isCorrect": false
+        },
+        {
+          "text": "Los ancianos",
+          "isCorrect": false
+        },
+        {
+          "text": "Un extranjero",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Salomón sobre los cielos de los cielos en su oración?",
+      "explanation": "Salomón preguntó si de verdad Dios había de morar sobre la tierra, porque los cielos de los cielos no le pueden contener, y mucho menos aquella casa.",
+      "bibleReference": "1 Reyes 8:27",
+      "answers": [
+        {
+          "text": "Que están llenos de nubes",
+          "isCorrect": false
+        },
+        {
+          "text": "Que son la casa del arca",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no pueden contener a Dios",
+          "isCorrect": true
+        },
+        {
+          "text": "Que se abrirán sobre Israel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De dónde dijo Salomón que Dios había sacado a su pueblo y heredad?",
+      "explanation": "Salomón dijo que ellos son el pueblo y la heredad de Dios, que él sacó de Egipto, de en medio del horno de hierro.",
+      "bibleReference": "1 Reyes 8:51",
+      "answers": [
+        {
+          "text": "De la tierra de los Filisteos",
+          "isCorrect": false
+        },
+        {
+          "text": "De en medio del horno de hierro",
+          "isCorrect": true
+        },
+        {
+          "text": "De las aguas de la mar",
+          "isCorrect": false
+        },
+        {
+          "text": "De los montes de Basán",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿En qué postura había estado Salomón mientras hacía toda esta oración y súplica?",
+      "explanation": "Cuando acabó de orar, Salomón se levantó de estar de rodillas delante del altar de Jehová, con sus manos extendidas al cielo.",
+      "bibleReference": "1 Reyes 8:54",
+      "answers": [
+        {
+          "text": "Sentado en su trono",
+          "isCorrect": false
+        },
+        {
+          "text": "Tendido en el suelo",
+          "isCorrect": false
+        },
+        {
+          "text": "Andando por el atrio",
+          "isCorrect": false
+        },
+        {
+          "text": "De rodillas",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos bueyes ofreció Salomón como sacrificios pacíficos?",
+      "explanation": "Salomón ofreció a Jehová por sacrificios pacíficos veinte y dos mil bueyes y ciento veinte mil ovejas.",
+      "bibleReference": "1 Reyes 8:63",
+      "answers": [
+        {
+          "text": "Veinte y dos mil",
+          "isCorrect": true
+        },
+        {
+          "text": "Ciento veinte mil",
+          "isCorrect": false
+        },
+        {
+          "text": "Veinte y ocho mil",
+          "isCorrect": false
+        },
+        {
+          "text": "Doce mil quinientos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos días duró en total la fiesta que hizo Salomón con todo Israel?",
+      "explanation": "Salomón hizo fiesta con todo Israel por siete días y otros siete días, esto es, por catorce días.",
+      "bibleReference": "1 Reyes 8:65",
+      "answers": [
+        {
+          "text": "Siete días",
+          "isCorrect": false
+        },
+        {
+          "text": "Ocho días",
+          "isCorrect": false
+        },
+        {
+          "text": "Catorce días",
+          "isCorrect": true
+        },
+        {
+          "text": "Treinta días",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

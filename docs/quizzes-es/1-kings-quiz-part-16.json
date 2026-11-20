@@ -1,0 +1,122 @@
+{
+  "title": "1 Reyes Quiz bíblico - Capítulo 16",
+  "description": "Diez preguntas sobre 1 Reyes 16: la palabra contra Baasa, los siete días de Zimri, la compra de Samaria por Omri y el reinado de Achâb.",
+  "slug": "1-kings-quiz-part-16",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿A quién vino palabra de Jehová contra Baasa?",
+      "explanation": "Fue palabra de Jehová a Jehú hijo de Hanani contra Baasa.",
+      "bibleReference": "1 Reyes 16:1",
+      "answers": [
+        { "text": "A Ahías Silonita", "isCorrect": false },
+        { "text": "A Jehú hijo de Hanani", "isCorrect": true },
+        { "text": "A Semeías varón de Dios", "isCorrect": false },
+        { "text": "A Eliseo hijo de Saphat", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Dónde fue sepultado Baasa y quién reinó en su lugar?",
+      "explanation": "Baasa durmió con sus padres y fue sepultado en Thirsa, y reinó en su lugar Ela su hijo.",
+      "bibleReference": "1 Reyes 16:6",
+      "answers": [
+        { "text": "En Samaria, y reinó Omri su hijo", "isCorrect": false },
+        { "text": "En la ciudad de David, y reinó Asa su hijo", "isCorrect": false },
+        { "text": "En Gibbethón, y reinó Zimri su siervo", "isCorrect": false },
+        { "text": "En Thirsa, y reinó Ela su hijo", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Quién hizo conjuración contra Ela, y qué cargo tenía?",
+      "explanation": "Hizo conjuración contra él su siervo Zimri, comandante de la mitad de los carros.",
+      "bibleReference": "1 Reyes 16:9",
+      "answers": [
+        { "text": "Omri, general del ejército", "isCorrect": false },
+        { "text": "Arsa, su mayordomo en Thirsa", "isCorrect": false },
+        { "text": "Zimri, comandante de la mitad de los carros", "isCorrect": true },
+        { "text": "Thibni hijo de Gineth, capitán de la guardia", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuánto tiempo reinó Zimri en Thirsa?",
+      "explanation": "Zimri comenzó a reinar en el año veintisiete de Asa rey de Judá, y reinó siete días en Thirsa.",
+      "bibleReference": "1 Reyes 16:15",
+      "answers": [
+        { "text": "Siete días", "isCorrect": true },
+        { "text": "Dos años", "isCorrect": false },
+        { "text": "Doce años", "isCorrect": false },
+        { "text": "Seis años", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Al oír que Zimri había hecho conjuración, ¿a quién levantó todo Israel por rey?",
+      "explanation": "Todo Israel levantó aquel mismo día por rey sobre Israel a Omri, general del ejército, en el campo.",
+      "bibleReference": "1 Reyes 16:16",
+      "answers": [
+        { "text": "A Ela hijo de Baasa", "isCorrect": false },
+        { "text": "A Achâb hijo de Omri", "isCorrect": false },
+        { "text": "A Nadab hijo de Jeroboam", "isCorrect": false },
+        { "text": "A Omri, general del ejército", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Zimri cuando vio que la ciudad había sido tomada?",
+      "explanation": "Viendo Zimri tomada la ciudad, se metió en el palacio de la casa real y pegó fuego a la casa consigo; así murió.",
+      "bibleReference": "1 Reyes 16:18",
+      "answers": [
+        { "text": "Huyó de cámara en cámara por la ciudad", "isCorrect": false },
+        { "text": "Pegó fuego a la casa real consigo dentro", "isCorrect": true },
+        { "text": "Salió con sacos y sogas a pedir la vida", "isCorrect": false },
+        { "text": "Se escapó en un caballo hacia Damasco", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿En qué dos partes se dividió el pueblo de Israel, y quién pudo más?",
+      "explanation": "La mitad del pueblo seguía a Thibni hijo de Gineth para hacerlo rey y la otra mitad seguía a Omri; el pueblo que seguía a Omri pudo más, Thibni murió y Omri fue rey.",
+      "bibleReference": "1 Reyes 16:21-22",
+      "answers": [
+        { "text": "Entre Thibni y Omri, y pudo más el de Omri", "isCorrect": true },
+        { "text": "Entre Zimri y Omri, y pudo más el de Zimri", "isCorrect": false },
+        { "text": "Entre Ela y Baasa, y pudo más el de Ela", "isCorrect": false },
+        { "text": "Entre Achâb y Thibni, y pudo más el de Achâb", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿De quién compró Omri el monte de Samaria, y por cuánto?",
+      "explanation": "Compró de Semer el monte de Samaria por dos talentos de plata, edificó en el monte y llamó a la ciudad Samaria, del nombre de Semer.",
+      "bibleReference": "1 Reyes 16:24",
+      "answers": [
+        { "text": "De Hiel, por cien talentos de plata", "isCorrect": false },
+        { "text": "De Arsa, por treinta siclos de plata", "isCorrect": false },
+        { "text": "De Semer, por dos talentos de plata", "isCorrect": true },
+        { "text": "De Ethbaal, por un talento de oro", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Con quién se casó Achâb, y a quién sirvió y adoró?",
+      "explanation": "Achâb tomó por mujer a Jezabel hija de Ethbaal rey de los Sidonios, y fue y sirvió a Baal, y lo adoró.",
+      "bibleReference": "1 Reyes 16:31",
+      "answers": [
+        { "text": "Con Maachâ hija de Abisalom, y sirvió a Chêmos", "isCorrect": false },
+        { "text": "Con Jezabel hija de Ethbaal, y sirvió a Baal", "isCorrect": true },
+        { "text": "Con Naama Ammonita, y sirvió a Milcom", "isCorrect": false },
+        { "text": "Con la hermana de Thaphnes, y sirvió a Astaroth", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Quién reedificó a Jericó en los días de Achâb?",
+      "explanation": "En su tiempo Hiel de Beth-el reedificó a Jericó: en Abiram su primogénito echó el cimiento y en Segub su hijo postrero puso sus puertas.",
+      "bibleReference": "1 Reyes 16:34",
+      "answers": [
+        { "text": "Omri, padre de Achâb", "isCorrect": false },
+        { "text": "Josué hijo de Nun", "isCorrect": false },
+        { "text": "Hiel de Beth-el", "isCorrect": true },
+        { "text": "Segub, hijo postrero de Achâb", "isCorrect": false }
+      ]
+    }
+  ]
+}

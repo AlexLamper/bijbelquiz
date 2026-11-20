@@ -1,0 +1,242 @@
+{
+  "title": "1 Samuel Quiz bíblico - Capítulo 20",
+  "description": "Diez preguntas sobre 1 Samuel 20: el plan de la nueva luna, la señal de las saetas y la despedida de David y Jonathán.",
+  "slug": "1-samuel-quiz-part-20",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué dijo David que había entre él y la muerte?",
+      "explanation": "David juró que su padre sabía que había hallado gracia delante de Jonathán, y añadió que apenas había un paso entre él y la muerte.",
+      "bibleReference": "1 Samuel 20:3",
+      "answers": [
+        {
+          "text": "Apenas un paso",
+          "isCorrect": true
+        },
+        {
+          "text": "Solamente la palabra del rey",
+          "isCorrect": false
+        },
+        {
+          "text": "Tres días de camino",
+          "isCorrect": false
+        },
+        {
+          "text": "La alianza que habían hecho",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué fiesta iba a ser al día siguiente, en la que David acostumbraba sentarse con el rey a comer?",
+      "explanation": "David dijo a Jonathán que al día siguiente sería nueva luna y que él acostumbraba sentarse con el rey a comer.",
+      "bibleReference": "1 Samuel 20:5",
+      "answers": [
+        {
+          "text": "El sacrificio aniversario de su linaje",
+          "isCorrect": false
+        },
+        {
+          "text": "La nueva luna",
+          "isCorrect": true
+        },
+        {
+          "text": "El día de reposo",
+          "isCorrect": false
+        },
+        {
+          "text": "La fiesta de la cosecha",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué excusa pidió David que Jonathán diera si el rey preguntaba por él?",
+      "explanation": "David pidió que dijera que le había rogado mucho dejarle ir presto a Beth-lehem, su ciudad, porque todos los de su linaje tenían allá sacrificio aniversario.",
+      "bibleReference": "1 Samuel 20:6",
+      "answers": [
+        {
+          "text": "Que estaba enfermo en su casa",
+          "isCorrect": false
+        },
+        {
+          "text": "Que había salido a pelear contra los Filisteos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que había ido a Beth-lehem al sacrificio de su linaje",
+          "isCorrect": true
+        },
+        {
+          "text": "Que estaba guardando las ovejas en el desierto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según David, ¿qué significaría que el rey se enojase al oír esa respuesta?",
+      "explanation": "David dijo que si el rey decía \"Bien está\", su siervo tendría paz, pero que si se enojaba, era señal de que la malicia en él estaba consumada.",
+      "bibleReference": "1 Samuel 20:7",
+      "answers": [
+        {
+          "text": "Que la malicia en él estaba consumada",
+          "isCorrect": true
+        },
+        {
+          "text": "Que quería dar su hija a otro hombre",
+          "isCorrect": false
+        },
+        {
+          "text": "Que mandaría llamar a los Filisteos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no sabía nada de aquel negocio",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Junto a qué debía esperar David cuando descendiera al lugar donde se había escondido?",
+      "explanation": "Jonathán le dijo que estuviese tres días, que luego descendiese al lugar donde se había escondido el día de trabajo y que esperase junto a la piedra de Ezel.",
+      "bibleReference": "1 Samuel 20:19",
+      "answers": [
+        {
+          "text": "Junto al pozo grande de Sochô",
+          "isCorrect": false
+        },
+        {
+          "text": "Junto a la puerta de la ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "Junto a la piedra de Ezel",
+          "isCorrect": true
+        },
+        {
+          "text": "Junto al arroyo del valle",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué iba a hacer Jonathán como si se ejercitara al blanco?",
+      "explanation": "Jonathán dijo que tiraría tres saetas hacia aquel lado, como ejercitándose al blanco.",
+      "bibleReference": "1 Samuel 20:20",
+      "answers": [
+        {
+          "text": "Tirar tres saetas",
+          "isCorrect": true
+        },
+        {
+          "text": "Arrojar una lanza contra la pared",
+          "isCorrect": false
+        },
+        {
+          "text": "Tirar cinco piedras con la honda",
+          "isCorrect": false
+        },
+        {
+          "text": "Tocar alarma con la trompeta",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según la señal convenida, ¿qué debía entender David si Jonathán decía al mozo que las saetas estaban más allá de él?",
+      "explanation": "Si Jonathán decía al mozo que las saetas estaban más acá de él, David tenía paz; pero si decía que estaban más allá, David debía irse porque Jehová lo había enviado.",
+      "bibleReference": "1 Samuel 20:21-22",
+      "answers": [
+        {
+          "text": "Que debía esperar junto a la piedra otros tres días",
+          "isCorrect": false
+        },
+        {
+          "text": "Que podía volver a sentarse a la mesa del rey",
+          "isCorrect": false
+        },
+        {
+          "text": "Que debía irse, porque Jehová lo había enviado",
+          "isCorrect": true
+        },
+        {
+          "text": "Que tenía paz y que nada había de mal",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Cuando el rey se sentó a comer en la nueva luna, ¿quién se sentó al lado de Saúl?",
+      "explanation": "El rey se sentó en su asiento junto a la pared, Jonathán se levantó, Abner se sentó al lado de Saúl, y el lugar de David estaba vacío.",
+      "bibleReference": "1 Samuel 20:25",
+      "answers": [
+        {
+          "text": "David",
+          "isCorrect": false
+        },
+        {
+          "text": "Abner",
+          "isCorrect": true
+        },
+        {
+          "text": "Jonathán",
+          "isCorrect": false
+        },
+        {
+          "text": "Isaí",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Saúl cuando Jonathán le preguntó por qué había de morir David?",
+      "explanation": "Saúl le arrojó una lanza para herirlo, y por eso Jonathán entendió que su padre estaba determinado a matar a David.",
+      "bibleReference": "1 Samuel 20:32-33",
+      "answers": [
+        {
+          "text": "Mandó llamar a Abner para que lo prendiese",
+          "isCorrect": false
+        },
+        {
+          "text": "Se levantó de la mesa sin responder nada",
+          "isCorrect": false
+        },
+        {
+          "text": "Juró delante de todos que no moriría",
+          "isCorrect": false
+        },
+        {
+          "text": "Le arrojó una lanza para herirlo",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hicieron David y Jonathán cuando se encontraron en el campo después de que el muchacho se fue?",
+      "explanation": "David se levantó de la parte del mediodía y se inclinó tres veces postrándose hasta la tierra; se besaron el uno al otro y lloraron juntos, aunque David lloró más.",
+      "bibleReference": "1 Samuel 20:41",
+      "answers": [
+        {
+          "text": "Hicieron una nueva alianza con sacrificios",
+          "isCorrect": false
+        },
+        {
+          "text": "Partieron juntos hacia Beth-lehem",
+          "isCorrect": false
+        },
+        {
+          "text": "Se repartieron las armas y las saetas",
+          "isCorrect": false
+        },
+        {
+          "text": "Se besaron y lloraron el uno con el otro",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

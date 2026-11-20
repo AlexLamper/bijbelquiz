@@ -1,0 +1,242 @@
+{
+  "title": "2 Samuel Quiz bíblico - Capítulo 8",
+  "description": "Diez preguntas sobre 2 Samuel 8: las victorias de David sobre Moab, Soba y Edom, los dones de Toi y los oficiales de su reino.",
+  "slug": "2-samuel-quiz-part-8",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Con qué midió David a los de Moab después de herirlos?",
+      "explanation": "Hirió a los de Moab y los midió con cordel, haciéndolos echar por tierra: dos cordeles para muerte y un cordel entero para vida.",
+      "bibleReference": "2 Samuel 8:2",
+      "answers": [
+        {
+          "text": "Con una vara de hierro",
+          "isCorrect": false
+        },
+        {
+          "text": "Con cordel",
+          "isCorrect": true
+        },
+        {
+          "text": "Con una caña de medir",
+          "isCorrect": false
+        },
+        {
+          "text": "Con los escudos de oro",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quién hirió David, el rey de Soba que iba a extender su término hasta el río de Eufrates?",
+      "explanation": "David hirió á Hadad-ezer hijo de Rehob, rey de Soba, cuando él iba a extender su término hasta el río de Eufrates.",
+      "bibleReference": "2 Samuel 8:3",
+      "answers": [
+        {
+          "text": "A Hadad-ezer hijo de Rehob",
+          "isCorrect": true
+        },
+        {
+          "text": "A Toi rey de Hamath",
+          "isCorrect": false
+        },
+        {
+          "text": "A Hiram rey de Tiro",
+          "isCorrect": false
+        },
+        {
+          "text": "A Joram hijo de Toi",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos hombres de a pie tomó David de los de Hadad-ezer?",
+      "explanation": "David tomó de ellos mil y setecientos de á caballo, y veinte mil hombres de á pie.",
+      "bibleReference": "2 Samuel 8:4",
+      "answers": [
+        {
+          "text": "Mil y setecientos",
+          "isCorrect": false
+        },
+        {
+          "text": "Veinte y dos mil",
+          "isCorrect": false
+        },
+        {
+          "text": "Diez y ocho mil",
+          "isCorrect": false
+        },
+        {
+          "text": "Veinte mil",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos carros dejó David sin desjarretar los caballos?",
+      "explanation": "David desjarretó los caballos de todos los carros, excepto cien carros de ellos que dejó.",
+      "bibleReference": "2 Samuel 8:4",
+      "answers": [
+        {
+          "text": "Veinte carros",
+          "isCorrect": false
+        },
+        {
+          "text": "Mil carros",
+          "isCorrect": false
+        },
+        {
+          "text": "Cien carros",
+          "isCorrect": true
+        },
+        {
+          "text": "Ningún carro",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos Siros de Damasco hirió David cuando vinieron a ayudar a Hadad-ezer?",
+      "explanation": "Vinieron los Siros de Damasco á dar ayuda á Hadad-ezer rey de Soba, y David hirió de los Siros veinte y dos mil hombres.",
+      "bibleReference": "2 Samuel 8:5",
+      "answers": [
+        {
+          "text": "Veinte y dos mil hombres",
+          "isCorrect": true
+        },
+        {
+          "text": "Veinte mil hombres",
+          "isCorrect": false
+        },
+        {
+          "text": "Diez y ocho mil hombres",
+          "isCorrect": false
+        },
+        {
+          "text": "Trescientos sesenta hombres",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué tomó David de los siervos de Hadad-ezer y llevó a Jerusalem?",
+      "explanation": "David tomó los escudos de oro que traían los siervos de Hadad-ezer y los llevó á Jerusalem.",
+      "bibleReference": "2 Samuel 8:7",
+      "answers": [
+        {
+          "text": "Los caballos de los carros",
+          "isCorrect": false
+        },
+        {
+          "text": "El metal de Beta y Beeroth",
+          "isCorrect": false
+        },
+        {
+          "text": "Los vasos de plata de Toi",
+          "isCorrect": false
+        },
+        {
+          "text": "Los escudos de oro",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿A quién envió Toi, rey de Hamath, al rey David para saludarle?",
+      "explanation": "Toi envió á Joram su hijo al rey David, á saludarle pacíficamente y á bendecirle, porque había peleado con Hadad-ezer y lo había vencido.",
+      "bibleReference": "2 Samuel 8:9-10",
+      "answers": [
+        {
+          "text": "A Hadad-ezer, su aliado",
+          "isCorrect": false
+        },
+        {
+          "text": "A Joram su hijo",
+          "isCorrect": true
+        },
+        {
+          "text": "A Rehob, rey de Soba",
+          "isCorrect": false
+        },
+        {
+          "text": "A Seraía el escriba",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde hirió David diez y ocho mil hombres, ganando fama al volver de la rota de los Siros?",
+      "explanation": "David ganó fama cuando, volviendo de la rota de los Siros, hirió diez y ocho mil hombres en el valle de la sal.",
+      "bibleReference": "2 Samuel 8:13",
+      "answers": [
+        {
+          "text": "En el valle de Raphaim",
+          "isCorrect": false
+        },
+        {
+          "text": "Junto al río de Eufrates",
+          "isCorrect": false
+        },
+        {
+          "text": "En el valle de la sal",
+          "isCorrect": true
+        },
+        {
+          "text": "En la tierra de Soba",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quiénes eran general del ejército de David y canciller?",
+      "explanation": "Joab hijo de Sarvia era general de su ejército, y Josaphat hijo de Ahilud, canciller.",
+      "bibleReference": "2 Samuel 8:16",
+      "answers": [
+        {
+          "text": "Abner hijo de Ner y Seraía",
+          "isCorrect": false
+        },
+        {
+          "text": "Sadoc hijo de Ahitud y Ahimelech",
+          "isCorrect": false
+        },
+        {
+          "text": "Benahía hijo de Joiada y Abisai",
+          "isCorrect": false
+        },
+        {
+          "text": "Joab hijo de Sarvia y Josaphat hijo de Ahilud",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Sobre quiénes estaba Benahía hijo de Joiada?",
+      "explanation": "Benahía hijo de Joiada era sobre los Ceretheos y Peletheos.",
+      "bibleReference": "2 Samuel 8:18",
+      "answers": [
+        {
+          "text": "Sobre los sacerdotes del rey",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre los príncipes de Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre los escribas del reino",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre los Ceretheos y Peletheos",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

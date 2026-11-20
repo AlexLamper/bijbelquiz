@@ -1,0 +1,122 @@
+{
+  "title": "2 Reyes Quiz bíblico - Capítulo 16",
+  "description": "Diez preguntas sobre 2 Reyes 16: Achâz rey de Judá, el presente al rey de Asiria y el altar copiado de Damasco.",
+  "slug": "2-kings-quiz-part-16",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cuántos años tenía Achâz cuando comenzó a reinar?",
+      "explanation": "Cuando Achâz comenzó a reinar era de veinte años, y reinó en Jerusalem dieciséis años.",
+      "bibleReference": "2 Reyes 16:2",
+      "answers": [
+        { "text": "Dieciséis años", "isCorrect": false },
+        { "text": "Veinte años", "isCorrect": true },
+        { "text": "Veinticinco años", "isCorrect": false },
+        { "text": "Doce años", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Achâz con su hijo, según las abominaciones de las gentes?",
+      "explanation": "Achâz anduvo en el camino de los reyes de Israel y aun hizo pasar por el fuego a su hijo, según las abominaciones de las gentes que Jehová echó de delante de los hijos de Israel.",
+      "bibleReference": "2 Reyes 16:3",
+      "answers": [
+        { "text": "Lo hizo pasar por el fuego", "isCorrect": true },
+        { "text": "Lo envió como rehén a Samaria", "isCorrect": false },
+        { "text": "Lo puso por sacerdote de los altos", "isCorrect": false },
+        { "text": "Lo entregó al rey de Siria", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Dónde sacrificó y quemó perfumes Achâz?",
+      "explanation": "Achâz sacrificó y quemó perfumes en los altos, y sobre los collados, y debajo de todo árbol umbroso.",
+      "bibleReference": "2 Reyes 16:4",
+      "answers": [
+        { "text": "Solo en el templo de Jehová en Jerusalem", "isCorrect": false },
+        { "text": "En los templos de los altos de Samaria", "isCorrect": false },
+        { "text": "En las ciudades de los Siros, junto a Damasco", "isCorrect": false },
+        { "text": "En los altos, los collados y debajo de todo árbol umbroso", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué ocurrió cuando Resín rey de Siria y Peka subieron a cercar a Achâz?",
+      "explanation": "Resín rey de Siria y Peka hijo de Remalías subieron a Jerusalem para hacer guerra y cercar a Achâz, mas no pudieron tomarla.",
+      "bibleReference": "2 Reyes 16:5",
+      "answers": [
+        { "text": "Quemaron la casa de Jehová", "isCorrect": false },
+        { "text": "Rompieron el muro de la ciudad", "isCorrect": false },
+        { "text": "No pudieron tomar Jerusalem", "isCorrect": true },
+        { "text": "Llevaron a Achâz cautivo a Damasco", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué le pidió Achâz a Tiglath-pileser rey de Asiria por medio de sus embajadores?",
+      "explanation": "Achâz le dijo: \"Yo soy tu siervo y tu hijo: sube, y defiéndeme de mano del rey de Siria, y de mano del rey de Israel, que se han levantado contra mí\".",
+      "bibleReference": "2 Reyes 16:7",
+      "answers": [
+        { "text": "Que le devolviera la ciudad de Elath y echara de allí a los Siros", "isCorrect": false },
+        { "text": "Que subiera a defenderlo del rey de Siria y del rey de Israel", "isCorrect": true },
+        { "text": "Que le enviara el diseño de un altar como el de Damasco", "isCorrect": false },
+        { "text": "Que hiciera pacto con Resín rey de Siria y con Peka", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Con qué hizo Achâz el presente que envió al rey de Asiria?",
+      "explanation": "Achâz tomó la plata y el oro que se halló en la casa de Jehová y en los tesoros de la casa real, y lo envió al rey de Asiria como presente.",
+      "bibleReference": "2 Reyes 16:8",
+      "answers": [
+        { "text": "Con la plata y el oro de la casa de Jehová y de la casa real", "isCorrect": true },
+        { "text": "Con el dinero que impuso sobre todo el pueblo de la tierra", "isCorrect": false },
+        { "text": "Con el bronce de las basas y de las fuentes del templo", "isCorrect": false },
+        { "text": "Con el despojo que tomó de los Siros en Elath", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué hizo el rey de Asiria después de atender a Achâz?",
+      "explanation": "El rey de Asiria subió contra Damasco, la tomó, transportó los moradores a Kir y mató a Resín.",
+      "bibleReference": "2 Reyes 16:9",
+      "answers": [
+        { "text": "Cercó Samaria durante tres años", "isCorrect": false },
+        { "text": "Hizo pacto con Peka hijo de Remalías", "isCorrect": false },
+        { "text": "Volvió a su tierra sin hacer nada", "isCorrect": false },
+        { "text": "Tomó Damasco y mató a Resín", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué envió el rey Achâz desde Damasco al sacerdote Urías?",
+      "explanation": "Cuando Achâz vio el altar que estaba en Damasco, envió a Urías el sacerdote el diseño y la descripción del altar, conforme a toda su hechura.",
+      "bibleReference": "2 Reyes 16:10",
+      "answers": [
+        { "text": "Un altar de bronce ya terminado", "isCorrect": false },
+        { "text": "Oro y plata para los vasos del templo", "isCorrect": false },
+        { "text": "El diseño y la descripción del altar", "isCorrect": true },
+        { "text": "Una carta prohibiendo los holocaustos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el mandato de Achâz a Urías, ¿para qué quedaría el altar de bronce?",
+      "explanation": "Achâz mandó que en el gran altar se encendieran los holocaustos y los presentes, y dijo: \"el altar de bronce será mío para preguntar en él\".",
+      "bibleReference": "2 Reyes 16:15",
+      "answers": [
+        { "text": "Sería del rey, para preguntar en él", "isCorrect": true },
+        { "text": "Sería deshecho y repartido entre los sacerdotes", "isCorrect": false },
+        { "text": "Sería llevado como presente a Damasco", "isCorrect": false },
+        { "text": "Sería puesto sobre los bueyes de bronce", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Quién reinó en lugar de Achâz cuando él durmió con sus padres?",
+      "explanation": "Achâz fue sepultado con sus padres en la ciudad de David, y reinó en su lugar Ezechîas su hijo.",
+      "bibleReference": "2 Reyes 16:20",
+      "answers": [
+        { "text": "Jotham su padre", "isCorrect": false },
+        { "text": "Ezechîas su hijo", "isCorrect": true },
+        { "text": "Urías el sacerdote", "isCorrect": false },
+        { "text": "Oseas hijo de Ela", "isCorrect": false }
+      ]
+    }
+  ]
+}

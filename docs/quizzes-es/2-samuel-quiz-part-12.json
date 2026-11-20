@@ -1,0 +1,242 @@
+{
+  "title": "2 Samuel Quiz bíblico - Capítulo 12",
+  "description": "Diez preguntas sobre 2 Samuel 12: la parábola de la cordera que Nathán cuenta a David, la muerte del niño, el nacimiento de Salomón y la toma de Rabba.",
+  "slug": "2-samuel-quiz-part-12",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿A quién envió Jehová a David al comienzo del capítulo?",
+      "explanation": "Jehová envió a Nathán a David, y este vino a él y le contó la historia de dos hombres de una ciudad, uno rico y otro pobre.",
+      "bibleReference": "2 Samuel 12:1",
+      "answers": [
+        {
+          "text": "A Joab",
+          "isCorrect": false
+        },
+        {
+          "text": "A Uría Hetheo",
+          "isCorrect": false
+        },
+        {
+          "text": "A Nathán",
+          "isCorrect": true
+        },
+        {
+          "text": "A Abisai",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según la historia que contó Nathán, ¿qué tenía el hombre pobre?",
+      "explanation": "El pobre no tenía más que una sola cordera, que había comprado y criado, que comía de su bocado, bebía de su vaso y dormía en su seno, y la tenía como a una hija.",
+      "bibleReference": "2 Samuel 12:3",
+      "answers": [
+        {
+          "text": "Una sola cordera, que tenía como a una hija",
+          "isCorrect": true
+        },
+        {
+          "text": "Numerosas ovejas y vacas en el campo",
+          "isCorrect": false
+        },
+        {
+          "text": "Un campo y una viña junto a la ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "Una casa en la ciudad real",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo el hombre rico cuando le llegó un caminante?",
+      "explanation": "El rico no quiso tomar de sus propias ovejas y vacas para guisar al caminante, sino que tomó la oveja del hombre pobre y la aderezó para el que le había venido.",
+      "bibleReference": "2 Samuel 12:4",
+      "answers": [
+        {
+          "text": "Lo despidió sin darle nada",
+          "isCorrect": false
+        },
+        {
+          "text": "Guisó una de sus propias vacas",
+          "isCorrect": false
+        },
+        {
+          "text": "Le dio solamente pan y agua de su casa",
+          "isCorrect": false
+        },
+        {
+          "text": "Tomó la oveja del pobre y la aderezó para él",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Con cuántos tantos dijo David que debía pagarse la cordera?",
+      "explanation": "David dijo que el que había hecho tal cosa era digno de muerte y que debía pagar la cordera con cuatro tantos, porque no tuvo misericordia.",
+      "bibleReference": "2 Samuel 12:5-6",
+      "answers": [
+        {
+          "text": "Con dos tantos",
+          "isCorrect": false
+        },
+        {
+          "text": "Con cuatro tantos",
+          "isCorrect": true
+        },
+        {
+          "text": "Con siete tantos",
+          "isCorrect": false
+        },
+        {
+          "text": "Con diez tantos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué palabras le dijo Nathán a David al terminar la historia?",
+      "explanation": "Nathán dijo a David: Tú eres aquel hombre; y le recordó que Jehová lo había ungido por rey sobre Israel y lo había librado de la mano de Saúl.",
+      "bibleReference": "2 Samuel 12:7",
+      "answers": [
+        {
+          "text": "Tú eres aquel hombre",
+          "isCorrect": true
+        },
+        {
+          "text": "Vive Jehová, que eres inocente",
+          "isCorrect": false
+        },
+        {
+          "text": "Busca a ese hombre en la ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "Yo soy aquel hombre pobre",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué anunció Jehová por boca de Nathán acerca de las mujeres de David?",
+      "explanation": "Jehová dijo que levantaría el mal sobre David de su misma casa y que tomaría sus mujeres delante de sus ojos y las daría a su prójimo, el cual yacería con ellas a la vista del sol.",
+      "bibleReference": "2 Samuel 12:11",
+      "answers": [
+        {
+          "text": "Que serían llevadas a Rabba de los hijos de Ammón",
+          "isCorrect": false
+        },
+        {
+          "text": "Que todas morirían de enfermedad en la casa real",
+          "isCorrect": false
+        },
+        {
+          "text": "Que las tomaría delante de sus ojos y las daría a su prójimo",
+          "isCorrect": true
+        },
+        {
+          "text": "Que volverían a la casa de Saúl",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le respondió Nathán cuando David dijo: Pequé contra Jehová?",
+      "explanation": "Nathán dijo a David que Jehová también había remitido su pecado y que no moriría; pero que el hijo que le había nacido moriría ciertamente.",
+      "bibleReference": "2 Samuel 12:13-14",
+      "answers": [
+        {
+          "text": "Que debía dejar el reino a otro",
+          "isCorrect": false
+        },
+        {
+          "text": "Que él mismo moriría al séptimo día",
+          "isCorrect": false
+        },
+        {
+          "text": "Que debía ayunar y llorar cuarenta días",
+          "isCorrect": false
+        },
+        {
+          "text": "Que Jehová había remitido su pecado y que no moriría",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo David en cuanto supo que el niño había muerto?",
+      "explanation": "David se levantó de tierra, se lavó y se ungió, mudó sus ropas, entró en la casa de Jehová y adoró; después vino a su casa, pidió pan y comió.",
+      "bibleReference": "2 Samuel 12:20",
+      "answers": [
+        {
+          "text": "Siguió acostado en tierra, ayunando y llorando",
+          "isCorrect": false
+        },
+        {
+          "text": "Se lavó, se ungió, entró en la casa de Jehová a adorar y luego comió",
+          "isCorrect": true
+        },
+        {
+          "text": "Salió en seguida a la guerra contra Rabba",
+          "isCorrect": false
+        },
+        {
+          "text": "Rasgó sus vestidos y lloró durante siete días",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué nombre dio David al hijo que le parió Bath-sheba después?",
+      "explanation": "David consoló a Bath-sheba su mujer y ella parió un hijo, y le llamó Salomón, al cual amó Jehová.",
+      "bibleReference": "2 Samuel 12:24",
+      "answers": [
+        {
+          "text": "Salomón",
+          "isCorrect": true
+        },
+        {
+          "text": "Eliam",
+          "isCorrect": false
+        },
+        {
+          "text": "Nathán",
+          "isCorrect": false
+        },
+        {
+          "text": "Hanún",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuánto pesaba la corona que David tomó de la cabeza del rey de Rabba?",
+      "explanation": "David tomó la corona de su rey de su cabeza, la cual pesaba un talento de oro y tenía piedras preciosas, y fue puesta sobre la cabeza de David.",
+      "bibleReference": "2 Samuel 12:30",
+      "answers": [
+        {
+          "text": "Veinte siclos de plata",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuatro talentos de plata",
+          "isCorrect": false
+        },
+        {
+          "text": "Un talento de oro",
+          "isCorrect": true
+        },
+        {
+          "text": "Setecientos siclos de oro",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

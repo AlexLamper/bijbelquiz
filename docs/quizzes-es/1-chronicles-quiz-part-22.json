@@ -1,0 +1,122 @@
+{
+  "title": "1 Crónicas Quiz bíblico - Capítulo 22",
+  "description": "Diez preguntas sobre 1 Crónicas 22: los preparativos de David para la casa de Jehová y el encargo que dio a Salomón y a los principales de Israel.",
+  "slug": "1-chronicles-quiz-part-22",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué dijo David acerca de aquel lugar al comienzo del capítulo?",
+      "explanation": "David dijo: Esta es la casa de Jehová Dios, y este es el altar del holocausto para Israel.",
+      "bibleReference": "1 Crónicas 22:1",
+      "answers": [
+        { "text": "Esta es la casa de Jehová Dios", "isCorrect": true },
+        { "text": "Este es el monte de Gabaón", "isCorrect": false },
+        { "text": "Aquí estará el arca del pacto", "isCorrect": false },
+        { "text": "Este será el palacio del rey", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿A quiénes mandó juntar David, y qué oficio señaló entre ellos?",
+      "explanation": "David mandó que se juntasen los extranjeros que estaban en la tierra de Israel, y señaló de ellos canteros que labrasen piedras para edificar la casa de Dios.",
+      "bibleReference": "1 Crónicas 22:2",
+      "answers": [
+        { "text": "A los Levitas, como cantores", "isCorrect": false },
+        { "text": "A los extranjeros, como canteros", "isCorrect": true },
+        { "text": "A los sacerdotes, como porteros", "isCorrect": false },
+        { "text": "A los capitanes, como jueces", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Para qué aparejó David mucho hierro?",
+      "explanation": "David aparejó mucho hierro para la clavazón de las puertas y para las junturas, y mucho metal sin peso.",
+      "bibleReference": "1 Crónicas 22:3",
+      "answers": [
+        { "text": "Para las armas del ejército", "isCorrect": false },
+        { "text": "Para el mar de bronce", "isCorrect": false },
+        { "text": "Para la clavazón de las puertas", "isCorrect": true },
+        { "text": "Para los carros del rey", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Quiénes habían traído a David madera de cedro innumerable?",
+      "explanation": "Los Sidonios y Tirios habían traído á David madera de cedro innumerable.",
+      "bibleReference": "1 Crónicas 22:4",
+      "answers": [
+        { "text": "Los Filisteos y Moabitas", "isCorrect": false },
+        { "text": "Los Ammonitas y Idumeos", "isCorrect": false },
+        { "text": "Los Siros de Damasco", "isCorrect": false },
+        { "text": "Los Sidonios y Tirios", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Cómo describió David a su hijo Salomón al explicar por qué preparaba todo él mismo?",
+      "explanation": "David dijo: Salomón mi hijo es muchacho y tierno, y la casa que se ha de edificar á Jehová ha de ser magnífica por excelencia.",
+      "bibleReference": "1 Crónicas 22:5",
+      "answers": [
+        { "text": "Muchacho y tierno", "isCorrect": true },
+        { "text": "Valiente y esforzado", "isCorrect": false },
+        { "text": "Entendido en los tiempos", "isCorrect": false },
+        { "text": "Varón de guerra", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según la palabra de Jehová que David contó a su hijo, ¿por qué no edificaría David casa a su nombre?",
+      "explanation": "Vino á David palabra de Jehová: Tú has derramado mucha sangre y has traído grandes guerras; no edificarás casa á mi nombre.",
+      "bibleReference": "1 Crónicas 22:8",
+      "answers": [
+        { "text": "Porque era ya viejo y cansado", "isCorrect": false },
+        { "text": "Porque había derramado mucha sangre", "isCorrect": true },
+        { "text": "Porque no tenía oro bastante", "isCorrect": false },
+        { "text": "Porque el arca estaba en Gabaón", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según esa misma palabra, ¿por qué se llamaría Salomón el hijo que le nacería?",
+      "explanation": "Jehová dijo: un hijo te nacerá, el cual será varón de reposo, porque yo le daré quietud de todos sus enemigos; por tanto su nombre será Salomón.",
+      "bibleReference": "1 Crónicas 22:9",
+      "answers": [
+        { "text": "Porque será rey sobre Israel", "isCorrect": false },
+        { "text": "Porque edificará la casa", "isCorrect": false },
+        { "text": "Porque será varón de reposo", "isCorrect": true },
+        { "text": "Porque será sabio entre todos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué le prometió David a Salomón si cuidaba de poner por obra los estatutos y derechos que Jehová mandó a Moisés?",
+      "explanation": "David dijo: Entonces serás prosperado, si cuidares de poner por obra los estatutos y derechos que Jehová mandó á Moisés para Israel.",
+      "bibleReference": "1 Crónicas 22:13",
+      "answers": [
+        { "text": "Entonces verás á Jehová", "isCorrect": false },
+        { "text": "Entonces reinarás en Hebrón", "isCorrect": false },
+        { "text": "Entonces vencerás á los Filisteos", "isCorrect": false },
+        { "text": "Entonces serás prosperado", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Cuánto oro dijo David que había prevenido para la casa de Jehová?",
+      "explanation": "David dijo que en su estrechez había prevenido para la casa de Jehová cien mil talentos de oro, y un millar de millares de talentos de plata.",
+      "bibleReference": "1 Crónicas 22:14",
+      "answers": [
+        { "text": "Cien mil talentos de oro", "isCorrect": true },
+        { "text": "Mil talentos de oro", "isCorrect": false },
+        { "text": "Un talento de oro", "isCorrect": false },
+        { "text": "Seiscientos siclos de oro", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué mandó David a los principales de Israel que pusieran en su corazón y en su ánimo?",
+      "explanation": "David les dijo: Poned ahora vuestros corazones y vuestros ánimos en buscar á Jehová vuestro Dios; y levantaos, y edificad el santuario del Dios Jehová.",
+      "bibleReference": "1 Crónicas 22:19",
+      "answers": [
+        { "text": "Contar al pueblo de Israel", "isCorrect": false },
+        { "text": "Buscar á Jehová y edificar el santuario", "isCorrect": true },
+        { "text": "Traer presentes al rey Salomón", "isCorrect": false },
+        { "text": "Juntarse para la guerra", "isCorrect": false }
+      ]
+    }
+  ]
+}

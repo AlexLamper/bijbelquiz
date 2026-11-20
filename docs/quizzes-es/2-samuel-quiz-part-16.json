@@ -1,0 +1,242 @@
+{
+  "title": "2 Samuel Quiz bíblico - Capítulo 16",
+  "description": "Diez preguntas sobre 2 Samuel 16: Siba y sus provisiones, las maldiciones de Semei en Bahurim y el consejo de Achitophel a Absalom.",
+  "slug": "2-samuel-quiz-part-16",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué llevaba Siba, el criado de Mephi-boseth, cuando salió a recibir a David?",
+      "explanation": "Siba salió a recibir a David con un par de asnos enalbardados y, sobre ellos, doscientos panes, cien hilos de pasas, cien panes de higos secos y un cuero de vino.",
+      "bibleReference": "2 Samuel 16:1",
+      "answers": [
+        {
+          "text": "Carros, caballos y cincuenta hombres de a pie",
+          "isCorrect": false
+        },
+        {
+          "text": "Un par de asnos con panes, pasas, higos secos y un cuero de vino",
+          "isCorrect": true
+        },
+        {
+          "text": "El arca del pacto de Dios y los sacerdotes",
+          "isCorrect": false
+        },
+        {
+          "text": "Ovejas, vacas, harina y grano tostado",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según Siba, ¿por qué se había quedado Mephi-boseth en Jerusalem?",
+      "explanation": "Siba respondió al rey que el hijo de su señor se había quedado en Jerusalem porque había dicho: Hoy me devolverá la casa de Israel el reino de mi padre.",
+      "bibleReference": "2 Samuel 16:3",
+      "answers": [
+        {
+          "text": "Porque estaba enfermo y no podía andar",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque guardaba la casa del rey",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque Absalom lo había tomado preso",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque esperaba recibir el reino de su padre",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le concedió el rey a Siba al oír su respuesta?",
+      "explanation": "El rey dijo a Siba: He aquí, sea tuyo todo lo que tiene Mephi-boseth; y Siba se inclinó pidiendo hallar gracia delante de él.",
+      "bibleReference": "2 Samuel 16:4",
+      "answers": [
+        {
+          "text": "Todo lo que tenía Mephi-boseth",
+          "isCorrect": true
+        },
+        {
+          "text": "Un lugar entre los hombres valientes",
+          "isCorrect": false
+        },
+        {
+          "text": "La casa real de Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "Diez siclos de plata",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quién salió maldiciendo a David cuando el rey llegó a Bahurim?",
+      "explanation": "Cuando el rey David vino hasta Bahurim, salió uno de la familia de la casa de Saúl llamado Semei, hijo de Gera, y salía maldiciendo.",
+      "bibleReference": "2 Samuel 16:5",
+      "answers": [
+        {
+          "text": "Siba, el criado de Mephi-boseth",
+          "isCorrect": false
+        },
+        {
+          "text": "Achitophel Gilonita, del consejo de David",
+          "isCorrect": false
+        },
+        {
+          "text": "Semei, hijo de Gera, de la familia de la casa de Saúl",
+          "isCorrect": true
+        },
+        {
+          "text": "Ittai Getheo, el extranjero de Gath",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué palabras llamaba Semei a David mientras lo maldecía?",
+      "explanation": "Semei le decía, maldiciéndole: Sal, sal, varón de sangres, y hombre de Belial.",
+      "bibleReference": "2 Samuel 16:7",
+      "answers": [
+        {
+          "text": "Varón de sangres y hombre de Belial",
+          "isCorrect": true
+        },
+        {
+          "text": "Perro muerto y siervo de Saúl",
+          "isCorrect": false
+        },
+        {
+          "text": "Rey de Israel y de Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "Ángel de Dios y vidente",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pidió permiso para hacer Abisai hijo de Sarvia?",
+      "explanation": "Abisai preguntó al rey por qué aquel perro muerto maldecía a su señor y le rogó que le dejara pasar para quitarle la cabeza.",
+      "bibleReference": "2 Samuel 16:9",
+      "answers": [
+        {
+          "text": "Llevar a Semei preso a Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "Volver a la ciudad a avisar a los sacerdotes",
+          "isCorrect": false
+        },
+        {
+          "text": "Apedrear a los siervos de Semei",
+          "isCorrect": false
+        },
+        {
+          "text": "Pasar y quitarle la cabeza a Semei",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué respondió David a Abisai y a sus siervos acerca de aquellas maldiciones?",
+      "explanation": "David dijo que lo dejaran maldecir, porque Jehová se lo había dicho, y que quizá Jehová miraría su aflicción y le daría bien por las maldiciones de aquel día.",
+      "bibleReference": "2 Samuel 16:11-12",
+      "answers": [
+        {
+          "text": "Que lo apedrearan como él los apedreaba",
+          "isCorrect": false
+        },
+        {
+          "text": "Que lo dejaran maldecir, porque Jehová se lo había dicho",
+          "isCorrect": true
+        },
+        {
+          "text": "Que lo llevaran delante de Absalom",
+          "isCorrect": false
+        },
+        {
+          "text": "Que volvieran todos juntos a Jerusalem",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Husai cuando llegó ante Absalom?",
+      "explanation": "Cuando Husai, amigo de David, llegó a Absalom, le dijo: Viva el rey, viva el rey.",
+      "bibleReference": "2 Samuel 16:16",
+      "answers": [
+        {
+          "text": "Entontece, oh Jehová, este consejo",
+          "isCorrect": false
+        },
+        {
+          "text": "Oh rey, salva",
+          "isCorrect": false
+        },
+        {
+          "text": "Viva el rey, viva el rey",
+          "isCorrect": true
+        },
+        {
+          "text": "Vive Jehová, que eres digno de muerte",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué consejo dio Achitophel a Absalom cuando este le dijo: Consultad qué haremos?",
+      "explanation": "Achitophel dijo a Absalom que entrara a las concubinas de su padre, que él había dejado para guardar la casa, para que todo Israel oyera que se había hecho aborrecible a su padre y así se esforzaran las manos de los que estaban con él.",
+      "bibleReference": "2 Samuel 16:20-21",
+      "answers": [
+        {
+          "text": "Que persiguiera a David hasta los campos del desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "Que enviara espías por todas las tribus",
+          "isCorrect": false
+        },
+        {
+          "text": "Que hiciera volver el arca de Dios a Hebrón con los sacerdotes",
+          "isCorrect": false
+        },
+        {
+          "text": "Que entrara a las concubinas que su padre había dejado para guardar la casa",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo describe el texto el consejo que daba Achitophel en aquellos días?",
+      "explanation": "El consejo que daba Achitophel en aquellos días era como si consultaran la palabra de Dios; tal era su consejo, así con David como con Absalom.",
+      "bibleReference": "2 Samuel 16:23",
+      "answers": [
+        {
+          "text": "Era como si consultaran la palabra de Dios",
+          "isCorrect": true
+        },
+        {
+          "text": "Era tenido por necio en todo Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Nadie lo escuchaba en la casa del rey",
+          "isCorrect": false
+        },
+        {
+          "text": "Sólo servía para la guerra, no para el juicio",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "1 Crónicas Quiz bíblico - Capítulo 3",
+  "description": "Diez preguntas sobre 1 Crónicas 3: los hijos de David nacidos en Hebrón y en Jerusalem, los reyes de la casa de Salomón y los descendientes de Jechônías.",
+  "slug": "1-chronicles-quiz-part-3",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Quién fue el primogénito de los hijos que le nacieron a David en Hebrón?",
+      "explanation": "Entre los hijos que le nacieron a David en Hebrón, Amnón fué el primogénito, de Achînoam Jezreelita.",
+      "bibleReference": "1 Crónicas 3:1",
+      "answers": [
+        {
+          "text": "Daniel",
+          "isCorrect": false
+        },
+        {
+          "text": "Amnón",
+          "isCorrect": true
+        },
+        {
+          "text": "Absalom",
+          "isCorrect": false
+        },
+        {
+          "text": "Adonías",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De qué lugar era rey Talmai, el padre de Maachâ, la madre de Absalom?",
+      "explanation": "El tercero fué Absalom, hijo de Maachâ, hija de Talmai rey de Gesur.",
+      "bibleReference": "1 Crónicas 3:2",
+      "answers": [
+        {
+          "text": "De Carmelo",
+          "isCorrect": false
+        },
+        {
+          "text": "De Jezreel",
+          "isCorrect": false
+        },
+        {
+          "text": "De Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "De Gesur",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cuánto tiempo reinó David en Hebrón, según el texto?",
+      "explanation": "Seis hijos le nacieron en Hebrón, donde reinó siete años y seis meses; y en Jerusalem reinó treinta y tres años.",
+      "bibleReference": "1 Crónicas 3:4",
+      "answers": [
+        {
+          "text": "Siete años y seis meses",
+          "isCorrect": true
+        },
+        {
+          "text": "Treinta y tres años",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuarenta años y seis meses",
+          "isCorrect": false
+        },
+        {
+          "text": "Veintitrés años y tres meses",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quiénes fueron los cuatro hijos que le nacieron a David en Jerusalem de Beth-sua hija de Ammiel?",
+      "explanation": "Estos cuatro le nacieron en Jerusalem de Beth-sua hija de Ammiel: Simma, Sobab, Nathán y Salomón.",
+      "bibleReference": "1 Crónicas 3:5",
+      "answers": [
+        {
+          "text": "Ibaar, Elisama, Eliphelet y Noga",
+          "isCorrect": false
+        },
+        {
+          "text": "Amnón, Daniel, Absalom y Adonías",
+          "isCorrect": false
+        },
+        {
+          "text": "Simma, Sobab, Nathán y Salomón",
+          "isCorrect": true
+        },
+        {
+          "text": "Nepheg, Japhia, Eliada y Eliphelet",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿quién fué hermana de los hijos de David?",
+      "explanation": "Después de nombrar a todos los hijos de David, sin los hijos de las concubinas, el texto dice que Thamar fué hermana de ellos.",
+      "bibleReference": "1 Crónicas 3:9",
+      "answers": [
+        {
+          "text": "Egla",
+          "isCorrect": false
+        },
+        {
+          "text": "Thamar",
+          "isCorrect": true
+        },
+        {
+          "text": "Selomith",
+          "isCorrect": false
+        },
+        {
+          "text": "Abigail",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quién fue el hijo de Salomón?",
+      "explanation": "El texto dice que el hijo de Salomón fué Roboam, cuyo hijo fué Abía.",
+      "bibleReference": "1 Crónicas 3:10",
+      "answers": [
+        {
+          "text": "Asa",
+          "isCorrect": false
+        },
+        {
+          "text": "Josaphat",
+          "isCorrect": false
+        },
+        {
+          "text": "Abía",
+          "isCorrect": false
+        },
+        {
+          "text": "Roboam",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según esta lista, ¿quién fue el hijo de Amón?",
+      "explanation": "El texto dice que Manasés fué padre de Amón, cuyo hijo fué Josías.",
+      "bibleReference": "1 Crónicas 3:13-14",
+      "answers": [
+        {
+          "text": "Josías",
+          "isCorrect": true
+        },
+        {
+          "text": "Ezechîas",
+          "isCorrect": false
+        },
+        {
+          "text": "Achâz",
+          "isCorrect": false
+        },
+        {
+          "text": "Jotham",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quién fue el primogénito de Josías?",
+      "explanation": "Los hijos de Josías fueron Johanán su primogénito, el segundo Joacim, el tercero Sedecías y el cuarto Sallum.",
+      "bibleReference": "1 Crónicas 3:15",
+      "answers": [
+        {
+          "text": "Joacim",
+          "isCorrect": false
+        },
+        {
+          "text": "Sedecías",
+          "isCorrect": false
+        },
+        {
+          "text": "Johanán",
+          "isCorrect": true
+        },
+        {
+          "text": "Sallum",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quiénes son los hijos de Zorobabel que nombra el texto?",
+      "explanation": "Los hijos de Zorobabel fueron Mesullam y Hananías, y Selomith su hermana.",
+      "bibleReference": "1 Crónicas 3:19",
+      "answers": [
+        {
+          "text": "Hasuba y Ohel",
+          "isCorrect": false
+        },
+        {
+          "text": "Mesullam y Hananías",
+          "isCorrect": true
+        },
+        {
+          "text": "Zorobabel y Simi",
+          "isCorrect": false
+        },
+        {
+          "text": "Pelatías y Jesaías",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Al final del capítulo, ¿cuántos hijos de Elioenai se nombran?",
+      "explanation": "El texto dice que los hijos de Elioenai fueron estos siete: Odavias, Eliasib, Palaías, Accub, Johanán, Dalaías y Anani.",
+      "bibleReference": "1 Crónicas 3:24",
+      "answers": [
+        {
+          "text": "Tres",
+          "isCorrect": false
+        },
+        {
+          "text": "Cinco",
+          "isCorrect": false
+        },
+        {
+          "text": "Seis",
+          "isCorrect": false
+        },
+        {
+          "text": "Siete",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

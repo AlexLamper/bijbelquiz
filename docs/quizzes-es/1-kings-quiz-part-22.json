@@ -1,0 +1,242 @@
+{
+  "title": "1 Reyes Quiz bíblico - Capítulo 22",
+  "description": "Diez preguntas sobre 1 Reyes 22: la consulta a los profetas antes de la guerra por Ramoth de Galaad, el aviso de Michêas y la muerte del rey de Israel.",
+  "slug": "1-kings-quiz-part-22",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cuánto tiempo pasó sin guerra entre los Siros é Israel?",
+      "explanation": "El capítulo empieza diciendo que tres años pasaron sin guerra entre los Siros é Israel.",
+      "bibleReference": "1 Reyes 22:1",
+      "answers": [
+        {
+          "text": "Tres años",
+          "isCorrect": true
+        },
+        {
+          "text": "Un año",
+          "isCorrect": false
+        },
+        {
+          "text": "Siete años",
+          "isCorrect": false
+        },
+        {
+          "text": "Doce años",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué ciudad quería el rey de Israel tomar de mano del rey de Siria?",
+      "explanation": "El rey de Israel recordó a sus siervos que Ramoth de Galaad era suya y que callaban en orden á tomarla de mano del rey de Siria.",
+      "bibleReference": "1 Reyes 22:3",
+      "answers": [
+        {
+          "text": "La ciudad de Jezreel",
+          "isCorrect": false
+        },
+        {
+          "text": "Ramoth de Galaad",
+          "isCorrect": true
+        },
+        {
+          "text": "La ciudad de Samaria",
+          "isCorrect": false
+        },
+        {
+          "text": "La ciudad de Damasco",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuántos profetas juntó el rey de Israel para consultarlos?",
+      "explanation": "El rey de Israel juntó los profetas, como cuatrocientos hombres, y les preguntó si debía ir a la guerra contra Ramoth de Galaad.",
+      "bibleReference": "1 Reyes 22:6",
+      "answers": [
+        {
+          "text": "Como cincuenta hombres",
+          "isCorrect": false
+        },
+        {
+          "text": "Como ochocientos hombres",
+          "isCorrect": false
+        },
+        {
+          "text": "Como cuatrocientos hombres",
+          "isCorrect": true
+        },
+        {
+          "text": "Como doce hombres",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué profeta de Jehová aborrecía el rey de Israel porque nunca le profetizaba bien?",
+      "explanation": "El rey de Israel dijo a Josaphat que aún quedaba Michêas, hijo de Imla, pero que lo aborrecía porque nunca le profetizaba bien, sino solamente mal.",
+      "bibleReference": "1 Reyes 22:8",
+      "answers": [
+        {
+          "text": "Sedechîas hijo de Chânaana",
+          "isCorrect": false
+        },
+        {
+          "text": "Amón gobernador de la ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "Joas hijo del rey",
+          "isCorrect": false
+        },
+        {
+          "text": "Michêas hijo de Imla",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué se había hecho Sedechîas hijo de Chânaana?",
+      "explanation": "Sedechîas hijo de Chânaana se había hecho unos cuernos de hierro y dijo que con ellos el rey acornearía á los Siros hasta acabarlos.",
+      "bibleReference": "1 Reyes 22:11",
+      "answers": [
+        {
+          "text": "Una corona de oro",
+          "isCorrect": false
+        },
+        {
+          "text": "Unos cuernos de hierro",
+          "isCorrect": true
+        },
+        {
+          "text": "Un carro de hierro",
+          "isCorrect": false
+        },
+        {
+          "text": "Un manto de pelo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué comparó Michêas a todo Israel esparcido por los montes?",
+      "explanation": "Michêas dijo que había visto a todo Israel esparcido por los montes, como ovejas que no tienen pastor.",
+      "bibleReference": "1 Reyes 22:17",
+      "answers": [
+        {
+          "text": "Con ovejas que no tienen pastor",
+          "isCorrect": true
+        },
+        {
+          "text": "Con palomas en sus nidos",
+          "isCorrect": false
+        },
+        {
+          "text": "Con un ejército bien formado",
+          "isCorrect": false
+        },
+        {
+          "text": "Con árboles talados",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué mandó el rey que mantuvieran a Michêas en la cárcel?",
+      "explanation": "El rey mandó echar a Michêas en la cárcel y mantenerle con pan de angustia y con agua de aflicción hasta que él volviese en paz.",
+      "bibleReference": "1 Reyes 22:27",
+      "answers": [
+        {
+          "text": "Con pan y vino de la mesa del rey",
+          "isCorrect": false
+        },
+        {
+          "text": "Con carne y miel cada día",
+          "isCorrect": false
+        },
+        {
+          "text": "Con pan de angustia y agua de aflicción",
+          "isCorrect": true
+        },
+        {
+          "text": "Con nada durante tres días",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo fue herido el rey de Israel en la batalla?",
+      "explanation": "Un hombre disparó su arco á la ventura e hirió al rey de Israel por entre las junturas de la armadura.",
+      "bibleReference": "1 Reyes 22:34",
+      "answers": [
+        {
+          "text": "Una piedra de un hondero le dio en la frente",
+          "isCorrect": false
+        },
+        {
+          "text": "Un capitán de los carros le derribó del carro",
+          "isCorrect": false
+        },
+        {
+          "text": "Cayó por las celosías de su sala",
+          "isCorrect": false
+        },
+        {
+          "text": "Una flecha disparada á la ventura le hirió entre las junturas",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Después de lavar el carro en el estanque de Samaria, ¿qué hicieron los perros?",
+      "explanation": "Lavaron el carro y las armas en el estanque de Samaria, y los perros lamieron la sangre del rey, conforme á la palabra de Jehová.",
+      "bibleReference": "1 Reyes 22:38",
+      "answers": [
+        {
+          "text": "Lamieron su sangre",
+          "isCorrect": true
+        },
+        {
+          "text": "Huyeron de la ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "Bebieron del estanque",
+          "isCorrect": false
+        },
+        {
+          "text": "Despedazaron sus armas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quién reinó en lugar de Achâb cuando éste durmió con sus padres?",
+      "explanation": "Achâb durmió con sus padres y reinó en su lugar Ochôzías su hijo.",
+      "bibleReference": "1 Reyes 22:40",
+      "answers": [
+        {
+          "text": "Joram su hermano",
+          "isCorrect": false
+        },
+        {
+          "text": "Josaphat rey de Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "Ochôzías su hijo",
+          "isCorrect": true
+        },
+        {
+          "text": "Jehú hijo de Nimsi",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

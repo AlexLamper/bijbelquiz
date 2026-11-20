@@ -1,0 +1,242 @@
+{
+  "title": "2 Samuel Quiz bíblico - Capítulo 21",
+  "description": "Diez preguntas sobre 2 Samuel 21: el hambre de tres años y los Gabaonitas, la vigilia de Rispa, el entierro de los huesos de Saúl y las guerras contra los hijos del gigante.",
+  "slug": "2-samuel-quiz-part-21",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué le respondió Jehová a David cuando le consultó por el hambre de tres años?",
+      "explanation": "Jehová le dijo que era por Saúl y por aquella casa de sangre, porque mató a los Gabaonitas.",
+      "bibleReference": "2 Samuel 21:1",
+      "answers": [
+        {
+          "text": "Que era por la guerra contra los Filisteos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que era por el pecado de los hijos de David",
+          "isCorrect": false
+        },
+        {
+          "text": "Que era por Saúl y por aquella casa de sangre",
+          "isCorrect": true
+        },
+        {
+          "text": "Que era porque el arca no estaba en Jerusalem",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿quiénes eran los Gabaonitas?",
+      "explanation": "Los Gabaonitas no eran de los hijos de Israel, sino del residuo de los Amorrheos, a los cuales los hijos de Israel habían hecho juramento.",
+      "bibleReference": "2 Samuel 21:2",
+      "answers": [
+        {
+          "text": "Del residuo de los Amorrheos",
+          "isCorrect": true
+        },
+        {
+          "text": "De la tribu de Benjamín",
+          "isCorrect": false
+        },
+        {
+          "text": "De los hijos de Ammón",
+          "isCorrect": false
+        },
+        {
+          "text": "De los Filisteos de Gath",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pidieron los Gabaonitas cuando David les preguntó con qué expiaría?",
+      "explanation": "Los Gabaonitas dijeron que no tenían querella sobre plata ni sobre oro y pidieron que se les dieran siete varones de los hijos de aquel hombre, para ahorcarlos a Jehová en Gabaa de Saúl.",
+      "bibleReference": "2 Samuel 21:4-6",
+      "answers": [
+        {
+          "text": "Plata y oro de la casa de Saúl",
+          "isCorrect": false
+        },
+        {
+          "text": "Tierras en el término de Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Que el rey mismo expiara con sacrificios",
+          "isCorrect": false
+        },
+        {
+          "text": "Siete varones de los hijos de Saúl",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿A quién perdonó el rey, y por qué razón?",
+      "explanation": "El rey perdonó a Mephi-boseth, hijo de Jonathán hijo de Saúl, por el juramento de Jehová que hubo entre David y Jonathán hijo de Saúl.",
+      "bibleReference": "2 Samuel 21:7",
+      "answers": [
+        {
+          "text": "A Armoni, porque era el mayor",
+          "isCorrect": false
+        },
+        {
+          "text": "A Mephi-boseth hijo de Jonathán, por el juramento entre David y Jonathán",
+          "isCorrect": true
+        },
+        {
+          "text": "A Rispa hija de Aja, porque era concubina de Saúl",
+          "isCorrect": false
+        },
+        {
+          "text": "A Adriel hijo de Barzillai Molathita, porque era yerno de Saúl",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Rispa hija de Aja después de que los siete fueron ahorcados?",
+      "explanation": "Rispa tomó un saco y lo tendió sobre un peñasco desde el principio de la siega hasta que llovió agua del cielo, y no dejó asentarse sobre ellos ninguna ave del cielo de día ni bestias del campo de noche.",
+      "bibleReference": "2 Samuel 21:10",
+      "answers": [
+        {
+          "text": "Tendió un saco sobre un peñasco y guardó los cuerpos",
+          "isCorrect": true
+        },
+        {
+          "text": "Fue a Jerusalem a quejarse delante del rey",
+          "isCorrect": false
+        },
+        {
+          "text": "Los sepultó de noche en Gabaa de Saúl",
+          "isCorrect": false
+        },
+        {
+          "text": "Huyó a tierra de Benjamín con sus hijos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De dónde habían hurtado los hombres de Jabes de Galaad los huesos de Saúl y de Jonathán?",
+      "explanation": "Los hombres de Jabes de Galaad los habían hurtado de la plaza de Beth-san, donde los Filisteos los habían colgado cuando deshicieron a Saúl en Gilboa.",
+      "bibleReference": "2 Samuel 21:12",
+      "answers": [
+        {
+          "text": "Del sepulcro de Cis en Sela",
+          "isCorrect": false
+        },
+        {
+          "text": "Del monte de Gabaa de Saúl",
+          "isCorrect": false
+        },
+        {
+          "text": "De la plaza de Beth-san",
+          "isCorrect": true
+        },
+        {
+          "text": "Del campo de Gath",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde sepultaron los huesos de Saúl y los de su hijo Jonathán?",
+      "explanation": "Los sepultaron en tierra de Benjamín, en Sela, en el sepulcro de Cis su padre, e hicieron todo lo que el rey había mandado; después se aplacó Dios con la tierra.",
+      "bibleReference": "2 Samuel 21:14",
+      "answers": [
+        {
+          "text": "En Jerusalem, en la ciudad de David",
+          "isCorrect": false
+        },
+        {
+          "text": "En Sela, en el sepulcro de Cis su padre",
+          "isCorrect": true
+        },
+        {
+          "text": "En Jabes de Galaad, con sus hombres",
+          "isCorrect": false
+        },
+        {
+          "text": "En el monte de Gilboa, donde pelearon los Filisteos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le juraron los hombres de David después de que Abisai mató al Filisteo que quiso herirlo?",
+      "explanation": "Los hombres de David le juraron que nunca más saldría con ellos a la batalla, para que no apagara la lámpara de Israel.",
+      "bibleReference": "2 Samuel 21:17",
+      "answers": [
+        {
+          "text": "Que no volverían a pelear contra los Filisteos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que Abisai sería general del ejército",
+          "isCorrect": false
+        },
+        {
+          "text": "Que guardarían su lanza en Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "Que nunca más saldría con ellos a la batalla",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Quién hirió a Goliath Getheo, cuya lanza tenía un asta como un enjullo de telar?",
+      "explanation": "En una guerra en Gob contra los Filisteos, Elhanan hijo de Jaare-oregim de Beth-lehem hirió a Goliath Getheo, el asta de cuya lanza era como un enjullo de telar.",
+      "bibleReference": "2 Samuel 21:19",
+      "answers": [
+        {
+          "text": "Elhanan hijo de Jaare-oregim de Beth-lehem",
+          "isCorrect": true
+        },
+        {
+          "text": "Sibechâi Husathita, que hirió a Saph",
+          "isCorrect": false
+        },
+        {
+          "text": "Abisai hijo de Sarvia, hermano de Joab",
+          "isCorrect": false
+        },
+        {
+          "text": "Jonathán hijo de Sima",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué tenía de particular el hombre de grande altura que había en Gath?",
+      "explanation": "Aquel hombre de grande altura tenía doce dedos en las manos y otros doce en los pies, veinticuatro en todos, y también era de los hijos del gigante.",
+      "bibleReference": "2 Samuel 21:20",
+      "answers": [
+        {
+          "text": "Una lanza que pesaba trescientos siclos de metal",
+          "isCorrect": false
+        },
+        {
+          "text": "Una espada nueva ceñida al lado",
+          "isCorrect": false
+        },
+        {
+          "text": "Doce dedos en las manos y doce en los pies, veinticuatro en todos",
+          "isCorrect": true
+        },
+        {
+          "text": "Un escudo tan grande como un enjullo de telar",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

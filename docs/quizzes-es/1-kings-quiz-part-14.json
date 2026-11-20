@@ -1,0 +1,122 @@
+{
+  "title": "1 Reyes Quiz bíblico - Capítulo 14",
+  "description": "Diez preguntas sobre 1 Reyes 14: la mujer de Jeroboam disfrazada ante el profeta Ahías, la muerte del mozo y el saqueo de Sisac.",
+  "slug": "1-kings-quiz-part-14",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Cuando su hijo Abías cayó enfermo, ¿qué mandó Jeroboam a su mujer?",
+      "explanation": "Le dijo que se disfrazase, para que no la conocieran como mujer de Jeroboam, y que fuese a Silo, donde estaba Ahías profeta.",
+      "bibleReference": "1 Reyes 14:1-2",
+      "answers": [
+        { "text": "Que se disfrazase y fuese a Silo, a Ahías profeta", "isCorrect": true },
+        { "text": "Que llamase a los sacerdotes de los altos de Beth-el", "isCorrect": false },
+        { "text": "Que fuese a Jerusalem a sacrificar en la casa de Jehová", "isCorrect": false },
+        { "text": "Que llevase al mozo enfermo al monte de Ephraim", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué debía llevar en su mano la mujer de Jeroboam?",
+      "explanation": "Jeroboam le dijo que tomase en su mano diez panes, y turrones, y una botija de miel, y fuese a él.",
+      "bibleReference": "1 Reyes 14:3",
+      "answers": [
+        { "text": "Un talento de plata y un anillo de oro", "isCorrect": false },
+        { "text": "Un cordero y dos tórtolas para el sacrificio", "isCorrect": false },
+        { "text": "Diez panes, turrones y una botija de miel", "isCorrect": true },
+        { "text": "Una tinaja de harina y una botija de aceite", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Por qué no podía ver ya el profeta Ahías?",
+      "explanation": "Ahías no podía ya ver, porque sus ojos se habían oscurecido a causa de su vejez.",
+      "bibleReference": "1 Reyes 14:4",
+      "answers": [
+        { "text": "Porque estaba en una cueva oscura", "isCorrect": false },
+        { "text": "Porque sus ojos se habían oscurecido por su vejez", "isCorrect": true },
+        { "text": "Porque llevaba un velo sobre los ojos", "isCorrect": false },
+        { "text": "Porque había cubierto su rostro con su manto", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Ahías al oír el sonido de los pies de ella en la puerta?",
+      "explanation": "Dijo: Entra, mujer de Jeroboam; ¿por qué te finges otra? Y añadió que era enviado a ella con revelación dura.",
+      "bibleReference": "1 Reyes 14:6",
+      "answers": [
+        { "text": "Le preguntó quién era y de dónde venía", "isCorrect": false },
+        { "text": "Le pidió que trajese agua en un vaso", "isCorrect": false },
+        { "text": "Le dijo que se volviese sin decirle nada", "isCorrect": false },
+        { "text": "La reconoció y le dijo: ¿por qué te finges otra?", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el mensaje de Jehová, ¿qué pasaría con los de Jeroboam que murieran en la ciudad y con los que murieran en el campo?",
+      "explanation": "El que muriere de los de Jeroboam en la ciudad, le comerán los perros; y el que muriere en el campo, lo comerán las aves del cielo.",
+      "bibleReference": "1 Reyes 14:11",
+      "answers": [
+        { "text": "Todos serían sepultados en la ciudad de David", "isCorrect": false },
+        { "text": "Todos serían llevados de la otra parte del río", "isCorrect": false },
+        { "text": "A los de la ciudad los perros, a los del campo las aves", "isCorrect": true },
+        { "text": "A los de la ciudad las aves, a los del campo los leones", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dijo Ahías que sucedería en el momento en que ella entrara en la ciudad?",
+      "explanation": "Le dijo que se levantase y se fuese a su casa, y que en entrando su pie en la ciudad, moriría el mozo.",
+      "bibleReference": "1 Reyes 14:12",
+      "answers": [
+        { "text": "Que moriría el mozo", "isCorrect": true },
+        { "text": "Que sanaría el mozo", "isCorrect": false },
+        { "text": "Que moriría Jeroboam", "isCorrect": false },
+        { "text": "Que caerían las puertas", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿A qué ciudad vino la mujer de Jeroboam al volver del profeta?",
+      "explanation": "Entonces la mujer de Jeroboam se levantó y se fue, y vino a Thirsa; y entrando ella por el umbral de la casa, el mozo murió.",
+      "bibleReference": "1 Reyes 14:17",
+      "answers": [
+        { "text": "A Samaria", "isCorrect": false },
+        { "text": "A Sichêm", "isCorrect": false },
+        { "text": "A Silo", "isCorrect": false },
+        { "text": "A Thirsa", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Cuánto tiempo reinó Jeroboam y quién reinó en su lugar?",
+      "explanation": "El tiempo que reinó Jeroboam fueron veintidós años; y habiendo dormido con sus padres, reinó en su lugar Nadab su hijo.",
+      "bibleReference": "1 Reyes 14:20",
+      "answers": [
+        { "text": "Cuarenta años, y reinó en su lugar Abiam", "isCorrect": false },
+        { "text": "Veintidós años, y reinó en su lugar Nadab", "isCorrect": true },
+        { "text": "Diecisiete años, y reinó en su lugar Baasa", "isCorrect": false },
+        { "text": "Dos años, y reinó en su lugar Ela", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué edad tenía Roboam cuando comenzó a reinar, y cuántos años reinó en Jerusalem?",
+      "explanation": "De cuarenta y un años era Roboam cuando comenzó a reinar, y diecisiete años reinó en Jerusalem.",
+      "bibleReference": "1 Reyes 14:21",
+      "answers": [
+        { "text": "Cuarenta y un años, y reinó diecisiete años", "isCorrect": true },
+        { "text": "Diecisiete años, y reinó cuarenta y un años", "isCorrect": false },
+        { "text": "Veinte años, y reinó veintidós años", "isCorrect": false },
+        { "text": "Treinta años, y reinó tres años", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Quién subió contra Jerusalem en el quinto año del rey Roboam, y qué se llevó?",
+      "explanation": "Subió Sisac rey de Egipto contra Jerusalem, y tomó los tesoros de la casa de Jehová y de la casa real, y se llevó todos los escudos de oro que Salomón había hecho.",
+      "bibleReference": "1 Reyes 14:25-26",
+      "answers": [
+        { "text": "Baasa rey de Israel, y se llevó la piedra de Rama", "isCorrect": false },
+        { "text": "Sisac rey de Egipto, y se llevó los escudos de oro", "isCorrect": true },
+        { "text": "Ben-adad rey de Siria, y se llevó el trono de marfil", "isCorrect": false },
+        { "text": "Jeroboam rey de Israel, y se llevó los becerros de oro", "isCorrect": false }
+      ]
+    }
+  ]
+}

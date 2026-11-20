@@ -1,0 +1,122 @@
+{
+  "title": "1 Reyes Quiz bíblico - Capítulo 12",
+  "description": "Diez preguntas sobre 1 Reyes 12: la dura respuesta de Roboam en Sichêm, la división del reino y los dos becerros de oro de Jeroboam.",
+  "slug": "1-kings-quiz-part-12",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿A qué lugar fue Roboam, porque todo Israel había venido allí para hacerlo rey?",
+      "explanation": "Fue Roboam a Sichêm, porque todo Israel había venido a Sichêm para hacerlo rey.",
+      "bibleReference": "1 Reyes 12:1",
+      "answers": [
+        { "text": "A Beth-el", "isCorrect": false },
+        { "text": "A Sichêm", "isCorrect": true },
+        { "text": "A Penuel", "isCorrect": false },
+        { "text": "A Jerusalem", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué pidió la congregación de Israel a Roboam?",
+      "explanation": "Le dijeron que su padre había agravado su yugo y le pidieron que disminuyese algo de la dura servidumbre y del yugo pesado de su padre, y entonces le servirían.",
+      "bibleReference": "1 Reyes 12:4",
+      "answers": [
+        { "text": "Que les diese parte de los tesoros de la casa real", "isCorrect": false },
+        { "text": "Que los dejase sacrificar en los altos de Samaria", "isCorrect": false },
+        { "text": "Que repartiese la tierra entre las doce tribus", "isCorrect": false },
+        { "text": "Que disminuyese algo del yugo pesado de su padre", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué respondió Roboam al pueblo la primera vez que le hablaron?",
+      "explanation": "Él les dijo: Idos, y de aquí a tres días volved a mí. Y el pueblo se fue.",
+      "bibleReference": "1 Reyes 12:5",
+      "answers": [
+        { "text": "Que volvieran a él al tercer día", "isCorrect": true },
+        { "text": "Que no volvieran nunca más a hablarle", "isCorrect": false },
+        { "text": "Que esperaran un año entero", "isCorrect": false },
+        { "text": "Que fueran a consultar al profeta Ahías", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué consejo le dieron los ancianos que habían estado delante de Salomón?",
+      "explanation": "Le dijeron que si aquel día era siervo de ese pueblo, lo servía y les respondía buenas palabras, ellos le servirían para siempre.",
+      "bibleReference": "1 Reyes 12:7",
+      "answers": [
+        { "text": "Que juntase un ejército y los sometiese por la fuerza", "isCorrect": false },
+        { "text": "Que añadiese más carga al yugo que puso su padre", "isCorrect": false },
+        { "text": "Que les hablase buenas palabras y entonces le servirían siempre", "isCorrect": true },
+        { "text": "Que se fuese a Jerusalem y no les respondiese nada", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué le aconsejaron responder los mancebos que se habían criado con él?",
+      "explanation": "Los mancebos le dijeron que respondiera que el menor dedo de los suyos era más grueso que los lomos de su padre, y que añadiría a su yugo y los heriría con escorpiones.",
+      "bibleReference": "1 Reyes 12:10-11",
+      "answers": [
+        { "text": "Que les perdonara los tributos de todo aquel año", "isCorrect": false },
+        { "text": "Que les dijera que lo pensaría otros tres días", "isCorrect": false },
+        { "text": "Que los dejara volver en paz a sus estancias", "isCorrect": false },
+        { "text": "Que añadiría a su yugo y los heriría con escorpiones", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué respondió el pueblo cuando vio que el rey no le había oído?",
+      "explanation": "El pueblo respondió: ¿Qué parte tenemos nosotros con David? No tenemos heredad en el hijo de Isaí. ¡Israel, a tus estancias! Y entonces Israel se fue a sus estancias.",
+      "bibleReference": "1 Reyes 12:16",
+      "answers": [
+        { "text": "Que irían a Jerusalem a sacrificar en la casa de Jehová", "isCorrect": false },
+        { "text": "Que no tenían parte con David y se fueron a sus estancias", "isCorrect": true },
+        { "text": "Que servirían al rey a pesar de su dura respuesta", "isCorrect": false },
+        { "text": "Que pedirían consejo a los ancianos de Judá", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué le ocurrió a Adoram, que estaba sobre los tributos?",
+      "explanation": "El rey Roboam envió a Adoram, que estaba sobre los tributos, pero todo Israel lo apedreó y murió.",
+      "bibleReference": "1 Reyes 12:18",
+      "answers": [
+        { "text": "Huyó a Egipto con el rey Roboam", "isCorrect": false },
+        { "text": "Fue hecho rey sobre las diez tribus", "isCorrect": false },
+        { "text": "Todo Israel lo apedreó y murió", "isCorrect": true },
+        { "text": "Fue puesto sobre la casa de José", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué tribu quedó siguiendo la casa de David cuando Israel hizo rey a Jeroboam?",
+      "explanation": "Todo Israel hizo rey a Jeroboam sobre todo Israel, sin quedar tribu alguna que siguiese la casa de David, sino sólo la tribu de Judá.",
+      "bibleReference": "1 Reyes 12:20",
+      "answers": [
+        { "text": "Sólo la tribu de Judá", "isCorrect": true },
+        { "text": "Sólo la tribu de Benjamín", "isCorrect": false },
+        { "text": "Sólo la tribu de Leví", "isCorrect": false },
+        { "text": "Sólo la tribu de Ephraim", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué mandó Jehová por medio de Semeías varón de Dios a Roboam y a la casa de Judá?",
+      "explanation": "Jehová dijo que no fuesen ni peleasen contra sus hermanos los hijos de Israel, sino que cada uno se volviese a su casa, porque este negocio lo había hecho él.",
+      "bibleReference": "1 Reyes 12:23-24",
+      "answers": [
+        { "text": "Que subiesen a pelear y recobrasen el reino", "isCorrect": false },
+        { "text": "Que no peleasen contra sus hermanos y volviesen a sus casas", "isCorrect": true },
+        { "text": "Que fuesen a Sichêm a hacer rey a Jeroboam", "isCorrect": false },
+        { "text": "Que derribasen los altares que había en Beth-el", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Jeroboam para que el pueblo no subiera a Jerusalem, y dónde lo puso?",
+      "explanation": "Hizo dos becerros de oro y puso el uno en Beth-el y el otro en Dan, diciendo al pueblo que esos eran sus dioses.",
+      "bibleReference": "1 Reyes 12:28-29",
+      "answers": [
+        { "text": "Dos becerros de oro, uno en Beth-el y otro en Dan", "isCorrect": true },
+        { "text": "Dos altares de piedra, uno en Sichêm y otro en Penuel", "isCorrect": false },
+        { "text": "Dos arcas de madera, una en Thirsa y otra en Samaria", "isCorrect": false },
+        { "text": "Dos estatuas de plata, una en Rama y otra en Mizpa", "isCorrect": false }
+      ]
+    }
+  ]
+}

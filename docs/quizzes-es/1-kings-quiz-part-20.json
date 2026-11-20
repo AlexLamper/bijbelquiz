@@ -1,0 +1,122 @@
+{
+  "title": "1 Reyes Quiz bíblico - Capítulo 20",
+  "description": "Diez preguntas sobre 1 Reyes 20: el cerco de Ben-adad sobre Samaria, las dos victorias de Israel y la palabra del profeta contra el rey.",
+  "slug": "1-kings-quiz-part-20",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Quién puso cerco a Samaria, y con cuántos reyes subió?",
+      "explanation": "Ben-adad rey de Siria juntó a todo su ejército, y con él treinta y dos reyes, con caballos y carros, y subió y puso cerco a Samaria.",
+      "bibleReference": "1 Reyes 20:1",
+      "answers": [
+        { "text": "Sisac rey de Egipto, con doce reyes", "isCorrect": false },
+        { "text": "Hazael rey de Siria, con siete reyes", "isCorrect": false },
+        { "text": "Baasa rey de Israel, con treinta reyes", "isCorrect": false },
+        { "text": "Ben-adad rey de Siria, con treinta y dos reyes", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué reclamó Ben-adad por medio de sus mensajeros al rey de Israel?",
+      "explanation": "Ben-adad dijo: Tu plata y tu oro es mío, y tus mujeres y tus hijos hermosos son míos.",
+      "bibleReference": "1 Reyes 20:3",
+      "answers": [
+        { "text": "Las ciudades de la llanura y los carros de guerra", "isCorrect": false },
+        { "text": "Los tesoros de la casa de Jehová y los escudos de oro", "isCorrect": false },
+        { "text": "Su plata, su oro, sus mujeres y sus hijos hermosos", "isCorrect": true },
+        { "text": "La viña de Naboth y el palacio de Jezreel", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué le respondieron todos los ancianos y todo el pueblo al rey de Israel?",
+      "explanation": "Todos los ancianos y todo el pueblo le respondieron que no le obedeciese ni hiciese lo que pedía.",
+      "bibleReference": "1 Reyes 20:8",
+      "answers": [
+        { "text": "Que le entregase la plata y el oro enseguida", "isCorrect": false },
+        { "text": "Que no le obedeciese ni hiciese lo que pedía", "isCorrect": true },
+        { "text": "Que saliesen de la ciudad con sacos y sogas", "isCorrect": false },
+        { "text": "Que pidiese ayuda a los reyes de Judá", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué mandó responder el rey de Israel cuando Ben-adad amenazó con el polvo de Samaria?",
+      "explanation": "El rey de Israel respondió: Decidle que no se alabe el que se ciñe, como el que ya se desciñe.",
+      "bibleReference": "1 Reyes 20:11",
+      "answers": [
+        { "text": "Que no se alabe el que se ciñe como el que ya se desciñe", "isCorrect": true },
+        { "text": "Que viniese él mismo a pelear en campo raso", "isCorrect": false },
+        { "text": "Que todo lo que tenía era suyo, como él decía", "isCorrect": false },
+        { "text": "Que los dioses de los montes le vencerían", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué le anunció el profeta a Achâb acerca de aquella grande multitud?",
+      "explanation": "El profeta le dijo que así había dicho Jehová: que se la entregaría aquel día en su mano, para que conociese que él es Jehová.",
+      "bibleReference": "1 Reyes 20:13",
+      "answers": [
+        { "text": "Que debía salir de Samaria y rendir la ciudad", "isCorrect": false },
+        { "text": "Que su vida sería por la de Ben-adad", "isCorrect": false },
+        { "text": "Que Jehová se la entregaría aquel día en su mano", "isCorrect": true },
+        { "text": "Que pasado el año volvería el rey de Siria", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Por mano de quién dijo el profeta que vendría la victoria, y quién comenzaría la batalla?",
+      "explanation": "El profeta dijo que sería por mano de los criados de los príncipes de las provincias, y cuando Achâb preguntó quién comenzaría la batalla, respondió: Tú.",
+      "bibleReference": "1 Reyes 20:14",
+      "answers": [
+        { "text": "Por mano de los ancianos de la tierra, y comenzaría el pueblo", "isCorrect": false },
+        { "text": "Por mano de los treinta y dos reyes, y comenzaría Ben-adad", "isCorrect": false },
+        { "text": "Por mano de los hijos de los profetas, y comenzaría el profeta", "isCorrect": false },
+        { "text": "Por mano de los criados de los príncipes, y comenzaría Achâb", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Cuántos eran los criados de los príncipes de las provincias, y cuántos los hijos de Israel?",
+      "explanation": "Reconoció a los criados de los príncipes de las provincias, los cuales fueron doscientos treinta y dos, y luego reconoció todo el pueblo, todos los hijos de Israel, que fueron siete mil.",
+      "bibleReference": "1 Reyes 20:15",
+      "answers": [
+        { "text": "Doscientos treinta y dos, y siete mil", "isCorrect": true },
+        { "text": "Siete mil, y doscientos treinta y dos", "isCorrect": false },
+        { "text": "Treinta y dos, y cien mil", "isCorrect": false },
+        { "text": "Cuatrocientos cincuenta, y veintisiete mil", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué estaba haciendo Ben-adad cuando los de Samaria salieron a medio día?",
+      "explanation": "Estaba Ben-adad bebiendo, borracho en las tiendas, él y los reyes, los treinta y dos reyes que habían venido en su ayuda.",
+      "bibleReference": "1 Reyes 20:16",
+      "answers": [
+        { "text": "Estaba poniendo cerco al muro de la ciudad", "isCorrect": false },
+        { "text": "Estaba bebiendo y borracho en las tiendas", "isCorrect": true },
+        { "text": "Estaba escondido de cámara en cámara", "isCorrect": false },
+        { "text": "Estaba contando el polvo de Samaria", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dijeron los siervos del rey de Siria acerca de los dioses de Israel?",
+      "explanation": "Le dijeron que sus dioses eran dioses de los montes y que por eso les habían vencido, y que si peleasen con ellos en la llanura se vería si no los vencían.",
+      "bibleReference": "1 Reyes 20:23",
+      "answers": [
+        { "text": "Que eran dioses de la mar y de las islas lejanas", "isCorrect": false },
+        { "text": "Que no eran dioses, sino hechura de manos de hombres", "isCorrect": false },
+        { "text": "Que eran dioses de los valles y no de los montes", "isCorrect": false },
+        { "text": "Que eran dioses de los montes, y por eso les vencieron", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué le dijo el profeta al rey de Israel por haber dejado ir a Ben-adad?",
+      "explanation": "Le dijo que así había dicho Jehová: por cuanto soltó de la mano al hombre de su anatema, su vida sería por la suya y su pueblo por el suyo.",
+      "bibleReference": "1 Reyes 20:42",
+      "answers": [
+        { "text": "Que su vida sería por la suya y su pueblo por el suyo", "isCorrect": true },
+        { "text": "Que los perros lamerían su sangre en la ciudad de Samaria", "isCorrect": false },
+        { "text": "Que pasado el año el rey de Siria volvería contra él", "isCorrect": false },
+        { "text": "Que un león le toparía en el camino y le heriría", "isCorrect": false }
+      ]
+    }
+  ]
+}
