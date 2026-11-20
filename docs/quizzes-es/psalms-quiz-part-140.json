@@ -1,0 +1,242 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 140",
+  "description": "Diez preguntas sobre Salmos 140: la petición de ser librado del hombre violento, los lazos de los soberbios y el juicio del afligido.",
+  "slug": "psalms-quiz-part-140",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿De quién pide ser librado al comenzar el salmo?",
+      "explanation": "El versículo 1 pide: \"Líbrame, oh Jehová, de hombre malo: guárdame de hombre violento\".",
+      "bibleReference": "Salmos 140:1",
+      "answers": [
+        {
+          "text": "De los reyes de Babilonia",
+          "isCorrect": false
+        },
+        {
+          "text": "De la mano de Faraón",
+          "isCorrect": false
+        },
+        {
+          "text": "De los sacerdotes de los ídolos",
+          "isCorrect": false
+        },
+        {
+          "text": "Del hombre malo y violento",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hacen cada día los que maquinan males en el corazón?",
+      "explanation": "El versículo 2 dice que cada día urden contiendas.",
+      "bibleReference": "Salmos 140:2",
+      "answers": [
+        {
+          "text": "Reparten pan",
+          "isCorrect": false
+        },
+        {
+          "text": "Urden contiendas",
+          "isCorrect": true
+        },
+        {
+          "text": "Cantan salmos",
+          "isCorrect": false
+        },
+        {
+          "text": "Guardan silencio",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué compara el versículo 3 su lengua?",
+      "explanation": "El versículo dice: \"Aguzaron su lengua como la serpiente\".",
+      "bibleReference": "Salmos 140:3",
+      "answers": [
+        {
+          "text": "Con una espada afilada",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el viento del desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "Con una serpiente",
+          "isCorrect": true
+        },
+        {
+          "text": "Con un lazo de cazador",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hay debajo de sus labios, según el versículo 3?",
+      "explanation": "El versículo dice que hay veneno de áspid debajo de sus labios.",
+      "bibleReference": "Salmos 140:3",
+      "answers": [
+        {
+          "text": "Veneno de áspid",
+          "isCorrect": true
+        },
+        {
+          "text": "Palabras de paz",
+          "isCorrect": false
+        },
+        {
+          "text": "Lazos y cuerdas",
+          "isCorrect": false
+        },
+        {
+          "text": "Brasas de fuego",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le han escondido los soberbios?",
+      "explanation": "El versículo 5 dice que le han escondido lazo y cuerdas.",
+      "bibleReference": "Salmos 140:5",
+      "answers": [
+        {
+          "text": "Pan y agua",
+          "isCorrect": false
+        },
+        {
+          "text": "Oro y plata",
+          "isCorrect": false
+        },
+        {
+          "text": "Espadas y escudos",
+          "isCorrect": false
+        },
+        {
+          "text": "Lazo y cuerdas",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo llama a Jehová en el versículo 7?",
+      "explanation": "Lo llama \"fortaleza de mi salud\".",
+      "bibleReference": "Salmos 140:7",
+      "answers": [
+        {
+          "text": "Fuerte de Jacob",
+          "isCorrect": false
+        },
+        {
+          "text": "Dios de los dioses",
+          "isCorrect": false
+        },
+        {
+          "text": "Fortaleza de su salud",
+          "isCorrect": true
+        },
+        {
+          "text": "Señor de los señores",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice que hizo Jehová el día de las armas?",
+      "explanation": "El versículo 7 dice: \"tú pusiste á cubierto mi cabeza el día de las armas\".",
+      "bibleReference": "Salmos 140:7",
+      "answers": [
+        {
+          "text": "Quebró el arco del impío",
+          "isCorrect": false
+        },
+        {
+          "text": "Puso a cubierto su cabeza",
+          "isCorrect": true
+        },
+        {
+          "text": "Lo escondió en el desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "Le dio voces de júbilo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el versículo 10 que caerá sobre ellos?",
+      "explanation": "El versículo dice: \"Caerán sobre ellos brasas\".",
+      "bibleReference": "Salmos 140:10",
+      "answers": [
+        {
+          "text": "Brasas",
+          "isCorrect": true
+        },
+        {
+          "text": "Granizo",
+          "isCorrect": false
+        },
+        {
+          "text": "Lluvia",
+          "isCorrect": false
+        },
+        {
+          "text": "Arena",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué sabe el salmista que hará Jehová, según el versículo 12?",
+      "explanation": "Dice que Jehová hará el juicio del afligido y el juicio de los menesterosos.",
+      "bibleReference": "Salmos 140:12",
+      "answers": [
+        {
+          "text": "Guardar silencio ante los soberbios",
+          "isCorrect": false
+        },
+        {
+          "text": "Entregar la tierra a los impíos",
+          "isCorrect": false
+        },
+        {
+          "text": "El juicio del afligido y del menesteroso",
+          "isCorrect": true
+        },
+        {
+          "text": "Olvidar la causa de los justos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el último versículo acerca de los rectos?",
+      "explanation": "El versículo 13 dice que los rectos morarán en su presencia.",
+      "bibleReference": "Salmos 140:13",
+      "answers": [
+        {
+          "text": "Que serán avergonzados",
+          "isCorrect": false
+        },
+        {
+          "text": "Que morarán en su presencia",
+          "isCorrect": true
+        },
+        {
+          "text": "Que huirán de la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Que callarán para siempre",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

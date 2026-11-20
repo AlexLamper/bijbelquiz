@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 111",
+  "description": "Diez preguntas sobre Salmos 111: la alabanza en la congregación de los rectos, las obras memorables de Jehová, el pacto ordenado para siempre y el principio de la sabiduría.",
+  "slug": "psalms-quiz-part-111",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el versículo 1, ¿dónde dice que alabará a Jehová con todo el corazón?",
+      "explanation": "El versículo 1 dice: Alabaré á Jehová con todo el corazón, en la compañía y congregación de los rectos.",
+      "bibleReference": "Salmos 111:1",
+      "answers": [
+        { "text": "Entre todas las naciones", "isCorrect": false },
+        { "text": "En la congregación de los rectos", "isCorrect": true },
+        { "text": "En la casa de los que le temen", "isCorrect": false },
+        { "text": "Delante de los príncipes del pueblo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 2, ¿quiénes buscan las grandes obras de Jehová?",
+      "explanation": "El versículo 2 dice: Grandes son las obras de Jehová; buscadas de todos los que las quieren.",
+      "bibleReference": "Salmos 111:2",
+      "answers": [
+        { "text": "Los reyes de las gentes", "isCorrect": false },
+        { "text": "Los rectos de corazón", "isCorrect": false },
+        { "text": "Los sacerdotes del pueblo", "isCorrect": false },
+        { "text": "Todos los que las quieren", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 3, ¿qué permanece para siempre?",
+      "explanation": "El versículo 3 dice: Gloria y hermosura es su obra; y su justicia permanece para siempre.",
+      "bibleReference": "Salmos 111:3",
+      "answers": [
+        { "text": "Su justicia", "isCorrect": true },
+        { "text": "Su heredad", "isCorrect": false },
+        { "text": "Su redención", "isCorrect": false },
+        { "text": "Su mantenimiento", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 4, ¿cómo es Jehová, el que hizo memorables sus maravillas?",
+      "explanation": "El versículo 4 dice: Hizo memorables sus maravillas: clemente y misericordioso es Jehová.",
+      "bibleReference": "Salmos 111:4",
+      "answers": [
+        { "text": "Santo y terrible", "isCorrect": false },
+        { "text": "Fiel y verdadero", "isCorrect": false },
+        { "text": "Clemente y misericordioso", "isCorrect": true },
+        { "text": "Grande y hermoso", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 5, ¿a quiénes dio mantenimiento?",
+      "explanation": "El versículo 5 dice: Dió mantenimiento á los que le temen; para siempre se acordará de su pacto.",
+      "bibleReference": "Salmos 111:5",
+      "answers": [
+        { "text": "A las gentes", "isCorrect": false },
+        { "text": "A los que le temen", "isCorrect": true },
+        { "text": "A su heredad", "isCorrect": false },
+        { "text": "A los sabios", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 6, ¿qué dio a su pueblo al anunciarle el poder de sus obras?",
+      "explanation": "El versículo 6 dice que anunció á su pueblo el poder de sus obras, dándole la heredad de las gentes.",
+      "bibleReference": "Salmos 111:6",
+      "answers": [
+        { "text": "La heredad de las gentes", "isCorrect": true },
+        { "text": "La congregación de los rectos", "isCorrect": false },
+        { "text": "La memoria de sus maravillas", "isCorrect": false },
+        { "text": "El temor de su nombre", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 7, ¿cómo son las obras de sus manos?",
+      "explanation": "El versículo 7 dice: Las obras de sus manos son verdad y juicio: fieles son todos sus mandamientos.",
+      "bibleReference": "Salmos 111:7",
+      "answers": [
+        { "text": "Gloria y hermosura", "isCorrect": false },
+        { "text": "Clemencia y misericordia", "isCorrect": false },
+        { "text": "Santidad y temor", "isCorrect": false },
+        { "text": "Verdad y juicio", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 8, ¿por cuánto tiempo están afirmados sus mandamientos?",
+      "explanation": "El versículo 8 dice que están afirmados por siglo de siglo, hechos en verdad y en rectitud.",
+      "bibleReference": "Salmos 111:8",
+      "answers": [
+        { "text": "Hasta el día del juicio", "isCorrect": false },
+        { "text": "Mientras dure su pacto", "isCorrect": false },
+        { "text": "Por siglo de siglo", "isCorrect": true },
+        { "text": "Por mil generaciones", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 9, ¿cómo es su nombre?",
+      "explanation": "El versículo 9 dice: Redención ha enviado á su pueblo; para siempre ha ordenado su pacto: santo y terrible es su nombre.",
+      "bibleReference": "Salmos 111:9",
+      "answers": [
+        { "text": "Verdadero y justo", "isCorrect": false },
+        { "text": "Alto y escondido", "isCorrect": false },
+        { "text": "Clemente y fiel", "isCorrect": false },
+        { "text": "Santo y terrible", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 10, ¿cuál es el principio de la sabiduría?",
+      "explanation": "El versículo 10 dice: El principio de la sabiduría es el temor de Jehová.",
+      "bibleReference": "Salmos 111:10",
+      "answers": [
+        { "text": "La alabanza de Jehová", "isCorrect": false },
+        { "text": "El temor de Jehová", "isCorrect": true },
+        { "text": "El pacto de Jehová", "isCorrect": false },
+        { "text": "La justicia de Jehová", "isCorrect": false }
+      ]
+    }
+  ]
+}

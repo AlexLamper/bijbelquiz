@@ -133,7 +133,7 @@
           "isCorrect": false
         },
         {
-          "text": "El metal de Beta y Beeroth",
+          "text": "El trono de Hadad-ezer",
           "isCorrect": false
         },
         {
@@ -221,6 +221,10 @@
       "bibleReference": "2 Samuel 8:18",
       "answers": [
         {
+          "text": "Sobre los Ceretheos y Peletheos",
+          "isCorrect": true
+        },
+        {
           "text": "Sobre los sacerdotes del rey",
           "isCorrect": false
         },
@@ -231,10 +235,6 @@
         {
           "text": "Sobre los escribas del reino",
           "isCorrect": false
-        },
-        {
-          "text": "Sobre los Ceretheos y Peletheos",
-          "isCorrect": true
         }
       ]
     }

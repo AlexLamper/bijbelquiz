@@ -1,0 +1,242 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 139",
+  "description": "Diez preguntas sobre Salmos 139: el Dios que lo ha examinado y conocido, de quien no se puede huir, y la petición final de ser probado.",
+  "slug": "psalms-quiz-part-139",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué dice el versículo 1 que Jehová ha hecho con él?",
+      "explanation": "El versículo dice: \"tú me has examinado y conocido\".",
+      "bibleReference": "Salmos 139:1",
+      "answers": [
+        {
+          "text": "Lo ha escondido de sus enemigos",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo ha llevado a tierra extraña",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo ha examinado y conocido",
+          "isCorrect": true
+        },
+        {
+          "text": "Lo ha dejado en silencio",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué ha conocido Jehová, según el versículo 2?",
+      "explanation": "El versículo dice que ha conocido su sentarse y su levantarse.",
+      "bibleReference": "Salmos 139:2",
+      "answers": [
+        {
+          "text": "Su sentarse y su levantarse",
+          "isCorrect": true
+        },
+        {
+          "text": "Sus ofrendas y sus votos",
+          "isCorrect": false
+        },
+        {
+          "text": "Sus arpas y sus cánticos",
+          "isCorrect": false
+        },
+        {
+          "text": "Sus riquezas y sus días",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el versículo 4 acerca de sus palabras?",
+      "explanation": "Dice que, aun antes de estar la palabra en su lengua, Jehová la sabe toda.",
+      "bibleReference": "Salmos 139:4",
+      "answers": [
+        {
+          "text": "Que nadie las entiende sino él mismo",
+          "isCorrect": false
+        },
+        {
+          "text": "Que las escribe en un libro de memoria",
+          "isCorrect": false
+        },
+        {
+          "text": "Que las guarda para el día del juicio",
+          "isCorrect": false
+        },
+        {
+          "text": "Que Jehová la sabe toda antes de hablarla",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el versículo 6 de esa ciencia?",
+      "explanation": "Dice que es más maravillosa que su capacidad, alta, y que no puede comprenderla.",
+      "bibleReference": "Salmos 139:6",
+      "answers": [
+        {
+          "text": "Que la aprendió de sus padres",
+          "isCorrect": false
+        },
+        {
+          "text": "Que es alta y no puede comprenderla",
+          "isCorrect": true
+        },
+        {
+          "text": "Que la enseñará a Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Que está escrita en la ley",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pregunta hace en el versículo 7?",
+      "explanation": "Pregunta: \"¿Adónde me iré de tu espíritu? ¿y adónde huiré de tu presencia?\".",
+      "bibleReference": "Salmos 139:7",
+      "answers": [
+        {
+          "text": "Quién podrá mantenerse delante de él",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta cuándo esconderá su rostro",
+          "isCorrect": false
+        },
+        {
+          "text": "Adónde ir de su espíritu y huir de su presencia",
+          "isCorrect": true
+        },
+        {
+          "text": "Quién lo llevará a la ciudad fuerte",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 8, si subiera a los cielos o al abismo, ¿qué hallaría?",
+      "explanation": "El versículo dice que allí también está Jehová.",
+      "bibleReference": "Salmos 139:8",
+      "answers": [
+        {
+          "text": "Que nadie lo oiría",
+          "isCorrect": false
+        },
+        {
+          "text": "Que el camino está cerrado",
+          "isCorrect": false
+        },
+        {
+          "text": "Que la noche lo encubriría",
+          "isCorrect": false
+        },
+        {
+          "text": "Que Jehová está allí también",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 12, ¿cómo son las tinieblas para Jehová?",
+      "explanation": "El versículo dice que lo mismo le son las tinieblas que la luz.",
+      "bibleReference": "Salmos 139:12",
+      "answers": [
+        {
+          "text": "Lo mismo que la luz",
+          "isCorrect": true
+        },
+        {
+          "text": "Más fuertes que la luz",
+          "isCorrect": false
+        },
+        {
+          "text": "Un velo que lo esconde",
+          "isCorrect": false
+        },
+        {
+          "text": "Un lugar donde no mira",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el versículo 13 que hizo en el vientre de su madre?",
+      "explanation": "El versículo dice: \"cubrísteme en el vientre de mi madre\".",
+      "bibleReference": "Salmos 139:13",
+      "answers": [
+        {
+          "text": "Lo olvidó",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo cubrió",
+          "isCorrect": true
+        },
+        {
+          "text": "Lo probó con fuego",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo escondió de su padre",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué vieron los ojos de Dios, según el versículo 16?",
+      "explanation": "El versículo dice: \"Mi embrión vieron tus ojos\".",
+      "bibleReference": "Salmos 139:16",
+      "answers": [
+        {
+          "text": "Su corona",
+          "isCorrect": false
+        },
+        {
+          "text": "Su casa",
+          "isCorrect": false
+        },
+        {
+          "text": "Su arpa",
+          "isCorrect": false
+        },
+        {
+          "text": "Su embrión",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le pide a Dios al final del salmo?",
+      "explanation": "Los versículos 23 y 24 piden que lo examine, lo pruebe y lo guíe en el camino eterno.",
+      "bibleReference": "Salmos 139:23-24",
+      "answers": [
+        {
+          "text": "Que lo examine y lo guíe en el camino eterno",
+          "isCorrect": true
+        },
+        {
+          "text": "Que lo libre de los ríos de Babilonia",
+          "isCorrect": false
+        },
+        {
+          "text": "Que lo esconda dentro de su santuario",
+          "isCorrect": false
+        },
+        {
+          "text": "Que calle delante de sus enemigos",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

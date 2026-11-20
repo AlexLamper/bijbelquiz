@@ -1,0 +1,242 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 143",
+  "description": "Diez preguntas sobre Salmos 143: el ruego de no entrar en juicio, el alma como tierra sedienta y la petición de ser enseñado a hacer su voluntad.",
+  "slug": "psalms-quiz-part-143",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Conforme a qué pide que Jehová le responda?",
+      "explanation": "Pide a Jehová que oiga su oración y le responda por su verdad y por su justicia.",
+      "bibleReference": "Salmos 143:1",
+      "answers": [
+        {
+          "text": "Por su poder y su gloria",
+          "isCorrect": false
+        },
+        {
+          "text": "Por su verdad y su justicia",
+          "isCorrect": true
+        },
+        {
+          "text": "Por su ira y su juicio",
+          "isCorrect": false
+        },
+        {
+          "text": "Por el mérito de sus padres",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué razón da para que Jehová no entre en juicio con su siervo?",
+      "explanation": "Pide que no entre en juicio con su siervo, porque ningún viviente se justificará delante de él.",
+      "bibleReference": "Salmos 143:2",
+      "answers": [
+        {
+          "text": "Porque el enemigo ya le ha juzgado",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque ha guardado todos los mandamientos",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque se tiene por hombre sin pecado",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque ningún viviente se justificará",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué ha hecho el enemigo con su vida?",
+      "explanation": "Dice que el enemigo ha perseguido su alma y ha postrado en tierra su vida.",
+      "bibleReference": "Salmos 143:3",
+      "answers": [
+        {
+          "text": "La ha postrado en tierra",
+          "isCorrect": true
+        },
+        {
+          "text": "La ha llevado al desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "La ha comprado por plata",
+          "isCorrect": false
+        },
+        {
+          "text": "La ha dejado en paz",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo dice que el enemigo le ha hecho habitar?",
+      "explanation": "Dice que le ha hecho habitar en tinieblas, como los ya muertos.",
+      "bibleReference": "Salmos 143:3",
+      "answers": [
+        {
+          "text": "En tiendas, como los pastores",
+          "isCorrect": false
+        },
+        {
+          "text": "En montes, como las fieras",
+          "isCorrect": false
+        },
+        {
+          "text": "En tinieblas, como los ya muertos",
+          "isCorrect": true
+        },
+        {
+          "text": "En cárcel, como los aprisionados",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Al acordarse de los días antiguos, ¿en qué meditaba?",
+      "explanation": "Dice que se acordó de los días antiguos, meditaba en todas las obras de Jehová y reflexionaba en las obras de sus manos.",
+      "bibleReference": "Salmos 143:5",
+      "answers": [
+        {
+          "text": "En las guerras de los reyes",
+          "isCorrect": false
+        },
+        {
+          "text": "En todas las obras de Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "En las palabras de los profetas",
+          "isCorrect": false
+        },
+        {
+          "text": "En los días de su juventud",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué compara su alma al extender sus manos a Jehová?",
+      "explanation": "Dice que extendió sus manos a Jehová y que su alma está hacia él como la tierra sedienta.",
+      "bibleReference": "Salmos 143:6",
+      "answers": [
+        {
+          "text": "Con un ave en su nido",
+          "isCorrect": false
+        },
+        {
+          "text": "Con un río crecido",
+          "isCorrect": false
+        },
+        {
+          "text": "Con una lámpara apagada",
+          "isCorrect": false
+        },
+        {
+          "text": "Con la tierra sedienta",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pide oír por la mañana?",
+      "explanation": "Pide: \"Hazme oir por la mañana tu misericordia, porque en ti he confiado\".",
+      "bibleReference": "Salmos 143:8",
+      "answers": [
+        {
+          "text": "La misericordia de Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "El cántico de los santos",
+          "isCorrect": false
+        },
+        {
+          "text": "La voz de sus amigos",
+          "isCorrect": false
+        },
+        {
+          "text": "El sonido de la bocina",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pide que Jehová le enseñe?",
+      "explanation": "Pide que Jehová le enseñe a hacer su voluntad, porque él es su Dios.",
+      "bibleReference": "Salmos 143:10",
+      "answers": [
+        {
+          "text": "A contar las estrellas",
+          "isCorrect": false
+        },
+        {
+          "text": "A juzgar a los pueblos",
+          "isCorrect": false
+        },
+        {
+          "text": "A hacer su voluntad",
+          "isCorrect": true
+        },
+        {
+          "text": "A cantar con el arpa",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A dónde pide que le guíe el buen espíritu de Dios?",
+      "explanation": "Pide que el buen espíritu de Dios le guíe a tierra de rectitud.",
+      "bibleReference": "Salmos 143:10",
+      "answers": [
+        {
+          "text": "A la casa de su padre",
+          "isCorrect": false
+        },
+        {
+          "text": "A tierra de rectitud",
+          "isCorrect": true
+        },
+        {
+          "text": "A la ciudad de sus reyes",
+          "isCorrect": false
+        },
+        {
+          "text": "Al monte de los olivos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué razón da al final para que Dios disipe a sus enemigos?",
+      "explanation": "Pide que por su misericordia disipe a sus enemigos y destruya a sus adversarios, porque él es su siervo.",
+      "bibleReference": "Salmos 143:12",
+      "answers": [
+        {
+          "text": "Porque él es su siervo",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque es rey de Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque ha ofrecido sacrificios",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque su pueblo es numeroso",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

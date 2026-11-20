@@ -1,0 +1,242 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 69",
+  "description": "Diez preguntas sobre Salmos 69: las aguas que llegan hasta el alma, el celo de la casa de Dios, la hiel y el vinagre, y la alabanza final.",
+  "slug": "psalms-quiz-part-69",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Por qué pide el salmista al principio que Dios lo salve?",
+      "explanation": "El primer verso dice: Sálvame, oh Dios, porque las aguas han entrado hasta el alma.",
+      "bibleReference": "Salmos 69:1",
+      "answers": [
+        {
+          "text": "Porque las aguas han entrado hasta su alma",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque sus amigos lo han olvidado",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque el enemigo ha quemado su casa",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque ha perdido todos sus bienes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde dice el salmista que está hundido?",
+      "explanation": "El texto dice: Estoy hundido en cieno profundo, donde no hay pie.",
+      "bibleReference": "Salmos 69:2",
+      "answers": [
+        {
+          "text": "En un pozo seco y abandonado",
+          "isCorrect": false
+        },
+        {
+          "text": "En cieno profundo, donde no hay pie",
+          "isCorrect": true
+        },
+        {
+          "text": "En medio de un desierto ardiente",
+          "isCorrect": false
+        },
+        {
+          "text": "En la cumbre de un monte alto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el salmo, ¿qué le ha ocurrido a su garganta de tanto llamar?",
+      "explanation": "El texto dice: Cansado estoy de llamar; mi garganta se ha enronquecido.",
+      "bibleReference": "Salmos 69:3",
+      "answers": [
+        {
+          "text": "Se ha callado para siempre",
+          "isCorrect": false
+        },
+        {
+          "text": "Se ha endurecido como piedra",
+          "isCorrect": false
+        },
+        {
+          "text": "Se ha enronquecido",
+          "isCorrect": true
+        },
+        {
+          "text": "Se ha llenado de cánticos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué compara el salmista el número de los que le aborrecen sin causa?",
+      "explanation": "El texto dice que los que le aborrecen sin causa se han aumentado más que los cabellos de su cabeza.",
+      "bibleReference": "Salmos 69:4",
+      "answers": [
+        {
+          "text": "Con las estrellas del cielo",
+          "isCorrect": false
+        },
+        {
+          "text": "Con la arena de la orilla del mar",
+          "isCorrect": false
+        },
+        {
+          "text": "Con las hojas de los árboles",
+          "isCorrect": false
+        },
+        {
+          "text": "Con los cabellos de su cabeza",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el salmo, ¿qué consumió al salmista?",
+      "explanation": "El texto dice: Porque me consumió el celo de tu casa.",
+      "bibleReference": "Salmos 69:9",
+      "answers": [
+        {
+          "text": "El miedo a la muerte",
+          "isCorrect": false
+        },
+        {
+          "text": "El celo de la casa de Dios",
+          "isCorrect": true
+        },
+        {
+          "text": "La sed del desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "El peso de sus riquezas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué se puso el salmista por vestido?",
+      "explanation": "El texto dice: Puse además saco por mi vestido.",
+      "bibleReference": "Salmos 69:11",
+      "answers": [
+        {
+          "text": "Saco",
+          "isCorrect": true
+        },
+        {
+          "text": "Lino fino",
+          "isCorrect": false
+        },
+        {
+          "text": "Púrpura",
+          "isCorrect": false
+        },
+        {
+          "text": "Un manto nuevo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el salmo, ¿qué le pusieron por comida y qué le dieron a beber en su sed?",
+      "explanation": "El texto dice: Pusiéronme además hiel por comida, y en mi sed me dieron á beber vinagre.",
+      "bibleReference": "Salmos 69:21",
+      "answers": [
+        {
+          "text": "Pan y agua",
+          "isCorrect": false
+        },
+        {
+          "text": "Miel y leche",
+          "isCorrect": false
+        },
+        {
+          "text": "Carne y vino",
+          "isCorrect": false
+        },
+        {
+          "text": "Hiel y vinagre",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el salmo que agradará a Jehová más que el sacrificio de un buey?",
+      "explanation": "El salmista promete alabar el nombre de Dios con cántico, y dice que eso agradará a Jehová más que sacrificio de buey.",
+      "bibleReference": "Salmos 69:30-31",
+      "answers": [
+        {
+          "text": "Ofrecer un becerro sin defecto",
+          "isCorrect": false
+        },
+        {
+          "text": "Edificar un altar de piedra",
+          "isCorrect": false
+        },
+        {
+          "text": "Alabar el nombre de Dios con cántico",
+          "isCorrect": true
+        },
+        {
+          "text": "Guardar silencio en el templo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el salmo, ¿a quién oye Jehová?",
+      "explanation": "El texto dice: Porque Jehová oye á los menesterosos, y no menosprecia á sus prisioneros.",
+      "bibleReference": "Salmos 69:33",
+      "answers": [
+        {
+          "text": "A los menesterosos",
+          "isCorrect": true
+        },
+        {
+          "text": "A los príncipes",
+          "isCorrect": false
+        },
+        {
+          "text": "A los que juran",
+          "isCorrect": false
+        },
+        {
+          "text": "A los ricos de la tierra",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Al final del salmo, ¿qué ciudades dice que Dios reedificará?",
+      "explanation": "El texto dice que Dios guardará a Sión y reedificará las ciudades de Judá.",
+      "bibleReference": "Salmos 69:35",
+      "answers": [
+        {
+          "text": "Las ciudades de Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "Las ciudades de Judá",
+          "isCorrect": true
+        },
+        {
+          "text": "Las ciudades de Moab",
+          "isCorrect": false
+        },
+        {
+          "text": "Las ciudades de Babilonia",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

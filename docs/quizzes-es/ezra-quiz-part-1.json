@@ -91,12 +91,12 @@
           "isCorrect": false
         },
         {
-          "text": "Con plata, oro, hacienda y bestias, y con dones voluntarios",
-          "isCorrect": true
-        },
-        {
           "text": "Con siervos, siervas y cantores",
           "isCorrect": false
+        },
+        {
+          "text": "Con plata, oro, hacienda y bestias, y con dones voluntarios",
+          "isCorrect": true
         }
       ]
     },
@@ -114,12 +114,12 @@
           "isCorrect": false
         },
         {
-          "text": "Las diez tribus de Israel que estaban en Babilonia",
-          "isCorrect": false
-        },
-        {
           "text": "Los cabezas de las familias de Judá y de Benjamín, y los sacerdotes y Levitas",
           "isCorrect": true
+        },
+        {
+          "text": "Las diez tribus de Israel que estaban en Babilonia",
+          "isCorrect": false
         }
       ]
     },
@@ -129,16 +129,16 @@
       "bibleReference": "Esdras 1:6",
       "answers": [
         {
-          "text": "Confortaron sus manos con vasos de plata y de oro y cosas preciosas",
-          "isCorrect": true
+          "text": "Escribieron acusaciones contra ellos al rey",
+          "isCorrect": false
         },
         {
           "text": "Los detuvieron por fuerza y no los dejaron subir",
           "isCorrect": false
         },
         {
-          "text": "Escribieron acusaciones contra ellos al rey",
-          "isCorrect": false
+          "text": "Confortaron sus manos con vasos de plata y de oro y cosas preciosas",
+          "isCorrect": true
         },
         {
           "text": "Les pidieron tributo y rentas para el rey",
@@ -179,12 +179,12 @@
           "isCorrect": false
         },
         {
-          "text": "Por mano de Rehum canciller, á Simsai secretario",
-          "isCorrect": false
-        },
-        {
           "text": "Por mano de Mitrídates tesorero, á Sesbassar príncipe de Judá",
           "isCorrect": true
+        },
+        {
+          "text": "Por mano de Rehum canciller, á Simsai secretario",
+          "isCorrect": false
         },
         {
           "text": "Por mano de los Levitas, á los cabezas de los padres",
@@ -198,8 +198,8 @@
       "bibleReference": "Esdras 1:9",
       "answers": [
         {
-          "text": "Mil tazones de oro y treinta tazones de plata",
-          "isCorrect": false
+          "text": "Treinta tazones de oro y mil tazones de plata",
+          "isCorrect": true
         },
         {
           "text": "Cien tazones de oro y cien tazones de plata",
@@ -210,8 +210,8 @@
           "isCorrect": false
         },
         {
-          "text": "Treinta tazones de oro y mil tazones de plata",
-          "isCorrect": true
+          "text": "Mil tazones de oro y treinta tazones de plata",
+          "isCorrect": false
         }
       ]
     },

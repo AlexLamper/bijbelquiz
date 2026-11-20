@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 109",
+  "description": "Diez preguntas sobre Salmos 109: las bocas mentirosas que acusan sin causa, la maldición que se vuelve vestido y el ruego de ayuda del pobre afligido.",
+  "slug": "psalms-quiz-part-109",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el encabezado del versículo 1, ¿de quién es este salmo?",
+      "explanation": "El encabezado dice: Al Músico principal: Salmo de David.",
+      "bibleReference": "Salmos 109:1",
+      "answers": [
+        { "text": "De David", "isCorrect": true },
+        { "text": "De Asaph", "isCorrect": false },
+        { "text": "De los hijos de Coré", "isCorrect": false },
+        { "text": "De Jeduthún", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 2, ¿qué bocas se han abierto sobre él?",
+      "explanation": "El versículo 2 dice que boca de impío y boca de engañador se han abierto sobre él, y que han hablado de él con lengua mentirosa.",
+      "bibleReference": "Salmos 109:2",
+      "answers": [
+        { "text": "La boca de los jueces y la de los ancianos", "isCorrect": false },
+        { "text": "La boca del impío y la del engañador", "isCorrect": true },
+        { "text": "La boca de los pobres y la de los huérfanos", "isCorrect": false },
+        { "text": "La boca de los reyes y la de sus siervos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 4, ¿qué hacía él mientras le eran adversarios en pago de su amor?",
+      "explanation": "El versículo 4 dice: En pago de mi amor me han sido adversarios: mas yo oraba.",
+      "bibleReference": "Salmos 109:4",
+      "answers": [
+        { "text": "Callaba", "isCorrect": false },
+        { "text": "Huía", "isCorrect": false },
+        { "text": "Oraba", "isCorrect": true },
+        { "text": "Peleaba", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 5, ¿qué pusieron contra él?",
+      "explanation": "El versículo 5 dice que pusieron contra él mal por bien, y odio por amor.",
+      "bibleReference": "Salmos 109:5",
+      "answers": [
+        { "text": "Ignominia por alabanza", "isCorrect": false },
+        { "text": "Maldición por bendición", "isCorrect": false },
+        { "text": "Pobreza por riqueza", "isCorrect": false },
+        { "text": "Mal por bien y odio por amor", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 8, ¿qué pide acerca de los días y del oficio de aquel hombre?",
+      "explanation": "El versículo 8 dice: Sean sus días pocos: tome otro su oficio.",
+      "bibleReference": "Salmos 109:8",
+      "answers": [
+        { "text": "Que sus días sean muchos y guarde su oficio", "isCorrect": false },
+        { "text": "Que sus días sean pocos y otro tome su oficio", "isCorrect": true },
+        { "text": "Que sus días sean de ayuno y pierda su casa", "isCorrect": false },
+        { "text": "Que sus días sean de oprobio y calle su boca", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 9, ¿qué pide para los hijos y la mujer de aquel hombre?",
+      "explanation": "El versículo 9 dice: Sean sus hijos huérfanos, y su mujer viuda.",
+      "bibleReference": "Salmos 109:9",
+      "answers": [
+        { "text": "Que sus hijos queden huérfanos y su mujer viuda", "isCorrect": true },
+        { "text": "Que sus hijos sean poderosos y su mujer bendita", "isCorrect": false },
+        { "text": "Que sus hijos hereden la tierra y su mujer cante", "isCorrect": false },
+        { "text": "Que sus hijos sean sacerdotes y su mujer madre", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 17, ¿qué amó aquel hombre, y le vino?",
+      "explanation": "El versículo 17 dice que amó la maldición y le vino, y que no quiso la bendición, y ella se alejó de él.",
+      "bibleReference": "Salmos 109:17",
+      "answers": [
+        { "text": "La bendición", "isCorrect": false },
+        { "text": "La misericordia", "isCorrect": false },
+        { "text": "La compasión", "isCorrect": false },
+        { "text": "La maldición", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 23, ¿con qué se compara a sí mismo cuando dice que es sacudido?",
+      "explanation": "El versículo 23 dice: Voime como la sombra cuando declina; soy sacudido como langosta.",
+      "bibleReference": "Salmos 109:23",
+      "answers": [
+        { "text": "Como un manto", "isCorrect": false },
+        { "text": "Como el agua", "isCorrect": false },
+        { "text": "Como langosta", "isCorrect": true },
+        { "text": "Como aceite", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 24, ¿por qué están debilitadas sus rodillas?",
+      "explanation": "El versículo 24 dice que sus rodillas están debilitadas á causa del ayuno, y su carne desfallecida por falta de gordura.",
+      "bibleReference": "Salmos 109:24",
+      "answers": [
+        { "text": "A causa del ayuno", "isCorrect": true },
+        { "text": "A causa del camino", "isCorrect": false },
+        { "text": "A causa del llanto", "isCorrect": false },
+        { "text": "A causa de las prisiones", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 31, ¿dónde se pondrá Jehová para librar el alma del pobre?",
+      "explanation": "El versículo 31 dice que él se pondrá á la diestra del pobre, para librar su alma de los que le juzgan.",
+      "bibleReference": "Salmos 109:31",
+      "answers": [
+        { "text": "En medio de muchos", "isCorrect": false },
+        { "text": "A la diestra del pobre", "isCorrect": true },
+        { "text": "Delante de sus calumniadores", "isCorrect": false },
+        { "text": "En el lugar del juicio", "isCorrect": false }
+      ]
+    }
+  ]
+}

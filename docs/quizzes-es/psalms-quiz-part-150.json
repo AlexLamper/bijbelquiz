@@ -1,0 +1,242 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 150",
+  "description": "Diez preguntas sobre Salmos 150: el llamado final a alabar a Dios en su santuario con bocina, arpa, adufe, cuerdas y címbalos.",
+  "slug": "psalms-quiz-part-150",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Dónde manda alabar a Dios al comenzar el salmo?",
+      "explanation": "Empieza diciendo: \"ALABAD á Dios en su santuario: alabadle en la extensión de su fortaleza\".",
+      "bibleReference": "Salmos 150:1",
+      "answers": [
+        {
+          "text": "En su casa",
+          "isCorrect": false
+        },
+        {
+          "text": "En el monte",
+          "isCorrect": false
+        },
+        {
+          "text": "En su santuario",
+          "isCorrect": true
+        },
+        {
+          "text": "En la plaza",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Además del santuario, ¿dónde manda alabarle?",
+      "explanation": "Dice que le alaben en la extensión de su fortaleza.",
+      "bibleReference": "Salmos 150:1",
+      "answers": [
+        {
+          "text": "En la extensión de su fortaleza",
+          "isCorrect": true
+        },
+        {
+          "text": "En las puertas de la ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "En los caminos del desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "En las aguas de la mar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué manda alabarle en el versículo 2?",
+      "explanation": "Dice: \"Alabadle por sus proezas: alabadle conforme á la muchedumbre de su grandeza\".",
+      "bibleReference": "Salmos 150:2",
+      "answers": [
+        {
+          "text": "Por su silencio",
+          "isCorrect": false
+        },
+        {
+          "text": "Por sus mandamientos",
+          "isCorrect": false
+        },
+        {
+          "text": "Por sus juicios",
+          "isCorrect": false
+        },
+        {
+          "text": "Por sus proezas",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Conforme a qué debe ser esa alabanza?",
+      "explanation": "Dice que le alaben conforme a la muchedumbre de su grandeza.",
+      "bibleReference": "Salmos 150:2",
+      "answers": [
+        {
+          "text": "Al número de los días",
+          "isCorrect": false
+        },
+        {
+          "text": "A la muchedumbre de su grandeza",
+          "isCorrect": true
+        },
+        {
+          "text": "A la medida del santuario",
+          "isCorrect": false
+        },
+        {
+          "text": "Al peso de la ofrenda",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué sonido manda alabarle al empezar el versículo 3?",
+      "explanation": "Dice: \"Alabadle á son de bocina: alabadle con salterio y arpa\".",
+      "bibleReference": "Salmos 150:3",
+      "answers": [
+        {
+          "text": "A son de bocina",
+          "isCorrect": true
+        },
+        {
+          "text": "A son de campana",
+          "isCorrect": false
+        },
+        {
+          "text": "Con voz muy baja",
+          "isCorrect": false
+        },
+        {
+          "text": "Con solo las palmas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dos instrumentos nombra junto a la bocina?",
+      "explanation": "En el versículo 3 dice que le alaben a son de bocina y con salterio y arpa.",
+      "bibleReference": "Salmos 150:3",
+      "answers": [
+        {
+          "text": "Trompeta y cuerno",
+          "isCorrect": false
+        },
+        {
+          "text": "Vihuela y pandero",
+          "isCorrect": false
+        },
+        {
+          "text": "Salterio y arpa",
+          "isCorrect": true
+        },
+        {
+          "text": "Campana y sistro",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 4, ¿con qué más debe ser alabado?",
+      "explanation": "Dice: \"Alabadle con adufe y flauta: alabadle con cuerdas y órgano\".",
+      "bibleReference": "Salmos 150:4",
+      "answers": [
+        {
+          "text": "Con trompeta y cuerno",
+          "isCorrect": false
+        },
+        {
+          "text": "Con adufe y flauta",
+          "isCorrect": true
+        },
+        {
+          "text": "Con vihuela y pandero",
+          "isCorrect": false
+        },
+        {
+          "text": "Con campanas y martillos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué instrumentos cierran el versículo 4?",
+      "explanation": "El versículo 4 termina diciendo que le alaben con cuerdas y órgano.",
+      "bibleReference": "Salmos 150:4",
+      "answers": [
+        {
+          "text": "Vihuelas y trompetas",
+          "isCorrect": false
+        },
+        {
+          "text": "Panderos y cuernos",
+          "isCorrect": false
+        },
+        {
+          "text": "Campanas y sistros",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuerdas y órgano",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo describe los címbalos en el versículo 5?",
+      "explanation": "Dice que le alaben con címbalos resonantes y con címbalos de júbilo.",
+      "bibleReference": "Salmos 150:5",
+      "answers": [
+        {
+          "text": "Resonantes y de júbilo",
+          "isCorrect": true
+        },
+        {
+          "text": "De plata y de oro",
+          "isCorrect": false
+        },
+        {
+          "text": "Grandes y pequeños",
+          "isCorrect": false
+        },
+        {
+          "text": "Antiguos y nuevos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el último versículo, ¿quién debe alabar a JAH?",
+      "explanation": "Termina diciendo: \"Todo lo que respira alabe á JAH. Aleluya\".",
+      "bibleReference": "Salmos 150:6",
+      "answers": [
+        {
+          "text": "Solo los sacerdotes",
+          "isCorrect": false
+        },
+        {
+          "text": "Todo lo que respira",
+          "isCorrect": true
+        },
+        {
+          "text": "Solo los hijos de Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Solo los que tocan instrumentos",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -14,8 +14,8 @@
       "bibleReference": "2 Crónicas 33:1",
       "answers": [
         {
-          "text": "De ocho años, y reinó treinta y un años",
-          "isCorrect": false
+          "text": "De doce años, y reinó cincuenta y cinco años",
+          "isCorrect": true
         },
         {
           "text": "De veinte y dos años, y reinó dos años",
@@ -26,8 +26,8 @@
           "isCorrect": false
         },
         {
-          "text": "De doce años, y reinó cincuenta y cinco años",
-          "isCorrect": true
+          "text": "De ocho años, y reinó treinta y un años",
+          "isCorrect": false
         }
       ]
     },
@@ -37,16 +37,16 @@
       "bibleReference": "2 Crónicas 33:3",
       "answers": [
         {
-          "text": "Los altos",
-          "isCorrect": true
+          "text": "La casa de Jehová",
+          "isCorrect": false
         },
         {
           "text": "Los muros de Jerusalem",
           "isCorrect": false
         },
         {
-          "text": "La casa de Jehová",
-          "isCorrect": false
+          "text": "Los altos",
+          "isCorrect": true
         },
         {
           "text": "Las cámaras de la casa de Dios",
@@ -91,12 +91,12 @@
           "isCorrect": false
         },
         {
-          "text": "Pasó sus hijos por fuego",
-          "isCorrect": true
-        },
-        {
           "text": "Puso una imagen de fundición",
           "isCorrect": false
+        },
+        {
+          "text": "Pasó sus hijos por fuego",
+          "isCorrect": true
         }
       ]
     },
@@ -129,12 +129,12 @@
       "bibleReference": "2 Crónicas 33:10",
       "answers": [
         {
-          "text": "Aprisionado con grillos y atado con cadenas",
-          "isCorrect": true
-        },
-        {
           "text": "En un carro de honor del rey",
           "isCorrect": false
+        },
+        {
+          "text": "Aprisionado con grillos y atado con cadenas",
+          "isCorrect": true
         },
         {
           "text": "En una nave por el río, con sus siervos",
@@ -156,12 +156,12 @@
           "isCorrect": false
         },
         {
-          "text": "Fué atendido, y Jehová lo volvió á Jerusalem, á su reino",
-          "isCorrect": true
-        },
-        {
           "text": "Quedó allí en Babilonia todos sus días",
           "isCorrect": false
+        },
+        {
+          "text": "Fué atendido, y Jehová lo volvió á Jerusalem, á su reino",
+          "isCorrect": true
         },
         {
           "text": "Fué puesto por rey sobre la tierra de Asiria",
@@ -175,16 +175,16 @@
       "bibleReference": "2 Crónicas 33:15-16",
       "answers": [
         {
-          "text": "Lo derribó del todo y lo echó fuera de la ciudad",
-          "isCorrect": false
+          "text": "Lo reparó y mandó á Judá que sirviesen á Jehová Dios de Israel",
+          "isCorrect": true
         },
         {
           "text": "Levantó de nuevo altares á los Baales junto á él",
           "isCorrect": false
         },
         {
-          "text": "Lo reparó y mandó á Judá que sirviesen á Jehová Dios de Israel",
-          "isCorrect": true
+          "text": "Lo derribó del todo y lo echó fuera de la ciudad",
+          "isCorrect": false
         },
         {
           "text": "Lo llevó fuera de la ciudad, al valle de Hinnom",
@@ -202,16 +202,16 @@
           "isCorrect": false
         },
         {
-          "text": "Reinó cincuenta y cinco años",
-          "isCorrect": false
+          "text": "Nunca se humilló delante de Jehová, antes aumentó el pecado",
+          "isCorrect": true
         },
         {
           "text": "Edificó el muro de afuera de la ciudad de David",
           "isCorrect": false
         },
         {
-          "text": "Nunca se humilló delante de Jehová, antes aumentó el pecado",
-          "isCorrect": true
+          "text": "Reinó cincuenta y cinco años",
+          "isCorrect": false
         }
       ]
     },

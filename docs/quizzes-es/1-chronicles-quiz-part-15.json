@@ -13,10 +13,10 @@
       "explanation": "David dijo que el arca de Dios no debía ser traída sino por los Levitas, porque á ellos ha elegido Jehová para que la lleven y le sirvan perpetuamente.",
       "bibleReference": "1 Crónicas 15:2",
       "answers": [
-        { "text": "Los Levitas", "isCorrect": true },
+        { "text": "Los ancianos de Israel", "isCorrect": false },
         { "text": "Los capitanes de millares", "isCorrect": false },
         { "text": "Los cantores", "isCorrect": false },
-        { "text": "Los ancianos de Israel", "isCorrect": false }
+        { "text": "Los Levitas", "isCorrect": true }
       ]
     },
     {
@@ -35,9 +35,9 @@
       "explanation": "David llamó á Sadoc y á Abiathar, sacerdotes, y á los Levitas Uriel, Asaías, Joel, Semeías, Eliel y Aminadab.",
       "bibleReference": "1 Crónicas 15:11",
       "answers": [
-        { "text": "A Hemán y Ethán", "isCorrect": false },
-        { "text": "A Benaías y Jahaziel", "isCorrect": false },
         { "text": "A Sadoc y Abiathar", "isCorrect": true },
+        { "text": "A Benaías y Jahaziel", "isCorrect": false },
+        { "text": "A Hemán y Ethán", "isCorrect": false },
         { "text": "A Uriel y Eliel", "isCorrect": false }
       ]
     },
@@ -48,8 +48,8 @@
       "answers": [
         { "text": "Porque Uzza no era Levita", "isCorrect": false },
         { "text": "Porque el carro no era nuevo", "isCorrect": false },
-        { "text": "Porque no sacrificaron novillos", "isCorrect": false },
-        { "text": "Porque no le buscaron según la ordenanza", "isCorrect": true }
+        { "text": "Porque no le buscaron según la ordenanza", "isCorrect": true },
+        { "text": "Porque no sacrificaron novillos", "isCorrect": false }
       ]
     },
     {
@@ -57,10 +57,10 @@
       "explanation": "Los hijos de los Levitas trajeron el arca de Dios puesta sobre sus hombros en las barras, como lo había mandado Moisés conforme á la palabra de Jehová.",
       "bibleReference": "1 Crónicas 15:15",
       "answers": [
-        { "text": "Sobre sus hombros, en las barras", "isCorrect": true },
+        { "text": "En una tienda de lino", "isCorrect": false },
         { "text": "En un carro nuevo", "isCorrect": false },
         { "text": "Sobre mulos y camellos", "isCorrect": false },
-        { "text": "En una tienda de lino", "isCorrect": false }
+        { "text": "Sobre sus hombros, en las barras", "isCorrect": true }
       ]
     },
     {
@@ -68,8 +68,8 @@
       "explanation": "Los Levitas constituyeron á Hemán hijo de Joel, á Asaph hijo de Berechîas y á Ethán hijo de Cusaías.",
       "bibleReference": "1 Crónicas 15:17",
       "answers": [
-        { "text": "A Uriel, Asaías y Joel", "isCorrect": false },
         { "text": "A Hemán, Asaph y Ethán", "isCorrect": true },
+        { "text": "A Uriel, Asaías y Joel", "isCorrect": false },
         { "text": "A Obed-edom, Jehiel y Unni", "isCorrect": false },
         { "text": "A Sebanías, Josaphat y Nathanael", "isCorrect": false }
       ]
@@ -80,8 +80,8 @@
       "bibleReference": "1 Crónicas 15:19",
       "answers": [
         { "text": "Con trompetas y bocinas", "isCorrect": false },
-        { "text": "Con tamboriles y flautas", "isCorrect": false },
         { "text": "Con címbalos de metal", "isCorrect": true },
+        { "text": "Con tamboriles y flautas", "isCorrect": false },
         { "text": "Con panderos de madera", "isCorrect": false }
       ]
     },
@@ -92,8 +92,8 @@
       "answers": [
         { "text": "Asaph", "isCorrect": false },
         { "text": "Berechîas", "isCorrect": false },
-        { "text": "Azazías", "isCorrect": false },
-        { "text": "Chênanías", "isCorrect": true }
+        { "text": "Chênanías", "isCorrect": true },
+        { "text": "Azazías", "isCorrect": false }
       ]
     },
     {

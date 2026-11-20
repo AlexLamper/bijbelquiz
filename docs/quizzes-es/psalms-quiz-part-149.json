@@ -1,0 +1,242 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 149",
+  "description": "Diez preguntas sobre Salmos 149: la canción nueva en la congregación de los santos, el contentamiento de Jehová con su pueblo y el juicio escrito.",
+  "slug": "psalms-quiz-part-149",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué clase de cántico manda cantar a Jehová?",
+      "explanation": "Empieza diciendo: \"CANTAD á Jehová canción nueva: su alabanza sea en la congregación de los santos\".",
+      "bibleReference": "Salmos 149:1",
+      "answers": [
+        {
+          "text": "Canción nueva",
+          "isCorrect": true
+        },
+        {
+          "text": "Un lamento antiguo",
+          "isCorrect": false
+        },
+        {
+          "text": "Un cántico de la noche",
+          "isCorrect": false
+        },
+        {
+          "text": "El cántico de los padres",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde dice que debe estar su alabanza?",
+      "explanation": "Dice que su alabanza sea en la congregación de los santos.",
+      "bibleReference": "Salmos 149:1",
+      "answers": [
+        {
+          "text": "En el atrio de los reyes",
+          "isCorrect": false
+        },
+        {
+          "text": "En las puertas de la ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "En la congregación de los santos",
+          "isCorrect": true
+        },
+        {
+          "text": "En el campamento del ejército",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿En quién debe alegrarse Israel?",
+      "explanation": "Dice: \"Alégrese Israel en su Hacedor: los hijos de Sión se gocen en su Rey\".",
+      "bibleReference": "Salmos 149:2",
+      "answers": [
+        {
+          "text": "En sus jueces",
+          "isCorrect": false
+        },
+        {
+          "text": "En su Hacedor",
+          "isCorrect": true
+        },
+        {
+          "text": "En sus padres",
+          "isCorrect": false
+        },
+        {
+          "text": "En sus riquezas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿En quién deben gozarse los hijos de Sión?",
+      "explanation": "Dice que los hijos de Sión se gocen en su Rey.",
+      "bibleReference": "Salmos 149:2",
+      "answers": [
+        {
+          "text": "En su profeta",
+          "isCorrect": false
+        },
+        {
+          "text": "En su monte",
+          "isCorrect": false
+        },
+        {
+          "text": "En su templo",
+          "isCorrect": false
+        },
+        {
+          "text": "En su Rey",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué instrumentos deben cantarle?",
+      "explanation": "Dice que alaben su nombre con corro, y que con adufe y arpa le canten.",
+      "bibleReference": "Salmos 149:3",
+      "answers": [
+        {
+          "text": "Con adufe y arpa",
+          "isCorrect": true
+        },
+        {
+          "text": "Con bocina y salterio",
+          "isCorrect": false
+        },
+        {
+          "text": "Con címbalos y flauta",
+          "isCorrect": false
+        },
+        {
+          "text": "Con órgano y decacordio",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice que Jehová hará con los humildes?",
+      "explanation": "Dice que Jehová toma contentamiento con su pueblo y que hermoseará a los humildes con salud.",
+      "bibleReference": "Salmos 149:4",
+      "answers": [
+        {
+          "text": "Los enviará a la batalla",
+          "isCorrect": false
+        },
+        {
+          "text": "Los hermoseará con salud",
+          "isCorrect": true
+        },
+        {
+          "text": "Los pondrá por jueces",
+          "isCorrect": false
+        },
+        {
+          "text": "Los llevará a otra tierra",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde dice que cantarán los píos?",
+      "explanation": "Dice que los píos se gozarán con gloria y cantarán sobre sus camas.",
+      "bibleReference": "Salmos 149:5",
+      "answers": [
+        {
+          "text": "Sobre los montes",
+          "isCorrect": false
+        },
+        {
+          "text": "En el desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "A la puerta del templo",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre sus camas",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué tendrán en sus manos?",
+      "explanation": "Dice que modularán en sus gargantas ensalzamientos de Dios, y que habrá espadas de dos filos en sus manos.",
+      "bibleReference": "Salmos 149:6",
+      "answers": [
+        {
+          "text": "Lámparas encendidas",
+          "isCorrect": false
+        },
+        {
+          "text": "Ramos de palmera",
+          "isCorrect": false
+        },
+        {
+          "text": "Espadas de dos filos",
+          "isCorrect": true
+        },
+        {
+          "text": "Vasos de plata",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué aprisionarán a sus reyes y a sus nobles?",
+      "explanation": "Dice que es para aprisionar a sus reyes en grillos y a sus nobles con cadenas de hierro.",
+      "bibleReference": "Salmos 149:8",
+      "answers": [
+        {
+          "text": "Con grillos y cadenas de hierro",
+          "isCorrect": true
+        },
+        {
+          "text": "Con cuerdas de lino torcido",
+          "isCorrect": false
+        },
+        {
+          "text": "Con redes de los pescadores",
+          "isCorrect": false
+        },
+        {
+          "text": "Con lazos de cuero fuerte",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice que será gloria para todos sus santos?",
+      "explanation": "Dice que es para ejecutar en ellos el juicio escrito, y que esta gloria será para todos sus santos.",
+      "bibleReference": "Salmos 149:9",
+      "answers": [
+        {
+          "text": "Edificar el templo",
+          "isCorrect": false
+        },
+        {
+          "text": "Ejecutar el juicio escrito",
+          "isCorrect": true
+        },
+        {
+          "text": "Guardar las puertas",
+          "isCorrect": false
+        },
+        {
+          "text": "Repartir la tierra",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

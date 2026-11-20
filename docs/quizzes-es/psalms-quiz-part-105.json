@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 105",
+  "description": "Diez preguntas sobre Salmos 105: el llamado a hacer notorias las obras de Jehová, el pacto con Abraham, la historia de José y la salida de Egipto.",
+  "slug": "psalms-quiz-part-105",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el versículo 1, ¿qué hay que hacer notorio en los pueblos?",
+      "explanation": "El versículo 1 dice: alabad á Jehová, invocad su nombre, haced notorias sus obras en los pueblos.",
+      "bibleReference": "Salmos 105:1",
+      "answers": [
+        { "text": "Sus obras", "isCorrect": true },
+        { "text": "Sus juramentos", "isCorrect": false },
+        { "text": "Sus riquezas", "isCorrect": false },
+        { "text": "Sus estatutos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 6, ¿de quién son hijos los escogidos a quienes habla el salmo?",
+      "explanation": "El versículo 6 los llama simiente de Abraham su siervo, hijos de Jacob, sus escogidos.",
+      "bibleReference": "Salmos 105:6",
+      "answers": [
+        { "text": "De Lot", "isCorrect": false },
+        { "text": "De Jacob", "isCorrect": true },
+        { "text": "De Ismael", "isCorrect": false },
+        { "text": "De Esaú", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 11, ¿qué tierra prometió dar Dios por cordel de su heredad?",
+      "explanation": "El versículo 11 dice: A ti daré la tierra de Canaán por cordel de vuestra heredad.",
+      "bibleReference": "Salmos 105:11",
+      "answers": [
+        { "text": "La tierra de Châm", "isCorrect": false },
+        { "text": "La tierra de Egipto", "isCorrect": false },
+        { "text": "La tierra de Canaán", "isCorrect": true },
+        { "text": "La tierra de Idumea", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 15, ¿qué dijo Dios que no se hiciera?",
+      "explanation": "El versículo 15 dice: No toquéis á mis ungidos, ni hagáis mal á mis profetas.",
+      "bibleReference": "Salmos 105:15",
+      "answers": [
+        { "text": "No contar los pueblos ni medir la tierra prometida", "isCorrect": false },
+        { "text": "No edificar altares ni plantar viñas en la tierra", "isCorrect": false },
+        { "text": "No tomar la plata ni el oro de los reyes vecinos", "isCorrect": false },
+        { "text": "No tocar a sus ungidos ni hacer mal a sus profetas", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 17, ¿a quién envió Dios delante de ellos, vendido por siervo?",
+      "explanation": "El versículo 17 dice que envió un varón delante de ellos, á José, que fué vendido por siervo.",
+      "bibleReference": "Salmos 105:17",
+      "answers": [
+        { "text": "A Aarón", "isCorrect": false },
+        { "text": "A José", "isCorrect": true },
+        { "text": "A Moisés", "isCorrect": false },
+        { "text": "A Isaac", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 18, ¿con qué afligieron sus pies?",
+      "explanation": "El versículo 18 dice que afligieron sus pies con grillos y que en hierro fué puesta su persona.",
+      "bibleReference": "Salmos 105:18",
+      "answers": [
+        { "text": "Con grillos", "isCorrect": true },
+        { "text": "Con espinas", "isCorrect": false },
+        { "text": "Con cuerdas", "isCorrect": false },
+        { "text": "Con piedras", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 26, ¿a quiénes envió Dios?",
+      "explanation": "El versículo 26 dice que envió á su siervo Moisés, y á Aarón al cual escogió.",
+      "bibleReference": "Salmos 105:26",
+      "answers": [
+        { "text": "A Abraham y a Isaac", "isCorrect": false },
+        { "text": "A José y a Jacob", "isCorrect": false },
+        { "text": "A los señores de los pueblos", "isCorrect": false },
+        { "text": "A Moisés y a Aarón", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 30, ¿qué produjo su tierra, aun en las cámaras de sus reyes?",
+      "explanation": "El versículo 30 dice que su tierra produjo ranas, aun en las cámaras de sus reyes.",
+      "bibleReference": "Salmos 105:30",
+      "answers": [
+        { "text": "Langostas", "isCorrect": false },
+        { "text": "Moscas", "isCorrect": false },
+        { "text": "Ranas", "isCorrect": true },
+        { "text": "Piojos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 40, ¿qué hizo venir Dios cuando el pueblo pidió?",
+      "explanation": "El versículo 40 dice que pidieron, é hizo venir codornices, y los sació de pan del cielo.",
+      "bibleReference": "Salmos 105:40",
+      "answers": [
+        { "text": "Codornices", "isCorrect": true },
+        { "text": "Granizo", "isCorrect": false },
+        { "text": "Langostas", "isCorrect": false },
+        { "text": "Enjambres de moscas", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 45, ¿para qué les dio Dios las tierras de las gentes?",
+      "explanation": "El versículo 45 dice que fue para que guardasen sus estatutos, y observasen sus leyes.",
+      "bibleReference": "Salmos 105:44-45",
+      "answers": [
+        { "text": "Para que reinasen sobre todas las naciones vecinas", "isCorrect": false },
+        { "text": "Para que guardasen sus estatutos y observasen sus leyes", "isCorrect": true },
+        { "text": "Para que juntasen plata y oro en sus casas", "isCorrect": false },
+        { "text": "Para que edificasen ciudades y plantasen viñas", "isCorrect": false }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 99",
+  "description": "Diez preguntas sobre Salmos 99: Jehová sentado sobre los querubines, el estrado de sus pies y la columna de nube.",
+  "slug": "psalms-quiz-part-99",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el primer versículo, ¿qué harán los pueblos porque Jehová reinó?",
+      "explanation": "Salmos 99:1 dice: Jehová reinó, temblarán los pueblos.",
+      "bibleReference": "Salmos 99:1",
+      "answers": [
+        { "text": "Callarán", "isCorrect": false },
+        { "text": "Temblarán", "isCorrect": true },
+        { "text": "Huirán al desierto", "isCorrect": false },
+        { "text": "Traerán presentes", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Sobre qué está sentado, según el primer versículo?",
+      "explanation": "Salmos 99:1 dice que él está sentado sobre los querubines y que se conmoverá la tierra.",
+      "bibleReference": "Salmos 99:1",
+      "answers": [
+        { "text": "Sobre los querubines", "isCorrect": true },
+        { "text": "Sobre los montes", "isCorrect": false },
+        { "text": "Sobre las aguas", "isCorrect": false },
+        { "text": "Sobre una carroza", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Dónde es grande Jehová, según el versículo 2?",
+      "explanation": "Salmos 99:2 dice que Jehová en Sión es grande, y ensalzado sobre todos los pueblos.",
+      "bibleReference": "Salmos 99:2",
+      "answers": [
+        { "text": "En el desierto", "isCorrect": false },
+        { "text": "En Egipto", "isCorrect": false },
+        { "text": "En Sión", "isCorrect": true },
+        { "text": "En las islas", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cómo describe el versículo 3 el nombre que se debe alabar?",
+      "explanation": "Salmos 99:3 dice: Alaben tu nombre grande y tremendo: él es santo.",
+      "bibleReference": "Salmos 99:3",
+      "answers": [
+        { "text": "Oculto y callado", "isCorrect": false },
+        { "text": "Nuevo y desconocido", "isCorrect": false },
+        { "text": "Dulce y suave", "isCorrect": false },
+        { "text": "Grande y tremendo", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 4, ¿qué ama la gloria del rey?",
+      "explanation": "Salmos 99:4 dice que la gloria del rey ama el juicio, y que él confirma la rectitud.",
+      "bibleReference": "Salmos 99:4",
+      "answers": [
+        { "text": "La guerra", "isCorrect": false },
+        { "text": "El juicio", "isCorrect": true },
+        { "text": "Los presentes", "isCorrect": false },
+        { "text": "La alabanza", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué ha hecho Dios en Jacob, según el versículo 4?",
+      "explanation": "Salmos 99:4 dice: tú has hecho en Jacob juicio y justicia.",
+      "bibleReference": "Salmos 99:4",
+      "answers": [
+        { "text": "Juicio y justicia", "isCorrect": true },
+        { "text": "Guerra y venganza", "isCorrect": false },
+        { "text": "Un altar y un templo", "isCorrect": false },
+        { "text": "Señales y prodigios", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Ante qué manda encorvarse el versículo 5?",
+      "explanation": "Salmos 99:5 dice: Ensalzad a Jehová nuestro Dios, y encorvaos al estrado de sus pies.",
+      "bibleReference": "Salmos 99:5",
+      "answers": [
+        { "text": "Ante el arca del pacto", "isCorrect": false },
+        { "text": "Ante los querubines de oro", "isCorrect": false },
+        { "text": "Ante el altar del santuario", "isCorrect": false },
+        { "text": "Ante el estrado de sus pies", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Quiénes son nombrados en el versículo 6 entre los sacerdotes de Jehová?",
+      "explanation": "Salmos 99:6 nombra a Moisés y Aarón entre sus sacerdotes, y a Samuel entre los que invocaron su nombre.",
+      "bibleReference": "Salmos 99:6",
+      "answers": [
+        { "text": "David y Salomón", "isCorrect": false },
+        { "text": "Abraham e Isaac", "isCorrect": false },
+        { "text": "Moisés y Aarón", "isCorrect": true },
+        { "text": "Jacob y José", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿En qué hablaba Dios con ellos, según el versículo 7?",
+      "explanation": "Salmos 99:7 dice que en columna de nube hablaba con ellos, y que ellos guardaban sus testimonios.",
+      "bibleReference": "Salmos 99:7",
+      "answers": [
+        { "text": "En columna de nube", "isCorrect": true },
+        { "text": "En sueños de la noche", "isCorrect": false },
+        { "text": "En voz de trompeta", "isCorrect": false },
+        { "text": "En medio del fuego", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 8, ¿cómo fue Dios para ellos cuando les respondía?",
+      "explanation": "Salmos 99:8 dice que les fue un Dios perdonador, y vengador de sus obras.",
+      "bibleReference": "Salmos 99:8",
+      "answers": [
+        { "text": "Un Dios silencioso", "isCorrect": false },
+        { "text": "Un Dios que no responde", "isCorrect": false },
+        { "text": "Un Dios escondido", "isCorrect": false },
+        { "text": "Un Dios perdonador", "isCorrect": true }
+      ]
+    }
+  ]
+}

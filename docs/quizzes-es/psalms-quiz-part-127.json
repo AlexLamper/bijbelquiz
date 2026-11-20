@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 127",
+  "description": "Diez preguntas sobre Salmos 127: la casa y la ciudad que Jehová edifica y guarda, el sueño que da a su amado y los hijos como saetas.",
+  "slug": "psalms-quiz-part-127",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el primer verso, ¿qué sucede si Jehová no edificare la casa?",
+      "explanation": "El verso 1 dice: Si Jehová no edificare la casa, en vano trabajan los que la edifican.",
+      "bibleReference": "Salmos 127:1",
+      "answers": [
+        { "text": "La casa será llena de bienes", "isCorrect": false },
+        { "text": "Los hijos la edificarán después", "isCorrect": false },
+        { "text": "Jehová enviará su bendición sobre ella", "isCorrect": false },
+        { "text": "En vano trabajan los que la edifican", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el primer verso, ¿qué sucede si Jehová no guardare la ciudad?",
+      "explanation": "El verso 1 dice: si Jehová no guardare la ciudad, en vano vela la guarda.",
+      "bibleReference": "Salmos 127:1",
+      "answers": [
+        { "text": "La ciudad tendrá paz", "isCorrect": false },
+        { "text": "En vano vela la guarda", "isCorrect": true },
+        { "text": "Los muros caerán al alba", "isCorrect": false },
+        { "text": "Jehová enviará sus saetas", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dice el verso 2 del madrugar a levantarse y del venir tarde a reposar?",
+      "explanation": "El verso dice: Por demás os es el madrugar a levantaros, el veniros tarde a reposar.",
+      "bibleReference": "Salmos 127:2",
+      "answers": [
+        { "text": "Que es por demás", "isCorrect": true },
+        { "text": "Que da riquezas", "isCorrect": false },
+        { "text": "Que alarga la vida", "isCorrect": false },
+        { "text": "Que agrada a Jehová", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué clase de pan menciona el verso 2?",
+      "explanation": "El verso habla del comer pan de dolores.",
+      "bibleReference": "Salmos 127:2",
+      "answers": [
+        { "text": "Pan de la mañana", "isCorrect": false },
+        { "text": "Pan sin levadura", "isCorrect": false },
+        { "text": "Pan de dolores", "isCorrect": true },
+        { "text": "Pan de los fuertes", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el verso 2, ¿qué dará Dios a su amado?",
+      "explanation": "El verso termina diciendo: pues que a su amado dará Dios el sueño.",
+      "bibleReference": "Salmos 127:2",
+      "answers": [
+        { "text": "La aljaba", "isCorrect": false },
+        { "text": "El sueño", "isCorrect": true },
+        { "text": "Las saetas", "isCorrect": false },
+        { "text": "La ciudad", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el verso 3, ¿de quién son heredad los hijos?",
+      "explanation": "El verso dice: He aquí, heredad de Jehová son los hijos.",
+      "bibleReference": "Salmos 127:3",
+      "answers": [
+        { "text": "De los reyes", "isCorrect": false },
+        { "text": "De la ciudad", "isCorrect": false },
+        { "text": "De los valientes", "isCorrect": false },
+        { "text": "De Jehová", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Cómo llama el verso 3 al fruto del vientre?",
+      "explanation": "El verso dice: cosa de estima el fruto del vientre.",
+      "bibleReference": "Salmos 127:3",
+      "answers": [
+        { "text": "Carga pesada", "isCorrect": false },
+        { "text": "Vara de juicio", "isCorrect": false },
+        { "text": "Cosa de estima", "isCorrect": true },
+        { "text": "Puerta cerrada", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Con qué compara el verso 4 a los hijos habidos en la juventud?",
+      "explanation": "El verso dice: Como saetas en mano del valiente, así son los hijos habidos en la juventud.",
+      "bibleReference": "Salmos 127:4",
+      "answers": [
+        { "text": "Con saetas en mano del valiente", "isCorrect": true },
+        { "text": "Con plantas junto a la casa", "isCorrect": false },
+        { "text": "Con piedras del edificio", "isCorrect": false },
+        { "text": "Con velas en la noche", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿A quién llama bienaventurado el verso 5?",
+      "explanation": "El verso dice: Bienaventurado el hombre que hinchió su aljaba de ellos.",
+      "bibleReference": "Salmos 127:5",
+      "answers": [
+        { "text": "Al que madruga para levantarse", "isCorrect": false },
+        { "text": "Al que edifica la casa con sus manos", "isCorrect": false },
+        { "text": "Al que vela sobre la ciudad de noche", "isCorrect": false },
+        { "text": "Al hombre que hinchió su aljaba de ellos", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el verso 5, ¿qué no le sucederá cuando hablare con los enemigos en la puerta?",
+      "explanation": "El verso dice: no será avergonzado cuando hablare con los enemigos en la puerta.",
+      "bibleReference": "Salmos 127:5",
+      "answers": [
+        { "text": "No comerá pan de dolores", "isCorrect": false },
+        { "text": "No será avergonzado", "isCorrect": true },
+        { "text": "No perderá su aljaba", "isCorrect": false },
+        { "text": "No velará de noche", "isCorrect": false }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 60",
+  "description": "Diez preguntas sobre Salmos 60: la tierra que titubea, el reparto de Galaad, Moab y Edom, y la confianza de que en Dios se hacen proezas.",
+  "slug": "psalms-quiz-part-60",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el encabezado, ¿a cuántos de Edom hirió Joab en el valle de las Salinas?",
+      "explanation": "El encabezado dice que volvió Joab é hirió de Edom en el valle de las Salinas doce mil.",
+      "bibleReference": "Salmos 60:1",
+      "answers": [
+        { "text": "Doce mil", "isCorrect": true },
+        { "text": "Veinte mil", "isCorrect": false },
+        { "text": "Mil ochocientos", "isCorrect": false },
+        { "text": "Siete mil", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿De qué se queja el salmista al comienzo, en el versículo 1?",
+      "explanation": "El versículo 1 dice: Oh Dios, tú nos has desechado, nos disipaste; te has airado: vuélvete á nosotros.",
+      "bibleReference": "Salmos 60:1",
+      "answers": [
+        { "text": "De que los sacerdotes del santuario han callado", "isCorrect": false },
+        { "text": "De que el rey no sale a la guerra con el pueblo", "isCorrect": false },
+        { "text": "De que Dios los ha desechado y disipado, y se ha airado", "isCorrect": true },
+        { "text": "De que no tienen pan ni agua en la ciudad", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 2, ¿qué pide el salmista que Dios sane?",
+      "explanation": "El versículo 2 dice que Dios hizo temblar la tierra y la abrió, y pide: sana sus quiebras, porque titubea.",
+      "bibleReference": "Salmos 60:2",
+      "answers": [
+        { "text": "Las heridas de los soldados", "isCorrect": false },
+        { "text": "Las quiebras de la tierra, porque titubea", "isCorrect": true },
+        { "text": "Los muros de Jerusalem", "isCorrect": false },
+        { "text": "La lengua de los que mienten", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 3, ¿qué vino hizo Dios beber a su pueblo?",
+      "explanation": "El versículo 3 dice que Dios ha hecho ver a su pueblo duras cosas y les hizo beber el vino de agitación.",
+      "bibleReference": "Salmos 60:3",
+      "answers": [
+        { "text": "El vino de los sacrificios", "isCorrect": false },
+        { "text": "El vino nuevo de la vendimia", "isCorrect": false },
+        { "text": "El vino de las naciones", "isCorrect": false },
+        { "text": "El vino de agitación", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 4, ¿qué ha dado Dios a los que le temen?",
+      "explanation": "El versículo 4 dice: Has dado á los que te temen bandera que alcen por la verdad.",
+      "bibleReference": "Salmos 60:4",
+      "answers": [
+        { "text": "Una bandera que alcen por la verdad", "isCorrect": true },
+        { "text": "Un cántico nuevo para el santuario", "isCorrect": false },
+        { "text": "Una ciudad fortalecida", "isCorrect": false },
+        { "text": "Carros y caballos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 6, ¿qué valle dice que medirá?",
+      "explanation": "El versículo 6 dice: Dios pronunció por su santuario; yo me alegraré; partiré á Sichêm, y mediré el valle de Succoth.",
+      "bibleReference": "Salmos 60:6",
+      "answers": [
+        { "text": "El valle de las Salinas", "isCorrect": false },
+        { "text": "El valle de Basán", "isCorrect": false },
+        { "text": "El valle de Succoth", "isCorrect": true },
+        { "text": "El valle de Sichêm", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 7, ¿qué dice el salmo que es Judá?",
+      "explanation": "El versículo 7 dice: Mío es Galaad, y mío es Manasés; y Ephraim es la fortaleza de mi cabeza; Judá, mi legislador.",
+      "bibleReference": "Salmos 60:7",
+      "answers": [
+        { "text": "La vasija de su lavatorio", "isCorrect": false },
+        { "text": "Su legislador", "isCorrect": true },
+        { "text": "La fortaleza de su cabeza", "isCorrect": false },
+        { "text": "Su bandera por la verdad", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 8, ¿qué dice el salmo de Moab?",
+      "explanation": "El versículo 8 dice: Moab, la vasija de mi lavatorio; sobre Edom echaré mi zapato.",
+      "bibleReference": "Salmos 60:8",
+      "answers": [
+        { "text": "Que es el monte de su asiento", "isCorrect": false },
+        { "text": "Que es su heredad para siempre", "isCorrect": false },
+        { "text": "Que es la fortaleza de su cabeza", "isCorrect": false },
+        { "text": "Que es la vasija de su lavatorio", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 11, ¿qué dice el salmista que es vano al pedir socorro contra el enemigo?",
+      "explanation": "El versículo 11 dice: Danos socorro contra el enemigo, que vana es la salud de los hombres.",
+      "bibleReference": "Salmos 60:11",
+      "answers": [
+        { "text": "La salud de los hombres", "isCorrect": true },
+        { "text": "El consejo de los ancianos", "isCorrect": false },
+        { "text": "La fuerza del caballo", "isCorrect": false },
+        { "text": "La riqueza de los reyes", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dice el versículo 12 que harán en Dios?",
+      "explanation": "El versículo 12 dice: En Dios haremos proezas; y él hollará nuestros enemigos.",
+      "bibleReference": "Salmos 60:12",
+      "answers": [
+        { "text": "Edificarán un santuario", "isCorrect": false },
+        { "text": "Repartirán la tierra por suertes", "isCorrect": false },
+        { "text": "Harán proezas, y él hollará a sus enemigos", "isCorrect": true },
+        { "text": "Descansarán de toda guerra para siempre", "isCorrect": false }
+      ]
+    }
+  ]
+}

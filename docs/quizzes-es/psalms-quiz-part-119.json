@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 119",
+  "description": "Diez preguntas sobre Salmos 119: el amor a la ley de Jehová, desde el camino limpio del joven hasta la oveja extraviada del último verso.",
+  "slug": "psalms-quiz-part-119",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el salmo, ¿con qué limpiará el joven su camino?",
+      "explanation": "El verso 9 pregunta con qué limpiará el joven su camino y responde: Con guardar tu palabra.",
+      "bibleReference": "Salmos 119:9",
+      "answers": [
+        { "text": "Con lavarse en el río", "isCorrect": false },
+        { "text": "Con guardar tu palabra", "isCorrect": true },
+        { "text": "Con traer un sacrificio", "isCorrect": false },
+        { "text": "Con el consejo de los viejos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué pide el salmista que sea abierto para mirar las maravillas de la ley?",
+      "explanation": "El verso 18 dice: Abre mis ojos, y miraré las maravillas de tu ley.",
+      "bibleReference": "Salmos 119:18",
+      "answers": [
+        { "text": "Sus labios", "isCorrect": false },
+        { "text": "Sus oídos", "isCorrect": false },
+        { "text": "Las puertas de la justicia", "isCorrect": false },
+        { "text": "Sus ojos", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué fueron para el salmista los estatutos de Jehová en la mansión de sus peregrinaciones?",
+      "explanation": "El verso 54 dice: Cánticos me fueron tus estatutos en la mansión de mis peregrinaciones.",
+      "bibleReference": "Salmos 119:54",
+      "answers": [
+        { "text": "Cánticos", "isCorrect": true },
+        { "text": "Carga pesada", "isCorrect": false },
+        { "text": "Espanto", "isCorrect": false },
+        { "text": "Oprobio", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Con qué compara el salmista la ley de la boca de Jehová, diciendo que es mejor?",
+      "explanation": "El verso 72 dice: Mejor me es la ley de tu boca, que millares de oro y plata.",
+      "bibleReference": "Salmos 119:72",
+      "answers": [
+        { "text": "Con la miel del panal", "isCorrect": false },
+        { "text": "Con el vino nuevo", "isCorrect": false },
+        { "text": "Con millares de oro y plata", "isCorrect": true },
+        { "text": "Con las piedras del templo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Con qué se compara el salmista al decir que no ha olvidado los estatutos?",
+      "explanation": "El verso 83 dice: Porque estoy como el odre al humo; mas no he olvidado tus estatutos.",
+      "bibleReference": "Salmos 119:83",
+      "answers": [
+        { "text": "Con el polvo del suelo", "isCorrect": false },
+        { "text": "Con la hierba del campo", "isCorrect": false },
+        { "text": "Con la paja delante del viento", "isCorrect": false },
+        { "text": "Con el odre al humo", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Dónde dice el salmista que permanece para siempre la palabra de Jehová?",
+      "explanation": "El verso 89 dice: Para siempre, oh Jehová, permanece tu palabra en los cielos.",
+      "bibleReference": "Salmos 119:89",
+      "answers": [
+        { "text": "En las puertas de Sión", "isCorrect": false },
+        { "text": "En los cielos", "isCorrect": true },
+        { "text": "En el arca del testimonio", "isCorrect": false },
+        { "text": "En el libro de los reyes", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dice el salmista sobre el sabor de las palabras de Jehová?",
+      "explanation": "El verso 103 dice: Cuán dulces son a mi paladar tus palabras, más que la miel a mi boca.",
+      "bibleReference": "Salmos 119:103",
+      "answers": [
+        { "text": "Son más dulces que el vino nuevo", "isCorrect": false },
+        { "text": "Son más amargas que la hiel", "isCorrect": false },
+        { "text": "Son más dulces que la miel", "isCorrect": true },
+        { "text": "Son más duras que la piedra", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué es la palabra de Jehová para los pies y el camino del salmista?",
+      "explanation": "El verso 105 dice: Lámpara es a mis pies tu palabra, y lumbrera a mi camino.",
+      "bibleReference": "Salmos 119:105",
+      "answers": [
+        { "text": "Lámpara a sus pies y lumbrera a su camino", "isCorrect": true },
+        { "text": "Escudo a su mano y yelmo a su cabeza", "isCorrect": false },
+        { "text": "Muro a su ciudad y puerta a su casa", "isCorrect": false },
+        { "text": "Vara a su mano y cayado a su hombro", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuántas veces al día dice el salmista que alaba a Jehová?",
+      "explanation": "El verso 164 dice: Siete veces al día te alabo sobre los juicios de tu justicia.",
+      "bibleReference": "Salmos 119:164",
+      "answers": [
+        { "text": "Tres veces", "isCorrect": false },
+        { "text": "Dos veces", "isCorrect": false },
+        { "text": "Cada hora", "isCorrect": false },
+        { "text": "Siete veces", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Al terminar el salmo, ¿con qué se compara el salmista?",
+      "explanation": "El verso 176 dice: Yo anduve errante como oveja extraviada; busca a tu siervo.",
+      "bibleReference": "Salmos 119:176",
+      "answers": [
+        { "text": "Con un pájaro en la red", "isCorrect": false },
+        { "text": "Con una oveja extraviada", "isCorrect": true },
+        { "text": "Con un árbol junto al río", "isCorrect": false },
+        { "text": "Con una caña sacudida", "isCorrect": false }
+      ]
+    }
+  ]
+}

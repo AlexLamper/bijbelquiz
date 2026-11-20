@@ -14,12 +14,12 @@
       "bibleReference": "2 Crónicas 30:1",
       "answers": [
         {
-          "text": "A Ephraim y Manasés",
-          "isCorrect": true
-        },
-        {
           "text": "A Egipto y Asiria",
           "isCorrect": false
+        },
+        {
+          "text": "A Ephraim y Manasés",
+          "isCorrect": true
         },
         {
           "text": "A Tiro y Sidón",
@@ -37,12 +37,12 @@
       "bibleReference": "2 Crónicas 30:2",
       "answers": [
         {
-          "text": "En el mes primero",
-          "isCorrect": false
-        },
-        {
           "text": "En el mes segundo",
           "isCorrect": true
+        },
+        {
+          "text": "En el mes primero",
+          "isCorrect": false
         },
         {
           "text": "En el mes séptimo",
@@ -60,16 +60,16 @@
       "bibleReference": "2 Crónicas 30:3",
       "answers": [
         {
-          "text": "Porque el templo de Jehová estaba cerrado y el altar derribado",
-          "isCorrect": false
+          "text": "Porque no había suficientes sacerdotes santificados ni el pueblo estaba junto en Jerusalem",
+          "isCorrect": true
         },
         {
           "text": "Porque faltaban animales para el sacrificio en toda la tierra",
           "isCorrect": false
         },
         {
-          "text": "Porque no había suficientes sacerdotes santificados ni el pueblo estaba junto en Jerusalem",
-          "isCorrect": true
+          "text": "Porque el templo de Jehová estaba cerrado y el altar derribado",
+          "isCorrect": false
         },
         {
           "text": "Porque el rey estaba enfermo y sus príncipes andaban fuera",
@@ -87,16 +87,16 @@
           "isCorrect": false
         },
         {
-          "text": "Desde Egipto hasta el Eufrates",
-          "isCorrect": false
+          "text": "Desde Beer-seba hasta Dan",
+          "isCorrect": true
         },
         {
           "text": "Desde Dan hasta Hebrón",
           "isCorrect": false
         },
         {
-          "text": "Desde Beer-seba hasta Dan",
-          "isCorrect": true
+          "text": "Desde Egipto hasta el Eufrates",
+          "isCorrect": false
         }
       ]
     },
@@ -106,16 +106,16 @@
       "bibleReference": "2 Crónicas 30:6",
       "answers": [
         {
-          "text": "Que se volviesen á Jehová el Dios de Abraham, de Isaac, y de Israel",
-          "isCorrect": true
+          "text": "Que reedificasen los altares de los altos en sus ciudades",
+          "isCorrect": false
         },
         {
           "text": "Que pagasen tributo al rey de Asiria por sus ciudades",
           "isCorrect": false
         },
         {
-          "text": "Que reedificasen los altares de los altos en sus ciudades",
-          "isCorrect": false
+          "text": "Que se volviesen á Jehová el Dios de Abraham, de Isaac, y de Israel",
+          "isCorrect": true
         },
         {
           "text": "Que saliesen á pelear contra Ephraim y contra Manasés",
@@ -129,12 +129,12 @@
       "bibleReference": "2 Crónicas 30:10",
       "answers": [
         {
-          "text": "Los recibieron con cánticos",
-          "isCorrect": false
-        },
-        {
           "text": "Se reían y burlaban de ellos",
           "isCorrect": true
+        },
+        {
+          "text": "Los recibieron con cánticos",
+          "isCorrect": false
         },
         {
           "text": "Les dieron plata y oro",
@@ -156,12 +156,12 @@
           "isCorrect": false
         },
         {
-          "text": "A los siete del mes tercero",
-          "isCorrect": false
-        },
-        {
           "text": "A los catorce del mes segundo",
           "isCorrect": true
+        },
+        {
+          "text": "A los siete del mes tercero",
+          "isCorrect": false
         },
         {
           "text": "A los quince del mes séptimo",
@@ -198,8 +198,8 @@
       "bibleReference": "2 Crónicas 30:23",
       "answers": [
         {
-          "text": "Celebrar otros siete días",
-          "isCorrect": true
+          "text": "Edificar un altar nuevo",
+          "isCorrect": false
         },
         {
           "text": "Volver cada uno á su ciudad",
@@ -210,8 +210,8 @@
           "isCorrect": false
         },
         {
-          "text": "Edificar un altar nuevo",
-          "isCorrect": false
+          "text": "Celebrar otros siete días",
+          "isCorrect": true
         }
       ]
     },
@@ -225,12 +225,12 @@
           "isCorrect": false
         },
         {
-          "text": "Mil novillos y siete mil ovejas",
-          "isCorrect": true
-        },
-        {
           "text": "Cien talentos de plata",
           "isCorrect": false
+        },
+        {
+          "text": "Mil novillos y siete mil ovejas",
+          "isCorrect": true
         },
         {
           "text": "Dos mil seiscientas ovejas y trescientos bueyes",

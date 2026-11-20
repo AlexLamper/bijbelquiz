@@ -1,0 +1,242 @@
+{
+  "title": "Proverbios Quiz bíblico - Capítulo 8",
+  "description": "Diez preguntas sobre Proverbios 8: la sabiduría que clama en las puertas de la ciudad y que estaba con Jehová antes de sus obras.",
+  "slug": "proverbs-quiz-part-8",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el texto, ¿dónde da voces la sabiduría?",
+      "explanation": "Proverbios 8:2-3 dice que se para en los altos cabezos, junto al camino, y da voces en el lugar de las puertas, a la entrada de la ciudad.",
+      "bibleReference": "Proverbios 8:2-3",
+      "answers": [
+        {
+          "text": "En el desierto y en los montes lejanos",
+          "isCorrect": false
+        },
+        {
+          "text": "En el lugar de las puertas, a la entrada de la ciudad",
+          "isCorrect": true
+        },
+        {
+          "text": "En las cámaras del rey y en su palacio",
+          "isCorrect": false
+        },
+        {
+          "text": "En el templo, delante del altar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quiénes llama el texto para que entiendan discreción y entren en cordura?",
+      "explanation": "Proverbios 8:5 dice: Entended, simples, discreción; y vosotros, locos, entrad en cordura.",
+      "bibleReference": "Proverbios 8:5",
+      "answers": [
+        {
+          "text": "A los reyes y a los príncipes",
+          "isCorrect": false
+        },
+        {
+          "text": "A los sabios y a los entendidos",
+          "isCorrect": false
+        },
+        {
+          "text": "A los ricos y a los pobres",
+          "isCorrect": false
+        },
+        {
+          "text": "A los simples y a los locos",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué hablará la boca de la sabiduría y qué abominan sus labios?",
+      "explanation": "Proverbios 8:7 dice: Porque mi boca hablará verdad, y la impiedad abominan mis labios.",
+      "bibleReference": "Proverbios 8:7",
+      "answers": [
+        {
+          "text": "Hablará verdad y abomina la impiedad",
+          "isCorrect": true
+        },
+        {
+          "text": "Hablará juicio y abomina la pobreza",
+          "isCorrect": false
+        },
+        {
+          "text": "Hablará cosas torcidas y abomina la plata",
+          "isCorrect": false
+        },
+        {
+          "text": "Hablará consejo y abomina la risa",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice la sabiduría que hay que recibir antes que la plata y el oro escogido?",
+      "explanation": "Proverbios 8:10 dice: Recibid mi enseñanza, y no plata; y ciencia antes que el oro escogido.",
+      "bibleReference": "Proverbios 8:10",
+      "answers": [
+        {
+          "text": "Las riquezas sólidas",
+          "isCorrect": false
+        },
+        {
+          "text": "La honra de los príncipes",
+          "isCorrect": false
+        },
+        {
+          "text": "Su enseñanza y la ciencia",
+          "isCorrect": true
+        },
+        {
+          "text": "Las piedras preciosas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué es el temor de Jehová?",
+      "explanation": "Proverbios 8:13 dice: El temor de Jehová es aborrecer el mal.",
+      "bibleReference": "Proverbios 8:13",
+      "answers": [
+        {
+          "text": "Guardar los umbrales de sus puertas",
+          "isCorrect": false
+        },
+        {
+          "text": "Aborrecer el mal",
+          "isCorrect": true
+        },
+        {
+          "text": "Buscarla de madrugada",
+          "isCorrect": false
+        },
+        {
+          "text": "Hablar cosas rectas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice la sabiduría acerca de los reyes y los príncipes?",
+      "explanation": "Proverbios 8:15-16 dice: Por mí reinan los reyes, y los príncipes determinan justicia; por mí dominan los príncipes.",
+      "bibleReference": "Proverbios 8:15-16",
+      "answers": [
+        {
+          "text": "Que la aborrecen y aman la muerte",
+          "isCorrect": false
+        },
+        {
+          "text": "Que la buscan y no la hallan",
+          "isCorrect": false
+        },
+        {
+          "text": "Que por ella reinan y determinan justicia",
+          "isCorrect": true
+        },
+        {
+          "text": "Que le dan plata y oro escogido",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿quiénes hallan a la sabiduría?",
+      "explanation": "Proverbios 8:17 dice: Yo amo á los que me aman; y me hallan los que madrugando me buscan.",
+      "bibleReference": "Proverbios 8:17",
+      "answers": [
+        {
+          "text": "Los que madrugando la buscan",
+          "isCorrect": true
+        },
+        {
+          "text": "Los que tienen plata y oro",
+          "isCorrect": false
+        },
+        {
+          "text": "Los príncipes y gobernadores",
+          "isCorrect": false
+        },
+        {
+          "text": "Los simples y los locos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice la sabiduría sobre el principio del camino de Jehová?",
+      "explanation": "Proverbios 8:22 dice: Jehová me poseía en el principio de su camino, ya de antiguo, antes de sus obras.",
+      "bibleReference": "Proverbios 8:22",
+      "answers": [
+        {
+          "text": "Que fue hecha después de todas sus obras",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no sabe cuándo fue engendrada",
+          "isCorrect": false
+        },
+        {
+          "text": "Que los hombres la hallaron primero",
+          "isCorrect": false
+        },
+        {
+          "text": "Que Jehová la poseía ya de antiguo, antes de sus obras",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿cómo estaba la sabiduría con él mientras hacía su obra?",
+      "explanation": "Proverbios 8:30 dice: Con él estaba yo ordenándolo todo; y fuí su delicia todos los días, teniendo solaz delante de él en todo tiempo.",
+      "bibleReference": "Proverbios 8:30",
+      "answers": [
+        {
+          "text": "Callada y escondida en los abismos",
+          "isCorrect": false
+        },
+        {
+          "text": "Ordenándolo todo, y era su delicia cada día",
+          "isCorrect": true
+        },
+        {
+          "text": "Durmiendo hasta que el día fue perfecto",
+          "isCorrect": false
+        },
+        {
+          "text": "Clamando a las puertas de la ciudad",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el final del capítulo, ¿qué alcanza el que halla la sabiduría?",
+      "explanation": "Proverbios 8:35 dice: Porque el que me hallare, hallará la vida, y alcanzará el favor de Jehová.",
+      "bibleReference": "Proverbios 8:35",
+      "answers": [
+        {
+          "text": "Riquezas y muchos siervos",
+          "isCorrect": false
+        },
+        {
+          "text": "Honra entre las naciones",
+          "isCorrect": false
+        },
+        {
+          "text": "La vida y el favor de Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "Años de descanso y de sueño",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

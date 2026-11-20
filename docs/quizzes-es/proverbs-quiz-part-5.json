@@ -1,0 +1,242 @@
+{
+  "title": "Proverbios Quiz bíblico - Capítulo 5",
+  "description": "Diez preguntas sobre Proverbios 5: los labios de la extraña, su fin amargo y el llamado a alegrarse con la mujer de la mocedad.",
+  "slug": "proverbs-quiz-part-5",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el texto, ¿qué destilan los labios de la extraña?",
+      "explanation": "Proverbios 5:3 dice que los labios de la extraña destilan miel y que su paladar es más blando que el aceite.",
+      "bibleReference": "Proverbios 5:3",
+      "answers": [
+        {
+          "text": "Ajenjo",
+          "isCorrect": false
+        },
+        {
+          "text": "Vino",
+          "isCorrect": false
+        },
+        {
+          "text": "Miel",
+          "isCorrect": true
+        },
+        {
+          "text": "Veneno",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo describe el texto el fin de la extraña?",
+      "explanation": "Proverbios 5:4 dice: Mas su fin es amargo como el ajenjo, agudo como cuchillo de dos filos.",
+      "bibleReference": "Proverbios 5:4",
+      "answers": [
+        {
+          "text": "Amargo como el ajenjo y agudo como cuchillo de dos filos",
+          "isCorrect": true
+        },
+        {
+          "text": "Dulce como la miel y blando como el aceite",
+          "isCorrect": false
+        },
+        {
+          "text": "Oscuro como la noche y frío como el pozo",
+          "isCorrect": false
+        },
+        {
+          "text": "Vacío como el viento y breve como el humo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿a dónde descienden sus pies?",
+      "explanation": "Proverbios 5:5 dice: Sus pies descienden á la muerte; sus pasos sustentan el sepulcro.",
+      "bibleReference": "Proverbios 5:5",
+      "answers": [
+        {
+          "text": "A la casa del extraño",
+          "isCorrect": false
+        },
+        {
+          "text": "A las plazas de la ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "A la puerta de su casa",
+          "isCorrect": false
+        },
+        {
+          "text": "A la muerte",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿De qué manda el texto no acercarse?",
+      "explanation": "Proverbios 5:8 dice: Aleja de ella tu camino, y no te acerques á la puerta de su casa.",
+      "bibleReference": "Proverbios 5:8",
+      "answers": [
+        {
+          "text": "De la mesa de los necios",
+          "isCorrect": false
+        },
+        {
+          "text": "De la puerta de su casa",
+          "isCorrect": true
+        },
+        {
+          "text": "Del camino de los impíos",
+          "isCorrect": false
+        },
+        {
+          "text": "De la congregación de los malos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué dirá en sus postrimerías el que no escuchó?",
+      "explanation": "Proverbios 5:11-12 dice que gemirá y dirá: ¡Cómo aborrecí el consejo, y mi corazón menospreció la reprensión!",
+      "bibleReference": "Proverbios 5:11-12",
+      "answers": [
+        {
+          "text": "Que nadie le mostró nunca el camino de la vida",
+          "isCorrect": false
+        },
+        {
+          "text": "Que sus riquezas y sus años lo engañaron",
+          "isCorrect": false
+        },
+        {
+          "text": "Que aborreció el consejo y su corazón menospreció la reprensión",
+          "isCorrect": true
+        },
+        {
+          "text": "Que sus amigos lo dejaron solo en su dolor",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué manda beber el texto?",
+      "explanation": "Proverbios 5:15 dice: Bebe el agua de tu cisterna, y los raudales de tu pozo.",
+      "bibleReference": "Proverbios 5:15",
+      "answers": [
+        {
+          "text": "El vino templado que se puso en la mesa",
+          "isCorrect": false
+        },
+        {
+          "text": "Las aguas que están en casa del extraño",
+          "isCorrect": false
+        },
+        {
+          "text": "Los ríos de aguas que corren por las plazas",
+          "isCorrect": false
+        },
+        {
+          "text": "El agua de tu cisterna",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿para quién deben ser tus fuentes?",
+      "explanation": "Proverbios 5:16-17 habla de tus fuentes y dice: Sean para ti solo, y no para los extraños contigo.",
+      "bibleReference": "Proverbios 5:16-17",
+      "answers": [
+        {
+          "text": "Para los extraños que pasan",
+          "isCorrect": false
+        },
+        {
+          "text": "Para ti solo",
+          "isCorrect": true
+        },
+        {
+          "text": "Para toda la congregación",
+          "isCorrect": false
+        },
+        {
+          "text": "Para los hijos de tu vecino",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con quién manda el texto alegrarse?",
+      "explanation": "Proverbios 5:18 dice: Sea bendito tu manantial; y alégrate con la mujer de tu mocedad.",
+      "bibleReference": "Proverbios 5:18",
+      "answers": [
+        {
+          "text": "Con la mujer de tu mocedad",
+          "isCorrect": true
+        },
+        {
+          "text": "Con la extraña de palabras blandas",
+          "isCorrect": false
+        },
+        {
+          "text": "Con los que te adoctrinaban",
+          "isCorrect": false
+        },
+        {
+          "text": "Con la congregación de los rectos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué animales compara el texto a esa mujer?",
+      "explanation": "Proverbios 5:19 la compara con una cierva amada y una graciosa corza.",
+      "bibleReference": "Proverbios 5:19",
+      "answers": [
+        {
+          "text": "Con la hormiga y la abeja del campo",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el corzo y el ave del parancero",
+          "isCorrect": false
+        },
+        {
+          "text": "Con una cierva amada y una graciosa corza",
+          "isCorrect": true
+        },
+        {
+          "text": "Con la paloma y el buey",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué prenderá al impío?",
+      "explanation": "Proverbios 5:22 dice: Prenderán al impío sus propias iniquidades, y detenido será con las cuerdas de su pecado.",
+      "bibleReference": "Proverbios 5:22",
+      "answers": [
+        {
+          "text": "Los extraños que se hartan de su fuerza",
+          "isCorrect": false
+        },
+        {
+          "text": "La mano del cazador",
+          "isCorrect": false
+        },
+        {
+          "text": "El juicio de la congregación",
+          "isCorrect": false
+        },
+        {
+          "text": "Sus propias iniquidades",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

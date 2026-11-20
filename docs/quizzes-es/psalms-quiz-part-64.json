@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 64",
+  "description": "Diez preguntas sobre Salmos 64: la lengua afilada como cuchillo, los lazos escondidos, la saeta de Dios y la alegría de los rectos de corazón.",
+  "slug": "psalms-quiz-part-64",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el versículo 1, ¿de qué pide el salmista que Dios guarde su vida?",
+      "explanation": "El versículo 1 dice: Escucha, oh Dios, mi voz en mi oración: guarda mi vida del miedo del enemigo.",
+      "bibleReference": "Salmos 64:1",
+      "answers": [
+        { "text": "Del miedo del enemigo", "isCorrect": true },
+        { "text": "Del hambre y de la peste", "isCorrect": false },
+        { "text": "De la mano del rey", "isCorrect": false },
+        { "text": "Del juicio de los jueces", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 2, ¿de qué pide ser escondido?",
+      "explanation": "El versículo 2 dice: Escóndeme del secreto consejo de los malignos; de la conspiración de los que obran iniquidad.",
+      "bibleReference": "Salmos 64:2",
+      "answers": [
+        { "text": "Del ruido y del alboroto que hay en la ciudad", "isCorrect": false },
+        { "text": "De la ira de todas las naciones de la tierra", "isCorrect": false },
+        { "text": "Del secreto consejo de los malignos y de su conspiración", "isCorrect": true },
+        { "text": "De los que le piden prestado en la puerta", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 3, ¿con qué se compara la lengua que ellos amolaron?",
+      "explanation": "El versículo 3 dice: Que amolaron su lengua como cuchillo.",
+      "bibleReference": "Salmos 64:3",
+      "answers": [
+        { "text": "Con una red tendida", "isCorrect": false },
+        { "text": "Con un cuchillo", "isCorrect": true },
+        { "text": "Con un azote", "isCorrect": false },
+        { "text": "Con veneno de serpiente", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 3, ¿qué armaron ellos por su saeta?",
+      "explanation": "El versículo 3 dice que armaron por su saeta palabra amarga.",
+      "bibleReference": "Salmos 64:3",
+      "answers": [
+        { "text": "Lanzas de hierro", "isCorrect": false },
+        { "text": "Piedras del arroyo", "isCorrect": false },
+        { "text": "Fuego del horno", "isCorrect": false },
+        { "text": "Palabra amarga", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 4, ¿a quién asaetean de improviso, sin temer?",
+      "explanation": "El versículo 4 dice: Para asaetear á escondidas al íntegro: de improviso lo asaetean, y no temen.",
+      "bibleReference": "Salmos 64:4",
+      "answers": [
+        { "text": "Al íntegro", "isCorrect": true },
+        { "text": "Al rey de la tierra", "isCorrect": false },
+        { "text": "Al pobre y al huérfano", "isCorrect": false },
+        { "text": "Al que los encanta", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 5, ¿qué dicen los que tratan de esconder los lazos?",
+      "explanation": "El versículo 5 dice que, obstinados en su inicuo designio, tratan de esconder los lazos y dicen: ¿Quién los ha de ver?",
+      "bibleReference": "Salmos 64:5",
+      "answers": [
+        { "text": "Jehová nos librará", "isCorrect": false },
+        { "text": "Nuestra mano es fuerte", "isCorrect": false },
+        { "text": "¿Quién los ha de ver?", "isCorrect": true },
+        { "text": "Hagamos paz con el íntegro", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 7, ¿con qué los herirá Dios?",
+      "explanation": "El versículo 7 dice: Mas Dios los herirá con saeta; de repente serán sus plagas.",
+      "bibleReference": "Salmos 64:7",
+      "answers": [
+        { "text": "Con granizo", "isCorrect": false },
+        { "text": "Con saeta", "isCorrect": true },
+        { "text": "Con la espada de los reyes", "isCorrect": false },
+        { "text": "Con tempestad", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 8, ¿qué harán caer sobre sí mismos?",
+      "explanation": "El versículo 8 dice: Y harán caer sobre sí sus mismas lenguas: se espantarán todos los que los vieren.",
+      "bibleReference": "Salmos 64:8",
+      "answers": [
+        { "text": "Sus propios lazos", "isCorrect": false },
+        { "text": "Su propia casa", "isCorrect": false },
+        { "text": "El hoyo que cavaron", "isCorrect": false },
+        { "text": "Sus mismas lenguas", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 9, ¿qué harán todos los hombres?",
+      "explanation": "El versículo 9 dice que temerán todos los hombres, anunciarán la obra de Dios y entenderán su hecho.",
+      "bibleReference": "Salmos 64:9",
+      "answers": [
+        { "text": "Temerán, anunciarán la obra de Dios y entenderán su hecho", "isCorrect": true },
+        { "text": "Callarán y no dirán nada de lo que han visto", "isCorrect": false },
+        { "text": "Esconderán sus propios lazos y sus saetas", "isCorrect": false },
+        { "text": "Huirán de la ciudad sin volver la cara", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 10, ¿quiénes se gloriarán además del justo que se alegra en Jehová?",
+      "explanation": "El versículo 10 dice que el justo se alegrará en Jehová y confiará en él, y que se gloriarán todos los rectos de corazón.",
+      "bibleReference": "Salmos 64:10",
+      "answers": [
+        { "text": "Los príncipes de las gentes", "isCorrect": false },
+        { "text": "Los que obran iniquidad", "isCorrect": false },
+        { "text": "Todos los rectos de corazón", "isCorrect": true },
+        { "text": "Los que esconden lazos", "isCorrect": false }
+      ]
+    }
+  ]
+}

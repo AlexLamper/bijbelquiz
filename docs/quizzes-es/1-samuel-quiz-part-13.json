@@ -13,7 +13,7 @@
       "explanation": "Escogió tres mil de Israel: dos mil estuvieron con Saúl en Michmas y en el monte de Beth-el, y mil estuvieron con Jonathán en Gabaa de Benjamín.",
       "bibleReference": "1 Samuel 13:2",
       "answers": [
-        { "text": "Seis mil: tres mil con cada uno de ellos", "isCorrect": false },
+        { "text": "Seis mil hombres: tres mil con cada uno de ellos", "isCorrect": false },
         { "text": "Treinta mil, todos con Saúl en Michmas", "isCorrect": false },
         { "text": "Seiscientos, repartidos en tres escuadrones", "isCorrect": false },
         { "text": "Tres mil: dos mil con Saúl y mil con Jonathán", "isCorrect": true }
@@ -46,7 +46,7 @@
       "explanation": "Subieron y asentaron campo en Michmas, al oriente de Beth-aven.",
       "bibleReference": "1 Samuel 13:5",
       "answers": [
-        { "text": "En Gilgal, junto al Jordán", "isCorrect": false },
+        { "text": "En Gilgal, junto a la ribera del Jordán", "isCorrect": false },
         { "text": "En el collado de Gabaa", "isCorrect": false },
         { "text": "En Michmas, al oriente de Beth-aven", "isCorrect": true },
         { "text": "En el valle de Seboim", "isCorrect": false }
@@ -115,7 +115,7 @@
         { "text": "Porque todos los herreros habían muerto", "isCorrect": false },
         { "text": "Para que los hebreos no hiciesen espada ni lanza", "isCorrect": true },
         { "text": "Porque Saúl lo había prohibido en Gilgal", "isCorrect": false },
-        { "text": "Porque no había hierro en aquella tierra", "isCorrect": false }
+        { "text": "Porque no había hierro en ninguna parte de aquella tierra", "isCorrect": false }
       ]
     }
   ]

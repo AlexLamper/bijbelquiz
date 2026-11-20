@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 56",
+  "description": "Diez preguntas sobre Salmos 56: la confianza en el día del temor, las lágrimas puestas en la redoma y la vida librada de la muerte.",
+  "slug": "psalms-quiz-part-56",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el encabezado, ¿dónde prendieron los Filisteos a David?",
+      "explanation": "El encabezado dice que este Michtam de David es de cuando los Filisteos le prendieron en Gath.",
+      "bibleReference": "Salmos 56:1",
+      "answers": [
+        { "text": "En Gath", "isCorrect": true },
+        { "text": "En Sión", "isCorrect": false },
+        { "text": "En Jerusalem", "isCorrect": false },
+        { "text": "En el desierto", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 2, ¿por qué dicen que sus enemigos lo apuran cada día?",
+      "explanation": "El versículo 2 dice que sus enemigos lo apuran cada día porque muchos son los que pelean contra él.",
+      "bibleReference": "Salmos 56:2",
+      "answers": [
+        { "text": "Porque él ha callado", "isCorrect": false },
+        { "text": "Porque es pobre entre el pueblo", "isCorrect": false },
+        { "text": "Porque muchos pelean contra él", "isCorrect": true },
+        { "text": "Porque está preso en la ciudad", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 3, ¿qué hace en el día que teme?",
+      "explanation": "El versículo 3 dice: En el día que temo, yo en ti confío.",
+      "bibleReference": "Salmos 56:3",
+      "answers": [
+        { "text": "Huye al desierto", "isCorrect": false },
+        { "text": "Confía en Dios", "isCorrect": true },
+        { "text": "Calla y espera", "isCorrect": false },
+        { "text": "Cuenta sus pasos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 4, ¿qué dice que no temerá?",
+      "explanation": "El versículo 4 dice que en Dios alabará su palabra, que en Dios ha confiado y que no temerá lo que la carne le hiciere.",
+      "bibleReference": "Salmos 56:4",
+      "answers": [
+        { "text": "Lo que diga el rey", "isCorrect": false },
+        { "text": "Lo que traiga la noche", "isCorrect": false },
+        { "text": "Lo que pida el pueblo", "isCorrect": false },
+        { "text": "Lo que la carne le hiciere", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 6, ¿qué miran atentamente sus enemigos?",
+      "explanation": "El versículo 6 dice que se reúnen, se esconden y miran atentamente sus pasos, esperando su vida.",
+      "bibleReference": "Salmos 56:6",
+      "answers": [
+        { "text": "Sus pasos", "isCorrect": true },
+        { "text": "Sus manos", "isCorrect": false },
+        { "text": "Sus labios", "isCorrect": false },
+        { "text": "Sus lágrimas", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 8, ¿dónde pide que Dios ponga sus lágrimas?",
+      "explanation": "El versículo 8 dice: pon mis lágrimas en tu redoma: ¿no están ellas en tu libro?",
+      "bibleReference": "Salmos 56:8",
+      "answers": [
+        { "text": "En su altar", "isCorrect": false },
+        { "text": "En su templo", "isCorrect": false },
+        { "text": "En su redoma", "isCorrect": true },
+        { "text": "En su mano", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 8, ¿qué ha contado Dios?",
+      "explanation": "El versículo 8 dice: Mis huídas has tú contado.",
+      "bibleReference": "Salmos 56:8",
+      "answers": [
+        { "text": "Sus votos", "isCorrect": false },
+        { "text": "Sus días", "isCorrect": false },
+        { "text": "Sus enemigos", "isCorrect": false },
+        { "text": "Sus huídas", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 9, ¿cuándo serán vueltos atrás sus enemigos?",
+      "explanation": "El versículo 9 dice que sus enemigos serán vueltos atrás el día que él clamare, y que en esto conoce que Dios es por él.",
+      "bibleReference": "Salmos 56:9",
+      "answers": [
+        { "text": "Cuando los pueblos sean derribados", "isCorrect": false },
+        { "text": "El día que él clame", "isCorrect": true },
+        { "text": "Cuando se reúnan contra él", "isCorrect": false },
+        { "text": "Al clarear la mañana", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 12, ¿qué dice que está sobre él?",
+      "explanation": "El versículo 12 dice: Sobre mí, oh Dios, están tus votos: te tributaré alabanzas.",
+      "bibleReference": "Salmos 56:12",
+      "answers": [
+        { "text": "Los votos de Dios", "isCorrect": true },
+        { "text": "La mano del hombre", "isCorrect": false },
+        { "text": "El temor de la muerte", "isCorrect": false },
+        { "text": "La luz de los vivos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 13, ¿de qué ha librado Dios su vida?",
+      "explanation": "El versículo 13 dice que ha librado su vida de la muerte y sus pies de caída, para que ande delante de Dios en la luz de los que viven.",
+      "bibleReference": "Salmos 56:13",
+      "answers": [
+        { "text": "De la pobreza", "isCorrect": false },
+        { "text": "De la cárcel", "isCorrect": false },
+        { "text": "De la muerte", "isCorrect": true },
+        { "text": "De la mentira", "isCorrect": false }
+      ]
+    }
+  ]
+}

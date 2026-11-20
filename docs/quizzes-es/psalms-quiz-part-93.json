@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 93",
+  "description": "Diez preguntas sobre Salmos 93: Jehová vestido de magnificencia, los ríos que alzan su sonido y los testimonios muy firmes.",
+  "slug": "psalms-quiz-part-93",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el primer versículo, ¿de qué se vistió Jehová?",
+      "explanation": "Salmos 93:1 dice que Jehová reina y que se vistió de magnificencia.",
+      "bibleReference": "Salmos 93:1",
+      "answers": [
+        { "text": "De magnificencia", "isCorrect": true },
+        { "text": "De saco y ceniza", "isCorrect": false },
+        { "text": "De tinieblas", "isCorrect": false },
+        { "text": "De lino fino", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Con qué se ciñó Jehová en el primer versículo?",
+      "explanation": "Salmos 93:1 dice que Jehová se ciñó de fortaleza.",
+      "bibleReference": "Salmos 93:1",
+      "answers": [
+        { "text": "Con una espada", "isCorrect": false },
+        { "text": "De fortaleza", "isCorrect": true },
+        { "text": "Con un cinto de oro", "isCorrect": false },
+        { "text": "Con cuerdas de lino", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué afirmó Jehová, de modo que no se moverá?",
+      "explanation": "Salmos 93:1 dice que Jehová afirmó también el mundo, que no se moverá.",
+      "bibleReference": "Salmos 93:1",
+      "answers": [
+        { "text": "El templo", "isCorrect": false },
+        { "text": "Su pueblo", "isCorrect": false },
+        { "text": "El mundo", "isCorrect": true },
+        { "text": "El mar", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué se dice del trono de Dios en el versículo 2?",
+      "explanation": "Salmos 93:2 dice: Firme es tu trono desde entonces.",
+      "bibleReference": "Salmos 93:2",
+      "answers": [
+        { "text": "Que fue derribado", "isCorrect": false },
+        { "text": "Que es firme desde entonces", "isCorrect": true },
+        { "text": "Que está vacío", "isCorrect": false },
+        { "text": "Que se mueve con los ríos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué afirma el versículo 2 acerca de Dios mismo?",
+      "explanation": "Salmos 93:2 termina diciendo: tú eres eternalmente.",
+      "bibleReference": "Salmos 93:2",
+      "answers": [
+        { "text": "Que es eternalmente", "isCorrect": true },
+        { "text": "Que es invisible", "isCorrect": false },
+        { "text": "Que calla siempre", "isCorrect": false },
+        { "text": "Que duerme de noche", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 3, ¿qué alzaron los ríos?",
+      "explanation": "Salmos 93:3 dice que los ríos alzaron su sonido y alzaron sus ondas.",
+      "bibleReference": "Salmos 93:3",
+      "answers": [
+        { "text": "Sus arenas", "isCorrect": false },
+        { "text": "Sus puentes", "isCorrect": false },
+        { "text": "Sus peces", "isCorrect": false },
+        { "text": "Su sonido", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿A quién se dirige el salmista cuando dice que los ríos alzaron su sonido?",
+      "explanation": "En Salmos 93:3 el salmista dice: Alzaron los ríos, oh Jehová.",
+      "bibleReference": "Salmos 93:3",
+      "answers": [
+        { "text": "A los sacerdotes", "isCorrect": false },
+        { "text": "A los reyes de la tierra", "isCorrect": false },
+        { "text": "A Jehová", "isCorrect": true },
+        { "text": "A la mar", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Dónde está Jehová, según el versículo 4, siendo más poderoso que el estruendo de las muchas aguas?",
+      "explanation": "Salmos 93:4 dice que Jehová en las alturas es más poderoso que el estruendo de las muchas aguas.",
+      "bibleReference": "Salmos 93:4",
+      "answers": [
+        { "text": "En las alturas", "isCorrect": true },
+        { "text": "En el desierto", "isCorrect": false },
+        { "text": "En los valles", "isCorrect": false },
+        { "text": "En las aguas", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Además del estruendo de las muchas aguas, ¿qué otra cosa menciona el versículo 4?",
+      "explanation": "Salmos 93:4 añade que Jehová es más poderoso que las recias ondas de la mar.",
+      "bibleReference": "Salmos 93:4",
+      "answers": [
+        { "text": "El rugido de los leones", "isCorrect": false },
+        { "text": "Las recias ondas de la mar", "isCorrect": true },
+        { "text": "El fuego del cielo", "isCorrect": false },
+        { "text": "El viento del norte", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el último versículo, ¿qué conviene a la casa de Jehová por los siglos y para siempre?",
+      "explanation": "Salmos 93:5 dice que los testimonios de Jehová son muy firmes y que la santidad conviene a su casa.",
+      "bibleReference": "Salmos 93:5",
+      "answers": [
+        { "text": "La riqueza", "isCorrect": false },
+        { "text": "El silencio", "isCorrect": false },
+        { "text": "El sacrificio diario", "isCorrect": false },
+        { "text": "La santidad", "isCorrect": true }
+      ]
+    }
+  ]
+}

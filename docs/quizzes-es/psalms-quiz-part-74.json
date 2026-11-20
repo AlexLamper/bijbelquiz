@@ -1,0 +1,242 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 74",
+  "description": "Diez preguntas sobre Salmos 74: el santuario destruido con hachas y martillos, las obras antiguas de Dios y la petición por el alma de la tórtola.",
+  "slug": "psalms-quiz-part-74",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "En el primer verso, ¿con qué compara el salmo al pueblo contra el cual ha humeado el furor de Dios?",
+      "explanation": "El texto pregunta: ¿por qué ha humeado tu furor contra las ovejas de tu dehesa?",
+      "bibleReference": "Salmos 74:1",
+      "answers": [
+        {
+          "text": "Con una viña sin vallado",
+          "isCorrect": false
+        },
+        {
+          "text": "Con las ovejas de su dehesa",
+          "isCorrect": true
+        },
+        {
+          "text": "Con un árbol sin fruto",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el polvo del camino",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué monte pide el salmo a Dios recordar, diciendo que allí ha habitado?",
+      "explanation": "El texto dice: este monte de Sión, donde has habitado.",
+      "bibleReference": "Salmos 74:2",
+      "answers": [
+        {
+          "text": "El monte Horeb",
+          "isCorrect": false
+        },
+        {
+          "text": "El monte Carmelo",
+          "isCorrect": false
+        },
+        {
+          "text": "El monte Hermón",
+          "isCorrect": false
+        },
+        {
+          "text": "El monte de Sión",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el salmo, ¿con qué herramientas quebraron todas las entalladuras?",
+      "explanation": "El texto dice: Y ahora con hachas y martillos han quebrado todas sus entalladuras.",
+      "bibleReference": "Salmos 74:6",
+      "answers": [
+        {
+          "text": "Con saetas y escudos",
+          "isCorrect": false
+        },
+        {
+          "text": "Con cuerdas y piedras",
+          "isCorrect": false
+        },
+        {
+          "text": "Con hachas y martillos",
+          "isCorrect": true
+        },
+        {
+          "text": "Con espadas y lanzas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el salmo, ¿qué hicieron los enemigos con los santuarios y con el tabernáculo?",
+      "explanation": "El texto dice: Han puesto á fuego tus santuarios, han profanado el tabernáculo de tu nombre echándolo á tierra.",
+      "bibleReference": "Salmos 74:7",
+      "answers": [
+        {
+          "text": "Los quemaron y profanaron el tabernáculo",
+          "isCorrect": true
+        },
+        {
+          "text": "Los cerraron con puertas de hierro",
+          "isCorrect": false
+        },
+        {
+          "text": "Los llenaron de presentes y dones",
+          "isCorrect": false
+        },
+        {
+          "text": "Los dejaron vacíos y en silencio",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dijeron los enemigos en su corazón, según el salmo?",
+      "explanation": "El texto dice: Dijeron en su corazón: Destruyámoslos de una vez.",
+      "bibleReference": "Salmos 74:8",
+      "answers": [
+        {
+          "text": "Hagamos la paz con ellos",
+          "isCorrect": false
+        },
+        {
+          "text": "Destruyámoslos de una vez",
+          "isCorrect": true
+        },
+        {
+          "text": "Llevémoslos a nuestra tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Dejemos en pie su santuario",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el salmo, ¿qué es lo que ya no hay en medio del pueblo?",
+      "explanation": "El texto dice: No vemos ya nuestras señales: no hay más profeta; ni con nosotros hay quien sepa hasta cuándo.",
+      "bibleReference": "Salmos 74:9",
+      "answers": [
+        {
+          "text": "Profeta",
+          "isCorrect": true
+        },
+        {
+          "text": "Sacerdote",
+          "isCorrect": false
+        },
+        {
+          "text": "Rey en el trono",
+          "isCorrect": false
+        },
+        {
+          "text": "Juez en la puerta",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el salmo, ¿qué quebrantó Dios en las aguas cuando hendió la mar?",
+      "explanation": "El texto dice: Tú hendiste la mar con tu fortaleza: quebrantaste cabezas de ballenas en las aguas.",
+      "bibleReference": "Salmos 74:13",
+      "answers": [
+        {
+          "text": "Los carros del enemigo",
+          "isCorrect": false
+        },
+        {
+          "text": "Las naves de Tharsis",
+          "isCorrect": false
+        },
+        {
+          "text": "Las peñas del desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "Cabezas de ballenas",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el salmo, ¿a quién dio Dios el leviathán por comida?",
+      "explanation": "El texto dice: Tú magullaste las cabezas del leviathán; dístelo por comida al pueblo de los desiertos.",
+      "bibleReference": "Salmos 74:14",
+      "answers": [
+        {
+          "text": "A las aves de los cielos",
+          "isCorrect": false
+        },
+        {
+          "text": "A los reyes de la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Al pueblo de los desiertos",
+          "isCorrect": true
+        },
+        {
+          "text": "A las bestias del campo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el salmo, ¿qué aparejó Dios, a quien pertenecen el día y la noche?",
+      "explanation": "El texto dice: Tuyo es el día, tuya también es la noche: tú aparejaste la luna y el sol.",
+      "bibleReference": "Salmos 74:16",
+      "answers": [
+        {
+          "text": "Las nubes y los vientos",
+          "isCorrect": false
+        },
+        {
+          "text": "La luna y el sol",
+          "isCorrect": true
+        },
+        {
+          "text": "Los montes y los valles",
+          "isCorrect": false
+        },
+        {
+          "text": "Los ríos y las fuentes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pide el salmo que Dios no entregue a las bestias?",
+      "explanation": "El texto dice: No entregues á las bestias el alma de tu tórtola.",
+      "bibleReference": "Salmos 74:19",
+      "answers": [
+        {
+          "text": "La heredad de su pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "Las piedras del santuario",
+          "isCorrect": false
+        },
+        {
+          "text": "Los frutos de la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "El alma de su tórtola",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

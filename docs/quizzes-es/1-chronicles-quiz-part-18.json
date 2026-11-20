@@ -13,9 +13,9 @@
       "explanation": "David hirió á los Filisteos y los humilló, y tomó á Gath y sus villas de mano de los Filisteos.",
       "bibleReference": "1 Crónicas 18:1",
       "answers": [
-        { "text": "Gath y sus villas", "isCorrect": true },
-        { "text": "Gezer y sus villas", "isCorrect": false },
         { "text": "Rabba y sus villas", "isCorrect": false },
+        { "text": "Gezer y sus villas", "isCorrect": false },
+        { "text": "Gath y sus villas", "isCorrect": true },
         { "text": "Damasco y sus villas", "isCorrect": false }
       ]
     },
@@ -37,8 +37,8 @@
       "answers": [
         { "text": "A Hiram rey de Tiro", "isCorrect": false },
         { "text": "A Tou rey de Hamath", "isCorrect": false },
-        { "text": "A Adarezer rey de Soba", "isCorrect": true },
-        { "text": "A Naas rey de los Ammonitas", "isCorrect": false }
+        { "text": "A Naas rey de los Ammonitas", "isCorrect": false },
+        { "text": "A Adarezer rey de Soba", "isCorrect": true }
       ]
     },
     {
@@ -46,10 +46,10 @@
       "explanation": "David le tomó mil carros, siete mil de á caballo y veinte mil hombres de á pie.",
       "bibleReference": "1 Crónicas 18:4",
       "answers": [
-        { "text": "Treinta y dos mil carros y mil de á caballo", "isCorrect": false },
+        { "text": "Mil carros, siete mil de á caballo y veinte mil de á pie", "isCorrect": true },
         { "text": "Siete mil carros y cuarenta mil de á pie", "isCorrect": false },
         { "text": "Cien carros y veintidós mil de á pie", "isCorrect": false },
-        { "text": "Mil carros, siete mil de á caballo y veinte mil de á pie", "isCorrect": true }
+        { "text": "Treinta y dos mil carros y mil de á caballo", "isCorrect": false }
       ]
     },
     {
@@ -57,8 +57,8 @@
       "explanation": "Viniendo los Siros de Damasco en ayuda de Adarezer rey de Soba, David hirió de los Siros veintidós mil hombres.",
       "bibleReference": "1 Crónicas 18:5",
       "answers": [
-        { "text": "Veintidós mil", "isCorrect": true },
         { "text": "Dieciocho mil", "isCorrect": false },
+        { "text": "Veintidós mil", "isCorrect": true },
         { "text": "Siete mil", "isCorrect": false },
         { "text": "Cuarenta mil", "isCorrect": false }
       ]
@@ -68,8 +68,8 @@
       "explanation": "De Thibath y de Chûn, ciudades de Adarezer, tomó David mucho metal, de que Salomón hizo el mar de bronce, las columnas y vasos de bronce.",
       "bibleReference": "1 Crónicas 18:8",
       "answers": [
-        { "text": "Los escudos de oro del templo", "isCorrect": false },
         { "text": "El mar de bronce y las columnas", "isCorrect": true },
+        { "text": "Los escudos de oro del templo", "isCorrect": false },
         { "text": "La corona del rey de Rabba", "isCorrect": false },
         { "text": "Las puertas de la casa de Jehová", "isCorrect": false }
       ]
@@ -101,8 +101,8 @@
       "explanation": "Joab hijo de Sarvia era general del ejército, y Josaphat hijo de Ahilud, canciller.",
       "bibleReference": "1 Crónicas 18:15",
       "answers": [
-        { "text": "Joab era general y Josaphat canciller", "isCorrect": true },
         { "text": "Sadoc era general y Sausa canciller", "isCorrect": false },
+        { "text": "Joab era general y Josaphat canciller", "isCorrect": true },
         { "text": "Benaías era general y Joab canciller", "isCorrect": false },
         { "text": "Abisai era general y Abimelec canciller", "isCorrect": false }
       ]
@@ -112,8 +112,8 @@
       "explanation": "Benaías hijo de Joiada era sobre los Ceretheos y Peletheos.",
       "bibleReference": "1 Crónicas 18:17",
       "answers": [
-        { "text": "Sadoc hijo de Achîtob", "isCorrect": false },
         { "text": "Benaías hijo de Joiada", "isCorrect": true },
+        { "text": "Sadoc hijo de Achîtob", "isCorrect": false },
         { "text": "Abimelec hijo de Abiathar", "isCorrect": false },
         { "text": "Josaphat hijo de Ahilud", "isCorrect": false }
       ]

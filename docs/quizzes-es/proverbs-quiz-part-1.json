@@ -1,0 +1,242 @@
+{
+  "title": "Proverbios Quiz bíblico - Capítulo 1",
+  "description": "Diez preguntas sobre Proverbios 1: el temor de Jehová como principio de la sabiduría, la invitación de los pecadores y el clamor de la sabiduría en las plazas.",
+  "slug": "proverbs-quiz-part-1",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": false,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿De quién son los proverbios según el primer versículo?",
+      "explanation": "El libro empieza: \"LOS proverbios de Salomón, hijo de David, rey de Israel\".",
+      "bibleReference": "Proverbios 1:1",
+      "answers": [
+        {
+          "text": "De David, rey de Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "De Salomón, hijo de David",
+          "isCorrect": true
+        },
+        {
+          "text": "De Samuel el profeta",
+          "isCorrect": false
+        },
+        {
+          "text": "De Ezequías, rey de Judá",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice que estos proverbios dan a los jóvenes?",
+      "explanation": "Dice que son para dar sagacidad a los simples, y a los jóvenes inteligencia y cordura.",
+      "bibleReference": "Proverbios 1:4",
+      "answers": [
+        {
+          "text": "Riquezas y honra",
+          "isCorrect": false
+        },
+        {
+          "text": "Fuerza y valentía",
+          "isCorrect": false
+        },
+        {
+          "text": "Descanso y alegría",
+          "isCorrect": false
+        },
+        {
+          "text": "Inteligencia y cordura",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Cuál es el principio de la sabiduría?",
+      "explanation": "Dice: \"El principio de la sabiduría es el temor de Jehová\".",
+      "bibleReference": "Proverbios 1:7",
+      "answers": [
+        {
+          "text": "El temor de Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "El consejo de los ancianos",
+          "isCorrect": false
+        },
+        {
+          "text": "La lectura de la ley",
+          "isCorrect": false
+        },
+        {
+          "text": "El trabajo de las manos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 7, ¿qué hacen los insensatos?",
+      "explanation": "Dice que los insensatos desprecian la sabiduría y la enseñanza.",
+      "bibleReference": "Proverbios 1:7",
+      "answers": [
+        {
+          "text": "Buscan la sabiduría en secreto",
+          "isCorrect": false
+        },
+        {
+          "text": "Guardan la enseñanza de su padre",
+          "isCorrect": false
+        },
+        {
+          "text": "Desprecian la sabiduría y la enseñanza",
+          "isCorrect": true
+        },
+        {
+          "text": "Temen el juicio de Jehová",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué compara la doctrina del padre y la dirección de la madre?",
+      "explanation": "Dice que serán adorno de gracia a su cabeza y collares a su cuello.",
+      "bibleReference": "Proverbios 1:8-9",
+      "answers": [
+        {
+          "text": "Con un yugo y una carga",
+          "isCorrect": false
+        },
+        {
+          "text": "Con un adorno y unos collares",
+          "isCorrect": true
+        },
+        {
+          "text": "Con una vara y un azote",
+          "isCorrect": false
+        },
+        {
+          "text": "Con un muro y una puerta",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué proponen los pecadores al invitarle a ir con ellos?",
+      "explanation": "Dicen: \"Ven con nosotros, pongamos asechanzas á la sangre, acechemos sin motivo al inocente\".",
+      "bibleReference": "Proverbios 1:11",
+      "answers": [
+        {
+          "text": "Poner asechanzas y acechar al inocente",
+          "isCorrect": true
+        },
+        {
+          "text": "Edificar una casa en la ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "Ir a la guerra con el rey",
+          "isCorrect": false
+        },
+        {
+          "text": "Vender su campo y su ganado",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quién ponen asechanzas en realidad los que así hablan?",
+      "explanation": "Dice que ellos ponen asechanzas a su propia sangre y tienden lazo a sus propias almas.",
+      "bibleReference": "Proverbios 1:18",
+      "answers": [
+        {
+          "text": "A los jueces de la ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "A los hijos de los reyes",
+          "isCorrect": false
+        },
+        {
+          "text": "A las aves del cielo",
+          "isCorrect": false
+        },
+        {
+          "text": "A su propia sangre y a sus almas",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde clama la sabiduría?",
+      "explanation": "Dice que la sabiduría clama de fuera, da su voz en las plazas y dice sus razones en las entradas de las puertas de la ciudad.",
+      "bibleReference": "Proverbios 1:20-21",
+      "answers": [
+        {
+          "text": "En el templo y en el altar",
+          "isCorrect": false
+        },
+        {
+          "text": "En las plazas y en las puertas",
+          "isCorrect": true
+        },
+        {
+          "text": "En el campo y en las viñas",
+          "isCorrect": false
+        },
+        {
+          "text": "En las casas de los sabios",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué reprocha la sabiduría a los que llamó?",
+      "explanation": "Dice que llamó y no quisieron, extendió su mano y no hubo quien escuchase, y desecharon todo su consejo.",
+      "bibleReference": "Proverbios 1:24-25",
+      "answers": [
+        {
+          "text": "Que vendieron sus palabras",
+          "isCorrect": false
+        },
+        {
+          "text": "Que la buscaron sin hallarla",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no escucharon ni recibieron su consejo",
+          "isCorrect": true
+        },
+        {
+          "text": "Que escribieron sus dichos oscuros",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué promete al que la oyere?",
+      "explanation": "Termina diciendo que el que la oyere habitará confiadamente y vivirá reposado, sin temor de mal.",
+      "bibleReference": "Proverbios 1:33",
+      "answers": [
+        {
+          "text": "Habitará confiado y sin temor de mal",
+          "isCorrect": true
+        },
+        {
+          "text": "Será rey sobre muchos pueblos",
+          "isCorrect": false
+        },
+        {
+          "text": "Tendrá graneros llenos de grano",
+          "isCorrect": false
+        },
+        {
+          "text": "Verá a sus enemigos destruidos",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

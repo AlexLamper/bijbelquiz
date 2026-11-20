@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 83",
+  "description": "Diez preguntas sobre Salmos 83: la conspiración de los pueblos contra Israel, los ejemplos de Madián y de Oreb, y la petición de que conozcan el nombre de Jehová.",
+  "slug": "psalms-quiz-part-83",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué pide el salmo a Dios en el primer verso?",
+      "explanation": "El verso dice: Oh Dios, no tengas silencio: no calles, oh Dios, ni te estés quieto.",
+      "bibleReference": "Salmos 83:1",
+      "answers": [
+        { "text": "Que le dé descanso en la tierra", "isCorrect": false },
+        { "text": "Que le enseñe su camino", "isCorrect": false },
+        { "text": "Que no tenga silencio ni se esté quieto", "isCorrect": true },
+        { "text": "Que le perdone su iniquidad", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué han hecho los aborrecedores de Dios, según el segundo verso?",
+      "explanation": "El verso dice que sus enemigos braman y que sus aborrecedores han alzado cabeza.",
+      "bibleReference": "Salmos 83:2",
+      "answers": [
+        { "text": "Han alzado cabeza", "isCorrect": true },
+        { "text": "Han huido al desierto", "isCorrect": false },
+        { "text": "Han pedido misericordia", "isCorrect": false },
+        { "text": "Han repartido la tierra", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Contra quiénes dice el salmo que han entrado en consejo?",
+      "explanation": "El verso dice que han consultado astuta y secretamente sobre su pueblo y han entrado en consejo contra sus escondidos.",
+      "bibleReference": "Salmos 83:3",
+      "answers": [
+        { "text": "Contra los reyes de Judá", "isCorrect": false },
+        { "text": "Contra los profetas", "isCorrect": false },
+        { "text": "Contra los sacerdotes", "isCorrect": false },
+        { "text": "Contra sus escondidos", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué han dicho los enemigos que quieren hacer con el nombre de Israel?",
+      "explanation": "El verso dice: Venid, y cortémoslos de ser pueblo, y no haya más memoria del nombre de Israel.",
+      "bibleReference": "Salmos 83:4",
+      "answers": [
+        { "text": "Darle otro nombre", "isCorrect": false },
+        { "text": "Que no haya más memoria de él", "isCorrect": true },
+        { "text": "Escribirlo entre los pueblos", "isCorrect": false },
+        { "text": "Jurar por él en sus tratos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿De qué pueblos nombra el salmo los pabellones, junto con Moab y los Agarenos?",
+      "explanation": "El verso nombra los pabellones de los Idumeos y de los Ismaelitas, Moab y los Agarenos.",
+      "bibleReference": "Salmos 83:6",
+      "answers": [
+        { "text": "De los Caldeos y los Medos", "isCorrect": false },
+        { "text": "De los Jebuseos y los Heveos", "isCorrect": false },
+        { "text": "De los Idumeos y los Ismaelitas", "isCorrect": true },
+        { "text": "De los Egipcios y los Etíopes", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Con quiénes dice el salmo que están los habitadores de Tiro?",
+      "explanation": "El verso dice: Gebal, y Ammón, y Amalec; los Filisteos con los habitadores de Tiro.",
+      "bibleReference": "Salmos 83:7",
+      "answers": [
+        { "text": "Con los Agarenos", "isCorrect": false },
+        { "text": "Con los Idumeos", "isCorrect": false },
+        { "text": "Con los Madianitas", "isCorrect": false },
+        { "text": "Con los Filisteos", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Quién se ha juntado con ellos y es brazo para los hijos de Lot?",
+      "explanation": "El verso dice: También el Assur se ha juntado con ellos: son por brazo á los hijos de Lot.",
+      "bibleReference": "Salmos 83:8",
+      "answers": [
+        { "text": "Amalec", "isCorrect": false },
+        { "text": "El Assur", "isCorrect": true },
+        { "text": "Gebal", "isCorrect": false },
+        { "text": "Etiopía", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿En qué lugar menciona el salmo a Sísara y a Jabín?",
+      "explanation": "El verso dice: Hazles como á Madián; como á Sísara, como á Jabín en el arroyo de Cisón.",
+      "bibleReference": "Salmos 83:9",
+      "answers": [
+        { "text": "En el arroyo de Cisón", "isCorrect": true },
+        { "text": "En el valle de Baca", "isCorrect": false },
+        { "text": "En las aguas de Meriba", "isCorrect": false },
+        { "text": "En el monte Hermón", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Dónde dice el salmo que perecieron y fueron hechos muladar de la tierra?",
+      "explanation": "El verso dice que perecieron en Endor y fueron hechos muladar de la tierra.",
+      "bibleReference": "Salmos 83:10",
+      "answers": [
+        { "text": "En Sión", "isCorrect": false },
+        { "text": "En Gebal", "isCorrect": false },
+        { "text": "En Babilonia", "isCorrect": false },
+        { "text": "En Endor", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué pide el salmo que conozcan al final?",
+      "explanation": "El verso dice: Y conozcan que tu nombre es JEHOVÁ; tú solo Altísimo sobre toda la tierra.",
+      "bibleReference": "Salmos 83:18",
+      "answers": [
+        { "text": "Que el rey es justo", "isCorrect": false },
+        { "text": "Que Sión no será movida", "isCorrect": false },
+        { "text": "Que su nombre es JEHOVÁ", "isCorrect": true },
+        { "text": "Que la tierra dará su fruto", "isCorrect": false }
+      ]
+    }
+  ]
+}

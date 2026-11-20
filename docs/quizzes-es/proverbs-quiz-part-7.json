@@ -1,0 +1,242 @@
+{
+  "title": "Proverbios Quiz bíblico - Capítulo 7",
+  "description": "Diez preguntas sobre Proverbios 7: lo que el maestro vio por su celosía y el camino del mancebo falto de entendimiento.",
+  "slug": "proverbs-quiz-part-7",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Con qué compara el texto la ley del que habla?",
+      "explanation": "Proverbios 7:2 dice: Guarda mis mandamientos, y vivirás; y mi ley como las niñas de tus ojos.",
+      "bibleReference": "Proverbios 7:2",
+      "answers": [
+        {
+          "text": "Con las niñas de tus ojos",
+          "isCorrect": true
+        },
+        {
+          "text": "Con una antorcha en la noche",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el pan de cada día",
+          "isCorrect": false
+        },
+        {
+          "text": "Con las cuerdas de un lazo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿cómo hay que llamar a la sabiduría y a la inteligencia?",
+      "explanation": "Proverbios 7:4 dice: Di á la sabiduría: Tú eres mi hermana; y á la inteligencia llama parienta.",
+      "bibleReference": "Proverbios 7:4",
+      "answers": [
+        {
+          "text": "Madre y nodriza",
+          "isCorrect": false
+        },
+        {
+          "text": "Reina y señora",
+          "isCorrect": false
+        },
+        {
+          "text": "Hermana y parienta",
+          "isCorrect": true
+        },
+        {
+          "text": "Maestra y guía",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Desde dónde miraba el que habla cuando vio lo que cuenta?",
+      "explanation": "Proverbios 7:6 dice que miraba por la ventana de su casa, por su celosía.",
+      "bibleReference": "Proverbios 7:6",
+      "answers": [
+        {
+          "text": "Desde la puerta de la ciudad, junto al camino",
+          "isCorrect": false
+        },
+        {
+          "text": "Por la ventana de su casa, por su celosía",
+          "isCorrect": true
+        },
+        {
+          "text": "Desde lo más alto de la ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "Desde la esquina de la plaza",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quién vio entre los simples y los jóvenes?",
+      "explanation": "Proverbios 7:7 dice que vio entre los simples y consideró entre los jóvenes un mancebo falto de entendimiento.",
+      "bibleReference": "Proverbios 7:7",
+      "answers": [
+        {
+          "text": "Un escarnecedor alborotador",
+          "isCorrect": false
+        },
+        {
+          "text": "Un mercader de la ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "Un siervo del rey",
+          "isCorrect": false
+        },
+        {
+          "text": "Un mancebo falto de entendimiento",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿A qué hora del día ocurre lo que cuenta el texto?",
+      "explanation": "Proverbios 7:9 dice que fue a la tarde del día, ya que oscurecía, en la oscuridad y tiniebla de la noche.",
+      "bibleReference": "Proverbios 7:9",
+      "answers": [
+        {
+          "text": "A la tarde, cuando ya oscurecía",
+          "isCorrect": true
+        },
+        {
+          "text": "Al amanecer, con la luz de la aurora",
+          "isCorrect": false
+        },
+        {
+          "text": "Al mediodía, con el sol en alto",
+          "isCorrect": false
+        },
+        {
+          "text": "En el tiempo de la siega",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo iba ataviada la mujer que le salió al encuentro?",
+      "explanation": "Proverbios 7:10 dice que le sale al encuentro una mujer con atavío de ramera, astuta de corazón.",
+      "bibleReference": "Proverbios 7:10",
+      "answers": [
+        {
+          "text": "De luto y con la cabeza cubierta",
+          "isCorrect": false
+        },
+        {
+          "text": "Con atavío de ramera",
+          "isCorrect": true
+        },
+        {
+          "text": "Con vestidos de lino y oro",
+          "isCorrect": false
+        },
+        {
+          "text": "Como una de las criadas de la sabiduría",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué dice la mujer que ha sahumado su cámara?",
+      "explanation": "Proverbios 7:17 dice: He sahumado mi cámara con mirra, áloes, y cinamomo.",
+      "bibleReference": "Proverbios 7:17",
+      "answers": [
+        {
+          "text": "Con aceite y vino",
+          "isCorrect": false
+        },
+        {
+          "text": "Con incienso y nardo",
+          "isCorrect": false
+        },
+        {
+          "text": "Con miel y especias",
+          "isCorrect": false
+        },
+        {
+          "text": "Con mirra, áloes y cinamomo",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice la mujer acerca de su marido?",
+      "explanation": "Proverbios 7:19-20 dice que el marido no está en casa, que se ha ido a un largo viaje y que llevó el saco de dinero en su mano.",
+      "bibleReference": "Proverbios 7:19-20",
+      "answers": [
+        {
+          "text": "Que ha muerto y la dejó sola en la casa",
+          "isCorrect": false
+        },
+        {
+          "text": "Que la dejó sin pan y sin vino en casa",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no está en casa y se ha ido a un largo viaje",
+          "isCorrect": true
+        },
+        {
+          "text": "Que vendrá esta misma tarde a la casa",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué compara el texto al joven que va en pos de ella?",
+      "explanation": "Proverbios 7:22 dice que va en pos de ella como va el buey al degolladero y como el loco a las prisiones.",
+      "bibleReference": "Proverbios 7:22",
+      "answers": [
+        {
+          "text": "Con el buey que va al degolladero",
+          "isCorrect": true
+        },
+        {
+          "text": "Con el corzo que huye del cazador",
+          "isCorrect": false
+        },
+        {
+          "text": "Con la hormiga que allega su comida",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el ave que vuela a su nido",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el último versículo, ¿qué es la casa de esa mujer?",
+      "explanation": "Proverbios 7:27 dice: Caminos del sepulcro son su casa, que descienden á las cámaras de la muerte.",
+      "bibleReference": "Proverbios 7:27",
+      "answers": [
+        {
+          "text": "Una ciudad fuerte y bien guardada",
+          "isCorrect": false
+        },
+        {
+          "text": "Caminos del sepulcro",
+          "isCorrect": true
+        },
+        {
+          "text": "Un árbol de vida para los jóvenes",
+          "isCorrect": false
+        },
+        {
+          "text": "Un manantial de aguas escondidas",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

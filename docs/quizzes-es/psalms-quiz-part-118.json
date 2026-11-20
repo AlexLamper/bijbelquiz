@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 118",
+  "description": "Diez preguntas sobre Salmos 118: la misericordia que es para siempre, el auxilio en la angustia, la piedra desechada y el día que hizo Jehová.",
+  "slug": "psalms-quiz-part-118",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Con qué razón empieza el salmo el llamado a alabar a Jehová?",
+      "explanation": "El verso 1 dice: Alabad a Jehová, porque es bueno.",
+      "bibleReference": "Salmos 118:1",
+      "answers": [
+        { "text": "Porque es bueno", "isCorrect": true },
+        { "text": "Porque es temible", "isCorrect": false },
+        { "text": "Porque es grande en Sión", "isCorrect": false },
+        { "text": "Porque habita en el templo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿A quiénes manda decir el salmo: Que para siempre es su misericordia?",
+      "explanation": "Los versos 2 al 4 lo mandan decir a Israel, a la casa de Aarón y a los que temen a Jehová.",
+      "bibleReference": "Salmos 118:2-4",
+      "answers": [
+        { "text": "A los reyes de la tierra y a sus príncipes", "isCorrect": false },
+        { "text": "A los que moran en las tiendas de Kedar", "isCorrect": false },
+        { "text": "A Israel, a la casa de Aarón y a los que temen a Jehová", "isCorrect": true },
+        { "text": "A los edificadores de la casa", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué hizo JAH cuando el salmista le invocó desde la angustia?",
+      "explanation": "El verso 5 dice que JAH le respondió, poniéndole en anchura.",
+      "bibleReference": "Salmos 118:5",
+      "answers": [
+        { "text": "Le escondió en lo secreto del templo", "isCorrect": false },
+        { "text": "Le respondió y le puso en anchura", "isCorrect": true },
+        { "text": "Le envió fuego desde los cielos", "isCorrect": false },
+        { "text": "Le dio sueño y descanso", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dice el salmista que no hará, porque Jehová está por él?",
+      "explanation": "El verso 6 dice: Jehová está por mí: no temeré lo que me pueda hacer el hombre.",
+      "bibleReference": "Salmos 118:6",
+      "answers": [
+        { "text": "No volverá a entrar en la casa de Jehová", "isCorrect": false },
+        { "text": "No hablará más delante de los reyes", "isCorrect": false },
+        { "text": "No contará las obras de JAH", "isCorrect": false },
+        { "text": "No temerá lo que le pueda hacer el hombre", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el salmo, ¿qué es mejor que esperar en hombre y que esperar en príncipes?",
+      "explanation": "Los versos 8 y 9 dicen que es mejor esperar en Jehová.",
+      "bibleReference": "Salmos 118:8-9",
+      "answers": [
+        { "text": "Esperar en los edificadores", "isCorrect": false },
+        { "text": "Esperar en la fuerza del arco", "isCorrect": false },
+        { "text": "Esperar en Jehová", "isCorrect": true },
+        { "text": "Esperar en los que ayudan", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Con qué compara el salmista a los que le cercaron?",
+      "explanation": "El verso 12 dice: Cercáronme como abejas.",
+      "bibleReference": "Salmos 118:12",
+      "answers": [
+        { "text": "Con abejas", "isCorrect": true },
+        { "text": "Con lobos", "isCorrect": false },
+        { "text": "Con nubes", "isCorrect": false },
+        { "text": "Con olas del mar", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dice el salmista que es JAH para él, en el verso 14?",
+      "explanation": "El verso dice: Mi fortaleza y mi canción es JAH.",
+      "bibleReference": "Salmos 118:14",
+      "answers": [
+        { "text": "Su heredad y su porción", "isCorrect": false },
+        { "text": "Su refugio y su torre", "isCorrect": false },
+        { "text": "Su escudo y su lanza", "isCorrect": false },
+        { "text": "Su fortaleza y su canción", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué dice el salmista que hará, en lugar de morir?",
+      "explanation": "El verso 17 dice: No moriré, sino que viviré, y contaré las obras de JAH.",
+      "bibleReference": "Salmos 118:17",
+      "answers": [
+        { "text": "Callará delante de sus enemigos", "isCorrect": false },
+        { "text": "Vivirá y contará las obras de JAH", "isCorrect": true },
+        { "text": "Se esconderá en las tiendas de los justos", "isCorrect": false },
+        { "text": "Edificará una casa para Jehová", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿En qué vino a ser la piedra que desecharon los edificadores?",
+      "explanation": "El verso 22 dice que ha venido a ser cabeza del ángulo.",
+      "bibleReference": "Salmos 118:22",
+      "answers": [
+        { "text": "En cabeza del ángulo", "isCorrect": true },
+        { "text": "En polvo de la calle", "isCorrect": false },
+        { "text": "En piedra de tropiezo", "isCorrect": false },
+        { "text": "En puerta de la ciudad", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dice el salmo acerca de este día?",
+      "explanation": "El verso 24 dice: Este es el día que hizo Jehová: nos gozaremos y alegraremos en él.",
+      "bibleReference": "Salmos 118:24",
+      "answers": [
+        { "text": "Que es día de ayuno y lloro", "isCorrect": false },
+        { "text": "Que es día de tinieblas", "isCorrect": false },
+        { "text": "Que es el día que hizo Jehová", "isCorrect": true },
+        { "text": "Que es el día de la siega", "isCorrect": false }
+      ]
+    }
+  ]
+}

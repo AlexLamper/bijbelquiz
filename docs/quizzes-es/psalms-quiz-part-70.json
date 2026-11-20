@@ -1,0 +1,242 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 70",
+  "description": "Diez preguntas sobre Salmos 70: la oración urgente por socorro, los que buscan la vida del salmista y el gozo de los que buscan a Dios.",
+  "slug": "psalms-quiz-part-70",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el encabezamiento, ¿de quién es este salmo?",
+      "explanation": "El encabezamiento dice: Al Músico principal: Salmo de David, para conmemorar.",
+      "bibleReference": "Salmos 70:1",
+      "answers": [
+        {
+          "text": "De Asaph",
+          "isCorrect": false
+        },
+        {
+          "text": "De David",
+          "isCorrect": true
+        },
+        {
+          "text": "De Salomón",
+          "isCorrect": false
+        },
+        {
+          "text": "De Jeduthún",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pide el salmista a Dios en el primer verso?",
+      "explanation": "El texto dice: Oh Dios, acude á librarme; apresúrate, oh Dios, á socorrerme.",
+      "bibleReference": "Salmos 70:1",
+      "answers": [
+        {
+          "text": "Que acuda a librarlo y se apresure a socorrerlo",
+          "isCorrect": true
+        },
+        {
+          "text": "Que le dé riquezas y una casa en la ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "Que le enseñe a cantar en el santuario",
+          "isCorrect": false
+        },
+        {
+          "text": "Que le conceda una larga vejez tranquila",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pide el salmista para los que buscan su vida?",
+      "explanation": "El texto dice: Sean avergonzados y confusos los que buscan mi vida.",
+      "bibleReference": "Salmos 70:2",
+      "answers": [
+        {
+          "text": "Que sean perdonados y bendecidos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que sean llevados a juicio en la puerta",
+          "isCorrect": false
+        },
+        {
+          "text": "Que se hagan sus amigos y lo acompañen",
+          "isCorrect": false
+        },
+        {
+          "text": "Que sean avergonzados y confusos",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pide el salmista para los que desean su mal?",
+      "explanation": "El texto dice: sean vueltos atrás y avergonzados los que mi mal desean.",
+      "bibleReference": "Salmos 70:2",
+      "answers": [
+        {
+          "text": "Que sean entregados a las bestias del campo",
+          "isCorrect": false
+        },
+        {
+          "text": "Que sean olvidados por sus propios hijos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que sean vueltos atrás y avergonzados",
+          "isCorrect": true
+        },
+        {
+          "text": "Que sean esparcidos por toda la tierra",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el salmo, ¿qué dicen aquellos a quienes pide que sean vueltos en pago de su afrenta?",
+      "explanation": "El texto los describe como los que dicen: ¡Ah! ¡ah!",
+      "bibleReference": "Salmos 70:3",
+      "answers": [
+        {
+          "text": "¡Ah! ¡ah!",
+          "isCorrect": true
+        },
+        {
+          "text": "¿Dónde está tu Dios?",
+          "isCorrect": false
+        },
+        {
+          "text": "Engrandecido sea Dios",
+          "isCorrect": false
+        },
+        {
+          "text": "Dios lo ha dejado",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pide el salmista para todos los que buscan a Dios?",
+      "explanation": "El texto dice: Gócense y alégrense en ti todos los que te buscan.",
+      "bibleReference": "Salmos 70:4",
+      "answers": [
+        {
+          "text": "Que callen delante de él",
+          "isCorrect": false
+        },
+        {
+          "text": "Que se gocen y se alegren en él",
+          "isCorrect": true
+        },
+        {
+          "text": "Que ofrezcan presentes cada día",
+          "isCorrect": false
+        },
+        {
+          "text": "Que salgan a buscarlo al desierto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el salmo, ¿qué deben decir siempre los que aman la salud de Dios?",
+      "explanation": "El texto dice: y digan siempre los que aman tu salud: Engrandecido sea Dios.",
+      "bibleReference": "Salmos 70:4",
+      "answers": [
+        {
+          "text": "Jehová es mi pastor",
+          "isCorrect": false
+        },
+        {
+          "text": "Santo, santo, santo",
+          "isCorrect": false
+        },
+        {
+          "text": "Engrandecido sea Dios",
+          "isCorrect": true
+        },
+        {
+          "text": "Hasta cuándo, oh Jehová",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo se describe el salmista a sí mismo en el último verso?",
+      "explanation": "El texto dice: Yo estoy afligido y menesteroso.",
+      "bibleReference": "Salmos 70:5",
+      "answers": [
+        {
+          "text": "Fuerte y valiente",
+          "isCorrect": false
+        },
+        {
+          "text": "Rico y honrado",
+          "isCorrect": false
+        },
+        {
+          "text": "Viejo y lleno de canas",
+          "isCorrect": false
+        },
+        {
+          "text": "Afligido y menesteroso",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué dos palabras llama el salmista a Dios al final del salmo?",
+      "explanation": "El texto dice: ayuda mía y mi libertador eres tú.",
+      "bibleReference": "Salmos 70:5",
+      "answers": [
+        {
+          "text": "Su roca y su escudo",
+          "isCorrect": false
+        },
+        {
+          "text": "Su ayuda y su libertador",
+          "isCorrect": true
+        },
+        {
+          "text": "Su pastor y su guía",
+          "isCorrect": false
+        },
+        {
+          "text": "Su rey y su juez",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué petición a Jehová termina el salmo?",
+      "explanation": "El salmo termina diciendo: oh Jehová, no te detengas.",
+      "bibleReference": "Salmos 70:5",
+      "answers": [
+        {
+          "text": "Que no se detenga",
+          "isCorrect": true
+        },
+        {
+          "text": "Que no se acuerde de su juventud",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no lo deseche en la vejez",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no entregue su alma a las bestias",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

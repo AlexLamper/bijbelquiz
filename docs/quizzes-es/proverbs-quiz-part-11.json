@@ -1,0 +1,242 @@
+{
+  "title": "Proverbios Quiz bíblico - Capítulo 11",
+  "description": "Diez preguntas sobre Proverbios 11: el peso falso, la soberbia y la deshonra, y las riquezas en el día de la ira.",
+  "slug": "proverbs-quiz-part-11",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el primer versículo, ¿qué es abominación a Jehová y qué le agrada?",
+      "explanation": "Proverbios 11:1 dice: El peso falso abominación es á Jehová: mas la pesa cabal le agrada.",
+      "bibleReference": "Proverbios 11:1",
+      "answers": [
+        {
+          "text": "El peso falso es abominación y la pesa cabal le agrada",
+          "isCorrect": true
+        },
+        {
+          "text": "El peso falso le agrada y la pesa cabal es abominación",
+          "isCorrect": false
+        },
+        {
+          "text": "Los dos pesos le son agradables por igual",
+          "isCorrect": false
+        },
+        {
+          "text": "La pesa cabal no le importa al justo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué viene cuando viene la soberbia?",
+      "explanation": "Proverbios 11:2 dice: Cuando viene la soberbia, viene también la deshonra: mas con los humildes es la sabiduría.",
+      "bibleReference": "Proverbios 11:2",
+      "answers": [
+        {
+          "text": "La sabiduría",
+          "isCorrect": false
+        },
+        {
+          "text": "Las riquezas",
+          "isCorrect": false
+        },
+        {
+          "text": "La deshonra",
+          "isCorrect": true
+        },
+        {
+          "text": "La salud",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el texto que no aprovechará en el día de la ira?",
+      "explanation": "Proverbios 11:4 dice: No aprovecharán las riquezas en el día de la ira: mas la justicia librará de muerte.",
+      "bibleReference": "Proverbios 11:4",
+      "answers": [
+        {
+          "text": "La integridad",
+          "isCorrect": false
+        },
+        {
+          "text": "Las riquezas",
+          "isCorrect": true
+        },
+        {
+          "text": "Los consejeros",
+          "isCorrect": false
+        },
+        {
+          "text": "La humildad",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué hace el hombre prudente, a diferencia del que carece de entendimiento?",
+      "explanation": "Proverbios 11:12 dice: El que carece de entendimiento, menosprecia á su prójimo: mas el hombre prudente calla.",
+      "bibleReference": "Proverbios 11:12",
+      "answers": [
+        {
+          "text": "Menosprecia a su prójimo",
+          "isCorrect": false
+        },
+        {
+          "text": "Descubre el secreto",
+          "isCorrect": false
+        },
+        {
+          "text": "Anda en chismes",
+          "isCorrect": false
+        },
+        {
+          "text": "Calla",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el texto del que anda en chismes?",
+      "explanation": "Proverbios 11:13 dice: El que anda en chismes, descubre el secreto: mas el de espíritu fiel encubre la cosa.",
+      "bibleReference": "Proverbios 11:13",
+      "answers": [
+        {
+          "text": "Que descubre el secreto",
+          "isCorrect": true
+        },
+        {
+          "text": "Que encubre la cosa",
+          "isCorrect": false
+        },
+        {
+          "text": "Que calla delante de todos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que será siervo del sabio",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿dónde hay salud?",
+      "explanation": "Proverbios 11:14 dice: Cuando faltaren las industrias, caerá el pueblo: mas en la multitud de consejeros hay salud.",
+      "bibleReference": "Proverbios 11:14",
+      "answers": [
+        {
+          "text": "En la multitud de riquezas",
+          "isCorrect": false
+        },
+        {
+          "text": "En la multitud de consejeros",
+          "isCorrect": true
+        },
+        {
+          "text": "En la mano del rey",
+          "isCorrect": false
+        },
+        {
+          "text": "En la fuerza del pueblo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué compara el texto a la mujer hermosa y apartada de razón?",
+      "explanation": "Proverbios 11:22 dice: Zarcillo de oro en la nariz del puerco, es la mujer hermosa y apartada de razón.",
+      "bibleReference": "Proverbios 11:22",
+      "answers": [
+        {
+          "text": "Con una ciudad que no tiene muro ni puerta",
+          "isCorrect": false
+        },
+        {
+          "text": "Con un ramo que reverdece junto al agua",
+          "isCorrect": false
+        },
+        {
+          "text": "Con la corona que honra a su marido",
+          "isCorrect": false
+        },
+        {
+          "text": "Con un zarcillo de oro en la nariz del puerco",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué le pasa al que sacia a otros?",
+      "explanation": "Proverbios 11:25 dice: El alma liberal será engordada: y el que saciare, él también será saciado.",
+      "bibleReference": "Proverbios 11:25",
+      "answers": [
+        {
+          "text": "Vendrá a pobreza",
+          "isCorrect": false
+        },
+        {
+          "text": "Heredará viento",
+          "isCorrect": false
+        },
+        {
+          "text": "Él también será saciado",
+          "isCorrect": true
+        },
+        {
+          "text": "Será siervo del sabio",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el texto del que retiene el grano?",
+      "explanation": "Proverbios 11:26 dice: Al que retiene el grano, el pueblo lo maldecirá: mas bendición será sobre la cabeza del que vende.",
+      "bibleReference": "Proverbios 11:26",
+      "answers": [
+        {
+          "text": "Que el pueblo lo maldecirá",
+          "isCorrect": true
+        },
+        {
+          "text": "Que será bendito el pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "Que la ciudad se alegrará",
+          "isCorrect": false
+        },
+        {
+          "text": "Que tendrá galardón firme",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué es el fruto del justo?",
+      "explanation": "Proverbios 11:30 dice: El fruto del justo es árbol de vida: y el que prende almas, es sabio.",
+      "bibleReference": "Proverbios 11:30",
+      "answers": [
+        {
+          "text": "Obra falsa",
+          "isCorrect": false
+        },
+        {
+          "text": "Árbol de vida",
+          "isCorrect": true
+        },
+        {
+          "text": "Zarcillo de oro",
+          "isCorrect": false
+        },
+        {
+          "text": "Ciudad fuerte",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

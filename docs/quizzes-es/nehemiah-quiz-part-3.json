@@ -14,12 +14,12 @@
       "bibleReference": "Nehemías 3:1",
       "answers": [
         {
-          "text": "La puerta de las Ovejas",
-          "isCorrect": true
-        },
-        {
           "text": "La puerta del Pescado",
           "isCorrect": false
+        },
+        {
+          "text": "La puerta de las Ovejas",
+          "isCorrect": true
         },
         {
           "text": "La puerta del Valle",
@@ -41,16 +41,16 @@
           "isCorrect": false
         },
         {
-          "text": "Hasta la torre de Meah y la torre de Hananeel",
-          "isCorrect": true
+          "text": "Hasta la grande torre que sobresale",
+          "isCorrect": false
         },
         {
           "text": "Hasta la torre alta de la casa del rey",
           "isCorrect": false
         },
         {
-          "text": "Hasta la grande torre que sobresale",
-          "isCorrect": false
+          "text": "Hasta la torre de Meah y la torre de Hananeel",
+          "isCorrect": true
         }
       ]
     },
@@ -83,8 +83,8 @@
       "bibleReference": "Nehemías 3:3",
       "answers": [
         {
-          "text": "Los hijos de Imri",
-          "isCorrect": false
+          "text": "Los hijos de Senaa",
+          "isCorrect": true
         },
         {
           "text": "Los plateros",
@@ -95,8 +95,8 @@
           "isCorrect": false
         },
         {
-          "text": "Los hijos de Senaa",
-          "isCorrect": true
+          "text": "Los hijos de Imri",
+          "isCorrect": false
         }
       ]
     },
@@ -106,12 +106,12 @@
       "bibleReference": "Nehemías 3:5",
       "answers": [
         {
-          "text": "Que no prestaron su cerviz a la obra de su Señor",
-          "isCorrect": true
-        },
-        {
           "text": "Que restauraron dos medidas del muro",
           "isCorrect": false
+        },
+        {
+          "text": "Que no prestaron su cerviz a la obra de su Señor",
+          "isCorrect": true
         },
         {
           "text": "Que levantaron las puertas con sus cerrojos",
@@ -133,12 +133,12 @@
           "isCorrect": false
         },
         {
-          "text": "Frente a su casa",
-          "isCorrect": true
-        },
-        {
           "text": "Frente al estanque del Rey",
           "isCorrect": false
+        },
+        {
+          "text": "Frente a su casa",
+          "isCorrect": true
         },
         {
           "text": "Frente a la puerta oriental",
@@ -160,12 +160,12 @@
           "isCorrect": false
         },
         {
-          "text": "Con sus hijas",
-          "isCorrect": true
-        },
-        {
           "text": "Con los varones de Gabaón",
           "isCorrect": false
+        },
+        {
+          "text": "Con sus hijas",
+          "isCorrect": true
         }
       ]
     },
@@ -175,8 +175,8 @@
       "bibleReference": "Nehemías 3:13",
       "answers": [
         {
-          "text": "Sesenta codos",
-          "isCorrect": false
+          "text": "Mil codos",
+          "isCorrect": true
         },
         {
           "text": "Quinientos codos",
@@ -187,8 +187,8 @@
           "isCorrect": false
         },
         {
-          "text": "Mil codos",
-          "isCorrect": true
+          "text": "Sesenta codos",
+          "isCorrect": false
         }
       ]
     },

@@ -14,12 +14,12 @@
       "bibleReference": "Esdras 6:1",
       "answers": [
         {
-          "text": "En la casa de los libros, donde guardaban los tesoros en Babilonia",
-          "isCorrect": true
-        },
-        {
           "text": "En el templo que estaba en Jerusalem, junto al altar",
           "isCorrect": false
+        },
+        {
+          "text": "En la casa de los libros, donde guardaban los tesoros en Babilonia",
+          "isCorrect": true
         },
         {
           "text": "En la casa del principal de los Judíos y de sus ancianos",
@@ -41,16 +41,16 @@
           "isCorrect": false
         },
         {
-          "text": "En Achmetta, en el palacio de la provincia de Media",
-          "isCorrect": true
+          "text": "En Babilonia, en la casa del rey",
+          "isCorrect": false
         },
         {
           "text": "En Susán, la capital del reino",
           "isCorrect": false
         },
         {
-          "text": "En Babilonia, en la casa del rey",
-          "isCorrect": false
+          "text": "En Achmetta, en el palacio de la provincia de Media",
+          "isCorrect": true
         }
       ]
     },
@@ -83,8 +83,8 @@
       "bibleReference": "Esdras 6:5",
       "answers": [
         {
-          "text": "El rey Ciro",
-          "isCorrect": false
+          "text": "Nabucodonosor",
+          "isCorrect": true
         },
         {
           "text": "El rey Darío",
@@ -95,8 +95,8 @@
           "isCorrect": false
         },
         {
-          "text": "Nabucodonosor",
-          "isCorrect": true
+          "text": "El rey Ciro",
+          "isCorrect": false
         }
       ]
     },
@@ -106,12 +106,12 @@
       "bibleReference": "Esdras 6:7",
       "answers": [
         {
-          "text": "Al principal de los Judíos y a sus ancianos",
-          "isCorrect": true
-        },
-        {
           "text": "A los Apharsachêos de la otra parte del río",
           "isCorrect": false
+        },
+        {
+          "text": "Al principal de los Judíos y a sus ancianos",
+          "isCorrect": true
         },
         {
           "text": "A Tatnai y a Sethar-boznai, sus compañeros",
@@ -133,16 +133,16 @@
           "isCorrect": false
         },
         {
-          "text": "Becerros, carneros, corderos, trigo, sal, vino y aceite",
-          "isCorrect": true
+          "text": "Pan y agua para los obreros de la casa",
+          "isCorrect": false
         },
         {
           "text": "Solamente incienso y madera para el altar",
           "isCorrect": false
         },
         {
-          "text": "Pan y agua para los obreros de la casa",
-          "isCorrect": false
+          "text": "Becerros, carneros, corderos, trigo, sal, vino y aceite",
+          "isCorrect": true
         }
       ]
     },
@@ -179,16 +179,16 @@
           "isCorrect": false
         },
         {
-          "text": "El veinticinco del mes de Elul, en el año primero de Ciro",
-          "isCorrect": false
+          "text": "El tercer día del mes de Adar, en el sexto año de Darío",
+          "isCorrect": true
         },
         {
           "text": "El primer día del mes noveno, en el cuarto año de Darío",
           "isCorrect": false
         },
         {
-          "text": "El tercer día del mes de Adar, en el sexto año de Darío",
-          "isCorrect": true
+          "text": "El veinticinco del mes de Elul, en el año primero de Ciro",
+          "isCorrect": false
         }
       ]
     },
@@ -221,12 +221,12 @@
       "bibleReference": "Esdras 6:22",
       "answers": [
         {
-          "text": "Tres días",
-          "isCorrect": false
-        },
-        {
           "text": "Siete días",
           "isCorrect": true
+        },
+        {
+          "text": "Tres días",
+          "isCorrect": false
         },
         {
           "text": "Catorce días",

@@ -1,0 +1,242 @@
+{
+  "title": "Proverbios Quiz bíblico - Capítulo 3",
+  "description": "Diez preguntas sobre Proverbios 3: la confianza en Jehová, el valor de la sabiduría y las promesas para quien la halla.",
+  "slug": "proverbs-quiz-part-3",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué cosas manda el texto atar al cuello y escribir en la tabla del corazón?",
+      "explanation": "Proverbios 3:3 dice: Misericordia y verdad no te desamparen; átalas á tu cuello, escríbelas en la tabla de tu corazón.",
+      "bibleReference": "Proverbios 3:3",
+      "answers": [
+        {
+          "text": "Misericordia y verdad",
+          "isCorrect": true
+        },
+        {
+          "text": "Las primicias de los frutos",
+          "isCorrect": false
+        },
+        {
+          "text": "Las riquezas y la honra",
+          "isCorrect": false
+        },
+        {
+          "text": "El castigo y la corrección",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿en qué no debes apoyarte si te fías de Jehová de todo tu corazón?",
+      "explanation": "Proverbios 3:5 dice: Fíate de Jehová de todo tu corazón, y no estribes en tu prudencia.",
+      "bibleReference": "Proverbios 3:5",
+      "answers": [
+        {
+          "text": "En tus riquezas",
+          "isCorrect": false
+        },
+        {
+          "text": "En tus amigos",
+          "isCorrect": false
+        },
+        {
+          "text": "En tu prudencia",
+          "isCorrect": true
+        },
+        {
+          "text": "En tu fuerza",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hará Jehová cuando lo reconozcas en todos tus caminos?",
+      "explanation": "Proverbios 3:6 dice que, si lo reconoces en todos tus caminos, él enderezará tus veredas.",
+      "bibleReference": "Proverbios 3:6",
+      "answers": [
+        {
+          "text": "Llenará tus trojes de grano",
+          "isCorrect": false
+        },
+        {
+          "text": "Enderezará tus veredas",
+          "isCorrect": true
+        },
+        {
+          "text": "Te dará corona de hermosura",
+          "isCorrect": false
+        },
+        {
+          "text": "Aumentará tus consejeros",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué sucede, según el texto, cuando honras a Jehová de tu sustancia y de las primicias de todos tus frutos?",
+      "explanation": "Proverbios 3:9-10 dice que entonces tus trojes serán llenas con abundancia y tus lagares rebosarán de mosto.",
+      "bibleReference": "Proverbios 3:9-10",
+      "answers": [
+        {
+          "text": "Tus enemigos caerán delante de ti en el camino",
+          "isCorrect": false
+        },
+        {
+          "text": "Tu nombre será honrado entre todas las naciones",
+          "isCorrect": false
+        },
+        {
+          "text": "Tus hijos heredarán la tierra de tus padres",
+          "isCorrect": false
+        },
+        {
+          "text": "Tus trojes se llenarán y tus lagares rebosarán de mosto",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿por qué no debes desechar el castigo de Jehová?",
+      "explanation": "Proverbios 3:11-12 manda no desechar su castigo, porque al que ama castiga, como el padre al hijo á quien quiere.",
+      "bibleReference": "Proverbios 3:11-12",
+      "answers": [
+        {
+          "text": "Porque castiga al que ama, como el padre al hijo a quien quiere",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque nadie puede escapar de su mano fuerte",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque así se llenan de abundancia tus trojes",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque el castigo da honra a los sabios del pueblo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el texto de la mercadería de la sabiduría?",
+      "explanation": "Proverbios 3:14 dice que su mercadería es mejor que la mercadería de la plata, y sus frutos más que el oro fino.",
+      "bibleReference": "Proverbios 3:14",
+      "answers": [
+        {
+          "text": "Es igual a la mercadería de la plata",
+          "isCorrect": false
+        },
+        {
+          "text": "Es mejor que la mercadería de la plata",
+          "isCorrect": true
+        },
+        {
+          "text": "Es menos que el oro fino",
+          "isCorrect": false
+        },
+        {
+          "text": "Es como el rocío de los cielos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué está en la mano derecha de la sabiduría?",
+      "explanation": "Proverbios 3:16 dice: Largura de días está en su mano derecha; en su izquierda riquezas y honra.",
+      "bibleReference": "Proverbios 3:16",
+      "answers": [
+        {
+          "text": "Riquezas y honra",
+          "isCorrect": false
+        },
+        {
+          "text": "Misericordia y verdad",
+          "isCorrect": false
+        },
+        {
+          "text": "Paz y abundancia",
+          "isCorrect": false
+        },
+        {
+          "text": "Largura de días",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué es la sabiduría para los que de ella asen?",
+      "explanation": "Proverbios 3:18 dice: Ella es árbol de vida á los que de ella asen.",
+      "bibleReference": "Proverbios 3:18",
+      "answers": [
+        {
+          "text": "Una ciudad fuerte",
+          "isCorrect": false
+        },
+        {
+          "text": "Un manantial en el desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "Árbol de vida",
+          "isCorrect": true
+        },
+        {
+          "text": "Una corona de plata",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿con qué fundó Jehová la tierra?",
+      "explanation": "Proverbios 3:19 dice que Jehová con sabiduría fundó la tierra y afirmó los cielos con inteligencia.",
+      "bibleReference": "Proverbios 3:19",
+      "answers": [
+        {
+          "text": "Con sabiduría",
+          "isCorrect": true
+        },
+        {
+          "text": "Con su mano derecha",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el rocío de los cielos",
+          "isCorrect": false
+        },
+        {
+          "text": "Con su misericordia",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el último versículo, ¿qué heredarán los sabios?",
+      "explanation": "Proverbios 3:35 dice: Los sabios heredarán honra: mas los necios sostendrán ignominia.",
+      "bibleReference": "Proverbios 3:35",
+      "answers": [
+        {
+          "text": "Ignominia",
+          "isCorrect": false
+        },
+        {
+          "text": "Honra",
+          "isCorrect": true
+        },
+        {
+          "text": "Riquezas",
+          "isCorrect": false
+        },
+        {
+          "text": "Paz",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

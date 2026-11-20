@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 66",
+  "description": "Diez preguntas sobre Salmos 66: la aclamación de toda la tierra, la mar vuelta en seco, el pueblo probado como la plata y los votos pagados.",
+  "slug": "psalms-quiz-part-66",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué manda el versículo 1 a toda la tierra?",
+      "explanation": "El versículo 1 dice: Aclamad á Dios con alegría, toda la tierra.",
+      "bibleReference": "Salmos 66:1",
+      "answers": [
+        { "text": "Aclamar a Dios con alegría", "isCorrect": true },
+        { "text": "Callar delante de Dios", "isCorrect": false },
+        { "text": "Llorar y ayunar", "isCorrect": false },
+        { "text": "Reunirse para la guerra", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 3, ¿qué se le dice a Dios acerca de sus obras?",
+      "explanation": "El versículo 3 dice: Decid á Dios: ¡Cuán terribles tus obras! Por lo grande de tu fortaleza te mentirán tus enemigos.",
+      "bibleReference": "Salmos 66:3",
+      "answers": [
+        { "text": "Que sus obras son escondidas", "isCorrect": false },
+        { "text": "Que sus obras son pequeñas a los ojos de las gentes", "isCorrect": false },
+        { "text": "¡Cuán terribles tus obras!", "isCorrect": true },
+        { "text": "Que sus obras son nuevas cada mañana", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 6, ¿qué volvió Dios en seco?",
+      "explanation": "El versículo 6 dice: Volvió la mar en seco; por el río pasaron á pie; allí en él nos alegramos.",
+      "bibleReference": "Salmos 66:6",
+      "answers": [
+        { "text": "Los pozos del desierto", "isCorrect": false },
+        { "text": "La mar", "isCorrect": true },
+        { "text": "Las fuentes de los montes", "isCorrect": false },
+        { "text": "El río de Dios", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 7, ¿quiénes no serán ensalzados?",
+      "explanation": "El versículo 7 dice que Dios se enseñorea con su fortaleza para siempre, que sus ojos atalayan sobre las gentes, y que los rebeldes no serán ensalzados.",
+      "bibleReference": "Salmos 66:7",
+      "answers": [
+        { "text": "Los pobres", "isCorrect": false },
+        { "text": "Los que temen a Dios", "isCorrect": false },
+        { "text": "Los cantores", "isCorrect": false },
+        { "text": "Los rebeldes", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 9, ¿qué no permitió Dios después de poner nuestra alma en vida?",
+      "explanation": "El versículo 9 dice: El es el que puso nuestra alma en vida, y no permitió que nuestros pies resbalasen.",
+      "bibleReference": "Salmos 66:9",
+      "answers": [
+        { "text": "Que nuestros pies resbalasen", "isCorrect": true },
+        { "text": "Que sus enemigos hablasen", "isCorrect": false },
+        { "text": "Que su casa quedase vacía", "isCorrect": false },
+        { "text": "Que la tierra temblase", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 10, ¿cómo dice el salmo que Dios los ensayó?",
+      "explanation": "El versículo 10 dice: Porque tú nos probaste, oh Dios: ensayástenos como se afina la plata.",
+      "bibleReference": "Salmos 66:10",
+      "answers": [
+        { "text": "Como se trilla el grano", "isCorrect": false },
+        { "text": "Como se poda la viña", "isCorrect": false },
+        { "text": "Como se afina la plata", "isCorrect": true },
+        { "text": "Como se pesa en la balanza", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 12, ¿en qué entraron antes de que Dios los sacara a hartura?",
+      "explanation": "El versículo 12 dice: Hombres hiciste subir sobre nuestra cabeza; entramos en fuego y en aguas, y sacástenos á hartura.",
+      "bibleReference": "Salmos 66:12",
+      "answers": [
+        { "text": "En el desierto y en la mar", "isCorrect": false },
+        { "text": "En fuego y en aguas", "isCorrect": true },
+        { "text": "En la red y en el lazo", "isCorrect": false },
+        { "text": "En la cárcel y en la espada", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 15, ¿qué ofrecerá el salmista con perfume de carneros?",
+      "explanation": "El versículo 15 dice: Holocaustos de cebados te ofreceré, con perfume de carneros: sacrificaré bueyes y machos cabríos.",
+      "bibleReference": "Salmos 66:15",
+      "answers": [
+        { "text": "Tortas de harina", "isCorrect": false },
+        { "text": "El fruto de la tierra", "isCorrect": false },
+        { "text": "Plata y oro", "isCorrect": false },
+        { "text": "Holocaustos de cebados", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 18, ¿qué habría pasado si hubiera mirado a la iniquidad en su corazón?",
+      "explanation": "El versículo 18 dice: Si en mi corazón hubiese yo mirado á la iniquidad, el Señor no me oyera.",
+      "bibleReference": "Salmos 66:18",
+      "answers": [
+        { "text": "Que el Señor no le hubiera oído", "isCorrect": true },
+        { "text": "Que sus enemigos lo hubieran prendido", "isCorrect": false },
+        { "text": "Que la tierra lo hubiera tragado", "isCorrect": false },
+        { "text": "Que sus votos se hubieran doblado", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 20, ¿por qué bendice el salmista a Dios al final?",
+      "explanation": "El versículo 20 dice: Bendito Dios, que no echó de sí mi oración, ni de mí su misericordia.",
+      "bibleReference": "Salmos 66:20",
+      "answers": [
+        { "text": "Porque le dio una ciudad fortalecida y fuerte", "isCorrect": false },
+        { "text": "Porque hizo callar la boca de sus enemigos", "isCorrect": false },
+        { "text": "Porque no echó de sí su oración, ni de él su misericordia", "isCorrect": true },
+        { "text": "Porque le añadió días sobre días en la tierra", "isCorrect": false }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 100",
+  "description": "Diez preguntas sobre Salmos 100: el salmo de alabanza, las ovejas de su prado y la misericordia que es para siempre.",
+  "slug": "psalms-quiz-part-100",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué encabezado lleva este salmo?",
+      "explanation": "Salmos 100:1 comienza con el encabezado: Salmo de alabanza.",
+      "bibleReference": "Salmos 100:1",
+      "answers": [
+        { "text": "Salmo de alabanza", "isCorrect": true },
+        { "text": "Oración del pobre", "isCorrect": false },
+        { "text": "Salmo de David", "isCorrect": false },
+        { "text": "Cántico de los peregrinos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿A quiénes manda el primer versículo cantar alegres a Dios?",
+      "explanation": "Salmos 100:1 dice: Cantad alegres a Dios, habitantes de toda la tierra.",
+      "bibleReference": "Salmos 100:1",
+      "answers": [
+        { "text": "Solo a los sacerdotes", "isCorrect": false },
+        { "text": "Solo a los hijos de Israel", "isCorrect": false },
+        { "text": "A los habitantes de toda la tierra", "isCorrect": true },
+        { "text": "A los ángeles del cielo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 2, ¿con qué se debe servir a Jehová?",
+      "explanation": "Salmos 100:2 dice: Servid a Jehová con alegría.",
+      "bibleReference": "Salmos 100:2",
+      "answers": [
+        { "text": "Con temblor", "isCorrect": false },
+        { "text": "Con alegría", "isCorrect": true },
+        { "text": "Con ayuno", "isCorrect": false },
+        { "text": "Con lágrimas", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cómo se debe venir ante su presencia, según el versículo 2?",
+      "explanation": "Salmos 100:2 dice: venid ante su acatamiento con regocijo.",
+      "bibleReference": "Salmos 100:2",
+      "answers": [
+        { "text": "En silencio", "isCorrect": false },
+        { "text": "Con sacrificios", "isCorrect": false },
+        { "text": "Descalzos", "isCorrect": false },
+        { "text": "Con regocijo", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué manda reconocer el versículo 3?",
+      "explanation": "Salmos 100:3 dice: Reconoced que Jehová él es Dios.",
+      "bibleReference": "Salmos 100:3",
+      "answers": [
+        { "text": "Que Jehová él es Dios", "isCorrect": true },
+        { "text": "Que los ídolos son nada", "isCorrect": false },
+        { "text": "Que la tierra es suya", "isCorrect": false },
+        { "text": "Que el rey es justo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 3, ¿quién nos hizo?",
+      "explanation": "Salmos 100:3 dice que él nos hizo, y no nosotros a nosotros mismos.",
+      "bibleReference": "Salmos 100:3",
+      "answers": [
+        { "text": "Nosotros mismos", "isCorrect": false },
+        { "text": "Los padres de antaño", "isCorrect": false },
+        { "text": "Él nos hizo", "isCorrect": true },
+        { "text": "Los dioses de los pueblos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Con qué imagen describe el versículo 3 al pueblo de Jehová?",
+      "explanation": "Salmos 100:3 dice: pueblo suyo somos, y ovejas de su prado.",
+      "bibleReference": "Salmos 100:3",
+      "answers": [
+        { "text": "Como un árbol plantado", "isCorrect": false },
+        { "text": "Como arena de la mar", "isCorrect": false },
+        { "text": "Como una viña cercada", "isCorrect": false },
+        { "text": "Como ovejas de su prado", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 4, ¿cómo se debe entrar por sus puertas?",
+      "explanation": "Salmos 100:4 dice: Entrad por sus puertas con reconocimiento, por sus atrios con alabanza.",
+      "bibleReference": "Salmos 100:4",
+      "answers": [
+        { "text": "Con trompetas", "isCorrect": false },
+        { "text": "Con reconocimiento", "isCorrect": true },
+        { "text": "Con las manos vacías", "isCorrect": false },
+        { "text": "De noche", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué manda hacer el versículo 4 con su nombre?",
+      "explanation": "Salmos 100:4 dice: alabadle, bendecid su nombre.",
+      "bibleReference": "Salmos 100:4",
+      "answers": [
+        { "text": "Bendecirlo", "isCorrect": true },
+        { "text": "Escribirlo", "isCorrect": false },
+        { "text": "Esconderlo", "isCorrect": false },
+        { "text": "Jurar por él", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el último versículo, ¿cuánto dura la verdad de Jehová?",
+      "explanation": "Salmos 100:5 dice que Jehová es bueno, su misericordia es para siempre y su verdad dura por todas las generaciones.",
+      "bibleReference": "Salmos 100:5",
+      "answers": [
+        { "text": "Solo una generación", "isCorrect": false },
+        { "text": "Hasta el día del juicio", "isCorrect": false },
+        { "text": "Hasta la cuarta generación", "isCorrect": false },
+        { "text": "Por todas las generaciones", "isCorrect": true }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 121",
+  "description": "Diez preguntas sobre Salmos 121: los ojos alzados a los montes, el socorro que viene de Jehová y el guardador que no se adormece.",
+  "slug": "psalms-quiz-part-121",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Hacia dónde alza el salmista sus ojos?",
+      "explanation": "El verso 1 dice: Alzaré mis ojos a los montes, de donde vendrá mi socorro.",
+      "bibleReference": "Salmos 121:1",
+      "answers": [
+        { "text": "A los montes", "isCorrect": true },
+        { "text": "Al mar", "isCorrect": false },
+        { "text": "A las puertas", "isCorrect": false },
+        { "text": "Al templo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el verso 2, ¿de dónde viene su socorro?",
+      "explanation": "El verso dice: Mi socorro viene de Jehová, que hizo los cielos y la tierra.",
+      "bibleReference": "Salmos 121:2",
+      "answers": [
+        { "text": "De los montes que rodean la ciudad", "isCorrect": false },
+        { "text": "De los príncipes de su pueblo", "isCorrect": false },
+        { "text": "De Jehová, que hizo los cielos y la tierra", "isCorrect": true },
+        { "text": "De la fuerza de su mano derecha", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dice el verso 3 que no hará el que te guarda?",
+      "explanation": "El verso 3 dice que no se dormirá el que te guarda.",
+      "bibleReference": "Salmos 121:3",
+      "answers": [
+        { "text": "No se apartará", "isCorrect": false },
+        { "text": "No se dormirá", "isCorrect": true },
+        { "text": "No hablará", "isCorrect": false },
+        { "text": "No tardará", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el verso 3, ¿a qué no dará Jehová tu pie?",
+      "explanation": "El verso dice: No dará tu pie al resbaladero.",
+      "bibleReference": "Salmos 121:3",
+      "answers": [
+        { "text": "Al lazo del cazador", "isCorrect": false },
+        { "text": "A la mano del enemigo", "isCorrect": false },
+        { "text": "Al camino de los impíos", "isCorrect": false },
+        { "text": "Al resbaladero", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿A quién guarda aquel que no se adormecerá ni dormirá?",
+      "explanation": "El verso 4 dice: He aquí, no se adormecerá ni dormirá el que guarda a Israel.",
+      "bibleReference": "Salmos 121:4",
+      "answers": [
+        { "text": "A los montes", "isCorrect": false },
+        { "text": "A los reyes", "isCorrect": false },
+        { "text": "A Israel", "isCorrect": true },
+        { "text": "A Jerusalem", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el verso 5, ¿qué es Jehová a tu mano derecha?",
+      "explanation": "El verso dice: Jehová es tu guardador: Jehová es tu sombra a tu mano derecha.",
+      "bibleReference": "Salmos 121:5",
+      "answers": [
+        { "text": "Tu sombra", "isCorrect": true },
+        { "text": "Tu espada", "isCorrect": false },
+        { "text": "Tu muro", "isCorrect": false },
+        { "text": "Tu lámpara", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dice el verso 6 que no te fatigará de día?",
+      "explanation": "El verso dice: El sol no te fatigará de día.",
+      "bibleReference": "Salmos 121:6",
+      "answers": [
+        { "text": "El viento", "isCorrect": false },
+        { "text": "La lluvia", "isCorrect": false },
+        { "text": "La luna", "isCorrect": false },
+        { "text": "El sol", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Y qué dice el mismo verso que no te fatigará de noche?",
+      "explanation": "El verso 6 añade: ni la luna de noche.",
+      "bibleReference": "Salmos 121:6",
+      "answers": [
+        { "text": "El frío", "isCorrect": false },
+        { "text": "La luna", "isCorrect": true },
+        { "text": "Las estrellas", "isCorrect": false },
+        { "text": "La tempestad", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿De qué te guardará Jehová, según el verso 7?",
+      "explanation": "El verso dice: Jehová te guardará de todo mal: él guardará tu alma.",
+      "bibleReference": "Salmos 121:7",
+      "answers": [
+        { "text": "De todo mal", "isCorrect": true },
+        { "text": "De los montes", "isCorrect": false },
+        { "text": "De la noche", "isCorrect": false },
+        { "text": "Del calor del día", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué guardará Jehová desde ahora y para siempre?",
+      "explanation": "El verso 8 dice: Jehová guardará tu salida y tu entrada, desde ahora y para siempre.",
+      "bibleReference": "Salmos 121:8",
+      "answers": [
+        { "text": "Tu casa y tu heredad", "isCorrect": false },
+        { "text": "Tu mesa y tu lecho", "isCorrect": false },
+        { "text": "Tu salida y tu entrada", "isCorrect": true },
+        { "text": "Tu puerta y tu muro", "isCorrect": false }
+      ]
+    }
+  ]
+}

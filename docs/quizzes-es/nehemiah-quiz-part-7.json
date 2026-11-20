@@ -41,12 +41,12 @@
           "isCorrect": false
         },
         {
-          "text": "A su hermano Hanani y a Hananías, príncipe del palacio",
-          "isCorrect": true
-        },
-        {
           "text": "A Zorobabel y a Jesuá",
           "isCorrect": false
+        },
+        {
+          "text": "A su hermano Hanani y a Hananías, príncipe del palacio",
+          "isCorrect": true
         },
         {
           "text": "A los magistrados de Judá y de Benjamín",
@@ -68,12 +68,12 @@
           "isCorrect": false
         },
         {
-          "text": "Hasta que calentase el sol",
-          "isCorrect": true
-        },
-        {
           "text": "Hasta la subida del alba",
           "isCorrect": false
+        },
+        {
+          "text": "Hasta que calentase el sol",
+          "isCorrect": true
         }
       ]
     },
@@ -106,12 +106,12 @@
       "bibleReference": "Nehemías 7:5",
       "answers": [
         {
-          "text": "El libro de la genealogía",
-          "isCorrect": true
-        },
-        {
           "text": "Las cartas del rey Artajerjes",
           "isCorrect": false
+        },
+        {
+          "text": "El libro de la genealogía",
+          "isCorrect": true
         },
         {
           "text": "El libro de la ley de Moisés",
@@ -175,8 +175,8 @@
       "bibleReference": "Nehemías 7:64",
       "answers": [
         {
-          "text": "Fueron puestos sobre los Nethineos",
-          "isCorrect": false
+          "text": "Fueron echados del sacerdocio",
+          "isCorrect": true
         },
         {
           "text": "Recibieron doble porción de las ofrendas",
@@ -187,8 +187,8 @@
           "isCorrect": false
         },
         {
-          "text": "Fueron echados del sacerdocio",
-          "isCorrect": true
+          "text": "Fueron puestos sobre los Nethineos",
+          "isCorrect": false
         }
       ]
     },
@@ -198,12 +198,12 @@
       "bibleReference": "Nehemías 7:66",
       "answers": [
         {
-          "text": "Cuarenta y dos mil trescientos sesenta",
-          "isCorrect": true
-        },
-        {
           "text": "Siete mil trescientos treinta y siete",
           "isCorrect": false
+        },
+        {
+          "text": "Cuarenta y dos mil trescientos sesenta",
+          "isCorrect": true
         },
         {
           "text": "Doce mil quinientos cuarenta",
@@ -221,12 +221,12 @@
       "bibleReference": "Nehemías 7:70",
       "answers": [
         {
-          "text": "Sesenta y siete",
-          "isCorrect": false
-        },
-        {
           "text": "Quinientas treinta",
           "isCorrect": true
+        },
+        {
+          "text": "Sesenta y siete",
+          "isCorrect": false
         },
         {
           "text": "Cuarenta y cinco",

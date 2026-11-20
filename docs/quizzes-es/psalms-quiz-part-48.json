@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 48",
+  "description": "Diez preguntas sobre Salmos 48: el monte de Sión como gozo de toda la tierra, los reyes que huyeron y el mandato de contar sus torres.",
+  "slug": "psalms-quiz-part-48",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el versículo 2, ¿qué monte es el gozo de toda la tierra?",
+      "explanation": "El versículo 2 dice que el monte de Sión es hermosa provincia y el gozo de toda la tierra.",
+      "bibleReference": "Salmos 48:2",
+      "answers": [
+        { "text": "El monte Sinaí", "isCorrect": false },
+        { "text": "El monte de Ophir", "isCorrect": false },
+        { "text": "El monte de Sión", "isCorrect": true },
+        { "text": "El monte de Jacob", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 2, ¿a los lados de qué está la ciudad del gran Rey?",
+      "explanation": "El versículo 2 dice que el monte de Sión está a los lados del aquilón, la ciudad del gran Rey.",
+      "bibleReference": "Salmos 48:2",
+      "answers": [
+        { "text": "Del aquilón", "isCorrect": true },
+        { "text": "De la mar", "isCorrect": false },
+        { "text": "Del desierto", "isCorrect": false },
+        { "text": "Del río", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 3, ¿por qué es conocido Dios en sus palacios?",
+      "explanation": "El versículo 3 dice que Dios en sus palacios es conocido por refugio.",
+      "bibleReference": "Salmos 48:3",
+      "answers": [
+        { "text": "Por juez", "isCorrect": false },
+        { "text": "Por rey", "isCorrect": false },
+        { "text": "Por pastor", "isCorrect": false },
+        { "text": "Por refugio", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según los versículos 4 y 5, ¿qué hicieron los reyes de la tierra al verla?",
+      "explanation": "Los versículos 4 y 5 dicen que los reyes de la tierra se reunieron y que, al verla así, se maravillaron, se turbaron y se dieron prisa a huir.",
+      "bibleReference": "Salmos 48:4-5",
+      "answers": [
+        { "text": "Trajeron presentes al templo", "isCorrect": false },
+        { "text": "Se dieron prisa a huir", "isCorrect": true },
+        { "text": "Rodearon sus muros de día y de noche", "isCorrect": false },
+        { "text": "Cantaron con voz de júbilo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 6, ¿con qué se compara el dolor que los tomó allí?",
+      "explanation": "El versículo 6 dice que allí los tomó temblor, y dolor como a mujer que pare.",
+      "bibleReference": "Salmos 48:6",
+      "answers": [
+        { "text": "Con el bramido de la mar", "isCorrect": false },
+        { "text": "Con el fuego del altar", "isCorrect": false },
+        { "text": "Con el de una mujer que pare", "isCorrect": true },
+        { "text": "Con la caída de los muros", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 7, ¿con qué viento quiebra las naves de Tharsis?",
+      "explanation": "El versículo 7 dice: Con viento solano quiebras tú las naves de Tharsis.",
+      "bibleReference": "Salmos 48:7",
+      "answers": [
+        { "text": "Con viento solano", "isCorrect": true },
+        { "text": "Con viento del aquilón", "isCorrect": false },
+        { "text": "Con viento de la mar", "isCorrect": false },
+        { "text": "Con viento del desierto", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 9, ¿dónde esperan la misericordia de Dios?",
+      "explanation": "El versículo 9 dice: Esperamos tu misericordia, oh Dios, en medio de tu templo.",
+      "bibleReference": "Salmos 48:9",
+      "answers": [
+        { "text": "En medio de las naves", "isCorrect": false },
+        { "text": "En medio de su templo", "isCorrect": true },
+        { "text": "En medio de sus torres", "isCorrect": false },
+        { "text": "En medio de sus palacios", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 11, ¿quiénes se gozarán por sus juicios?",
+      "explanation": "El versículo 11 dice que el monte de Sión se alegrará y que las hijas de Judá se gozarán por sus juicios.",
+      "bibleReference": "Salmos 48:11",
+      "answers": [
+        { "text": "Las hijas de Tiro", "isCorrect": false },
+        { "text": "Los reyes de la tierra", "isCorrect": false },
+        { "text": "Los hijos de Coré", "isCorrect": false },
+        { "text": "Las hijas de Judá", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 12, ¿qué deben contar los que andan alrededor de Sión?",
+      "explanation": "El versículo 12 dice: Andad alrededor de Sión, y rodeadla: contad sus torres.",
+      "bibleReference": "Salmos 48:12",
+      "answers": [
+        { "text": "Sus puertas", "isCorrect": false },
+        { "text": "Sus palacios", "isCorrect": false },
+        { "text": "Sus torres", "isCorrect": true },
+        { "text": "Sus naves", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 14, ¿hasta cuándo nos capitaneará este Dios?",
+      "explanation": "El versículo 14 dice que este Dios es nuestro Dios eternalmente y para siempre, y que él nos capitaneará hasta la muerte.",
+      "bibleReference": "Salmos 48:14",
+      "answers": [
+        { "text": "Hasta la muerte", "isCorrect": true },
+        { "text": "Hasta la mañana", "isCorrect": false },
+        { "text": "Hasta el día del juicio", "isCorrect": false },
+        { "text": "Hasta la generación venidera", "isCorrect": false }
+      ]
+    }
+  ]
+}

@@ -37,8 +37,8 @@
       "bibleReference": "2 Crónicas 32:3-4",
       "answers": [
         {
-          "text": "Salir á pelear contra ellos en el campo abierto",
-          "isCorrect": false
+          "text": "Cegar las fuentes de las aguas que estaban fuera de la ciudad",
+          "isCorrect": true
         },
         {
           "text": "Pagar tributo al rey de Asiria cada año",
@@ -49,8 +49,8 @@
           "isCorrect": false
         },
         {
-          "text": "Cegar las fuentes de las aguas que estaban fuera de la ciudad",
-          "isCorrect": true
+          "text": "Salir á pelear contra ellos en el campo abierto",
+          "isCorrect": false
         }
       ]
     },
@@ -60,16 +60,16 @@
       "bibleReference": "2 Crónicas 32:5",
       "answers": [
         {
-          "text": "Edificó los muros caídos, alzó las torres y otro muro por de fuera, y fortificó á Millo",
-          "isCorrect": true
+          "text": "Abrió todas las puertas de la ciudad y salió al encuentro",
+          "isCorrect": false
         },
         {
           "text": "Derribó las torres antiguas y cerró las puertas de la ciudad",
           "isCorrect": false
         },
         {
-          "text": "Abrió todas las puertas de la ciudad y salió al encuentro",
-          "isCorrect": false
+          "text": "Edificó los muros caídos, alzó las torres y otro muro por de fuera, y fortificó á Millo",
+          "isCorrect": true
         },
         {
           "text": "Cavó un foso alrededor del monte de la casa de Jehová",
@@ -87,16 +87,16 @@
           "isCorrect": false
         },
         {
-          "text": "Que con el rey de Asiria está el brazo de carne, mas con ellos Jehová su Dios",
-          "isCorrect": true
+          "text": "Que los asirios eran muchos más que todo el pueblo",
+          "isCorrect": false
         },
         {
           "text": "Que el rey de Egipto vendría á pelear por ellos",
           "isCorrect": false
         },
         {
-          "text": "Que los asirios eran muchos más que todo el pueblo",
-          "isCorrect": false
+          "text": "Que con el rey de Asiria está el brazo de carne, mas con ellos Jehová su Dios",
+          "isCorrect": true
         }
       ]
     },
@@ -106,16 +106,16 @@
       "bibleReference": "2 Crónicas 32:9",
       "answers": [
         {
-          "text": "En Samaria",
-          "isCorrect": false
+          "text": "Sobre Lachîs",
+          "isCorrect": true
         },
         {
           "text": "En Megiddo",
           "isCorrect": false
         },
         {
-          "text": "Sobre Lachîs",
-          "isCorrect": true
+          "text": "En Samaria",
+          "isCorrect": false
         },
         {
           "text": "En Carchêmis",
@@ -129,8 +129,8 @@
       "bibleReference": "2 Crónicas 32:12",
       "answers": [
         {
-          "text": "De haber quemado la casa de Jehová y todos sus atrios",
-          "isCorrect": false
+          "text": "De haber quitado los altos y los altares, mandando adorar delante de un solo altar",
+          "isCorrect": true
         },
         {
           "text": "De haber hecho alianza con los príncipes de Babilonia",
@@ -141,8 +141,8 @@
           "isCorrect": false
         },
         {
-          "text": "De haber quitado los altos y los altares, mandando adorar delante de un solo altar",
-          "isCorrect": true
+          "text": "De haber quemado la casa de Jehová y todos sus atrios",
+          "isCorrect": false
         }
       ]
     },
@@ -152,12 +152,12 @@
       "bibleReference": "2 Crónicas 32:20",
       "answers": [
         {
-          "text": "El rey Ezechîas y el profeta Isaías hijo de Amós",
-          "isCorrect": true
-        },
-        {
           "text": "Los sacerdotes y los Levitas",
           "isCorrect": false
+        },
+        {
+          "text": "El rey Ezechîas y el profeta Isaías hijo de Amós",
+          "isCorrect": true
         },
         {
           "text": "Ezechîas y Azarías, sumo sacerdote",
@@ -179,16 +179,16 @@
           "isCorrect": false
         },
         {
-          "text": "Envió un ángel que hirió á los valientes, jefes y capitanes de su campo",
-          "isCorrect": true
+          "text": "Secó el torrente de Cedrón delante de ellos",
+          "isCorrect": false
         },
         {
           "text": "Hizo temblar la tierra debajo de todo el campo",
           "isCorrect": false
         },
         {
-          "text": "Secó el torrente de Cedrón delante de ellos",
-          "isCorrect": false
+          "text": "Envió un ángel que hirió á los valientes, jefes y capitanes de su campo",
+          "isCorrect": true
         }
       ]
     },
@@ -202,12 +202,12 @@
           "isCorrect": false
         },
         {
-          "text": "Murió aquel mismo día",
-          "isCorrect": false
-        },
-        {
           "text": "No pagó conforme al bien recibido, antes se enalteció su corazón",
           "isCorrect": true
+        },
+        {
+          "text": "Murió aquel mismo día",
+          "isCorrect": false
         },
         {
           "text": "Repartió todo su tesoro entre los pobres",
@@ -225,16 +225,16 @@
           "isCorrect": false
         },
         {
-          "text": "Las dejó correr fuera de la ciudad, como antes estaban",
-          "isCorrect": false
+          "text": "Tapó los manaderos de Gihón la de arriba y las encaminó al occidente de la ciudad de David",
+          "isCorrect": true
         },
         {
           "text": "Edificó con ellas un estanque en el monte de la casa de Jehová",
           "isCorrect": false
         },
         {
-          "text": "Tapó los manaderos de Gihón la de arriba y las encaminó al occidente de la ciudad de David",
-          "isCorrect": true
+          "text": "Las dejó correr fuera de la ciudad, como antes estaban",
+          "isCorrect": false
         }
       ]
     }

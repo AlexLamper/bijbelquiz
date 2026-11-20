@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 55",
+  "description": "Diez preguntas sobre Salmos 55: las alas de paloma, el amigo íntimo que se volvió contra el salmista y la carga echada sobre Jehová.",
+  "slug": "psalms-quiz-part-55",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el versículo 1, ¿qué pide que Dios no haga?",
+      "explanation": "El versículo 1 dice: Escucha, oh Dios, mi oración, y no te escondas de mi súplica.",
+      "bibleReference": "Salmos 55:1",
+      "answers": [
+        { "text": "Que no calle delante de él", "isCorrect": false },
+        { "text": "Que no se esconda de su súplica", "isCorrect": true },
+        { "text": "Que no lo eche de delante de sí", "isCorrect": false },
+        { "text": "Que no tarde en juzgar", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 4, ¿qué ha caído sobre él?",
+      "explanation": "El versículo 4 dice que su corazón está doloroso dentro de él y que terrores de muerte han caído sobre él.",
+      "bibleReference": "Salmos 55:4",
+      "answers": [
+        { "text": "La carga de los justos", "isCorrect": false },
+        { "text": "El furor de los reinos", "isCorrect": false },
+        { "text": "La tempestad del desierto", "isCorrect": false },
+        { "text": "Terrores de muerte", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 6, ¿qué alas desea tener?",
+      "explanation": "El versículo 6 dice: ¡Quién me diese alas como de paloma! volaría yo, y descansaría.",
+      "bibleReference": "Salmos 55:6",
+      "answers": [
+        { "text": "Alas como de paloma", "isCorrect": true },
+        { "text": "Alas como de águila", "isCorrect": false },
+        { "text": "Alas como de las aves", "isCorrect": false },
+        { "text": "Alas como del viento", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 7, ¿dónde dice que moraría si huyera lejos?",
+      "explanation": "El versículo 7 dice: Ciertamente huiría lejos: moraría en el desierto.",
+      "bibleReference": "Salmos 55:7",
+      "answers": [
+        { "text": "En los montes", "isCorrect": false },
+        { "text": "En la casa de Dios", "isCorrect": false },
+        { "text": "En el desierto", "isCorrect": true },
+        { "text": "En la ciudad", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 9, ¿qué pide que el Señor divida?",
+      "explanation": "El versículo 9 pide que el Señor deshaga y divida la lengua de ellos, porque ha visto violencia y rencilla en la ciudad.",
+      "bibleReference": "Salmos 55:9",
+      "answers": [
+        { "text": "Los muros de la ciudad", "isCorrect": false },
+        { "text": "La lengua de ellos", "isCorrect": true },
+        { "text": "Las plazas de la ciudad", "isCorrect": false },
+        { "text": "El consejo de los impíos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 10, ¿cuándo rodean la ciudad sobre sus muros?",
+      "explanation": "El versículo 10 dice que día y noche la rodean sobre sus muros, y que hay iniquidad y trabajo en medio de ella.",
+      "bibleReference": "Salmos 55:10",
+      "answers": [
+        { "text": "Solo de mañana", "isCorrect": false },
+        { "text": "A medio día", "isCorrect": false },
+        { "text": "Tarde y mañana", "isCorrect": false },
+        { "text": "Día y noche", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según los versículos 12 y 13, ¿quién es el que lo afrentó?",
+      "explanation": "Los versículos 12 y 13 dicen que no fue un enemigo ni el que lo aborrecía, sino un hombre al parecer íntimo suyo, su guía y su familiar.",
+      "bibleReference": "Salmos 55:12-13",
+      "answers": [
+        { "text": "Un hombre al parecer íntimo suyo", "isCorrect": true },
+        { "text": "Un enemigo que lo aborrecía", "isCorrect": false },
+        { "text": "Un extraño de otra tierra", "isCorrect": false },
+        { "text": "Un rey de los pueblos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 14, ¿a dónde andaban juntos en compañía?",
+      "explanation": "El versículo 14 dice que juntos comunicaban dulcemente los secretos y que a la casa de Dios andaban en compañía.",
+      "bibleReference": "Salmos 55:14",
+      "answers": [
+        { "text": "A las plazas de la ciudad", "isCorrect": false },
+        { "text": "A los muros del aquilón", "isCorrect": false },
+        { "text": "A la casa de Dios", "isCorrect": true },
+        { "text": "Al desierto lejano", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 17, ¿cuándo dice que orará y clamará?",
+      "explanation": "El versículo 17 dice: Tarde y mañana y á medio día oraré y clamaré; y él oirá mi voz.",
+      "bibleReference": "Salmos 55:17",
+      "answers": [
+        { "text": "Tarde y mañana y a medio día", "isCorrect": true },
+        { "text": "Solo cuando teme", "isCorrect": false },
+        { "text": "Al clarear la mañana", "isCorrect": false },
+        { "text": "En el día de la angustia", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 22, ¿qué debe echar sobre Jehová?",
+      "explanation": "El versículo 22 dice: Echa sobre Jehová tu carga, y él te sustentará; no dejará para siempre caído al justo.",
+      "bibleReference": "Salmos 55:22",
+      "answers": [
+        { "text": "Sus votos", "isCorrect": false },
+        { "text": "Sus lágrimas", "isCorrect": false },
+        { "text": "Sus palabras", "isCorrect": false },
+        { "text": "Su carga", "isCorrect": true }
+      ]
+    }
+  ]
+}

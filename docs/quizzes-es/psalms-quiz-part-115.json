@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 115",
+  "description": "Diez preguntas sobre Salmos 115: la gloria dada al nombre de Jehová, los ídolos de plata y oro que no hablan ni ven, y la bendición sobre Israel y la casa de Aarón.",
+  "slug": "psalms-quiz-part-115",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el versículo 1, ¿a quién pide el salmo que se dé la gloria?",
+      "explanation": "El versículo 1 dice: No á nosotros, oh Jehová, no á nosotros, sino á tu nombre da gloria.",
+      "bibleReference": "Salmos 115:1",
+      "answers": [
+        { "text": "A la casa de Aarón", "isCorrect": false },
+        { "text": "Al nombre de Jehová", "isCorrect": true },
+        { "text": "A los hijos de los hombres", "isCorrect": false },
+        { "text": "A los cielos y a la tierra", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 2, ¿qué dirán las gentes?",
+      "explanation": "El versículo 2 dice: Por qué dirán las gentes: ¿Dónde está ahora su Dios?",
+      "bibleReference": "Salmos 115:2",
+      "answers": [
+        { "text": "Que su Dios no hizo los cielos", "isCorrect": false },
+        { "text": "Que su Dios no les dio la tierra", "isCorrect": false },
+        { "text": "Que su Dios no es su escudo", "isCorrect": false },
+        { "text": "Dónde está ahora su Dios", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 3, ¿dónde está nuestro Dios?",
+      "explanation": "El versículo 3 dice: Y nuestro Dios está en los cielos: todo lo que quiso ha hecho.",
+      "bibleReference": "Salmos 115:3",
+      "answers": [
+        { "text": "En los cielos", "isCorrect": true },
+        { "text": "En el silencio", "isCorrect": false },
+        { "text": "Entre las gentes", "isCorrect": false },
+        { "text": "En obra de manos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 4, ¿de qué son los ídolos de las gentes?",
+      "explanation": "El versículo 4 dice: Sus ídolos son plata y oro, obra de manos de hombres.",
+      "bibleReference": "Salmos 115:4",
+      "answers": [
+        { "text": "De bronce y hierro", "isCorrect": false },
+        { "text": "De piedra y madera", "isCorrect": false },
+        { "text": "De plata y oro", "isCorrect": true },
+        { "text": "De polvo y barro", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 5, ¿qué dice el salmo de la boca y de los ojos de los ídolos?",
+      "explanation": "El versículo 5 dice: Tienen boca, mas no hablarán; tienen ojos, mas no verán.",
+      "bibleReference": "Salmos 115:5",
+      "answers": [
+        { "text": "Que hablan y ven como los hombres", "isCorrect": false },
+        { "text": "Que no hablarán ni verán", "isCorrect": true },
+        { "text": "Que hablan pero no ven nada", "isCorrect": false },
+        { "text": "Que ven pero no hablan nada", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 7, ¿qué dice el salmo de los pies de los ídolos?",
+      "explanation": "El versículo 7 dice: tienen pies, mas no andarán; no hablarán con su garganta.",
+      "bibleReference": "Salmos 115:7",
+      "answers": [
+        { "text": "Que no andarán", "isCorrect": true },
+        { "text": "Que andan entre los hombres", "isCorrect": false },
+        { "text": "Que andan pero no hablan", "isCorrect": false },
+        { "text": "Que se mueven de su lugar", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 10, ¿a qué casa llama a confiar en Jehová?",
+      "explanation": "El versículo 10 dice: Casa de Aarón, confiad en Jehová: él es su ayuda y su escudo.",
+      "bibleReference": "Salmos 115:10",
+      "answers": [
+        { "text": "A la casa de los muertos", "isCorrect": false },
+        { "text": "A la casa de las gentes", "isCorrect": false },
+        { "text": "A la casa de los hombres", "isCorrect": false },
+        { "text": "A la casa de Aarón", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 13, ¿a quiénes bendecirá Jehová?",
+      "explanation": "El versículo 13 dice: Bendecirá á los que temen á Jehová; á chicos y á grandes.",
+      "bibleReference": "Salmos 115:13",
+      "answers": [
+        { "text": "A los que hacen los ídolos", "isCorrect": false },
+        { "text": "A los que descienden al silencio", "isCorrect": false },
+        { "text": "A los que le temen, chicos y grandes", "isCorrect": true },
+        { "text": "A los que dicen dónde está su Dios", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 16, ¿a quiénes ha dado la tierra?",
+      "explanation": "El versículo 16 dice: Los cielos son los cielos de Jehová: y ha dado la tierra á los hijos de los hombres.",
+      "bibleReference": "Salmos 115:16",
+      "answers": [
+        { "text": "A la casa de Israel", "isCorrect": false },
+        { "text": "A los que le temen", "isCorrect": false },
+        { "text": "A las gentes", "isCorrect": false },
+        { "text": "A los hijos de los hombres", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 17, ¿quiénes no alabarán a JAH?",
+      "explanation": "El versículo 17 dice: No alabarán los muertos á JAH, ni cuantos descienden al silencio.",
+      "bibleReference": "Salmos 115:17",
+      "answers": [
+        { "text": "Los chicos", "isCorrect": false },
+        { "text": "Los muertos", "isCorrect": true },
+        { "text": "Los ídolos", "isCorrect": false },
+        { "text": "Las gentes", "isCorrect": false }
+      ]
+    }
+  ]
+}

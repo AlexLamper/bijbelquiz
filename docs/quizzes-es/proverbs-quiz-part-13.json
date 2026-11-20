@@ -1,0 +1,242 @@
+{
+  "title": "Proverbios Quiz bíblico - Capítulo 13",
+  "description": "Diez preguntas sobre Proverbios 13: el hijo sabio, el alma del perezoso, la esperanza que se prolonga y el castigo del hijo.",
+  "slug": "proverbs-quiz-part-13",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el primer versículo, ¿qué no escucha el burlador?",
+      "explanation": "Proverbios 13:1 dice: El hijo sabio toma el consejo del padre: mas el burlador no escucha las reprensiones.",
+      "bibleReference": "Proverbios 13:1",
+      "answers": [
+        {
+          "text": "El fruto de su boca",
+          "isCorrect": false
+        },
+        {
+          "text": "La ley del sabio",
+          "isCorrect": false
+        },
+        {
+          "text": "Las reprensiones",
+          "isCorrect": true
+        },
+        {
+          "text": "El deseo cumplido",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el texto del que guarda su boca?",
+      "explanation": "Proverbios 13:3 dice: El que guarda su boca guarda su alma: mas el que mucho abre sus labios tendrá calamidad.",
+      "bibleReference": "Proverbios 13:3",
+      "answers": [
+        {
+          "text": "Que guarda su alma",
+          "isCorrect": true
+        },
+        {
+          "text": "Que tendrá calamidad",
+          "isCorrect": false
+        },
+        {
+          "text": "Que será quebrantado",
+          "isCorrect": false
+        },
+        {
+          "text": "Que hallará mal",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué alcanza el alma del perezoso, aunque desea?",
+      "explanation": "Proverbios 13:4 dice: Desea, y nada alcanza el alma del perezoso: mas el alma de los diligentes será engordada.",
+      "bibleReference": "Proverbios 13:4",
+      "answers": [
+        {
+          "text": "Mucho pan y mucho vino",
+          "isCorrect": false
+        },
+        {
+          "text": "Riquezas de vanidad",
+          "isCorrect": false
+        },
+        {
+          "text": "Todo lo que desea",
+          "isCorrect": false
+        },
+        {
+          "text": "Nada",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el texto acerca de los que se hacen ricos y de los que se hacen pobres?",
+      "explanation": "Proverbios 13:7 dice: Hay quienes se hacen ricos, y no tienen nada: y hay quienes se hacen pobres, y tienen muchas riquezas.",
+      "bibleReference": "Proverbios 13:7",
+      "answers": [
+        {
+          "text": "Que todos los ricos tienen lo que dicen tener",
+          "isCorrect": false
+        },
+        {
+          "text": "Que hay ricos que no tienen nada y pobres con muchas riquezas",
+          "isCorrect": true
+        },
+        {
+          "text": "Que los pobres siempre carecen de todo bien",
+          "isCorrect": false
+        },
+        {
+          "text": "Que las riquezas se reparten por igual entre todos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué sucede con la lámpara de los impíos?",
+      "explanation": "Proverbios 13:9 dice: La luz de los justos se alegrará: mas apagaráse la lámpara de los impíos.",
+      "bibleReference": "Proverbios 13:9",
+      "answers": [
+        {
+          "text": "Se alegrará",
+          "isCorrect": false
+        },
+        {
+          "text": "Será manantial de vida",
+          "isCorrect": false
+        },
+        {
+          "text": "Se apagará",
+          "isCorrect": true
+        },
+        {
+          "text": "Alumbrará para siempre",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué es, según el texto, la esperanza que se prolonga?",
+      "explanation": "Proverbios 13:12 dice: La esperanza que se prolonga, es tormento del corazón: mas árbol de vida es el deseo cumplido.",
+      "bibleReference": "Proverbios 13:12",
+      "answers": [
+        {
+          "text": "Árbol de vida",
+          "isCorrect": false
+        },
+        {
+          "text": "Manantial de vida",
+          "isCorrect": false
+        },
+        {
+          "text": "Medicina del alma",
+          "isCorrect": false
+        },
+        {
+          "text": "Tormento del corazón",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué es la ley del sabio?",
+      "explanation": "Proverbios 13:14 dice: La ley del sabio es manantial de vida, para apartarse de los lazos de la muerte.",
+      "bibleReference": "Proverbios 13:14",
+      "answers": [
+        {
+          "text": "Un lazo para los pies",
+          "isCorrect": false
+        },
+        {
+          "text": "Manantial de vida",
+          "isCorrect": true
+        },
+        {
+          "text": "Tormento del corazón",
+          "isCorrect": false
+        },
+        {
+          "text": "Vara a las espaldas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el texto del mensajero fiel?",
+      "explanation": "Proverbios 13:17 dice: El mal mensajero caerá en mal: mas el mensajero fiel es medicina.",
+      "bibleReference": "Proverbios 13:17",
+      "answers": [
+        {
+          "text": "Que es medicina",
+          "isCorrect": true
+        },
+        {
+          "text": "Que caerá en mal",
+          "isCorrect": false
+        },
+        {
+          "text": "Que será quebrantado",
+          "isCorrect": false
+        },
+        {
+          "text": "Que hallará calamidad",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué será del que se allega a los necios?",
+      "explanation": "Proverbios 13:20 dice: El que anda con los sabios, sabio será; mas el que se allega á los necios, será quebrantado.",
+      "bibleReference": "Proverbios 13:20",
+      "answers": [
+        {
+          "text": "Será sabio",
+          "isCorrect": false
+        },
+        {
+          "text": "Será honrado",
+          "isCorrect": false
+        },
+        {
+          "text": "Será quebrantado",
+          "isCorrect": true
+        },
+        {
+          "text": "Será recompensado",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el texto del que detiene el castigo?",
+      "explanation": "Proverbios 13:24 dice: El que detiene el castigo, á su hijo aborrece: mas el que lo ama, madruga á castigarlo.",
+      "bibleReference": "Proverbios 13:24",
+      "answers": [
+        {
+          "text": "Que ama a su hijo",
+          "isCorrect": false
+        },
+        {
+          "text": "Que será honrado",
+          "isCorrect": false
+        },
+        {
+          "text": "Que guarda la corrección",
+          "isCorrect": false
+        },
+        {
+          "text": "Que aborrece a su hijo",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

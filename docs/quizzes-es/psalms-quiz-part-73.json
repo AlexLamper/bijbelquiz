@@ -1,0 +1,242 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 73",
+  "description": "Diez preguntas sobre Salmos 73: la envidia por la prosperidad de los impíos, la entrada en el santuario y Dios como roca del corazón.",
+  "slug": "psalms-quiz-part-73",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué afirma el primer verso del salmo acerca de Dios?",
+      "explanation": "El texto dice: Ciertamente bueno es Dios á Israel, á los limpios de corazón.",
+      "bibleReference": "Salmos 73:1",
+      "answers": [
+        {
+          "text": "Que es bueno a Israel y a los limpios de corazón",
+          "isCorrect": true
+        },
+        {
+          "text": "Que está airado contra Israel desde antiguo",
+          "isCorrect": false
+        },
+        {
+          "text": "Que esconde su rostro de los que le buscan",
+          "isCorrect": false
+        },
+        {
+          "text": "Que reparte riquezas a los que le temen",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el salmo, ¿por qué por poco resbalaron sus pasos?",
+      "explanation": "El texto dice que casi se deslizaron sus pies porque tuvo envidia de los insensatos, al ver la prosperidad de los impíos.",
+      "bibleReference": "Salmos 73:2-3",
+      "answers": [
+        {
+          "text": "Porque anduvo de noche sin luz",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque sus enemigos le pusieron lazo",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque tuvo envidia de los insensatos",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque olvidó la ley de su Dios",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el salmo, ¿qué hacen los impíos con su boca y con su lengua?",
+      "explanation": "El texto dice: Ponen en el cielo su boca, y su lengua pasea la tierra.",
+      "bibleReference": "Salmos 73:9",
+      "answers": [
+        {
+          "text": "Callan de día y murmuran de noche",
+          "isCorrect": false
+        },
+        {
+          "text": "Ponen su boca en el cielo y su lengua pasea la tierra",
+          "isCorrect": true
+        },
+        {
+          "text": "Bendicen a Dios y maldicen al pobre",
+          "isCorrect": false
+        },
+        {
+          "text": "Cantan alabanzas en medio del pueblo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dicen los impíos en este salmo?",
+      "explanation": "El texto pone en su boca: ¿Cómo sabe Dios? ¿y hay conocimiento en lo alto?",
+      "bibleReference": "Salmos 73:11",
+      "answers": [
+        {
+          "text": "Dios es nuestro refugio y fortaleza",
+          "isCorrect": false
+        },
+        {
+          "text": "Jehová nos ha desechado para siempre",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta cuándo esconderás tu rostro",
+          "isCorrect": false
+        },
+        {
+          "text": "¿Cómo sabe Dios? ¿y hay conocimiento en lo alto?",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el salmista que ha hecho en vano?",
+      "explanation": "El texto dice: Verdaderamente en vano he limpiado mi corazón, y lavado mis manos en inocencia.",
+      "bibleReference": "Salmos 73:13",
+      "answers": [
+        {
+          "text": "Limpiar su corazón y lavar sus manos en inocencia",
+          "isCorrect": true
+        },
+        {
+          "text": "Ofrecer sacrificios de buey en el altar",
+          "isCorrect": false
+        },
+        {
+          "text": "Buscar consejo entre los ancianos del pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "Enseñar sus caminos a sus propios hijos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el salmo, ¿cuándo empezaba su castigo?",
+      "explanation": "El texto dice: Pues he sido azotado todo el día, y empezaba mi castigo por las mañanas.",
+      "bibleReference": "Salmos 73:14",
+      "answers": [
+        {
+          "text": "Al caer la tarde",
+          "isCorrect": false
+        },
+        {
+          "text": "Por las mañanas",
+          "isCorrect": true
+        },
+        {
+          "text": "En medio de la noche",
+          "isCorrect": false
+        },
+        {
+          "text": "El día de reposo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde dice el salmista que entendió cuál es el fin de los impíos?",
+      "explanation": "El texto dice: Hasta que venido al santuario de Dios, entenderé la postrimería de ellos.",
+      "bibleReference": "Salmos 73:17",
+      "answers": [
+        {
+          "text": "En la puerta de la ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "En el consejo de los ancianos",
+          "isCorrect": false
+        },
+        {
+          "text": "En el santuario de Dios",
+          "isCorrect": true
+        },
+        {
+          "text": "En el campo de batalla",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo dice el salmista que era él delante de Dios cuando no entendía?",
+      "explanation": "El texto dice: Mas yo era ignorante, y no entendía: era como una bestia acerca de ti.",
+      "bibleReference": "Salmos 73:22",
+      "answers": [
+        {
+          "text": "Como un niño pequeño",
+          "isCorrect": false
+        },
+        {
+          "text": "Como un siervo fiel",
+          "isCorrect": false
+        },
+        {
+          "text": "Como un extraño",
+          "isCorrect": false
+        },
+        {
+          "text": "Como una bestia",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el salmo, ¿qué hizo Dios con su mano derecha?",
+      "explanation": "El texto dice: Con todo, yo siempre estuve contigo: trabaste de mi mano derecha.",
+      "bibleReference": "Salmos 73:23",
+      "answers": [
+        {
+          "text": "La trabó",
+          "isCorrect": true
+        },
+        {
+          "text": "La ató con cuerdas",
+          "isCorrect": false
+        },
+        {
+          "text": "La escondió de él",
+          "isCorrect": false
+        },
+        {
+          "text": "La llenó de dones",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Aunque su carne y su corazón desfallecen, ¿qué dice el salmista que es Dios para siempre?",
+      "explanation": "El texto dice: mas la roca de mi corazón y mi porción es Dios para siempre.",
+      "bibleReference": "Salmos 73:26",
+      "answers": [
+        {
+          "text": "Su escudo y su espada en la batalla",
+          "isCorrect": false
+        },
+        {
+          "text": "Su luz y su cántico cada mañana",
+          "isCorrect": false
+        },
+        {
+          "text": "La roca de su corazón y su porción",
+          "isCorrect": true
+        },
+        {
+          "text": "Su refugio en el día de la vejez",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

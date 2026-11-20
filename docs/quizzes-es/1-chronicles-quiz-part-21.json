@@ -13,8 +13,8 @@
       "explanation": "Satanás se levantó contra Israel é incitó á David á que contase á Israel.",
       "bibleReference": "1 Crónicas 21:1",
       "answers": [
-        { "text": "Satanás", "isCorrect": true },
         { "text": "Joab", "isCorrect": false },
+        { "text": "Satanás", "isCorrect": true },
         { "text": "Gad el vidente", "isCorrect": false },
         { "text": "El ángel de Jehová", "isCorrect": false }
       ]
@@ -25,8 +25,8 @@
       "bibleReference": "1 Crónicas 21:2",
       "answers": [
         { "text": "Desde Sihor de Egipto hasta Hamath", "isCorrect": false },
-        { "text": "Desde Beer-seba hasta Dan", "isCorrect": true },
         { "text": "Desde Hebrón hasta Jerusalem", "isCorrect": false },
+        { "text": "Desde Beer-seba hasta Dan", "isCorrect": true },
         { "text": "Desde Gabaón hasta Gezer", "isCorrect": false }
       ]
     },
@@ -35,9 +35,9 @@
       "explanation": "Joab preguntó para qué procuraba su señor esto, que sería pernicioso á Israel, y deseó que Jehová añadiese á su pueblo cien veces otros tantos.",
       "bibleReference": "1 Crónicas 21:3",
       "answers": [
-        { "text": "Que lo haría de buena voluntad", "isCorrect": false },
-        { "text": "Que contaría solo á los Levitas", "isCorrect": false },
         { "text": "Que aquello sería pernicioso á Israel", "isCorrect": true },
+        { "text": "Que contaría solo á los Levitas", "isCorrect": false },
+        { "text": "Que lo haría de buena voluntad", "isCorrect": false },
         { "text": "Que el rey debía ir con él", "isCorrect": false }
       ]
     },
@@ -57,8 +57,8 @@
       "explanation": "Entre estos no fueron contados los Levitas ni los hijos de Benjamín, porque Joab abominaba el mandamiento del rey.",
       "bibleReference": "1 Crónicas 21:6",
       "answers": [
-        { "text": "Los Levitas y los hijos de Benjamín", "isCorrect": true },
         { "text": "Los hijos de Judá y de Simeón", "isCorrect": false },
+        { "text": "Los Levitas y los hijos de Benjamín", "isCorrect": true },
         { "text": "Los sacerdotes y los cantores", "isCorrect": false },
         { "text": "Los de Gad y de Rubén", "isCorrect": false }
       ]
@@ -68,8 +68,8 @@
       "explanation": "Jehová mandó decir á David: Tres cosas te propongo; escoge de ellas una que yo haga contigo.",
       "bibleReference": "1 Crónicas 21:10",
       "answers": [
-        { "text": "Dos cosas", "isCorrect": false },
         { "text": "Tres cosas", "isCorrect": true },
+        { "text": "Dos cosas", "isCorrect": false },
         { "text": "Siete cosas", "isCorrect": false },
         { "text": "Cuatro cosas", "isCorrect": false }
       ]

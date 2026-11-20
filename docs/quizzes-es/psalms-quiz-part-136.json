@@ -1,0 +1,242 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 136",
+  "description": "Diez preguntas sobre Salmos 136: el estribillo \"porque para siempre es su misericordia\", la creación, la salida de Egipto y el mar Bermejo.",
+  "slug": "psalms-quiz-part-136",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Con qué frase terminan los tres primeros versículos de este salmo?",
+      "explanation": "Los versículos 1, 2 y 3 terminan todos con: \"porque para siempre es su misericordia\".",
+      "bibleReference": "Salmos 136:1-3",
+      "answers": [
+        {
+          "text": "Aleluya, alabad el nombre de Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "Cántico gradual, salmo de David",
+          "isCorrect": false
+        },
+        {
+          "text": "Bendito sea Jehová desde Sión",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque para siempre es su misericordia",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué dos títulos se nombra a Dios en los versículos 2 y 3?",
+      "explanation": "Se le llama Dios de los dioses y Señor de los señores.",
+      "bibleReference": "Salmos 136:2-3",
+      "answers": [
+        {
+          "text": "Fuerte de Jacob y Rey de Sión",
+          "isCorrect": false
+        },
+        {
+          "text": "Dios de los dioses y Señor de los señores",
+          "isCorrect": true
+        },
+        {
+          "text": "Músico principal y Pastor de Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Dios de Egipto y Señor de Basán",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Sobre qué tendió la tierra, según el versículo 6?",
+      "explanation": "El versículo dice que tendió la tierra sobre las aguas.",
+      "bibleReference": "Salmos 136:6",
+      "answers": [
+        {
+          "text": "Sobre los montes",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre el mar Bermejo",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre las aguas",
+          "isCorrect": true
+        },
+        {
+          "text": "Sobre los cimientos del santuario",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué domina en el día y qué en la noche, según los versículos 8 y 9?",
+      "explanation": "El sol para dominar en el día, y la luna y las estrellas para dominar en la noche.",
+      "bibleReference": "Salmos 136:8-9",
+      "answers": [
+        {
+          "text": "El sol en el día; la luna y las estrellas de noche",
+          "isCorrect": true
+        },
+        {
+          "text": "La luna en el día; el sol en la noche",
+          "isCorrect": false
+        },
+        {
+          "text": "Las nubes en el día; los relámpagos de noche",
+          "isCorrect": false
+        },
+        {
+          "text": "El fuego en el día; el viento en la noche",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quién hirió en sus primogénitos, según el versículo 10?",
+      "explanation": "El versículo dice que hirió a Egipto en sus primogénitos.",
+      "bibleReference": "Salmos 136:10",
+      "answers": [
+        {
+          "text": "A Basán",
+          "isCorrect": false
+        },
+        {
+          "text": "A Edom",
+          "isCorrect": false
+        },
+        {
+          "text": "A Canaán",
+          "isCorrect": false
+        },
+        {
+          "text": "A Egipto",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dividió en partes, según el versículo 13?",
+      "explanation": "El versículo dice que dividió el mar Bermejo en partes.",
+      "bibleReference": "Salmos 136:13",
+      "answers": [
+        {
+          "text": "El río de Babilonia",
+          "isCorrect": false
+        },
+        {
+          "text": "Los montes de Sión",
+          "isCorrect": false
+        },
+        {
+          "text": "El mar Bermejo",
+          "isCorrect": true
+        },
+        {
+          "text": "Las nubes del cielo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo con Faraón y su ejército?",
+      "explanation": "El versículo 15 dice que los arrojó en el mar Bermejo.",
+      "bibleReference": "Salmos 136:15",
+      "answers": [
+        {
+          "text": "Los dejó en el desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "Los arrojó en el mar Bermejo",
+          "isCorrect": true
+        },
+        {
+          "text": "Los dio por heredad a Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Los vistió de confusión",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hizo con su pueblo por el desierto?",
+      "explanation": "El versículo 16 dice que pastoreó a su pueblo por el desierto.",
+      "bibleReference": "Salmos 136:16",
+      "answers": [
+        {
+          "text": "Lo pastoreó",
+          "isCorrect": true
+        },
+        {
+          "text": "Lo dejó allí",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo juzgó con fuego",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo vistió de salud",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dos reyes nombran los versículos 19 y 20?",
+      "explanation": "Nombran a Sehón rey Amorrheo y a Og rey de Basán.",
+      "bibleReference": "Salmos 136:19-20",
+      "answers": [
+        {
+          "text": "Faraón de Egipto y el rey de Edom",
+          "isCorrect": false
+        },
+        {
+          "text": "Og de Hermón y Sehón de Sión",
+          "isCorrect": false
+        },
+        {
+          "text": "Sehón rey Amorrheo y Og rey de Basán",
+          "isCorrect": true
+        },
+        {
+          "text": "Jacob de Israel y Aarón de Leví",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quién da mantenimiento, según el versículo 25?",
+      "explanation": "El versículo dice que él da mantenimiento a toda carne.",
+      "bibleReference": "Salmos 136:25",
+      "answers": [
+        {
+          "text": "Solo a Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "A toda carne",
+          "isCorrect": true
+        },
+        {
+          "text": "A los sacerdotes",
+          "isCorrect": false
+        },
+        {
+          "text": "A los reyes de la tierra",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

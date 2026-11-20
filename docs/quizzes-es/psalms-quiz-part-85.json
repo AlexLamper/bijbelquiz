@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 85",
+  "description": "Diez preguntas sobre Salmos 85: el perdón de la iniquidad del pueblo, la petición de que cese la ira y el encuentro de la misericordia con la verdad.",
+  "slug": "psalms-quiz-part-85",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué dice el salmo que Jehová volvió, siendo propicio a su tierra?",
+      "explanation": "El verso dice: Fuiste propicio á tu tierra, oh Jehová: volviste la cautividad de Jacob.",
+      "bibleReference": "Salmos 85:1",
+      "answers": [
+        { "text": "La cautividad de Jacob", "isCorrect": true },
+        { "text": "El arca a su lugar", "isCorrect": false },
+        { "text": "Las aguas del río", "isCorrect": false },
+        { "text": "La sombra del reloj", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Jehová con todos los pecados de su pueblo?",
+      "explanation": "El verso dice: Perdonaste la iniquidad de tu pueblo; todos los pecados de ellos cubriste.",
+      "bibleReference": "Salmos 85:2",
+      "answers": [
+        { "text": "Los escribió en un libro", "isCorrect": false },
+        { "text": "Los puso delante del pueblo", "isCorrect": false },
+        { "text": "Los cubrió", "isCorrect": true },
+        { "text": "Los contó uno por uno", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dice el salmo que Jehová dejó?",
+      "explanation": "El verso dice: Dejaste toda tu saña: te volviste de la ira de tu furor.",
+      "bibleReference": "Salmos 85:3",
+      "answers": [
+        { "text": "Su trono de juicio", "isCorrect": false },
+        { "text": "Toda su saña", "isCorrect": true },
+        { "text": "Su pacto con David", "isCorrect": false },
+        { "text": "Su morada en Sión", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué se pide a Dios llamándolo \"salud nuestra\"?",
+      "explanation": "El verso dice: Vuélvenos, oh Dios, salud nuestra, y haz cesar tu ira de sobre nosotros.",
+      "bibleReference": "Salmos 85:4",
+      "answers": [
+        { "text": "Que edifique de nuevo el templo", "isCorrect": false },
+        { "text": "Que envíe profetas a su pueblo", "isCorrect": false },
+        { "text": "Que juzgue a las gentes vecinas", "isCorrect": false },
+        { "text": "Que nos vuelva y haga cesar su ira", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué pregunta hace el salmo en el verso 5?",
+      "explanation": "El verso pregunta si Dios estará enojado para siempre y si extenderá su ira de generación en generación.",
+      "bibleReference": "Salmos 85:5",
+      "answers": [
+        { "text": "Si Dios extenderá su ira de generación en generación", "isCorrect": true },
+        { "text": "Si Dios enviará lluvia sobre los campos secos", "isCorrect": false },
+        { "text": "Si Dios levantará los muros de la ciudad", "isCorrect": false },
+        { "text": "Si Dios dará su ley a los pueblos vecinos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dos cosas pide el salmo a Jehová en el verso 7?",
+      "explanation": "El verso dice: Muéstranos, oh Jehová, tu misericordia, y danos tu salud.",
+      "bibleReference": "Salmos 85:7",
+      "answers": [
+        { "text": "Que calle y esconda su rostro", "isCorrect": false },
+        { "text": "Que muestre su misericordia y dé su salud", "isCorrect": true },
+        { "text": "Que reparta la tierra entre ellos", "isCorrect": false },
+        { "text": "Que alargue los días de su rey", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué hablará el Dios Jehová a su pueblo y a sus santos?",
+      "explanation": "El verso dice que hablará paz á su pueblo y á sus santos, para que no se conviertan á la locura.",
+      "bibleReference": "Salmos 85:8",
+      "answers": [
+        { "text": "Juicio", "isCorrect": false },
+        { "text": "Guerra", "isCorrect": false },
+        { "text": "Silencio", "isCorrect": false },
+        { "text": "Paz", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿A quiénes dice el salmo que está cercana la salud de Dios?",
+      "explanation": "El verso dice que ciertamente cercana está su salud á los que le temen, para que habite la gloria en la tierra.",
+      "bibleReference": "Salmos 85:9",
+      "answers": [
+        { "text": "A los que son ricos", "isCorrect": false },
+        { "text": "A los reyes vecinos", "isCorrect": false },
+        { "text": "A los que le temen", "isCorrect": true },
+        { "text": "A los que van de camino", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el salmo, ¿qué dos cosas se besaron?",
+      "explanation": "El verso dice: La misericordia y la verdad se encontraron: la justicia y la paz se besaron.",
+      "bibleReference": "Salmos 85:10",
+      "answers": [
+        { "text": "La ira y el furor", "isCorrect": false },
+        { "text": "La justicia y la paz", "isCorrect": true },
+        { "text": "El cielo y la tierra", "isCorrect": false },
+        { "text": "La gloria y la salud", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dice el salmo que brotará de la tierra?",
+      "explanation": "El verso dice: La verdad brotará de la tierra; y la justicia mirará desde los cielos.",
+      "bibleReference": "Salmos 85:11",
+      "answers": [
+        { "text": "La verdad", "isCorrect": true },
+        { "text": "La justicia", "isCorrect": false },
+        { "text": "La gloria", "isCorrect": false },
+        { "text": "La paz", "isCorrect": false }
+      ]
+    }
+  ]
+}

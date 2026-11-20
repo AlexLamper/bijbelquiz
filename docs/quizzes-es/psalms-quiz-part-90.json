@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 90",
+  "description": "Diez preguntas sobre Salmos 90: el Señor como refugio en toda generación, los mil años como el día de ayer y la petición de contar nuestros días.",
+  "slug": "psalms-quiz-part-90",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿De quién es esta oración, según su encabezamiento?",
+      "explanation": "El encabezamiento dice: Oración de Moisés varón de Dios.",
+      "bibleReference": "Salmos 90:1",
+      "answers": [
+        { "text": "De David, rey de Israel", "isCorrect": false },
+        { "text": "De Moisés, varón de Dios", "isCorrect": true },
+        { "text": "De Asaph, el cantor", "isCorrect": false },
+        { "text": "De Hemán Ezrahita", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dice el salmo que el Señor ha sido en generación y en generación?",
+      "explanation": "El verso dice: Señor, tú nos has sido refugio en generación y en generación.",
+      "bibleReference": "Salmos 90:1",
+      "answers": [
+        { "text": "Juez", "isCorrect": false },
+        { "text": "Pastor", "isCorrect": false },
+        { "text": "Testigo", "isCorrect": false },
+        { "text": "Refugio", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el salmo, ¿desde cuándo y hasta cuándo es Dios?",
+      "explanation": "El verso dice que antes que naciesen los montes y formase la tierra y el mundo, y desde el siglo y hasta el siglo, él es Dios.",
+      "bibleReference": "Salmos 90:2",
+      "answers": [
+        { "text": "Desde el siglo y hasta el siglo", "isCorrect": true },
+        { "text": "Desde que salió el pueblo de Egipto", "isCorrect": false },
+        { "text": "Desde el día de la alianza", "isCorrect": false },
+        { "text": "Desde que fue edificado el templo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Con qué compara el salmo los mil años delante de los ojos de Dios?",
+      "explanation": "El verso dice que mil años delante de sus ojos son como el día de ayer, que pasó, y como una de las vigilias de la noche.",
+      "bibleReference": "Salmos 90:4",
+      "answers": [
+        { "text": "Con un año de abundancia", "isCorrect": false },
+        { "text": "Con los años de los montes", "isCorrect": false },
+        { "text": "Con el día de ayer que pasó", "isCorrect": true },
+        { "text": "Con la edad de los padres", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el salmo, ¿qué le sucede a la tarde a la hierba que florece en la mañana?",
+      "explanation": "El verso dice: En la mañana florece y crece; á la tarde es cortada, y se seca.",
+      "bibleReference": "Salmos 90:6",
+      "answers": [
+        { "text": "Da su fruto maduro", "isCorrect": false },
+        { "text": "Es cortada y se seca", "isCorrect": true },
+        { "text": "Se cubre de rocío", "isCorrect": false },
+        { "text": "Crece aún más alta", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dice el salmo que Dios puso delante de sí, a la luz de su rostro?",
+      "explanation": "El verso dice: Pusiste nuestras maldades delante de ti, nuestros yerros á la luz de tu rostro.",
+      "bibleReference": "Salmos 90:8",
+      "answers": [
+        { "text": "Nuestras maldades y nuestros yerros", "isCorrect": true },
+        { "text": "Los sacrificios de nuestras manos", "isCorrect": false },
+        { "text": "Las ofrendas de nuestros padres", "isCorrect": false },
+        { "text": "Los cantos de nuestra boca", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cómo dice el salmo que acabamos nuestros años?",
+      "explanation": "El verso dice que todos nuestros días declinan á causa de su ira y que acabamos nuestros años como un pensamiento.",
+      "bibleReference": "Salmos 90:9",
+      "answers": [
+        { "text": "Como una sombra larga", "isCorrect": false },
+        { "text": "Como un río que corre", "isCorrect": false },
+        { "text": "Como un pensamiento", "isCorrect": true },
+        { "text": "Como una tela rota", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuántos años dice el salmo que son los días de nuestra edad?",
+      "explanation": "El verso dice que los días de nuestra edad son setenta años, y que en los más robustos son ochenta años.",
+      "bibleReference": "Salmos 90:10",
+      "answers": [
+        { "text": "Cuarenta años", "isCorrect": false },
+        { "text": "Cien años", "isCorrect": false },
+        { "text": "Ciento veinte años", "isCorrect": false },
+        { "text": "Setenta años", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué pide el salmo que Dios enseñe a contar, para traer sabiduría al corazón?",
+      "explanation": "El verso dice: Enséñanos de tal modo á contar nuestros días, que traigamos al corazón sabiduría.",
+      "bibleReference": "Salmos 90:12",
+      "answers": [
+        { "text": "Nuestros días", "isCorrect": true },
+        { "text": "Nuestros rebaños", "isCorrect": false },
+        { "text": "Nuestros caminos", "isCorrect": false },
+        { "text": "Nuestros bienes", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué pide el salmo al final que Dios confirme?",
+      "explanation": "El verso dice: y ordena en nosotros la obra de nuestras manos, la obra de nuestras manos confirma.",
+      "bibleReference": "Salmos 90:17",
+      "answers": [
+        { "text": "El trono de nuestro rey", "isCorrect": false },
+        { "text": "La obra de nuestras manos", "isCorrect": true },
+        { "text": "Los muros de la ciudad", "isCorrect": false },
+        { "text": "El pacto de nuestros padres", "isCorrect": false }
+      ]
+    }
+  ]
+}

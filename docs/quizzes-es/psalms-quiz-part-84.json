@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 84",
+  "description": "Diez preguntas sobre Salmos 84: el deseo de los atrios de Jehová, el gorrión y la golondrina en los altares y el día en los atrios mejor que mil fuera.",
+  "slug": "psalms-quiz-part-84",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué exclama el salmo acerca de las moradas de Jehová de los ejércitos?",
+      "explanation": "El verso dice: ¡Cuán amables son tus moradas, oh Jehová de los ejércitos!",
+      "bibleReference": "Salmos 84:1",
+      "answers": [
+        { "text": "Que están desiertas", "isCorrect": false },
+        { "text": "Que son fuertes como torres", "isCorrect": false },
+        { "text": "Que están llenas de plata", "isCorrect": false },
+        { "text": "Que son muy amables", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué desea ardientemente el alma del salmista?",
+      "explanation": "El verso dice que su alma codicia y aun ardientemente desea los atrios de Jehová.",
+      "bibleReference": "Salmos 84:2",
+      "answers": [
+        { "text": "Las ciudades de Judá", "isCorrect": false },
+        { "text": "Los atrios de Jehová", "isCorrect": true },
+        { "text": "Los montes de Basán", "isCorrect": false },
+        { "text": "Las moradas de maldad", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué aves dice el salmo que hallan casa y nido en los altares de Jehová?",
+      "explanation": "El verso dice que aun el gorrión halla casa, y la golondrina nido para sí, donde ponga sus pollos en sus altares.",
+      "bibleReference": "Salmos 84:3",
+      "answers": [
+        { "text": "El águila y el buitre", "isCorrect": false },
+        { "text": "La paloma y la tórtola", "isCorrect": false },
+        { "text": "El gorrión y la golondrina", "isCorrect": true },
+        { "text": "La cigüeña y la grulla", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dice el salmo de los que habitan en la casa de Dios?",
+      "explanation": "El verso dice: Bienaventurados los que habitan en tu casa: perpetuamente te alabarán.",
+      "bibleReference": "Salmos 84:4",
+      "answers": [
+        { "text": "Que lo alabarán perpetuamente", "isCorrect": true },
+        { "text": "Que heredarán la tierra", "isCorrect": false },
+        { "text": "Que no verán muerte", "isCorrect": false },
+        { "text": "Que servirán a los reyes", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el salmo, ¿qué está en el corazón del hombre bienaventurado?",
+      "explanation": "El verso dice: Bienaventurado el hombre que tiene su fortaleza en ti; en cuyo corazón están tus caminos.",
+      "bibleReference": "Salmos 84:5",
+      "answers": [
+        { "text": "La ley escrita en tablas", "isCorrect": false },
+        { "text": "El temor de los hombres", "isCorrect": false },
+        { "text": "La memoria de los padres", "isCorrect": false },
+        { "text": "Los caminos de Dios", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué valle nombra el salmo, que al atravesarlo ponen por fuente?",
+      "explanation": "El verso dice: Atravesando el valle de Baca pónenle por fuente, cuando la lluvia llena los estanques.",
+      "bibleReference": "Salmos 84:6",
+      "answers": [
+        { "text": "El valle de Josafat", "isCorrect": false },
+        { "text": "El valle de Elah", "isCorrect": false },
+        { "text": "El valle de Baca", "isCorrect": true },
+        { "text": "El valle de Siddim", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Dónde verán a Dios los que van de fortaleza en fortaleza?",
+      "explanation": "El verso dice: Irán de fortaleza en fortaleza, verán á Dios en Sión.",
+      "bibleReference": "Salmos 84:7",
+      "answers": [
+        { "text": "En Sión", "isCorrect": true },
+        { "text": "En Hebrón", "isCorrect": false },
+        { "text": "En Silo", "isCorrect": false },
+        { "text": "En Betel", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿En qué pide el salmo que Dios ponga los ojos?",
+      "explanation": "El verso dice: Mira, oh Dios, escudo nuestro, y pon los ojos en el rostro de tu ungido.",
+      "bibleReference": "Salmos 84:9",
+      "answers": [
+        { "text": "En los muros de la ciudad", "isCorrect": false },
+        { "text": "En el rostro de su ungido", "isCorrect": true },
+        { "text": "En los sacrificios del altar", "isCorrect": false },
+        { "text": "En la aflicción de los pueblos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dice el salmo que es mejor que mil días fuera de los atrios de Dios?",
+      "explanation": "El verso dice que mejor es un día en sus atrios que mil fuera de ellos.",
+      "bibleReference": "Salmos 84:10",
+      "answers": [
+        { "text": "Un año de paz en la tierra", "isCorrect": false },
+        { "text": "Una fiesta con los príncipes", "isCorrect": false },
+        { "text": "Un día en sus atrios", "isCorrect": true },
+        { "text": "Un mes en las moradas de maldad", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dice el salmo que es Jehová Dios?",
+      "explanation": "El verso dice: Porque sol y escudo es Jehová Dios: gracia y gloria dará Jehová.",
+      "bibleReference": "Salmos 84:11",
+      "answers": [
+        { "text": "Pastor y roca", "isCorrect": false },
+        { "text": "Fuente y río", "isCorrect": false },
+        { "text": "Torre y muro", "isCorrect": false },
+        { "text": "Sol y escudo", "isCorrect": true }
+      ]
+    }
+  ]
+}

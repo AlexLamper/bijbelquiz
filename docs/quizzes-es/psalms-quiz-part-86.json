@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 86",
+  "description": "Diez preguntas sobre Salmos 86: la oración del afligido, el Señor bueno y perdonador y la petición de un corazón consolidado para temer su nombre.",
+  "slug": "psalms-quiz-part-86",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿De quién es esta oración, según su encabezamiento?",
+      "explanation": "El encabezamiento dice: Oración de David.",
+      "bibleReference": "Salmos 86:1",
+      "answers": [
+        { "text": "De Asaph", "isCorrect": false },
+        { "text": "De David", "isCorrect": true },
+        { "text": "De Moisés", "isCorrect": false },
+        { "text": "De los hijos de Coré", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cómo se describe el que ora al pedir que Jehová incline su oído?",
+      "explanation": "El verso dice: Inclina, oh Jehová, tu oído, y óyeme; porque estoy afligido y menesteroso.",
+      "bibleReference": "Salmos 86:1",
+      "answers": [
+        { "text": "Rico y poderoso", "isCorrect": false },
+        { "text": "Joven y fuerte", "isCorrect": false },
+        { "text": "Sabio y entendido", "isCorrect": false },
+        { "text": "Afligido y menesteroso", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Con qué frecuencia dice el salmista que clama a Jehová?",
+      "explanation": "El verso dice: Ten misericordia de mí, oh Jehová: porque á ti clamo todo el día.",
+      "bibleReference": "Salmos 86:3",
+      "answers": [
+        { "text": "Todo el día", "isCorrect": true },
+        { "text": "Solo de noche", "isCorrect": false },
+        { "text": "Una vez al año", "isCorrect": false },
+        { "text": "En las tres fiestas", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dice el salmista que levanta al Señor?",
+      "explanation": "El verso dice: Alegra el alma de tu siervo: porque á ti, oh Señor, levanto mi alma.",
+      "bibleReference": "Salmos 86:4",
+      "answers": [
+        { "text": "Sus ofrendas", "isCorrect": false },
+        { "text": "Su canto", "isCorrect": false },
+        { "text": "Su alma", "isCorrect": true },
+        { "text": "Su rostro", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cómo describe el salmo al Señor en el verso 5?",
+      "explanation": "El verso dice que el Señor es bueno y perdonador, y grande en misericordia para con todos los que le invocan.",
+      "bibleReference": "Salmos 86:5",
+      "answers": [
+        { "text": "Terrible y celoso", "isCorrect": false },
+        { "text": "Bueno y perdonador", "isCorrect": true },
+        { "text": "Callado y escondido", "isCorrect": false },
+        { "text": "Lejano y silencioso", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dice el salmista acerca del Señor entre los dioses?",
+      "explanation": "El verso dice: Oh Señor, ninguno hay como tú entre los dioses, ni obras que igualen tus obras.",
+      "bibleReference": "Salmos 86:8",
+      "answers": [
+        { "text": "Que ninguno hay como él entre ellos", "isCorrect": true },
+        { "text": "Que todos los dioses son sus siervos", "isCorrect": false },
+        { "text": "Que los dioses hablan en sueños", "isCorrect": false },
+        { "text": "Que los dioses habitan en los montes", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dice el salmo que harán todas las gentes que Dios hizo?",
+      "explanation": "El verso dice que todas las gentes que hizo vendrán y se humillarán delante de él, y glorificarán su nombre.",
+      "bibleReference": "Salmos 86:9",
+      "answers": [
+        { "text": "Edificarán altares en sus montes", "isCorrect": false },
+        { "text": "Huirán a las islas del mar", "isCorrect": false },
+        { "text": "Vendrán y se humillarán delante de él", "isCorrect": true },
+        { "text": "Traerán oro de Etiopía", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué pide el salmista que Dios consolide, para que tema su nombre?",
+      "explanation": "El verso dice: Enséñame, oh Jehová, tu camino; caminaré yo en tu verdad: consolida mi corazón para que tema tu nombre.",
+      "bibleReference": "Salmos 86:11",
+      "answers": [
+        { "text": "Su casa", "isCorrect": false },
+        { "text": "Sus manos", "isCorrect": false },
+        { "text": "Su trono", "isCorrect": false },
+        { "text": "Su corazón", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿De dónde dice el salmista que Dios libró su alma?",
+      "explanation": "El verso dice que la misericordia de Dios es grande para con él y que ha librado su alma del hoyo profundo.",
+      "bibleReference": "Salmos 86:13",
+      "answers": [
+        { "text": "Del hoyo profundo", "isCorrect": true },
+        { "text": "De la mano de Egipto", "isCorrect": false },
+        { "text": "Del lazo del cazador", "isCorrect": false },
+        { "text": "De la boca del león", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Quiénes se levantaron contra el salmista y buscaron su alma?",
+      "explanation": "El verso dice que soberbios se levantaron contra él y que una conspiración de fuertes ha buscado su alma, y no pusieron a Dios delante de sí.",
+      "bibleReference": "Salmos 86:14",
+      "answers": [
+        { "text": "Los reyes de Egipto y de Assur", "isCorrect": false },
+        { "text": "Soberbios y una conspiración de fuertes", "isCorrect": true },
+        { "text": "Los que pasaban por el camino", "isCorrect": false },
+        { "text": "Los jueces y los sacerdotes", "isCorrect": false }
+      ]
+    }
+  ]
+}

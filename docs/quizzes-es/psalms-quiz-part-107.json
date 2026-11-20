@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 107",
+  "description": "Diez preguntas sobre Salmos 107: los redimidos congregados de las tierras, los perdidos en el desierto, los presos en hierros y los que descienden a la mar en navíos.",
+  "slug": "psalms-quiz-part-107",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el versículo 1, ¿cuánto dura la misericordia de Jehová?",
+      "explanation": "El versículo 1 dice: Alabad á Jehová, porque es bueno; porque para siempre es su misericordia.",
+      "bibleReference": "Salmos 107:1",
+      "answers": [
+        { "text": "Hasta el día de la angustia", "isCorrect": false },
+        { "text": "Para siempre", "isCorrect": true },
+        { "text": "Hasta mil generaciones", "isCorrect": false },
+        { "text": "Mientras clamen a él", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 3, ¿de dónde congregó Jehová a los redimidos?",
+      "explanation": "El versículo 3 dice que los ha congregado de las tierras, del oriente y del occidente, del aquilón y de la mar.",
+      "bibleReference": "Salmos 107:2-3",
+      "answers": [
+        { "text": "De las ciudades de población y de sus puertas", "isCorrect": false },
+        { "text": "De las puertas de la muerte y de sus cerrojos", "isCorrect": false },
+        { "text": "De la congregación del pueblo y del consistorio", "isCorrect": false },
+        { "text": "Del oriente, del occidente, del aquilón y de la mar", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 5, ¿cómo estaban los que anduvieron perdidos por el desierto?",
+      "explanation": "El versículo 5 dice que estaban hambrientos y sedientos, y que su alma desfallecía en ellos.",
+      "bibleReference": "Salmos 107:4-5",
+      "answers": [
+        { "text": "Hambrientos y sedientos", "isCorrect": true },
+        { "text": "Presos en hierros", "isCorrect": false },
+        { "text": "Borrachos y titubeantes", "isCorrect": false },
+        { "text": "Alegres y saciados", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 10, ¿cómo estaban los que moraban en tinieblas y sombra de muerte?",
+      "explanation": "El versículo 10 dice que estaban aprisionados en aflicción y en hierros.",
+      "bibleReference": "Salmos 107:10",
+      "answers": [
+        { "text": "Perdidos por la soledad sin camino", "isCorrect": false },
+        { "text": "Sentados en consistorio de ancianos", "isCorrect": false },
+        { "text": "Aprisionados en aflicción y en hierros", "isCorrect": true },
+        { "text": "Reposando en el puerto que deseaban", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 16, ¿qué quebrantó y desmenuzó Jehová?",
+      "explanation": "El versículo 16 dice que quebrantó las puertas de bronce y desmenuzó los cerrojos de hierro.",
+      "bibleReference": "Salmos 107:16",
+      "answers": [
+        { "text": "Los navíos que hacen negocio en las muchas aguas", "isCorrect": false },
+        { "text": "Las puertas de bronce y los cerrojos de hierro", "isCorrect": true },
+        { "text": "Los manantiales de las aguas de la tierra seca", "isCorrect": false },
+        { "text": "Las ondas de la tempestad en el profundo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 20, ¿qué envió Jehová para curarlos?",
+      "explanation": "El versículo 20 dice que envió su palabra, los curó y los libró de su ruina.",
+      "bibleReference": "Salmos 107:20",
+      "answers": [
+        { "text": "Su palabra", "isCorrect": true },
+        { "text": "Su vianda", "isCorrect": false },
+        { "text": "Su sacrificio", "isCorrect": false },
+        { "text": "Su nube", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según los versículos 23 y 24, ¿quiénes han visto las obras de Jehová en el profundo?",
+      "explanation": "Los versículos 23 y 24 dicen que los que descienden á la mar en navíos y hacen negocio en las muchas aguas han visto las obras de Jehová y sus maravillas en el profundo.",
+      "bibleReference": "Salmos 107:23-24",
+      "answers": [
+        { "text": "Los ancianos del consistorio del pueblo", "isCorrect": false },
+        { "text": "Los insensatos afligidos por su rebelión", "isCorrect": false },
+        { "text": "Los que siembran campos y plantan viñas", "isCorrect": false },
+        { "text": "Los que descienden a la mar en navíos", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 29, ¿qué hace Jehová con la tempestad?",
+      "explanation": "El versículo 29 dice que hace parar la tempestad en sosiego y que se apaciguan sus ondas.",
+      "bibleReference": "Salmos 107:29",
+      "answers": [
+        { "text": "La levanta sobre los abismos", "isCorrect": false },
+        { "text": "La vuelve en secadales", "isCorrect": false },
+        { "text": "La hace parar en sosiego", "isCorrect": true },
+        { "text": "La derrama sobre los príncipes", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 35, ¿en qué vuelve Jehová el desierto?",
+      "explanation": "El versículo 35 dice que vuelve el desierto en estanques de aguas, y la tierra seca en manantiales.",
+      "bibleReference": "Salmos 107:35",
+      "answers": [
+        { "text": "En ciudad de población", "isCorrect": false },
+        { "text": "En tierra de salados", "isCorrect": false },
+        { "text": "En camino derecho", "isCorrect": false },
+        { "text": "En estanques de aguas", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 43, ¿qué entenderá el que es sabio y guarda estas cosas?",
+      "explanation": "El versículo 43 pregunta quién es sabio y guardará estas cosas, y entenderá las misericordias de Jehová.",
+      "bibleReference": "Salmos 107:43",
+      "answers": [
+        { "text": "El consejo del Altísimo", "isCorrect": false },
+        { "text": "Las misericordias de Jehová", "isCorrect": true },
+        { "text": "El camino de la rebelión", "isCorrect": false },
+        { "text": "La ciencia de los navegantes", "isCorrect": false }
+      ]
+    }
+  ]
+}

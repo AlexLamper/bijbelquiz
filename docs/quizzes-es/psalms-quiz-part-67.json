@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 67",
+  "description": "Diez preguntas sobre Salmos 67: el rostro de Dios resplandeciendo sobre su pueblo, la alabanza de todos los pueblos y la tierra que dará su fruto.",
+  "slug": "psalms-quiz-part-67",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el versículo 1, ¿qué pide el salmo que Dios haga resplandecer sobre ellos?",
+      "explanation": "El versículo 1 pide que Dios tenga misericordia de nosotros y nos bendiga, y que haga resplandecer su rostro sobre nosotros.",
+      "bibleReference": "Salmos 67:1",
+      "answers": [
+        { "text": "Su gloria sobre los montes", "isCorrect": false },
+        { "text": "Su rostro", "isCorrect": true },
+        { "text": "Su fuego desde los cielos", "isCorrect": false },
+        { "text": "Su bandera", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 2, ¿para qué pide el salmo esa bendición?",
+      "explanation": "El versículo 2 dice: Para que sea conocido en la tierra tu camino, en todas las gentes tu salud.",
+      "bibleReference": "Salmos 67:2",
+      "answers": [
+        { "text": "Para que el pueblo tenga pan en abundancia todo el año", "isCorrect": false },
+        { "text": "Para que los enemigos huyan de la ciudad y no vuelvan", "isCorrect": false },
+        { "text": "Para que el rey viva muchos días sobre el trono de su padre", "isCorrect": false },
+        { "text": "Para que su camino sea conocido en la tierra y su salud en todas las gentes", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 3, ¿quiénes deben alabar a Dios?",
+      "explanation": "El versículo 3 dice: Alábente los pueblos, oh Dios; alábente los pueblos todos.",
+      "bibleReference": "Salmos 67:3",
+      "answers": [
+        { "text": "Los pueblos todos", "isCorrect": true },
+        { "text": "Solo los sacerdotes", "isCorrect": false },
+        { "text": "Solo los cantores", "isCorrect": false },
+        { "text": "Solo los reyes", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 4, ¿por qué se alegrarán y gozarán las gentes?",
+      "explanation": "El versículo 4 dice: Alégrense y gócense las gentes; porque juzgarás los pueblos con equidad.",
+      "bibleReference": "Salmos 67:4",
+      "answers": [
+        { "text": "Porque la tierra temblará", "isCorrect": false },
+        { "text": "Porque los impíos serán esparcidos", "isCorrect": false },
+        { "text": "Porque Dios juzgará los pueblos con equidad", "isCorrect": true },
+        { "text": "Porque los votos se pagarán en Sión", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 4, ¿qué hará Dios con las naciones en la tierra?",
+      "explanation": "El versículo 4 dice que Dios juzgará los pueblos con equidad y pastoreará las naciones en la tierra.",
+      "bibleReference": "Salmos 67:4",
+      "answers": [
+        { "text": "Las olvidará", "isCorrect": false },
+        { "text": "Las pastoreará", "isCorrect": true },
+        { "text": "Las esparcirá como humo", "isCorrect": false },
+        { "text": "Las dejará sin bendición", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 6, ¿qué dará la tierra?",
+      "explanation": "El versículo 6 dice: La tierra dará su fruto: nos bendecirá Dios, el Dios nuestro.",
+      "bibleReference": "Salmos 67:6",
+      "answers": [
+        { "text": "Espinas", "isCorrect": false },
+        { "text": "Ríos de aguas", "isCorrect": false },
+        { "text": "Piedras preciosas", "isCorrect": false },
+        { "text": "Su fruto", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 6, ¿quién bendecirá al pueblo cuando la tierra dé su fruto?",
+      "explanation": "El versículo 6 dice: nos bendecirá Dios, el Dios nuestro.",
+      "bibleReference": "Salmos 67:6",
+      "answers": [
+        { "text": "Dios, el Dios nuestro", "isCorrect": true },
+        { "text": "El Músico principal", "isCorrect": false },
+        { "text": "Los pueblos que alaban", "isCorrect": false },
+        { "text": "Los reyes de las gentes", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 7, ¿quiénes deben temer a Dios?",
+      "explanation": "El versículo 7 dice: Bendíganos Dios, y témanlo todos los fines de la tierra.",
+      "bibleReference": "Salmos 67:7",
+      "answers": [
+        { "text": "Solo los que habitan en Sión", "isCorrect": false },
+        { "text": "Solo los que son juzgados", "isCorrect": false },
+        { "text": "Todos los fines de la tierra", "isCorrect": true },
+        { "text": "Solo los que alaban en el templo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 1, ¿cuáles son las dos primeras peticiones de este salmo?",
+      "explanation": "El versículo 1 dice: Dios tenga misericordia de nosotros, y nos bendiga.",
+      "bibleReference": "Salmos 67:1",
+      "answers": [
+        { "text": "Que Dios se levante y esparza a sus enemigos", "isCorrect": false },
+        { "text": "Que Dios tenga misericordia de ellos y los bendiga", "isCorrect": true },
+        { "text": "Que Dios oiga su clamor y los libre de los leones", "isCorrect": false },
+        { "text": "Que Dios sane la tierra y pague sus votos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el encabezado, ¿sobre qué se canta este salmo?",
+      "explanation": "El encabezado dice: Al Músico principal: en Neginoth: Salmo: Cántico.",
+      "bibleReference": "Salmos 67:1",
+      "answers": [
+        { "text": "Sobre No destruyas", "isCorrect": false },
+        { "text": "Sobre Susan-Heduth", "isCorrect": false },
+        { "text": "A Jeduthún", "isCorrect": false },
+        { "text": "En Neginoth", "isCorrect": true }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 146",
+  "description": "Diez preguntas sobre Salmos 146: el aviso de no confiar en los príncipes y las obras de Jehová con los hambrientos, los ciegos y los extranjeros.",
+  "slug": "psalms-quiz-part-146",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿A quién manda alabar a Jehová en el primer versículo?",
+      "explanation": "El salmo empieza diciendo: \"Aleluya. ALABA, oh alma mía, á Jehová\".",
+      "bibleReference": "Salmos 146:1",
+      "answers": [
+        {
+          "text": "A los ángeles del cielo",
+          "isCorrect": false
+        },
+        {
+          "text": "A los reyes de la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "A su propia alma",
+          "isCorrect": true
+        },
+        {
+          "text": "A los hijos de su casa",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Hasta cuándo dice que cantará salmos a su Dios?",
+      "explanation": "Dice que alabará a Jehová en su vida y cantará salmos a su Dios mientras viviere.",
+      "bibleReference": "Salmos 146:2",
+      "answers": [
+        {
+          "text": "Mientras viviere",
+          "isCorrect": true
+        },
+        {
+          "text": "Hasta que acabe la fiesta",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta que venga el rey",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta el año séptimo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿En quiénes manda no confiar?",
+      "explanation": "Dice: \"No confiéis en los príncipes, ni en hijo de hombre, porque no hay en él salud\".",
+      "bibleReference": "Salmos 146:3",
+      "answers": [
+        {
+          "text": "En los profetas",
+          "isCorrect": false
+        },
+        {
+          "text": "En los sacerdotes",
+          "isCorrect": false
+        },
+        {
+          "text": "En los extranjeros",
+          "isCorrect": false
+        },
+        {
+          "text": "En los príncipes",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué sucede en aquel día con los pensamientos del hijo de hombre?",
+      "explanation": "Después de decir que no hay salud en el hijo de hombre, añade que saldrá su espíritu, se tornará en su tierra, y que en aquel día perecerán sus pensamientos.",
+      "bibleReference": "Salmos 146:3-4",
+      "answers": [
+        {
+          "text": "Se cumplen todos",
+          "isCorrect": false
+        },
+        {
+          "text": "Perecen",
+          "isCorrect": true
+        },
+        {
+          "text": "Se escriben en un libro",
+          "isCorrect": false
+        },
+        {
+          "text": "Pasan a sus hijos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De quién dice que es la ayuda del bienaventurado?",
+      "explanation": "Dice: \"Bienaventurado aquel en cuya ayuda es el Dios de Jacob, cuya esperanza es en Jehová su Dios\".",
+      "bibleReference": "Salmos 146:5",
+      "answers": [
+        {
+          "text": "El Dios de Jacob",
+          "isCorrect": true
+        },
+        {
+          "text": "El rey de Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "El ángel del Señor",
+          "isCorrect": false
+        },
+        {
+          "text": "La casa de David",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice que hizo Jehová?",
+      "explanation": "Dice que hizo los cielos y la tierra, la mar y todo lo que en ellos hay, y que guarda verdad para siempre.",
+      "bibleReference": "Salmos 146:6",
+      "answers": [
+        {
+          "text": "Solo la tierra y los montes",
+          "isCorrect": false
+        },
+        {
+          "text": "El templo y sus puertas",
+          "isCorrect": false
+        },
+        {
+          "text": "Los cielos, la tierra y la mar",
+          "isCorrect": true
+        },
+        {
+          "text": "El sol y nada más",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quiénes da pan Jehová?",
+      "explanation": "Dice que hace derecho a los agraviados, da pan a los hambrientos y suelta a los aprisionados.",
+      "bibleReference": "Salmos 146:7",
+      "answers": [
+        {
+          "text": "A los sacerdotes",
+          "isCorrect": false
+        },
+        {
+          "text": "A los hambrientos",
+          "isCorrect": true
+        },
+        {
+          "text": "A los ricos",
+          "isCorrect": false
+        },
+        {
+          "text": "A los que pelean",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hace Jehová con los ciegos?",
+      "explanation": "Dice que Jehová abre los ojos a los ciegos, levanta a los caídos y ama a los justos.",
+      "bibleReference": "Salmos 146:8",
+      "answers": [
+        {
+          "text": "Les da un guía",
+          "isCorrect": false
+        },
+        {
+          "text": "Les cierra la boca",
+          "isCorrect": false
+        },
+        {
+          "text": "Les da una vara",
+          "isCorrect": false
+        },
+        {
+          "text": "Les abre los ojos",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿A quiénes dice que Jehová guarda en el versículo 9?",
+      "explanation": "Dice que Jehová guarda a los extranjeros, levanta al huérfano y a la viuda, y trastorna el camino de los impíos.",
+      "bibleReference": "Salmos 146:9",
+      "answers": [
+        {
+          "text": "A los extranjeros",
+          "isCorrect": true
+        },
+        {
+          "text": "A los burladores",
+          "isCorrect": false
+        },
+        {
+          "text": "A los príncipes",
+          "isCorrect": false
+        },
+        {
+          "text": "A los impíos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el último versículo, ¿por cuánto tiempo reinará Jehová?",
+      "explanation": "Termina diciendo que Jehová reinará para siempre, y que es el Dios de Sión por generación y generación.",
+      "bibleReference": "Salmos 146:10",
+      "answers": [
+        {
+          "text": "Hasta que venga otro rey",
+          "isCorrect": false
+        },
+        {
+          "text": "Para siempre",
+          "isCorrect": true
+        },
+        {
+          "text": "Solo mientras dure Sión",
+          "isCorrect": false
+        },
+        {
+          "text": "Por cuarenta años",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

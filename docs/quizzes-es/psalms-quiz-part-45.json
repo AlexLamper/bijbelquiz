@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 45",
+  "description": "Diez preguntas sobre Salmos 45: la lengua como pluma de escribiente, la espada ceñida sobre el muslo y la reina con oro de Ophir.",
+  "slug": "psalms-quiz-part-45",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el versículo 1, ¿con qué compara el salmista su lengua?",
+      "explanation": "El versículo 1 dice que su lengua es pluma de escribiente muy ligero.",
+      "bibleReference": "Salmos 45:1",
+      "answers": [
+        { "text": "Con una espada afilada", "isCorrect": false },
+        { "text": "Con un arpa de diez cuerdas", "isCorrect": false },
+        { "text": "Con la pluma de un escribiente", "isCorrect": true },
+        { "text": "Con una trompeta de plata", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 2, ¿qué se derramó en sus labios?",
+      "explanation": "El versículo 2 dice que la gracia se derramó en sus labios y que por eso Dios lo ha bendecido para siempre.",
+      "bibleReference": "Salmos 45:2",
+      "answers": [
+        { "text": "La gracia", "isCorrect": true },
+        { "text": "El óleo del santuario", "isCorrect": false },
+        { "text": "La mirra", "isCorrect": false },
+        { "text": "La sabiduría", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué se le manda ceñir sobre el muslo en el versículo 3?",
+      "explanation": "El versículo 3 dice: Cíñete tu espada sobre el muslo, oh valiente, con tu gloria y con tu majestad.",
+      "bibleReference": "Salmos 45:3",
+      "answers": [
+        { "text": "El cinto del sacerdote", "isCorrect": false },
+        { "text": "El arco y las saetas", "isCorrect": false },
+        { "text": "La vara de su reino", "isCorrect": false },
+        { "text": "Su espada", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 5, ¿dónde penetrarán sus saetas agudas?",
+      "explanation": "El versículo 5 dice que sus saetas agudas penetrarán en el corazón de los enemigos del Rey, y que los pueblos caerán debajo de él.",
+      "bibleReference": "Salmos 45:5",
+      "answers": [
+        { "text": "En las puertas de la ciudad", "isCorrect": false },
+        { "text": "En el corazón de los enemigos del Rey", "isCorrect": true },
+        { "text": "En las estancias de marfil", "isCorrect": false },
+        { "text": "En los escudos de los pueblos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 7, ¿con qué lo ungió Dios?",
+      "explanation": "El versículo 7 dice que, porque amó la justicia y aborreció la maldad, Dios lo ungió con óleo de gozo sobre sus compañeros.",
+      "bibleReference": "Salmos 45:7",
+      "answers": [
+        { "text": "Con óleo de gozo", "isCorrect": true },
+        { "text": "Con agua del río", "isCorrect": false },
+        { "text": "Con brocado de oro", "isCorrect": false },
+        { "text": "Con vino nuevo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué exhalan todos sus vestidos, según el versículo 8?",
+      "explanation": "El versículo 8 dice que mirra, áloe y casia exhalan todos sus vestidos.",
+      "bibleReference": "Salmos 45:8",
+      "answers": [
+        { "text": "Cedro y ciprés", "isCorrect": false },
+        { "text": "Incienso y sal", "isCorrect": false },
+        { "text": "Nardo y canela", "isCorrect": false },
+        { "text": "Mirra, áloe y casia", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 9, ¿con qué oro está la reina a su diestra?",
+      "explanation": "El versículo 9 dice que la reina está a su diestra con oro de Ophir.",
+      "bibleReference": "Salmos 45:9",
+      "answers": [
+        { "text": "Con oro de Tiro", "isCorrect": false },
+        { "text": "Con oro de Sión", "isCorrect": false },
+        { "text": "Con oro de Ophir", "isCorrect": true },
+        { "text": "Con oro de Tharsis", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué se le dice a la hija que olvide, en el versículo 10?",
+      "explanation": "El versículo 10 le dice que oiga, mire e incline su oído, y que olvide su pueblo y la casa de su padre.",
+      "bibleReference": "Salmos 45:10",
+      "answers": [
+        { "text": "Sus vestidos bordados", "isCorrect": false },
+        { "text": "Su pueblo y la casa de su padre", "isCorrect": true },
+        { "text": "El palacio del rey", "isCorrect": false },
+        { "text": "A sus compañeras vírgenes", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 12, ¿quiénes vendrán con presente?",
+      "explanation": "El versículo 12 dice que las hijas de Tiro vendrán con presente y que los ricos del pueblo implorarán su favor.",
+      "bibleReference": "Salmos 45:12",
+      "answers": [
+        { "text": "Las hijas de Tiro", "isCorrect": true },
+        { "text": "Las hijas de Judá", "isCorrect": false },
+        { "text": "Los hijos de Coré", "isCorrect": false },
+        { "text": "Los príncipes de la tierra", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 16, ¿qué hará con sus hijos, que estarán en lugar de sus padres?",
+      "explanation": "El versículo 16 dice que en lugar de sus padres serán sus hijos, a quienes hará príncipes en toda la tierra.",
+      "bibleReference": "Salmos 45:16",
+      "answers": [
+        { "text": "Los llevará a estancias de marfil", "isCorrect": false },
+        { "text": "Los pondrá a su diestra", "isCorrect": false },
+        { "text": "Los hará príncipes en toda la tierra", "isCorrect": true },
+        { "text": "Los enseñará cosas terribles", "isCorrect": false }
+      ]
+    }
+  ]
+}

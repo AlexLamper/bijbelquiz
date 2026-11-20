@@ -14,16 +14,16 @@
       "bibleReference": "Nehemías 5:1",
       "answers": [
         {
-          "text": "Contra los Judíos sus hermanos",
-          "isCorrect": true
+          "text": "Contra el rey Artajerjes",
+          "isCorrect": false
         },
         {
           "text": "Contra Sanballat y Tobías",
           "isCorrect": false
         },
         {
-          "text": "Contra el rey Artajerjes",
-          "isCorrect": false
+          "text": "Contra los Judíos sus hermanos",
+          "isCorrect": true
         },
         {
           "text": "Contra los sacerdotes y los Levitas",
@@ -37,12 +37,12 @@
       "bibleReference": "Nehemías 5:3",
       "answers": [
         {
-          "text": "Sus espadas y sus lanzas",
-          "isCorrect": false
-        },
-        {
           "text": "Sus tierras, sus viñas y sus casas",
           "isCorrect": true
+        },
+        {
+          "text": "Sus espadas y sus lanzas",
+          "isCorrect": false
         },
         {
           "text": "Las vestiduras de los sacerdotes",
@@ -68,12 +68,12 @@
           "isCorrect": false
         },
         {
-          "text": "Para el tributo del rey",
-          "isCorrect": true
-        },
-        {
           "text": "Para el viaje de vuelta a Babilonia",
           "isCorrect": false
+        },
+        {
+          "text": "Para el tributo del rey",
+          "isCorrect": true
         }
       ]
     },
@@ -91,12 +91,12 @@
           "isCorrect": false
         },
         {
-          "text": "De no pagar el tributo del rey",
-          "isCorrect": false
-        },
-        {
           "text": "De tomar usura de sus hermanos",
           "isCorrect": true
+        },
+        {
+          "text": "De no pagar el tributo del rey",
+          "isCorrect": false
         }
       ]
     },
@@ -129,12 +129,12 @@
       "bibleReference": "Nehemías 5:13",
       "answers": [
         {
-          "text": "Guardaron silencio",
-          "isCorrect": false
-        },
-        {
           "text": "Respondieron ¡Amén! y alabaron a Jehová",
           "isCorrect": true
+        },
+        {
+          "text": "Guardaron silencio",
+          "isCorrect": false
         },
         {
           "text": "Pidieron tiempo para pensarlo",
@@ -156,12 +156,12 @@
           "isCorrect": false
         },
         {
-          "text": "Tocó la trompeta",
-          "isCorrect": false
-        },
-        {
           "text": "Sacudió su vestido",
           "isCorrect": true
+        },
+        {
+          "text": "Tocó la trompeta",
+          "isCorrect": false
         },
         {
           "text": "Levantó sus manos al cielo",
@@ -179,16 +179,16 @@
           "isCorrect": false
         },
         {
-          "text": "Treinta y dos años",
-          "isCorrect": false
+          "text": "Doce años",
+          "isCorrect": true
         },
         {
           "text": "Siete años",
           "isCorrect": false
         },
         {
-          "text": "Doce años",
-          "isCorrect": true
+          "text": "Treinta y dos años",
+          "isCorrect": false
         }
       ]
     },
@@ -198,12 +198,12 @@
       "bibleReference": "Nehemías 5:15",
       "answers": [
         {
-          "text": "Sobre cuarenta siclos de plata",
-          "isCorrect": true
-        },
-        {
           "text": "Cien talentos de plata",
           "isCorrect": false
+        },
+        {
+          "text": "Sobre cuarenta siclos de plata",
+          "isCorrect": true
         },
         {
           "text": "Mil dracmas de oro",
@@ -225,16 +225,16 @@
           "isCorrect": false
         },
         {
-          "text": "Un buey, seis ovejas escogidas y aves",
-          "isCorrect": true
+          "text": "Doce machos de cabrío y aceite",
+          "isCorrect": false
         },
         {
           "text": "Solamente pan y agua del pozo",
           "isCorrect": false
         },
         {
-          "text": "Doce machos de cabrío y aceite",
-          "isCorrect": false
+          "text": "Un buey, seis ovejas escogidas y aves",
+          "isCorrect": true
         }
       ]
     }

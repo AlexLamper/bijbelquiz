@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 126",
+  "description": "Diez preguntas sobre Salmos 126: el regreso de la cautividad de Sión, la boca llena de risa y los que siembran con lágrimas.",
+  "slug": "psalms-quiz-part-126",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cómo seremos cuando Jehová hiciere tornar la cautividad de Sión?",
+      "explanation": "El verso 1 dice: seremos como los que sueñan.",
+      "bibleReference": "Salmos 126:1",
+      "answers": [
+        { "text": "Como los que velan", "isCorrect": false },
+        { "text": "Como los que sueñan", "isCorrect": true },
+        { "text": "Como los que lloran", "isCorrect": false },
+        { "text": "Como los que callan", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿De qué lugar habla el primer verso al mencionar la cautividad?",
+      "explanation": "El verso 1 habla de cuando Jehová hiciere tornar la cautividad de Sión.",
+      "bibleReference": "Salmos 126:1",
+      "answers": [
+        { "text": "De Egipto", "isCorrect": false },
+        { "text": "De Babilonia", "isCorrect": false },
+        { "text": "De Jerusalem", "isCorrect": false },
+        { "text": "De Sión", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el verso 2, ¿de qué se henchirá nuestra boca?",
+      "explanation": "El verso dice: Entonces nuestra boca se henchirá de risa.",
+      "bibleReference": "Salmos 126:2",
+      "answers": [
+        { "text": "De risa", "isCorrect": true },
+        { "text": "De cantos", "isCorrect": false },
+        { "text": "De lloro", "isCorrect": false },
+        { "text": "De polvo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el verso 2, ¿de qué se henchirá nuestra lengua?",
+      "explanation": "El verso dice: y nuestra lengua de alabanza.",
+      "bibleReference": "Salmos 126:2",
+      "answers": [
+        { "text": "De gemido", "isCorrect": false },
+        { "text": "De mentira", "isCorrect": false },
+        { "text": "De alabanza", "isCorrect": true },
+        { "text": "De silencio", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dirán entonces entre las gentes?",
+      "explanation": "El verso 2 dice: entonces dirán entre las gentes: Grandes cosas ha hecho Jehová con éstos.",
+      "bibleReference": "Salmos 126:2",
+      "answers": [
+        { "text": "Jehová los ha dejado en la cautividad", "isCorrect": false },
+        { "text": "Sus arroyos se secaron en el austro", "isCorrect": false },
+        { "text": "Sus gavillas quedaron en el campo", "isCorrect": false },
+        { "text": "Grandes cosas ha hecho Jehová con éstos", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el verso 3, ¿cómo dice el salmo que estarán, porque Jehová ha hecho grandes cosas con ellos?",
+      "explanation": "El verso dice: Grandes cosas ha hecho Jehová con nosotros; estaremos alegres.",
+      "bibleReference": "Salmos 126:3",
+      "answers": [
+        { "text": "Callarán delante de él", "isCorrect": false },
+        { "text": "Estarán alegres", "isCorrect": true },
+        { "text": "Volverán a sembrar", "isCorrect": false },
+        { "text": "Subirán a los montes", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Con qué compara el verso 4 la vuelta de la cautividad que se pide?",
+      "explanation": "El verso dice: Haz volver nuestra cautividad, oh Jehová, como los arroyos en el austro.",
+      "bibleReference": "Salmos 126:4",
+      "answers": [
+        { "text": "Como las gavillas en el campo", "isCorrect": false },
+        { "text": "Como la risa en la boca", "isCorrect": false },
+        { "text": "Como los arroyos en el austro", "isCorrect": true },
+        { "text": "Como el sueño en la noche", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dice el verso 5 de los que sembraron con lágrimas?",
+      "explanation": "El verso dice: Los que sembraron con lágrimas, con regocijo segarán.",
+      "bibleReference": "Salmos 126:5",
+      "answers": [
+        { "text": "Que segarán con regocijo", "isCorrect": true },
+        { "text": "Que no verán la siega", "isCorrect": false },
+        { "text": "Que sembrarán otra vez", "isCorrect": false },
+        { "text": "Que llorarán en la siega", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cómo va el que lleva la preciosa simiente, según el último verso?",
+      "explanation": "El verso 6 dice: Irá andando y llorando el que lleva la preciosa simiente.",
+      "bibleReference": "Salmos 126:6",
+      "answers": [
+        { "text": "Cantando y riendo", "isCorrect": false },
+        { "text": "Corriendo y callando", "isCorrect": false },
+        { "text": "Durmiendo y soñando", "isCorrect": false },
+        { "text": "Andando y llorando", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Cómo volverá el que lleva la preciosa simiente?",
+      "explanation": "El verso 6 dice: mas volverá a venir con regocijo, trayendo sus gavillas.",
+      "bibleReference": "Salmos 126:6",
+      "answers": [
+        { "text": "Con lágrimas, dejando la simiente", "isCorrect": false },
+        { "text": "Con regocijo, trayendo sus gavillas", "isCorrect": true },
+        { "text": "Con temor, buscando los arroyos", "isCorrect": false },
+        { "text": "Con silencio, mirando los montes", "isCorrect": false }
+      ]
+    }
+  ]
+}

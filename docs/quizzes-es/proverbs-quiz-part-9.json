@@ -1,0 +1,242 @@
+{
+  "title": "Proverbios Quiz bíblico - Capítulo 9",
+  "description": "Diez preguntas sobre Proverbios 9: la casa de siete columnas, el convite de la sabiduría y la mujer loca a su puerta.",
+  "slug": "proverbs-quiz-part-9",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cuántas columnas labró la sabiduría para su casa?",
+      "explanation": "Proverbios 9:1 dice: La sabiduría edificó su casa, labró sus siete columnas.",
+      "bibleReference": "Proverbios 9:1",
+      "answers": [
+        {
+          "text": "Tres",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuatro",
+          "isCorrect": false
+        },
+        {
+          "text": "Siete",
+          "isCorrect": true
+        },
+        {
+          "text": "Doce",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué hizo la sabiduría después de edificar su casa?",
+      "explanation": "Proverbios 9:2 dice: Mató sus víctimas, templó su vino, y puso su mesa.",
+      "bibleReference": "Proverbios 9:2",
+      "answers": [
+        {
+          "text": "Mató sus víctimas, templó su vino y puso su mesa",
+          "isCorrect": true
+        },
+        {
+          "text": "Cerró sus puertas y se sentó a la ventana",
+          "isCorrect": false
+        },
+        {
+          "text": "Llamó a los sabios y les dio plata",
+          "isCorrect": false
+        },
+        {
+          "text": "Se fue a un largo viaje con su dinero",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quiénes envió la sabiduría, y desde dónde clamó?",
+      "explanation": "Proverbios 9:3 dice: Envió sus criadas; sobre lo más alto de la ciudad clamó.",
+      "bibleReference": "Proverbios 9:3",
+      "answers": [
+        {
+          "text": "A sus hijos, desde la puerta de su casa",
+          "isCorrect": false
+        },
+        {
+          "text": "A los príncipes, desde el lugar de las puertas",
+          "isCorrect": false
+        },
+        {
+          "text": "A los sabios, desde el camino de la ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "A sus criadas, y clamó desde lo más alto de la ciudad",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué ofrece la sabiduría a los que vienen a ella?",
+      "explanation": "Proverbios 9:5 dice: Venid, comed mi pan, y bebed del vino que yo he templado.",
+      "bibleReference": "Proverbios 9:5",
+      "answers": [
+        {
+          "text": "Aguas hurtadas y pan comido en oculto",
+          "isCorrect": false
+        },
+        {
+          "text": "Su pan y el vino que ella ha templado",
+          "isCorrect": true
+        },
+        {
+          "text": "Plata escogida y oro fino",
+          "isCorrect": false
+        },
+        {
+          "text": "Una silla a la puerta de su casa",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué se acarrea el que corrige al escarnecedor?",
+      "explanation": "Proverbios 9:7 dice: El que corrige al escarnecedor, afrenta se acarrea: el que reprende al impío, se atrae mancha.",
+      "bibleReference": "Proverbios 9:7",
+      "answers": [
+        {
+          "text": "Honra entre los sabios",
+          "isCorrect": false
+        },
+        {
+          "text": "Años de vida",
+          "isCorrect": false
+        },
+        {
+          "text": "Afrenta",
+          "isCorrect": true
+        },
+        {
+          "text": "El favor del pueblo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué pasa cuando corriges al sabio?",
+      "explanation": "Proverbios 9:8 dice: No reprendas al escarnecedor, porque no te aborrezca; corrige al sabio, y te amará.",
+      "bibleReference": "Proverbios 9:8",
+      "answers": [
+        {
+          "text": "Te aborrecerá",
+          "isCorrect": false
+        },
+        {
+          "text": "Se atraerá mancha",
+          "isCorrect": false
+        },
+        {
+          "text": "Callará delante de ti",
+          "isCorrect": false
+        },
+        {
+          "text": "Te amará",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el texto que ocurre cuando se enseña al justo?",
+      "explanation": "Proverbios 9:9 dice: Da al sabio, y será más sabio: enseña al justo, y acrecerá su saber.",
+      "bibleReference": "Proverbios 9:9",
+      "answers": [
+        {
+          "text": "Que se hará escarnecedor",
+          "isCorrect": false
+        },
+        {
+          "text": "Que acrecerá su saber",
+          "isCorrect": true
+        },
+        {
+          "text": "Que pagará él solo",
+          "isCorrect": false
+        },
+        {
+          "text": "Que se afrentará",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿cuál es el principio de la sabiduría?",
+      "explanation": "Proverbios 9:10 dice: El temor de Jehová es el principio de la sabiduría; y la ciencia de los santos es inteligencia.",
+      "bibleReference": "Proverbios 9:10",
+      "answers": [
+        {
+          "text": "El temor de Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "La ciencia de los convidados",
+          "isCorrect": false
+        },
+        {
+          "text": "El pan comido en oculto",
+          "isCorrect": false
+        },
+        {
+          "text": "La corrección del escarnecedor",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Dónde se sienta la mujer loca, según el texto?",
+      "explanation": "Proverbios 9:13-14 dice que la mujer loca es alborotadora y que se sienta en una silla á la puerta de su casa, en lo alto de la ciudad.",
+      "bibleReference": "Proverbios 9:13-14",
+      "answers": [
+        {
+          "text": "En las encrucijadas de las veredas del campo",
+          "isCorrect": false
+        },
+        {
+          "text": "A la mesa que ella misma ha preparado",
+          "isCorrect": false
+        },
+        {
+          "text": "En una silla a la puerta de su casa",
+          "isCorrect": true
+        },
+        {
+          "text": "Junto al pozo, fuera de la ciudad",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el final del capítulo, ¿qué no saben los que entran con la mujer loca?",
+      "explanation": "Proverbios 9:17-18 dice que ella alaba las aguas hurtadas, y que sus convidados no saben que allí están los muertos.",
+      "bibleReference": "Proverbios 9:17-18",
+      "answers": [
+        {
+          "text": "Que la mujer loca es sabia y entendida",
+          "isCorrect": false
+        },
+        {
+          "text": "Que sus criadas los esperan a la puerta",
+          "isCorrect": false
+        },
+        {
+          "text": "Que el pueblo los maldecirá en la plaza",
+          "isCorrect": false
+        },
+        {
+          "text": "Que allí están los muertos",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

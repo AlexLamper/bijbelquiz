@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 65",
+  "description": "Diez preguntas sobre Salmos 65: la alabanza en Sión, el Dios que amansa el estruendo de los mares y el año coronado de bienes.",
+  "slug": "psalms-quiz-part-65",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el versículo 1, ¿dónde es plácida a Dios la alabanza?",
+      "explanation": "El versículo 1 dice: A ti es plácida la alabanza en Sión, oh Dios: y á ti se pagarán los votos.",
+      "bibleReference": "Salmos 65:1",
+      "answers": [
+        { "text": "En el desierto", "isCorrect": false },
+        { "text": "En Sión", "isCorrect": true },
+        { "text": "En los confines de la mar", "isCorrect": false },
+        { "text": "En los montes de Basán", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 2, ¿quién vendrá a Dios, que oye la oración?",
+      "explanation": "El versículo 2 dice: Tú oyes la oración: á ti vendrá toda carne.",
+      "bibleReference": "Salmos 65:2",
+      "answers": [
+        { "text": "Solo los sacerdotes", "isCorrect": false },
+        { "text": "Solo los reyes de la tierra", "isCorrect": false },
+        { "text": "Solo los que habitan en Sión", "isCorrect": false },
+        { "text": "Toda carne", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 3, ¿qué perdonará Dios?",
+      "explanation": "El versículo 3 dice: Palabras de iniquidades me sobrepujaron: mas nuestras rebeliones tú las perdonarás.",
+      "bibleReference": "Salmos 65:3",
+      "answers": [
+        { "text": "Nuestras rebeliones", "isCorrect": true },
+        { "text": "Las deudas de los pobres", "isCorrect": false },
+        { "text": "Los votos no pagados", "isCorrect": false },
+        { "text": "El pecado de las naciones lejanas", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 4, ¿de qué serán saciados los que Dios escoge y hace llegar a él?",
+      "explanation": "El versículo 4 dice que habitarán en sus atrios y que seremos saciados del bien de su casa, de su santo templo.",
+      "bibleReference": "Salmos 65:4",
+      "answers": [
+        { "text": "Del fruto de los valles y de los collados", "isCorrect": false },
+        { "text": "Del vino nuevo de la vendimia de la tierra", "isCorrect": false },
+        { "text": "Del bien de su casa, de su santo templo", "isCorrect": true },
+        { "text": "De la grosura de los sacrificios del altar", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 6, ¿qué afirma Dios con su potencia?",
+      "explanation": "El versículo 6 dice: Tú, el que afirma los montes con su potencia, ceñido de valentía.",
+      "bibleReference": "Salmos 65:6",
+      "answers": [
+        { "text": "Los muros de la ciudad", "isCorrect": false },
+        { "text": "Los montes", "isCorrect": true },
+        { "text": "El trono del rey", "isCorrect": false },
+        { "text": "Las puertas del templo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 7, ¿qué amansa Dios?",
+      "explanation": "El versículo 7 dice que amansa el estruendo de los mares, el estruendo de sus ondas y el alboroto de las gentes.",
+      "bibleReference": "Salmos 65:7",
+      "answers": [
+        { "text": "El viento que sopla sobre el desierto", "isCorrect": false },
+        { "text": "La ira de los reyes de la tierra", "isCorrect": false },
+        { "text": "El fuego que arde en los montes altos", "isCorrect": false },
+        { "text": "El estruendo de los mares y el alboroto de las gentes", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 9, ¿qué hace Dios cuando visita la tierra?",
+      "explanation": "El versículo 9 dice que visita la tierra y la riega, que en gran manera la enriquece con el río de Dios, lleno de aguas, y prepara el grano de ellos.",
+      "bibleReference": "Salmos 65:9",
+      "answers": [
+        { "text": "La riega y la enriquece con el río de Dios, lleno de aguas", "isCorrect": true },
+        { "text": "La hace temblar y la abre por sus quiebras", "isCorrect": false },
+        { "text": "La seca y la deja transida sin aguas", "isCorrect": false },
+        { "text": "La reparte entre los pueblos de la tierra", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 11, ¿qué destilan las nubes de Dios cuando él corona el año de sus bienes?",
+      "explanation": "El versículo 11 dice: Tú coronas el año de tus bienes; y tus nubes destilan grosura.",
+      "bibleReference": "Salmos 65:11",
+      "answers": [
+        { "text": "Granizo", "isCorrect": false },
+        { "text": "Rocío de la mañana", "isCorrect": false },
+        { "text": "Grosura", "isCorrect": true },
+        { "text": "Fuego", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 12, ¿de qué se ciñen los collados?",
+      "explanation": "El versículo 12 dice que las estancias del desierto destilan y que los collados se ciñen de alegría.",
+      "bibleReference": "Salmos 65:12",
+      "answers": [
+        { "text": "De nieve", "isCorrect": false },
+        { "text": "De alegría", "isCorrect": true },
+        { "text": "De viñas", "isCorrect": false },
+        { "text": "De silencio", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 13, ¿de qué se cubren los valles mientras los llanos se visten de manadas?",
+      "explanation": "El versículo 13 dice: Vístense los llanos de manadas, y los valles se cubren de grano: dan voces de júbilo, y aun cantan.",
+      "bibleReference": "Salmos 65:13",
+      "answers": [
+        { "text": "De cedros", "isCorrect": false },
+        { "text": "De aguas", "isCorrect": false },
+        { "text": "De espinas", "isCorrect": false },
+        { "text": "De grano", "isCorrect": true }
+      ]
+    }
+  ]
+}

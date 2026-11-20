@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 49",
+  "description": "Diez preguntas sobre Salmos 49: el enigma declarado con el arpa, los que confían en sus riquezas y el hombre semejante a las bestias.",
+  "slug": "psalms-quiz-part-49",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el versículo 1, ¿a quiénes llama a escuchar?",
+      "explanation": "El versículo 1 dice: Oid esto, pueblos todos; escuchad, habitadores todos del mundo.",
+      "bibleReference": "Salmos 49:1",
+      "answers": [
+        { "text": "A los sacerdotes del santuario", "isCorrect": false },
+        { "text": "A los reyes de la tierra", "isCorrect": false },
+        { "text": "A los hijos de Coré", "isCorrect": false },
+        { "text": "A todos los habitadores del mundo", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 2, ¿a quiénes nombra juntamente además de los plebeyos y los nobles?",
+      "explanation": "El versículo 2 dice: Así los plebeyos como los nobles, el rico y el pobre juntamente.",
+      "bibleReference": "Salmos 49:2",
+      "answers": [
+        { "text": "Al sabio y al necio", "isCorrect": false },
+        { "text": "Al rico y al pobre", "isCorrect": true },
+        { "text": "Al justo y al malo", "isCorrect": false },
+        { "text": "Al joven y al anciano", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 3, ¿qué hablará su boca?",
+      "explanation": "El versículo 3 dice que su boca hablará sabiduría y que el pensamiento de su corazón será inteligencia.",
+      "bibleReference": "Salmos 49:3",
+      "answers": [
+        { "text": "Sabiduría", "isCorrect": true },
+        { "text": "Alabanza", "isCorrect": false },
+        { "text": "Engaño", "isCorrect": false },
+        { "text": "Juicio", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 4, ¿con qué declarará su enigma?",
+      "explanation": "El versículo 4 dice que acomodará a ejemplos su oído y declarará con el arpa su enigma.",
+      "bibleReference": "Salmos 49:4",
+      "answers": [
+        { "text": "Con la trompeta", "isCorrect": false },
+        { "text": "Con el pandero", "isCorrect": false },
+        { "text": "Con el arpa", "isCorrect": true },
+        { "text": "Con la pluma", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 6, ¿de qué se jactan los que confían en sus haciendas?",
+      "explanation": "El versículo 6 habla de los que confían en sus haciendas y se jactan en la muchedumbre de sus riquezas.",
+      "bibleReference": "Salmos 49:6",
+      "answers": [
+        { "text": "De la fuerza de su brazo", "isCorrect": false },
+        { "text": "De la gloria de su nombre", "isCorrect": false },
+        { "text": "De la sabiduría de su boca", "isCorrect": false },
+        { "text": "De la muchedumbre de sus riquezas", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 7, ¿qué no podrá hacer ninguno de ellos?",
+      "explanation": "El versículo 7 dice que ninguno de ellos podrá en manera alguna redimir al hermano ni dar a Dios su rescate.",
+      "bibleReference": "Salmos 49:7",
+      "answers": [
+        { "text": "Edificar su casa en la ciudad", "isCorrect": false },
+        { "text": "Redimir al hermano ni dar su rescate", "isCorrect": true },
+        { "text": "Hablar sabiduría delante de los nobles", "isCorrect": false },
+        { "text": "Alabar a Dios en medio del templo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 10, ¿qué dejan a otros los que mueren?",
+      "explanation": "El versículo 10 dice que mueren los sabios, así como el insensato y el necio perecen, y dejan a otros sus riquezas.",
+      "bibleReference": "Salmos 49:10",
+      "answers": [
+        { "text": "Sus riquezas", "isCorrect": true },
+        { "text": "Su sabiduría", "isCorrect": false },
+        { "text": "Su gloria", "isCorrect": false },
+        { "text": "Su nombre", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 11, ¿cómo llamaron sus tierras?",
+      "explanation": "El versículo 11 dice que creen que sus casas serán eternas y que llamaron sus tierras de sus nombres.",
+      "bibleReference": "Salmos 49:11",
+      "answers": [
+        { "text": "Con el nombre de sus padres", "isCorrect": false },
+        { "text": "Con el nombre de la ciudad", "isCorrect": false },
+        { "text": "Con sus propios nombres", "isCorrect": true },
+        { "text": "Con el nombre de sus hijos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 12, ¿a qué es semejante el hombre que no permanece en honra?",
+      "explanation": "El versículo 12 dice que el hombre no permanecerá en honra y que es semejante a las bestias que perecen.",
+      "bibleReference": "Salmos 49:12",
+      "answers": [
+        { "text": "A las bestias que perecen", "isCorrect": true },
+        { "text": "A las aves de los montes", "isCorrect": false },
+        { "text": "A la hierba de los collados", "isCorrect": false },
+        { "text": "A las naves de la mar", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 17, ¿qué pasa con la gloria del hombre cuando muere?",
+      "explanation": "El versículo 17 dice que en muriendo no llevará nada y que su gloria no descenderá tras él.",
+      "bibleReference": "Salmos 49:17",
+      "answers": [
+        { "text": "Pasa a sus hijos para siempre", "isCorrect": false },
+        { "text": "Queda escrita en el libro de Dios", "isCorrect": false },
+        { "text": "No descenderá tras él", "isCorrect": true },
+        { "text": "Se cuenta a la generación venidera", "isCorrect": false }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 144",
+  "description": "Diez preguntas sobre Salmos 144: Jehová como roca que enseña las manos a la batalla, la vida del hombre como sombra y la bendición del pueblo.",
+  "slug": "psalms-quiz-part-144",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué dice que Jehová enseña a sus manos?",
+      "explanation": "Bendice a Jehová, su roca, que enseña sus manos a la batalla y sus dedos a la guerra.",
+      "bibleReference": "Salmos 144:1",
+      "answers": [
+        {
+          "text": "El canto",
+          "isCorrect": false
+        },
+        {
+          "text": "La siembra",
+          "isCorrect": false
+        },
+        {
+          "text": "La batalla",
+          "isCorrect": true
+        },
+        {
+          "text": "La escritura",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cuál de estos nombres da a Jehová en el versículo 2?",
+      "explanation": "En el versículo 2 le llama su misericordia y su castillo, su altura, su libertador y su escudo.",
+      "bibleReference": "Salmos 144:2",
+      "answers": [
+        {
+          "text": "Mi castillo",
+          "isCorrect": true
+        },
+        {
+          "text": "Mi pastor",
+          "isCorrect": false
+        },
+        {
+          "text": "Mi lámpara",
+          "isCorrect": false
+        },
+        {
+          "text": "Mi fuente",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué compara los días del hombre?",
+      "explanation": "Dice que el hombre es semejante a la vanidad y que sus días son como la sombra que pasa.",
+      "bibleReference": "Salmos 144:4",
+      "answers": [
+        {
+          "text": "Con el viento del norte",
+          "isCorrect": false
+        },
+        {
+          "text": "Con la flor del campo",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el humo del horno",
+          "isCorrect": false
+        },
+        {
+          "text": "Con la sombra que pasa",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pide que ocurra a los montes?",
+      "explanation": "Pide a Jehová que incline sus cielos y descienda, que toque los montes y humeen.",
+      "bibleReference": "Salmos 144:5",
+      "answers": [
+        {
+          "text": "Que se cubran de nieve",
+          "isCorrect": false
+        },
+        {
+          "text": "Que humeen cuando los toque",
+          "isCorrect": true
+        },
+        {
+          "text": "Que se abran por el medio",
+          "isCorrect": false
+        },
+        {
+          "text": "Que den todos su fruto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pide que Jehová envíe para conturbar a sus enemigos?",
+      "explanation": "Pide que despida relámpagos y los disipe, y que envíe sus saetas y los conturbe.",
+      "bibleReference": "Salmos 144:6",
+      "answers": [
+        {
+          "text": "Sus saetas",
+          "isCorrect": true
+        },
+        {
+          "text": "Sus ángeles",
+          "isCorrect": false
+        },
+        {
+          "text": "Su lluvia",
+          "isCorrect": false
+        },
+        {
+          "text": "Su palabra",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo describe la boca de los hijos extraños?",
+      "explanation": "Dice de los hijos extraños que su boca habla vanidad y su diestra es diestra de mentira.",
+      "bibleReference": "Salmos 144:7-8",
+      "answers": [
+        {
+          "text": "Habla justicia",
+          "isCorrect": false
+        },
+        {
+          "text": "Calla siempre",
+          "isCorrect": false
+        },
+        {
+          "text": "Habla vanidad",
+          "isCorrect": true
+        },
+        {
+          "text": "Bendice a Jehová",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué instrumentos dice que cantará a Dios una canción nueva?",
+      "explanation": "Dice que cantará a Dios canción nueva con salterio y con decacordio.",
+      "bibleReference": "Salmos 144:9",
+      "answers": [
+        {
+          "text": "Con bocina y címbalos",
+          "isCorrect": false
+        },
+        {
+          "text": "Con salterio y decacordio",
+          "isCorrect": true
+        },
+        {
+          "text": "Con adufe y flauta",
+          "isCorrect": false
+        },
+        {
+          "text": "Con arpa y órgano",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quién dice que Dios redime de maligna espada?",
+      "explanation": "Dice que Dios da salud a los reyes y redime a David su siervo de maligna espada.",
+      "bibleReference": "Salmos 144:10",
+      "answers": [
+        {
+          "text": "A Salomón su hijo",
+          "isCorrect": false
+        },
+        {
+          "text": "A Jacob su escogido",
+          "isCorrect": false
+        },
+        {
+          "text": "A Sión su ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "A David su siervo",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué compara a las hijas en el versículo 12?",
+      "explanation": "Pide que las hijas sean como las esquinas labradas a manera de las de un palacio.",
+      "bibleReference": "Salmos 144:12",
+      "answers": [
+        {
+          "text": "Con las esquinas labradas de un palacio",
+          "isCorrect": true
+        },
+        {
+          "text": "Con las palomas que anidan en el valle",
+          "isCorrect": false
+        },
+        {
+          "text": "Con los cedros que crecen en el monte",
+          "isCorrect": false
+        },
+        {
+          "text": "Con las fuentes que corren en el campo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quién llama bienaventurado al final del salmo?",
+      "explanation": "Termina diciendo: \"Bienaventurado el pueblo que tiene esto: bienaventurado el pueblo cuyo Dios es Jehová\".",
+      "bibleReference": "Salmos 144:15",
+      "answers": [
+        {
+          "text": "Al rey que vence en la guerra",
+          "isCorrect": false
+        },
+        {
+          "text": "Al pueblo cuyo Dios es Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "Al varón que no teme la muerte",
+          "isCorrect": false
+        },
+        {
+          "text": "A la casa que guarda la ley",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

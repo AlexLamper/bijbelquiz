@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 59",
+  "description": "Diez preguntas sobre Salmos 59: el ruego de ser librado de hombres sanguinarios, los enemigos que ladran como perros y el canto a la fortaleza de Dios.",
+  "slug": "psalms-quiz-part-59",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el encabezado, ¿qué había hecho Saúl?",
+      "explanation": "El encabezado dice que es un Michtam de David, cuando envió Saúl, y guardaron la casa para matarlo.",
+      "bibleReference": "Salmos 59:1",
+      "answers": [
+        { "text": "Había repartido los despojos de la guerra", "isCorrect": false },
+        { "text": "Había enviado hombres que guardaron la casa para matar a David", "isCorrect": true },
+        { "text": "Había pedido perdón a David en la cueva", "isCorrect": false },
+        { "text": "Había mandado cantar en el santuario", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 2, ¿de qué clase de hombres pide el salmista ser salvado?",
+      "explanation": "El versículo 2 dice: Líbrame de los que obran iniquidad, y sálvame de hombres sanguinarios.",
+      "bibleReference": "Salmos 59:2",
+      "answers": [
+        { "text": "De hombres ricos y poderosos", "isCorrect": false },
+        { "text": "De hombres extranjeros", "isCorrect": false },
+        { "text": "De hombres necios y perezosos", "isCorrect": false },
+        { "text": "De hombres sanguinarios", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 3, ¿qué dice el salmista sobre la causa de que los fuertes se junten contra él?",
+      "explanation": "El versículo 3 dice que están acechando su vida y que se han juntado contra él fuertes, no por falta suya ni pecado suyo.",
+      "bibleReference": "Salmos 59:3",
+      "answers": [
+        { "text": "Que no es por falta ni pecado suyo", "isCorrect": true },
+        { "text": "Que es por el pecado de su juventud", "isCorrect": false },
+        { "text": "Que es porque no pagó sus votos", "isCorrect": false },
+        { "text": "Que es por el pecado de su pueblo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 6, ¿qué hacen los enemigos a la tarde?",
+      "explanation": "El versículo 6 dice que se volverán á la tarde, ladrarán como perros y rodearán la ciudad.",
+      "bibleReference": "Salmos 59:6",
+      "answers": [
+        { "text": "Se esconden en sus casas", "isCorrect": false },
+        { "text": "Cantan en las plazas", "isCorrect": false },
+        { "text": "Ladran como perros y rodean la ciudad", "isCorrect": true },
+        { "text": "Se postran delante de Dios", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 7, ¿qué dicen los enemigos con su boca?",
+      "explanation": "El versículo 7 dice que cuchillos están en sus labios, porque dicen: ¿Quién oye?",
+      "bibleReference": "Salmos 59:7",
+      "answers": [
+        { "text": "Jehová es grande", "isCorrect": false },
+        { "text": "¿Quién oye?", "isCorrect": true },
+        { "text": "Danos nuestro pan", "isCorrect": false },
+        { "text": "¿Dónde está su Dios?", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 8, ¿qué hará Jehová con los enemigos y con todas las gentes?",
+      "explanation": "El versículo 8 dice: Mas tú, Jehová, te reirás de ellos, te burlarás de todas las gentes.",
+      "bibleReference": "Salmos 59:8",
+      "answers": [
+        { "text": "Les dará reposo en medio de la ciudad", "isCorrect": false },
+        { "text": "Los esconderá de todos sus enemigos", "isCorrect": false },
+        { "text": "Les hablará desde su santuario con misericordia", "isCorrect": false },
+        { "text": "Se reirá de ellos y se burlará de todas las gentes", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 9, ¿qué dice el salmista que es Dios para él?",
+      "explanation": "El versículo 9 dice: De su fuerza esperaré yo en ti: porque Dios es mi defensa.",
+      "bibleReference": "Salmos 59:9",
+      "answers": [
+        { "text": "Su defensa", "isCorrect": true },
+        { "text": "Su heredad", "isCorrect": false },
+        { "text": "Su testigo", "isCorrect": false },
+        { "text": "Su legislador", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 11, ¿por qué pide el salmista que Dios no mate a sus enemigos?",
+      "explanation": "El versículo 11 dice: No los matarás, porque mi pueblo no se olvide: hazlos vagar con tu fortaleza.",
+      "bibleReference": "Salmos 59:11",
+      "answers": [
+        { "text": "Porque son parientes suyos", "isCorrect": false },
+        { "text": "Porque todavía no han pecado", "isCorrect": false },
+        { "text": "Para que su pueblo no se olvide", "isCorrect": true },
+        { "text": "Porque ya se han arrepentido", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 13, ¿qué quiere el salmista que sepan los enemigos cuando Dios los acabe?",
+      "explanation": "El versículo 13 pide que Dios los acabe con furor y que sepan que Dios domina en Jacob hasta los fines de la tierra.",
+      "bibleReference": "Salmos 59:13",
+      "answers": [
+        { "text": "Que el rey es fuerte en la batalla de cada día", "isCorrect": false },
+        { "text": "Que Dios domina en Jacob hasta los fines de la tierra", "isCorrect": true },
+        { "text": "Que la ciudad tiene muros altos y puertas fuertes", "isCorrect": false },
+        { "text": "Que los perros no entrarán más en la ciudad", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 16, ¿qué dice el salmista que hará de mañana?",
+      "explanation": "El versículo 16 dice: Yo empero cantaré tu fortaleza, y loaré de mañana tu misericordia; porque Dios ha sido su amparo y refugio en el día de su angustia.",
+      "bibleReference": "Salmos 59:16",
+      "answers": [
+        { "text": "Saldrá a pelear contra sus enemigos", "isCorrect": false },
+        { "text": "Entrará a la ciudad con los perros", "isCorrect": false },
+        { "text": "Callará delante de los que lo acechan", "isCorrect": false },
+        { "text": "Loará la misericordia de Dios", "isCorrect": true }
+      ]
+    }
+  ]
+}

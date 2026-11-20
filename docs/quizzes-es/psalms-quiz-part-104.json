@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 104",
+  "description": "Diez preguntas sobre Salmos 104: los cielos extendidos como una cortina, las nubes por carroza y las criaturas que esperan su comida.",
+  "slug": "psalms-quiz-part-104",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el primer versículo, ¿de qué se ha vestido Jehová?",
+      "explanation": "Salmos 104:1 dice que Jehová se ha engrandecido mucho y que se ha vestido de gloria y de magnificencia.",
+      "bibleReference": "Salmos 104:1",
+      "answers": [
+        { "text": "De saco", "isCorrect": false },
+        { "text": "De nube y oscuridad", "isCorrect": false },
+        { "text": "De gloria y magnificencia", "isCorrect": true },
+        { "text": "De justicia y juicio", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Con qué compara el versículo 2 la manera en que Dios extiende los cielos?",
+      "explanation": "Salmos 104:2 dice que él se cubre de luz como de vestidura y extiende los cielos como una cortina.",
+      "bibleReference": "Salmos 104:2",
+      "answers": [
+        { "text": "Con una cortina", "isCorrect": true },
+        { "text": "Con un camino", "isCorrect": false },
+        { "text": "Con una red", "isCorrect": false },
+        { "text": "Con un muro", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 3, ¿qué pone Dios por su carroza?",
+      "explanation": "Salmos 104:3 dice que pone las nubes por su carroza y que anda sobre las alas del viento.",
+      "bibleReference": "Salmos 104:3",
+      "answers": [
+        { "text": "Los querubines", "isCorrect": false },
+        { "text": "Las nubes", "isCorrect": true },
+        { "text": "Los montes", "isCorrect": false },
+        { "text": "El fuego", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Sobre qué fundó Dios la tierra, según el versículo 5?",
+      "explanation": "Salmos 104:5 dice que él fundó la tierra sobre sus basas, y que no será jamás removida.",
+      "bibleReference": "Salmos 104:5",
+      "answers": [
+        { "text": "Sobre las aguas", "isCorrect": false },
+        { "text": "Sobre los montes", "isCorrect": false },
+        { "text": "Sobre el abismo", "isCorrect": false },
+        { "text": "Sobre sus basas", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 11, ¿quiénes quebrantan su sed en las fuentes que Dios envía?",
+      "explanation": "Salmos 104:11 dice que esas aguas abrevan a todas las bestias del campo y que los asnos montaraces quebrantan su sed.",
+      "bibleReference": "Salmos 104:11",
+      "answers": [
+        { "text": "Los asnos montaraces", "isCorrect": true },
+        { "text": "Los leoncillos", "isCorrect": false },
+        { "text": "Las cabras monteses", "isCorrect": false },
+        { "text": "Los conejos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 15, ¿qué alegra el corazón del hombre?",
+      "explanation": "Salmos 104:15 nombra el vino que alegra el corazón del hombre, el aceite que hace lucir el rostro y el pan que sustenta el corazón.",
+      "bibleReference": "Salmos 104:15",
+      "answers": [
+        { "text": "El aceite", "isCorrect": false },
+        { "text": "El pan", "isCorrect": false },
+        { "text": "El vino", "isCorrect": true },
+        { "text": "El heno", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué ave hace su casa en las hayas, según el versículo 17?",
+      "explanation": "Salmos 104:17 dice que allí anidan las aves y que en las hayas hace su casa la cigüeña.",
+      "bibleReference": "Salmos 104:17",
+      "answers": [
+        { "text": "El águila", "isCorrect": false },
+        { "text": "El buho", "isCorrect": false },
+        { "text": "El pelícano", "isCorrect": false },
+        { "text": "La cigüeña", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Para qué hizo Dios la luna, según el versículo 19?",
+      "explanation": "Salmos 104:19 dice que hizo la luna para los tiempos, y que el sol conoce su ocaso.",
+      "bibleReference": "Salmos 104:19",
+      "answers": [
+        { "text": "Para alumbrar el santuario", "isCorrect": false },
+        { "text": "Para los tiempos", "isCorrect": true },
+        { "text": "Para guiar a los navíos", "isCorrect": false },
+        { "text": "Para señal del pacto", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 21, ¿qué hacen los leoncillos?",
+      "explanation": "Salmos 104:21 dice que los leoncillos braman a la presa y buscan de Dios su comida.",
+      "bibleReference": "Salmos 104:21",
+      "answers": [
+        { "text": "Braman a la presa", "isCorrect": true },
+        { "text": "Duermen en las hayas", "isCorrect": false },
+        { "text": "Beben en los arroyos", "isCorrect": false },
+        { "text": "Huyen del hombre", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dice el versículo 26 que Dios hizo para que jugase en la gran mar?",
+      "explanation": "Salmos 104:26 dice que allí andan navíos y que allí está el leviathán, que Dios hizo para que jugase en ella.",
+      "bibleReference": "Salmos 104:26",
+      "answers": [
+        { "text": "Los navíos", "isCorrect": false },
+        { "text": "Los pescados sin número", "isCorrect": false },
+        { "text": "Las aves de los cielos", "isCorrect": false },
+        { "text": "El leviathán", "isCorrect": true }
+      ]
+    }
+  ]
+}

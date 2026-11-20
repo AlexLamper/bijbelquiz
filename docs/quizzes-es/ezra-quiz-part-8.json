@@ -14,16 +14,16 @@
       "bibleReference": "Esdras 8:1",
       "answers": [
         {
-          "text": "El rey Artajerjes",
-          "isCorrect": true
+          "text": "El rey Ciro",
+          "isCorrect": false
         },
         {
           "text": "El rey Darío",
           "isCorrect": false
         },
         {
-          "text": "El rey Ciro",
-          "isCorrect": false
+          "text": "El rey Artajerjes",
+          "isCorrect": true
         },
         {
           "text": "El rey Nabucodonosor",
@@ -41,12 +41,12 @@
           "isCorrect": false
         },
         {
-          "text": "Ninguno de los hijos de Leví",
-          "isCorrect": true
-        },
-        {
           "text": "Ninguno de los cantores ni porteros",
           "isCorrect": false
+        },
+        {
+          "text": "Ninguno de los hijos de Leví",
+          "isCorrect": true
         },
         {
           "text": "Ninguno de los hijos de Aarón",
@@ -64,12 +64,12 @@
           "isCorrect": false
         },
         {
-          "text": "A Meremoth hijo de Urías",
-          "isCorrect": false
-        },
-        {
           "text": "A Iddo, jefe en aquel lugar",
           "isCorrect": true
+        },
+        {
+          "text": "A Meremoth hijo de Urías",
+          "isCorrect": false
         },
         {
           "text": "A Hasabías, de los hijos de Merari",
@@ -87,16 +87,16 @@
           "isCorrect": false
         },
         {
-          "text": "Un censo de todo el pueblo",
-          "isCorrect": false
+          "text": "Un ayuno",
+          "isCorrect": true
         },
         {
           "text": "Una ofrenda de holocaustos",
           "isCorrect": false
         },
         {
-          "text": "Un ayuno",
-          "isCorrect": true
+          "text": "Un censo de todo el pueblo",
+          "isCorrect": false
         }
       ]
     },
@@ -160,12 +160,12 @@
           "isCorrect": false
         },
         {
-          "text": "Seiscientos cincuenta talentos",
-          "isCorrect": true
-        },
-        {
           "text": "Doscientos veinte talentos",
           "isCorrect": false
+        },
+        {
+          "text": "Seiscientos cincuenta talentos",
+          "isCorrect": true
         }
       ]
     },
@@ -221,12 +221,12 @@
       "bibleReference": "Esdras 8:35",
       "answers": [
         {
-          "text": "Setenta y siete",
-          "isCorrect": false
-        },
-        {
           "text": "Noventa y seis",
           "isCorrect": true
+        },
+        {
+          "text": "Setenta y siete",
+          "isCorrect": false
         },
         {
           "text": "Doce",

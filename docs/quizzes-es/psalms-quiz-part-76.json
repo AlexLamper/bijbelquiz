@@ -1,0 +1,242 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 76",
+  "description": "Diez preguntas sobre Salmos 76: el nombre grande en Israel, el tabernáculo en Salem, las armas quebradas y el juicio que se oye desde los cielos.",
+  "slug": "psalms-quiz-part-76",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el primer verso, ¿dónde es conocido Dios y dónde es grande su nombre?",
+      "explanation": "El texto dice: Dios es conocido en Judá: en Israel es grande su nombre.",
+      "bibleReference": "Salmos 76:1",
+      "answers": [
+        {
+          "text": "En Egipto y en el desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "En Moab y en Edom",
+          "isCorrect": false
+        },
+        {
+          "text": "En Tharsis y en las islas",
+          "isCorrect": false
+        },
+        {
+          "text": "En Judá y en Israel",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el salmo, ¿dónde está su tabernáculo y dónde su habitación?",
+      "explanation": "El texto dice: Y en Salem está su tabernáculo, y su habitación en Sión.",
+      "bibleReference": "Salmos 76:2",
+      "answers": [
+        {
+          "text": "En Silo y en Bethel",
+          "isCorrect": false
+        },
+        {
+          "text": "En Salem y en Sión",
+          "isCorrect": true
+        },
+        {
+          "text": "En Hebrón y en Gabaón",
+          "isCorrect": false
+        },
+        {
+          "text": "En Zoán y en Egipto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el salmo, ¿qué quebró Dios allí?",
+      "explanation": "El texto dice: Allí quebró las saetas del arco, el escudo, y la espada, y tren de guerra.",
+      "bibleReference": "Salmos 76:3",
+      "answers": [
+        {
+          "text": "Las saetas del arco, el escudo y la espada",
+          "isCorrect": true
+        },
+        {
+          "text": "Las puertas y los cerrojos de la ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "Las columnas y los altares de los montes",
+          "isCorrect": false
+        },
+        {
+          "text": "Las esculturas y las entalladuras del templo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el salmo, ¿qué les ocurrió a los fuertes de corazón?",
+      "explanation": "El texto dice: Los fuertes de corazón fueron despojados, durmieron su sueño; y nada hallaron en sus manos.",
+      "bibleReference": "Salmos 76:5",
+      "answers": [
+        {
+          "text": "Huyeron a los montes de caza",
+          "isCorrect": false
+        },
+        {
+          "text": "Fueron llevados en cautividad",
+          "isCorrect": false
+        },
+        {
+          "text": "Fueron despojados y durmieron su sueño",
+          "isCorrect": true
+        },
+        {
+          "text": "Se postraron y trajeron presentes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el salmo, ¿qué quedó entorpecido a la reprensión del Dios de Jacob?",
+      "explanation": "El texto dice: A tu reprensión, oh Dios de Jacob, el carro y el caballo fueron entorpecidos.",
+      "bibleReference": "Salmos 76:6",
+      "answers": [
+        {
+          "text": "La mar y los ríos",
+          "isCorrect": false
+        },
+        {
+          "text": "El sol y la luna",
+          "isCorrect": false
+        },
+        {
+          "text": "El arco y la saeta",
+          "isCorrect": false
+        },
+        {
+          "text": "El carro y el caballo",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el salmo, ¿desde dónde hizo Dios oír juicio?",
+      "explanation": "El texto dice: Desde los cielos hiciste oir juicio; la tierra tuvo temor y quedó suspensa.",
+      "bibleReference": "Salmos 76:8",
+      "answers": [
+        {
+          "text": "Desde los cielos",
+          "isCorrect": true
+        },
+        {
+          "text": "Desde el santuario",
+          "isCorrect": false
+        },
+        {
+          "text": "Desde el monte de Sión",
+          "isCorrect": false
+        },
+        {
+          "text": "Desde el medio del pueblo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el salmo, ¿a quiénes se levantó Dios a salvar en el juicio?",
+      "explanation": "El texto dice: Cuando te levantaste, oh Dios, al juicio, para salvar á todos los mansos de la tierra.",
+      "bibleReference": "Salmos 76:9",
+      "answers": [
+        {
+          "text": "A los reyes de la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "A todos los mansos de la tierra",
+          "isCorrect": true
+        },
+        {
+          "text": "A los fuertes de corazón",
+          "isCorrect": false
+        },
+        {
+          "text": "A los príncipes de Judá",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el salmo, ¿qué le acarreará alabanza a Dios?",
+      "explanation": "El texto dice: Ciertamente la ira del hombre te acarreará alabanza: tú reprimirás el resto de las iras.",
+      "bibleReference": "Salmos 76:10",
+      "answers": [
+        {
+          "text": "El silencio de la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "El temor de los reyes",
+          "isCorrect": false
+        },
+        {
+          "text": "La ira del hombre",
+          "isCorrect": true
+        },
+        {
+          "text": "El canto de los mansos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el salmo, ¿qué deben hacer todos los que están alrededor de Dios?",
+      "explanation": "El texto dice: todos los que están alrededor de él, traigan presentes al Terrible.",
+      "bibleReference": "Salmos 76:11",
+      "answers": [
+        {
+          "text": "Traer presentes al Terrible",
+          "isCorrect": true
+        },
+        {
+          "text": "Callar delante de su trono",
+          "isCorrect": false
+        },
+        {
+          "text": "Huir a los montes de caza",
+          "isCorrect": false
+        },
+        {
+          "text": "Edificar altares en Salem",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el último verso, ¿qué cortará Dios?",
+      "explanation": "El texto dice: Cortará él el espíritu de los príncipes: terrible es á los reyes de la tierra.",
+      "bibleReference": "Salmos 76:12",
+      "answers": [
+        {
+          "text": "El arco de los flecheros",
+          "isCorrect": false
+        },
+        {
+          "text": "La lengua de los mentirosos",
+          "isCorrect": false
+        },
+        {
+          "text": "El camino de los impíos",
+          "isCorrect": false
+        },
+        {
+          "text": "El espíritu de los príncipes",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

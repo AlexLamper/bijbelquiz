@@ -13,9 +13,9 @@
       "explanation": "Estos vinieron á David á Siclag, estando él aún encerrado por causa de Saúl hijo de Cis.",
       "bibleReference": "1 Crónicas 12:1",
       "answers": [
-        { "text": "A Siclag", "isCorrect": true },
-        { "text": "A Hebrón", "isCorrect": false },
         { "text": "A Jerusalem", "isCorrect": false },
+        { "text": "A Hebrón", "isCorrect": false },
+        { "text": "A Siclag", "isCorrect": true },
         { "text": "A Gedor", "isCorrect": false }
       ]
     },
@@ -25,9 +25,9 @@
       "bibleReference": "1 Crónicas 12:2",
       "answers": [
         { "text": "Peleaban solamente con carros", "isCorrect": false },
-        { "text": "Usaban ambas manos con la honda y el arco", "isCorrect": true },
+        { "text": "Luchaban solamente a caballo", "isCorrect": false },
         { "text": "Llevaban trompetas y címbalos", "isCorrect": false },
-        { "text": "Luchaban solamente a caballo", "isCorrect": false }
+        { "text": "Usaban ambas manos con la honda y el arco", "isCorrect": true }
       ]
     },
     {
@@ -35,9 +35,9 @@
       "explanation": "Eran muy valientes hombres de guerra, sus rostros como rostros de leones, y ligeros como las cabras monteses.",
       "bibleReference": "1 Crónicas 12:8",
       "answers": [
-        { "text": "Con rostros de ángeles", "isCorrect": false },
-        { "text": "Con la luz del sol", "isCorrect": false },
         { "text": "Con rostros de leones", "isCorrect": true },
+        { "text": "Con la luz del sol", "isCorrect": false },
+        { "text": "Con rostros de ángeles", "isCorrect": false },
         { "text": "Con rostros de niños", "isCorrect": false }
       ]
     },
@@ -47,9 +47,9 @@
       "bibleReference": "1 Crónicas 12:14",
       "answers": [
         { "text": "El menor de diez y el mayor de cien", "isCorrect": false },
-        { "text": "El menor de mil y el mayor de diez mil", "isCorrect": false },
+        { "text": "El menor de cien y el mayor de mil", "isCorrect": true },
         { "text": "Los dos de quinientos hombres", "isCorrect": false },
-        { "text": "El menor de cien y el mayor de mil", "isCorrect": true }
+        { "text": "El menor de mil y el mayor de diez mil", "isCorrect": false }
       ]
     },
     {
@@ -57,9 +57,9 @@
       "explanation": "Estos pasaron el Jordán en el mes primero, cuando había salido sobre todas sus riberas.",
       "bibleReference": "1 Crónicas 12:15",
       "answers": [
-        { "text": "En el mes primero", "isCorrect": true },
-        { "text": "En el mes segundo", "isCorrect": false },
         { "text": "En el mes séptimo", "isCorrect": false },
+        { "text": "En el mes segundo", "isCorrect": false },
+        { "text": "En el mes primero", "isCorrect": true },
         { "text": "En el mes décimo", "isCorrect": false }
       ]
     },
@@ -68,8 +68,8 @@
       "explanation": "Se envistió el espíritu en Amasai, príncipe de treinta, y él habló de paz a David y a sus ayudadores.",
       "bibleReference": "1 Crónicas 12:18",
       "answers": [
-        { "text": "En Ahiezer", "isCorrect": false },
         { "text": "En Amasai", "isCorrect": true },
+        { "text": "En Ahiezer", "isCorrect": false },
         { "text": "En Ismaías", "isCorrect": false },
         { "text": "En Elcana", "isCorrect": false }
       ]
@@ -81,8 +81,8 @@
       "answers": [
         { "text": "Con la arena del mar", "isCorrect": false },
         { "text": "Con las estrellas del cielo", "isCorrect": false },
-        { "text": "Con un ejército de Dios", "isCorrect": true },
-        { "text": "Con un enjambre de abejas", "isCorrect": false }
+        { "text": "Con un enjambre de abejas", "isCorrect": false },
+        { "text": "Con un ejército de Dios", "isCorrect": true }
       ]
     },
     {
@@ -91,9 +91,9 @@
       "bibleReference": "1 Crónicas 12:23-24",
       "answers": [
         { "text": "Siete mil y ciento", "isCorrect": false },
-        { "text": "Cuatro mil y seiscientos", "isCorrect": false },
+        { "text": "Seis mil y ochocientos", "isCorrect": true },
         { "text": "Tres mil y setecientos", "isCorrect": false },
-        { "text": "Seis mil y ochocientos", "isCorrect": true }
+        { "text": "Cuatro mil y seiscientos", "isCorrect": false }
       ]
     },
     {

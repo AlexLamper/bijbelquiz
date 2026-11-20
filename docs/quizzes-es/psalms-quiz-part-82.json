@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 82",
+  "description": "Diez preguntas sobre Salmos 82: Dios juzga en medio de los dioses, el mandato de defender al pobre y la sentencia de que morirán como hombres.",
+  "slug": "psalms-quiz-part-82",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Dónde dice el salmo que está Dios?",
+      "explanation": "El verso dice que Dios está en la reunión de los dioses y que juzga en medio de los dioses.",
+      "bibleReference": "Salmos 82:1",
+      "answers": [
+        { "text": "En el santuario de Sión", "isCorrect": false },
+        { "text": "En la reunión de los dioses", "isCorrect": true },
+        { "text": "Sobre el monte de Basán", "isCorrect": false },
+        { "text": "Entre las puertas de la ciudad", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué hace Dios en medio de los dioses, según el primer verso?",
+      "explanation": "El verso dice que en medio de los dioses juzga.",
+      "bibleReference": "Salmos 82:1",
+      "answers": [
+        { "text": "Calla", "isCorrect": false },
+        { "text": "Canta", "isCorrect": false },
+        { "text": "Reposa", "isCorrect": false },
+        { "text": "Juzga", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿De quién es este salmo, según su encabezamiento?",
+      "explanation": "El encabezamiento dice: Salmo de Asaph.",
+      "bibleReference": "Salmos 82:1",
+      "answers": [
+        { "text": "De Asaph", "isCorrect": true },
+        { "text": "De David", "isCorrect": false },
+        { "text": "De Salomón", "isCorrect": false },
+        { "text": "De los hijos de Coré", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿A quiénes se reprocha aceptar en el juicio?",
+      "explanation": "El verso pregunta: ¿Hasta cuándo juzgaréis injustamente, y aceptaréis las personas de los impíos?",
+      "bibleReference": "Salmos 82:2",
+      "answers": [
+        { "text": "A los extranjeros", "isCorrect": false },
+        { "text": "A los huérfanos", "isCorrect": false },
+        { "text": "A los impíos", "isCorrect": true },
+        { "text": "A los reyes de la tierra", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿A quiénes manda el salmo defender?",
+      "explanation": "El verso dice: Defended al pobre y al huérfano: haced justicia al afligido y al menesteroso.",
+      "bibleReference": "Salmos 82:3",
+      "answers": [
+        { "text": "Al rey y a sus príncipes", "isCorrect": false },
+        { "text": "Al pobre y al huérfano", "isCorrect": true },
+        { "text": "A los sacerdotes del templo", "isCorrect": false },
+        { "text": "A los fuertes y poderosos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿De qué mano manda el salmo librar al afligido y al necesitado?",
+      "explanation": "El verso dice: Librad al afligido y al necesitado: libradlo de mano de los impíos.",
+      "bibleReference": "Salmos 82:4",
+      "answers": [
+        { "text": "De mano de los impíos", "isCorrect": true },
+        { "text": "De mano de los reyes", "isCorrect": false },
+        { "text": "De mano del extranjero", "isCorrect": false },
+        { "text": "De mano de los jueces", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cómo andan aquellos que, según el salmo, no saben ni entienden?",
+      "explanation": "El verso dice: No saben, no entienden, andan en tinieblas.",
+      "bibleReference": "Salmos 82:5",
+      "answers": [
+        { "text": "A la luz del día", "isCorrect": false },
+        { "text": "Por sendas llanas", "isCorrect": false },
+        { "text": "En tinieblas", "isCorrect": true },
+        { "text": "Delante del arca", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dice el salmo que vacila?",
+      "explanation": "El verso dice que vacilan todos los cimientos de la tierra.",
+      "bibleReference": "Salmos 82:5",
+      "answers": [
+        { "text": "Los montes de santidad", "isCorrect": false },
+        { "text": "Las puertas de la ciudad", "isCorrect": false },
+        { "text": "El trono de los reyes", "isCorrect": false },
+        { "text": "Todos los cimientos de la tierra", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Después de decirles \"Vosotros sois dioses\", ¿qué les anuncia el salmo?",
+      "explanation": "El texto dice: Yo dije: Vosotros sois dioses... Empero como hombres moriréis, y caeréis como cualquiera de los tiranos.",
+      "bibleReference": "Salmos 82:6-7",
+      "answers": [
+        { "text": "Que como hombres morirán", "isCorrect": true },
+        { "text": "Que reinarán para siempre", "isCorrect": false },
+        { "text": "Que no verán la muerte", "isCorrect": false },
+        { "text": "Que serán llevados al cielo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué se pide a Dios al final del salmo?",
+      "explanation": "El verso dice: Levántate, oh Dios, juzga la tierra: porque tú heredarás en todas las gentes.",
+      "bibleReference": "Salmos 82:8",
+      "answers": [
+        { "text": "Que calle y no responda", "isCorrect": false },
+        { "text": "Que se levante y juzgue la tierra", "isCorrect": true },
+        { "text": "Que reparta la tierra a suertes", "isCorrect": false },
+        { "text": "Que envíe lluvia sobre los campos", "isCorrect": false }
+      ]
+    }
+  ]
+}

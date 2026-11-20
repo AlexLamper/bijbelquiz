@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 81",
+  "description": "Diez preguntas sobre Salmos 81: el llamado a cantar con instrumentos, el estatuto de Israel y la queja de Dios por un pueblo que no oyó su voz.",
+  "slug": "psalms-quiz-part-81",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cómo se manda celebrar al Dios de Jacob al comienzo del salmo?",
+      "explanation": "El verso dice: Cantad á Dios, fortaleza nuestra: al Dios de Jacob celebrad con júbilo.",
+      "bibleReference": "Salmos 81:1",
+      "answers": [
+        { "text": "Con júbilo", "isCorrect": true },
+        { "text": "En silencio", "isCorrect": false },
+        { "text": "Con ayuno y lloro", "isCorrect": false },
+        { "text": "Con temor y temblor", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué instrumentos se manda tañer junto con la canción?",
+      "explanation": "El verso dice: Tomad la canción, y tañed el adufe, el arpa deliciosa con el salterio.",
+      "bibleReference": "Salmos 81:2",
+      "answers": [
+        { "text": "La flauta, el címbalo y el cuerno", "isCorrect": false },
+        { "text": "Los panderos y los cascabeles", "isCorrect": false },
+        { "text": "El adufe, el arpa y el salterio", "isCorrect": true },
+        { "text": "El decacordio y las campanillas", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuándo manda el salmo tocar la trompeta?",
+      "explanation": "El verso dice que se toque la trompeta en la nueva luna, en el día señalado, en el día de la solemnidad.",
+      "bibleReference": "Salmos 81:3",
+      "answers": [
+        { "text": "Al salir el sol cada día", "isCorrect": false },
+        { "text": "En la nueva luna", "isCorrect": true },
+        { "text": "Cuando el enemigo se acerca", "isCorrect": false },
+        { "text": "En el año del jubileo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿De quién dice el salmo que es la ordenanza que Israel debe guardar?",
+      "explanation": "El verso dice que esto es estatuto de Israel y ordenanza del Dios de Jacob.",
+      "bibleReference": "Salmos 81:4",
+      "answers": [
+        { "text": "De los reyes de Israel", "isCorrect": false },
+        { "text": "De los jueces del pueblo", "isCorrect": false },
+        { "text": "De los sacerdotes de Sión", "isCorrect": false },
+        { "text": "Del Dios de Jacob", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿En quién dice el salmo que fue constituido este testimonio?",
+      "explanation": "El verso dice que por testimonio en José lo ha constituído, cuando salió por la tierra de Egipto.",
+      "bibleReference": "Salmos 81:5",
+      "answers": [
+        { "text": "En José", "isCorrect": true },
+        { "text": "En Leví", "isCorrect": false },
+        { "text": "En Judá", "isCorrect": false },
+        { "text": "En Benjamín", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dice Dios que apartó de debajo de la carga?",
+      "explanation": "El verso dice: Aparté su hombro de debajo de la carga; sus manos se quitaron de vasijas de barro.",
+      "bibleReference": "Salmos 81:6",
+      "answers": [
+        { "text": "Su yugo de hierro", "isCorrect": false },
+        { "text": "Su hombro", "isCorrect": true },
+        { "text": "Sus pies", "isCorrect": false },
+        { "text": "Su cuello", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Dónde dice Dios que probó a quien clamó en la calamidad?",
+      "explanation": "El verso dice que le respondió en el secreto del trueno y lo probó sobre las aguas de Meriba.",
+      "bibleReference": "Salmos 81:7",
+      "answers": [
+        { "text": "En el monte Sinaí", "isCorrect": false },
+        { "text": "Junto al mar Bermejo", "isCorrect": false },
+        { "text": "En el desierto de Sin", "isCorrect": false },
+        { "text": "Sobre las aguas de Meriba", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué manda Dios hacer, prometiendo que él la llenará?",
+      "explanation": "El verso dice: Yo soy Jehová tu Dios, que te hice subir de la tierra de Egipto: ensancha tu boca, y henchirla he.",
+      "bibleReference": "Salmos 81:10",
+      "answers": [
+        { "text": "Abrir sus graneros", "isCorrect": false },
+        { "text": "Extender sus manos", "isCorrect": false },
+        { "text": "Ensanchar su boca", "isCorrect": true },
+        { "text": "Levantar sus ojos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué hizo Dios cuando su pueblo no oyó su voz?",
+      "explanation": "El texto dice que, porque su pueblo no oyó su voz, los dejó á la dureza de su corazón y caminaron en sus consejos.",
+      "bibleReference": "Salmos 81:11-12",
+      "answers": [
+        { "text": "Los entregó a sus enemigos", "isCorrect": false },
+        { "text": "Los dejó a la dureza de su corazón", "isCorrect": true },
+        { "text": "Les envió hambre y sed", "isCorrect": false },
+        { "text": "Los sacó de la tierra de Egipto", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Con qué dice el salmo que Dios lo hubiera mantenido y saciado?",
+      "explanation": "El verso dice que Dios lo hubiera mantenido de grosura de trigo y lo hubiera saciado de miel de la piedra.",
+      "bibleReference": "Salmos 81:16",
+      "answers": [
+        { "text": "De grosura de trigo y miel de la piedra", "isCorrect": true },
+        { "text": "De leche y manteca de las vacas", "isCorrect": false },
+        { "text": "Del vino nuevo de los lagares", "isCorrect": false },
+        { "text": "De aceite y pan de los campos", "isCorrect": false }
+      ]
+    }
+  ]
+}

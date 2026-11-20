@@ -1,0 +1,242 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 80",
+  "description": "Diez preguntas sobre Salmos 80: el Pastor de Israel, el pan de lágrimas, la vid traída de Egipto y la petición de que resplandezca su rostro.",
+  "slug": "psalms-quiz-part-80",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cómo llama el salmo a Dios al comenzar?",
+      "explanation": "El texto dice: Oh Pastor de Israel, escucha: tú que pastoreas como á ovejas á José.",
+      "bibleReference": "Salmos 80:1",
+      "answers": [
+        {
+          "text": "Roca de Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Juez de Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Santo de Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Pastor de Israel",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Delante de quiénes pide el salmo que Dios despierte su valentía?",
+      "explanation": "El texto dice: Despierta tu valentía delante de Ephraim, y de Benjamín, y de Manasés, y ven á salvarnos.",
+      "bibleReference": "Salmos 80:2",
+      "answers": [
+        {
+          "text": "De Ephraim, de Benjamín y de Manasés",
+          "isCorrect": true
+        },
+        {
+          "text": "De Judá, de Leví y de Simeón",
+          "isCorrect": false
+        },
+        {
+          "text": "De Rubén, de Gad y de Aser",
+          "isCorrect": false
+        },
+        {
+          "text": "De Dan, de Neftalí y de Isacar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pide el salmo que Dios haga resplandecer para que sean salvos?",
+      "explanation": "El texto dice: Oh Dios, haznos tornar; y haz resplandecer tu rostro, y seremos salvos.",
+      "bibleReference": "Salmos 80:3",
+      "answers": [
+        {
+          "text": "Su santuario",
+          "isCorrect": false
+        },
+        {
+          "text": "Su diestra",
+          "isCorrect": false
+        },
+        {
+          "text": "Su rostro",
+          "isCorrect": true
+        },
+        {
+          "text": "Su trono",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el salmo, ¿contra qué pregunta hasta cuándo humeará Jehová?",
+      "explanation": "El texto dice: Jehová, Dios de los ejércitos, ¿hasta cuándo humearás tú contra la oración de tu pueblo?",
+      "bibleReference": "Salmos 80:4",
+      "answers": [
+        {
+          "text": "Contra los altares de los montes",
+          "isCorrect": false
+        },
+        {
+          "text": "Contra la oración de su pueblo",
+          "isCorrect": true
+        },
+        {
+          "text": "Contra las gentes de alrededor",
+          "isCorrect": false
+        },
+        {
+          "text": "Contra la casa de sus siervos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el salmo, ¿qué les dio Dios a comer y a beber?",
+      "explanation": "El texto dice: Dísteles á comer pan de lágrimas, y dísteles á beber lágrimas en gran abundancia.",
+      "bibleReference": "Salmos 80:5",
+      "answers": [
+        {
+          "text": "Pan de lágrimas y lágrimas en abundancia",
+          "isCorrect": true
+        },
+        {
+          "text": "Pan de nobles y trigo de los cielos",
+          "isCorrect": false
+        },
+        {
+          "text": "Hiel por comida y vinagre por bebida",
+          "isCorrect": false
+        },
+        {
+          "text": "Carne como polvo y agua de la peña",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el salmo, ¿qué hizo venir Dios de Egipto?",
+      "explanation": "El texto dice: Hiciste venir una vid de Egipto: echaste las gentes, y plantástela.",
+      "bibleReference": "Salmos 80:8",
+      "answers": [
+        {
+          "text": "Un rebaño",
+          "isCorrect": false
+        },
+        {
+          "text": "Una higuera",
+          "isCorrect": false
+        },
+        {
+          "text": "Un cedro",
+          "isCorrect": false
+        },
+        {
+          "text": "Una vid",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el salmo, ¿con qué se comparan sus sarmientos?",
+      "explanation": "El texto dice: Los montes fueron cubiertos de su sombra; y sus sarmientos como cedros de Dios.",
+      "bibleReference": "Salmos 80:10",
+      "answers": [
+        {
+          "text": "Con las olas de la mar",
+          "isCorrect": false
+        },
+        {
+          "text": "Con cedros de Dios",
+          "isCorrect": true
+        },
+        {
+          "text": "Con la hierba del campo",
+          "isCorrect": false
+        },
+        {
+          "text": "Con las nubes del cielo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el salmo, ¿hasta dónde extendió la vid sus vástagos?",
+      "explanation": "El texto dice: Extendió sus vástagos hasta la mar, y hasta el río sus mugrones.",
+      "bibleReference": "Salmos 80:11",
+      "answers": [
+        {
+          "text": "Hasta el desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta los collados",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta la mar",
+          "isCorrect": true
+        },
+        {
+          "text": "Hasta las islas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el salmo, ¿qué animales estropearon y pacieron la vid?",
+      "explanation": "El texto dice: Estropeóla el puerco montés, y pacióla la bestia del campo.",
+      "bibleReference": "Salmos 80:13",
+      "answers": [
+        {
+          "text": "El león del bosque y el oso",
+          "isCorrect": false
+        },
+        {
+          "text": "El lobo y el leopardo del campo",
+          "isCorrect": false
+        },
+        {
+          "text": "La langosta y el pulgón del huerto",
+          "isCorrect": false
+        },
+        {
+          "text": "El puerco montés y la bestia del campo",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el salmo, ¿qué harán si Dios les da vida?",
+      "explanation": "El texto dice: Así no nos volveremos de ti: vida nos darás, é invocaremos tu nombre.",
+      "bibleReference": "Salmos 80:18",
+      "answers": [
+        {
+          "text": "Invocarán su nombre",
+          "isCorrect": true
+        },
+        {
+          "text": "Edificarán su santuario",
+          "isCorrect": false
+        },
+        {
+          "text": "Plantarán una nueva viña",
+          "isCorrect": false
+        },
+        {
+          "text": "Traerán presentes cada día",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -13,8 +13,8 @@
       "explanation": "Morando David en su casa, dijo al profeta Nathán que él habitaba en casa de cedro y el arca del pacto de Jehová debajo de cortinas.",
       "bibleReference": "1 Crónicas 17:1",
       "answers": [
-        { "text": "A Nathán", "isCorrect": true },
         { "text": "A Gad", "isCorrect": false },
+        { "text": "A Nathán", "isCorrect": true },
         { "text": "A Samuel", "isCorrect": false },
         { "text": "A Asaph", "isCorrect": false }
       ]
@@ -24,10 +24,10 @@
       "explanation": "Nathán dijo á David: Haz todo lo que está en tu corazón, porque Dios es contigo.",
       "bibleReference": "1 Crónicas 17:2",
       "answers": [
-        { "text": "Espera la palabra de Jehová", "isCorrect": false },
         { "text": "Haz todo lo que está en tu corazón", "isCorrect": true },
+        { "text": "Espera la palabra de Jehová", "isCorrect": false },
         { "text": "No edifiques casa á Jehová", "isCorrect": false },
-        { "text": "Consulta primero á los Levitas", "isCorrect": false }
+        { "text": "Consulta primero á los Levitas y á los sacerdotes", "isCorrect": false }
       ]
     },
     {
@@ -46,7 +46,7 @@
       "explanation": "Jehová mandó decir á David su siervo: Tú no me edificarás casa en que habite.",
       "bibleReference": "1 Crónicas 17:4",
       "answers": [
-        { "text": "Edifícame casa de cedro en Jerusalem", "isCorrect": false },
+        { "text": "Edifícame casa de cedro en Jerusalem sin tardar", "isCorrect": false },
         { "text": "Trae el arca á la casa de cedro", "isCorrect": false },
         { "text": "Deja el reino á tu hijo ahora", "isCorrect": false },
         { "text": "Tú no me edificarás casa en que habite", "isCorrect": true }
@@ -80,9 +80,9 @@
       "bibleReference": "1 Crónicas 17:12-13",
       "answers": [
         { "text": "Él será profeta en Israel", "isCorrect": false },
-        { "text": "Él será juez sobre mi pueblo", "isCorrect": false },
-        { "text": "Yo le seré por padre, y él me será por hijo", "isCorrect": true },
-        { "text": "Él llevará el arca de Jehová", "isCorrect": false }
+        { "text": "Él será juez sobre mi pueblo Israel para siempre", "isCorrect": false },
+        { "text": "Él llevará el arca de Jehová", "isCorrect": false },
+        { "text": "Yo le seré por padre, y él me será por hijo", "isCorrect": true }
       ]
     },
     {
@@ -92,8 +92,8 @@
       "answers": [
         { "text": "Qué he de hacer con el arca", "isCorrect": false },
         { "text": "Por qué me has desechado", "isCorrect": false },
-        { "text": "Hasta cuándo, oh Jehová", "isCorrect": false },
-        { "text": "Quién soy yo, y cuál es mi casa", "isCorrect": true }
+        { "text": "Quién soy yo, y cuál es mi casa", "isCorrect": true },
+        { "text": "Hasta cuándo, oh Jehová", "isCorrect": false }
       ]
     },
     {
@@ -101,8 +101,8 @@
       "explanation": "David dijo: Jehová, no hay semejante á ti, ni hay Dios sino tú, según todas las cosas que hemos oído con nuestros oídos.",
       "bibleReference": "1 Crónicas 17:20",
       "answers": [
+        { "text": "Tu misericordia es eterna sobre todos los pueblos", "isCorrect": false },
         { "text": "No hay semejante á ti, ni hay Dios sino tú", "isCorrect": true },
-        { "text": "Tu misericordia es eterna, oh Jehová", "isCorrect": false },
         { "text": "Grande es Jehová entre los dioses", "isCorrect": false },
         { "text": "Tus juicios son en toda la tierra", "isCorrect": false }
       ]
@@ -112,8 +112,8 @@
       "explanation": "David dice que Jehová ha querido bendecir la casa de su siervo y la ha bendecido, y que será bendita para siempre.",
       "bibleReference": "1 Crónicas 17:27",
       "answers": [
-        { "text": "Que será quitada de delante de ti", "isCorrect": false },
         { "text": "Que será bendita para siempre", "isCorrect": true },
+        { "text": "Que será quitada de delante de ti", "isCorrect": false },
         { "text": "Que se edificará en Gabaón", "isCorrect": false },
         { "text": "Que durará solo tres días", "isCorrect": false }
       ]

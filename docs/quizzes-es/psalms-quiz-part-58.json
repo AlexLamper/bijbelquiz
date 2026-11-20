@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 58",
+  "description": "Diez preguntas sobre Salmos 58: los jueces que no juzgan rectamente, el áspide sordo y la alegría del justo cuando viere la venganza.",
+  "slug": "psalms-quiz-part-58",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué pregunta el versículo 1 a la congregación?",
+      "explanation": "El versículo 1 pregunta: Oh congregación, ¿pronunciáis en verdad justicia? ¿juzgáis rectamente, hijos de los hombres?",
+      "bibleReference": "Salmos 58:1",
+      "answers": [
+        { "text": "Si pronuncian en verdad justicia y si juzgan rectamente", "isCorrect": true },
+        { "text": "Si se acuerdan de los pobres y de los huérfanos", "isCorrect": false },
+        { "text": "Si han pagado a Dios todos los votos que prometieron", "isCorrect": false },
+        { "text": "Si quieren subir al monte santo con los que alaban", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 2, ¿qué obran ellos con el corazón?",
+      "explanation": "El versículo 2 dice que antes con el corazón obran iniquidades y hacen pesar la violencia de sus manos en la tierra.",
+      "bibleReference": "Salmos 58:2",
+      "answers": [
+        { "text": "Alabanza y acción de gracias", "isCorrect": false },
+        { "text": "Consejos de paz", "isCorrect": false },
+        { "text": "Iniquidades", "isCorrect": true },
+        { "text": "Temor de Dios", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 3, ¿desde cuándo se enajenaron los impíos?",
+      "explanation": "El versículo 3 dice que los impíos se enajenaron desde la matriz y se descarriaron desde el vientre, hablando mentira.",
+      "bibleReference": "Salmos 58:3",
+      "answers": [
+        { "text": "Desde que llegaron a ser ancianos", "isCorrect": false },
+        { "text": "Desde la matriz", "isCorrect": true },
+        { "text": "Desde que entraron en la ciudad", "isCorrect": false },
+        { "text": "Desde el día de su boda", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según los versículos 4 y 5, ¿con qué animales se compara a los impíos?",
+      "explanation": "Los versículos 4 y 5 dicen que tienen veneno semejante al veneno de la serpiente y que son como áspide sordo que cierra su oído.",
+      "bibleReference": "Salmos 58:4-5",
+      "answers": [
+        { "text": "Con el buey y el asno", "isCorrect": false },
+        { "text": "Con el águila y el cuervo", "isCorrect": false },
+        { "text": "Con la paloma y la tórtola", "isCorrect": false },
+        { "text": "Con la serpiente y el áspide sordo", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 5, ¿qué es lo que el áspide sordo no oye?",
+      "explanation": "El versículo 5 dice que no oye la voz de los que encantan, por más hábil que el encantador sea.",
+      "bibleReference": "Salmos 58:5",
+      "answers": [
+        { "text": "La voz de los que encantan", "isCorrect": true },
+        { "text": "El sonido de las trompetas", "isCorrect": false },
+        { "text": "El clamor de los huérfanos", "isCorrect": false },
+        { "text": "El estruendo de la tempestad", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 6, ¿qué le pide el salmista a Dios que quiebre?",
+      "explanation": "El versículo 6 pide a Dios que quiebre sus dientes en sus bocas y las muelas de los leoncillos.",
+      "bibleReference": "Salmos 58:6",
+      "answers": [
+        { "text": "Las puertas y los cerrojos de la ciudad", "isCorrect": false },
+        { "text": "Los carros y las saetas de los reyes", "isCorrect": false },
+        { "text": "Sus dientes y las muelas de los leoncillos", "isCorrect": true },
+        { "text": "La vara de los que juzgan en la congregación", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 7, ¿cómo pide el salmista que se corran los impíos?",
+      "explanation": "El versículo 7 dice: Córranse como aguas que se van de suyo.",
+      "bibleReference": "Salmos 58:7",
+      "answers": [
+        { "text": "Como el humo que sube del horno", "isCorrect": false },
+        { "text": "Como aguas que se van de suyo", "isCorrect": true },
+        { "text": "Como arena llevada por el mar", "isCorrect": false },
+        { "text": "Como ovejas sin pastor", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 8, ¿con qué dos cosas se compara el fin de los impíos?",
+      "explanation": "El versículo 8 dice: Pasen ellos como el caracol que se deslíe: como el abortivo de mujer, no vean el sol.",
+      "bibleReference": "Salmos 58:8",
+      "answers": [
+        { "text": "Con el polvo y la ceniza", "isCorrect": false },
+        { "text": "Con la flor y la hierba del campo", "isCorrect": false },
+        { "text": "Con el tiesto roto y la red rota", "isCorrect": false },
+        { "text": "Con el caracol que se deslíe y el abortivo de mujer", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 10, ¿en qué lavará sus pies el justo?",
+      "explanation": "El versículo 10 dice que el justo se alegrará cuando viere la venganza y que sus pies lavará en la sangre del impío.",
+      "bibleReference": "Salmos 58:10",
+      "answers": [
+        { "text": "En la sangre del impío", "isCorrect": true },
+        { "text": "En el río de la ciudad", "isCorrect": false },
+        { "text": "En aceite de olivas", "isCorrect": false },
+        { "text": "En agua del santuario", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dirá el hombre, según el versículo 11?",
+      "explanation": "El versículo 11 dice que entonces el hombre dirá: Ciertamente hay fruto para el justo; ciertamente hay Dios que juzga en la tierra.",
+      "bibleReference": "Salmos 58:11",
+      "answers": [
+        { "text": "Que el impío no será movido jamás de su grandeza", "isCorrect": false },
+        { "text": "Que nadie ve lo que se hace escondido en la tierra", "isCorrect": false },
+        { "text": "Que hay fruto para el justo y que hay Dios que juzga en la tierra", "isCorrect": true },
+        { "text": "Que el justo y el impío tienen al fin una misma suerte", "isCorrect": false }
+      ]
+    }
+  ]
+}

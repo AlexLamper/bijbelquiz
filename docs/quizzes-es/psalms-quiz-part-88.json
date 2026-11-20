@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 88",
+  "description": "Diez preguntas sobre Salmos 88: el clamor día y noche, el alma harta de males cerca del sepulcro y los conocidos alejados del que ora.",
+  "slug": "psalms-quiz-part-88",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cuándo dice el salmista que clama delante de Dios?",
+      "explanation": "El verso dice: Oh Jehová, Dios de mi salud, día y noche clamo delante de ti.",
+      "bibleReference": "Salmos 88:1",
+      "answers": [
+        { "text": "Solo en las fiestas", "isCorrect": false },
+        { "text": "Cada nueva luna", "isCorrect": false },
+        { "text": "Solo al anochecer", "isCorrect": false },
+        { "text": "Día y noche", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿A qué dice el salmista que está cercana su vida?",
+      "explanation": "El verso dice: Porque mi alma está harta de males, y mi vida cercana al sepulcro.",
+      "bibleReference": "Salmos 88:3",
+      "answers": [
+        { "text": "Al reposo", "isCorrect": false },
+        { "text": "Al sepulcro", "isCorrect": true },
+        { "text": "A la gloria", "isCorrect": false },
+        { "text": "A la vejez", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Con quiénes dice el salmista que es contado?",
+      "explanation": "El verso dice: Soy contado con los que descienden al hoyo, soy como hombre sin fuerza.",
+      "bibleReference": "Salmos 88:4",
+      "answers": [
+        { "text": "Con los príncipes del pueblo", "isCorrect": false },
+        { "text": "Con los que suben a Sión", "isCorrect": false },
+        { "text": "Con los que descienden al hoyo", "isCorrect": true },
+        { "text": "Con los cantores del templo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cómo se describe el salmista en medio de los muertos?",
+      "explanation": "El verso dice: Libre entre los muertos, como los matados que yacen en el sepulcro.",
+      "bibleReference": "Salmos 88:5",
+      "answers": [
+        { "text": "Libre entre los muertos", "isCorrect": true },
+        { "text": "Fuerte entre los vivos", "isCorrect": false },
+        { "text": "Rey entre los pueblos", "isCorrect": false },
+        { "text": "Siervo entre los siervos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Dónde dice el salmista que Dios lo ha puesto?",
+      "explanation": "El verso dice: Hasme puesto en el hoyo profundo, en tinieblas, en honduras.",
+      "bibleReference": "Salmos 88:6",
+      "answers": [
+        { "text": "En la casa de Jehová", "isCorrect": false },
+        { "text": "En lugar espacioso", "isCorrect": false },
+        { "text": "En los atrios del rey", "isCorrect": false },
+        { "text": "En el hoyo profundo", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué dice el salmista que Dios ha hecho con sus conocidos?",
+      "explanation": "El verso dice: Has alejado de mí mis conocidos: hasme puesto por abominación á ellos.",
+      "bibleReference": "Salmos 88:8",
+      "answers": [
+        { "text": "Los ha reunido a su mesa", "isCorrect": false },
+        { "text": "Los ha hecho sus jueces", "isCorrect": false },
+        { "text": "Los ha alejado de él", "isCorrect": true },
+        { "text": "Los ha enviado a Egipto", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dice el salmista que ha extendido a Jehová cada día?",
+      "explanation": "El verso dice que sus ojos enfermaron a causa de su aflicción y que ha extendido á él sus manos.",
+      "bibleReference": "Salmos 88:9",
+      "answers": [
+        { "text": "Sus manos", "isCorrect": true },
+        { "text": "Su arpa", "isCorrect": false },
+        { "text": "Su cuello", "isCorrect": false },
+        { "text": "Su vestido", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué pregunta el salmista acerca de los muertos?",
+      "explanation": "El verso pregunta si Dios hará milagro á los muertos y si los muertos se levantarán para alabarle.",
+      "bibleReference": "Salmos 88:10",
+      "answers": [
+        { "text": "Si volverán a sus casas", "isCorrect": false },
+        { "text": "Si se levantarán para alabarle", "isCorrect": true },
+        { "text": "Si darán testimonio de Dios", "isCorrect": false },
+        { "text": "Si guardarán sus mandamientos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuándo dice el salmista que su oración previno a Jehová?",
+      "explanation": "El verso dice: Mas yo á ti he clamado, oh Jehová; y de mañana mi oración te previno.",
+      "bibleReference": "Salmos 88:13",
+      "answers": [
+        { "text": "Al mediodía", "isCorrect": false },
+        { "text": "A la tarde", "isCorrect": false },
+        { "text": "De mañana", "isCorrect": true },
+        { "text": "A la media noche", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dice el último verso que Dios ha alejado del salmista?",
+      "explanation": "El verso dice: Has alejado de mí el amigo y el compañero; y mis conocidos se esconden en la tiniebla.",
+      "bibleReference": "Salmos 88:18",
+      "answers": [
+        { "text": "Los reyes y los príncipes", "isCorrect": false },
+        { "text": "La espada y el hambre", "isCorrect": false },
+        { "text": "El arpa y el salterio", "isCorrect": false },
+        { "text": "El amigo y el compañero", "isCorrect": true }
+      ]
+    }
+  ]
+}

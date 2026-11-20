@@ -37,16 +37,16 @@
       "bibleReference": "2 Crónicas 35:3",
       "answers": [
         {
-          "text": "Que la llevasen al campo de Megiddo delante del ejército",
-          "isCorrect": false
+          "text": "Que la pusiesen en la casa que edificó Salomón, para no cargarla más sobre los hombros",
+          "isCorrect": true
         },
         {
           "text": "Que la cubriesen con cortinas de lino fino y la guardasen",
           "isCorrect": false
         },
         {
-          "text": "Que la pusiesen en la casa que edificó Salomón, para no cargarla más sobre los hombros",
-          "isCorrect": true
+          "text": "Que la llevasen al campo de Megiddo delante del ejército",
+          "isCorrect": false
         },
         {
           "text": "Que la escondiesen en Ophel, al occidente de Gihón",
@@ -83,16 +83,16 @@
       "bibleReference": "2 Crónicas 35:8",
       "answers": [
         {
-          "text": "Hilcías, Zachârías y Jehiel, príncipes de la casa de Dios",
-          "isCorrect": true
+          "text": "Asaph, Hemán y Jeduthún, con los cantores",
+          "isCorrect": false
         },
         {
           "text": "Chônanías, Semeías y Nathanael sus hermanos",
           "isCorrect": false
         },
         {
-          "text": "Asaph, Hemán y Jeduthún, con los cantores",
-          "isCorrect": false
+          "text": "Hilcías, Zachârías y Jehiel, príncipes de la casa de Dios",
+          "isCorrect": true
         },
         {
           "text": "Saphán, Maasías y Joah, enviados del rey",
@@ -152,8 +152,8 @@
       "bibleReference": "2 Crónicas 35:18",
       "answers": [
         {
-          "text": "Desde los días de Moisés",
-          "isCorrect": false
+          "text": "Desde los días de Samuel el profeta",
+          "isCorrect": true
         },
         {
           "text": "Desde los días de Salomón",
@@ -164,8 +164,8 @@
           "isCorrect": false
         },
         {
-          "text": "Desde los días de Samuel el profeta",
-          "isCorrect": true
+          "text": "Desde los días de Moisés",
+          "isCorrect": false
         }
       ]
     },
@@ -175,8 +175,8 @@
       "bibleReference": "2 Crónicas 35:20",
       "answers": [
         {
-          "text": "A Carchêmis junto á Eufrates",
-          "isCorrect": true
+          "text": "A Samaria, en Israel",
+          "isCorrect": false
         },
         {
           "text": "A Lachîs, ciudad fuerte",
@@ -187,8 +187,8 @@
           "isCorrect": false
         },
         {
-          "text": "A Samaria, en Israel",
-          "isCorrect": false
+          "text": "A Carchêmis junto á Eufrates",
+          "isCorrect": true
         }
       ]
     },
@@ -221,16 +221,16 @@
       "bibleReference": "2 Crónicas 35:25",
       "answers": [
         {
-          "text": "Isaías",
-          "isCorrect": false
+          "text": "Jeremías",
+          "isCorrect": true
         },
         {
           "text": "Hulda",
           "isCorrect": false
         },
         {
-          "text": "Jeremías",
-          "isCorrect": true
+          "text": "Isaías",
+          "isCorrect": false
         },
         {
           "text": "Haggeo",

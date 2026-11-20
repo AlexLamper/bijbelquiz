@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 125",
+  "description": "Diez preguntas sobre Salmos 125: los que confían en Jehová como el monte de Sión, los montes alrededor de Jerusalem y la paz sobre Israel.",
+  "slug": "psalms-quiz-part-125",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Con qué compara el salmo a los que confían en Jehová?",
+      "explanation": "El verso 1 dice: Los que confían en Jehová son como el monte de Sión.",
+      "bibleReference": "Salmos 125:1",
+      "answers": [
+        { "text": "Con el monte de Sión", "isCorrect": true },
+        { "text": "Con los cedros del Líbano", "isCorrect": false },
+        { "text": "Con los ríos del desierto", "isCorrect": false },
+        { "text": "Con las aguas soberbias", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dice el verso 1 acerca de ese monte?",
+      "explanation": "El verso dice del monte de Sión: que no deslizará: estará para siempre.",
+      "bibleReference": "Salmos 125:1",
+      "answers": [
+        { "text": "Que será derribado por los impíos", "isCorrect": false },
+        { "text": "Que se moverá como las aguas", "isCorrect": false },
+        { "text": "Que no deslizará y estará para siempre", "isCorrect": true },
+        { "text": "Que será repartido por suertes", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el verso 2, ¿qué tiene Jerusalem alrededor de ella?",
+      "explanation": "El verso dice: Como Jerusalem tiene montes alrededor de ella.",
+      "bibleReference": "Salmos 125:2",
+      "answers": [
+        { "text": "Ríos", "isCorrect": false },
+        { "text": "Montes", "isCorrect": true },
+        { "text": "Muros caídos", "isCorrect": false },
+        { "text": "Huertos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Quién está alrededor de su pueblo, como los montes alrededor de Jerusalem?",
+      "explanation": "El verso 2 dice: así Jehová alrededor de su pueblo.",
+      "bibleReference": "Salmos 125:2",
+      "answers": [
+        { "text": "Sus príncipes", "isCorrect": false },
+        { "text": "Sus ejércitos", "isCorrect": false },
+        { "text": "Sus muros", "isCorrect": false },
+        { "text": "Jehová", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Desde cuándo y hasta cuándo está Jehová alrededor de su pueblo?",
+      "explanation": "El verso 2 termina diciendo: desde ahora y para siempre.",
+      "bibleReference": "Salmos 125:2",
+      "answers": [
+        { "text": "Desde la mañana hasta la tarde", "isCorrect": false },
+        { "text": "Por una generación solamente", "isCorrect": false },
+        { "text": "Desde ahora y para siempre", "isCorrect": true },
+        { "text": "Desde Sión hasta el mar", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dice el verso 3 que no reposará sobre la suerte de los justos?",
+      "explanation": "El verso dice: no reposará la vara de la impiedad sobre la suerte de los justos.",
+      "bibleReference": "Salmos 125:3",
+      "answers": [
+        { "text": "La vara de la impiedad", "isCorrect": true },
+        { "text": "La mano de los justos", "isCorrect": false },
+        { "text": "La suerte de los buenos", "isCorrect": false },
+        { "text": "El consejo de los rectos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Para qué no reposará la vara de la impiedad sobre la suerte de los justos?",
+      "explanation": "El verso 3 dice: porque no extiendan los justos sus manos a la iniquidad.",
+      "bibleReference": "Salmos 125:3",
+      "answers": [
+        { "text": "Para que los impíos sean avergonzados en Sión", "isCorrect": false },
+        { "text": "Para que la tierra dé su fruto a su tiempo", "isCorrect": false },
+        { "text": "Para que los montes rodeen a Jerusalem", "isCorrect": false },
+        { "text": "Para que los justos no extiendan sus manos a la iniquidad", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿A quiénes pide el salmo que Jehová haga bien?",
+      "explanation": "El verso 4 dice: Haz bien, oh Jehová, a los buenos, y a los que son rectos en sus corazones.",
+      "bibleReference": "Salmos 125:4",
+      "answers": [
+        { "text": "A los que rodean el monte de Sión", "isCorrect": false },
+        { "text": "A los buenos y a los rectos de corazón", "isCorrect": true },
+        { "text": "A los que llevan la vara de la impiedad", "isCorrect": false },
+        { "text": "A los que se apartan tras sus perversidades", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué hará Jehová con los que se apartan tras sus perversidades?",
+      "explanation": "El verso 5 dice que Jehová los llevará con los que obran iniquidad.",
+      "bibleReference": "Salmos 125:5",
+      "answers": [
+        { "text": "Los llevará con los que obran iniquidad", "isCorrect": true },
+        { "text": "Los pondrá alrededor de su pueblo", "isCorrect": false },
+        { "text": "Los hará como el monte de Sión", "isCorrect": false },
+        { "text": "Les dará paz sobre Israel", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Con qué deseo termina el salmo?",
+      "explanation": "El verso 5 termina diciendo: y paz sea sobre Israel.",
+      "bibleReference": "Salmos 125:5",
+      "answers": [
+        { "text": "Gloria sea a los rectos", "isCorrect": false },
+        { "text": "Caiga la vara sobre Sión", "isCorrect": false },
+        { "text": "Paz sea sobre Israel", "isCorrect": true },
+        { "text": "Bendito sea Jerusalem", "isCorrect": false }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 128",
+  "description": "Diez preguntas sobre Salmos 128: el bienaventurado que teme a Jehová, la mujer como parra, los hijos como plantas de olivas y la bendición desde Sión.",
+  "slug": "psalms-quiz-part-128",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿A quién llama bienaventurado el primer verso?",
+      "explanation": "El verso 1 dice: Bienaventurado todo aquel que teme a Jehová, que anda en sus caminos.",
+      "bibleReference": "Salmos 128:1",
+      "answers": [
+        { "text": "A todo aquel que edifica en Sión", "isCorrect": false },
+        { "text": "A todo aquel que guarda silencio", "isCorrect": false },
+        { "text": "A todo aquel que teme a Jehová", "isCorrect": true },
+        { "text": "A todo aquel que sube a Jerusalem", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el verso 1, ¿en qué anda el bienaventurado?",
+      "explanation": "El verso dice del que teme a Jehová: que anda en sus caminos.",
+      "bibleReference": "Salmos 128:1",
+      "answers": [
+        { "text": "En los caminos de Jehová", "isCorrect": true },
+        { "text": "En los montes de Sión", "isCorrect": false },
+        { "text": "En las calles de Jerusalem", "isCorrect": false },
+        { "text": "En la casa de su padre", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el verso 2, ¿qué comerá el bienaventurado?",
+      "explanation": "El verso dice: Cuando comieres el trabajo de tus manos, bienaventurado tú.",
+      "bibleReference": "Salmos 128:2",
+      "answers": [
+        { "text": "El fruto de la parra", "isCorrect": false },
+        { "text": "El pan de los olivos", "isCorrect": false },
+        { "text": "La ofrenda del altar", "isCorrect": false },
+        { "text": "El trabajo de sus manos", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué más le promete el verso 2 cuando coma el trabajo de sus manos?",
+      "explanation": "El verso dice: bienaventurado tú, y tendrás bien.",
+      "bibleReference": "Salmos 128:2",
+      "answers": [
+        { "text": "Que verá los montes", "isCorrect": false },
+        { "text": "Que tendrá bien", "isCorrect": true },
+        { "text": "Que será rey", "isCorrect": false },
+        { "text": "Que no tendrá hambre", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Con qué compara el verso 3 a tu mujer?",
+      "explanation": "El verso dice: Tu mujer será como parra que lleva fruto a los lados de tu casa.",
+      "bibleReference": "Salmos 128:3",
+      "answers": [
+        { "text": "Con una parra que lleva fruto", "isCorrect": true },
+        { "text": "Con una planta de olivas", "isCorrect": false },
+        { "text": "Con una fuente en el huerto", "isCorrect": false },
+        { "text": "Con una torre sobre el muro", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Con qué compara el verso 3 a tus hijos?",
+      "explanation": "El verso dice: tus hijos como plantas de olivas alrededor de tu mesa.",
+      "bibleReference": "Salmos 128:3",
+      "answers": [
+        { "text": "Con parras cargadas", "isCorrect": false },
+        { "text": "Con saetas del valiente", "isCorrect": false },
+        { "text": "Con plantas de olivas", "isCorrect": true },
+        { "text": "Con corderos del rebaño", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué palabra usa el verso 4 para el hombre que teme a Jehová?",
+      "explanation": "El verso dice: He aquí que así será bendito el hombre que teme a Jehová.",
+      "bibleReference": "Salmos 128:4",
+      "answers": [
+        { "text": "Fuerte", "isCorrect": false },
+        { "text": "Bendito", "isCorrect": true },
+        { "text": "Sabio", "isCorrect": false },
+        { "text": "Rico", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Desde dónde pide el verso 5 que Jehová te bendiga?",
+      "explanation": "El verso dice: Bendígate Jehová desde Sión.",
+      "bibleReference": "Salmos 128:5",
+      "answers": [
+        { "text": "Desde el mar", "isCorrect": false },
+        { "text": "Desde los montes", "isCorrect": false },
+        { "text": "Desde Judá", "isCorrect": false },
+        { "text": "Desde Sión", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué bien pide el verso 5 que veas todos los días de tu vida?",
+      "explanation": "El verso dice: y veas el bien de Jerusalem todos los días de tu vida.",
+      "bibleReference": "Salmos 128:5",
+      "answers": [
+        { "text": "El bien de Egipto", "isCorrect": false },
+        { "text": "La paz de Kedar", "isCorrect": false },
+        { "text": "El bien de Jerusalem", "isCorrect": true },
+        { "text": "La gloria de los reyes", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dos cosas pide el último verso que veas?",
+      "explanation": "El verso 6 dice: Y veas los hijos de tus hijos, y la paz sobre Israel.",
+      "bibleReference": "Salmos 128:6",
+      "answers": [
+        { "text": "Los hijos de tus hijos y la paz sobre Israel", "isCorrect": true },
+        { "text": "Los muros de Sión y el templo de Jehová", "isCorrect": false },
+        { "text": "El fruto de la parra y las olivas", "isCorrect": false },
+        { "text": "La paz de Kedar y el bien de Egipto", "isCorrect": false }
+      ]
+    }
+  ]
+}

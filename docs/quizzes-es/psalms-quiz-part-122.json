@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 122",
+  "description": "Diez preguntas sobre Salmos 122: la alegría de subir a la casa de Jehová, la ciudad bien unida y la petición por la paz de Jerusalem.",
+  "slug": "psalms-quiz-part-122",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el primer verso, ¿por qué se alegró el salmista?",
+      "explanation": "El verso 1 dice: Yo me alegré con los que me decían: A la casa de Jehová iremos.",
+      "bibleReference": "Salmos 122:1",
+      "answers": [
+        { "text": "Porque vio las sillas del juicio", "isCorrect": false },
+        { "text": "Porque halló paz en sus palacios", "isCorrect": false },
+        { "text": "Porque subieron las tribus de JAH", "isCorrect": false },
+        { "text": "Porque le decían: A la casa de Jehová iremos", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el verso 2, ¿dónde estuvieron nuestros pies?",
+      "explanation": "El verso dice: Nuestros pies estuvieron en tus puertas, oh Jerusalem.",
+      "bibleReference": "Salmos 122:2",
+      "answers": [
+        { "text": "En los montes de Judá", "isCorrect": false },
+        { "text": "En tus puertas, oh Jerusalem", "isCorrect": true },
+        { "text": "En las sillas de la casa de David", "isCorrect": false },
+        { "text": "En el antemuro de la ciudad", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cómo se ha edificado Jerusalem, según el verso 3?",
+      "explanation": "El verso dice que Jerusalem se ha edificado como una ciudad que está bien unida entre sí.",
+      "bibleReference": "Salmos 122:3",
+      "answers": [
+        { "text": "Como una ciudad que está bien unida entre sí", "isCorrect": true },
+        { "text": "Como una torre levantada sobre el monte", "isCorrect": false },
+        { "text": "Como un huerto regado junto a las aguas", "isCorrect": false },
+        { "text": "Como una tienda plantada en el desierto", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Quiénes subieron allá, según el verso 4?",
+      "explanation": "El verso dice: Y allá subieron las tribus, las tribus de JAH.",
+      "bibleReference": "Salmos 122:4",
+      "answers": [
+        { "text": "Los hijos de Aarón", "isCorrect": false },
+        { "text": "Los reyes vecinos", "isCorrect": false },
+        { "text": "Las tribus de JAH", "isCorrect": true },
+        { "text": "Los pastores de Judá", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Para qué subieron allá las tribus?",
+      "explanation": "El verso 4 dice que subieron para alabar el nombre de Jehová.",
+      "bibleReference": "Salmos 122:4",
+      "answers": [
+        { "text": "Para edificar los palacios", "isCorrect": false },
+        { "text": "Para alabar el nombre de Jehová", "isCorrect": true },
+        { "text": "Para contar los muros de la ciudad", "isCorrect": false },
+        { "text": "Para pedir paz a los reyes", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dice el verso 5 que está allá?",
+      "explanation": "El verso dice: Porque allá están las sillas del juicio, las sillas de la casa de David.",
+      "bibleReference": "Salmos 122:5",
+      "answers": [
+        { "text": "Los altares y las columnas del templo", "isCorrect": false },
+        { "text": "Las tiendas de las tribus de Israel", "isCorrect": false },
+        { "text": "Los graneros y los tesoros del rey", "isCorrect": false },
+        { "text": "Las sillas del juicio, de la casa de David", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué manda pedir el verso 6?",
+      "explanation": "El verso dice: Pedid la paz de Jerusalem.",
+      "bibleReference": "Salmos 122:6",
+      "answers": [
+        { "text": "La caída de los soberbios", "isCorrect": false },
+        { "text": "El socorro de los montes", "isCorrect": false },
+        { "text": "La paz de Jerusalem", "isCorrect": true },
+        { "text": "La lluvia sobre la tierra", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué se dice en el verso 6 acerca de los que aman a Jerusalem?",
+      "explanation": "El verso dice: sean prosperados los que te aman.",
+      "bibleReference": "Salmos 122:6",
+      "answers": [
+        { "text": "Que sean prosperados", "isCorrect": true },
+        { "text": "Que sean juzgados", "isCorrect": false },
+        { "text": "Que suban al monte", "isCorrect": false },
+        { "text": "Que callen delante de él", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el verso 7, ¿dónde pide el salmo que haya paz y descanso?",
+      "explanation": "El verso dice: Haya paz en tu antemuro, y descanso en tus palacios.",
+      "bibleReference": "Salmos 122:7",
+      "answers": [
+        { "text": "En sus puertas y en sus caminos", "isCorrect": false },
+        { "text": "En sus montes y en sus valles", "isCorrect": false },
+        { "text": "En sus tiendas y en sus campos", "isCorrect": false },
+        { "text": "En su antemuro y en sus palacios", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Por qué causa dice el salmista que buscará bien para Jerusalem?",
+      "explanation": "El verso 9 dice: A causa de la casa de Jehová nuestro Dios, buscaré bien para ti.",
+      "bibleReference": "Salmos 122:9",
+      "answers": [
+        { "text": "A causa de las sillas de la casa de David", "isCorrect": false },
+        { "text": "A causa de la casa de Jehová nuestro Dios", "isCorrect": true },
+        { "text": "A causa de los muros de la ciudad", "isCorrect": false },
+        { "text": "A causa de los reyes de las naciones", "isCorrect": false }
+      ]
+    }
+  ]
+}

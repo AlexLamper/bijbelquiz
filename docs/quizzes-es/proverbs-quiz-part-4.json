@@ -1,0 +1,242 @@
+{
+  "title": "Proverbios Quiz bíblico - Capítulo 4",
+  "description": "Diez preguntas sobre Proverbios 4: la doctrina del padre, la senda de los justos como la luz de la aurora y el mandato de guardar el corazón.",
+  "slug": "proverbs-quiz-part-4",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué invita el texto a oír a los hijos al comienzo del capítulo?",
+      "explanation": "Proverbios 4:1 dice: Oid, hijos, la doctrina de un padre, y estad atentos para que conozcáis cordura.",
+      "bibleReference": "Proverbios 4:1",
+      "answers": [
+        {
+          "text": "El cantar de los sabios",
+          "isCorrect": false
+        },
+        {
+          "text": "La doctrina de un padre",
+          "isCorrect": true
+        },
+        {
+          "text": "Las razones de los ancianos",
+          "isCorrect": false
+        },
+        {
+          "text": "El consejo de los príncipes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿cómo era el que habla cuando era hijo de su padre?",
+      "explanation": "Proverbios 4:3 dice: Porque yo fuí hijo de mi padre, delicado y único delante de mi madre.",
+      "bibleReference": "Proverbios 4:3",
+      "answers": [
+        {
+          "text": "El menor de muchos hermanos",
+          "isCorrect": false
+        },
+        {
+          "text": "Fuerte y valiente entre los jóvenes",
+          "isCorrect": false
+        },
+        {
+          "text": "Un siervo en casa de su padre",
+          "isCorrect": false
+        },
+        {
+          "text": "Delicado y único delante de su madre",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué dará la sabiduría a la cabeza del que la abraza?",
+      "explanation": "Proverbios 4:8-9 dice que ella dará adorno de gracia á tu cabeza y te entregará corona de hermosura.",
+      "bibleReference": "Proverbios 4:8-9",
+      "answers": [
+        {
+          "text": "Adorno de gracia y corona de hermosura",
+          "isCorrect": true
+        },
+        {
+          "text": "Un yelmo de plata escogida",
+          "isCorrect": false
+        },
+        {
+          "text": "Una guirnalda de oro fino",
+          "isCorrect": false
+        },
+        {
+          "text": "Una diadema de piedras preciosas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué promete el texto al que anda por el camino de la sabiduría?",
+      "explanation": "Proverbios 4:12 dice: Cuando anduvieres no se estrecharán tus pasos; y si corrieres, no tropezarás.",
+      "bibleReference": "Proverbios 4:12",
+      "answers": [
+        {
+          "text": "Que sus enemigos se inclinarán delante de él",
+          "isCorrect": false
+        },
+        {
+          "text": "Que sus años serán como los del árbol",
+          "isCorrect": false
+        },
+        {
+          "text": "Que sus pasos no se estrecharán y no tropezará",
+          "isCorrect": true
+        },
+        {
+          "text": "Que hallará riquezas en sus veredas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué les quita el sueño a los impíos?",
+      "explanation": "Proverbios 4:16 dice que no duermen si no hicieren mal, y que pierden su sueño si no han hecho caer a alguno.",
+      "bibleReference": "Proverbios 4:16",
+      "answers": [
+        {
+          "text": "El temor del castigo que les viene",
+          "isCorrect": false
+        },
+        {
+          "text": "No haber hecho mal ni haber hecho caer a nadie",
+          "isCorrect": true
+        },
+        {
+          "text": "La pobreza que les ha venido de repente",
+          "isCorrect": false
+        },
+        {
+          "text": "Las rencillas con sus propios hermanos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué comen y beben los impíos, según el texto?",
+      "explanation": "Proverbios 4:17 dice: Porque comen pan de maldad, y beben vino de robos.",
+      "bibleReference": "Proverbios 4:17",
+      "answers": [
+        {
+          "text": "Pan de lágrimas y vino de ajenjo",
+          "isCorrect": false
+        },
+        {
+          "text": "Pan escondido y agua de la cisterna",
+          "isCorrect": false
+        },
+        {
+          "text": "Pan de maldad y vino de robos",
+          "isCorrect": true
+        },
+        {
+          "text": "Pan de los perezosos y vino templado",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué compara el texto la senda de los justos?",
+      "explanation": "Proverbios 4:18 dice que la senda de los justos es como la luz de la aurora, que va en aumento hasta que el día es perfecto.",
+      "bibleReference": "Proverbios 4:18",
+      "answers": [
+        {
+          "text": "Con la luz de la aurora que va en aumento",
+          "isCorrect": true
+        },
+        {
+          "text": "Con un río que corre hacia el mar",
+          "isCorrect": false
+        },
+        {
+          "text": "Con la sombra de un árbol grande",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el rocío de la mañana",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿con qué se compara el camino de los impíos?",
+      "explanation": "Proverbios 4:19 dice: El camino de los impíos es como la oscuridad: no saben en qué tropiezan.",
+      "bibleReference": "Proverbios 4:19",
+      "answers": [
+        {
+          "text": "Con un lazo escondido en la vereda",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el humo que pronto se deshace",
+          "isCorrect": false
+        },
+        {
+          "text": "Con la arena movediza del desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "Con la oscuridad",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué manda el texto guardar sobre toda cosa guardada?",
+      "explanation": "Proverbios 4:23 dice: Sobre toda cosa guardada guarda tu corazón; porque de él mana la vida.",
+      "bibleReference": "Proverbios 4:23",
+      "answers": [
+        {
+          "text": "Tu boca",
+          "isCorrect": false
+        },
+        {
+          "text": "Tu corazón",
+          "isCorrect": true
+        },
+        {
+          "text": "Tus ojos",
+          "isCorrect": false
+        },
+        {
+          "text": "Tus pasos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el último versículo, ¿de qué debes apartar tu pie?",
+      "explanation": "Proverbios 4:27 dice: No te apartes á diestra, ni á siniestra: aparta tu pie del mal.",
+      "bibleReference": "Proverbios 4:27",
+      "answers": [
+        {
+          "text": "De la casa de los impíos",
+          "isCorrect": false
+        },
+        {
+          "text": "De la vereda derecha",
+          "isCorrect": false
+        },
+        {
+          "text": "Del mal",
+          "isCorrect": true
+        },
+        {
+          "text": "De la puerta de la extraña",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 116",
+  "description": "Diez preguntas sobre Salmos 116: la voz oída por Jehová, los dolores de la muerte, el alma que vuelve a su reposo y los votos pagados delante de todo el pueblo.",
+  "slug": "psalms-quiz-part-116",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el versículo 1, ¿por qué dice que ama a Jehová?",
+      "explanation": "El versículo 1 dice: Amo á Jehová, pues ha oído mi voz y mis súplicas.",
+      "bibleReference": "Salmos 116:1",
+      "answers": [
+        { "text": "Porque le ha dado la copa de la salud", "isCorrect": false },
+        { "text": "Porque le ha hecho andar entre los vivientes", "isCorrect": false },
+        { "text": "Porque le ha dado votos que pagar", "isCorrect": false },
+        { "text": "Porque ha oído su voz y sus súplicas", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 3, ¿qué le rodearon?",
+      "explanation": "El versículo 3 dice: Rodeáronme los dolores de la muerte, me encontraron las angustias del sepulcro.",
+      "bibleReference": "Salmos 116:3",
+      "answers": [
+        { "text": "Los hombres mentirosos", "isCorrect": false },
+        { "text": "Sus prisiones", "isCorrect": false },
+        { "text": "Los dolores de la muerte", "isCorrect": true },
+        { "text": "Las lágrimas de sus ojos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 4, ¿qué dijo cuando invocó el nombre de Jehová?",
+      "explanation": "El versículo 4 dice: Entonces invoqué el nombre de Jehová, diciendo: Libra ahora, oh Jehová, mi alma.",
+      "bibleReference": "Salmos 116:4",
+      "answers": [
+        { "text": "Vuelve, oh alma mía, a tu reposo", "isCorrect": false },
+        { "text": "Libra ahora, oh Jehová, mi alma", "isCorrect": true },
+        { "text": "Rompe ahora, oh Jehová, mis prisiones", "isCorrect": false },
+        { "text": "Inclina, oh Jehová, a mí tu oído", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 6, ¿a quiénes guarda Jehová?",
+      "explanation": "El versículo 6 dice: Jehová guarda á los sinceros: estaba yo postrado, y salvóme.",
+      "bibleReference": "Salmos 116:6",
+      "answers": [
+        { "text": "A los sinceros", "isCorrect": true },
+        { "text": "A los mentirosos", "isCorrect": false },
+        { "text": "A los vivientes", "isCorrect": false },
+        { "text": "A sus siervas", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 7, ¿a qué dice a su alma que vuelva?",
+      "explanation": "El versículo 7 dice: Vuelve, oh alma mía, á tu reposo; porque Jehová te ha hecho bien.",
+      "bibleReference": "Salmos 116:7",
+      "answers": [
+        { "text": "A los atrios", "isCorrect": false },
+        { "text": "A sus súplicas", "isCorrect": false },
+        { "text": "A sus votos", "isCorrect": false },
+        { "text": "A su reposo", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 8, ¿de qué libró Jehová sus ojos?",
+      "explanation": "El versículo 8 dice: Pues tú has librado mi alma de la muerte, mis ojos de lágrimas, y mis pies de desbarrar.",
+      "bibleReference": "Salmos 116:8",
+      "answers": [
+        { "text": "De tinieblas", "isCorrect": false },
+        { "text": "De lágrimas", "isCorrect": true },
+        { "text": "De angustias", "isCorrect": false },
+        { "text": "De dolores", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 9, ¿dónde andará delante de Jehová?",
+      "explanation": "El versículo 9 dice: Andaré delante de Jehová en la tierra de los vivientes.",
+      "bibleReference": "Salmos 116:9",
+      "answers": [
+        { "text": "En medio de Jerusalem", "isCorrect": false },
+        { "text": "En los atrios de su casa", "isCorrect": false },
+        { "text": "En la tierra de los vivientes", "isCorrect": true },
+        { "text": "Delante de todo su pueblo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 11, ¿qué dijo en su apresuramiento?",
+      "explanation": "El versículo 11 dice: Y dije en mi apresuramiento: Todo hombre es mentiroso.",
+      "bibleReference": "Salmos 116:11",
+      "answers": [
+        { "text": "Todo hombre es mentiroso", "isCorrect": true },
+        { "text": "Todo hombre es menesteroso", "isCorrect": false },
+        { "text": "Todo hombre es sincero", "isCorrect": false },
+        { "text": "Todo hombre es siervo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 13, ¿qué tomará mientras invoca el nombre de Jehová?",
+      "explanation": "El versículo 13 dice: Tomaré la copa de la salud, é invocaré el nombre de Jehová.",
+      "bibleReference": "Salmos 116:13",
+      "answers": [
+        { "text": "El sacrificio de alabanza", "isCorrect": false },
+        { "text": "La copa de la salud", "isCorrect": true },
+        { "text": "Los votos de su boca", "isCorrect": false },
+        { "text": "La heredad de su sierva", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 19, ¿dónde pagará sus votos a Jehová?",
+      "explanation": "El versículo 19 dice: En los atrios de la casa de Jehová, en medio de ti, oh Jerusalem.",
+      "bibleReference": "Salmos 116:18-19",
+      "answers": [
+        { "text": "En la tierra de los vivientes", "isCorrect": false },
+        { "text": "Delante de los sinceros", "isCorrect": false },
+        { "text": "En los atrios de la casa de Jehová", "isCorrect": true },
+        { "text": "En medio de sus prisiones", "isCorrect": false }
+      ]
+    }
+  ]
+}

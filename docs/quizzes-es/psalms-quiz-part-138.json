@@ -1,0 +1,242 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 138",
+  "description": "Diez preguntas sobre Salmos 138: la alabanza con todo el corazón, la respuesta recibida el día del clamor y el Dios que atiende al humilde.",
+  "slug": "psalms-quiz-part-138",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿A quién atribuye el encabezado este salmo?",
+      "explanation": "El encabezado dice: \"Salmo de David\".",
+      "bibleReference": "Salmos 138:1",
+      "answers": [
+        {
+          "text": "A Aarón",
+          "isCorrect": false
+        },
+        {
+          "text": "A David",
+          "isCorrect": true
+        },
+        {
+          "text": "Al Músico principal",
+          "isCorrect": false
+        },
+        {
+          "text": "A los hijos de Coré",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué dice que alabará a Jehová?",
+      "explanation": "El versículo 1 dice: \"Alabarte he con todo mi corazón\".",
+      "bibleReference": "Salmos 138:1",
+      "answers": [
+        {
+          "text": "Con arpa y salterio",
+          "isCorrect": false
+        },
+        {
+          "text": "Con ofrendas de oro",
+          "isCorrect": false
+        },
+        {
+          "text": "Con ayuno y silencio",
+          "isCorrect": false
+        },
+        {
+          "text": "Con todo su corazón",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Hacia dónde dice el versículo 2 que se encorvará?",
+      "explanation": "Dice: \"Encorvaréme al templo de tu santuario\".",
+      "bibleReference": "Salmos 138:2",
+      "answers": [
+        {
+          "text": "Al templo de su santuario",
+          "isCorrect": true
+        },
+        {
+          "text": "A los montes de Sión",
+          "isCorrect": false
+        },
+        {
+          "text": "Al estrado de sus pies",
+          "isCorrect": false
+        },
+        {
+          "text": "A los atrios de los reyes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué alabará su nombre, según el versículo 2?",
+      "explanation": "El versículo dice que alabará su nombre por su misericordia y su verdad.",
+      "bibleReference": "Salmos 138:2",
+      "answers": [
+        {
+          "text": "Por su ira contra los impíos",
+          "isCorrect": false
+        },
+        {
+          "text": "Por su silencio ante los dioses",
+          "isCorrect": false
+        },
+        {
+          "text": "Por su misericordia y su verdad",
+          "isCorrect": true
+        },
+        {
+          "text": "Por sus riquezas y su gloria",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el versículo 3 que pasó el día que clamó?",
+      "explanation": "Dice que Jehová le respondió y lo esforzó con fortaleza en su alma.",
+      "bibleReference": "Salmos 138:3",
+      "answers": [
+        {
+          "text": "Sus enemigos lo rodearon con lazos",
+          "isCorrect": false
+        },
+        {
+          "text": "Jehová le respondió y le dio fortaleza",
+          "isCorrect": true
+        },
+        {
+          "text": "Los reyes de la tierra lo oyeron",
+          "isCorrect": false
+        },
+        {
+          "text": "Su alma quedó en silencio",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quiénes lo confesarán cuando hayan oído los dichos de su boca?",
+      "explanation": "El versículo 4 dice que lo confesarán todos los reyes de la tierra.",
+      "bibleReference": "Salmos 138:4",
+      "answers": [
+        {
+          "text": "Todos los reyes de la tierra",
+          "isCorrect": true
+        },
+        {
+          "text": "Todos los siervos del templo",
+          "isCorrect": false
+        },
+        {
+          "text": "Los hijos de Edom",
+          "isCorrect": false
+        },
+        {
+          "text": "Los centinelas de la mañana",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De qué cantarán ellos, según el versículo 5?",
+      "explanation": "El versículo dice que cantarán de los caminos de Jehová.",
+      "bibleReference": "Salmos 138:5",
+      "answers": [
+        {
+          "text": "De las obras de sus manos",
+          "isCorrect": false
+        },
+        {
+          "text": "De la fuerza de sus ejércitos",
+          "isCorrect": false
+        },
+        {
+          "text": "De los himnos de Sión",
+          "isCorrect": false
+        },
+        {
+          "text": "De los caminos de Jehová",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿A quién atiende el alto Jehová, y a quién mira de lejos?",
+      "explanation": "El versículo 6 dice que atiende al humilde y al altivo lo mira de lejos.",
+      "bibleReference": "Salmos 138:6",
+      "answers": [
+        {
+          "text": "Atiende al rey y mira de lejos al siervo",
+          "isCorrect": false
+        },
+        {
+          "text": "Atiende al sabio y mira de lejos al necio",
+          "isCorrect": false
+        },
+        {
+          "text": "Atiende al humilde y mira de lejos al altivo",
+          "isCorrect": true
+        },
+        {
+          "text": "Atiende al fuerte y mira de lejos al débil",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice que hará Jehová si anda en medio de la angustia?",
+      "explanation": "El versículo 7 dice: \"tú me vivificarás\", y que su diestra lo salvará.",
+      "bibleReference": "Salmos 138:7",
+      "answers": [
+        {
+          "text": "Lo vivificará",
+          "isCorrect": true
+        },
+        {
+          "text": "Lo esconderá en el santuario",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo llevará a tierra de extraños",
+          "isCorrect": false
+        },
+        {
+          "text": "Lo dejará en manos de sus enemigos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el versículo 8 acerca de la obra de sus manos?",
+      "explanation": "El versículo termina: \"no dejarás la obra de tus manos\".",
+      "bibleReference": "Salmos 138:8",
+      "answers": [
+        {
+          "text": "Que la juzgará con fuego",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no la dejará",
+          "isCorrect": true
+        },
+        {
+          "text": "Que la entregará a los impíos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que la olvidará para siempre",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

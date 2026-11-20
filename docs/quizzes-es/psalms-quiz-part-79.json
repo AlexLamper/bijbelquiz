@@ -1,0 +1,242 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 79",
+  "description": "Diez preguntas sobre Salmos 79: Jerusalem puesta en montones, el templo contaminado, el gemido de los presos y el pueblo que alaba para siempre.",
+  "slug": "psalms-quiz-part-79",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el primer verso, ¿qué hicieron las gentes con Jerusalem?",
+      "explanation": "El texto dice: el templo de tu santidad han contaminado; pusieron á Jerusalem en montones.",
+      "bibleReference": "Salmos 79:1",
+      "answers": [
+        {
+          "text": "La rodearon con un muro",
+          "isCorrect": false
+        },
+        {
+          "text": "La dejaron sin tocarla",
+          "isCorrect": false
+        },
+        {
+          "text": "La pusieron en montones",
+          "isCorrect": true
+        },
+        {
+          "text": "La llenaron de presentes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el salmo, ¿a quiénes dieron por comida los cuerpos de los siervos de Dios?",
+      "explanation": "El texto dice: Dieron los cuerpos de tus siervos por comida á las aves de los cielos.",
+      "bibleReference": "Salmos 79:2",
+      "answers": [
+        {
+          "text": "A los peces de la mar",
+          "isCorrect": false
+        },
+        {
+          "text": "A las aves de los cielos",
+          "isCorrect": true
+        },
+        {
+          "text": "A los perros de la ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "A las moscas del campo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el salmo, ¿qué faltó después de que derramaron su sangre como agua?",
+      "explanation": "El texto dice: Derramaron su sangre como agua en los alrededores de Jerusalem; y no hubo quien los enterrase.",
+      "bibleReference": "Salmos 79:3",
+      "answers": [
+        {
+          "text": "Quien cantase por ellos",
+          "isCorrect": false
+        },
+        {
+          "text": "Quien contase su número",
+          "isCorrect": false
+        },
+        {
+          "text": "Quien vengase su muerte",
+          "isCorrect": false
+        },
+        {
+          "text": "Quien los enterrase",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el salmo, ¿cómo los tratan los que están a su alrededor?",
+      "explanation": "El texto dice: Somos afrentados de nuestros vecinos, escarnecidos y burlados de los que están en nuestros alrededores.",
+      "bibleReference": "Salmos 79:4",
+      "answers": [
+        {
+          "text": "Los afrentan, escarnecen y burlan",
+          "isCorrect": true
+        },
+        {
+          "text": "Los reciben con dones y presentes",
+          "isCorrect": false
+        },
+        {
+          "text": "Los ayudan a reedificar el templo",
+          "isCorrect": false
+        },
+        {
+          "text": "Los dejan vivir en paz y silencio",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Sobre quiénes pide el salmo que Dios derrame su ira?",
+      "explanation": "El texto dice: Derrama tu ira sobre las gentes que no te conocen, y sobre los reinos que no invocan tu nombre.",
+      "bibleReference": "Salmos 79:6",
+      "answers": [
+        {
+          "text": "Sobre los príncipes de Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre los reinos que invocan su nombre",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre las gentes que no le conocen",
+          "isCorrect": true
+        },
+        {
+          "text": "Sobre los reyes que le traen presentes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pide el salmo que Dios no recuerde contra ellos?",
+      "explanation": "El texto dice: No recuerdes contra nosotros las iniquidades antiguas.",
+      "bibleReference": "Salmos 79:8",
+      "answers": [
+        {
+          "text": "Las iniquidades antiguas",
+          "isCorrect": true
+        },
+        {
+          "text": "Las palabras de sus reyes",
+          "isCorrect": false
+        },
+        {
+          "text": "Los votos no cumplidos",
+          "isCorrect": false
+        },
+        {
+          "text": "Las quejas del desierto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el salmo, ¿qué dirán las gentes?",
+      "explanation": "El texto dice: Porque dirán las gentes: ¿Dónde está su Dios?",
+      "bibleReference": "Salmos 79:10",
+      "answers": [
+        {
+          "text": "¿Quién los librará de nuestra mano?",
+          "isCorrect": false
+        },
+        {
+          "text": "¿Dónde está su Dios?",
+          "isCorrect": true
+        },
+        {
+          "text": "¿Hasta cuándo callará Jehová?",
+          "isCorrect": false
+        },
+        {
+          "text": "¿Quién reedificará su templo?",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pide el salmo que entre ante el acatamiento de Dios?",
+      "explanation": "El texto dice: Entre ante tu acatamiento el gemido de los presos.",
+      "bibleReference": "Salmos 79:11",
+      "answers": [
+        {
+          "text": "El canto de los sacerdotes",
+          "isCorrect": false
+        },
+        {
+          "text": "El clamor de los reyes",
+          "isCorrect": false
+        },
+        {
+          "text": "La ofrenda del pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "El gemido de los presos",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el salmo, ¿cuántos tantos de su infamia pide que Dios torne a sus vecinos?",
+      "explanation": "El texto dice: Y torna á nuestros vecinos en su seno siete tantos de su infamia.",
+      "bibleReference": "Salmos 79:12",
+      "answers": [
+        {
+          "text": "Dos tantos",
+          "isCorrect": false
+        },
+        {
+          "text": "Tres tantos",
+          "isCorrect": false
+        },
+        {
+          "text": "Siete tantos",
+          "isCorrect": true
+        },
+        {
+          "text": "Diez tantos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "En el último verso, ¿cómo se llama a sí mismo el que habla junto con su pueblo?",
+      "explanation": "El texto dice: Y nosotros, pueblo tuyo, y ovejas de tu dehesa, te alabaremos para siempre.",
+      "bibleReference": "Salmos 79:13",
+      "answers": [
+        {
+          "text": "Siervos y profetas suyos",
+          "isCorrect": false
+        },
+        {
+          "text": "Pueblo suyo y ovejas de su dehesa",
+          "isCorrect": true
+        },
+        {
+          "text": "Presos y sentenciados a muerte",
+          "isCorrect": false
+        },
+        {
+          "text": "Hijos de Jacob y de José",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

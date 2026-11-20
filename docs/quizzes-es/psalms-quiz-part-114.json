@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 114",
+  "description": "Diez preguntas sobre Salmos 114: la salida de Israel de Egipto, la mar que huye, el Jordán que vuelve atrás y los montes que saltan como carneros.",
+  "slug": "psalms-quiz-part-114",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el versículo 1, ¿de dónde salió Israel?",
+      "explanation": "El versículo 1 dice: Cuando salió Israel de Egipto, la casa de Jacob del pueblo bárbaro.",
+      "bibleReference": "Salmos 114:1",
+      "answers": [
+        { "text": "Del desierto", "isCorrect": false },
+        { "text": "De Canaán", "isCorrect": false },
+        { "text": "De Egipto", "isCorrect": true },
+        { "text": "Del Jordán", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 2, ¿qué fue Judá?",
+      "explanation": "El versículo 2 dice: Judá fué su consagrada heredad, Israel su señorío.",
+      "bibleReference": "Salmos 114:2",
+      "answers": [
+        { "text": "Su consagrada heredad", "isCorrect": true },
+        { "text": "Su pueblo bárbaro", "isCorrect": false },
+        { "text": "Su fuente de aguas", "isCorrect": false },
+        { "text": "Su estanque", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 2, ¿qué fue Israel?",
+      "explanation": "El versículo 2 dice que Israel fue su señorío.",
+      "bibleReference": "Salmos 114:2",
+      "answers": [
+        { "text": "Su consagrada heredad", "isCorrect": false },
+        { "text": "Su casa de Jacob", "isCorrect": false },
+        { "text": "Su roca", "isCorrect": false },
+        { "text": "Su señorío", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 3, ¿qué hizo la mar cuando vio?",
+      "explanation": "El versículo 3 dice: La mar vió, y huyó; el Jordán se volvió atrás.",
+      "bibleReference": "Salmos 114:3",
+      "answers": [
+        { "text": "Se secó", "isCorrect": false },
+        { "text": "Huyó", "isCorrect": true },
+        { "text": "Saltó", "isCorrect": false },
+        { "text": "Tembló", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 3, ¿qué hizo el Jordán?",
+      "explanation": "El versículo 3 dice que el Jordán se volvió atrás.",
+      "bibleReference": "Salmos 114:3",
+      "answers": [
+        { "text": "Se llenó de aguas", "isCorrect": false },
+        { "text": "Se abrió en dos", "isCorrect": false },
+        { "text": "Se volvió atrás", "isCorrect": true },
+        { "text": "Se volvió en roca", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 4, ¿cómo saltaron los montes?",
+      "explanation": "El versículo 4 dice: Los montes saltaron como carneros: los collados como corderitos.",
+      "bibleReference": "Salmos 114:4",
+      "answers": [
+        { "text": "Como corderitos", "isCorrect": false },
+        { "text": "Como ondas", "isCorrect": false },
+        { "text": "Como langostas", "isCorrect": false },
+        { "text": "Como carneros", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 4, ¿cómo saltaron los collados?",
+      "explanation": "El versículo 4 dice que los collados saltaron como corderitos.",
+      "bibleReference": "Salmos 114:4",
+      "answers": [
+        { "text": "Como corderitos", "isCorrect": true },
+        { "text": "Como carneros", "isCorrect": false },
+        { "text": "Como rebaños", "isCorrect": false },
+        { "text": "Como aguas", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 5, ¿a quién pregunta el salmo por qué huyó?",
+      "explanation": "El versículo 5 pregunta: ¿Qué tuviste, oh mar, que huiste? ¿y tú, oh Jordán, que te volviste atrás?",
+      "bibleReference": "Salmos 114:5",
+      "answers": [
+        { "text": "A los montes", "isCorrect": false },
+        { "text": "Al mar", "isCorrect": true },
+        { "text": "A los collados", "isCorrect": false },
+        { "text": "A la tierra", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 7, ¿qué sucede a la presencia del Dios de Jacob?",
+      "explanation": "El versículo 7 dice que á la presencia del Señor tiembla la tierra, á la presencia del Dios de Jacob.",
+      "bibleReference": "Salmos 114:7",
+      "answers": [
+        { "text": "Los collados se vuelven atrás", "isCorrect": false },
+        { "text": "El mar se llena de aguas", "isCorrect": false },
+        { "text": "Los montes se consagran", "isCorrect": false },
+        { "text": "La tierra tiembla", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 8, ¿en qué tornó la peña?",
+      "explanation": "El versículo 8 dice que tornó la peña en estanque de aguas, y en fuente de aguas la roca.",
+      "bibleReference": "Salmos 114:8",
+      "answers": [
+        { "text": "En estanque de aguas", "isCorrect": true },
+        { "text": "En tierra seca", "isCorrect": false },
+        { "text": "En camino derecho", "isCorrect": false },
+        { "text": "En monte alto", "isCorrect": false }
+      ]
+    }
+  ]
+}

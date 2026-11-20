@@ -13,10 +13,10 @@
       "explanation": "Fue á la vuelta del año, en el tiempo que suelen los reyes salir á la guerra, cuando Joab sacó las fuerzas del ejército.",
       "bibleReference": "1 Crónicas 20:1",
       "answers": [
-        { "text": "A la vuelta del año", "isCorrect": true },
+        { "text": "En tiempo de nieve", "isCorrect": false },
         { "text": "En el mes primero", "isCorrect": false },
         { "text": "Al tercer día", "isCorrect": false },
-        { "text": "En tiempo de nieve", "isCorrect": false }
+        { "text": "A la vuelta del año", "isCorrect": true }
       ]
     },
     {
@@ -24,8 +24,8 @@
       "explanation": "Joab vino y cercó á Rabba, y la batió y la destruyó.",
       "bibleReference": "1 Crónicas 20:1",
       "answers": [
-        { "text": "Gezer", "isCorrect": false },
         { "text": "Rabba", "isCorrect": true },
+        { "text": "Gezer", "isCorrect": false },
         { "text": "Gath", "isCorrect": false },
         { "text": "Medeba", "isCorrect": false }
       ]
@@ -47,9 +47,9 @@
       "bibleReference": "1 Crónicas 20:2",
       "answers": [
         { "text": "Seiscientos siclos de oro", "isCorrect": false },
-        { "text": "Mil talentos de plata", "isCorrect": false },
+        { "text": "Un talento de oro", "isCorrect": true },
         { "text": "Cien talentos de oro", "isCorrect": false },
-        { "text": "Un talento de oro", "isCorrect": true }
+        { "text": "Mil talentos de plata", "isCorrect": false }
       ]
     },
     {
@@ -69,9 +69,9 @@
       "bibleReference": "1 Crónicas 20:3",
       "answers": [
         { "text": "Con espadas y lanzas de bronce", "isCorrect": false },
-        { "text": "Con sierras, trillos de hierro y segures", "isCorrect": true },
+        { "text": "Con hondas y saetas de arco", "isCorrect": false },
         { "text": "Con carros y caballos de guerra", "isCorrect": false },
-        { "text": "Con hondas y saetas de arco", "isCorrect": false }
+        { "text": "Con sierras, trillos de hierro y segures", "isCorrect": true }
       ]
     },
     {
@@ -80,8 +80,8 @@
       "bibleReference": "1 Crónicas 20:4",
       "answers": [
         { "text": "Elhanán hijo de Jair", "isCorrect": false },
-        { "text": "Jonathán hijo de Sima", "isCorrect": false },
         { "text": "Sibbecai Husathita", "isCorrect": true },
+        { "text": "Jonathán hijo de Sima", "isCorrect": false },
         { "text": "Abisai hijo de Sarvia", "isCorrect": false }
       ]
     },
@@ -92,8 +92,8 @@
       "answers": [
         { "text": "A Sippai, del linaje de los gigantes", "isCorrect": false },
         { "text": "A Sophach, general de Adarezer", "isCorrect": false },
-        { "text": "A Rapha, el gigante de Gath", "isCorrect": false },
-        { "text": "A Lahmi, hermano de Goliath Getheo", "isCorrect": true }
+        { "text": "A Lahmi, hermano de Goliath Getheo", "isCorrect": true },
+        { "text": "A Rapha, el gigante de Gath", "isCorrect": false }
       ]
     },
     {

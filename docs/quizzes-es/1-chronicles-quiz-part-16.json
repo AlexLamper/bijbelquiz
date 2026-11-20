@@ -25,8 +25,8 @@
       "bibleReference": "1 Crónicas 16:5",
       "answers": [
         { "text": "Hemán", "isCorrect": false },
-        { "text": "Asaph", "isCorrect": true },
         { "text": "Jeduthún", "isCorrect": false },
+        { "text": "Asaph", "isCorrect": true },
         { "text": "Zachârías", "isCorrect": false }
       ]
     },
@@ -36,8 +36,8 @@
       "bibleReference": "1 Crónicas 16:6",
       "answers": [
         { "text": "Asaph y Zachârías", "isCorrect": false },
-        { "text": "Sadoc y Abiathar", "isCorrect": false },
         { "text": "Benaías y Jahaziel", "isCorrect": true },
+        { "text": "Sadoc y Abiathar", "isCorrect": false },
         { "text": "Hemán y Jeduthún", "isCorrect": false }
       ]
     },
@@ -57,9 +57,9 @@
       "explanation": "El cántico habla del pacto que concertó con Abraham y de su juramento á Isaac.",
       "bibleReference": "1 Crónicas 16:16",
       "answers": [
-        { "text": "Con Abraham, con juramento á Isaac", "isCorrect": true },
-        { "text": "Con Noé, con juramento á Sem", "isCorrect": false },
         { "text": "Con Moisés, con juramento á Aarón", "isCorrect": false },
+        { "text": "Con Noé, con juramento á Sem", "isCorrect": false },
+        { "text": "Con Abraham, con juramento á Isaac", "isCorrect": true },
         { "text": "Con David, con juramento á Salomón", "isCorrect": false }
       ]
     },
@@ -68,8 +68,8 @@
       "explanation": "El cántico dice: A ti daré la tierra de Canaán, suerte de vuestra herencia.",
       "bibleReference": "1 Crónicas 16:18",
       "answers": [
-        { "text": "La tierra de Egipto", "isCorrect": false },
         { "text": "La tierra de Canaán", "isCorrect": true },
+        { "text": "La tierra de Egipto", "isCorrect": false },
         { "text": "La tierra de Hamath", "isCorrect": false },
         { "text": "La tierra de Moab", "isCorrect": false }
       ]
@@ -81,8 +81,8 @@
       "answers": [
         { "text": "No olvidéis mi alianza, ni mis juicios", "isCorrect": false },
         { "text": "No sirváis á los dioses de los pueblos", "isCorrect": false },
-        { "text": "No toquéis á mis ungidos, ni hagáis mal á mis profetas", "isCorrect": true },
-        { "text": "No temáis á los reyes de la tierra", "isCorrect": false }
+        { "text": "No temáis á los reyes de la tierra", "isCorrect": false },
+        { "text": "No toquéis á mis ungidos, ni hagáis mal á mis profetas", "isCorrect": true }
       ]
     },
     {
@@ -91,9 +91,9 @@
       "bibleReference": "1 Crónicas 16:26",
       "answers": [
         { "text": "Son fuertes, mas Jehová es más fuerte", "isCorrect": false },
-        { "text": "Son de oro, y Jehová los quemó", "isCorrect": false },
+        { "text": "Son nada, y Jehová hizo los cielos", "isCorrect": true },
         { "text": "Son muchos, y Jehová es uno", "isCorrect": false },
-        { "text": "Son nada, y Jehová hizo los cielos", "isCorrect": true }
+        { "text": "Son de oro, y Jehová los quemó", "isCorrect": false }
       ]
     },
     {

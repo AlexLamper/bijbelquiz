@@ -41,12 +41,12 @@
           "isCorrect": false
         },
         {
-          "text": "Con Zorobabel",
-          "isCorrect": true
-        },
-        {
           "text": "Con Esdras",
           "isCorrect": false
+        },
+        {
+          "text": "Con Zorobabel",
+          "isCorrect": true
         },
         {
           "text": "Con Tatnai",
@@ -68,12 +68,12 @@
           "isCorrect": false
         },
         {
-          "text": "Dos mil ciento setenta y dos",
-          "isCorrect": true
-        },
-        {
           "text": "Dos mil ochocientos y doce",
           "isCorrect": false
+        },
+        {
+          "text": "Dos mil ciento setenta y dos",
+          "isCorrect": true
         }
       ]
     },
@@ -106,16 +106,16 @@
       "bibleReference": "Esdras 2:13",
       "answers": [
         {
-          "text": "Seiscientos sesenta y seis",
-          "isCorrect": true
+          "text": "Seiscientos veinte y tres",
+          "isCorrect": false
         },
         {
           "text": "Seiscientos cuarenta y dos",
           "isCorrect": false
         },
         {
-          "text": "Seiscientos veinte y tres",
-          "isCorrect": false
+          "text": "Seiscientos sesenta y seis",
+          "isCorrect": true
         },
         {
           "text": "Seiscientos cincuenta y dos",
@@ -129,12 +129,12 @@
       "bibleReference": "Esdras 2:36",
       "answers": [
         {
-          "text": "De la casa de Sadoc",
-          "isCorrect": false
-        },
-        {
           "text": "De la casa de Jesuá",
           "isCorrect": true
+        },
+        {
+          "text": "De la casa de Sadoc",
+          "isCorrect": false
         },
         {
           "text": "De la casa de Immer",
@@ -156,12 +156,12 @@
           "isCorrect": false
         },
         {
-          "text": "De Jeduthún",
-          "isCorrect": false
-        },
-        {
           "text": "De Asaph",
           "isCorrect": true
+        },
+        {
+          "text": "De Jeduthún",
+          "isCorrect": false
         },
         {
           "text": "De Cadmiel",
@@ -179,16 +179,16 @@
           "isCorrect": false
         },
         {
-          "text": "Volvieron á Babilonia",
-          "isCorrect": false
+          "text": "Fueron echados del sacerdocio",
+          "isCorrect": true
         },
         {
           "text": "Fueron puestos por porteros",
           "isCorrect": false
         },
         {
-          "text": "Fueron echados del sacerdocio",
-          "isCorrect": true
+          "text": "Volvieron á Babilonia",
+          "isCorrect": false
         }
       ]
     },
@@ -198,12 +198,12 @@
       "bibleReference": "Esdras 2:64",
       "answers": [
         {
-          "text": "De cuarenta y dos mil trescientos y sesenta",
-          "isCorrect": true
-        },
-        {
           "text": "De siete mil trescientos treinta y siete",
           "isCorrect": false
+        },
+        {
+          "text": "De cuarenta y dos mil trescientos y sesenta",
+          "isCorrect": true
         },
         {
           "text": "De treinta y dos mil trescientos y sesenta",
@@ -221,12 +221,12 @@
       "bibleReference": "Esdras 2:69",
       "answers": [
         {
-          "text": "Cinco mil dracmas de oro y sesenta y un mil libras de plata",
-          "isCorrect": false
-        },
-        {
           "text": "Sesenta y un mil dracmas de oro, cinco mil libras de plata y cien túnicas sacerdotales",
           "isCorrect": true
+        },
+        {
+          "text": "Cinco mil dracmas de oro y sesenta y un mil libras de plata",
+          "isCorrect": false
         },
         {
           "text": "Cien talentos de plata, un talento de oro y diez túnicas",

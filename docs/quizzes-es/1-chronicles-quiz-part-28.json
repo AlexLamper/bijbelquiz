@@ -13,10 +13,22 @@
       "explanation": "David juntó en Jerusalem a todos los principales de Israel, a los príncipes de las tribus y a los jefes de las divisiones.",
       "bibleReference": "1 Crónicas 28:1",
       "answers": [
-        { "text": "En Jerusalem", "isCorrect": true },
-        { "text": "En Gabaón", "isCorrect": false },
-        { "text": "En Hebrón", "isCorrect": false },
-        { "text": "En Jazer de Galaad", "isCorrect": false }
+        {
+          "text": "En Gabaón",
+          "isCorrect": false
+        },
+        {
+          "text": "En Jerusalem",
+          "isCorrect": true
+        },
+        {
+          "text": "En Hebrón",
+          "isCorrect": false
+        },
+        {
+          "text": "En Jazer de Galaad",
+          "isCorrect": false
+        }
       ]
     },
     {
@@ -24,10 +36,22 @@
       "explanation": "David dijo que tenía en propósito edificar una casa para que en ella reposara el arca del pacto de Jehová, y para el estrado de los pies de Dios.",
       "bibleReference": "1 Crónicas 28:2",
       "answers": [
-        { "text": "Una muralla alrededor de la ciudad", "isCorrect": false },
-        { "text": "Una casa para el arca del pacto de Jehová", "isCorrect": true },
-        { "text": "Un palacio para sus hijos y los eunucos", "isCorrect": false },
-        { "text": "Una tienda nueva en medio del desierto", "isCorrect": false }
+        {
+          "text": "Una casa para el arca del pacto de Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "Una muralla alrededor de la ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "Un palacio para sus hijos y los eunucos",
+          "isCorrect": false
+        },
+        {
+          "text": "Una tienda nueva en medio del desierto",
+          "isCorrect": false
+        }
       ]
     },
     {
@@ -35,10 +59,22 @@
       "explanation": "Dios le dijo que no edificaría casa a su nombre porque era hombre de guerra y había derramado mucha sangre.",
       "bibleReference": "1 Crónicas 28:3",
       "answers": [
-        { "text": "Porque ya era viejo y harto de días", "isCorrect": false },
-        { "text": "Porque el pueblo no quería edificarla", "isCorrect": false },
-        { "text": "Porque era hombre de guerra y había derramado sangre", "isCorrect": true },
-        { "text": "Porque faltaba el oro y la plata para la obra", "isCorrect": false }
+        {
+          "text": "Porque ya era viejo y harto de días",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque era hombre de guerra y había derramado sangre",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque el pueblo no quería edificarla",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque faltaba el oro y la plata para la obra",
+          "isCorrect": false
+        }
       ]
     },
     {
@@ -46,10 +82,22 @@
       "explanation": "David dijo que, de todos sus hijos, Jehová eligió a su hijo Salomón para que se siente en el trono del reino de Jehová sobre Israel.",
       "bibleReference": "1 Crónicas 28:5",
       "answers": [
-        { "text": "A Eliú", "isCorrect": false },
-        { "text": "A Nathán", "isCorrect": false },
-        { "text": "A Adonías", "isCorrect": false },
-        { "text": "A Salomón", "isCorrect": true }
+        {
+          "text": "A Eliú",
+          "isCorrect": false
+        },
+        {
+          "text": "A Nathán",
+          "isCorrect": false
+        },
+        {
+          "text": "A Salomón",
+          "isCorrect": true
+        },
+        {
+          "text": "A Adonías",
+          "isCorrect": false
+        }
       ]
     },
     {
@@ -57,10 +105,22 @@
       "explanation": "Dios le dijo: Salomón tu hijo, él edificará mi casa y mis atrios, porque a éste me he escogido por hijo.",
       "bibleReference": "1 Crónicas 28:6",
       "answers": [
-        { "text": "Edificaría la casa y los atrios de Dios", "isCorrect": true },
-        { "text": "Llevaría el arca de vuelta a Gabaón", "isCorrect": false },
-        { "text": "Contaría a todo el pueblo de Israel", "isCorrect": false },
-        { "text": "Repartiría a los Levitas por suertes", "isCorrect": false }
+        {
+          "text": "Contaría a todo el pueblo de Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Llevaría el arca de vuelta a Gabaón",
+          "isCorrect": false
+        },
+        {
+          "text": "Edificaría la casa y los atrios de Dios",
+          "isCorrect": true
+        },
+        {
+          "text": "Repartiría a los Levitas por suertes",
+          "isCorrect": false
+        }
       ]
     },
     {
@@ -68,10 +128,22 @@
       "explanation": "David dijo a Salomón que Jehová escudriña los corazones de todos y entiende toda imaginación de los pensamientos.",
       "bibleReference": "1 Crónicas 28:9",
       "answers": [
-        { "text": "Los caminos de los reyes", "isCorrect": false },
-        { "text": "Los corazones de todos", "isCorrect": true },
-        { "text": "Los tesoros del santuario", "isCorrect": false },
-        { "text": "Las palabras de los príncipes", "isCorrect": false }
+        {
+          "text": "Los corazones de todos",
+          "isCorrect": true
+        },
+        {
+          "text": "Los caminos de los reyes",
+          "isCorrect": false
+        },
+        {
+          "text": "Los tesoros del santuario",
+          "isCorrect": false
+        },
+        {
+          "text": "Las palabras de los príncipes",
+          "isCorrect": false
+        }
       ]
     },
     {
@@ -79,10 +151,22 @@
       "explanation": "David le dio la traza del pórtico, de sus casas, de sus oficinas, de sus salas, de sus recámaras y de la casa del propiciatorio.",
       "bibleReference": "1 Crónicas 28:11",
       "answers": [
-        { "text": "Las llaves de las puertas de la ciudad", "isCorrect": false },
-        { "text": "El libro de las crónicas del rey", "isCorrect": false },
-        { "text": "La traza del pórtico y de las demás partes", "isCorrect": true },
-        { "text": "Las suertes de los sacerdotes y Levitas", "isCorrect": false }
+        {
+          "text": "La traza del pórtico y de las demás partes",
+          "isCorrect": true
+        },
+        {
+          "text": "El libro de las crónicas del rey",
+          "isCorrect": false
+        },
+        {
+          "text": "Las llaves de las puertas de la ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "Las suertes de los sacerdotes y Levitas",
+          "isCorrect": false
+        }
       ]
     },
     {
@@ -90,10 +174,22 @@
       "explanation": "El texto dice que los querubines de oro, con las alas extendidas, cubrían el arca del pacto de Jehová.",
       "bibleReference": "1 Crónicas 28:18",
       "answers": [
-        { "text": "El altar del perfume", "isCorrect": false },
-        { "text": "Las mesas de la proposición", "isCorrect": false },
-        { "text": "Los candeleros de oro", "isCorrect": false },
-        { "text": "El arca del pacto de Jehová", "isCorrect": true }
+        {
+          "text": "El altar del perfume",
+          "isCorrect": false
+        },
+        {
+          "text": "El arca del pacto de Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "Los candeleros de oro",
+          "isCorrect": false
+        },
+        {
+          "text": "Las mesas de la proposición",
+          "isCorrect": false
+        }
       ]
     },
     {
@@ -101,10 +197,22 @@
       "explanation": "David dijo que todas estas cosas se le habían representado por la mano de Jehová, que le hizo entender todas las obras del diseño.",
       "bibleReference": "1 Crónicas 28:19",
       "answers": [
-        { "text": "Por la mano de Jehová", "isCorrect": true },
-        { "text": "Por boca de Samuel vidente", "isCorrect": false },
-        { "text": "Por consejo de los príncipes", "isCorrect": false },
-        { "text": "Por la traza de los artífices", "isCorrect": false }
+        {
+          "text": "Por la traza de los artífices",
+          "isCorrect": false
+        },
+        {
+          "text": "Por boca de Samuel vidente",
+          "isCorrect": false
+        },
+        {
+          "text": "Por consejo de los príncipes",
+          "isCorrect": false
+        },
+        {
+          "text": "Por la mano de Jehová",
+          "isCorrect": true
+        }
       ]
     },
     {
@@ -112,10 +220,22 @@
       "explanation": "David le dijo que se animase y se esforzase, y que no temiese ni desmayase, porque el Dios Jehová, su Dios, sería con él.",
       "bibleReference": "1 Crónicas 28:20",
       "answers": [
-        { "text": "Espera hasta que yo muera", "isCorrect": false },
-        { "text": "No temas ni desmayes", "isCorrect": true },
-        { "text": "Busca ayuda en los reyes vecinos", "isCorrect": false },
-        { "text": "Edifica primero tu propia casa", "isCorrect": false }
+        {
+          "text": "Espera hasta que yo muera",
+          "isCorrect": false
+        },
+        {
+          "text": "Edifica primero tu propia casa",
+          "isCorrect": false
+        },
+        {
+          "text": "Busca ayuda en los reyes vecinos",
+          "isCorrect": false
+        },
+        {
+          "text": "No temas ni desmayes",
+          "isCorrect": true
+        }
       ]
     }
   ]

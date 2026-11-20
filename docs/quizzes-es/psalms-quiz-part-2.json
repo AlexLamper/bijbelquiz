@@ -60,16 +60,16 @@
       "bibleReference": "Salmos 2:3",
       "answers": [
         {
-          "text": "Edificar un monte santo",
-          "isCorrect": false
+          "text": "Romper sus coyundas y echar de sí sus cuerdas",
+          "isCorrect": true
         },
         {
           "text": "Repartirse los términos de la tierra",
           "isCorrect": false
         },
         {
-          "text": "Romper sus coyundas y echar de sí sus cuerdas",
-          "isCorrect": true
+          "text": "Edificar un monte santo",
+          "isCorrect": false
         },
         {
           "text": "Juntar sus ejércitos contra Sión",
@@ -183,12 +183,12 @@
           "isCorrect": false
         },
         {
-          "text": "Con viento y tempestad",
-          "isCorrect": false
-        },
-        {
           "text": "Con vara de hierro",
           "isCorrect": true
+        },
+        {
+          "text": "Con viento y tempestad",
+          "isCorrect": false
         }
       ]
     },
@@ -198,8 +198,8 @@
       "bibleReference": "Salmos 2:10",
       "answers": [
         {
-          "text": "Que admitan corrección",
-          "isCorrect": true
+          "text": "Que junten a los pueblos",
+          "isCorrect": false
         },
         {
           "text": "Que repartan la heredad",
@@ -210,8 +210,8 @@
           "isCorrect": false
         },
         {
-          "text": "Que junten a los pueblos",
-          "isCorrect": false
+          "text": "Que admitan corrección",
+          "isCorrect": true
         }
       ]
     },

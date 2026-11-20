@@ -1,0 +1,242 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 137",
+  "description": "Diez preguntas sobre Salmos 137: el llanto junto a los ríos de Babilonia, las arpas en los sauces y el recuerdo de Jerusalem.",
+  "slug": "psalms-quiz-part-137",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Dónde se sentaban y lloraban los que hablan en este salmo?",
+      "explanation": "El versículo 1 dice que se sentaban junto a los ríos de Babilonia.",
+      "bibleReference": "Salmos 137:1",
+      "answers": [
+        {
+          "text": "Junto a los ríos de Babilonia",
+          "isCorrect": true
+        },
+        {
+          "text": "En los atrios de Sión",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre los montes de Hermón",
+          "isCorrect": false
+        },
+        {
+          "text": "En los campos de Ephrata",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De qué se acordaban allí?",
+      "explanation": "El versículo 1 dice que lloraban acordándose de Sión.",
+      "bibleReference": "Salmos 137:1",
+      "answers": [
+        {
+          "text": "De Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "De Edom",
+          "isCorrect": false
+        },
+        {
+          "text": "De Sión",
+          "isCorrect": true
+        },
+        {
+          "text": "De Babilonia",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué colgaron sobre los sauces?",
+      "explanation": "El versículo 2 dice que colgaron sus arpas sobre los sauces.",
+      "bibleReference": "Salmos 137:2",
+      "answers": [
+        {
+          "text": "Sus vestiduras",
+          "isCorrect": false
+        },
+        {
+          "text": "Sus arpas",
+          "isCorrect": true
+        },
+        {
+          "text": "Sus coronas",
+          "isCorrect": false
+        },
+        {
+          "text": "Sus lámparas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué les pedían los que los habían llevado cautivos?",
+      "explanation": "El versículo 3 dice que les pedían que cantasen, y que les pedían alegría.",
+      "bibleReference": "Salmos 137:3",
+      "answers": [
+        {
+          "text": "Que callasen",
+          "isCorrect": false
+        },
+        {
+          "text": "Que trabajasen de noche",
+          "isCorrect": false
+        },
+        {
+          "text": "Que entregasen sus arpas",
+          "isCorrect": false
+        },
+        {
+          "text": "Que cantasen",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pregunta hacen en el versículo 4?",
+      "explanation": "Preguntan: \"¿Cómo cantaremos canción de Jehová en tierra de extraños?\".",
+      "bibleReference": "Salmos 137:4",
+      "answers": [
+        {
+          "text": "Cómo cantar canción de Jehová en tierra de extraños",
+          "isCorrect": true
+        },
+        {
+          "text": "Quién nos llevará de vuelta a Sión",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta cuándo durará nuestra angustia",
+          "isCorrect": false
+        },
+        {
+          "text": "Dónde están las arpas de nuestros padres",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice que le ocurra a su diestra si se olvida de Jerusalem?",
+      "explanation": "El versículo 5 dice: \"Si me olvidare de ti, oh Jerusalem, mi diestra sea olvidada\".",
+      "bibleReference": "Salmos 137:5",
+      "answers": [
+        {
+          "text": "Que se seque como la hierba",
+          "isCorrect": false
+        },
+        {
+          "text": "Que sea olvidada",
+          "isCorrect": true
+        },
+        {
+          "text": "Que pierda su fortaleza",
+          "isCorrect": false
+        },
+        {
+          "text": "Que sea atada con cuerdas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice que le ocurra a su lengua si no se acuerda de Jerusalem?",
+      "explanation": "El versículo 6 dice que su lengua se pegue a su paladar.",
+      "bibleReference": "Salmos 137:6",
+      "answers": [
+        {
+          "text": "Que calle para siempre",
+          "isCorrect": false
+        },
+        {
+          "text": "Que hable solo mentira",
+          "isCorrect": false
+        },
+        {
+          "text": "Que se pegue a su paladar",
+          "isCorrect": true
+        },
+        {
+          "text": "Que olvide los himnos de Sión",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo quiere ensalzar a Jerusalem, según el versículo 6?",
+      "explanation": "Quiere ensalzarla como el asunto preferente de su alegría.",
+      "bibleReference": "Salmos 137:6",
+      "answers": [
+        {
+          "text": "Como la ciudad de los reyes",
+          "isCorrect": false
+        },
+        {
+          "text": "Como el lugar de su descanso",
+          "isCorrect": false
+        },
+        {
+          "text": "Como la gloria de los extraños",
+          "isCorrect": false
+        },
+        {
+          "text": "Como el asunto preferente de su alegría",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿De quiénes pide que Jehová se acuerde en el día de Jerusalem?",
+      "explanation": "El versículo 7 pide que se acuerde de los hijos de Edom.",
+      "bibleReference": "Salmos 137:7",
+      "answers": [
+        {
+          "text": "De los siervos de Faraón",
+          "isCorrect": false
+        },
+        {
+          "text": "De los hijos de Edom",
+          "isCorrect": true
+        },
+        {
+          "text": "De los reyes de Canaán",
+          "isCorrect": false
+        },
+        {
+          "text": "De los sacerdotes de Leví",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo llama el versículo 8 a Babilonia?",
+      "explanation": "El versículo empieza: \"Hija de Babilonia destruída\".",
+      "bibleReference": "Salmos 137:8",
+      "answers": [
+        {
+          "text": "Madre de todas las gentes",
+          "isCorrect": false
+        },
+        {
+          "text": "Ciudad de los reyes fuertes",
+          "isCorrect": false
+        },
+        {
+          "text": "Hija de Babilonia destruída",
+          "isCorrect": true
+        },
+        {
+          "text": "Casa de los ídolos de plata",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

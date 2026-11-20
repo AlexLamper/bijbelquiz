@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 106",
+  "description": "Diez preguntas sobre Salmos 106: la confesión de los pecados de los padres, el becerro de Horeb, el juicio de Phinees y el ruego final de ser juntados.",
+  "slug": "psalms-quiz-part-106",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el versículo 1, ¿por qué hay que alabar a Jehová?",
+      "explanation": "El versículo 1 dice: Alabad á Jehová, porque es bueno; porque para siempre es su misericordia.",
+      "bibleReference": "Salmos 106:1",
+      "answers": [
+        { "text": "Porque ha juntado al pueblo de entre las gentes", "isCorrect": false },
+        { "text": "Porque ha dado la tierra a sus escogidos", "isCorrect": false },
+        { "text": "Porque es bueno y su misericordia es para siempre", "isCorrect": true },
+        { "text": "Porque ha castigado a todos los impíos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 3, ¿a quiénes llama dichosos el salmo?",
+      "explanation": "El versículo 3 dice: Dichosos los que guardan juicio, los que hacen justicia en todo tiempo.",
+      "bibleReference": "Salmos 106:3",
+      "answers": [
+        { "text": "A los que guardan juicio y hacen justicia en todo tiempo", "isCorrect": true },
+        { "text": "A los que cantan su alabanza delante de las naciones", "isCorrect": false },
+        { "text": "A los que reciben misericordia de sus enemigos", "isCorrect": false },
+        { "text": "A los que se acuerdan del pacto de sus padres", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 7, ¿dónde se rebelaron los padres del pueblo?",
+      "explanation": "El versículo 7 dice que sus padres en Egipto no entendieron sus maravillas y que se rebelaron junto á la mar, en el mar Bermejo.",
+      "bibleReference": "Salmos 106:7",
+      "answers": [
+        { "text": "En las aguas del Jordán, al pasarlas", "isCorrect": false },
+        { "text": "En el monte Sinaí, al recibir la ley", "isCorrect": false },
+        { "text": "En el desierto de Cades, junto al monte", "isCorrect": false },
+        { "text": "Junto al mar Bermejo", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 9, ¿qué hizo Dios con el mar Bermejo?",
+      "explanation": "El versículo 9 dice que reprendió al mar Bermejo y lo secó, y les hizo ir por el abismo como por un desierto.",
+      "bibleReference": "Salmos 106:9",
+      "answers": [
+        { "text": "Lo llenó de cadáveres", "isCorrect": false },
+        { "text": "Lo reprendió y lo secó", "isCorrect": true },
+        { "text": "Lo volvió en sangre", "isCorrect": false },
+        { "text": "Lo tornó en estanque de aguas", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 17, ¿a quién tragó la tierra cuando se abrió?",
+      "explanation": "El versículo 17 dice que la tierra se abrió y tragó á Dathán, y cubrió la compañía de Abiram.",
+      "bibleReference": "Salmos 106:17",
+      "answers": [
+        { "text": "A Phinees", "isCorrect": false },
+        { "text": "A Aarón", "isCorrect": false },
+        { "text": "A Dathán", "isCorrect": true },
+        { "text": "A Moisés", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 19, ¿qué hicieron en Horeb?",
+      "explanation": "El versículo 19 dice que hicieron becerro en Horeb y se encorvaron á un vaciadizo.",
+      "bibleReference": "Salmos 106:19",
+      "answers": [
+        { "text": "Un altar de piedras", "isCorrect": false },
+        { "text": "Una tienda", "isCorrect": false },
+        { "text": "Un cordel de heredad", "isCorrect": false },
+        { "text": "Un becerro", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 20, ¿por qué imagen trocaron su gloria?",
+      "explanation": "El versículo 20 dice que trocaron su gloria por la imagen de un buey que come hierba.",
+      "bibleReference": "Salmos 106:20",
+      "answers": [
+        { "text": "Por la imagen de un buey que come hierba", "isCorrect": true },
+        { "text": "Por la imagen de un carnero del desierto", "isCorrect": false },
+        { "text": "Por la imagen de los reyes de Canaán", "isCorrect": false },
+        { "text": "Por la imagen de una langosta sin número", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 30, ¿quién se levantó, hizo juicio y así se detuvo la plaga?",
+      "explanation": "El versículo 30 dice que entonces se levantó Phinees, hizo juicio, y se detuvo la plaga.",
+      "bibleReference": "Salmos 106:30",
+      "answers": [
+        { "text": "Abiram", "isCorrect": false },
+        { "text": "Phinees", "isCorrect": true },
+        { "text": "Aarón", "isCorrect": false },
+        { "text": "Dathán", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 37, ¿a quiénes sacrificaron sus hijos y sus hijas?",
+      "explanation": "El versículo 37 dice que sacrificaron sus hijos y sus hijas á los demonios.",
+      "bibleReference": "Salmos 106:37",
+      "answers": [
+        { "text": "A los reyes de las gentes", "isCorrect": false },
+        { "text": "A los muertos del desierto", "isCorrect": false },
+        { "text": "Al becerro de Horeb", "isCorrect": false },
+        { "text": "A los demonios", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 47, ¿qué le pide el salmo a Jehová al final?",
+      "explanation": "El versículo 47 pide: Sálvanos, Jehová Dios nuestro, y júntanos de entre las gentes, para que loemos tu santo nombre.",
+      "bibleReference": "Salmos 106:47",
+      "answers": [
+        { "text": "Que los salve y los junte de entre las gentes", "isCorrect": true },
+        { "text": "Que les dé la tierra deseable por heredad", "isCorrect": false },
+        { "text": "Que destruya los pueblos que no destruyeron", "isCorrect": false },
+        { "text": "Que borre el pecado de sus padres y su madre", "isCorrect": false }
+      ]
+    }
+  ]
+}

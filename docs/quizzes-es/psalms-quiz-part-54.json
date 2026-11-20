@@ -1,0 +1,242 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 54",
+  "description": "Diez preguntas sobre Salmos 54: los Zipheos que avisaron a Saúl, la oración por salvación y el sacrificio voluntario.",
+  "slug": "psalms-quiz-part-54",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el encabezado, ¿quiénes dijeron a Saúl que David estaba escondido en su tierra?",
+      "explanation": "El encabezado dice que vinieron los Zipheos y dijeron a Saúl: ¿No está David escondido en nuestra tierra?",
+      "bibleReference": "Salmos 54:1",
+      "answers": [
+        {
+          "text": "Los Filisteos",
+          "isCorrect": false
+        },
+        {
+          "text": "Los Idumeos",
+          "isCorrect": false
+        },
+        {
+          "text": "Los Zipheos",
+          "isCorrect": true
+        },
+        {
+          "text": "Los príncipes de los pueblos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 1, ¿por qué pide ser salvado?",
+      "explanation": "El versículo 1 dice: Oh Dios, sálvame por tu nombre, y con tu poder defiéndeme.",
+      "bibleReference": "Salmos 54:1",
+      "answers": [
+        {
+          "text": "Por su justicia",
+          "isCorrect": false
+        },
+        {
+          "text": "Por su misericordia",
+          "isCorrect": false
+        },
+        {
+          "text": "Por su pacto",
+          "isCorrect": false
+        },
+        {
+          "text": "Por su nombre",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 1, ¿con qué pide ser defendido?",
+      "explanation": "El versículo 1 dice que Dios lo defienda con su poder.",
+      "bibleReference": "Salmos 54:1",
+      "answers": [
+        {
+          "text": "Con su espada",
+          "isCorrect": false
+        },
+        {
+          "text": "Con su poder",
+          "isCorrect": true
+        },
+        {
+          "text": "Con su verdad",
+          "isCorrect": false
+        },
+        {
+          "text": "Con su diestra",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 2, ¿qué pide que Dios escuche?",
+      "explanation": "El versículo 2 dice: Oh Dios, oye mi oración; escucha las razones de mi boca.",
+      "bibleReference": "Salmos 54:2",
+      "answers": [
+        {
+          "text": "Los cánticos de su arpa",
+          "isCorrect": false
+        },
+        {
+          "text": "Los votos de sus labios",
+          "isCorrect": false
+        },
+        {
+          "text": "Las razones de su boca",
+          "isCorrect": true
+        },
+        {
+          "text": "El clamor de sus enemigos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 3, ¿quiénes se han levantado contra él?",
+      "explanation": "El versículo 3 dice que extraños se han levantado contra él y que fuertes buscan su alma.",
+      "bibleReference": "Salmos 54:3",
+      "answers": [
+        {
+          "text": "Extraños",
+          "isCorrect": true
+        },
+        {
+          "text": "Sus hermanos",
+          "isCorrect": false
+        },
+        {
+          "text": "Sus vecinos",
+          "isCorrect": false
+        },
+        {
+          "text": "Los sabios",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 3, ¿qué no han hecho los que buscan su alma?",
+      "explanation": "El versículo 3 dice que no han puesto a Dios delante de sí.",
+      "bibleReference": "Salmos 54:3",
+      "answers": [
+        {
+          "text": "No han pagado sus votos",
+          "isCorrect": false
+        },
+        {
+          "text": "No han puesto a Dios delante de sí",
+          "isCorrect": true
+        },
+        {
+          "text": "No han hablado justicia",
+          "isCorrect": false
+        },
+        {
+          "text": "No han traído sacrificio",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 4, ¿con quiénes está el Señor?",
+      "explanation": "El versículo 4 dice que Dios es el que lo ayuda y que el Señor es con los que sostienen su vida.",
+      "bibleReference": "Salmos 54:4",
+      "answers": [
+        {
+          "text": "Con los nobles de la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Con los que guardan su pacto",
+          "isCorrect": false
+        },
+        {
+          "text": "Con los que cantan su nombre",
+          "isCorrect": false
+        },
+        {
+          "text": "Con los que sostienen su vida",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 5, ¿por qué pide que Dios corte a sus enemigos?",
+      "explanation": "El versículo 5 dice que él volverá el mal a sus enemigos y pide: córtalos por tu verdad.",
+      "bibleReference": "Salmos 54:5",
+      "answers": [
+        {
+          "text": "Por su verdad",
+          "isCorrect": true
+        },
+        {
+          "text": "Por su gloria",
+          "isCorrect": false
+        },
+        {
+          "text": "Por su juicio",
+          "isCorrect": false
+        },
+        {
+          "text": "Por su santuario",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 6, ¿cómo dice que sacrificará a Dios?",
+      "explanation": "El versículo 6 dice: Voluntariamente sacrificaré á ti; alabaré tu nombre, oh Jehová, porque es bueno.",
+      "bibleReference": "Salmos 54:6",
+      "answers": [
+        {
+          "text": "Con temor y temblor",
+          "isCorrect": false
+        },
+        {
+          "text": "De mañana y de tarde",
+          "isCorrect": false
+        },
+        {
+          "text": "Voluntariamente",
+          "isCorrect": true
+        },
+        {
+          "text": "En medio del templo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 7, ¿de qué dice que Dios lo ha librado?",
+      "explanation": "El versículo 7 dice que lo ha librado de toda angustia y que en sus enemigos vieron sus ojos su deseo.",
+      "bibleReference": "Salmos 54:7",
+      "answers": [
+        {
+          "text": "De toda angustia",
+          "isCorrect": true
+        },
+        {
+          "text": "De la mano del rey",
+          "isCorrect": false
+        },
+        {
+          "text": "De la muerte y del sepulcro",
+          "isCorrect": false
+        },
+        {
+          "text": "De los lazos del cazador",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

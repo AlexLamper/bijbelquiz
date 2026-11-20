@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 53",
+  "description": "Diez preguntas sobre Salmos 53: lo que dijo el necio en su corazón, la mirada de Dios desde los cielos y la salud que vendría de Sión.",
+  "slug": "psalms-quiz-part-53",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el encabezado, ¿sobre qué es este Masquil de David?",
+      "explanation": "El encabezado dice: Al Músico principal, sobre Mahalath, Masquil de David.",
+      "bibleReference": "Salmos 53:1",
+      "answers": [
+        { "text": "Sobre Alamoth", "isCorrect": false },
+        { "text": "Sobre Sosannim", "isCorrect": false },
+        { "text": "Sobre Neginoth", "isCorrect": false },
+        { "text": "Sobre Mahalath", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 1, ¿qué dijo el necio en su corazón?",
+      "explanation": "El versículo 1 dice: Dijo el necio en su corazón: No hay Dios.",
+      "bibleReference": "Salmos 53:1",
+      "answers": [
+        { "text": "Que Dios está lejos", "isCorrect": false },
+        { "text": "Que no hay Dios", "isCorrect": true },
+        { "text": "Que Dios no ve", "isCorrect": false },
+        { "text": "Que Dios ha callado", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 1, ¿qué dice el texto que no hay quien haga?",
+      "explanation": "El versículo 1 dice que se corrompieron e hicieron abominable maldad, y que no hay quien haga bien.",
+      "bibleReference": "Salmos 53:1",
+      "answers": [
+        { "text": "Bien", "isCorrect": true },
+        { "text": "Justicia", "isCorrect": false },
+        { "text": "Sacrificio", "isCorrect": false },
+        { "text": "Alabanza", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 2, ¿desde dónde miró Dios sobre los hijos de los hombres?",
+      "explanation": "El versículo 2 dice que Dios desde los cielos miró sobre los hijos de los hombres.",
+      "bibleReference": "Salmos 53:2",
+      "answers": [
+        { "text": "Desde su santo trono", "isCorrect": false },
+        { "text": "Desde el monte de Sión", "isCorrect": false },
+        { "text": "Desde los cielos", "isCorrect": true },
+        { "text": "Desde su templo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 2, ¿qué quería ver Dios al mirar?",
+      "explanation": "El versículo 2 dice que miró por ver si hay algún entendido que busque a Dios.",
+      "bibleReference": "Salmos 53:2",
+      "answers": [
+        { "text": "Si alguno guardaba sus leyes", "isCorrect": false },
+        { "text": "Si alguno pagaba sus votos", "isCorrect": false },
+        { "text": "Si alguno traía sacrificios", "isCorrect": false },
+        { "text": "Si hay algún entendido que busque a Dios", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 3, ¿qué había hecho cada uno?",
+      "explanation": "El versículo 3 dice que cada uno se había vuelto atrás y que todos se habían corrompido.",
+      "bibleReference": "Salmos 53:3",
+      "answers": [
+        { "text": "Se había escondido", "isCorrect": false },
+        { "text": "Se había vuelto atrás", "isCorrect": true },
+        { "text": "Se había humillado", "isCorrect": false },
+        { "text": "Se había sobresaltado", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 4, ¿cómo comen a su pueblo los que obran iniquidad?",
+      "explanation": "El versículo 4 dice que comen a su pueblo como si comiesen pan.",
+      "bibleReference": "Salmos 53:4",
+      "answers": [
+        { "text": "Como si comiesen pan", "isCorrect": true },
+        { "text": "Como leones en el bosque", "isCorrect": false },
+        { "text": "Como aves de los montes", "isCorrect": false },
+        { "text": "Como fieras del campo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 4, ¿a quién no han invocado los que obran iniquidad?",
+      "explanation": "El versículo 4 termina diciendo: á Dios no han invocado.",
+      "bibleReference": "Salmos 53:4",
+      "answers": [
+        { "text": "Al rey", "isCorrect": false },
+        { "text": "Al profeta", "isCorrect": false },
+        { "text": "A Dios", "isCorrect": true },
+        { "text": "Al Músico principal", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 5, ¿dónde se sobresaltaron de pavor?",
+      "explanation": "El versículo 5 dice que allí se sobresaltaron de pavor donde no había miedo.",
+      "bibleReference": "Salmos 53:5",
+      "answers": [
+        { "text": "Donde no había miedo", "isCorrect": true },
+        { "text": "Delante del santuario", "isCorrect": false },
+        { "text": "En medio de la ciudad", "isCorrect": false },
+        { "text": "En el campo de batalla", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 6, ¿de dónde desea el salmista que venga la salud a Israel?",
+      "explanation": "El versículo 6 dice: ¡Oh quién diese de Sión saludes á Israel!",
+      "bibleReference": "Salmos 53:6",
+      "answers": [
+        { "text": "De los cielos", "isCorrect": false },
+        { "text": "Del desierto", "isCorrect": false },
+        { "text": "De Sión", "isCorrect": true },
+        { "text": "De la cautividad", "isCorrect": false }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 46",
+  "description": "Diez preguntas sobre Salmos 46: Dios como amparo y fortaleza, la ciudad que no será conmovida y el mandato de estar quietos.",
+  "slug": "psalms-quiz-part-46",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el encabezado, ¿de quiénes es este salmo?",
+      "explanation": "El encabezado dice: Al Músico principal, de los hijos de Coré, Salmo sobre Alamoth.",
+      "bibleReference": "Salmos 46:1",
+      "answers": [
+        { "text": "De Asaph", "isCorrect": false },
+        { "text": "De los hijos de Coré", "isCorrect": true },
+        { "text": "De los hijos de David", "isCorrect": false },
+        { "text": "De los hijos de Jacob", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Además de amparo y fortaleza, ¿qué dice el versículo 1 que es Dios?",
+      "explanation": "El versículo 1 dice que Dios es nuestro amparo y fortaleza, nuestro pronto auxilio en las tribulaciones.",
+      "bibleReference": "Salmos 46:1",
+      "answers": [
+        { "text": "Nuestro juez en el día del furor", "isCorrect": false },
+        { "text": "Nuestra heredad para siempre", "isCorrect": false },
+        { "text": "Nuestro pastor en el desierto", "isCorrect": false },
+        { "text": "Nuestro pronto auxilio en las tribulaciones", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 2, ¿qué dicen que harán aunque la tierra sea removida?",
+      "explanation": "El versículo 2 dice: Por tanto no temeremos aunque la tierra sea removida.",
+      "bibleReference": "Salmos 46:2",
+      "answers": [
+        { "text": "No temerán", "isCorrect": true },
+        { "text": "Huirán a los montes", "isCorrect": false },
+        { "text": "Callarán delante de Dios", "isCorrect": false },
+        { "text": "Clamarán de noche", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 2, ¿a dónde se traspasan los montes?",
+      "explanation": "El versículo 2 habla de que los montes se traspasen al corazón de la mar.",
+      "bibleReference": "Salmos 46:2",
+      "answers": [
+        { "text": "A los lados del aquilón", "isCorrect": false },
+        { "text": "A la ciudad de Dios", "isCorrect": false },
+        { "text": "Al corazón de la mar", "isCorrect": true },
+        { "text": "A los fines de la tierra", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 4, ¿qué alegrará la ciudad de Dios?",
+      "explanation": "El versículo 4 dice que los conductos del río alegrarán la ciudad de Dios, el santuario de las tiendas del Altísimo.",
+      "bibleReference": "Salmos 46:4",
+      "answers": [
+        { "text": "El sonido de la trompeta", "isCorrect": false },
+        { "text": "Los conductos del río", "isCorrect": true },
+        { "text": "El fuego del altar", "isCorrect": false },
+        { "text": "La lluvia de la mañana", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 5, ¿cuándo ayudará Dios a la ciudad?",
+      "explanation": "El versículo 5 dice que Dios está en medio de ella, que no será conmovida y que Dios la ayudará al clarear la mañana.",
+      "bibleReference": "Salmos 46:5",
+      "answers": [
+        { "text": "Al caer la tarde", "isCorrect": false },
+        { "text": "A medio día", "isCorrect": false },
+        { "text": "En el año séptimo", "isCorrect": false },
+        { "text": "Al clarear la mañana", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 6, ¿qué ocurrió cuando él dio su voz?",
+      "explanation": "El versículo 6 dice que bramaron las gentes y titubearon los reinos, y que al dar él su voz se derritió la tierra.",
+      "bibleReference": "Salmos 46:6",
+      "answers": [
+        { "text": "Se derritió la tierra", "isCorrect": true },
+        { "text": "Se abrieron los cielos", "isCorrect": false },
+        { "text": "Cesaron las aguas", "isCorrect": false },
+        { "text": "Cayeron los muros", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 7, ¿quién es su refugio?",
+      "explanation": "El versículo 7 dice que Jehová de los ejércitos es con ellos y que su refugio es el Dios de Jacob.",
+      "bibleReference": "Salmos 46:7",
+      "answers": [
+        { "text": "El monte de su santuario", "isCorrect": false },
+        { "text": "El santuario de las tiendas", "isCorrect": false },
+        { "text": "El Dios de Jacob", "isCorrect": true },
+        { "text": "El río de la ciudad", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 9, ¿qué hace con los carros?",
+      "explanation": "El versículo 9 dice que hace cesar las guerras, quiebra el arco, corta la lanza y quema los carros en el fuego.",
+      "bibleReference": "Salmos 46:9",
+      "answers": [
+        { "text": "Los quema en el fuego", "isCorrect": true },
+        { "text": "Los quiebra como el arco", "isCorrect": false },
+        { "text": "Los corta como la lanza", "isCorrect": false },
+        { "text": "Los hunde en la mar", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué manda el versículo 10 a los pueblos?",
+      "explanation": "El versículo 10 dice: Estad quietos, y conoced que yo soy Dios.",
+      "bibleReference": "Salmos 46:10",
+      "answers": [
+        { "text": "Que batan las manos con voz de júbilo", "isCorrect": false },
+        { "text": "Que canten con inteligencia a su Rey", "isCorrect": false },
+        { "text": "Que paguen sus votos al Altísimo", "isCorrect": false },
+        { "text": "Que estén quietos y conozcan que él es Dios", "isCorrect": true }
+      ]
+    }
+  ]
+}

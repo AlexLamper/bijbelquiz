@@ -1,0 +1,242 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 75",
+  "description": "Diez preguntas sobre Salmos 75: el nombre cercano de Dios, las columnas de la tierra, el cáliz en la mano de Jehová y los cuernos quebrados.",
+  "slug": "psalms-quiz-part-75",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el primer verso, ¿por qué alaban a Dios?",
+      "explanation": "El texto dice: Alabarémoste, oh Dios, alabaremos; que cercano está tu nombre: cuenten tus maravillas.",
+      "bibleReference": "Salmos 75:1",
+      "answers": [
+        {
+          "text": "Porque ha dado la lluvia a su tiempo",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque ha edificado la ciudad santa",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque su nombre está cercano",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque ha callado a los enemigos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el salmo, ¿qué dice el que habla que hará cuando tuviere tiempo?",
+      "explanation": "El texto dice: Cuando yo tuviere tiempo, yo juzgaré rectamente.",
+      "bibleReference": "Salmos 75:2",
+      "answers": [
+        {
+          "text": "Juzgar rectamente",
+          "isCorrect": true
+        },
+        {
+          "text": "Edificar un altar",
+          "isCorrect": false
+        },
+        {
+          "text": "Repartir la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Llamar a los reyes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Mientras se arruinaban la tierra y sus moradores, ¿qué dice el que habla que hace?",
+      "explanation": "El texto dice: Arruinábase la tierra y sus moradores: yo sostengo sus columnas.",
+      "bibleReference": "Salmos 75:3",
+      "answers": [
+        {
+          "text": "Esconde su rostro de ella",
+          "isCorrect": false
+        },
+        {
+          "text": "Envía fuego sobre ella",
+          "isCorrect": false
+        },
+        {
+          "text": "Deja caer sus murallas",
+          "isCorrect": false
+        },
+        {
+          "text": "Sostiene sus columnas",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el salmo, ¿qué les dijo el que habla a los insensatos y a los impíos?",
+      "explanation": "El texto dice: Dije á los insensatos: No os infatuéis; y á los impíos: No levantéis el cuerno.",
+      "bibleReference": "Salmos 75:4",
+      "answers": [
+        {
+          "text": "Que salieran de la ciudad al desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no se infatuaran ni levantaran el cuerno",
+          "isCorrect": true
+        },
+        {
+          "text": "Que trajeran presentes al santuario",
+          "isCorrect": false
+        },
+        {
+          "text": "Que guardaran silencio todo el día",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el salmo, ¿cómo no deben hablar?",
+      "explanation": "El texto dice: No levantéis en alto vuestro cuerno; no habléis con cerviz erguida.",
+      "bibleReference": "Salmos 75:5",
+      "answers": [
+        {
+          "text": "Con lengua mentirosa",
+          "isCorrect": false
+        },
+        {
+          "text": "Con voz de trueno",
+          "isCorrect": false
+        },
+        {
+          "text": "Con cerviz erguida",
+          "isCorrect": true
+        },
+        {
+          "text": "Con labios de lisonja",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el salmo, ¿de dónde no viene el ensalzamiento?",
+      "explanation": "El texto dice: Porque ni de oriente, ni de occidente, ni del desierto viene el ensalzamiento.",
+      "bibleReference": "Salmos 75:6",
+      "answers": [
+        {
+          "text": "Ni de los montes ni de los valles",
+          "isCorrect": false
+        },
+        {
+          "text": "Ni de la mar ni de las islas",
+          "isCorrect": false
+        },
+        {
+          "text": "Ni de los cielos ni de la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Ni de oriente, ni de occidente, ni del desierto",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el salmo, ¿qué hace Dios, que es el juez?",
+      "explanation": "El texto dice: Mas Dios es el juez: á éste abate, y á aquél ensalza.",
+      "bibleReference": "Salmos 75:7",
+      "answers": [
+        {
+          "text": "A uno abate y a otro ensalza",
+          "isCorrect": true
+        },
+        {
+          "text": "A todos juzga por igual medida",
+          "isCorrect": false
+        },
+        {
+          "text": "A nadie condena en su furor",
+          "isCorrect": false
+        },
+        {
+          "text": "A los reyes entrega la tierra",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quiénes beberán las heces del cáliz que está en la mano de Jehová?",
+      "explanation": "El texto dice: ciertamente sus heces chuparán y beberán todos los impíos de la tierra.",
+      "bibleReference": "Salmos 75:8",
+      "answers": [
+        {
+          "text": "Los reyes de las islas",
+          "isCorrect": false
+        },
+        {
+          "text": "Todos los impíos de la tierra",
+          "isCorrect": true
+        },
+        {
+          "text": "Los sacerdotes del altar",
+          "isCorrect": false
+        },
+        {
+          "text": "Los moradores de Sión",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el salmo, ¿a quién cantará alabanzas el que habla?",
+      "explanation": "El texto dice: Mas yo anunciaré siempre, cantaré alabanzas al Dios de Jacob.",
+      "bibleReference": "Salmos 75:9",
+      "answers": [
+        {
+          "text": "Al Santo de Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Al Pastor de Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Al Dios de los ejércitos",
+          "isCorrect": false
+        },
+        {
+          "text": "Al Dios de Jacob",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "En el último verso, ¿qué cuernos serán quebrados y qué cuernos serán ensalzados?",
+      "explanation": "El texto dice: Y quebraré todos los cuernos de los pecadores: los cuernos del justo serán ensalzados.",
+      "bibleReference": "Salmos 75:10",
+      "answers": [
+        {
+          "text": "Los de los pecadores y los del justo",
+          "isCorrect": true
+        },
+        {
+          "text": "Los del justo y los de los pecadores",
+          "isCorrect": false
+        },
+        {
+          "text": "Los de los reyes y los de los pobres",
+          "isCorrect": false
+        },
+        {
+          "text": "Los de las gentes y los de Israel",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

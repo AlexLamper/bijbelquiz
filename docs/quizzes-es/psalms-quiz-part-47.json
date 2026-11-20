@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 47",
+  "description": "Diez preguntas sobre Salmos 47: los pueblos que baten las manos, el sonido de trompeta y Dios asentado sobre su santo trono.",
+  "slug": "psalms-quiz-part-47",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el versículo 1, ¿qué se manda hacer a todos los pueblos?",
+      "explanation": "El versículo 1 dice: Pueblos todos, batid las manos.",
+      "bibleReference": "Salmos 47:1",
+      "answers": [
+        { "text": "Batir las manos", "isCorrect": true },
+        { "text": "Callar delante de él", "isCorrect": false },
+        { "text": "Inclinar el oído", "isCorrect": false },
+        { "text": "Rodear la ciudad", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 1, ¿con qué deben aclamar a Dios?",
+      "explanation": "El versículo 1 dice que aclamen a Dios con voz de júbilo.",
+      "bibleReference": "Salmos 47:1",
+      "answers": [
+        { "text": "Con panderos y danzas", "isCorrect": false },
+        { "text": "Con cánticos de la noche", "isCorrect": false },
+        { "text": "Con voz de júbilo", "isCorrect": true },
+        { "text": "Con el arpa y el salterio", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 2, ¿cómo se llama a Jehová el Altísimo?",
+      "explanation": "El versículo 2 dice que Jehová el Altísimo es terrible, Rey grande sobre toda la tierra.",
+      "bibleReference": "Salmos 47:2",
+      "answers": [
+        { "text": "Juez de los pobres y los nobles", "isCorrect": false },
+        { "text": "Rey grande sobre toda la tierra", "isCorrect": true },
+        { "text": "Capitán de los ejércitos de Jacob", "isCorrect": false },
+        { "text": "Pastor del pueblo de Abraham", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 3, ¿dónde sujetará a las gentes?",
+      "explanation": "El versículo 3 dice que él sujetará a los pueblos debajo de ellos y a las gentes debajo de nuestros pies.",
+      "bibleReference": "Salmos 47:3",
+      "answers": [
+        { "text": "Delante de su santo trono", "isCorrect": false },
+        { "text": "Alrededor de los muros de Sión", "isCorrect": false },
+        { "text": "En medio de las tiendas del Altísimo", "isCorrect": false },
+        { "text": "Debajo de nuestros pies", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 4, ¿qué elegirá él para ellos?",
+      "explanation": "El versículo 4 dice que él elegirá sus heredades.",
+      "bibleReference": "Salmos 47:4",
+      "answers": [
+        { "text": "Sus heredades", "isCorrect": true },
+        { "text": "Sus escudos", "isCorrect": false },
+        { "text": "Sus príncipes", "isCorrect": false },
+        { "text": "Sus trompetas", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 4, ¿de quién dice el texto que Dios amó?",
+      "explanation": "El versículo 4 habla de la hermosura de Jacob, al cual amó.",
+      "bibleReference": "Salmos 47:4",
+      "answers": [
+        { "text": "De Abraham", "isCorrect": false },
+        { "text": "De los príncipes", "isCorrect": false },
+        { "text": "De Jacob", "isCorrect": true },
+        { "text": "De las gentes", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 5, ¿con qué sonido subió Jehová?",
+      "explanation": "El versículo 5 dice que Dios subió con júbilo, Jehová con sonido de trompeta.",
+      "bibleReference": "Salmos 47:5",
+      "answers": [
+        { "text": "Con sonido de cuernos de carnero", "isCorrect": false },
+        { "text": "Con sonido de muchas aguas", "isCorrect": false },
+        { "text": "Con sonido de truenos", "isCorrect": false },
+        { "text": "Con sonido de trompeta", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 7, ¿cómo deben cantar?",
+      "explanation": "El versículo 7 dice que Dios es el Rey de toda la tierra y manda cantar con inteligencia.",
+      "bibleReference": "Salmos 47:7",
+      "answers": [
+        { "text": "Con lágrimas", "isCorrect": false },
+        { "text": "Con inteligencia", "isCorrect": true },
+        { "text": "En silencio", "isCorrect": false },
+        { "text": "Con temblor", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 8, ¿dónde se asentó Dios?",
+      "explanation": "El versículo 8 dice que Dios reinó sobre las gentes y se asentó sobre su santo trono.",
+      "bibleReference": "Salmos 47:8",
+      "answers": [
+        { "text": "Sobre su santo trono", "isCorrect": true },
+        { "text": "Sobre el monte de Sión", "isCorrect": false },
+        { "text": "Sobre los escudos de la tierra", "isCorrect": false },
+        { "text": "Sobre las aguas de la mar", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 9, ¿al pueblo de qué Dios se juntaron los príncipes de los pueblos?",
+      "explanation": "El versículo 9 dice que los príncipes de los pueblos se juntaron al pueblo del Dios de Abraham.",
+      "bibleReference": "Salmos 47:9",
+      "answers": [
+        { "text": "Al pueblo del Dios de Jacob", "isCorrect": false },
+        { "text": "Al pueblo del Dios de Israel", "isCorrect": false },
+        { "text": "Al pueblo del Dios de Abraham", "isCorrect": true },
+        { "text": "Al pueblo del Dios de David", "isCorrect": false }
+      ]
+    }
+  ]
+}

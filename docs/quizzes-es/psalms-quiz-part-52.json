@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 52",
+  "description": "Diez preguntas sobre Salmos 52: la lengua como navaja amolada, el hombre que confió en sus riquezas y la oliva verde en la casa de Dios.",
+  "slug": "psalms-quiz-part-52",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el encabezado, ¿quién vino y dio cuenta a Saúl?",
+      "explanation": "El encabezado dice que este Masquil de David es de cuando vino Doeg Idumeo y dio cuenta a Saúl.",
+      "bibleReference": "Salmos 52:1",
+      "answers": [
+        { "text": "Doeg Idumeo", "isCorrect": true },
+        { "text": "Nathán el profeta", "isCorrect": false },
+        { "text": "Ahimelech el sacerdote", "isCorrect": false },
+        { "text": "Asaph el cantor", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el encabezado, ¿qué le dijo a Saúl?",
+      "explanation": "El encabezado dice que le dijo: David ha venido a casa de Ahimelech.",
+      "bibleReference": "Salmos 52:1",
+      "answers": [
+        { "text": "Que David estaba escondido en su tierra", "isCorrect": false },
+        { "text": "Que David había huido a Gath", "isCorrect": false },
+        { "text": "Que David había venido a casa de Ahimelech", "isCorrect": true },
+        { "text": "Que David se había ido al desierto", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 2, ¿a qué se compara la lengua que maquina agravios?",
+      "explanation": "El versículo 2 dice: Agravios maquina tu lengua; como navaja amolada hace engaño.",
+      "bibleReference": "Salmos 52:2",
+      "answers": [
+        { "text": "Con una pluma de escribiente", "isCorrect": false },
+        { "text": "Con una navaja amolada", "isCorrect": true },
+        { "text": "Con una lanza cortada", "isCorrect": false },
+        { "text": "Con un arco quebrado", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 3, ¿qué amó más que hablar justicia?",
+      "explanation": "El versículo 3 dice que amó el mal más que el bien, y la mentira más que hablar justicia.",
+      "bibleReference": "Salmos 52:3",
+      "answers": [
+        { "text": "La maldad del poderoso", "isCorrect": false },
+        { "text": "Los agravios de su lengua", "isCorrect": false },
+        { "text": "La misericordia continua", "isCorrect": false },
+        { "text": "La mentira", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 4, ¿qué clase de palabras ha amado?",
+      "explanation": "El versículo 4 dice: Has amado toda suerte de palabras perniciosas, engañosa lengua.",
+      "bibleReference": "Salmos 52:4",
+      "answers": [
+        { "text": "Palabras perniciosas", "isCorrect": true },
+        { "text": "Palabras de verdad", "isCorrect": false },
+        { "text": "Palabras de justicia", "isCorrect": false },
+        { "text": "Palabras de alabanza", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 5, ¿de dónde lo desarraigará Dios?",
+      "explanation": "El versículo 5 dice que Dios lo derribará para siempre, lo asolará, lo arrancará de su morada y lo desarraigará de la tierra de los vivientes.",
+      "bibleReference": "Salmos 52:5",
+      "answers": [
+        { "text": "De la ciudad del gran Rey", "isCorrect": false },
+        { "text": "De los collados del bosque", "isCorrect": false },
+        { "text": "De la tierra de los vivientes", "isCorrect": true },
+        { "text": "Del palacio de Saúl", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 6, ¿qué harán los justos cuando vean?",
+      "explanation": "El versículo 6 dice que los justos verán y temerán, y se reirán de él.",
+      "bibleReference": "Salmos 52:6",
+      "answers": [
+        { "text": "Callarán y huirán", "isCorrect": false },
+        { "text": "Cantarán y danzarán", "isCorrect": false },
+        { "text": "Llorarán y ayunarán", "isCorrect": false },
+        { "text": "Temerán y se reirán de él", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 7, ¿en qué confió aquel hombre que no puso a Dios por su fortaleza?",
+      "explanation": "El versículo 7 dice que no puso a Dios por su fortaleza, sino que confió en la multitud de sus riquezas y se mantuvo en su maldad.",
+      "bibleReference": "Salmos 52:7",
+      "answers": [
+        { "text": "En el favor del rey", "isCorrect": false },
+        { "text": "En la multitud de sus riquezas", "isCorrect": true },
+        { "text": "En la fuerza de su brazo", "isCorrect": false },
+        { "text": "En el engaño de su lengua", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 8, ¿con qué se compara el salmista?",
+      "explanation": "El versículo 8 dice: Mas yo estoy como oliva verde en la casa de Dios.",
+      "bibleReference": "Salmos 52:8",
+      "answers": [
+        { "text": "Con una oliva verde en la casa de Dios", "isCorrect": true },
+        { "text": "Con una paloma en el desierto", "isCorrect": false },
+        { "text": "Con un río en la ciudad", "isCorrect": false },
+        { "text": "Con una torre en el monte", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 9, ¿por qué esperará en el nombre de Dios?",
+      "explanation": "El versículo 9 dice que lo alabará para siempre por lo que ha hecho y que esperará en su nombre, porque es bueno, delante de sus santos.",
+      "bibleReference": "Salmos 52:9",
+      "answers": [
+        { "text": "Porque es terrible", "isCorrect": false },
+        { "text": "Porque es eterno", "isCorrect": false },
+        { "text": "Porque es bueno", "isCorrect": true },
+        { "text": "Porque es grande", "isCorrect": false }
+      ]
+    }
+  ]
+}

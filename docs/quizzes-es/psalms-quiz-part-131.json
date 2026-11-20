@@ -1,0 +1,242 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 131",
+  "description": "Diez preguntas sobre Salmos 131: el corazón que no se envanece y el alma acallada como un niño destetado.",
+  "slug": "psalms-quiz-part-131",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿A quién atribuye el encabezado este cántico gradual?",
+      "explanation": "El encabezado dice: \"Cántico gradual: de David\".",
+      "bibleReference": "Salmos 131:1",
+      "answers": [
+        {
+          "text": "A Aarón",
+          "isCorrect": false
+        },
+        {
+          "text": "A los hijos de Coré",
+          "isCorrect": false
+        },
+        {
+          "text": "A David",
+          "isCorrect": true
+        },
+        {
+          "text": "Al Músico principal",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quién se dirige el que habla en el versículo 1?",
+      "explanation": "El versículo 1 comienza dirigiéndose a Jehová.",
+      "bibleReference": "Salmos 131:1",
+      "answers": [
+        {
+          "text": "A Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "A Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "A su madre",
+          "isCorrect": false
+        },
+        {
+          "text": "A los reyes de la tierra",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el versículo 1 sobre su corazón?",
+      "explanation": "Dice: \"no se ha envanecido mi corazón\".",
+      "bibleReference": "Salmos 131:1",
+      "answers": [
+        {
+          "text": "Que está quebrantado",
+          "isCorrect": false
+        },
+        {
+          "text": "Que se ha enaltecido",
+          "isCorrect": false
+        },
+        {
+          "text": "Que desmaya de temor",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no se ha envanecido",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice acerca de sus ojos?",
+      "explanation": "El versículo 1 dice que sus ojos no se enaltecieron.",
+      "bibleReference": "Salmos 131:1",
+      "answers": [
+        {
+          "text": "Que lloran de noche",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no se enaltecieron",
+          "isCorrect": true
+        },
+        {
+          "text": "Que miran a los montes",
+          "isCorrect": false
+        },
+        {
+          "text": "Que desfallecen esperando",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿En qué dice que no anduvo?",
+      "explanation": "El versículo 1 dice: \"ni anduve en grandezas\".",
+      "bibleReference": "Salmos 131:1",
+      "answers": [
+        {
+          "text": "En tinieblas",
+          "isCorrect": false
+        },
+        {
+          "text": "En consejo de malos",
+          "isCorrect": false
+        },
+        {
+          "text": "En grandezas",
+          "isCorrect": true
+        },
+        {
+          "text": "En caminos de mentira",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo llama a las cosas en las que tampoco anduvo?",
+      "explanation": "Las llama cosas para él demasiado sublimes.",
+      "bibleReference": "Salmos 131:1",
+      "answers": [
+        {
+          "text": "Pequeñas y despreciables",
+          "isCorrect": false
+        },
+        {
+          "text": "Ocultas a los sabios",
+          "isCorrect": false
+        },
+        {
+          "text": "Prohibidas por la ley",
+          "isCorrect": false
+        },
+        {
+          "text": "Demasiado sublimes para él",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el versículo 2 que hizo con su alma?",
+      "explanation": "Dice que se ha comportado y ha acallado su alma.",
+      "bibleReference": "Salmos 131:2",
+      "answers": [
+        {
+          "text": "La acalló",
+          "isCorrect": true
+        },
+        {
+          "text": "La entregó al enemigo",
+          "isCorrect": false
+        },
+        {
+          "text": "La llenó de quejas",
+          "isCorrect": false
+        },
+        {
+          "text": "La escondió en el santuario",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué compara su alma en el versículo 2?",
+      "explanation": "La compara con un niño destetado de su madre.",
+      "bibleReference": "Salmos 131:2",
+      "answers": [
+        {
+          "text": "Con un ciervo sediento",
+          "isCorrect": false
+        },
+        {
+          "text": "Con un niño destetado de su madre",
+          "isCorrect": true
+        },
+        {
+          "text": "Con la hierba de los tejados",
+          "isCorrect": false
+        },
+        {
+          "text": "Con un pájaro en su nido",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué se le manda a Israel en el versículo 3?",
+      "explanation": "El versículo 3 dice: \"Espera, oh Israel, en Jehová\".",
+      "bibleReference": "Salmos 131:3",
+      "answers": [
+        {
+          "text": "Alzar las manos al santuario",
+          "isCorrect": false
+        },
+        {
+          "text": "Cantar un cántico nuevo",
+          "isCorrect": false
+        },
+        {
+          "text": "Volver de sus caminos",
+          "isCorrect": false
+        },
+        {
+          "text": "Esperar en Jehová",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Hasta cuándo debe esperar Israel, según el versículo 3?",
+      "explanation": "El versículo dice: \"desde ahora y para siempre\".",
+      "bibleReference": "Salmos 131:3",
+      "answers": [
+        {
+          "text": "Desde ahora y para siempre",
+          "isCorrect": true
+        },
+        {
+          "text": "Solo hasta la mañana",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta que pase la angustia",
+          "isCorrect": false
+        },
+        {
+          "text": "Durante tres generaciones",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

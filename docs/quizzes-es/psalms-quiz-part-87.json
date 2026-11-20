@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 87",
+  "description": "Diez preguntas sobre Salmos 87: el cimiento en montes de santidad, las puertas de Sión amadas por Jehová y los pueblos contados en el registro.",
+  "slug": "psalms-quiz-part-87",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "hard",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Dónde dice el salmo que está su cimiento?",
+      "explanation": "El verso dice: Su cimiento es en montes de santidad.",
+      "bibleReference": "Salmos 87:1",
+      "answers": [
+        { "text": "Junto a las aguas del río", "isCorrect": false },
+        { "text": "En el valle de Baca", "isCorrect": false },
+        { "text": "En montes de santidad", "isCorrect": true },
+        { "text": "En la llanura de Jericó", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿A quiénes está dirigido este salmo, según su encabezamiento?",
+      "explanation": "El encabezamiento dice: A los hijos de Coré: Salmo: Canción.",
+      "bibleReference": "Salmos 87:1",
+      "answers": [
+        { "text": "A los hijos de Coré", "isCorrect": true },
+        { "text": "A los hijos de Asaph", "isCorrect": false },
+        { "text": "A los hijos de Aarón", "isCorrect": false },
+        { "text": "A los hijos de David", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué ama Jehová más que todas las moradas de Jacob?",
+      "explanation": "El verso dice: Ama Jehová las puertas de Sión más que todas las moradas de Jacob.",
+      "bibleReference": "Salmos 87:2",
+      "answers": [
+        { "text": "Los altares del desierto", "isCorrect": false },
+        { "text": "Los montes de Hermón", "isCorrect": false },
+        { "text": "Las tiendas de los pastores", "isCorrect": false },
+        { "text": "Las puertas de Sión", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Cómo llama el salmo a aquella de la que se dicen cosas ilustres?",
+      "explanation": "El verso dice: Cosas ilustres son dichas de ti, ciudad de Dios.",
+      "bibleReference": "Salmos 87:3",
+      "answers": [
+        { "text": "Reina de las gentes", "isCorrect": false },
+        { "text": "Ciudad de Dios", "isCorrect": true },
+        { "text": "Puerta del cielo", "isCorrect": false },
+        { "text": "Monte de los ejércitos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿De quiénes dice el salmo que se acordará entre los que le conocen?",
+      "explanation": "El verso dice: Yo me acordaré de Rahab y de Babilonia entre los que me conocen.",
+      "bibleReference": "Salmos 87:4",
+      "answers": [
+        { "text": "De Madián y de Amalec", "isCorrect": false },
+        { "text": "De Moab y de Ammón", "isCorrect": false },
+        { "text": "De Rahab y de Babilonia", "isCorrect": true },
+        { "text": "De Gebal y del Assur", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué nombres aparecen junto a Etiopía en el verso 4?",
+      "explanation": "El verso dice: he aquí Palestina, y Tiro, con Etiopía: éste nació allá.",
+      "bibleReference": "Salmos 87:4",
+      "answers": [
+        { "text": "Egipto y Sabá", "isCorrect": false },
+        { "text": "Cisón y Endor", "isCorrect": false },
+        { "text": "Tabor y Hermón", "isCorrect": false },
+        { "text": "Palestina y Tiro", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué dice el salmo que se dirá de Sión?",
+      "explanation": "El verso dice: Y de Sión se dirá: Este y aquél han nacido en ella.",
+      "bibleReference": "Salmos 87:5",
+      "answers": [
+        { "text": "Que sus muros serán derribados", "isCorrect": false },
+        { "text": "Que este y aquél han nacido en ella", "isCorrect": true },
+        { "text": "Que sus hijos irán cautivos", "isCorrect": false },
+        { "text": "Que será olvidada entre las gentes", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Quién fortificará a Sión, según el verso 5?",
+      "explanation": "El verso dice que la fortificará el mismo Altísimo.",
+      "bibleReference": "Salmos 87:5",
+      "answers": [
+        { "text": "El mismo Altísimo", "isCorrect": true },
+        { "text": "Los reyes de la tierra", "isCorrect": false },
+        { "text": "Los cantores del templo", "isCorrect": false },
+        { "text": "Los hijos de Coré", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué hará Jehová cuando se escribieren los pueblos?",
+      "explanation": "El verso dice: Jehová contará cuando se escribieren los pueblos: Este nació allí.",
+      "bibleReference": "Salmos 87:6",
+      "answers": [
+        { "text": "Borrará sus nombres del libro", "isCorrect": false },
+        { "text": "Enviará lluvia a los pueblos", "isCorrect": false },
+        { "text": "Repartirá la tierra a suertes", "isCorrect": false },
+        { "text": "Contará: Este nació allí", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué dirán en ella los cantores y los tañedores?",
+      "explanation": "El verso dice: Y cantores y tañedores en ella dirán: Todas mis fuentes estarán en ti.",
+      "bibleReference": "Salmos 87:7",
+      "answers": [
+        { "text": "Tus muros son de piedra labrada", "isCorrect": false },
+        { "text": "Tu rey viene cabalgando a ti", "isCorrect": false },
+        { "text": "Todas mis fuentes estarán en ti", "isCorrect": true },
+        { "text": "Bendito el que entra por tus puertas", "isCorrect": false }
+      ]
+    }
+  ]
+}

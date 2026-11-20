@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 103",
+  "description": "Diez preguntas sobre Salmos 103: el alma que bendice a Jehová, la misericordia alta como los cielos y el recuerdo de que somos polvo.",
+  "slug": "psalms-quiz-part-103",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿A quién llama el salmista a bendecir el santo nombre de Jehová en el primer versículo?",
+      "explanation": "Salmos 103:1 dice: Bendice, alma mía, a Jehová; y bendigan todas mis entrañas su santo nombre.",
+      "bibleReference": "Salmos 103:1",
+      "answers": [
+        { "text": "A su alma y a sus entrañas", "isCorrect": true },
+        { "text": "A los sacerdotes del templo", "isCorrect": false },
+        { "text": "A los reyes de la tierra", "isCorrect": false },
+        { "text": "A las hijas de Judá", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 3, ¿qué hace Jehová con tus iniquidades y tus dolencias?",
+      "explanation": "Salmos 103:3 dice que él es quien perdona todas tus iniquidades y el que sana todas tus dolencias.",
+      "bibleReference": "Salmos 103:3",
+      "answers": [
+        { "text": "Las escribe en un libro", "isCorrect": false },
+        { "text": "Las recuerda para siempre", "isCorrect": false },
+        { "text": "Las perdona y las sana", "isCorrect": true },
+        { "text": "Las entrega al juez", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿De dónde rescata Jehová tu vida, según el versículo 4?",
+      "explanation": "Salmos 103:4 dice que él es quien rescata del hoyo tu vida y el que te corona de favores y misericordias.",
+      "bibleReference": "Salmos 103:4",
+      "answers": [
+        { "text": "Del desierto", "isCorrect": false },
+        { "text": "Del hoyo", "isCorrect": true },
+        { "text": "De la mar", "isCorrect": false },
+        { "text": "De la mano del rey", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Con qué ave compara el versículo 5 el rejuvenecer del que es saciado de bien?",
+      "explanation": "Salmos 103:5 dice que él sacia de bien tu boca de modo que te rejuvenezcas como el águila.",
+      "bibleReference": "Salmos 103:5",
+      "answers": [
+        { "text": "Con la cigüeña", "isCorrect": false },
+        { "text": "Con el pelícano", "isCorrect": false },
+        { "text": "Con la paloma", "isCorrect": false },
+        { "text": "Con el águila", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿A quién notificó Jehová sus caminos, según el versículo 7?",
+      "explanation": "Salmos 103:7 dice que notificó sus caminos a Moisés, y sus obras a los hijos de Israel.",
+      "bibleReference": "Salmos 103:7",
+      "answers": [
+        { "text": "A Moisés", "isCorrect": true },
+        { "text": "A Samuel", "isCorrect": false },
+        { "text": "A David", "isCorrect": false },
+        { "text": "A Aarón", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 8, ¿cómo es Jehová para la ira?",
+      "explanation": "Salmos 103:8 dice que Jehová es misericordioso y clemente, lento para la ira y grande en misericordia.",
+      "bibleReference": "Salmos 103:8",
+      "answers": [
+        { "text": "Pronto para la ira", "isCorrect": false },
+        { "text": "Terrible en su ira", "isCorrect": false },
+        { "text": "Lento para la ira", "isCorrect": true },
+        { "text": "Callado en su ira", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuánto hizo Jehová alejar de nosotros nuestras rebeliones, según el versículo 12?",
+      "explanation": "Salmos 103:12 dice que cuanto está lejos el oriente del occidente, tanto hizo alejar de nosotros nuestras rebeliones.",
+      "bibleReference": "Salmos 103:12",
+      "answers": [
+        { "text": "Como un día de camino", "isCorrect": false },
+        { "text": "Como el ancho de un río", "isCorrect": false },
+        { "text": "Como la altura de un monte", "isCorrect": false },
+        { "text": "Como el oriente del occidente", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Con qué compara el versículo 13 la compasión de Jehová por los que le temen?",
+      "explanation": "Salmos 103:13 dice: Como el padre se compadece de los hijos, se compadece Jehová de los que le temen.",
+      "bibleReference": "Salmos 103:13",
+      "answers": [
+        { "text": "Con el pastor y sus ovejas", "isCorrect": false },
+        { "text": "Con el padre y sus hijos", "isCorrect": true },
+        { "text": "Con el rey y sus siervos", "isCorrect": false },
+        { "text": "Con el labrador y su campo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 14, ¿de qué se acuerda Jehová porque conoce nuestra condición?",
+      "explanation": "Salmos 103:14 dice que él conoce nuestra condición y se acuerda de que somos polvo.",
+      "bibleReference": "Salmos 103:14",
+      "answers": [
+        { "text": "De que somos polvo", "isCorrect": true },
+        { "text": "De que somos pocos", "isCorrect": false },
+        { "text": "De que fuimos siervos", "isCorrect": false },
+        { "text": "De que somos su pueblo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿A quiénes manda bendecir a Jehová el versículo 20, llamándolos poderosos en fortaleza?",
+      "explanation": "Salmos 103:20 dice: Bendecid a Jehová, vosotros sus ángeles, poderosos en fortaleza, que ejecutáis su palabra.",
+      "bibleReference": "Salmos 103:20",
+      "answers": [
+        { "text": "A los montes", "isCorrect": false },
+        { "text": "A los reyes", "isCorrect": false },
+        { "text": "A los sacerdotes", "isCorrect": false },
+        { "text": "A sus ángeles", "isCorrect": true }
+      ]
+    }
+  ]
+}

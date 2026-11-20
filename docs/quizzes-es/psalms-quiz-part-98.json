@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 98",
+  "description": "Diez preguntas sobre Salmos 98: la canción nueva por las maravillas de Jehová, las arpas y bocinas, y los ríos que baten las manos.",
+  "slug": "psalms-quiz-part-98",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el primer versículo, ¿por qué se debe cantar a Jehová canción nueva?",
+      "explanation": "Salmos 98:1 dice que se cante a Jehová canción nueva porque ha hecho maravillas.",
+      "bibleReference": "Salmos 98:1",
+      "answers": [
+        { "text": "Porque ha callado", "isCorrect": false },
+        { "text": "Porque viene a reinar en Sión", "isCorrect": false },
+        { "text": "Porque ha hecho maravillas", "isCorrect": true },
+        { "text": "Porque ha dado su ley", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué lo ha salvado, según el primer versículo?",
+      "explanation": "Salmos 98:1 dice que su diestra lo ha salvado, y su santo brazo.",
+      "bibleReference": "Salmos 98:1",
+      "answers": [
+        { "text": "Su diestra y su santo brazo", "isCorrect": true },
+        { "text": "Sus carros y caballos", "isCorrect": false },
+        { "text": "Los reyes de la tierra", "isCorrect": false },
+        { "text": "Las manos de su pueblo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 2, ¿qué ha descubierto Jehová en ojos de las gentes?",
+      "explanation": "Salmos 98:2 dice que Jehová ha hecho notoria su salud y en ojos de las gentes ha descubierto su justicia.",
+      "bibleReference": "Salmos 98:2",
+      "answers": [
+        { "text": "Su ira", "isCorrect": false },
+        { "text": "Su justicia", "isCorrect": true },
+        { "text": "Su rostro", "isCorrect": false },
+        { "text": "Su reposo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Además de su verdad, ¿de qué se ha acordado Jehová para con la casa de Israel?",
+      "explanation": "Salmos 98:3 dice que se ha acordado de su misericordia y de su verdad para con la casa de Israel.",
+      "bibleReference": "Salmos 98:3",
+      "answers": [
+        { "text": "De sus pecados", "isCorrect": false },
+        { "text": "De sus años en el desierto", "isCorrect": false },
+        { "text": "De sus sacrificios", "isCorrect": false },
+        { "text": "De su misericordia", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué han visto todos los términos de la tierra, según el versículo 3?",
+      "explanation": "Salmos 98:3 dice que todos los términos de la tierra han visto la salud de nuestro Dios.",
+      "bibleReference": "Salmos 98:3",
+      "answers": [
+        { "text": "La salud de nuestro Dios", "isCorrect": true },
+        { "text": "El humo de su furor", "isCorrect": false },
+        { "text": "La caída de los montes", "isCorrect": false },
+        { "text": "El arca del pacto", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 4, ¿qué debe hacer toda la tierra además de cantar alegres a Jehová?",
+      "explanation": "Salmos 98:4 manda cantar alegres a Jehová, levantar la voz, aplaudir y salmear.",
+      "bibleReference": "Salmos 98:4",
+      "answers": [
+        { "text": "Guardar silencio", "isCorrect": false },
+        { "text": "Ayunar un día", "isCorrect": false },
+        { "text": "Levantar la voz", "isCorrect": true },
+        { "text": "Traer sus primicias", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Con qué instrumento se manda salmear a Jehová en el versículo 5?",
+      "explanation": "Salmos 98:5 dice: Salmead a Jehová con arpa; con arpa y voz de cántico.",
+      "bibleReference": "Salmos 98:5",
+      "answers": [
+        { "text": "Con pandero", "isCorrect": false },
+        { "text": "Con flauta", "isCorrect": false },
+        { "text": "Con címbalos", "isCorrect": false },
+        { "text": "Con arpa", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Con qué se manda aclamar delante del rey Jehová en el versículo 6?",
+      "explanation": "Salmos 98:6 dice: Aclamad con trompetas y sonidos de bocina delante del rey Jehová.",
+      "bibleReference": "Salmos 98:6",
+      "answers": [
+        { "text": "Con arpas y salterios", "isCorrect": false },
+        { "text": "Con trompetas y bocinas", "isCorrect": true },
+        { "text": "Con gritos de guerra", "isCorrect": false },
+        { "text": "Con cánticos nuevos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 8, ¿qué deben hacer los ríos?",
+      "explanation": "Salmos 98:8 dice que los ríos batan las manos y que los montes todos hagan regocijo.",
+      "bibleReference": "Salmos 98:8",
+      "answers": [
+        { "text": "Batir las manos", "isCorrect": true },
+        { "text": "Secarse del todo", "isCorrect": false },
+        { "text": "Volver atrás", "isCorrect": false },
+        { "text": "Cubrir los montes", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cómo juzgará Jehová al mundo y a los pueblos, según el último versículo?",
+      "explanation": "Salmos 98:9 dice que juzgará al mundo con justicia y a los pueblos con rectitud.",
+      "bibleReference": "Salmos 98:9",
+      "answers": [
+        { "text": "Con fuego y granizo", "isCorrect": false },
+        { "text": "Con vara de hierro", "isCorrect": false },
+        { "text": "Por medio de los reyes", "isCorrect": false },
+        { "text": "Con justicia y rectitud", "isCorrect": true }
+      ]
+    }
+  ]
+}

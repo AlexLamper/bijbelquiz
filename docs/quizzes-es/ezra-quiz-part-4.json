@@ -60,8 +60,8 @@
       "bibleReference": "Esdras 4:4-5",
       "answers": [
         {
-          "text": "Debilitaba sus manos y cohechó consejeros contra ellos",
-          "isCorrect": true
+          "text": "Edificó con ellos el muro de Jerusalem",
+          "isCorrect": false
         },
         {
           "text": "Les dio plata y oro para la obra del templo",
@@ -72,8 +72,8 @@
           "isCorrect": false
         },
         {
-          "text": "Edificó con ellos el muro de Jerusalem",
-          "isCorrect": false
+          "text": "Debilitaba sus manos y cohechó consejeros contra ellos",
+          "isCorrect": true
         }
       ]
     },
@@ -110,12 +110,12 @@
           "isCorrect": false
         },
         {
-          "text": "En caldeo",
-          "isCorrect": false
-        },
-        {
           "text": "En siriaco",
           "isCorrect": true
+        },
+        {
+          "text": "En caldeo",
+          "isCorrect": false
         },
         {
           "text": "En persa",
@@ -129,8 +129,8 @@
       "bibleReference": "Esdras 4:8",
       "answers": [
         {
-          "text": "Tatnai y Sethar-boznai",
-          "isCorrect": false
+          "text": "Rehum canciller y Simsai secretario",
+          "isCorrect": true
         },
         {
           "text": "Zorobabel y Jesuá",
@@ -141,8 +141,8 @@
           "isCorrect": false
         },
         {
-          "text": "Rehum canciller y Simsai secretario",
-          "isCorrect": true
+          "text": "Tatnai y Sethar-boznai",
+          "isCorrect": false
         }
       ]
     },
@@ -152,12 +152,12 @@
       "bibleReference": "Esdras 4:13",
       "answers": [
         {
-          "text": "El tributo, el pecho y las rentas, que ya no se darían",
-          "isCorrect": true
-        },
-        {
           "text": "Todo su ejército y sus capitanes",
           "isCorrect": false
+        },
+        {
+          "text": "El tributo, el pecho y las rentas, que ya no se darían",
+          "isCorrect": true
         },
         {
           "text": "Los vasos de oro de su templo en Babilonia",
@@ -175,12 +175,12 @@
       "bibleReference": "Esdras 4:15",
       "answers": [
         {
-          "text": "El libro de la ley de Moisés",
-          "isCorrect": false
-        },
-        {
           "text": "El libro de las historias de sus padres",
           "isCorrect": true
+        },
+        {
+          "text": "El libro de la ley de Moisés",
+          "isCorrect": false
         },
         {
           "text": "El registro de las genealogías",
@@ -221,8 +221,8 @@
       "bibleReference": "Esdras 4:23-24",
       "answers": [
         {
-          "text": "Dejaron edificar la casa de Dios en paz",
-          "isCorrect": false
+          "text": "Fueron á Jerusalem é hicieron cesar la obra con poder y fuerza",
+          "isCorrect": true
         },
         {
           "text": "Escribieron otra carta al rey Artajerjes",
@@ -233,8 +233,8 @@
           "isCorrect": false
         },
         {
-          "text": "Fueron á Jerusalem é hicieron cesar la obra con poder y fuerza",
-          "isCorrect": true
+          "text": "Dejaron edificar la casa de Dios en paz",
+          "isCorrect": false
         }
       ]
     }

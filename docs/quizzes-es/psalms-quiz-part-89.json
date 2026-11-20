@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 89",
+  "description": "Diez preguntas sobre Salmos 89: las misericordias cantadas perpetuamente, la alianza jurada a David y la pregunta por el hombre que no verá muerte.",
+  "slug": "psalms-quiz-part-89",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué dice el salmista que cantará perpetuamente?",
+      "explanation": "El verso dice: Las misericordias de Jehová cantaré perpetuamente: en generación y generación haré notoria tu verdad con mi boca.",
+      "bibleReference": "Salmos 89:1",
+      "answers": [
+        { "text": "Las misericordias de Jehová", "isCorrect": true },
+        { "text": "Los juicios de los reyes", "isCorrect": false },
+        { "text": "Las obras de sus manos", "isCorrect": false },
+        { "text": "Los cantos de los padres", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿A quién dice Dios que juró confirmar su simiente para siempre?",
+      "explanation": "El texto dice: Hice alianza con mi escogido; juré á David mi siervo... Para siempre confirmaré tu simiente.",
+      "bibleReference": "Salmos 89:3-4",
+      "answers": [
+        { "text": "A Moisés su siervo", "isCorrect": false },
+        { "text": "A Abraham su amigo", "isCorrect": false },
+        { "text": "A David su siervo", "isCorrect": true },
+        { "text": "A Samuel el profeta", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué hace Dios cuando se levantan las ondas del mar?",
+      "explanation": "El verso dice: Tú tienes dominio sobre la bravura de la mar: cuando se levantan sus ondas, tú las sosiegas.",
+      "bibleReference": "Salmos 89:9",
+      "answers": [
+        { "text": "Las esconde", "isCorrect": false },
+        { "text": "Las sosiega", "isCorrect": true },
+        { "text": "Las cuenta", "isCorrect": false },
+        { "text": "Las bendice", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿A quién dice el salmo que Dios quebrantó como a un muerto?",
+      "explanation": "El verso dice: Tú quebrantaste á Rahab como á un muerto: con el brazo de tu fortaleza esparciste á tus enemigos.",
+      "bibleReference": "Salmos 89:10",
+      "answers": [
+        { "text": "A Sísara", "isCorrect": false },
+        { "text": "A Oreb", "isCorrect": false },
+        { "text": "A Jabín", "isCorrect": false },
+        { "text": "A Rahab", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué montes dice el salmo que cantarán en el nombre de Dios?",
+      "explanation": "El verso dice: Al aquilón y al austro tú los criaste: Tabor y Hermón cantarán en tu nombre.",
+      "bibleReference": "Salmos 89:12",
+      "answers": [
+        { "text": "Tabor y Hermón", "isCorrect": true },
+        { "text": "Sión y Basán", "isCorrect": false },
+        { "text": "Carmelo y Nebo", "isCorrect": false },
+        { "text": "Gilboa y Seir", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dice el salmo que es el asiento del trono de Dios?",
+      "explanation": "El verso dice: Justicia y juicio son el asiento de tu trono: misericordia y verdad van delante de tu rostro.",
+      "bibleReference": "Salmos 89:14",
+      "answers": [
+        { "text": "Gloria y honra", "isCorrect": false },
+        { "text": "Justicia y juicio", "isCorrect": true },
+        { "text": "Fuerza y riqueza", "isCorrect": false },
+        { "text": "Paz y reposo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Con qué dice Dios que ungió a David, su siervo?",
+      "explanation": "El verso dice: Hallé á David mi siervo; ungílo con el aceite de mi santidad.",
+      "bibleReference": "Salmos 89:20",
+      "answers": [
+        { "text": "Con agua del arroyo de Cisón", "isCorrect": false },
+        { "text": "Con óleo de los olivos nuevos", "isCorrect": false },
+        { "text": "Con vino de los lagares", "isCorrect": false },
+        { "text": "Con el aceite de su santidad", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el verso 26, ¿cómo dice Dios que le llamará?",
+      "explanation": "El verso dice: El me llamará: Mi padre eres tú, mi Dios, y la roca de mi salud.",
+      "bibleReference": "Salmos 89:26",
+      "answers": [
+        { "text": "Mi rey y el escudo de mi vida", "isCorrect": false },
+        { "text": "Mi pastor y la guía de mis pasos", "isCorrect": false },
+        { "text": "Mi padre y la roca de mi salud", "isCorrect": true },
+        { "text": "Mi juez y el testigo de mi causa", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué pregunta hace el salmo en el verso 48?",
+      "explanation": "El verso pregunta: ¿Qué hombre vivirá y no verá muerte? ¿librarás su vida del poder del sepulcro?",
+      "bibleReference": "Salmos 89:48",
+      "answers": [
+        { "text": "Cuántos son los días del hombre", "isCorrect": false },
+        { "text": "Qué hombre vivirá y no verá muerte", "isCorrect": true },
+        { "text": "Quién subirá al monte de Jehová", "isCorrect": false },
+        { "text": "Dónde está la morada de los muertos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cómo termina este salmo?",
+      "explanation": "El último verso dice: Bendito Jehová para siempre. Amén, y Amén.",
+      "bibleReference": "Salmos 89:52",
+      "answers": [
+        { "text": "Bendito Jehová para siempre", "isCorrect": true },
+        { "text": "Jehová reina sobre las gentes", "isCorrect": false },
+        { "text": "Cantad a Jehová cántico nuevo", "isCorrect": false },
+        { "text": "Alabad a Jehová en su santuario", "isCorrect": false }
+      ]
+    }
+  ]
+}

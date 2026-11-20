@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 113",
+  "description": "Diez preguntas sobre Salmos 113: la alabanza del nombre de Jehová de un extremo del día al otro, el que se humilla a mirar y el que levanta al pobre del polvo.",
+  "slug": "psalms-quiz-part-113",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el versículo 1, ¿a quiénes manda alabar el nombre de Jehová?",
+      "explanation": "El versículo 1 dice: Alabad, siervos de Jehová, alabad el nombre de Jehová.",
+      "bibleReference": "Salmos 113:1",
+      "answers": [
+        { "text": "A los siervos de Jehová", "isCorrect": true },
+        { "text": "A los príncipes del pueblo", "isCorrect": false },
+        { "text": "A todas las naciones", "isCorrect": false },
+        { "text": "A los menesterosos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 2, ¿por cuánto tiempo pide el salmo que el nombre de Jehová sea bendito?",
+      "explanation": "El versículo 2 dice: Sea el nombre de Jehová bendito, desde ahora y para siempre.",
+      "bibleReference": "Salmos 113:2",
+      "answers": [
+        { "text": "Desde el principio hasta el fin del día", "isCorrect": false },
+        { "text": "Desde ahora y para siempre", "isCorrect": true },
+        { "text": "Desde los cielos hasta la tierra", "isCorrect": false },
+        { "text": "Desde el polvo hasta los príncipes", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 3, ¿entre qué límites sea alabado el nombre de Jehová?",
+      "explanation": "El versículo 3 dice: Desde el nacimiento del sol hasta donde se pone, sea alabado el nombre de Jehová.",
+      "bibleReference": "Salmos 113:3",
+      "answers": [
+        { "text": "Desde el cielo hasta el abismo", "isCorrect": false },
+        { "text": "Desde la mañana hasta la noche oscura", "isCorrect": false },
+        { "text": "Desde el nacimiento del sol hasta donde se pone", "isCorrect": true },
+        { "text": "Desde la casa de Aarón hasta la de Israel", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 4, ¿sobre qué está la gloria de Jehová?",
+      "explanation": "El versículo 4 dice: Alto sobre todas las naciones es Jehová; sobre los cielos su gloria.",
+      "bibleReference": "Salmos 113:4",
+      "answers": [
+        { "text": "Sobre su habitación", "isCorrect": false },
+        { "text": "Sobre los príncipes", "isCorrect": false },
+        { "text": "Sobre el estiércol", "isCorrect": false },
+        { "text": "Sobre los cielos", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 5, ¿qué ha enaltecido Jehová nuestro Dios?",
+      "explanation": "El versículo 5 pregunta quién como Jehová nuestro Dios, que ha enaltecido su habitación.",
+      "bibleReference": "Salmos 113:5",
+      "answers": [
+        { "text": "Su nombre", "isCorrect": false },
+        { "text": "Su habitación", "isCorrect": true },
+        { "text": "Su gloria", "isCorrect": false },
+        { "text": "Su pueblo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 6, ¿a qué se humilla a mirar?",
+      "explanation": "El versículo 6 dice que se humilla á mirar en el cielo y en la tierra.",
+      "bibleReference": "Salmos 113:6",
+      "answers": [
+        { "text": "Al cielo y a la tierra", "isCorrect": true },
+        { "text": "A las naciones y a sus reyes", "isCorrect": false },
+        { "text": "Al pobre y al menesteroso", "isCorrect": false },
+        { "text": "A los siervos y a los príncipes", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 7, ¿de dónde levanta al pobre?",
+      "explanation": "El versículo 7 dice: El levanta del polvo al pobre, y al menesteroso alza del estiércol.",
+      "bibleReference": "Salmos 113:7",
+      "answers": [
+        { "text": "Del abismo", "isCorrect": false },
+        { "text": "Del silencio", "isCorrect": false },
+        { "text": "Del desierto", "isCorrect": false },
+        { "text": "Del polvo", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 7, ¿de dónde alza al menesteroso?",
+      "explanation": "El versículo 7 dice que al menesteroso alza del estiércol.",
+      "bibleReference": "Salmos 113:7",
+      "answers": [
+        { "text": "Del polvo", "isCorrect": false },
+        { "text": "De la tierra seca", "isCorrect": false },
+        { "text": "Del estiércol", "isCorrect": true },
+        { "text": "De las tinieblas", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 8, ¿con quiénes los hace sentar?",
+      "explanation": "El versículo 8 dice que es para hacerlos sentar con los príncipes, con los príncipes de su pueblo.",
+      "bibleReference": "Salmos 113:8",
+      "answers": [
+        { "text": "Con los príncipes de su pueblo", "isCorrect": true },
+        { "text": "Con los siervos de Jehová", "isCorrect": false },
+        { "text": "Con los reyes de las naciones", "isCorrect": false },
+        { "text": "Con las madres de hijos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 9, ¿a quién hace habitar en familia, gozosa en ser madre de hijos?",
+      "explanation": "El versículo 9 dice: El hace habitar en familia á la estéril, gozosa en ser madre de hijos.",
+      "bibleReference": "Salmos 113:9",
+      "answers": [
+        { "text": "A la viuda", "isCorrect": false },
+        { "text": "A la estéril", "isCorrect": true },
+        { "text": "A la menesterosa", "isCorrect": false },
+        { "text": "A la huérfana", "isCorrect": false }
+      ]
+    }
+  ]
+}

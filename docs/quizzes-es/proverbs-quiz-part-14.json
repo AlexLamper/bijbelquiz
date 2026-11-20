@@ -1,0 +1,242 @@
+{
+  "title": "Proverbios Quiz bíblico - Capítulo 14",
+  "description": "Diez preguntas sobre Proverbios 14: la mujer sabia, el camino que parece derecho, el temor de Jehová y la justicia que engrandece la nación.",
+  "slug": "proverbs-quiz-part-14",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el primer versículo, ¿qué hace la mujer necia con sus manos?",
+      "explanation": "Proverbios 14:1 dice: La mujer sabia edifica su casa: mas la necia con sus manos la derriba.",
+      "bibleReference": "Proverbios 14:1",
+      "answers": [
+        {
+          "text": "Edifica su casa",
+          "isCorrect": false
+        },
+        {
+          "text": "Labra sus columnas",
+          "isCorrect": false
+        },
+        {
+          "text": "Corona a su marido",
+          "isCorrect": false
+        },
+        {
+          "text": "Derriba su casa",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué hay por la fuerza del buey?",
+      "explanation": "Proverbios 14:4 dice: Sin bueyes el granero está limpio: mas por la fuerza del buey hay abundancia de pan.",
+      "bibleReference": "Proverbios 14:4",
+      "answers": [
+        {
+          "text": "Un granero limpio",
+          "isCorrect": false
+        },
+        {
+          "text": "Abundancia de pan",
+          "isCorrect": true
+        },
+        {
+          "text": "Una casa asolada",
+          "isCorrect": false
+        },
+        {
+          "text": "Riquezas y corona",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué conoce el corazón, y en qué no se entromete el extraño?",
+      "explanation": "Proverbios 14:10 dice: El corazón conoce la amargura de su alma; y extraño no se entrometerá en su alegría.",
+      "bibleReference": "Proverbios 14:10",
+      "answers": [
+        {
+          "text": "Conoce los caminos del rey y no se entromete en su juicio",
+          "isCorrect": false
+        },
+        {
+          "text": "Conoce la ciencia del cuerdo y no se entromete en su consejo",
+          "isCorrect": false
+        },
+        {
+          "text": "Conoce la amargura de su alma, y el extraño no entra en su alegría",
+          "isCorrect": true
+        },
+        {
+          "text": "Conoce el engaño de los necios y no se entromete en su risa",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el texto del camino que al hombre parece derecho?",
+      "explanation": "Proverbios 14:12 dice: Hay camino que al hombre parece derecho; empero su fin son caminos de muerte.",
+      "bibleReference": "Proverbios 14:12",
+      "answers": [
+        {
+          "text": "Que su fin son caminos de muerte",
+          "isCorrect": true
+        },
+        {
+          "text": "Que es manantial de vida",
+          "isCorrect": false
+        },
+        {
+          "text": "Que lleva a la casa del rey",
+          "isCorrect": false
+        },
+        {
+          "text": "Que nadie lo halla jamás",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿cuál es el término de la alegría?",
+      "explanation": "Proverbios 14:13 dice: Aun en la risa tendrá dolor el corazón; y el término de la alegría es congoja.",
+      "bibleReference": "Proverbios 14:13",
+      "answers": [
+        {
+          "text": "La risa",
+          "isCorrect": false
+        },
+        {
+          "text": "El favor",
+          "isCorrect": false
+        },
+        {
+          "text": "La abundancia",
+          "isCorrect": false
+        },
+        {
+          "text": "Congoja",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el texto del simple y del avisado?",
+      "explanation": "Proverbios 14:15 dice: El simple cree á toda palabra: mas el avisado entiende sus pasos.",
+      "bibleReference": "Proverbios 14:15",
+      "answers": [
+        {
+          "text": "El simple cree a toda palabra y el avisado entiende sus pasos",
+          "isCorrect": true
+        },
+        {
+          "text": "El simple entiende sus pasos y el avisado cree a todos",
+          "isCorrect": false
+        },
+        {
+          "text": "Los dos creen a toda palabra que oyen",
+          "isCorrect": false
+        },
+        {
+          "text": "El simple se corona de sabiduría y el avisado de necedad",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué hay en toda labor, y qué hace la palabra de los labios solamente?",
+      "explanation": "Proverbios 14:23 dice: En toda labor hay fruto: mas la palabra de los labios solamente empobrece.",
+      "bibleReference": "Proverbios 14:23",
+      "answers": [
+        {
+          "text": "En toda labor hay congoja y la palabra alegra",
+          "isCorrect": false
+        },
+        {
+          "text": "En toda labor hay tributo y la palabra enriquece",
+          "isCorrect": false
+        },
+        {
+          "text": "En toda labor hay fruto, pero la sola palabra empobrece",
+          "isCorrect": true
+        },
+        {
+          "text": "En toda labor hay engaño y la palabra da honra",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 27, ¿qué es el temor de Jehová?",
+      "explanation": "Proverbios 14:27 dice: El temor de Jehová es manantial de vida, para apartarse de los lazos de la muerte.",
+      "bibleReference": "Proverbios 14:27",
+      "answers": [
+        {
+          "text": "La corona de los sabios",
+          "isCorrect": false
+        },
+        {
+          "text": "Manantial de vida",
+          "isCorrect": true
+        },
+        {
+          "text": "Fruto de toda labor",
+          "isCorrect": false
+        },
+        {
+          "text": "Gloria del rey",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué es la envidia?",
+      "explanation": "Proverbios 14:30 dice: El corazón apacible es vida de las carnes: mas la envidia, pudrimiento de huesos.",
+      "bibleReference": "Proverbios 14:30",
+      "answers": [
+        {
+          "text": "Vida de las carnes",
+          "isCorrect": false
+        },
+        {
+          "text": "Corona de los sabios",
+          "isCorrect": false
+        },
+        {
+          "text": "Manantial de vida",
+          "isCorrect": false
+        },
+        {
+          "text": "Pudrimiento de huesos",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué engrandece a la nación?",
+      "explanation": "Proverbios 14:34 dice: La justicia engrandece la nación: mas el pecado es afrenta de las naciones.",
+      "bibleReference": "Proverbios 14:34",
+      "answers": [
+        {
+          "text": "La justicia",
+          "isCorrect": true
+        },
+        {
+          "text": "El pecado",
+          "isCorrect": false
+        },
+        {
+          "text": "La multitud de riquezas",
+          "isCorrect": false
+        },
+        {
+          "text": "La benevolencia del rey",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

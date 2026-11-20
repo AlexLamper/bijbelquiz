@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 108",
+  "description": "Diez preguntas sobre Salmos 108: el corazón dispuesto que despierta al alba, la misericordia más grande que los cielos y el reparto de Sichêm, Galaad y Moab.",
+  "slug": "psalms-quiz-part-108",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el encabezado del versículo 1, ¿de quién es esta canción?",
+      "explanation": "El encabezado dice: Canción: Salmo de David.",
+      "bibleReference": "Salmos 108:1",
+      "answers": [
+        { "text": "De los hijos de Coré", "isCorrect": false },
+        { "text": "De Asaph", "isCorrect": false },
+        { "text": "Del Músico principal", "isCorrect": false },
+        { "text": "De David", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 1, ¿cómo está su corazón?",
+      "explanation": "El versículo 1 dice: Mi corazón está dispuesto, oh Dios; cantaré y salmearé todavía en mi gloria.",
+      "bibleReference": "Salmos 108:1",
+      "answers": [
+        { "text": "Herido", "isCorrect": false },
+        { "text": "Abatido", "isCorrect": false },
+        { "text": "Dispuesto", "isCorrect": true },
+        { "text": "Temeroso", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 2, ¿a qué llama a despertar?",
+      "explanation": "El versículo 2 dice: Despiértate, salterio y arpa: despertaré al alba.",
+      "bibleReference": "Salmos 108:2",
+      "answers": [
+        { "text": "Al cielo y a la tierra", "isCorrect": false },
+        { "text": "Al salterio y al arpa", "isCorrect": true },
+        { "text": "A los pueblos y a las naciones", "isCorrect": false },
+        { "text": "A los ejércitos de Dios", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 3, ¿entre quiénes dice que cantará salmos a Jehová?",
+      "explanation": "El versículo 3 dice: Te alabaré, oh Jehová, entre los pueblos; á ti cantaré salmos entre las naciones.",
+      "bibleReference": "Salmos 108:3",
+      "answers": [
+        { "text": "Entre las naciones", "isCorrect": true },
+        { "text": "Entre sus enemigos", "isCorrect": false },
+        { "text": "Entre los ejércitos", "isCorrect": false },
+        { "text": "Entre los mentirosos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 4, ¿qué es más grande que los cielos?",
+      "explanation": "El versículo 4 dice: Porque grande más que los cielos es tu misericordia, y hasta los cielos tu verdad.",
+      "bibleReference": "Salmos 108:4",
+      "answers": [
+        { "text": "Su gloria", "isCorrect": false },
+        { "text": "Su diestra", "isCorrect": false },
+        { "text": "Su santuario", "isCorrect": false },
+        { "text": "Su misericordia", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 6, ¿con qué pide que Dios salve para que sus amados sean librados?",
+      "explanation": "El versículo 6 dice: Para que sean librados tus amados, salva con tu diestra y respóndeme.",
+      "bibleReference": "Salmos 108:6",
+      "answers": [
+        { "text": "Con su verdad", "isCorrect": false },
+        { "text": "Con su diestra", "isCorrect": true },
+        { "text": "Con su vara", "isCorrect": false },
+        { "text": "Con su calzado", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 7, ¿qué valle dice que medirá?",
+      "explanation": "El versículo 7 dice: alegraréme, repartiré á Sichêm, y mediré el valle de Succoth.",
+      "bibleReference": "Salmos 108:7",
+      "answers": [
+        { "text": "El valle de Sichêm", "isCorrect": false },
+        { "text": "El valle de Galaad", "isCorrect": false },
+        { "text": "El valle de Succoth", "isCorrect": true },
+        { "text": "El valle de Idumea", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 8, ¿qué es Ephraim?",
+      "explanation": "El versículo 8 dice: Ephraim es la fortaleza de mi cabeza; Judá es mi legislador.",
+      "bibleReference": "Salmos 108:8",
+      "answers": [
+        { "text": "La fortaleza de su cabeza", "isCorrect": true },
+        { "text": "La vasija de su lavatorio", "isCorrect": false },
+        { "text": "El cordel de su heredad", "isCorrect": false },
+        { "text": "La ciudad fortalecida", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 9, ¿qué es Moab?",
+      "explanation": "El versículo 9 dice: Moab, la vasija de mi lavatorio: sobre Edom echaré mi calzado.",
+      "bibleReference": "Salmos 108:9",
+      "answers": [
+        { "text": "Su legislador", "isCorrect": false },
+        { "text": "La vasija de su lavatorio", "isCorrect": true },
+        { "text": "La fortaleza de su cabeza", "isCorrect": false },
+        { "text": "El valle que ha de medir", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 12, ¿cómo es la salud del hombre?",
+      "explanation": "El versículo 12 dice: Danos socorro en la angustia, porque mentirosa es la salud del hombre.",
+      "bibleReference": "Salmos 108:12",
+      "answers": [
+        { "text": "Firme", "isCorrect": false },
+        { "text": "Escondida", "isCorrect": false },
+        { "text": "Mentirosa", "isCorrect": true },
+        { "text": "Pequeña", "isCorrect": false }
+      ]
+    }
+  ]
+}

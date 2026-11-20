@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 57",
+  "description": "Diez preguntas sobre Salmos 57: el amparo bajo la sombra de las alas de Dios, la vida entre leones y el canto de alabanza entre los pueblos.",
+  "slug": "psalms-quiz-part-57",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el versículo 1, ¿dónde se amparará el salmista hasta que pasen los quebrantos?",
+      "explanation": "El versículo 1 dice que en la sombra de las alas de Dios se amparará hasta que pasen los quebrantos.",
+      "bibleReference": "Salmos 57:1",
+      "answers": [
+        { "text": "Detrás de un muro de piedra", "isCorrect": false },
+        { "text": "En la sombra de las alas de Dios", "isCorrect": true },
+        { "text": "En medio de su propio ejército", "isCorrect": false },
+        { "text": "En la casa de sus amigos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el encabezado, ¿en qué momento de la vida de David se sitúa este Michtam?",
+      "explanation": "El encabezado dice que es un Michtam de David, cuando huyó de delante de Saúl á la cueva.",
+      "bibleReference": "Salmos 57:1",
+      "answers": [
+        { "text": "Cuando huyó de delante de Saúl á la cueva", "isCorrect": true },
+        { "text": "Cuando tuvo guerra contra Aram-Naharaim", "isCorrect": false },
+        { "text": "Cuando estaba en el desierto de Judá", "isCorrect": false },
+        { "text": "Cuando los filisteos le prendieron en Gath", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 2, ¿a quién clamará el salmista?",
+      "explanation": "El versículo 2 dice: Clamaré al Dios Altísimo, al Dios que me favorece.",
+      "bibleReference": "Salmos 57:2",
+      "answers": [
+        { "text": "A los jueces de su pueblo", "isCorrect": false },
+        { "text": "Al rey que lo persigue", "isCorrect": false },
+        { "text": "Al Dios Altísimo, que le favorece", "isCorrect": true },
+        { "text": "A los que se sientan en la puerta", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué enviará Dios, según el versículo 3?",
+      "explanation": "El versículo 3 dice que Dios enviará desde los cielos y lo salvará, y que enviará su misericordia y su verdad.",
+      "bibleReference": "Salmos 57:3",
+      "answers": [
+        { "text": "Fuego y granizo sobre la tierra", "isCorrect": false },
+        { "text": "Una multitud de carros", "isCorrect": false },
+        { "text": "Hambre sobre las naciones", "isCorrect": false },
+        { "text": "Su misericordia y su verdad", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 4, ¿entre qué dice el salmista que está su vida?",
+      "explanation": "El versículo 4 dice: Mi vida está entre leones; estoy echado entre hijos de hombres encendidos.",
+      "bibleReference": "Salmos 57:4",
+      "answers": [
+        { "text": "Entre ovejas y pastores", "isCorrect": false },
+        { "text": "Entre leones", "isCorrect": true },
+        { "text": "Entre montes y collados", "isCorrect": false },
+        { "text": "Entre los muertos olvidados", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué petición repite el salmo en los versículos 5 y 11?",
+      "explanation": "Los versículos 5 y 11 dicen las mismas palabras: Ensálzate sobre los cielos, oh Dios; sobre toda la tierra tu gloria.",
+      "bibleReference": "Salmos 57:5-11",
+      "answers": [
+        { "text": "Que Dios se ensalce sobre los cielos", "isCorrect": true },
+        { "text": "Que Dios quiebre los dientes de los leones", "isCorrect": false },
+        { "text": "Que Dios le devuelva la casa de su padre", "isCorrect": false },
+        { "text": "Que Dios calle la boca de los que juzgan", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 6, ¿qué les sucedió a los que cavaron un hoyo delante del salmista?",
+      "explanation": "El versículo 6 dice que cavaron un hoyo delante de él y que en medio de él han caído.",
+      "bibleReference": "Salmos 57:6",
+      "answers": [
+        { "text": "Lo cubrieron con ramas y se fueron", "isCorrect": false },
+        { "text": "Lo llenaron de agua", "isCorrect": false },
+        { "text": "Cayeron ellos mismos en medio del hoyo", "isCorrect": true },
+        { "text": "Lo cavaron pero se arrepintieron", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿A qué llama a despertar el salmista en el versículo 8?",
+      "explanation": "El versículo 8 dice: Despierta, oh gloria mía; despierta, salterio y arpa.",
+      "bibleReference": "Salmos 57:8",
+      "answers": [
+        { "text": "A los guardas de la ciudad", "isCorrect": false },
+        { "text": "A los montes y a los mares", "isCorrect": false },
+        { "text": "A los hijos de los hombres", "isCorrect": false },
+        { "text": "Al salterio y al arpa", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 9, ¿delante de quiénes alabará y cantará al Señor?",
+      "explanation": "El versículo 9 dice: Alabarte he en los pueblos, oh Señor; cantaré de ti en las naciones.",
+      "bibleReference": "Salmos 57:9",
+      "answers": [
+        { "text": "Solo delante de su familia", "isCorrect": false },
+        { "text": "En los pueblos y en las naciones", "isCorrect": true },
+        { "text": "Delante de los sacerdotes del templo", "isCorrect": false },
+        { "text": "A solas en la cueva", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 10, ¿hasta dónde llega la verdad de Dios?",
+      "explanation": "El versículo 10 dice que la misericordia de Dios es grande hasta los cielos, y su verdad hasta las nubes.",
+      "bibleReference": "Salmos 57:10",
+      "answers": [
+        { "text": "Hasta las nubes", "isCorrect": true },
+        { "text": "Hasta la puerta de la ciudad", "isCorrect": false },
+        { "text": "Hasta los abismos de la mar", "isCorrect": false },
+        { "text": "Hasta la cumbre de Sión", "isCorrect": false }
+      ]
+    }
+  ]
+}

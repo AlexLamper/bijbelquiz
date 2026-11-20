@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 102",
+  "description": "Diez preguntas sobre Salmos 102: la oración del pobre angustiado, el pájaro solitario sobre el tejado y el Dios que permanece para siempre.",
+  "slug": "psalms-quiz-part-102",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué encabezado lleva este salmo?",
+      "explanation": "Salmos 102:1 comienza con el encabezado: Oración del pobre, cuando estuviere angustiado, y delante de Jehová derramare su lamento.",
+      "bibleReference": "Salmos 102:1",
+      "answers": [
+        { "text": "Salmo de alabanza", "isCorrect": false },
+        { "text": "Oración del pobre angustiado", "isCorrect": true },
+        { "text": "Cántico de los peregrinos", "isCorrect": false },
+        { "text": "Salmo de los hijos de Coré", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 2, ¿qué pide el salmista que Dios no esconda de él?",
+      "explanation": "Salmos 102:2 dice: No escondas de mí tu rostro: en el día de mi angustia inclina a mí tu oído.",
+      "bibleReference": "Salmos 102:2",
+      "answers": [
+        { "text": "Su rostro", "isCorrect": true },
+        { "text": "Su ley", "isCorrect": false },
+        { "text": "Su mano", "isCorrect": false },
+        { "text": "Su santuario", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Con qué compara el versículo 3 sus días consumidos?",
+      "explanation": "Salmos 102:3 dice que sus días se han consumido como humo, y que sus huesos están quemados cual tizón.",
+      "bibleReference": "Salmos 102:3",
+      "answers": [
+        { "text": "Con una sombra", "isCorrect": false },
+        { "text": "Con el rocío", "isCorrect": false },
+        { "text": "Con humo", "isCorrect": true },
+        { "text": "Con un río seco", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 4, ¿de qué se olvidó el salmista porque su corazón fue herido y se secó?",
+      "explanation": "Salmos 102:4 dice que su corazón fue herido y se secó como la hierba, por lo cual se olvidó de comer su pan.",
+      "bibleReference": "Salmos 102:4",
+      "answers": [
+        { "text": "De orar de noche", "isCorrect": false },
+        { "text": "De cantar al arpa", "isCorrect": false },
+        { "text": "De salir de su casa", "isCorrect": false },
+        { "text": "De comer su pan", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿A qué aves se compara el salmista en el versículo 6?",
+      "explanation": "Salmos 102:6 dice: Soy semejante al pelícano del desierto; soy como el buho de las soledades.",
+      "bibleReference": "Salmos 102:6",
+      "answers": [
+        { "text": "Al pelícano y al buho", "isCorrect": true },
+        { "text": "A la cigüeña y al águila", "isCorrect": false },
+        { "text": "A la paloma y al cuervo", "isCorrect": false },
+        { "text": "Al gorrión y a la golondrina", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Con qué se compara el salmista en el versículo 7, cuando vela?",
+      "explanation": "Salmos 102:7 dice: Velo, y soy como el pájaro solitario sobre el tejado.",
+      "bibleReference": "Salmos 102:7",
+      "answers": [
+        { "text": "Con un centinela en el muro", "isCorrect": false },
+        { "text": "Con el pájaro solitario sobre el tejado", "isCorrect": true },
+        { "text": "Con un cordero perdido", "isCorrect": false },
+        { "text": "Con el viento de la noche", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 9, ¿qué come el salmista a manera de pan?",
+      "explanation": "Salmos 102:9 dice que come la ceniza a manera de pan y mezcla su bebida con lloro.",
+      "bibleReference": "Salmos 102:9",
+      "answers": [
+        { "text": "Pan de cebada", "isCorrect": false },
+        { "text": "Hierba del campo", "isCorrect": false },
+        { "text": "Miel y aceite", "isCorrect": false },
+        { "text": "Ceniza", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué dice el versículo 12 de Jehová, en contraste con los días del salmista?",
+      "explanation": "Salmos 102:12 dice: Mas tú, Jehová, permanecerás para siempre, y tu memoria para generación y generación.",
+      "bibleReference": "Salmos 102:12",
+      "answers": [
+        { "text": "Que se esconde en la nube", "isCorrect": false },
+        { "text": "Que calla por un tiempo", "isCorrect": false },
+        { "text": "Que permanecerá para siempre", "isCorrect": true },
+        { "text": "Que volverá a Sión al tercer día", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 20, ¿para qué miró Jehová desde los cielos a la tierra?",
+      "explanation": "Salmos 102:19-20 dicen que Jehová miró de los cielos a la tierra para oír el gemido de los presos y para soltar a los sentenciados a muerte.",
+      "bibleReference": "Salmos 102:19-20",
+      "answers": [
+        { "text": "Para contar las estrellas", "isCorrect": false },
+        { "text": "Para repartir la tierra", "isCorrect": false },
+        { "text": "Para castigar a los reyes", "isCorrect": false },
+        { "text": "Para oír el gemido de los presos", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué dice el versículo 26 que les sucederá a los cielos y a la tierra?",
+      "explanation": "Salmos 102:26 dice que ellos perecerán y que como un vestido se envejecerán, mientras que Dios permanecerá.",
+      "bibleReference": "Salmos 102:26",
+      "answers": [
+        { "text": "Que serán renovados cada día", "isCorrect": false },
+        { "text": "Que se envejecerán como un vestido", "isCorrect": true },
+        { "text": "Que permanecerán para siempre", "isCorrect": false },
+        { "text": "Que serán cubiertos de aguas", "isCorrect": false }
+      ]
+    }
+  ]
+}

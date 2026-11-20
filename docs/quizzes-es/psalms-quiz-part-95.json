@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 95",
+  "description": "Diez preguntas sobre Salmos 95: la invitación a cantar a la roca de nuestra salud, el pueblo de su dehesa y el aviso de Meriba.",
+  "slug": "psalms-quiz-part-95",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "En el primer versículo, ¿cómo se llama a aquel a quien se canta con júbilo?",
+      "explanation": "Salmos 95:1 invita a cantar con júbilo a la roca de nuestra salud.",
+      "bibleReference": "Salmos 95:1",
+      "answers": [
+        { "text": "El pastor de Israel", "isCorrect": false },
+        { "text": "El rey de Sión", "isCorrect": false },
+        { "text": "La roca de nuestra salud", "isCorrect": true },
+        { "text": "El juez de la tierra", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 2, ¿con qué se debe llegar ante su presencia?",
+      "explanation": "Salmos 95:2 dice: Lleguemos ante su acatamiento con alabanza; aclamémosle con cánticos.",
+      "bibleReference": "Salmos 95:2",
+      "answers": [
+        { "text": "Con alabanza", "isCorrect": true },
+        { "text": "Con temor y llanto", "isCorrect": false },
+        { "text": "Con presentes de oro", "isCorrect": false },
+        { "text": "Con ayuno", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dice el versículo 3 de Jehová en relación con todos los dioses?",
+      "explanation": "Salmos 95:3 dice que Jehová es Dios grande y Rey grande sobre todos los dioses.",
+      "bibleReference": "Salmos 95:3",
+      "answers": [
+        { "text": "Que es uno entre ellos", "isCorrect": false },
+        { "text": "Que calla ante ellos", "isCorrect": false },
+        { "text": "Que los hizo a todos", "isCorrect": false },
+        { "text": "Que es Rey grande sobre ellos", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 4, ¿qué está en la mano de Jehová?",
+      "explanation": "Salmos 95:4 dice que en su mano están las profundidades de la tierra, y que las alturas de los montes son suyas.",
+      "bibleReference": "Salmos 95:4",
+      "answers": [
+        { "text": "Las llaves del santuario", "isCorrect": false },
+        { "text": "Las profundidades de la tierra", "isCorrect": true },
+        { "text": "La vara de Aarón", "isCorrect": false },
+        { "text": "Las nubes del cielo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 5, ¿qué formaron las manos de Jehová?",
+      "explanation": "Salmos 95:5 dice que suya es la mar, porque él la hizo, y que sus manos formaron la seca.",
+      "bibleReference": "Salmos 95:5",
+      "answers": [
+        { "text": "La seca", "isCorrect": true },
+        { "text": "El arca", "isCorrect": false },
+        { "text": "Los ídolos", "isCorrect": false },
+        { "text": "Las islas", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿A qué invita el versículo 6 delante de Jehová nuestro hacedor?",
+      "explanation": "Salmos 95:6 dice: Venid, adoremos y postrémonos; arrodillémonos delante de Jehová nuestro hacedor.",
+      "bibleReference": "Salmos 95:6",
+      "answers": [
+        { "text": "A guardar silencio y salir", "isCorrect": false },
+        { "text": "A ofrecer becerros y machos cabríos", "isCorrect": false },
+        { "text": "A adorar, postrarse y arrodillarse", "isCorrect": true },
+        { "text": "A subir al monte y esperar", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cómo describe el versículo 7 al pueblo que habla en este salmo?",
+      "explanation": "Salmos 95:7 dice que él es nuestro Dios, y nosotros el pueblo de su dehesa y ovejas de su mano.",
+      "bibleReference": "Salmos 95:7",
+      "answers": [
+        { "text": "Como siervos comprados", "isCorrect": false },
+        { "text": "Como el pueblo de su dehesa y ovejas de su mano", "isCorrect": true },
+        { "text": "Como huéspedes en tierra ajena", "isCorrect": false },
+        { "text": "Como una viña plantada en el monte", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Con qué lugares compara el versículo 8 el endurecimiento del corazón?",
+      "explanation": "Salmos 95:8 dice: No endurezcáis vuestro corazón como en Meriba, como el día de Masa en el desierto.",
+      "bibleReference": "Salmos 95:8",
+      "answers": [
+        { "text": "Con Sodoma y Gomorra", "isCorrect": false },
+        { "text": "Con Babel y Nínive", "isCorrect": false },
+        { "text": "Con Sión y Jerusalem", "isCorrect": false },
+        { "text": "Con Meriba y Masa", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Cuánto tiempo estuvo Dios disgustado con aquella nación, según el versículo 10?",
+      "explanation": "Salmos 95:10 dice: Cuarenta años estuve disgustado con la nación.",
+      "bibleReference": "Salmos 95:10",
+      "answers": [
+        { "text": "Cuarenta años", "isCorrect": true },
+        { "text": "Siete años", "isCorrect": false },
+        { "text": "Veinte años", "isCorrect": false },
+        { "text": "Setenta años", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué juró Dios en su furor en el último versículo?",
+      "explanation": "Salmos 95:11 dice que juró en su furor que no entrarían en su reposo.",
+      "bibleReference": "Salmos 95:11",
+      "answers": [
+        { "text": "Que no verían el mar", "isCorrect": false },
+        { "text": "Que no volverían a Egipto", "isCorrect": false },
+        { "text": "Que no tendrían rey", "isCorrect": false },
+        { "text": "Que no entrarían en su reposo", "isCorrect": true }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 142",
+  "description": "Diez preguntas sobre Salmos 142: la oración hecha en la cueva, la querella derramada delante de Jehová y el ruego de salir de la cárcel.",
+  "slug": "psalms-quiz-part-142",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el encabezamiento, ¿dónde hizo esta oración?",
+      "explanation": "El encabezamiento dice que es una oración que hizo cuando estaba en la cueva.",
+      "bibleReference": "Salmos 142:1",
+      "answers": [
+        {
+          "text": "En la cueva",
+          "isCorrect": true
+        },
+        {
+          "text": "En el templo",
+          "isCorrect": false
+        },
+        {
+          "text": "En el desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "En el campamento",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué dice que clamará a Jehová?",
+      "explanation": "Dice: \"CON mi voz clamaré á Jehová, con mi voz pediré á Jehová misericordia\".",
+      "bibleReference": "Salmos 142:1",
+      "answers": [
+        {
+          "text": "Con el arpa",
+          "isCorrect": false
+        },
+        {
+          "text": "Con la bocina",
+          "isCorrect": false
+        },
+        {
+          "text": "Con su voz",
+          "isCorrect": true
+        },
+        {
+          "text": "Con el adufe",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice que derramará delante de Jehová?",
+      "explanation": "Dice que delante de él derramará su querella y denunciará su angustia.",
+      "bibleReference": "Salmos 142:2",
+      "answers": [
+        {
+          "text": "Su aceite",
+          "isCorrect": false
+        },
+        {
+          "text": "Su querella",
+          "isCorrect": true
+        },
+        {
+          "text": "Su copa",
+          "isCorrect": false
+        },
+        {
+          "text": "Su ofrenda",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Cuando su espíritu se angustiaba, ¿qué dice que Jehová conocía?",
+      "explanation": "Dice que cuando su espíritu se angustiaba dentro de él, Jehová conocía su senda.",
+      "bibleReference": "Salmos 142:3",
+      "answers": [
+        {
+          "text": "Su casa",
+          "isCorrect": false
+        },
+        {
+          "text": "Su tesoro",
+          "isCorrect": false
+        },
+        {
+          "text": "Su nombre",
+          "isCorrect": false
+        },
+        {
+          "text": "Su senda",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué le escondieron en el camino en que andaba?",
+      "explanation": "Dice que en el camino en que andaba le escondieron lazo.",
+      "bibleReference": "Salmos 142:3",
+      "answers": [
+        {
+          "text": "Un lazo",
+          "isCorrect": true
+        },
+        {
+          "text": "Una piedra",
+          "isCorrect": false
+        },
+        {
+          "text": "Una espada",
+          "isCorrect": false
+        },
+        {
+          "text": "Un muro",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Al mirar a la mano derecha, ¿qué observaba?",
+      "explanation": "Dice que miraba a la mano derecha y observaba, pero no había quien le conociese ni quien volviese por su vida.",
+      "bibleReference": "Salmos 142:4",
+      "answers": [
+        {
+          "text": "Que sus amigos le esperaban",
+          "isCorrect": false
+        },
+        {
+          "text": "Que no había quien le conociese",
+          "isCorrect": true
+        },
+        {
+          "text": "Que el enemigo ya huía",
+          "isCorrect": false
+        },
+        {
+          "text": "Que el camino estaba abierto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice que Jehová es para él en la tierra de los vivientes?",
+      "explanation": "Clamó a Jehová y dijo: \"Tú eres mi esperanza, y mi porción en la tierra de los vivientes\".",
+      "bibleReference": "Salmos 142:5",
+      "answers": [
+        {
+          "text": "Su juez y su testigo",
+          "isCorrect": false
+        },
+        {
+          "text": "Su roca y su castillo",
+          "isCorrect": false
+        },
+        {
+          "text": "Su pastor y su guía",
+          "isCorrect": false
+        },
+        {
+          "text": "Su esperanza y su porción",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Por qué pide ser librado de los que le persiguen?",
+      "explanation": "Pide ser librado de los que le persiguen porque son más fuertes que él.",
+      "bibleReference": "Salmos 142:6",
+      "answers": [
+        {
+          "text": "Porque son muchos en número",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque conocen su casa",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque son más fuertes que él",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque le quitaron su campo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De dónde pide que Jehová saque su alma?",
+      "explanation": "Pide: \"Saca mi alma de la cárcel para que alabe tu nombre\".",
+      "bibleReference": "Salmos 142:7",
+      "answers": [
+        {
+          "text": "De la cárcel",
+          "isCorrect": true
+        },
+        {
+          "text": "Del horno",
+          "isCorrect": false
+        },
+        {
+          "text": "Del río",
+          "isCorrect": false
+        },
+        {
+          "text": "Del sepulcro",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Para qué pide que su alma sea sacada?",
+      "explanation": "Pide que su alma sea sacada para que alabe el nombre de Jehová.",
+      "bibleReference": "Salmos 142:7",
+      "answers": [
+        {
+          "text": "Para volver a su tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Para alabar su nombre",
+          "isCorrect": true
+        },
+        {
+          "text": "Para juzgar a sus enemigos",
+          "isCorrect": false
+        },
+        {
+          "text": "Para edificar un altar",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

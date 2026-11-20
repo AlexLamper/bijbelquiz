@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 68",
+  "description": "Diez preguntas sobre Salmos 68: Dios que se levanta y esparce a sus enemigos, el Padre de huérfanos, el Sinaí que tembló y la procesión con doncellas y adufes.",
+  "slug": "psalms-quiz-part-68",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Con qué petición empieza este salmo, en el versículo 1?",
+      "explanation": "El versículo 1 dice: Levántese Dios, sean esparcidos sus enemigos, y huyan de su presencia los que le aborrecen.",
+      "bibleReference": "Salmos 68:1",
+      "answers": [
+        { "text": "Que Dios se levante y sus enemigos sean esparcidos", "isCorrect": true },
+        { "text": "Que Dios sane las quiebras de la tierra", "isCorrect": false },
+        { "text": "Que Dios haga resplandecer su rostro", "isCorrect": false },
+        { "text": "Que Dios oiga el clamor del salmista", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 2, ¿con qué se compara la perdición de los impíos delante de Dios?",
+      "explanation": "El versículo 2 dice: Como es lanzado el humo, los lanzarás: como se derrite la cera delante del fuego, así perecerán los impíos delante de Dios.",
+      "bibleReference": "Salmos 68:2",
+      "answers": [
+        { "text": "Con el grano que se trilla en el campo y se lleva el viento", "isCorrect": false },
+        { "text": "Con el caracol que se deslíe y con el abortivo de mujer", "isCorrect": false },
+        { "text": "Con el humo que es lanzado y la cera que se derrite delante del fuego", "isCorrect": true },
+        { "text": "Con la nieve que cae sobre el monte Salmón en el invierno", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 5, ¿cómo se llama a Dios en su santa morada?",
+      "explanation": "El versículo 5 dice: Padre de huérfanos y defensor de viudas, es Dios en la morada de su santuario.",
+      "bibleReference": "Salmos 68:5",
+      "answers": [
+        { "text": "Rey de los montes altos", "isCorrect": false },
+        { "text": "Padre de huérfanos y defensor de viudas", "isCorrect": true },
+        { "text": "Señor de los carros y de los ejércitos", "isCorrect": false },
+        { "text": "Juez de las doncellas y de los cantores", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 6, ¿dónde habitan los rebeldes?",
+      "explanation": "El versículo 6 dice que Dios hace habitar en familia a los solos y saca á los aprisionados con grillos, mas los rebeldes habitan en sequedad.",
+      "bibleReference": "Salmos 68:6",
+      "answers": [
+        { "text": "En los atrios de Dios", "isCorrect": false },
+        { "text": "En el monte de Basán", "isCorrect": false },
+        { "text": "En medio de la congregación", "isCorrect": false },
+        { "text": "En sequedad", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 8, ¿qué monte tembló delante del Dios de Israel?",
+      "explanation": "El versículo 8 dice que la tierra tembló, que los cielos destilaron a la presencia de Dios, y que aquel Sinaí tembló delante de Dios, del Dios de Israel.",
+      "bibleReference": "Salmos 68:8",
+      "answers": [
+        { "text": "El Sinaí", "isCorrect": true },
+        { "text": "El monte de Basán", "isCorrect": false },
+        { "text": "Salmón", "isCorrect": false },
+        { "text": "Sión", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 13, ¿con qué se compara a los que fueron echados entre los tiestos?",
+      "explanation": "El versículo 13 dice: seréis como las alas de la paloma cubierta de plata, y sus plumas con amarillez de oro.",
+      "bibleReference": "Salmos 68:13",
+      "answers": [
+        { "text": "Con los tiestos quebrados del alfarero", "isCorrect": false },
+        { "text": "Con los carros y los millares de Dios", "isCorrect": false },
+        { "text": "Con las alas de la paloma cubierta de plata", "isCorrect": true },
+        { "text": "Con los toros y los becerros", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 16, ¿qué dice el salmo del monte que Dios amó para su asiento?",
+      "explanation": "El versículo 16 dice que Dios amó este monte para su asiento y que ciertamente Jehová habitará en él para siempre.",
+      "bibleReference": "Salmos 68:16",
+      "answers": [
+        { "text": "Que será repartido entre los príncipes", "isCorrect": false },
+        { "text": "Que Jehová habitará en él para siempre", "isCorrect": true },
+        { "text": "Que temblará como el Sinaí", "isCorrect": false },
+        { "text": "Que será morada de los príncipes de Egipto", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 17, ¿cuántos son los carros de Dios?",
+      "explanation": "El versículo 17 dice: Los carros de Dios son veinte mil, y más millares de ángeles.",
+      "bibleReference": "Salmos 68:17",
+      "answers": [
+        { "text": "Doce mil", "isCorrect": false },
+        { "text": "Mil", "isCorrect": false },
+        { "text": "Siete mil", "isCorrect": false },
+        { "text": "Veinte mil", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 25, ¿quiénes iban en medio con adufes?",
+      "explanation": "El versículo 25 dice: Los cantores iban delante, los tañedores detrás; en medio, las doncellas con adufes.",
+      "bibleReference": "Salmos 68:25",
+      "answers": [
+        { "text": "Las doncellas", "isCorrect": true },
+        { "text": "Los cantores", "isCorrect": false },
+        { "text": "Los príncipes de Judá", "isCorrect": false },
+        { "text": "Los tañedores", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 31, ¿quiénes vendrán de Egipto?",
+      "explanation": "El versículo 31 dice: Vendrán príncipes de Egipto; Etiopía apresurará sus manos á Dios.",
+      "bibleReference": "Salmos 68:31",
+      "answers": [
+        { "text": "Cantores", "isCorrect": false },
+        { "text": "Los aprisionados con grillos", "isCorrect": false },
+        { "text": "Príncipes", "isCorrect": true },
+        { "text": "Reyes de ejércitos que huyen", "isCorrect": false }
+      ]
+    }
+  ]
+}

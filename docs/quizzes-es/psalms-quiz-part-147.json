@@ -1,0 +1,242 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 147",
+  "description": "Diez preguntas sobre Salmos 147: Jehová que edifica Jerusalem, cuenta las estrellas, da nieve como lana y envía su palabra a la tierra.",
+  "slug": "psalms-quiz-part-147",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué ciudad dice que Jehová edifica?",
+      "explanation": "Dice que Jehová edifica a Jerusalem y recogerá a los echados de Israel.",
+      "bibleReference": "Salmos 147:2",
+      "answers": [
+        {
+          "text": "Samaria",
+          "isCorrect": false
+        },
+        {
+          "text": "Jerusalem",
+          "isCorrect": true
+        },
+        {
+          "text": "Babilonia",
+          "isCorrect": false
+        },
+        {
+          "text": "Hebrón",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hace Jehová con los quebrantados de corazón?",
+      "explanation": "Dice que él sana a los quebrantados de corazón y liga sus heridas.",
+      "bibleReference": "Salmos 147:3",
+      "answers": [
+        {
+          "text": "Los lleva al desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "Los deja en su dolor",
+          "isCorrect": false
+        },
+        {
+          "text": "Los juzga con vara",
+          "isCorrect": false
+        },
+        {
+          "text": "Los sana y liga sus heridas",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice que Jehová hace con las estrellas?",
+      "explanation": "Dice que él cuenta el número de las estrellas y a todas ellas llama por sus nombres.",
+      "bibleReference": "Salmos 147:4",
+      "answers": [
+        {
+          "text": "Las cuenta y las llama por sus nombres",
+          "isCorrect": true
+        },
+        {
+          "text": "Las esconde detrás de las nubes",
+          "isCorrect": false
+        },
+        {
+          "text": "Las reparte entre todos los pueblos",
+          "isCorrect": false
+        },
+        {
+          "text": "Las apaga una por una cada noche",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hace Jehová con los impíos?",
+      "explanation": "Dice que Jehová ensalza a los humildes y humilla a los impíos hasta la tierra.",
+      "bibleReference": "Salmos 147:6",
+      "answers": [
+        {
+          "text": "Los ensalza sobre los montes",
+          "isCorrect": false
+        },
+        {
+          "text": "Los esconde en su tienda",
+          "isCorrect": false
+        },
+        {
+          "text": "Los humilla hasta la tierra",
+          "isCorrect": true
+        },
+        {
+          "text": "Los pone por jueces del pueblo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice que Jehová prepara para la tierra?",
+      "explanation": "Dice que él cubre los cielos de nubes, prepara la lluvia para la tierra y hace a los montes producir hierba.",
+      "bibleReference": "Salmos 147:8",
+      "answers": [
+        {
+          "text": "El fuego",
+          "isCorrect": false
+        },
+        {
+          "text": "La lluvia",
+          "isCorrect": true
+        },
+        {
+          "text": "La cosecha",
+          "isCorrect": false
+        },
+        {
+          "text": "El viento",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Además de la bestia, ¿a quiénes da su mantenimiento?",
+      "explanation": "Dice que él da a la bestia su mantenimiento, y a los hijos de los cuervos que claman.",
+      "bibleReference": "Salmos 147:9",
+      "answers": [
+        {
+          "text": "A los peces de la mar",
+          "isCorrect": false
+        },
+        {
+          "text": "A los corderos del rebaño",
+          "isCorrect": false
+        },
+        {
+          "text": "A las aves que anidan en los cedros",
+          "isCorrect": false
+        },
+        {
+          "text": "A los hijos de los cuervos que claman",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿En qué dice que Jehová no toma contentamiento?",
+      "explanation": "Dice que no toma contentamiento en la fortaleza del caballo, ni se complace en las piernas del hombre.",
+      "bibleReference": "Salmos 147:10",
+      "answers": [
+        {
+          "text": "En la fortaleza del caballo",
+          "isCorrect": true
+        },
+        {
+          "text": "En los que le temen",
+          "isCorrect": false
+        },
+        {
+          "text": "En la alabanza de su pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "En la paz de Jerusalem",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué compara la nieve que Jehová da?",
+      "explanation": "Dice que él da la nieve como lana y derrama la escarcha como ceniza.",
+      "bibleReference": "Salmos 147:16",
+      "answers": [
+        {
+          "text": "Con plata",
+          "isCorrect": false
+        },
+        {
+          "text": "Con harina",
+          "isCorrect": false
+        },
+        {
+          "text": "Con lana",
+          "isCorrect": true
+        },
+        {
+          "text": "Con sal",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué sucede cuando Jehová sopla su viento?",
+      "explanation": "Dice que enviará su palabra y los derretirá, y que soplará su viento y fluirán las aguas.",
+      "bibleReference": "Salmos 147:18",
+      "answers": [
+        {
+          "text": "Caen los montes",
+          "isCorrect": false
+        },
+        {
+          "text": "Fluyen las aguas",
+          "isCorrect": true
+        },
+        {
+          "text": "Se abren los cielos",
+          "isCorrect": false
+        },
+        {
+          "text": "Tiemblan los pueblos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quién denuncia sus estatutos y sus juicios?",
+      "explanation": "Dice que denuncia sus palabras a Jacob, y sus estatutos y sus juicios a Israel.",
+      "bibleReference": "Salmos 147:19",
+      "answers": [
+        {
+          "text": "A Israel",
+          "isCorrect": true
+        },
+        {
+          "text": "A Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "A todas las gentes",
+          "isCorrect": false
+        },
+        {
+          "text": "A los reyes de la tierra",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

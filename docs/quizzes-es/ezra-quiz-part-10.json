@@ -14,8 +14,8 @@
       "bibleReference": "Esdras 10:1",
       "answers": [
         {
-          "text": "Una muy grande multitud de Israel: hombres, mujeres y niños",
-          "isCorrect": true
+          "text": "Los cantores y los porteros del templo",
+          "isCorrect": false
         },
         {
           "text": "Solamente los sacerdotes y los Levitas",
@@ -26,8 +26,8 @@
           "isCorrect": false
         },
         {
-          "text": "Los cantores y los porteros del templo",
-          "isCorrect": false
+          "text": "Una muy grande multitud de Israel: hombres, mujeres y niños",
+          "isCorrect": true
         }
       ]
     },
@@ -37,12 +37,12 @@
       "bibleReference": "Esdras 10:2",
       "answers": [
         {
-          "text": "Jonathán hijo de Asael",
-          "isCorrect": false
-        },
-        {
           "text": "Sechânías hijo de Jehiel",
           "isCorrect": true
+        },
+        {
+          "text": "Jonathán hijo de Asael",
+          "isCorrect": false
         },
         {
           "text": "Johanán hijo de Eliasib",
@@ -60,16 +60,16 @@
       "bibleReference": "Esdras 10:3",
       "answers": [
         {
-          "text": "Enviar una carta al rey Artajerjes pidiendo consejo",
-          "isCorrect": false
+          "text": "Hacer pacto con Dios y echar a las mujeres extranjeras",
+          "isCorrect": true
         },
         {
           "text": "Ofrecer cien becerros en la casa de Dios",
           "isCorrect": false
         },
         {
-          "text": "Hacer pacto con Dios y echar a las mujeres extranjeras",
-          "isCorrect": true
+          "text": "Enviar una carta al rey Artajerjes pidiendo consejo",
+          "isCorrect": false
         },
         {
           "text": "Reunir al pueblo para edificar el muro de la ciudad",
@@ -91,12 +91,12 @@
           "isCorrect": false
         },
         {
-          "text": "Durmió allí tres días y tres noches",
-          "isCorrect": false
-        },
-        {
           "text": "No comió pan ni bebió agua",
           "isCorrect": true
+        },
+        {
+          "text": "Durmió allí tres días y tres noches",
+          "isCorrect": false
         }
       ]
     },
@@ -106,12 +106,12 @@
       "bibleReference": "Esdras 10:8",
       "answers": [
         {
-          "text": "Perdería toda su hacienda y sería apartado",
-          "isCorrect": true
-        },
-        {
           "text": "Sería juzgado a muerte delante de los príncipes",
           "isCorrect": false
+        },
+        {
+          "text": "Perdería toda su hacienda y sería apartado",
+          "isCorrect": true
         },
         {
           "text": "Pagaría un carnero de los rebaños por su delito",
@@ -160,12 +160,12 @@
           "isCorrect": false
         },
         {
-          "text": "Así se haga conforme a tu palabra",
-          "isCorrect": true
-        },
-        {
           "text": "Escribamos una carta a Babilonia",
           "isCorrect": false
+        },
+        {
+          "text": "Así se haga conforme a tu palabra",
+          "isCorrect": true
         }
       ]
     },
@@ -175,8 +175,8 @@
       "bibleReference": "Esdras 10:13",
       "answers": [
         {
-          "text": "Que los príncipes estaban ausentes",
-          "isCorrect": false
+          "text": "Que el pueblo era mucho y el tiempo lluvioso",
+          "isCorrect": true
         },
         {
           "text": "Que el muro aún no estaba acabado",
@@ -187,8 +187,8 @@
           "isCorrect": false
         },
         {
-          "text": "Que el pueblo era mucho y el tiempo lluvioso",
-          "isCorrect": true
+          "text": "Que los príncipes estaban ausentes",
+          "isCorrect": false
         }
       ]
     },
@@ -198,16 +198,16 @@
       "bibleReference": "Esdras 10:16-17",
       "answers": [
         {
-          "text": "El primer día del mes primero",
-          "isCorrect": true
+          "text": "A los veinte del mes noveno",
+          "isCorrect": false
         },
         {
           "text": "El primer día del mes décimo",
           "isCorrect": false
         },
         {
-          "text": "A los veinte del mes noveno",
-          "isCorrect": false
+          "text": "El primer día del mes primero",
+          "isCorrect": true
         },
         {
           "text": "El catorce del mes primero",

@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 51",
+  "description": "Diez preguntas sobre Salmos 51: la petición de que Dios borre las rebeliones, la purificación con hisopo y los sacrificios que Dios quiere.",
+  "slug": "psalms-quiz-part-51",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el encabezado, ¿quién vino a David después de que él entró a Bathsebah?",
+      "explanation": "El encabezado dice que este salmo es de David, cuando después que entró a Bathsebah vino a él Nathán el profeta.",
+      "bibleReference": "Salmos 51:1",
+      "answers": [
+        { "text": "Asaph el cantor", "isCorrect": false },
+        { "text": "Doeg Idumeo", "isCorrect": false },
+        { "text": "Nathán el profeta", "isCorrect": true },
+        { "text": "Ahimelech el sacerdote", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 1, ¿qué pide que Dios haga con sus rebeliones?",
+      "explanation": "El versículo 1 pide que, conforme a la multitud de sus piedades, Dios borre sus rebeliones.",
+      "bibleReference": "Salmos 51:1",
+      "answers": [
+        { "text": "Que las borre", "isCorrect": true },
+        { "text": "Que las cuente", "isCorrect": false },
+        { "text": "Que las escriba", "isCorrect": false },
+        { "text": "Que las juzgue", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 4, ¿contra quién dice haber pecado?",
+      "explanation": "El versículo 4 dice: A ti, á ti solo he pecado, y he hecho lo malo delante de tus ojos.",
+      "bibleReference": "Salmos 51:4",
+      "answers": [
+        { "text": "Contra su pueblo", "isCorrect": false },
+        { "text": "Contra su casa", "isCorrect": false },
+        { "text": "Contra el profeta", "isCorrect": false },
+        { "text": "Contra Dios solamente", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 5, ¿en qué dice que ha sido formado?",
+      "explanation": "El versículo 5 dice: He aquí, en maldad he sido formado, y en pecado me concibió mi madre.",
+      "bibleReference": "Salmos 51:5",
+      "answers": [
+        { "text": "En justicia", "isCorrect": false },
+        { "text": "En maldad", "isCorrect": true },
+        { "text": "En verdad", "isCorrect": false },
+        { "text": "En sabiduría", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 7, ¿con qué pide ser purificado?",
+      "explanation": "El versículo 7 dice: Purifícame con hisopo, y seré limpio.",
+      "bibleReference": "Salmos 51:7",
+      "answers": [
+        { "text": "Con óleo", "isCorrect": false },
+        { "text": "Con fuego", "isCorrect": false },
+        { "text": "Con hisopo", "isCorrect": true },
+        { "text": "Con sangre", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 7, ¿más que qué quedará emblanquecido si Dios lo lava?",
+      "explanation": "El versículo 7 dice: lávame, y seré emblanquecido más que la nieve.",
+      "bibleReference": "Salmos 51:7",
+      "answers": [
+        { "text": "Más que la nieve", "isCorrect": true },
+        { "text": "Más que la leche", "isCorrect": false },
+        { "text": "Más que el marfil", "isCorrect": false },
+        { "text": "Más que la luz", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 10, ¿qué pide que Dios cree en él?",
+      "explanation": "El versículo 10 dice: Crea en mí, oh Dios, un corazón limpio; y renueva un espíritu recto dentro de mí.",
+      "bibleReference": "Salmos 51:10",
+      "answers": [
+        { "text": "Una lengua nueva", "isCorrect": false },
+        { "text": "Un corazón limpio", "isCorrect": true },
+        { "text": "Un nombre perpetuo", "isCorrect": false },
+        { "text": "Unos labios abiertos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 11, ¿qué pide que Dios no quite de él?",
+      "explanation": "El versículo 11 dice: No me eches de delante de ti; y no quites de mí tu santo espíritu.",
+      "bibleReference": "Salmos 51:11",
+      "answers": [
+        { "text": "Su misericordia", "isCorrect": false },
+        { "text": "Su alabanza", "isCorrect": false },
+        { "text": "Su benevolencia", "isCorrect": false },
+        { "text": "Su santo espíritu", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 17, ¿cuáles son los sacrificios de Dios?",
+      "explanation": "El versículo 17 dice que los sacrificios de Dios son el espíritu quebrantado, y que no despreciará al corazón contrito y humillado.",
+      "bibleReference": "Salmos 51:17",
+      "answers": [
+        { "text": "El espíritu quebrantado", "isCorrect": true },
+        { "text": "El holocausto del altar", "isCorrect": false },
+        { "text": "Los becerros de la mañana", "isCorrect": false },
+        { "text": "Los votos pagados", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 18, ¿qué muros pide que Dios edifique?",
+      "explanation": "El versículo 18 dice: Haz bien con tu benevolencia á Sión: edifica los muros de Jerusalem.",
+      "bibleReference": "Salmos 51:18",
+      "answers": [
+        { "text": "Los muros del santuario", "isCorrect": false },
+        { "text": "Los muros del templo", "isCorrect": false },
+        { "text": "Los muros de Jerusalem", "isCorrect": true },
+        { "text": "Los muros de su casa", "isCorrect": false }
+      ]
+    }
+  ]
+}

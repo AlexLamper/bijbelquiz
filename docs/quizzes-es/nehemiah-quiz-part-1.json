@@ -14,16 +14,16 @@
       "bibleReference": "Nehemías 1:1",
       "answers": [
         {
-          "text": "De Hachâlías",
-          "isCorrect": true
+          "text": "De Azbuc",
+          "isCorrect": false
         },
         {
           "text": "De Hanani",
           "isCorrect": false
         },
         {
-          "text": "De Azbuc",
-          "isCorrect": false
+          "text": "De Hachâlías",
+          "isCorrect": true
         },
         {
           "text": "De Hananías",
@@ -60,16 +60,16 @@
       "bibleReference": "Nehemías 1:2",
       "answers": [
         {
-          "text": "Hananías, príncipe del palacio",
-          "isCorrect": false
+          "text": "Hanani, uno de sus hermanos",
+          "isCorrect": true
         },
         {
           "text": "Esdras, el sacerdote escriba",
           "isCorrect": false
         },
         {
-          "text": "Hanani, uno de sus hermanos",
-          "isCorrect": true
+          "text": "Hananías, príncipe del palacio",
+          "isCorrect": false
         },
         {
           "text": "Asaph, guarda del bosque del rey",
@@ -87,16 +87,16 @@
           "isCorrect": false
         },
         {
-          "text": "Que la muralla estaba edificada hasta su mitad",
-          "isCorrect": false
+          "text": "Que el muro estaba derribado y las puertas quemadas a fuego",
+          "isCorrect": true
         },
         {
           "text": "Que las puertas tenían cerraduras y cerrojos nuevos",
           "isCorrect": false
         },
         {
-          "text": "Que el muro estaba derribado y las puertas quemadas a fuego",
-          "isCorrect": true
+          "text": "Que la muralla estaba edificada hasta su mitad",
+          "isCorrect": false
         }
       ]
     },
@@ -106,16 +106,16 @@
       "bibleReference": "Nehemías 1:4",
       "answers": [
         {
-          "text": "Se sentó y lloró, y ayunó y oró delante del Dios de los cielos",
-          "isCorrect": true
+          "text": "Escribió una carta a los gobernadores del otro lado del río",
+          "isCorrect": false
         },
         {
           "text": "Partió en seguida hacia Jerusalem con soldados del rey",
           "isCorrect": false
         },
         {
-          "text": "Escribió una carta a los gobernadores del otro lado del río",
-          "isCorrect": false
+          "text": "Se sentó y lloró, y ayunó y oró delante del Dios de los cielos",
+          "isCorrect": true
         },
         {
           "text": "Calló y no dijo nada a nadie durante un año entero",
@@ -133,16 +133,16 @@
           "isCorrect": false
         },
         {
-          "text": "A los que le aman y guardan sus mandamientos",
-          "isCorrect": true
+          "text": "A los que habitan en Jerusalem",
+          "isCorrect": false
         },
         {
           "text": "A los sacerdotes y a los Levitas",
           "isCorrect": false
         },
         {
-          "text": "A los que habitan en Jerusalem",
-          "isCorrect": false
+          "text": "A los que le aman y guardan sus mandamientos",
+          "isCorrect": true
         }
       ]
     },
@@ -160,12 +160,12 @@
           "isCorrect": false
         },
         {
-          "text": "Que también ellos habían pecado",
-          "isCorrect": true
-        },
-        {
           "text": "Que habían edificado el muro de la ciudad",
           "isCorrect": false
+        },
+        {
+          "text": "Que también ellos habían pecado",
+          "isCorrect": true
         }
       ]
     },
@@ -175,8 +175,8 @@
       "bibleReference": "Nehemías 1:8-9",
       "answers": [
         {
-          "text": "Que el muro de la ciudad nunca sería derribado",
-          "isCorrect": false
+          "text": "Que serían esparcidos si prevaricaban, y juntados si volvían",
+          "isCorrect": true
         },
         {
           "text": "Que ningún rey extranjero reinaría sobre ellos",
@@ -187,8 +187,8 @@
           "isCorrect": false
         },
         {
-          "text": "Que serían esparcidos si prevaricaban, y juntados si volvían",
-          "isCorrect": true
+          "text": "Que el muro de la ciudad nunca sería derribado",
+          "isCorrect": false
         }
       ]
     },
@@ -198,12 +198,12 @@
       "bibleReference": "Nehemías 1:10",
       "answers": [
         {
-          "text": "Con su gran fortaleza y con su mano fuerte",
-          "isCorrect": true
-        },
-        {
           "text": "Con la plata de los reyes de Persia",
           "isCorrect": false
+        },
+        {
+          "text": "Con su gran fortaleza y con su mano fuerte",
+          "isCorrect": true
         },
         {
           "text": "Por mano de los profetas de Judá",
@@ -221,12 +221,12 @@
       "bibleReference": "Nehemías 1:11",
       "answers": [
         {
-          "text": "Escriba de la ley",
-          "isCorrect": false
-        },
-        {
           "text": "Copero del rey",
           "isCorrect": true
+        },
+        {
+          "text": "Escriba de la ley",
+          "isCorrect": false
         },
         {
           "text": "Guarda del bosque del rey",

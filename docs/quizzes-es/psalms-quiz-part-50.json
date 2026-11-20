@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 50",
+  "description": "Diez preguntas sobre Salmos 50: el Dios de dioses que convoca la tierra, los animales de los collados y el sacrificio de alabanza.",
+  "slug": "psalms-quiz-part-50",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el encabezado, ¿de quién es este salmo?",
+      "explanation": "El encabezado dice: Salmo de Asaph.",
+      "bibleReference": "Salmos 50:1",
+      "answers": [
+        { "text": "De los hijos de Coré", "isCorrect": false },
+        { "text": "De Asaph", "isCorrect": true },
+        { "text": "De David", "isCorrect": false },
+        { "text": "Del Músico principal", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 2, ¿de dónde ha resplandecido Dios?",
+      "explanation": "El versículo 2 dice: De Sión, perfección de hermosura, ha Dios resplandecido.",
+      "bibleReference": "Salmos 50:2",
+      "answers": [
+        { "text": "De los cielos de arriba", "isCorrect": false },
+        { "text": "Del monte del desierto", "isCorrect": false },
+        { "text": "Del nacimiento del sol", "isCorrect": false },
+        { "text": "De Sión", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 3, ¿qué consumirá delante de él cuando venga?",
+      "explanation": "El versículo 3 dice que vendrá nuestro Dios y no callará, que fuego consumirá delante de él y que en derredor suyo habrá tempestad grande.",
+      "bibleReference": "Salmos 50:3",
+      "answers": [
+        { "text": "Fuego", "isCorrect": true },
+        { "text": "Granizo", "isCorrect": false },
+        { "text": "Viento", "isCorrect": false },
+        { "text": "Humo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 5, ¿a quiénes manda juntar?",
+      "explanation": "El versículo 5 dice: Juntadme mis santos; los que hicieron conmigo pacto con sacrificio.",
+      "bibleReference": "Salmos 50:5",
+      "answers": [
+        { "text": "A los reyes de la tierra", "isCorrect": false },
+        { "text": "A los que olvidan a Dios", "isCorrect": false },
+        { "text": "A sus santos", "isCorrect": true },
+        { "text": "A los sacerdotes de sus apriscos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 10, ¿qué dice Dios que es suyo?",
+      "explanation": "El versículo 10 dice: Porque mía es toda bestia del bosque, y los millares de animales en los collados.",
+      "bibleReference": "Salmos 50:10",
+      "answers": [
+        { "text": "Todo becerro de los apriscos", "isCorrect": false },
+        { "text": "Toda bestia del bosque", "isCorrect": true },
+        { "text": "Todo árbol de los montes", "isCorrect": false },
+        { "text": "Toda nave de la mar", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 12, ¿qué dice Dios que haría si tuviese hambre?",
+      "explanation": "El versículo 12 dice: Si yo tuviese hambre, no te lo diría á ti; porque suyo es el mundo y su plenitud.",
+      "bibleReference": "Salmos 50:12",
+      "answers": [
+        { "text": "Tomaría becerros de su casa", "isCorrect": false },
+        { "text": "Comería de los machos cabríos", "isCorrect": false },
+        { "text": "Llamaría a las fieras del campo", "isCorrect": false },
+        { "text": "No se lo diría", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 14, ¿qué debe sacrificar a Dios?",
+      "explanation": "El versículo 14 dice: Sacrifica á Dios alabanza, y paga tus votos al Altísimo.",
+      "bibleReference": "Salmos 50:14",
+      "answers": [
+        { "text": "Alabanza", "isCorrect": true },
+        { "text": "Becerros", "isCorrect": false },
+        { "text": "Holocaustos", "isCorrect": false },
+        { "text": "Machos cabríos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 15, ¿qué promete Dios al que lo invoque en el día de la angustia?",
+      "explanation": "El versículo 15 dice: E invócame en el día de la angustia: te libraré, y tú me honrarás.",
+      "bibleReference": "Salmos 50:15",
+      "answers": [
+        { "text": "Que le dará riquezas", "isCorrect": false },
+        { "text": "Que callará delante de él", "isCorrect": false },
+        { "text": "Que lo librará", "isCorrect": true },
+        { "text": "Que le mostrará su pacto", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 20, ¿contra quién hablaba el malo cuando tomaba asiento?",
+      "explanation": "El versículo 20 dice: Tomabas asiento, y hablabas contra tu hermano; contra el hijo de tu madre ponías infamia.",
+      "bibleReference": "Salmos 50:20",
+      "answers": [
+        { "text": "Contra su hermano", "isCorrect": true },
+        { "text": "Contra los ladrones", "isCorrect": false },
+        { "text": "Contra los adúlteros", "isCorrect": false },
+        { "text": "Contra los santos de Dios", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 23, ¿a quién mostrará Dios su salud?",
+      "explanation": "El versículo 23 dice que el que sacrifica alabanza lo honrará y que al que ordenare su camino le mostrará la salud de Dios.",
+      "bibleReference": "Salmos 50:23",
+      "answers": [
+        { "text": "Al que trae becerros al altar", "isCorrect": false },
+        { "text": "Al que toma su pacto en su boca", "isCorrect": false },
+        { "text": "Al que convoca a los cielos", "isCorrect": false },
+        { "text": "Al que ordena su camino", "isCorrect": true }
+      ]
+    }
+  ]
+}

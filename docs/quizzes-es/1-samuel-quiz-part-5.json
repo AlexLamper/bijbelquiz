@@ -16,7 +16,7 @@
         { "text": "Desde Eben-ezer", "isCorrect": true },
         { "text": "Desde Silo", "isCorrect": false },
         { "text": "Desde Gath", "isCorrect": false },
-        { "text": "Desde Ecrón", "isCorrect": false }
+        { "text": "Desde la ciudad de Ecrón", "isCorrect": false }
       ]
     },
     {
@@ -47,13 +47,13 @@
       "bibleReference": "1 Samuel 5:4",
       "answers": [
         { "text": "Los dos pies y el brazo derecho", "isCorrect": false },
-        { "text": "La cabeza y los dos hombros", "isCorrect": false },
+        { "text": "La cabeza y los dos hombros de la imagen", "isCorrect": false },
         { "text": "Las dos manos y los dos pies", "isCorrect": false },
         { "text": "La cabeza y las dos palmas de sus manos", "isCorrect": true }
       ]
     },
     {
-      "text": "¿Qué dejaron de hacer por esta causa los sacerdotes de Dagón y cuantos entran en su templo?",
+      "text": "¿Qué dejaron de hacer por esta causa los sacerdotes de Dagón y todos los que entran en su templo?",
       "explanation": "Por esta causa los sacerdotes de Dagón y todos los que entran en el templo de Dagón no pisan el umbral en Asdod, hasta hoy.",
       "bibleReference": "1 Samuel 5:5",
       "answers": [
@@ -97,18 +97,18 @@
       ]
     },
     {
-      "text": "¿Qué dieron voces los ecronitas cuando el arca de Dios llegó a Ecrón?",
+      "text": "¿Qué dijeron a voces los ecronitas cuando el arca de Dios llegó a Ecrón?",
       "explanation": "Cuando el arca de Dios vino a Ecrón, los ecronitas dieron voces diciendo que habían pasado a ellos el arca del Dios de Israel para matarlos a ellos y a su pueblo.",
       "bibleReference": "1 Samuel 5:10",
       "answers": [
         { "text": "Traed el arca al templo de nuestro dios", "isCorrect": false },
         { "text": "Bendito el Dios de Israel que nos visita", "isCorrect": false },
-        { "text": "Juntemos los príncipes para pelear con Israel", "isCorrect": false },
+        { "text": "Juntemos a todos los príncipes para pelear contra Israel", "isCorrect": false },
         { "text": "Han pasado a mí el arca del Dios de Israel por matarme", "isCorrect": true }
       ]
     },
     {
-      "text": "¿Qué mandaron decir los príncipes de los filisteos cuando se juntaron por causa de Ecrón?",
+      "text": "¿Qué mandaron decir los príncipes de los filisteos cuando los volvieron a juntar?",
       "explanation": "Enviaron a juntar a todos los príncipes de los filisteos, diciendo que despachasen el arca del Dios de Israel y que se tornase a su lugar, para que no los matase.",
       "bibleReference": "1 Samuel 5:11",
       "answers": [

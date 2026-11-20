@@ -1,0 +1,242 @@
+{
+  "title": "Proverbios Quiz bíblico - Capítulo 6",
+  "description": "Diez preguntas sobre Proverbios 6: el que sale fiador, la hormiga y el perezoso, y las cosas que Jehová aborrece.",
+  "slug": "proverbs-quiz-part-6",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué dice el texto del que sale fiador por su amigo o toca su mano por el extraño?",
+      "explanation": "Proverbios 6:1-2 dice que queda enlazado con las palabras de su boca y preso con las razones de su boca.",
+      "bibleReference": "Proverbios 6:1-2",
+      "answers": [
+        {
+          "text": "Que será honrado por su prójimo y su amigo",
+          "isCorrect": false
+        },
+        {
+          "text": "Que su casa será llena de abundancia",
+          "isCorrect": false
+        },
+        {
+          "text": "Que nadie le pedirá cuentas de ello",
+          "isCorrect": false
+        },
+        {
+          "text": "Que queda enlazado y preso con las palabras de su boca",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué dos animales compara el texto al que debe escapar?",
+      "explanation": "Proverbios 6:5 dice: Escápate como el corzo de la mano del cazador, y como el ave de la mano del parancero.",
+      "bibleReference": "Proverbios 6:5",
+      "answers": [
+        {
+          "text": "Como la hormiga y la abeja",
+          "isCorrect": false
+        },
+        {
+          "text": "Como el corzo y el ave",
+          "isCorrect": true
+        },
+        {
+          "text": "Como la cierva y la corza",
+          "isCorrect": false
+        },
+        {
+          "text": "Como el buey y el asno",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A qué animal manda el texto mirar al perezoso?",
+      "explanation": "Proverbios 6:6 dice: Ve á la hormiga, oh perezoso, mira sus caminos, y sé sabio.",
+      "bibleReference": "Proverbios 6:6",
+      "answers": [
+        {
+          "text": "Al ave del parancero",
+          "isCorrect": false
+        },
+        {
+          "text": "Al corzo del cazador",
+          "isCorrect": false
+        },
+        {
+          "text": "A la hormiga",
+          "isCorrect": true
+        },
+        {
+          "text": "Al asno del camino",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿cuándo prepara la hormiga su comida?",
+      "explanation": "Proverbios 6:7-8 dice que, sin tener capitán ni gobernador, prepara en el verano su comida y allega su mantenimiento en el tiempo de la siega.",
+      "bibleReference": "Proverbios 6:7-8",
+      "answers": [
+        {
+          "text": "En el verano, y allega en el tiempo de la siega",
+          "isCorrect": true
+        },
+        {
+          "text": "En el invierno, cuando no hay quien la vea",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuando su capitán se lo manda hacer",
+          "isCorrect": false
+        },
+        {
+          "text": "En el día señalado por su gobernador",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué compara el texto la necesidad y la pobreza que vendrán al perezoso?",
+      "explanation": "Proverbios 6:10-11 dice que, tras un poco de sueño y de dormitar, vendrá su necesidad como caminante y su pobreza como hombre de escudo.",
+      "bibleReference": "Proverbios 6:10-11",
+      "answers": [
+        {
+          "text": "Con un torbellino y un lazo escondido",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el humo y el vinagre de la mesa",
+          "isCorrect": false
+        },
+        {
+          "text": "Con la sombra y el rocío de la noche",
+          "isCorrect": false
+        },
+        {
+          "text": "Con un caminante y un hombre de escudo",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hace el hombre malo, según el texto?",
+      "explanation": "Proverbios 6:13 dice: Guiña de sus ojos, habla con sus pies, indica con sus dedos.",
+      "bibleReference": "Proverbios 6:13",
+      "answers": [
+        {
+          "text": "Guiña los ojos, habla con los pies e indica con los dedos",
+          "isCorrect": true
+        },
+        {
+          "text": "Calla delante de todos y esconde su rostro",
+          "isCorrect": false
+        },
+        {
+          "text": "Reparte su pan y guarda todas sus palabras",
+          "isCorrect": false
+        },
+        {
+          "text": "Duerme todo el día y vela durante toda la noche",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿cuántas cosas aborrece Jehová y cuántas abomina su alma?",
+      "explanation": "Proverbios 6:16 dice: Seis cosas aborrece Jehová, y aun siete abomina su alma.",
+      "bibleReference": "Proverbios 6:16",
+      "answers": [
+        {
+          "text": "Tres cosas, y aun cuatro",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuatro cosas, y aun cinco",
+          "isCorrect": false
+        },
+        {
+          "text": "Seis cosas, y aun siete",
+          "isCorrect": true
+        },
+        {
+          "text": "Siete cosas, y aun diez",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué compara el texto el mandamiento y la enseñanza?",
+      "explanation": "Proverbios 6:23 dice: Porque el mandamiento es antorcha, y la enseñanza luz.",
+      "bibleReference": "Proverbios 6:23",
+      "answers": [
+        {
+          "text": "Con un lazo y una red",
+          "isCorrect": false
+        },
+        {
+          "text": "Con una antorcha y una luz",
+          "isCorrect": true
+        },
+        {
+          "text": "Con la miel y el aceite",
+          "isCorrect": false
+        },
+        {
+          "text": "Con un árbol y una fuente",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué paga el ladrón cuando es tomado?",
+      "explanation": "Proverbios 6:30-31 dice que, tomado, paga las setenas y da toda la sustancia de su casa.",
+      "bibleReference": "Proverbios 6:30-31",
+      "answers": [
+        {
+          "text": "Nada, porque hurtó solamente por hambre",
+          "isCorrect": false
+        },
+        {
+          "text": "La mitad del pan que había en su casa",
+          "isCorrect": false
+        },
+        {
+          "text": "Un bocado de pan al dueño de la casa",
+          "isCorrect": false
+        },
+        {
+          "text": "Las setenas, y toda la sustancia de su casa",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué son los celos?",
+      "explanation": "Proverbios 6:34 dice: Porque los celos son el furor del hombre, y no perdonará en el día de la venganza.",
+      "bibleReference": "Proverbios 6:34",
+      "answers": [
+        {
+          "text": "El furor del hombre",
+          "isCorrect": true
+        },
+        {
+          "text": "La raíz de las rencillas",
+          "isCorrect": false
+        },
+        {
+          "text": "Una red escondida en el camino",
+          "isCorrect": false
+        },
+        {
+          "text": "Una plaga sin remedio",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

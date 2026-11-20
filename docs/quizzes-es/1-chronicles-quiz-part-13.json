@@ -13,9 +13,9 @@
       "explanation": "David tomó consejo con los capitanes de millares y de cientos, y con todos los jefes.",
       "bibleReference": "1 Crónicas 13:1",
       "answers": [
-        { "text": "Con los capitanes de millares y de cientos", "isCorrect": true },
         { "text": "Con los profetas y los videntes", "isCorrect": false },
-        { "text": "Con los sátrapas de los Filisteos", "isCorrect": false },
+        { "text": "Con los capitanes de millares y de cientos", "isCorrect": true },
+        { "text": "Con los sátrapas y los príncipes de los Filisteos", "isCorrect": false },
         { "text": "Con los ancianos de Moab", "isCorrect": false }
       ]
     },
@@ -24,10 +24,10 @@
       "explanation": "David dijo que trajesen el arca de Dios, porque desde el tiempo de Saúl no habían hecho caso de ella.",
       "bibleReference": "1 Crónicas 13:3",
       "answers": [
-        { "text": "No habían guardado la pascua", "isCorrect": false },
-        { "text": "No habían hecho caso del arca de Dios", "isCorrect": true },
+        { "text": "No habían guardado la fiesta de la pascua en Jerusalem", "isCorrect": false },
+        { "text": "No habían contado al pueblo", "isCorrect": false },
         { "text": "No habían edificado el altar", "isCorrect": false },
-        { "text": "No habían contado al pueblo", "isCorrect": false }
+        { "text": "No habían hecho caso del arca de Dios", "isCorrect": true }
       ]
     },
     {
@@ -35,9 +35,9 @@
       "explanation": "David juntó á todo Israel desde Sihor de Egipto hasta entrar en Hamath.",
       "bibleReference": "1 Crónicas 13:5",
       "answers": [
-        { "text": "Desde Beer-seba hasta Dan", "isCorrect": false },
-        { "text": "Desde el Jordán hasta el mar", "isCorrect": false },
         { "text": "Desde Sihor de Egipto hasta entrar en Hamath", "isCorrect": true },
+        { "text": "Desde el río Jordán hasta el gran mar de los Filisteos", "isCorrect": false },
+        { "text": "Desde Beer-seba hasta Dan", "isCorrect": false },
         { "text": "Desde Hebrón hasta Jerusalem", "isCorrect": false }
       ]
     },
@@ -47,9 +47,9 @@
       "bibleReference": "1 Crónicas 13:6",
       "answers": [
         { "text": "A Silo de Ephraim", "isCorrect": false },
-        { "text": "A Gabaón de Benjamín", "isCorrect": false },
-        { "text": "A Beth-lehem de Judá", "isCorrect": false },
-        { "text": "A Baala de Chîriath-jearim", "isCorrect": true }
+        { "text": "A Gabaón, en la tierra de Benjamín", "isCorrect": false },
+        { "text": "A Baala de Chîriath-jearim", "isCorrect": true },
+        { "text": "A Beth-lehem de Judá", "isCorrect": false }
       ]
     },
     {
@@ -57,10 +57,10 @@
       "explanation": "Lleváronse el arca de Dios de la casa de Abinadab en un carro nuevo.",
       "bibleReference": "1 Crónicas 13:7",
       "answers": [
-        { "text": "De la casa de Abinadab, en un carro nuevo", "isCorrect": true },
         { "text": "De la casa de Obed-edom, sobre mulos", "isCorrect": false },
+        { "text": "De la casa de Abinadab, en un carro nuevo", "isCorrect": true },
         { "text": "De la casa de Sadoc, en una tienda", "isCorrect": false },
-        { "text": "De la casa de Abiathar, sobre camellos", "isCorrect": false }
+        { "text": "De la casa de Abiathar, sobre camellos y mulos", "isCorrect": false }
       ]
     },
     {
@@ -69,8 +69,8 @@
       "bibleReference": "1 Crónicas 13:7",
       "answers": [
         { "text": "Sadoc y Abiathar", "isCorrect": false },
-        { "text": "Uzza y su hermano", "isCorrect": true },
         { "text": "Joab y Abisai", "isCorrect": false },
+        { "text": "Uzza y su hermano", "isCorrect": true },
         { "text": "Asaph y Hemán", "isCorrect": false }
       ]
     },
@@ -81,8 +81,8 @@
       "answers": [
         { "text": "Con ofrendas de harina y aceite", "isCorrect": false },
         { "text": "Con ayuno y vestidos de saco", "isCorrect": false },
-        { "text": "Con canciones, arpas, címbalos y trompetas", "isCorrect": true },
-        { "text": "Con antorchas y lámparas encendidas", "isCorrect": false }
+        { "text": "Con antorchas y lámparas encendidas en la noche", "isCorrect": false },
+        { "text": "Con canciones, arpas, címbalos y trompetas", "isCorrect": true }
       ]
     },
     {
@@ -90,10 +90,10 @@
       "explanation": "El furor de Jehová se encendió contra Uzza y lo hirió porque había extendido su mano al arca; y murió allí delante de Dios.",
       "bibleReference": "1 Crónicas 13:9-10",
       "answers": [
-        { "text": "Porque no quiso guiar el carro", "isCorrect": false },
+        { "text": "Porque había extendido su mano al arca", "isCorrect": true },
         { "text": "Porque habló mal del rey David", "isCorrect": false },
-        { "text": "Porque dejó caer el arca al suelo", "isCorrect": false },
-        { "text": "Porque había extendido su mano al arca", "isCorrect": true }
+        { "text": "Porque dejó caer el arca al suelo en el camino", "isCorrect": false },
+        { "text": "Porque no quiso guiar el carro", "isCorrect": false }
       ]
     },
     {
@@ -101,8 +101,8 @@
       "explanation": "David tuvo pesar porque Jehová había hecho rotura en Uzza, por lo que llamó aquel lugar Pérez-uzza.",
       "bibleReference": "1 Crónicas 13:11",
       "answers": [
-        { "text": "Pérez-uzza", "isCorrect": true },
         { "text": "Baal-perasim", "isCorrect": false },
+        { "text": "Pérez-uzza", "isCorrect": true },
         { "text": "Era de Chidón", "isCorrect": false },
         { "text": "Baala de Judá", "isCorrect": false }
       ]
@@ -112,8 +112,8 @@
       "explanation": "David llevó el arca á casa de Obed-edom Getheo, y allí estuvo tres meses; y Jehová bendijo la casa de Obed-edom.",
       "bibleReference": "1 Crónicas 13:13-14",
       "answers": [
-        { "text": "En casa de Abinadab, siete meses", "isCorrect": false },
         { "text": "En casa de Obed-edom, tres meses", "isCorrect": true },
+        { "text": "En casa de Abinadab, siete meses", "isCorrect": false },
         { "text": "En casa de Ornán, un año", "isCorrect": false },
         { "text": "En casa de Sadoc, dos meses", "isCorrect": false }
       ]

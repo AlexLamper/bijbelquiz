@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 97",
+  "description": "Diez preguntas sobre Salmos 97: la nube y la oscuridad alrededor del trono, los montes que se derriten y la luz sembrada para el justo.",
+  "slug": "psalms-quiz-part-97",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el primer versículo, ¿qué debe hacer la tierra porque Jehová reinó?",
+      "explanation": "Salmos 97:1 dice: Jehová reinó: regocíjese la tierra: alégrense las muchas islas.",
+      "bibleReference": "Salmos 97:1",
+      "answers": [
+        { "text": "Regocijarse", "isCorrect": true },
+        { "text": "Temblar de miedo", "isCorrect": false },
+        { "text": "Guardar silencio", "isCorrect": false },
+        { "text": "Hacer duelo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué hay alrededor de él, según el versículo 2?",
+      "explanation": "Salmos 97:2 dice que hay nube y oscuridad alrededor de él.",
+      "bibleReference": "Salmos 97:2",
+      "answers": [
+        { "text": "Querubines de oro", "isCorrect": false },
+        { "text": "Islas y mares", "isCorrect": false },
+        { "text": "Cedros del Líbano", "isCorrect": false },
+        { "text": "Nube y oscuridad", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 2, ¿qué es el asiento de su trono?",
+      "explanation": "Salmos 97:2 dice que justicia y juicio son el asiento de su trono.",
+      "bibleReference": "Salmos 97:2",
+      "answers": [
+        { "text": "Plata y marfil", "isCorrect": false },
+        { "text": "Justicia y juicio", "isCorrect": true },
+        { "text": "Fuego y humo", "isCorrect": false },
+        { "text": "Misericordia y verdad", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué irá delante de él y abrasará en derredor a sus enemigos?",
+      "explanation": "Salmos 97:3 dice que fuego irá delante de él, y abrasará en derredor sus enemigos.",
+      "bibleReference": "Salmos 97:3",
+      "answers": [
+        { "text": "Granizo", "isCorrect": false },
+        { "text": "Un ángel", "isCorrect": false },
+        { "text": "Fuego", "isCorrect": true },
+        { "text": "Un viento recio", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué hizo la tierra cuando los relámpagos de Jehová alumbraron el mundo?",
+      "explanation": "Salmos 97:4 dice que sus relámpagos alumbraron el mundo, la tierra vio y se estremeció.",
+      "bibleReference": "Salmos 97:4",
+      "answers": [
+        { "text": "Vio y se estremeció", "isCorrect": true },
+        { "text": "Se abrió en dos", "isCorrect": false },
+        { "text": "Cantó de alegría", "isCorrect": false },
+        { "text": "Quedó a oscuras", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué hicieron los montes delante de Jehová, según el versículo 5?",
+      "explanation": "Salmos 97:5 dice que los montes se derritieron como cera delante de Jehová.",
+      "bibleReference": "Salmos 97:5",
+      "answers": [
+        { "text": "Se levantaron más altos", "isCorrect": false },
+        { "text": "Cubrieron el mar", "isCorrect": false },
+        { "text": "Cayeron sobre los pueblos", "isCorrect": false },
+        { "text": "Se derritieron como cera", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 6, ¿qué denunciaron los cielos?",
+      "explanation": "Salmos 97:6 dice que los cielos denunciaron su justicia y que todos los pueblos vieron su gloria.",
+      "bibleReference": "Salmos 97:6",
+      "answers": [
+        { "text": "Su ira", "isCorrect": false },
+        { "text": "Su reposo", "isCorrect": false },
+        { "text": "Su justicia", "isCorrect": true },
+        { "text": "Su pacto", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Quién oyó y se alegró, junto con las hijas de Judá, por los juicios de Jehová?",
+      "explanation": "Salmos 97:8 dice que Sión oyó y se alegró, y que las hijas de Judá se gozaron por sus juicios.",
+      "bibleReference": "Salmos 97:8",
+      "answers": [
+        { "text": "Egipto", "isCorrect": false },
+        { "text": "Sión", "isCorrect": true },
+        { "text": "Las islas", "isCorrect": false },
+        { "text": "Los sacerdotes", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué manda el versículo 10 a los que aman a Jehová?",
+      "explanation": "Salmos 97:10 dice: Los que a Jehová amáis, aborreced el mal.",
+      "bibleReference": "Salmos 97:10",
+      "answers": [
+        { "text": "Aborrecer el mal", "isCorrect": true },
+        { "text": "Subir al santuario", "isCorrect": false },
+        { "text": "Callar ante los impíos", "isCorrect": false },
+        { "text": "Repartir sus bienes", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 11, ¿qué está sembrada para el justo?",
+      "explanation": "Salmos 97:11 dice que luz está sembrada para el justo, y alegría para los rectos de corazón.",
+      "bibleReference": "Salmos 97:11",
+      "answers": [
+        { "text": "Riqueza", "isCorrect": false },
+        { "text": "Paz con los pueblos", "isCorrect": false },
+        { "text": "Larga vida", "isCorrect": false },
+        { "text": "Luz", "isCorrect": true }
+      ]
+    }
+  ]
+}

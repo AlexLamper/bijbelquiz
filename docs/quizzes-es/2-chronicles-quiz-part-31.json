@@ -37,16 +37,16 @@
       "bibleReference": "2 Crónicas 31:3",
       "answers": [
         {
-          "text": "Plata y oro para los muros y las torres de la ciudad",
-          "isCorrect": false
+          "text": "Holocaustos á mañana y tarde, y para los sábados, nuevas lunas y solemnidades",
+          "isCorrect": true
         },
         {
           "text": "Trigo y aceite para los pobres que había en Jerusalem",
           "isCorrect": false
         },
         {
-          "text": "Holocaustos á mañana y tarde, y para los sábados, nuevas lunas y solemnidades",
-          "isCorrect": true
+          "text": "Plata y oro para los muros y las torres de la ciudad",
+          "isCorrect": false
         },
         {
           "text": "Caballos, carros y paveses para los hombres de guerra",
@@ -68,12 +68,12 @@
           "isCorrect": false
         },
         {
-          "text": "Que no saliese de la ciudad en siete días",
-          "isCorrect": false
-        },
-        {
           "text": "Que diese la porción á los sacerdotes y Levitas",
           "isCorrect": true
+        },
+        {
+          "text": "Que no saliese de la ciudad en siete días",
+          "isCorrect": false
         }
       ]
     },
@@ -83,16 +83,16 @@
       "bibleReference": "2 Crónicas 31:5",
       "answers": [
         {
-          "text": "Muchas primicias de grano, vino, aceite y miel, y los diezmos en abundancia",
-          "isCorrect": true
+          "text": "Vasos de piedra y de barro de la casa de sus dioses",
+          "isCorrect": false
         },
         {
           "text": "Solamente oro y plata sacados de sus tesoros escondidos",
           "isCorrect": false
         },
         {
-          "text": "Vasos de piedra y de barro de la casa de sus dioses",
-          "isCorrect": false
+          "text": "Muchas primicias de grano, vino, aceite y miel, y los diezmos en abundancia",
+          "isCorrect": true
         },
         {
           "text": "Armas, paveses y espadas para los hombres de guerra",
@@ -106,12 +106,12 @@
       "bibleReference": "2 Crónicas 31:7",
       "answers": [
         {
-          "text": "Comenzaron en el mes primero y acabaron en el segundo",
-          "isCorrect": false
-        },
-        {
           "text": "Comenzaron en el mes tercero y acabaron en el séptimo",
           "isCorrect": true
+        },
+        {
+          "text": "Comenzaron en el mes primero y acabaron en el segundo",
+          "isCorrect": false
         },
         {
           "text": "Comenzaron en el mes séptimo y acabaron en el décimo",
@@ -137,12 +137,12 @@
           "isCorrect": false
         },
         {
-          "text": "Azarías, sumo sacerdote, de la casa de Sadoc",
-          "isCorrect": true
-        },
-        {
           "text": "Coré hijo de Imna, portero al oriente",
           "isCorrect": false
+        },
+        {
+          "text": "Azarías, sumo sacerdote, de la casa de Sadoc",
+          "isCorrect": true
         }
       ]
     },
@@ -156,16 +156,16 @@
           "isCorrect": false
         },
         {
-          "text": "Puertas nuevas",
-          "isCorrect": false
+          "text": "Cámaras",
+          "isCorrect": true
         },
         {
           "text": "Un trono para el rey",
           "isCorrect": false
         },
         {
-          "text": "Cámaras",
-          "isCorrect": true
+          "text": "Puertas nuevas",
+          "isCorrect": false
         }
       ]
     },
@@ -175,12 +175,12 @@
       "bibleReference": "2 Crónicas 31:12",
       "answers": [
         {
-          "text": "A Chônanías Levita, el principal, y á Simi su hermano como segundo",
-          "isCorrect": true
-        },
-        {
           "text": "A Azarías, sumo sacerdote, y á los de la casa de Sadoc",
           "isCorrect": false
+        },
+        {
+          "text": "A Chônanías Levita, el principal, y á Simi su hermano como segundo",
+          "isCorrect": true
         },
         {
           "text": "A Coré hijo de Imna, portero al oriente de la casa",
@@ -202,16 +202,16 @@
           "isCorrect": false
         },
         {
-          "text": "De las limosnas de Dios y de las ofrendas de Jehová",
-          "isCorrect": true
+          "text": "De las puertas del occidente",
+          "isCorrect": false
         },
         {
           "text": "De los cantores de la casa de Jehová",
           "isCorrect": false
         },
         {
-          "text": "De las puertas del occidente",
-          "isCorrect": false
+          "text": "De las limosnas de Dios y de las ofrendas de Jehová",
+          "isCorrect": true
         }
       ]
     },
@@ -221,16 +221,16 @@
       "bibleReference": "2 Crónicas 31:20-21",
       "answers": [
         {
-          "text": "Se enalteció su corazón y vino la ira contra él",
-          "isCorrect": false
+          "text": "Ejecutó lo bueno, recto y verdadero delante de Jehová, y fué prosperado",
+          "isCorrect": true
         },
         {
           "text": "No acabó la obra que había comenzado en la casa de Dios",
           "isCorrect": false
         },
         {
-          "text": "Ejecutó lo bueno, recto y verdadero delante de Jehová, y fué prosperado",
-          "isCorrect": true
+          "text": "Se enalteció su corazón y vino la ira contra él",
+          "isCorrect": false
         },
         {
           "text": "Dejó la ley de Jehová al final de sus días",

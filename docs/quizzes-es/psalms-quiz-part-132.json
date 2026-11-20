@@ -1,0 +1,242 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 132",
+  "description": "Diez preguntas sobre Salmos 132: el juramento de David, el arca llevada al reposo de Jehová y la elección de Sión.",
+  "slug": "psalms-quiz-part-132",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿De qué se le pide a Jehová que se acuerde al comenzar el salmo?",
+      "explanation": "El versículo 1 pide: \"Acuérdate, oh Jehová, de David, y de toda su aflicción\".",
+      "bibleReference": "Salmos 132:1",
+      "answers": [
+        {
+          "text": "De Sión y de todas sus puertas",
+          "isCorrect": false
+        },
+        {
+          "text": "De Aarón y de todos sus hijos",
+          "isCorrect": false
+        },
+        {
+          "text": "De Egipto y de sus prodigios",
+          "isCorrect": false
+        },
+        {
+          "text": "De David y de toda su aflicción",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿A quién prometió David, según el versículo 2?",
+      "explanation": "El versículo dice que juró a Jehová y prometió al Fuerte de Jacob.",
+      "bibleReference": "Salmos 132:2",
+      "answers": [
+        {
+          "text": "Al rey de Basán",
+          "isCorrect": false
+        },
+        {
+          "text": "Al Fuerte de Jacob",
+          "isCorrect": true
+        },
+        {
+          "text": "A los sacerdotes de Sión",
+          "isCorrect": false
+        },
+        {
+          "text": "Al Músico principal",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué juró no dar a sus ojos?",
+      "explanation": "El versículo 4 dice: \"No daré sueño á mis ojos\".",
+      "bibleReference": "Salmos 132:4",
+      "answers": [
+        {
+          "text": "Lágrimas",
+          "isCorrect": false
+        },
+        {
+          "text": "Luz",
+          "isCorrect": false
+        },
+        {
+          "text": "Sueño",
+          "isCorrect": true
+        },
+        {
+          "text": "Vino",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Hasta cuándo mantendría ese juramento?",
+      "explanation": "El versículo 5 dice: hasta hallar lugar para Jehová, moradas para el Fuerte de Jacob.",
+      "bibleReference": "Salmos 132:5",
+      "answers": [
+        {
+          "text": "Hasta hallar lugar para Jehová",
+          "isCorrect": true
+        },
+        {
+          "text": "Hasta que Sión fuese edificada",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta que sus hijos reinasen",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta morir sus enemigos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿En qué lugar dice el versículo 6 que oyeron de ella?",
+      "explanation": "El versículo dice: \"en Ephrata oímos de ella\".",
+      "bibleReference": "Salmos 132:6",
+      "answers": [
+        {
+          "text": "En Hermón",
+          "isCorrect": false
+        },
+        {
+          "text": "En Basán",
+          "isCorrect": false
+        },
+        {
+          "text": "En Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "En Ephrata",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué se pide que se levante con Jehová a su reposo?",
+      "explanation": "El versículo 8 dice: \"Levántate, oh Jehová, á tu reposo; tú y el arca de tu fortaleza\".",
+      "bibleReference": "Salmos 132:8",
+      "answers": [
+        {
+          "text": "La lámpara de su ungido",
+          "isCorrect": false
+        },
+        {
+          "text": "El cuerno de David",
+          "isCorrect": false
+        },
+        {
+          "text": "El arca de su fortaleza",
+          "isCorrect": true
+        },
+        {
+          "text": "El estrado de sus pies",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De qué pide el versículo 9 que se vistan los sacerdotes?",
+      "explanation": "El versículo pide: \"Tus sacerdotes se vistan de justicia\".",
+      "bibleReference": "Salmos 132:9",
+      "answers": [
+        {
+          "text": "De confusión",
+          "isCorrect": false
+        },
+        {
+          "text": "De justicia",
+          "isCorrect": true
+        },
+        {
+          "text": "De lino fino",
+          "isCorrect": false
+        },
+        {
+          "text": "De luto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 11, ¿a quién pondrá Jehová sobre el trono de David?",
+      "explanation": "El versículo dice: \"Del fruto de tu vientre pondré sobre tu trono\".",
+      "bibleReference": "Salmos 132:11",
+      "answers": [
+        {
+          "text": "Al fruto de su vientre",
+          "isCorrect": true
+        },
+        {
+          "text": "A un extranjero",
+          "isCorrect": false
+        },
+        {
+          "text": "A los hijos de Leví",
+          "isCorrect": false
+        },
+        {
+          "text": "A los hijos de Edom",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice Jehová de Sión en el versículo 14?",
+      "explanation": "Dice: \"Este es mi reposo para siempre: aquí habitaré, porque la he deseado\".",
+      "bibleReference": "Salmos 132:14",
+      "answers": [
+        {
+          "text": "Que la entregará a sus enemigos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que allí ya no habitará más",
+          "isCorrect": false
+        },
+        {
+          "text": "Que es su reposo para siempre",
+          "isCorrect": true
+        },
+        {
+          "text": "Que la vestirá de confusión",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De qué vestirá Jehová a los enemigos de su ungido?",
+      "explanation": "El versículo 18 dice: \"A sus enemigos vestiré de confusión: mas sobre él florecerá su corona\".",
+      "bibleReference": "Salmos 132:18",
+      "answers": [
+        {
+          "text": "De justicia",
+          "isCorrect": false
+        },
+        {
+          "text": "De confusión",
+          "isCorrect": true
+        },
+        {
+          "text": "De lino blanco",
+          "isCorrect": false
+        },
+        {
+          "text": "De júbilo",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

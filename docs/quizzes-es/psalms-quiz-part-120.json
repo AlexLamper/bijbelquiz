@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 120",
+  "description": "Diez preguntas sobre Salmos 120: el clamor en la angustia, la lengua engañosa, Mesech y Kedar, y el que habla paz entre los que hacen guerra.",
+  "slug": "psalms-quiz-part-120",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué hizo el salmista estando en angustia, y qué sucedió?",
+      "explanation": "El verso 1 dice: A Jehová llamé estando en angustia, y él me respondió.",
+      "bibleReference": "Salmos 120:1",
+      "answers": [
+        { "text": "Calló y esperó la mañana", "isCorrect": false },
+        { "text": "Huyó a las tiendas de Kedar", "isCorrect": false },
+        { "text": "Llamó a Jehová y él le respondió", "isCorrect": true },
+        { "text": "Tomó saetas y salió a la guerra", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿De qué pide el salmista que Jehová libre su alma?",
+      "explanation": "El verso 2 dice: Libra mi alma, oh Jehová, de labio mentiroso, de la lengua fraudulenta.",
+      "bibleReference": "Salmos 120:2",
+      "answers": [
+        { "text": "De labio mentiroso y de lengua fraudulenta", "isCorrect": true },
+        { "text": "De las manos de los que habitan en Kedar", "isCorrect": false },
+        { "text": "De las saetas de los hombres valientes", "isCorrect": false },
+        { "text": "Del furor de los reyes de la tierra", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿A quién se dirige la pregunta: Qué te dará, o qué te aprovechará?",
+      "explanation": "El verso 3 hace esa pregunta a la lengua engañosa.",
+      "bibleReference": "Salmos 120:3",
+      "answers": [
+        { "text": "A los habitantes de Mesech", "isCorrect": false },
+        { "text": "A los cazadores del campo", "isCorrect": false },
+        { "text": "A los príncipes de Kedar", "isCorrect": false },
+        { "text": "A la lengua engañosa", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué clase de saetas menciona el verso 4?",
+      "explanation": "El verso 4 responde: Agudas saetas de valiente, con brasas de enebro.",
+      "bibleReference": "Salmos 120:4",
+      "answers": [
+        { "text": "Escudos de los príncipes", "isCorrect": false },
+        { "text": "Agudas saetas de valiente", "isCorrect": true },
+        { "text": "Lanzas de los cazadores", "isCorrect": false },
+        { "text": "Espadas de dos filos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Dónde dice el salmista que peregrina?",
+      "explanation": "El verso 5 dice: Ay de mí, que peregrino en Mesech.",
+      "bibleReference": "Salmos 120:5",
+      "answers": [
+        { "text": "En Mesech", "isCorrect": true },
+        { "text": "En Kedar", "isCorrect": false },
+        { "text": "En Sión", "isCorrect": false },
+        { "text": "En Egipto", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Entre qué tiendas dice el salmista que habita?",
+      "explanation": "El verso 5 dice que habita entre las tiendas de Kedar.",
+      "bibleReference": "Salmos 120:5",
+      "answers": [
+        { "text": "Entre los muros de Jerusalem", "isCorrect": false },
+        { "text": "Entre las aguas de Mesech", "isCorrect": false },
+        { "text": "Entre las tiendas de Kedar", "isCorrect": true },
+        { "text": "Entre los palacios del rey", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Con quiénes dice el salmista que su alma se detiene mucho?",
+      "explanation": "El verso 6 dice: Mucho se detiene mi alma con los que aborrecen la paz.",
+      "bibleReference": "Salmos 120:6",
+      "answers": [
+        { "text": "Con los que guardan la ley", "isCorrect": false },
+        { "text": "Con los que aborrecen la paz", "isCorrect": true },
+        { "text": "Con los que aman la verdad", "isCorrect": false },
+        { "text": "Con los que temen a Jehová", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cómo se describe el salmista a sí mismo en el último verso?",
+      "explanation": "El verso 7 comienza diciendo: Yo soy pacífico.",
+      "bibleReference": "Salmos 120:7",
+      "answers": [
+        { "text": "Valiente", "isCorrect": false },
+        { "text": "Cazador", "isCorrect": false },
+        { "text": "Guerrero", "isCorrect": false },
+        { "text": "Pacífico", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el último verso, ¿qué hacen ellos cuando el salmista habla?",
+      "explanation": "El verso 7 dice: mas ellos, así que hablo, me hacen guerra.",
+      "bibleReference": "Salmos 120:7",
+      "answers": [
+        { "text": "Le dan brasas", "isCorrect": false },
+        { "text": "Guardan silencio", "isCorrect": false },
+        { "text": "Le hacen guerra", "isCorrect": true },
+        { "text": "Se vuelven a él", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿De qué son las brasas que menciona el verso 4?",
+      "explanation": "El verso 4 habla de brasas de enebro.",
+      "bibleReference": "Salmos 120:4",
+      "answers": [
+        { "text": "De enebro", "isCorrect": true },
+        { "text": "De carbón", "isCorrect": false },
+        { "text": "De espinos", "isCorrect": false },
+        { "text": "De olivo", "isCorrect": false }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 78",
+  "description": "Diez preguntas sobre Salmos 78: la parábola de las cosas antiguas, las maravillas en Egipto y el desierto, el maná y la carne, y la elección de Judá y de David.",
+  "slug": "psalms-quiz-part-78",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cómo dice el salmista que abrirá su boca?",
+      "explanation": "El texto dice: Abriré mi boca en parábola; hablaré cosas reservadas de antiguo.",
+      "bibleReference": "Salmos 78:2",
+      "answers": [
+        {
+          "text": "En cántico",
+          "isCorrect": false
+        },
+        {
+          "text": "En parábola",
+          "isCorrect": true
+        },
+        {
+          "text": "En oración",
+          "isCorrect": false
+        },
+        {
+          "text": "En lamento",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el salmo, ¿qué hicieron los hijos de Ephraim el día de la batalla?",
+      "explanation": "El texto dice: Los hijos de Ephraim armados, flecheros, volvieron las espaldas el día de la batalla.",
+      "bibleReference": "Salmos 78:9",
+      "answers": [
+        {
+          "text": "Rompieron los arcos del enemigo",
+          "isCorrect": false
+        },
+        {
+          "text": "Guardaron el pacto de su Dios",
+          "isCorrect": false
+        },
+        {
+          "text": "Volvieron las espaldas",
+          "isCorrect": true
+        },
+        {
+          "text": "Tomaron la ciudad por asalto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el salmo, ¿cómo llevó Dios al pueblo de día y de noche?",
+      "explanation": "El texto dice: Y llevólos de día con nube, y toda la noche con resplandor de fuego.",
+      "bibleReference": "Salmos 78:14",
+      "answers": [
+        {
+          "text": "De día con nube y de noche con resplandor de fuego",
+          "isCorrect": true
+        },
+        {
+          "text": "De día con fuego y de noche con nube",
+          "isCorrect": false
+        },
+        {
+          "text": "De día y de noche con una columna de humo",
+          "isCorrect": false
+        },
+        {
+          "text": "De día con viento y de noche con estrellas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el salmo, ¿qué preguntaron cuando hablaron contra Dios?",
+      "explanation": "El texto dice: Y hablaron contra Dios, diciendo: ¿Podrá poner mesa en el desierto?",
+      "bibleReference": "Salmos 78:19",
+      "answers": [
+        {
+          "text": "¿Quién nos llevará de vuelta a Egipto?",
+          "isCorrect": false
+        },
+        {
+          "text": "¿Hasta cuándo andaremos errantes?",
+          "isCorrect": false
+        },
+        {
+          "text": "¿Dónde está el monte de su santuario?",
+          "isCorrect": false
+        },
+        {
+          "text": "¿Podrá poner mesa en el desierto?",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el salmo, ¿qué hizo Dios llover sobre ellos para comer?",
+      "explanation": "El texto dice: E hizo llover sobre ellos maná para comer, y dióles trigo de los cielos.",
+      "bibleReference": "Salmos 78:24",
+      "answers": [
+        {
+          "text": "Higos",
+          "isCorrect": false
+        },
+        {
+          "text": "Maná",
+          "isCorrect": true
+        },
+        {
+          "text": "Miel",
+          "isCorrect": false
+        },
+        {
+          "text": "Aceite",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el salmo, ¿qué hizo Dios llover sobre ellos como polvo?",
+      "explanation": "El texto dice: E hizo llover sobre ellos carne como polvo, y aves de alas como arena de la mar.",
+      "bibleReference": "Salmos 78:27",
+      "answers": [
+        {
+          "text": "Granizo",
+          "isCorrect": false
+        },
+        {
+          "text": "Agua",
+          "isCorrect": false
+        },
+        {
+          "text": "Fuego",
+          "isCorrect": false
+        },
+        {
+          "text": "Carne",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el salmo, ¿en qué volvió Dios los ríos de Egipto?",
+      "explanation": "El texto dice: Y volvió sus ríos en sangre, y sus corrientes, porque no bebiesen.",
+      "bibleReference": "Salmos 78:44",
+      "answers": [
+        {
+          "text": "En polvo",
+          "isCorrect": false
+        },
+        {
+          "text": "En vino",
+          "isCorrect": false
+        },
+        {
+          "text": "En sangre",
+          "isCorrect": true
+        },
+        {
+          "text": "En hiel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el salmo, ¿qué tabernáculo dejó Dios?",
+      "explanation": "El texto dice: Dejó por tanto el tabernáculo de Silo, la tienda en que habitó entre los hombres.",
+      "bibleReference": "Salmos 78:60",
+      "answers": [
+        {
+          "text": "El de Silo",
+          "isCorrect": true
+        },
+        {
+          "text": "El de Sión",
+          "isCorrect": false
+        },
+        {
+          "text": "El de Salem",
+          "isCorrect": false
+        },
+        {
+          "text": "El de Zoán",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el salmo, ¿qué tribu escogió Dios después de desechar el tabernáculo de José?",
+      "explanation": "El texto dice: Sino que escogió la tribu de Judá, el monte de Sión, al cual amó.",
+      "bibleReference": "Salmos 78:67-68",
+      "answers": [
+        {
+          "text": "La tribu de Leví",
+          "isCorrect": false
+        },
+        {
+          "text": "La tribu de Judá",
+          "isCorrect": true
+        },
+        {
+          "text": "La tribu de Ephraim",
+          "isCorrect": false
+        },
+        {
+          "text": "La tribu de Benjamín",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el salmo, ¿de dónde tomó Dios a David su siervo?",
+      "explanation": "El texto dice: Y eligió á David su siervo, y tomólo de las majadas de las ovejas.",
+      "bibleReference": "Salmos 78:70",
+      "answers": [
+        {
+          "text": "Del campo de Zoán",
+          "isCorrect": false
+        },
+        {
+          "text": "De la casa del rey",
+          "isCorrect": false
+        },
+        {
+          "text": "De las majadas de las ovejas",
+          "isCorrect": true
+        },
+        {
+          "text": "De entre los flecheros",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

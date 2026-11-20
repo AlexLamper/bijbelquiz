@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 117",
+  "description": "Diez preguntas sobre Salmos 117: el llamado a todas las naciones a alabar a Jehová, su misericordia engrandecida y su verdad para siempre.",
+  "slug": "psalms-quiz-part-117",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿A quién manda alabar el primer verso del salmo?",
+      "explanation": "El verso 1 dice: Alabad a Jehová, naciones todas.",
+      "bibleReference": "Salmos 117:1",
+      "answers": [
+        { "text": "A los reyes de la tierra", "isCorrect": false },
+        { "text": "A los sacerdotes del templo", "isCorrect": false },
+        { "text": "A Jehová", "isCorrect": true },
+        { "text": "A los montes de Sión", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿A quiénes se dirige el llamado del primer verso?",
+      "explanation": "El verso llama a las naciones todas y a los pueblos todos a alabar a Jehová.",
+      "bibleReference": "Salmos 117:1",
+      "answers": [
+        { "text": "A todas las naciones y a todos los pueblos", "isCorrect": true },
+        { "text": "Solamente a los sacerdotes de Aarón", "isCorrect": false },
+        { "text": "Solamente a los habitantes de Sión", "isCorrect": false },
+        { "text": "A los ángeles que están en los cielos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el verso 1, ¿qué deben hacer los pueblos todos?",
+      "explanation": "El verso termina diciendo: pueblos todos, alabadle.",
+      "bibleReference": "Salmos 117:1",
+      "answers": [
+        { "text": "Temblar delante de los montes", "isCorrect": false },
+        { "text": "Callar delante de Jehová", "isCorrect": false },
+        { "text": "Traer ofrendas al altar", "isCorrect": false },
+        { "text": "Alabarle", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué razón da el verso 2 para alabar a Jehová?",
+      "explanation": "El verso 2 dice: Porque ha engrandecido sobre nosotros su misericordia.",
+      "bibleReference": "Salmos 117:2",
+      "answers": [
+        { "text": "Porque ha destruido a todos sus enemigos", "isCorrect": false },
+        { "text": "Porque ha engrandecido sobre nosotros su misericordia", "isCorrect": true },
+        { "text": "Porque ha dado lluvia sobre la tierra", "isCorrect": false },
+        { "text": "Porque ha edificado su casa en Sión", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué ha engrandecido Jehová, según el salmo?",
+      "explanation": "El verso 2 dice que Jehová ha engrandecido su misericordia.",
+      "bibleReference": "Salmos 117:2",
+      "answers": [
+        { "text": "Su misericordia", "isCorrect": true },
+        { "text": "Su indignación", "isCorrect": false },
+        { "text": "Su santo templo", "isCorrect": false },
+        { "text": "Su trono eterno", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Sobre quiénes dice el salmo que Jehová ha engrandecido su misericordia?",
+      "explanation": "El verso 2 dice que la ha engrandecido sobre nosotros.",
+      "bibleReference": "Salmos 117:2",
+      "answers": [
+        { "text": "Sobre los cielos", "isCorrect": false },
+        { "text": "Sobre los montes", "isCorrect": false },
+        { "text": "Sobre nosotros", "isCorrect": true },
+        { "text": "Sobre el mar", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuánto tiempo dura la verdad de Jehová, según el salmo?",
+      "explanation": "El verso 2 dice que la verdad de Jehová es para siempre.",
+      "bibleReference": "Salmos 117:2",
+      "answers": [
+        { "text": "Por una sola generación", "isCorrect": false },
+        { "text": "Para siempre", "isCorrect": true },
+        { "text": "Por cuarenta años", "isCorrect": false },
+        { "text": "Hasta la mañana", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el verso 2, ¿qué es para siempre?",
+      "explanation": "El verso dice: y la verdad de Jehová es para siempre.",
+      "bibleReference": "Salmos 117:2",
+      "answers": [
+        { "text": "La ira de los pueblos", "isCorrect": false },
+        { "text": "El consejo de los príncipes", "isCorrect": false },
+        { "text": "La fuerza de las naciones", "isCorrect": false },
+        { "text": "La verdad de Jehová", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Con qué palabra concluye el salmo?",
+      "explanation": "El verso 2 termina con la palabra Aleluya.",
+      "bibleReference": "Salmos 117:2",
+      "answers": [
+        { "text": "Amén y amén", "isCorrect": false },
+        { "text": "Jehová reina", "isCorrect": false },
+        { "text": "Aleluya", "isCorrect": true },
+        { "text": "Para siempre jamás", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dos cosas de Jehová destaca el verso 2?",
+      "explanation": "El verso habla de su misericordia engrandecida sobre nosotros y de su verdad, que es para siempre.",
+      "bibleReference": "Salmos 117:2",
+      "answers": [
+        { "text": "Su misericordia y su verdad", "isCorrect": true },
+        { "text": "Su ira y su juicio", "isCorrect": false },
+        { "text": "Su templo y su altar", "isCorrect": false },
+        { "text": "Su ley y sus estatutos", "isCorrect": false }
+      ]
+    }
+  ]
+}

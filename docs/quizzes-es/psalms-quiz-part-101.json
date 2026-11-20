@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 101",
+  "description": "Diez preguntas sobre Salmos 101: el camino de la perfección, lo que el salmista no quiere en su casa y los fieles de la tierra.",
+  "slug": "psalms-quiz-part-101",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué dos cosas dice el salmista que cantará en el primer versículo?",
+      "explanation": "Salmos 101:1 dice: Misericordia y juicio cantaré.",
+      "bibleReference": "Salmos 101:1",
+      "answers": [
+        { "text": "Gloria y fortaleza", "isCorrect": false },
+        { "text": "Justicia y verdad", "isCorrect": false },
+        { "text": "Misericordia y juicio", "isCorrect": true },
+        { "text": "Alabanza y magnificencia", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿A quién dice el salmista que cantará?",
+      "explanation": "Salmos 101:1 dice: a ti cantaré yo, oh Jehová.",
+      "bibleReference": "Salmos 101:1",
+      "answers": [
+        { "text": "Al rey", "isCorrect": false },
+        { "text": "A Jehová", "isCorrect": true },
+        { "text": "Al pueblo", "isCorrect": false },
+        { "text": "A los fieles", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 2, ¿cómo andará en medio de su casa?",
+      "explanation": "Salmos 101:2 dice: en integridad de mi corazón andaré en medio de mi casa.",
+      "bibleReference": "Salmos 101:2",
+      "answers": [
+        { "text": "En integridad de su corazón", "isCorrect": true },
+        { "text": "Con temor de los hombres", "isCorrect": false },
+        { "text": "Con vara de hierro", "isCorrect": false },
+        { "text": "Sin hablar con nadie", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dice el versículo 3 que no pondrá delante de sus ojos?",
+      "explanation": "Salmos 101:3 dice: No pondré delante de mis ojos cosa injusta.",
+      "bibleReference": "Salmos 101:3",
+      "answers": [
+        { "text": "Imágenes de talla", "isCorrect": false },
+        { "text": "Plata ni oro", "isCorrect": false },
+        { "text": "Cosas de niños", "isCorrect": false },
+        { "text": "Cosa injusta", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué dice el versículo 4 acerca del corazón perverso?",
+      "explanation": "Salmos 101:4 dice: Corazón perverso se apartará de mí; no conoceré al malvado.",
+      "bibleReference": "Salmos 101:4",
+      "answers": [
+        { "text": "Que será instruido", "isCorrect": false },
+        { "text": "Que se apartará de él", "isCorrect": true },
+        { "text": "Que reinará en su casa", "isCorrect": false },
+        { "text": "Que será perdonado", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 5, ¿a quién cortará el salmista?",
+      "explanation": "Salmos 101:5 dice: Al que solapadamente infama a su prójimo, yo le cortaré.",
+      "bibleReference": "Salmos 101:5",
+      "answers": [
+        { "text": "Al que infama a su prójimo", "isCorrect": true },
+        { "text": "Al que no trae presentes", "isCorrect": false },
+        { "text": "Al que duerme de día", "isCorrect": false },
+        { "text": "Al que viene de lejos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿A quién dice el versículo 5 que no sufrirá?",
+      "explanation": "Salmos 101:5 dice: no sufriré al de ojos altaneros, y de corazón vanidoso.",
+      "bibleReference": "Salmos 101:5",
+      "answers": [
+        { "text": "Al pobre del desierto", "isCorrect": false },
+        { "text": "Al que llora de noche", "isCorrect": false },
+        { "text": "Al que canta sin arpa", "isCorrect": false },
+        { "text": "Al de ojos altaneros", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 6, ¿en quiénes pondrá sus ojos para que estén con él?",
+      "explanation": "Salmos 101:6 dice: Mis ojos pondré en los fieles de la tierra, para que estén conmigo.",
+      "bibleReference": "Salmos 101:6",
+      "answers": [
+        { "text": "En los príncipes", "isCorrect": false },
+        { "text": "En los sabios de Egipto", "isCorrect": false },
+        { "text": "En los fieles de la tierra", "isCorrect": true },
+        { "text": "En los sacerdotes", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Quién no habitará dentro de su casa, según el versículo 7?",
+      "explanation": "Salmos 101:7 dice: No habitará dentro de mi casa el que hace fraude.",
+      "bibleReference": "Salmos 101:7",
+      "answers": [
+        { "text": "El que hace fraude", "isCorrect": true },
+        { "text": "El extranjero", "isCorrect": false },
+        { "text": "El que es pobre", "isCorrect": false },
+        { "text": "El que no canta", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dice el último versículo que hará por las mañanas?",
+      "explanation": "Salmos 101:8 dice: Por las mañanas cortaré a todos los impíos de la tierra.",
+      "bibleReference": "Salmos 101:8",
+      "answers": [
+        { "text": "Cantar en los atrios", "isCorrect": false },
+        { "text": "Ofrecer sacrificios", "isCorrect": false },
+        { "text": "Juzgar a los pueblos", "isCorrect": false },
+        { "text": "Cortar a los impíos de la tierra", "isCorrect": true }
+      ]
+    }
+  ]
+}

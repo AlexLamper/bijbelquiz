@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 62",
+  "description": "Diez preguntas sobre Salmos 62: el alma acallada en Dios, la pared acostada, la vanidad de los hijos de los hombres y la fortaleza que es de Dios.",
+  "slug": "psalms-quiz-part-62",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el versículo 1, ¿en quién solamente está acallada el alma del salmista?",
+      "explanation": "El versículo 1 dice: En Dios solamente está acallada mi alma: de él viene mi salud.",
+      "bibleReference": "Salmos 62:1",
+      "answers": [
+        { "text": "En Dios solamente", "isCorrect": true },
+        { "text": "En el rey de Israel", "isCorrect": false },
+        { "text": "En sus propias fuerzas", "isCorrect": false },
+        { "text": "En la casa de sus padres", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 2, ¿qué dice el salmista que no le pasará porque Dios es su refugio?",
+      "explanation": "El versículo 2 dice que Dios solamente es su fuerte, su salud y su refugio, y añade: no resbalaré mucho.",
+      "bibleReference": "Salmos 62:2",
+      "answers": [
+        { "text": "Que no verá la muerte", "isCorrect": false },
+        { "text": "Que no tendrá enemigos", "isCorrect": false },
+        { "text": "Que no resbalará mucho", "isCorrect": true },
+        { "text": "Que no pasará hambre", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 3, ¿con qué se compara la caída de los que maquinan contra un hombre?",
+      "explanation": "El versículo 3 dice que pereceréis todos vosotros, caeréis como pared acostada, como cerca ruinosa.",
+      "bibleReference": "Salmos 62:3",
+      "answers": [
+        { "text": "Con un árbol seco en medio del campo", "isCorrect": false },
+        { "text": "Con una pared acostada y una cerca ruinosa", "isCorrect": true },
+        { "text": "Con el humo que se deshace en el aire", "isCorrect": false },
+        { "text": "Con la nieve que se derrite en el monte", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 4, ¿qué hacen con la boca y qué en sus entrañas los que quieren arrojar a ese hombre de su grandeza?",
+      "explanation": "El versículo 4 dice que aman la mentira, que con su boca bendicen, pero maldicen en sus entrañas.",
+      "bibleReference": "Salmos 62:4",
+      "answers": [
+        { "text": "Callan con la boca y oran en sus entrañas", "isCorrect": false },
+        { "text": "Maldicen con la boca y temen en sus entrañas", "isCorrect": false },
+        { "text": "Preguntan con la boca y dudan en sus entrañas", "isCorrect": false },
+        { "text": "Bendicen con la boca, pero maldicen en sus entrañas", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 5, ¿qué le dice el salmista a su alma?",
+      "explanation": "El versículo 5 dice: Alma mía, en Dios solamente reposa; porque de él es mi esperanza.",
+      "bibleReference": "Salmos 62:5",
+      "answers": [
+        { "text": "Que repose en Dios solamente, porque de él es su esperanza", "isCorrect": true },
+        { "text": "Que espere en los pueblos y en sus príncipes", "isCorrect": false },
+        { "text": "Que se duela por la mentira de los hombres", "isCorrect": false },
+        { "text": "Que calle delante de los que la maldicen", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 8, ¿qué deben derramar los pueblos delante de Dios?",
+      "explanation": "El versículo 8 dice: Esperad en él en todo tiempo, oh pueblos; derramad delante de él vuestro corazón: Dios es nuestro amparo.",
+      "bibleReference": "Salmos 62:8",
+      "answers": [
+        { "text": "Aceite y vino", "isCorrect": false },
+        { "text": "La sangre de los sacrificios", "isCorrect": false },
+        { "text": "Su corazón", "isCorrect": true },
+        { "text": "Agua del santuario", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 9, ¿qué resulta al pesar a todos los hijos de los hombres en la balanza?",
+      "explanation": "El versículo 9 dice que, pesándolos á todos igualmente en la balanza, serán menos que la vanidad.",
+      "bibleReference": "Salmos 62:9",
+      "answers": [
+        { "text": "Que pesan más que los montes", "isCorrect": false },
+        { "text": "Que serán menos que la vanidad", "isCorrect": true },
+        { "text": "Que todos son iguales a los ángeles", "isCorrect": false },
+        { "text": "Que los ricos pesan más que los pobres", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 10, ¿en qué dice el salmo que no se debe confiar?",
+      "explanation": "El versículo 10 dice: No confiéis en la violencia, ni en la rapiña; no os envanezcáis.",
+      "bibleReference": "Salmos 62:10",
+      "answers": [
+        { "text": "En los carros ni en los caballos", "isCorrect": false },
+        { "text": "En los reyes ni en los príncipes", "isCorrect": false },
+        { "text": "En los encantadores ni en los sueños", "isCorrect": false },
+        { "text": "En la violencia ni en la rapiña", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 10, ¿qué advierte el salmo por si aumentare la hacienda?",
+      "explanation": "El versículo 10 dice: si se aumentare la hacienda, no pongáis el corazón en ella.",
+      "bibleReference": "Salmos 62:10",
+      "answers": [
+        { "text": "Que no se ponga el corazón en ella", "isCorrect": true },
+        { "text": "Que se reparta toda entre los pueblos", "isCorrect": false },
+        { "text": "Que se lleve al santuario", "isCorrect": false },
+        { "text": "Que se esconda de los enemigos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 11, ¿qué es lo que el salmista ha oído dos veces?",
+      "explanation": "El versículo 11 dice: Una vez habló Dios; dos veces he oído esto: Que de Dios es la fortaleza.",
+      "bibleReference": "Salmos 62:11",
+      "answers": [
+        { "text": "Que la tierra es de Dios", "isCorrect": false },
+        { "text": "Que Dios juzga a las gentes", "isCorrect": false },
+        { "text": "Que de Dios es la fortaleza", "isCorrect": true },
+        { "text": "Que Dios habita en Sión", "isCorrect": false }
+      ]
+    }
+  ]
+}

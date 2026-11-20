@@ -41,12 +41,12 @@
           "isCorrect": false
         },
         {
-          "text": "Haggeo el profeta y Zacarías, con los sacerdotes",
-          "isCorrect": false
-        },
-        {
           "text": "Jesuá hijo de Josadec y Zorobabel hijo de Sealthiel, con sus hermanos",
           "isCorrect": true
+        },
+        {
+          "text": "Haggeo el profeta y Zacarías, con los sacerdotes",
+          "isCorrect": false
         },
         {
           "text": "Los Sidonios y los Tirios con sus carpinteros",
@@ -152,8 +152,8 @@
       "bibleReference": "Esdras 3:8",
       "answers": [
         {
-          "text": "De treinta años arriba",
-          "isCorrect": false
+          "text": "De veinte años arriba",
+          "isCorrect": true
         },
         {
           "text": "De tres años arriba",
@@ -164,8 +164,8 @@
           "isCorrect": false
         },
         {
-          "text": "De veinte años arriba",
-          "isCorrect": true
+          "text": "De treinta años arriba",
+          "isCorrect": false
         }
       ]
     },
@@ -175,16 +175,16 @@
       "bibleReference": "Esdras 3:10",
       "answers": [
         {
-          "text": "Pusieron á los sacerdotes con trompetas y á los Levitas con címbalos",
-          "isCorrect": true
+          "text": "Ofrecieron mil novillos y mil ovejas sobre el altar",
+          "isCorrect": false
         },
         {
           "text": "Guardaron silencio delante de Jehová todo aquel día",
           "isCorrect": false
         },
         {
-          "text": "Ofrecieron mil novillos y mil ovejas sobre el altar",
-          "isCorrect": false
+          "text": "Pusieron á los sacerdotes con trompetas y á los Levitas con címbalos",
+          "isCorrect": true
         },
         {
           "text": "Leyeron el libro de la ley delante del pueblo",
@@ -202,16 +202,16 @@
           "isCorrect": false
         },
         {
-          "text": "Porque es bueno, porque para siempre es su misericordia sobre Israel",
-          "isCorrect": true
+          "text": "Jehová reina, vístase de magnificencia y de gloria",
+          "isCorrect": false
         },
         {
           "text": "Santo, santo, santo es Jehová de los ejércitos",
           "isCorrect": false
         },
         {
-          "text": "Jehová reina, vístase de magnificencia y de gloria",
-          "isCorrect": false
+          "text": "Porque es bueno, porque para siempre es su misericordia sobre Israel",
+          "isCorrect": true
         }
       ]
     },
@@ -221,16 +221,16 @@
       "bibleReference": "Esdras 3:12",
       "answers": [
         {
-          "text": "Se iban cada uno á su ciudad sin decir nada",
-          "isCorrect": false
+          "text": "Lloraban en alta voz, mientras otros daban grandes gritos de alegría",
+          "isCorrect": true
         },
         {
           "text": "Reprendían á los que edificaban la casa de Dios",
           "isCorrect": false
         },
         {
-          "text": "Lloraban en alta voz, mientras otros daban grandes gritos de alegría",
-          "isCorrect": true
+          "text": "Se iban cada uno á su ciudad sin decir nada",
+          "isCorrect": false
         },
         {
           "text": "Tocaban las trompetas y los címbalos en silencio",

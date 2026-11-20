@@ -1,0 +1,242 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 133",
+  "description": "Diez preguntas sobre Salmos 133: la hermandad comparada con el óleo sobre la barba de Aarón y con el rocío de Hermón.",
+  "slug": "psalms-quiz-part-133",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "easy",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿A quién atribuye el encabezado este cántico gradual?",
+      "explanation": "El encabezado dice: \"Cántico gradual: de David\".",
+      "bibleReference": "Salmos 133:1",
+      "answers": [
+        {
+          "text": "A David",
+          "isCorrect": true
+        },
+        {
+          "text": "A Aarón",
+          "isCorrect": false
+        },
+        {
+          "text": "A los hijos de Coré",
+          "isCorrect": false
+        },
+        {
+          "text": "Al Músico principal",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué llama bueno y delicioso el versículo 1?",
+      "explanation": "El versículo 1 exclama cuán bueno y delicioso es habitar los hermanos igualmente en uno.",
+      "bibleReference": "Salmos 133:1",
+      "answers": [
+        {
+          "text": "Alzar las manos al santuario",
+          "isCorrect": false
+        },
+        {
+          "text": "Cantar salmos en los atrios",
+          "isCorrect": false
+        },
+        {
+          "text": "Habitar los hermanos juntos en uno",
+          "isCorrect": true
+        },
+        {
+          "text": "Guardar silencio ante Jehová",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué dos palabras describe el versículo 1 ese habitar juntos?",
+      "explanation": "El versículo dice: \"cuán bueno y cuán delicioso es\".",
+      "bibleReference": "Salmos 133:1",
+      "answers": [
+        {
+          "text": "Difícil y raro",
+          "isCorrect": false
+        },
+        {
+          "text": "Bueno y delicioso",
+          "isCorrect": true
+        },
+        {
+          "text": "Santo y temible",
+          "isCorrect": false
+        },
+        {
+          "text": "Dulce y breve",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué compara el versículo 2 esa unión?",
+      "explanation": "La compara con el buen óleo sobre la cabeza.",
+      "bibleReference": "Salmos 133:2",
+      "answers": [
+        {
+          "text": "Con el fuego sobre el altar",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el pan de los pobres",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el vino de la fiesta",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el buen óleo sobre la cabeza",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Sobre qué desciende ese óleo después de la cabeza?",
+      "explanation": "El versículo 2 dice que desciende sobre la barba.",
+      "bibleReference": "Salmos 133:2",
+      "answers": [
+        {
+          "text": "Sobre la barba",
+          "isCorrect": true
+        },
+        {
+          "text": "Sobre las manos",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre el altar",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre los pies",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De quién es la barba que menciona el versículo 2?",
+      "explanation": "El versículo habla de \"la barba de Aarón\".",
+      "bibleReference": "Salmos 133:2",
+      "answers": [
+        {
+          "text": "De David",
+          "isCorrect": false
+        },
+        {
+          "text": "De Aarón",
+          "isCorrect": true
+        },
+        {
+          "text": "De Jacob",
+          "isCorrect": false
+        },
+        {
+          "text": "De Leví",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Hasta dónde baja el óleo, según el versículo 2?",
+      "explanation": "El versículo dice que baja hasta el borde de sus vestiduras.",
+      "bibleReference": "Salmos 133:2",
+      "answers": [
+        {
+          "text": "Hasta el suelo del santuario",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta las aguas del río",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta el borde de sus vestiduras",
+          "isCorrect": true
+        },
+        {
+          "text": "Hasta el estrado de sus pies",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué otra imagen compara el versículo 3 esa unión?",
+      "explanation": "La compara con el rocío de Hermón.",
+      "bibleReference": "Salmos 133:3",
+      "answers": [
+        {
+          "text": "Con la lluvia de Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el río de Babilonia",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el viento del desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el rocío de Hermón",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Sobre qué desciende ese rocío?",
+      "explanation": "El versículo 3 dice que desciende sobre los montes de Sión.",
+      "bibleReference": "Salmos 133:3",
+      "answers": [
+        {
+          "text": "Sobre los campos del bosque",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre los montes de Sión",
+          "isCorrect": true
+        },
+        {
+          "text": "Sobre los tejados de la ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre los sauces del río",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué envía Jehová allí, según el versículo 3?",
+      "explanation": "El versículo dice que allí envía Jehová bendición y vida eterna.",
+      "bibleReference": "Salmos 133:3",
+      "answers": [
+        {
+          "text": "Fuego y granizo",
+          "isCorrect": false
+        },
+        {
+          "text": "Lluvia y relámpagos",
+          "isCorrect": false
+        },
+        {
+          "text": "Bendición y vida eterna",
+          "isCorrect": true
+        },
+        {
+          "text": "Juicio y confusión",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

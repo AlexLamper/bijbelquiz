@@ -1,0 +1,242 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 145",
+  "description": "Diez preguntas sobre Salmos 145: la grandeza inescrutable de Jehová, su clemencia, la mano abierta que colma de bendición y su reino de todos los siglos.",
+  "slug": "psalms-quiz-part-145",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Cómo llama a Dios al comenzar el salmo?",
+      "explanation": "Empieza diciendo: \"ENSALZARTE he, mi Dios, mi Rey; y bendeciré tu nombre por siglo y para siempre\".",
+      "bibleReference": "Salmos 145:1",
+      "answers": [
+        {
+          "text": "Mi roca, mi escudo",
+          "isCorrect": false
+        },
+        {
+          "text": "Mi Dios, mi Rey",
+          "isCorrect": true
+        },
+        {
+          "text": "Mi padre, mi juez",
+          "isCorrect": false
+        },
+        {
+          "text": "Mi luz, mi salud",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué frecuencia dice que bendecirá a Dios?",
+      "explanation": "Dice: \"Cada día te bendeciré, y alabaré tu nombre por siglo y para siempre\".",
+      "bibleReference": "Salmos 145:2",
+      "answers": [
+        {
+          "text": "Una vez al año",
+          "isCorrect": false
+        },
+        {
+          "text": "En los días de fiesta",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuando sea librado",
+          "isCorrect": false
+        },
+        {
+          "text": "Cada día",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice de la grandeza de Jehová?",
+      "explanation": "Dice que grande es Jehová y digno de suprema alabanza, y que su grandeza es inescrutable.",
+      "bibleReference": "Salmos 145:3",
+      "answers": [
+        {
+          "text": "Que es inescrutable",
+          "isCorrect": true
+        },
+        {
+          "text": "Que fue medida por los sabios",
+          "isCorrect": false
+        },
+        {
+          "text": "Que se ve solo en el templo",
+          "isCorrect": false
+        },
+        {
+          "text": "Que crece con los años",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué hará una generación a la otra?",
+      "explanation": "Dice que generación a generación narrará sus obras y anunciarán sus valentías.",
+      "bibleReference": "Salmos 145:4",
+      "answers": [
+        {
+          "text": "Guardar sus mandamientos",
+          "isCorrect": false
+        },
+        {
+          "text": "Edificar su altar",
+          "isCorrect": false
+        },
+        {
+          "text": "Narrar sus obras",
+          "isCorrect": true
+        },
+        {
+          "text": "Repartir su heredad",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 8, ¿cómo es Jehová respecto a la ira?",
+      "explanation": "Dice que Jehová es clemente y misericordioso, lento para la ira y grande en misericordia.",
+      "bibleReference": "Salmos 145:8",
+      "answers": [
+        {
+          "text": "Pronto para la ira",
+          "isCorrect": false
+        },
+        {
+          "text": "Lento para la ira",
+          "isCorrect": true
+        },
+        {
+          "text": "Terrible en su ira",
+          "isCorrect": false
+        },
+        {
+          "text": "Sin ira ninguna",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Sobre qué están sus misericordias?",
+      "explanation": "Dice que bueno es Jehová para con todos y que sus misericordias están sobre todas sus obras.",
+      "bibleReference": "Salmos 145:9",
+      "answers": [
+        {
+          "text": "Sobre los reyes de la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre los muros de la ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre los que ofrecen sacrificio",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobre todas sus obras",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿A quiénes sostiene y levanta Jehová?",
+      "explanation": "Dice que Jehová sostiene a todos los que caen y levanta a todos los oprimidos.",
+      "bibleReference": "Salmos 145:14",
+      "answers": [
+        {
+          "text": "A los que caen y a los oprimidos",
+          "isCorrect": true
+        },
+        {
+          "text": "A los ricos y a los príncipes",
+          "isCorrect": false
+        },
+        {
+          "text": "A los sabios y a los ancianos",
+          "isCorrect": false
+        },
+        {
+          "text": "A los fuertes y a los valientes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué sucede cuando Jehová abre su mano?",
+      "explanation": "Dice que los ojos de todos esperan en él, y que abre su mano y colma de bendición a todo viviente.",
+      "bibleReference": "Salmos 145:15-16",
+      "answers": [
+        {
+          "text": "Hace temblar toda la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "Cierra los cielos de arriba",
+          "isCorrect": false
+        },
+        {
+          "text": "Colma de bendición a todo viviente",
+          "isCorrect": true
+        },
+        {
+          "text": "Envía fuego sobre los montes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De quiénes está cercano Jehová?",
+      "explanation": "Dice que cercano está Jehová a todos los que le invocan, a todos los que le invocan de veras.",
+      "bibleReference": "Salmos 145:18",
+      "answers": [
+        {
+          "text": "De los que habitan en la ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "De los que le invocan de veras",
+          "isCorrect": true
+        },
+        {
+          "text": "De los que reparten limosna",
+          "isCorrect": false
+        },
+        {
+          "text": "De los que cantan con arpa",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 20, ¿a quiénes guarda Jehová y a quiénes destruirá?",
+      "explanation": "Dice que Jehová guarda a todos los que le aman, pero destruirá a todos los impíos.",
+      "bibleReference": "Salmos 145:20",
+      "answers": [
+        {
+          "text": "Guarda a los que le aman y destruirá a los impíos",
+          "isCorrect": true
+        },
+        {
+          "text": "Guarda a los reyes y destruirá a los pobres",
+          "isCorrect": false
+        },
+        {
+          "text": "Guarda a los fuertes y destruirá a los débiles",
+          "isCorrect": false
+        },
+        {
+          "text": "Guarda a los sabios y destruirá a los simples",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

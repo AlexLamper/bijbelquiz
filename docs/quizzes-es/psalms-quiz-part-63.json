@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 63",
+  "description": "Diez preguntas sobre Salmos 63: la sed del alma en tierra de sequedad, la misericordia mejor que la vida y la meditación en las velas de la noche.",
+  "slug": "psalms-quiz-part-63",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el encabezado, ¿dónde estaba David cuando este salmo se escribió?",
+      "explanation": "El encabezado dice: Salmo de David, estando en el desierto de Judá.",
+      "bibleReference": "Salmos 63:1",
+      "answers": [
+        { "text": "En la casa de Jehová", "isCorrect": false },
+        { "text": "En el desierto de Judá", "isCorrect": true },
+        { "text": "En la cueva, huyendo de Saúl", "isCorrect": false },
+        { "text": "En el valle de las Salinas", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 1, ¿qué dice el salmista de su alma y de su carne en tierra de sequedad?",
+      "explanation": "El versículo 1 dice: mi alma tiene sed de ti, mi carne te desea, en tierra de sequedad y transida sin aguas.",
+      "bibleReference": "Salmos 63:1",
+      "answers": [
+        { "text": "Que su alma duerme y su carne descansa", "isCorrect": false },
+        { "text": "Que su alma calla y su carne tiembla", "isCorrect": false },
+        { "text": "Que su alma se queja y su carne se consume de ira", "isCorrect": false },
+        { "text": "Que su alma tiene sed de Dios y su carne lo desea", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 2, ¿dónde había mirado el salmista la fortaleza y la gloria de Dios?",
+      "explanation": "El versículo 2 dice: Para ver tu fortaleza y tu gloria, así como te he mirado en el santuario.",
+      "bibleReference": "Salmos 63:2",
+      "answers": [
+        { "text": "En el santuario", "isCorrect": true },
+        { "text": "En los montes de Basán", "isCorrect": false },
+        { "text": "En medio de las naciones", "isCorrect": false },
+        { "text": "En el valle de Succoth", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 3, ¿qué es mejor que la vida?",
+      "explanation": "El versículo 3 dice: Porque mejor es tu misericordia que la vida: mis labios te alabarán.",
+      "bibleReference": "Salmos 63:3",
+      "answers": [
+        { "text": "La fuerza de Dios", "isCorrect": false },
+        { "text": "La alabanza de los pueblos", "isCorrect": false },
+        { "text": "La misericordia de Dios", "isCorrect": true },
+        { "text": "La heredad de los que temen a Dios", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 4, ¿qué dice el salmista que alzará en el nombre de Dios?",
+      "explanation": "El versículo 4 dice: Así te bendeciré en mi vida: en tu nombre alzaré mis manos.",
+      "bibleReference": "Salmos 63:4",
+      "answers": [
+        { "text": "Su bandera", "isCorrect": false },
+        { "text": "Sus manos", "isCorrect": true },
+        { "text": "Su arpa", "isCorrect": false },
+        { "text": "Su copa", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 5, ¿con qué se compara la saciedad del alma del salmista?",
+      "explanation": "El versículo 5 dice: Como de meollo y de grosura será saciada mi alma; y con labios de júbilo te alabará mi boca.",
+      "bibleReference": "Salmos 63:5",
+      "answers": [
+        { "text": "Con pan y agua", "isCorrect": false },
+        { "text": "Con leche y miel", "isCorrect": false },
+        { "text": "Con el fruto de la vid", "isCorrect": false },
+        { "text": "Con meollo y grosura", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 6, ¿cuándo se acuerda de Dios y medita en él?",
+      "explanation": "El versículo 6 dice: Cuando me acordaré de ti en mi lecho, cuando meditaré de ti en las velas de la noche.",
+      "bibleReference": "Salmos 63:6",
+      "answers": [
+        { "text": "En su lecho, en las velas de la noche", "isCorrect": true },
+        { "text": "Cuando sube al santuario cada año", "isCorrect": false },
+        { "text": "Cuando está en medio de la congregación", "isCorrect": false },
+        { "text": "Cuando sale a pelear contra sus enemigos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 8, ¿qué dice el salmista que lo ha sostenido?",
+      "explanation": "El versículo 8 dice: Está mi alma apegada á ti: tu diestra me ha sostenido.",
+      "bibleReference": "Salmos 63:8",
+      "answers": [
+        { "text": "La vara del pastor", "isCorrect": false },
+        { "text": "El consejo de los sabios", "isCorrect": false },
+        { "text": "La diestra de Dios", "isCorrect": true },
+        { "text": "La mano del rey", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 10, ¿de quién serán porción los que buscaron su alma para destrucción?",
+      "explanation": "El versículo 10 dice que los destruirán á filo de espada y que serán porción de las zorras.",
+      "bibleReference": "Salmos 63:10",
+      "answers": [
+        { "text": "De los leones", "isCorrect": false },
+        { "text": "De las zorras", "isCorrect": true },
+        { "text": "De las aves del cielo", "isCorrect": false },
+        { "text": "De los perros de la ciudad", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 11, ¿quién se alegrará en Dios?",
+      "explanation": "El versículo 11 dice: Empero el rey se alegrará en Dios; será alabado cualquiera que por él jura.",
+      "bibleReference": "Salmos 63:11",
+      "answers": [
+        { "text": "Los que hablan mentira", "isCorrect": false },
+        { "text": "Los que buscaron su alma", "isCorrect": false },
+        { "text": "Los encantadores", "isCorrect": false },
+        { "text": "El rey", "isCorrect": true }
+      ]
+    }
+  ]
+}

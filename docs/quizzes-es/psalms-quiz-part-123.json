@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 123",
+  "description": "Diez preguntas sobre Salmos 123: los ojos alzados al que habita en los cielos, la comparación con los siervos y el clamor por misericordia.",
+  "slug": "psalms-quiz-part-123",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el primer verso, ¿a quién alzó el salmista sus ojos?",
+      "explanation": "El verso 1 dice: A ti que habitas en los cielos, alcé mis ojos.",
+      "bibleReference": "Salmos 123:1",
+      "answers": [
+        { "text": "A los montes de Jerusalem", "isCorrect": false },
+        { "text": "Al que habita en los cielos", "isCorrect": true },
+        { "text": "A la mano de su señor", "isCorrect": false },
+        { "text": "A los soberbios de la tierra", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el verso 2, ¿a qué miran los ojos de los siervos?",
+      "explanation": "El verso dice: como los ojos de los siervos miran a la mano de sus señores.",
+      "bibleReference": "Salmos 123:2",
+      "answers": [
+        { "text": "A la puerta de su casa", "isCorrect": false },
+        { "text": "Al camino del desierto", "isCorrect": false },
+        { "text": "Al rostro de los reyes", "isCorrect": false },
+        { "text": "A la mano de sus señores", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el mismo verso, ¿a qué miran los ojos de la sierva?",
+      "explanation": "El verso 2 dice: y como los ojos de la sierva a la mano de su señora.",
+      "bibleReference": "Salmos 123:2",
+      "answers": [
+        { "text": "A los pies de su señor", "isCorrect": false },
+        { "text": "A la puerta del huerto", "isCorrect": false },
+        { "text": "A la mano de su señora", "isCorrect": true },
+        { "text": "A la mesa de su casa", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Hasta cuándo miran nuestros ojos a Jehová, según el verso 2?",
+      "explanation": "El verso termina diciendo: hasta que haya misericordia de nosotros.",
+      "bibleReference": "Salmos 123:2",
+      "answers": [
+        { "text": "Hasta que haya misericordia de nosotros", "isCorrect": true },
+        { "text": "Hasta que se levanten los soberbios", "isCorrect": false },
+        { "text": "Hasta que pase la noche de aflicción", "isCorrect": false },
+        { "text": "Hasta que suban las tribus a Sión", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué petición repite el salmista dos veces en el verso 3?",
+      "explanation": "El verso dice: Ten misericordia de nosotros, oh Jehová, ten misericordia de nosotros.",
+      "bibleReference": "Salmos 123:3",
+      "answers": [
+        { "text": "Levántate, oh Jehová", "isCorrect": false },
+        { "text": "Guarda nuestra alma", "isCorrect": false },
+        { "text": "Juzga a los soberbios", "isCorrect": false },
+        { "text": "Ten misericordia de nosotros", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el verso 3, ¿de qué están muy hartos?",
+      "explanation": "El verso dice: porque estamos muy hartos de menosprecio.",
+      "bibleReference": "Salmos 123:3",
+      "answers": [
+        { "text": "De hambre", "isCorrect": false },
+        { "text": "De menosprecio", "isCorrect": true },
+        { "text": "De guerra", "isCorrect": false },
+        { "text": "De silencio", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Además del menosprecio de los soberbios, ¿de qué dice el verso 4 que está muy harta nuestra alma?",
+      "explanation": "El verso 4 dice: Muy harta está nuestra alma del escarnio de los holgados.",
+      "bibleReference": "Salmos 123:4",
+      "answers": [
+        { "text": "Del escarnio de los holgados", "isCorrect": true },
+        { "text": "Del ruido de las aguas", "isCorrect": false },
+        { "text": "Del peso de la vara", "isCorrect": false },
+        { "text": "Del temor de los reyes", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el verso 4, ¿de quiénes viene el escarnio?",
+      "explanation": "El verso habla del escarnio de los holgados.",
+      "bibleReference": "Salmos 123:4",
+      "answers": [
+        { "text": "De los reyes", "isCorrect": false },
+        { "text": "De los siervos", "isCorrect": false },
+        { "text": "De los holgados", "isCorrect": true },
+        { "text": "De las naciones", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el verso 4, ¿de quiénes viene el menosprecio?",
+      "explanation": "El verso habla del menosprecio de los soberbios.",
+      "bibleReference": "Salmos 123:4",
+      "answers": [
+        { "text": "De los pobres", "isCorrect": false },
+        { "text": "De los soberbios", "isCorrect": true },
+        { "text": "De los jueces", "isCorrect": false },
+        { "text": "De los extraños", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el verso 2, ¿a quién miran nuestros ojos?",
+      "explanation": "El verso dice: así nuestros ojos miran a Jehová nuestro Dios.",
+      "bibleReference": "Salmos 123:2",
+      "answers": [
+        { "text": "A los montes altos", "isCorrect": false },
+        { "text": "A las manos de los hombres", "isCorrect": false },
+        { "text": "A los cielos vacíos", "isCorrect": false },
+        { "text": "A Jehová nuestro Dios", "isCorrect": true }
+      ]
+    }
+  ]
+}

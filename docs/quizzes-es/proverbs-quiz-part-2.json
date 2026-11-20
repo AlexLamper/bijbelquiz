@@ -1,0 +1,242 @@
+{
+  "title": "Proverbios Quiz bíblico - Capítulo 2",
+  "description": "Diez preguntas sobre Proverbios 2: la sabiduría buscada como plata, el conocimiento de Dios que viene de su boca y el camino de los rectos.",
+  "slug": "proverbs-quiz-part-2",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué pide que haga el hijo con sus mandamientos?",
+      "explanation": "Dice: \"HIJO mío, si tomares mis palabras, y mis mandamientos guardares dentro de ti\".",
+      "bibleReference": "Proverbios 2:1",
+      "answers": [
+        {
+          "text": "Guardarlos dentro de sí",
+          "isCorrect": true
+        },
+        {
+          "text": "Escribirlos en la puerta",
+          "isCorrect": false
+        },
+        {
+          "text": "Enseñarlos a los reyes",
+          "isCorrect": false
+        },
+        {
+          "text": "Contarlos en las plazas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Cómo dice que debe buscar la sabiduría?",
+      "explanation": "Dice: \"Si como á la plata la buscares, y la escudriñares como á tesoros\".",
+      "bibleReference": "Proverbios 2:4",
+      "answers": [
+        {
+          "text": "Como a un campo que se compra",
+          "isCorrect": false
+        },
+        {
+          "text": "Como a un amigo que se llama",
+          "isCorrect": false
+        },
+        {
+          "text": "Como a la plata y como a tesoros",
+          "isCorrect": true
+        },
+        {
+          "text": "Como a un camino que se abre",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué entenderá y hallará entonces?",
+      "explanation": "Dice que entonces entenderá el temor de Jehová y hallará el conocimiento de Dios.",
+      "bibleReference": "Proverbios 2:5",
+      "answers": [
+        {
+          "text": "El fin de sus enemigos",
+          "isCorrect": false
+        },
+        {
+          "text": "El temor de Jehová y el conocimiento de Dios",
+          "isCorrect": true
+        },
+        {
+          "text": "La suerte de los reyes de la tierra",
+          "isCorrect": false
+        },
+        {
+          "text": "El tiempo señalado de su muerte",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿De dónde dice que viene el conocimiento y la inteligencia?",
+      "explanation": "Dice que Jehová da la sabiduría, y que de su boca viene el conocimiento y la inteligencia.",
+      "bibleReference": "Proverbios 2:6",
+      "answers": [
+        {
+          "text": "De la boca de los ancianos",
+          "isCorrect": false
+        },
+        {
+          "text": "De los libros de los sabios",
+          "isCorrect": false
+        },
+        {
+          "text": "Del consejo de los jueces",
+          "isCorrect": false
+        },
+        {
+          "text": "De la boca de Jehová",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Para quiénes dice que es escudo?",
+      "explanation": "Dice que provee de sólida sabiduría a los rectos y que es escudo a los que caminan rectamente.",
+      "bibleReference": "Proverbios 2:7",
+      "answers": [
+        {
+          "text": "Para los que caminan rectamente",
+          "isCorrect": true
+        },
+        {
+          "text": "Para los que ofrecen sacrificios",
+          "isCorrect": false
+        },
+        {
+          "text": "Para los que guardan las puertas",
+          "isCorrect": false
+        },
+        {
+          "text": "Para los que tienen muchas riquezas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 9, ¿qué entenderá?",
+      "explanation": "Dice: \"Entonces entenderás justicia, juicio, y equidad, y todo buen camino\".",
+      "bibleReference": "Proverbios 2:9",
+      "answers": [
+        {
+          "text": "Las señales del cielo",
+          "isCorrect": false
+        },
+        {
+          "text": "Justicia, juicio y equidad",
+          "isCorrect": true
+        },
+        {
+          "text": "Las lenguas de los pueblos",
+          "isCorrect": false
+        },
+        {
+          "text": "Los secretos de los reyes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice que le guardará y le preservará?",
+      "explanation": "Dice que el consejo le guardará y que la inteligencia le preservará.",
+      "bibleReference": "Proverbios 2:11",
+      "answers": [
+        {
+          "text": "La espada y el escudo",
+          "isCorrect": false
+        },
+        {
+          "text": "El muro y la torre",
+          "isCorrect": false
+        },
+        {
+          "text": "El oro y la plata",
+          "isCorrect": false
+        },
+        {
+          "text": "El consejo y la inteligencia",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿De qué hombres le libra la sabiduría?",
+      "explanation": "Dice que es para librarle del mal camino, de los hombres que hablan perversidades y que dejan las veredas derechas.",
+      "bibleReference": "Proverbios 2:12-13",
+      "answers": [
+        {
+          "text": "De los que piden en la puerta",
+          "isCorrect": false
+        },
+        {
+          "text": "De los que venden en las plazas",
+          "isCorrect": false
+        },
+        {
+          "text": "De los que hablan perversidades",
+          "isCorrect": true
+        },
+        {
+          "text": "De los que juzgan en la ciudad",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué se dice de los que entran a la mujer extraña?",
+      "explanation": "Dice que todos los que a ella entraren no volverán, ni tomarán las veredas de la vida.",
+      "bibleReference": "Proverbios 2:18-19",
+      "answers": [
+        {
+          "text": "Volverán pobres a su casa",
+          "isCorrect": false
+        },
+        {
+          "text": "No volverán ni tomarán las veredas de la vida",
+          "isCorrect": true
+        },
+        {
+          "text": "Serán juzgados por los ancianos del pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "Pagarán el doble de lo que tomaron",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué sucederá con los impíos y los prevaricadores?",
+      "explanation": "Termina diciendo que los impíos serán cortados de la tierra y los prevaricadores serán de ella desarraigados.",
+      "bibleReference": "Proverbios 2:21-22",
+      "answers": [
+        {
+          "text": "Serán cortados y desarraigados de la tierra",
+          "isCorrect": true
+        },
+        {
+          "text": "Habitarán la tierra para siempre",
+          "isCorrect": false
+        },
+        {
+          "text": "Serán llevados a una tierra lejana",
+          "isCorrect": false
+        },
+        {
+          "text": "Se harán muy ricos en la tierra",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

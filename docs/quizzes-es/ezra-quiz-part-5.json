@@ -14,8 +14,8 @@
       "bibleReference": "Esdras 5:1",
       "answers": [
         {
-          "text": "Jeremías profeta y Hulda profetisa",
-          "isCorrect": false
+          "text": "Haggeo profeta y Zacarías hijo de Iddo",
+          "isCorrect": true
         },
         {
           "text": "Isaías profeta, hijo de Amós",
@@ -26,8 +26,8 @@
           "isCorrect": false
         },
         {
-          "text": "Haggeo profeta y Zacarías hijo de Iddo",
-          "isCorrect": true
+          "text": "Jeremías profeta y Hulda profetisa",
+          "isCorrect": false
         }
       ]
     },
@@ -37,12 +37,12 @@
       "bibleReference": "Esdras 5:2",
       "answers": [
         {
-          "text": "Zorobabel hijo de Sealthiel y Jesuá hijo de Josadec",
-          "isCorrect": true
-        },
-        {
           "text": "Sesbassar príncipe de Judá y Mitrídates",
           "isCorrect": false
+        },
+        {
+          "text": "Zorobabel hijo de Sealthiel y Jesuá hijo de Josadec",
+          "isCorrect": true
         },
         {
           "text": "Tatnai capitán y Sethar-boznai",
@@ -64,16 +64,16 @@
           "isCorrect": false
         },
         {
-          "text": "Quién les había dado mandamiento para edificar aquella casa",
-          "isCorrect": true
+          "text": "Dónde estaban los vasos de oro y de plata",
+          "isCorrect": false
         },
         {
           "text": "Cuántos habían vuelto de la cautividad de Babilonia",
           "isCorrect": false
         },
         {
-          "text": "Dónde estaban los vasos de oro y de plata",
-          "isCorrect": false
+          "text": "Quién les había dado mandamiento para edificar aquella casa",
+          "isCorrect": true
         }
       ]
     },
@@ -110,16 +110,16 @@
           "isCorrect": false
         },
         {
-          "text": "Que se edifica de ladrillo y de barro cocido",
-          "isCorrect": false
+          "text": "Que se edifica de piedra de mármol y la obra prospera",
+          "isCorrect": true
         },
         {
           "text": "Que los Judíos cesaron de edificarla ya",
           "isCorrect": false
         },
         {
-          "text": "Que se edifica de piedra de mármol y la obra prospera",
-          "isCorrect": true
+          "text": "Que se edifica de ladrillo y de barro cocido",
+          "isCorrect": false
         }
       ]
     },
@@ -152,12 +152,12 @@
       "bibleReference": "Esdras 5:12",
       "answers": [
         {
-          "text": "Los entregó en mano del rey de Egipto",
-          "isCorrect": false
-        },
-        {
           "text": "Los entregó en mano de Nabucodonosor rey de Babilonia",
           "isCorrect": true
+        },
+        {
+          "text": "Los entregó en mano del rey de Egipto",
+          "isCorrect": false
         },
         {
           "text": "Los dejó en Jerusalem sin templo y sin altar",
@@ -202,16 +202,16 @@
           "isCorrect": false
         },
         {
-          "text": "A Jesuá hijo de Josadec",
-          "isCorrect": false
+          "text": "A Sesbassar, puesto por gobernador",
+          "isCorrect": true
         },
         {
           "text": "A Tatnai, capitán de la parte allá del río",
           "isCorrect": false
         },
         {
-          "text": "A Sesbassar, puesto por gobernador",
-          "isCorrect": true
+          "text": "A Jesuá hijo de Josadec",
+          "isCorrect": false
         }
       ]
     },
@@ -221,8 +221,8 @@
       "bibleReference": "Esdras 5:17",
       "answers": [
         {
-          "text": "Que buscase en sus tesoros en Babilonia si Ciro lo había mandado",
-          "isCorrect": true
+          "text": "Que mandase cesar la obra inmediatamente",
+          "isCorrect": false
         },
         {
           "text": "Que enviase soldados á la ciudad de Jerusalem",
@@ -233,8 +233,8 @@
           "isCorrect": false
         },
         {
-          "text": "Que mandase cesar la obra inmediatamente",
-          "isCorrect": false
+          "text": "Que buscase en sus tesoros en Babilonia si Ciro lo había mandado",
+          "isCorrect": true
         }
       ]
     }

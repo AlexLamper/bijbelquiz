@@ -1,0 +1,242 @@
+{
+  "title": "Proverbios Quiz bíblico - Capítulo 10",
+  "description": "Diez preguntas sobre Proverbios 10: las sentencias de Salomón sobre el justo y el impío, la mano diligente y la lengua del justo.",
+  "slug": "proverbs-quiz-part-10",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el primer versículo, ¿qué es el hijo necio para su madre?",
+      "explanation": "Proverbios 10:1 dice: El hijo sabio alegra al padre; y el hijo necio es tristeza de su madre.",
+      "bibleReference": "Proverbios 10:1",
+      "answers": [
+        {
+          "text": "Una corona",
+          "isCorrect": false
+        },
+        {
+          "text": "Un manantial de vida",
+          "isCorrect": false
+        },
+        {
+          "text": "Una ciudad fuerte",
+          "isCorrect": false
+        },
+        {
+          "text": "Tristeza",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el texto de la mano negligente y de la mano de los diligentes?",
+      "explanation": "Proverbios 10:4 dice: La mano negligente hace pobre: mas la mano de los diligentes enriquece.",
+      "bibleReference": "Proverbios 10:4",
+      "answers": [
+        {
+          "text": "Que las dos hacen pobre al hombre",
+          "isCorrect": false
+        },
+        {
+          "text": "Que una hace pobre y la otra enriquece",
+          "isCorrect": true
+        },
+        {
+          "text": "Que las dos serán tributarias",
+          "isCorrect": false
+        },
+        {
+          "text": "Que una guarda la ciencia y la otra la publica",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿cómo llama al que duerme en el tiempo de la siega?",
+      "explanation": "Proverbios 10:5 dice: El que recoge en el estío es hombre entendido: el que duerme en el tiempo de la siega es hombre afrentoso.",
+      "bibleReference": "Proverbios 10:5",
+      "answers": [
+        {
+          "text": "Hombre entendido",
+          "isCorrect": false
+        },
+        {
+          "text": "Hombre prudente",
+          "isCorrect": false
+        },
+        {
+          "text": "Hombre afrentoso",
+          "isCorrect": true
+        },
+        {
+          "text": "Hombre misericordioso",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué pasará con el nombre de los impíos?",
+      "explanation": "Proverbios 10:7 dice: La memoria del justo será bendita: mas el nombre de los impíos se pudrirá.",
+      "bibleReference": "Proverbios 10:7",
+      "answers": [
+        {
+          "text": "Se pudrirá",
+          "isCorrect": true
+        },
+        {
+          "text": "Será bendito para siempre",
+          "isCorrect": false
+        },
+        {
+          "text": "Será escrito en la ciudad",
+          "isCorrect": false
+        },
+        {
+          "text": "Permanecerá como la plata",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué cubrirá todas las faltas?",
+      "explanation": "Proverbios 10:12 dice: El odio despierta rencillas: mas la caridad cubrirá todas las faltas.",
+      "bibleReference": "Proverbios 10:12",
+      "answers": [
+        {
+          "text": "El odio",
+          "isCorrect": false
+        },
+        {
+          "text": "La plata escogida",
+          "isCorrect": false
+        },
+        {
+          "text": "El temor del impío",
+          "isCorrect": false
+        },
+        {
+          "text": "La caridad",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el texto acerca de las muchas palabras?",
+      "explanation": "Proverbios 10:19 dice: En las muchas palabras no falta pecado: mas el que refrena sus labios es prudente.",
+      "bibleReference": "Proverbios 10:19",
+      "answers": [
+        {
+          "text": "Que en ellas no falta pecado",
+          "isCorrect": true
+        },
+        {
+          "text": "Que en ellas se halla la sabiduría",
+          "isCorrect": false
+        },
+        {
+          "text": "Que enriquecen al que las dice",
+          "isCorrect": false
+        },
+        {
+          "text": "Que son medicina para el alma",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué compara el texto la lengua del justo?",
+      "explanation": "Proverbios 10:20 dice: Plata escogida es la lengua del justo: mas el entendimiento de los impíos es como nada.",
+      "bibleReference": "Proverbios 10:20",
+      "answers": [
+        {
+          "text": "Con una vara",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el humo",
+          "isCorrect": false
+        },
+        {
+          "text": "Con plata escogida",
+          "isCorrect": true
+        },
+        {
+          "text": "Con un torbellino",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, la bendición de Jehová es la que enriquece; ¿qué no añade con ella?",
+      "explanation": "Proverbios 10:22 dice: La bendición de Jehová es la que enriquece, y no añade tristeza con ella.",
+      "bibleReference": "Proverbios 10:22",
+      "answers": [
+        {
+          "text": "No añade muchos días de trabajo",
+          "isCorrect": false
+        },
+        {
+          "text": "No añade tristeza",
+          "isCorrect": true
+        },
+        {
+          "text": "No añade honra entre las naciones",
+          "isCorrect": false
+        },
+        {
+          "text": "No añade rencillas con los vecinos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué compara el texto al perezoso para los que lo envían?",
+      "explanation": "Proverbios 10:26 dice: Como el vinagre á los dientes, y como el humo á los ojos, así es el perezoso á los que lo envían.",
+      "bibleReference": "Proverbios 10:26",
+      "answers": [
+        {
+          "text": "Con la plata escogida y con el oro fino",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el torbellino que pasa de repente",
+          "isCorrect": false
+        },
+        {
+          "text": "Con la vara que está a las espaldas",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el vinagre a los dientes y el humo a los ojos",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué será de la lengua perversa?",
+      "explanation": "Proverbios 10:31 dice: La boca del justo producirá sabiduría: mas la lengua perversa será cortada.",
+      "bibleReference": "Proverbios 10:31",
+      "answers": [
+        {
+          "text": "Será cortada",
+          "isCorrect": true
+        },
+        {
+          "text": "Será plata escogida",
+          "isCorrect": false
+        },
+        {
+          "text": "Producirá sabiduría",
+          "isCorrect": false
+        },
+        {
+          "text": "Apacentará a muchos",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 77",
+  "description": "Diez preguntas sobre Salmos 77: el clamor en el día de angustia, las preguntas sobre la misericordia, las aguas que temieron y el camino en la mar.",
+  "slug": "psalms-quiz-part-77",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué dice el salmista en el primer verso que hizo con su voz?",
+      "explanation": "El texto dice: Con mi voz clamé á Dios, á Dios clamé, y él me escuchará.",
+      "bibleReference": "Salmos 77:1",
+      "answers": [
+        {
+          "text": "Clamó a Dios",
+          "isCorrect": true
+        },
+        {
+          "text": "Cantó en el arpa",
+          "isCorrect": false
+        },
+        {
+          "text": "Calló delante del pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "Habló con sus enemigos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el salmo, ¿qué rehusaba su alma en el día de su angustia?",
+      "explanation": "El texto dice: mi mal corría de noche, y no cesaba: mi alma rehusaba consuelo.",
+      "bibleReference": "Salmos 77:2",
+      "answers": [
+        {
+          "text": "El pan",
+          "isCorrect": false
+        },
+        {
+          "text": "El sueño",
+          "isCorrect": false
+        },
+        {
+          "text": "El canto",
+          "isCorrect": false
+        },
+        {
+          "text": "El consuelo",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el salmo, ¿qué consideraba el salmista?",
+      "explanation": "El texto dice: Consideraba los días desde el principio, los años de los siglos.",
+      "bibleReference": "Salmos 77:5",
+      "answers": [
+        {
+          "text": "Las palabras de sus enemigos",
+          "isCorrect": false
+        },
+        {
+          "text": "Los días desde el principio y los años de los siglos",
+          "isCorrect": true
+        },
+        {
+          "text": "Los caminos de los impíos que prosperan",
+          "isCorrect": false
+        },
+        {
+          "text": "Los límites que Dios puso a la tierra",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el salmo, ¿de qué se acordaba de noche?",
+      "explanation": "El texto dice: Acordábame de mis canciones de noche; meditaba con mi corazón, y mi espíritu inquiría.",
+      "bibleReference": "Salmos 77:6",
+      "answers": [
+        {
+          "text": "De su juventud",
+          "isCorrect": false
+        },
+        {
+          "text": "De sus enemigos",
+          "isCorrect": false
+        },
+        {
+          "text": "De sus canciones",
+          "isCorrect": true
+        },
+        {
+          "text": "De sus pecados",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué pregunta hace el salmista acerca de la misericordia de Dios?",
+      "explanation": "El texto pregunta: ¿Ha olvidado Dios el tener misericordia? ¿ha encerrado con ira sus piedades?",
+      "bibleReference": "Salmos 77:9",
+      "answers": [
+        {
+          "text": "Si Dios ha olvidado el tener misericordia",
+          "isCorrect": true
+        },
+        {
+          "text": "Si su misericordia alcanza a las gentes",
+          "isCorrect": false
+        },
+        {
+          "text": "Si dará misericordia a los que le temen",
+          "isCorrect": false
+        },
+        {
+          "text": "Si su misericordia es mayor que su juicio",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el salmo, ¿de qué dice el salmista que se acordará?",
+      "explanation": "El texto dice: Acordaréme de las obras de JAH: sí, haré yo memoria de tus maravillas antiguas.",
+      "bibleReference": "Salmos 77:11",
+      "answers": [
+        {
+          "text": "De las promesas de los padres",
+          "isCorrect": false
+        },
+        {
+          "text": "De los años de su mocedad",
+          "isCorrect": false
+        },
+        {
+          "text": "De las obras de JAH",
+          "isCorrect": true
+        },
+        {
+          "text": "De los mandamientos de la ley",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el salmo, ¿a quiénes redimió Dios con su brazo?",
+      "explanation": "El texto dice: Con tu brazo redimiste á tu pueblo, á los hijos de Jacob y de José.",
+      "bibleReference": "Salmos 77:15",
+      "answers": [
+        {
+          "text": "A los hijos de Judá y de Benjamín",
+          "isCorrect": false
+        },
+        {
+          "text": "A los hijos de Ephraim y de Manasés",
+          "isCorrect": false
+        },
+        {
+          "text": "A los hijos de Aarón y de Leví",
+          "isCorrect": false
+        },
+        {
+          "text": "A los hijos de Jacob y de José",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el salmo, ¿qué hicieron las aguas cuando vieron a Dios?",
+      "explanation": "El texto dice: Viéronte las aguas, oh Dios; viéronte las aguas, temieron; y temblaron los abismos.",
+      "bibleReference": "Salmos 77:16",
+      "answers": [
+        {
+          "text": "Se secaron del todo",
+          "isCorrect": false
+        },
+        {
+          "text": "Temieron",
+          "isCorrect": true
+        },
+        {
+          "text": "Cantaron alabanzas",
+          "isCorrect": false
+        },
+        {
+          "text": "Cubrieron la tierra",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el salmo, ¿dónde fue el camino de Dios, de modo que sus pisadas no fueron conocidas?",
+      "explanation": "El texto dice: En la mar fué tu camino, y tus sendas en las muchas aguas; y tus pisadas no fueron conocidas.",
+      "bibleReference": "Salmos 77:19",
+      "answers": [
+        {
+          "text": "En la mar",
+          "isCorrect": true
+        },
+        {
+          "text": "En el desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "En los montes",
+          "isCorrect": false
+        },
+        {
+          "text": "En las nubes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el último verso, ¿por mano de quiénes condujo Dios a su pueblo como ovejas?",
+      "explanation": "El texto dice: Condujiste á tu pueblo como ovejas, por mano de Moisés y de Aarón.",
+      "bibleReference": "Salmos 77:20",
+      "answers": [
+        {
+          "text": "De David y de Samuel",
+          "isCorrect": false
+        },
+        {
+          "text": "De Josué y de Caleb",
+          "isCorrect": false
+        },
+        {
+          "text": "De Asaph y de Jeduthún",
+          "isCorrect": false
+        },
+        {
+          "text": "De Moisés y de Aarón",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

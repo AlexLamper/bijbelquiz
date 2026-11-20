@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 91",
+  "description": "Diez preguntas sobre Salmos 91: el abrigo del Altísimo, la protección bajo sus alas y los ángeles que guardan en todos los caminos.",
+  "slug": "psalms-quiz-part-91",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Dónde morará el que habita al abrigo del Altísimo?",
+      "explanation": "El verso dice: El que habita al abrigo del Altísimo, morará bajo la sombra del Omnipotente.",
+      "bibleReference": "Salmos 91:1",
+      "answers": [
+        { "text": "En los atrios de los reyes", "isCorrect": false },
+        { "text": "Sobre los montes de santidad", "isCorrect": false },
+        { "text": "Bajo la sombra del Omnipotente", "isCorrect": true },
+        { "text": "Junto a las puertas de Sión", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cómo llama el salmista a Jehová en el verso 2?",
+      "explanation": "El verso dice: Diré yo á Jehová: Esperanza mía, y castillo mío; mi Dios, en él confiaré.",
+      "bibleReference": "Salmos 91:2",
+      "answers": [
+        { "text": "Esperanza mía y castillo mío", "isCorrect": true },
+        { "text": "Pastor mío y guía mío", "isCorrect": false },
+        { "text": "Sol mío y escudo mío", "isCorrect": false },
+        { "text": "Juez mío y testigo mío", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿De qué dice el salmo que él te librará?",
+      "explanation": "El verso dice: Y él te librará del lazo del cazador: de la peste destruidora.",
+      "bibleReference": "Salmos 91:3",
+      "answers": [
+        { "text": "De la mano de los reyes de la tierra", "isCorrect": false },
+        { "text": "Del juicio que viene sobre las gentes", "isCorrect": false },
+        { "text": "De la ira de los hijos del hombre", "isCorrect": false },
+        { "text": "Del lazo del cazador y de la peste destruidora", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el verso 4, ¿qué dice el salmo que es la verdad de Dios?",
+      "explanation": "El verso dice: Con sus plumas te cubrirá, y debajo de sus alas estarás seguro: escudo y adarga es su verdad.",
+      "bibleReference": "Salmos 91:4",
+      "answers": [
+        { "text": "Lámpara y vara", "isCorrect": false },
+        { "text": "Escudo y adarga", "isCorrect": true },
+        { "text": "Muro y torre", "isCorrect": false },
+        { "text": "Castillo y roca", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿De qué dice el verso 5 que no tendrás temor?",
+      "explanation": "El verso dice: No tendrás temor de espanto nocturno, ni de saeta que vuele de día.",
+      "bibleReference": "Salmos 91:5",
+      "answers": [
+        { "text": "Del rugido del león y del oso del monte", "isCorrect": false },
+        { "text": "Del hambre y de la sed en el desierto", "isCorrect": false },
+        { "text": "Del espanto nocturno y de la saeta que vuele de día", "isCorrect": true },
+        { "text": "De la espada de los reyes vecinos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cuántos dice el salmo que caerán a tu diestra?",
+      "explanation": "El verso dice: Caerán á tu lado mil, y diez mil á tu diestra: mas á ti no llegará.",
+      "bibleReference": "Salmos 91:7",
+      "answers": [
+        { "text": "Ciento veinte", "isCorrect": false },
+        { "text": "Cuarenta", "isCorrect": false },
+        { "text": "Siete mil", "isCorrect": false },
+        { "text": "Diez mil", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué dice el salmo que no tocará tu morada?",
+      "explanation": "El verso dice: No te sobrevendrá mal, ni plaga tocará tu morada.",
+      "bibleReference": "Salmos 91:10",
+      "answers": [
+        { "text": "El fuego", "isCorrect": false },
+        { "text": "Plaga", "isCorrect": true },
+        { "text": "El ladrón", "isCorrect": false },
+        { "text": "La tempestad", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿A quiénes mandará Dios acerca de ti, para que te guarden en todos tus caminos?",
+      "explanation": "El verso dice: Pues que á sus ángeles mandará acerca de ti, que te guarden en todos tus caminos.",
+      "bibleReference": "Salmos 91:11",
+      "answers": [
+        { "text": "A sus ángeles", "isCorrect": true },
+        { "text": "A sus profetas", "isCorrect": false },
+        { "text": "A sus sacerdotes", "isCorrect": false },
+        { "text": "A sus ejércitos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Sobre qué dice el salmo que pisarás?",
+      "explanation": "El verso dice: Sobre el león y el basilisco pisarás; hollarás al cachorro del león y al dragón.",
+      "bibleReference": "Salmos 91:13",
+      "answers": [
+        { "text": "Sobre los montes altos", "isCorrect": false },
+        { "text": "Sobre las aguas del mar", "isCorrect": false },
+        { "text": "Sobre los muros de la ciudad", "isCorrect": false },
+        { "text": "Sobre el león y el basilisco", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Con qué dice Dios en el último verso que lo saciará?",
+      "explanation": "El verso dice: Saciarélo de larga vida, y mostraréle mi salud.",
+      "bibleReference": "Salmos 91:16",
+      "answers": [
+        { "text": "De pan y de vino", "isCorrect": false },
+        { "text": "De miel de la piedra", "isCorrect": false },
+        { "text": "De larga vida", "isCorrect": true },
+        { "text": "De grosura de trigo", "isCorrect": false }
+      ]
+    }
+  ]
+}

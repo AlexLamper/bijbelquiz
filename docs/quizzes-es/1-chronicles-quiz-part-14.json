@@ -13,9 +13,9 @@
       "explanation": "Hiram rey de Tiro envió embajadores á David, y madera de cedro, y albañiles y carpinteros, que le edificasen una casa.",
       "bibleReference": "1 Crónicas 14:1",
       "answers": [
-        { "text": "Hiram rey de Tiro", "isCorrect": true },
-        { "text": "Tou rey de Hamath", "isCorrect": false },
         { "text": "Adarezer rey de Soba", "isCorrect": false },
+        { "text": "Tou rey de Hamath", "isCorrect": false },
+        { "text": "Hiram rey de Tiro", "isCorrect": true },
         { "text": "Naas rey de los Ammonitas", "isCorrect": false }
       ]
     },
@@ -24,8 +24,8 @@
       "explanation": "David entendió que Jehová lo había confirmado por rey sobre Israel y que había ensalzado su reino sobre su pueblo.",
       "bibleReference": "1 Crónicas 14:2",
       "answers": [
-        { "text": "Que debía edificar casa á Jehová", "isCorrect": false },
         { "text": "Que Jehová lo había confirmado por rey", "isCorrect": true },
+        { "text": "Que debía edificar casa á Jehová", "isCorrect": false },
         { "text": "Que Hiram era mayor que él", "isCorrect": false },
         { "text": "Que los Filisteos ya no vendrían", "isCorrect": false }
       ]
@@ -37,8 +37,8 @@
       "answers": [
         { "text": "Amnón, Chileab, Absalón, Adonías", "isCorrect": false },
         { "text": "Joab, Abisai, Asael, Benaías", "isCorrect": false },
-        { "text": "Samua, Sobab, Nathán, Salomón", "isCorrect": true },
-        { "text": "Eser, Obadías, Eliab, Attai", "isCorrect": false }
+        { "text": "Eser, Obadías, Eliab, Attai", "isCorrect": false },
+        { "text": "Samua, Sobab, Nathán, Salomón", "isCorrect": true }
       ]
     },
     {
@@ -47,9 +47,9 @@
       "bibleReference": "1 Crónicas 14:8",
       "answers": [
         { "text": "Enviaron presentes á David", "isCorrect": false },
-        { "text": "Huyeron hasta Gezer", "isCorrect": false },
+        { "text": "Subieron todos en busca de David", "isCorrect": true },
         { "text": "Pidieron paz con David", "isCorrect": false },
-        { "text": "Subieron todos en busca de David", "isCorrect": true }
+        { "text": "Huyeron hasta Gezer", "isCorrect": false }
       ]
     },
     {
@@ -69,8 +69,8 @@
       "bibleReference": "1 Crónicas 14:10",
       "answers": [
         { "text": "No subas, porque no estaré contigo", "isCorrect": false },
-        { "text": "Sube, que yo los entregaré en tus manos", "isCorrect": true },
         { "text": "Espera tres días en Jerusalem", "isCorrect": false },
+        { "text": "Sube, que yo los entregaré en tus manos", "isCorrect": true },
         { "text": "Vuelve á la fortaleza de Sión", "isCorrect": false }
       ]
     },
@@ -80,8 +80,8 @@
       "bibleReference": "1 Crónicas 14:11",
       "answers": [
         { "text": "Pérez-uzza", "isCorrect": false },
-        { "text": "Era de Chidón", "isCorrect": false },
         { "text": "Baal-perasim", "isCorrect": true },
+        { "text": "Era de Chidón", "isCorrect": false },
         { "text": "Valle de Raphaim", "isCorrect": false }
       ]
     },

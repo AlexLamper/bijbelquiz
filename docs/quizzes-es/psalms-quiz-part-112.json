@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 112",
+  "description": "Diez preguntas sobre Salmos 112: el hombre que teme a Jehová, la luz que resplandece a los rectos, el que presta y da a los pobres, y el despecho del impío.",
+  "slug": "psalms-quiz-part-112",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el versículo 1, ¿a quién llama bienaventurado el salmo?",
+      "explanation": "El versículo 1 dice: Bienaventurado el hombre que teme á Jehová, y en sus mandamientos se deleita en gran manera.",
+      "bibleReference": "Salmos 112:1",
+      "answers": [
+        { "text": "Al hombre que reparte su pan entre los príncipes", "isCorrect": false },
+        { "text": "Al hombre que gobierna a los príncipes", "isCorrect": false },
+        { "text": "Al hombre que confía en su propia hacienda", "isCorrect": false },
+        { "text": "Al hombre que teme a Jehová", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 1, ¿en qué se deleita en gran manera?",
+      "explanation": "El versículo 1 dice que en sus mandamientos se deleita en gran manera.",
+      "bibleReference": "Salmos 112:1",
+      "answers": [
+        { "text": "En su justicia", "isCorrect": false },
+        { "text": "En su heredad", "isCorrect": false },
+        { "text": "En sus mandamientos", "isCorrect": true },
+        { "text": "En su alabanza", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 2, ¿cómo será la generación de los rectos?",
+      "explanation": "El versículo 2 dice: Su simiente será poderosa en la tierra: la generación de los rectos será bendita.",
+      "bibleReference": "Salmos 112:2",
+      "answers": [
+        { "text": "Esparcida", "isCorrect": false },
+        { "text": "Bendita", "isCorrect": true },
+        { "text": "Olvidada", "isCorrect": false },
+        { "text": "Pobre", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 3, ¿qué hay en su casa?",
+      "explanation": "El versículo 3 dice: Hacienda y riquezas hay en su casa; y su justicia permanece para siempre.",
+      "bibleReference": "Salmos 112:3",
+      "answers": [
+        { "text": "Hacienda y riquezas", "isCorrect": true },
+        { "text": "Luz y tinieblas", "isCorrect": false },
+        { "text": "Temor y angustia", "isCorrect": false },
+        { "text": "Siervos y príncipes", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 4, ¿para quiénes resplandeció luz en las tinieblas?",
+      "explanation": "El versículo 4 dice: Resplandeció en las tinieblas luz á los rectos: es clemente, y misericordioso, y justo.",
+      "bibleReference": "Salmos 112:4",
+      "answers": [
+        { "text": "Para los príncipes", "isCorrect": false },
+        { "text": "Para los impíos", "isCorrect": false },
+        { "text": "Para los pobres", "isCorrect": false },
+        { "text": "Para los rectos", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 5, ¿qué hace el hombre de bien?",
+      "explanation": "El versículo 5 dice: El hombre de bien tiene misericordia y presta; gobierna sus cosas con juicio.",
+      "bibleReference": "Salmos 112:5",
+      "answers": [
+        { "text": "Teme y calla delante de los impíos", "isCorrect": false },
+        { "text": "Tiene misericordia y presta", "isCorrect": true },
+        { "text": "Pide prestado y lo paga todo con juicio", "isCorrect": false },
+        { "text": "Alaba y canta en gran manera", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 6, ¿en qué será el justo?",
+      "explanation": "El versículo 6 dice: Por lo cual no resbalará para siempre: en memoria eterna será el justo.",
+      "bibleReference": "Salmos 112:6",
+      "answers": [
+        { "text": "En gloria sobre los cielos", "isCorrect": false },
+        { "text": "En oprobio entre las gentes", "isCorrect": false },
+        { "text": "En memoria eterna", "isCorrect": true },
+        { "text": "En reposo sin trabajo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 7, ¿de qué no tendrá temor?",
+      "explanation": "El versículo 7 dice: De mala fama no tendrá temor: su corazón está apercibido, confiado en Jehová.",
+      "bibleReference": "Salmos 112:7",
+      "answers": [
+        { "text": "De mala fama", "isCorrect": true },
+        { "text": "De la pobreza", "isCorrect": false },
+        { "text": "De las tinieblas", "isCorrect": false },
+        { "text": "De la muerte", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 9, ¿a quiénes da el que esparce?",
+      "explanation": "El versículo 9 dice: Esparce, da á los pobres: su justicia permanece para siempre.",
+      "bibleReference": "Salmos 112:9",
+      "answers": [
+        { "text": "A los príncipes", "isCorrect": false },
+        { "text": "A los pobres", "isCorrect": true },
+        { "text": "A los rectos", "isCorrect": false },
+        { "text": "A los impíos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 10, ¿qué hará el impío cuando lo vea?",
+      "explanation": "El versículo 10 dice que el impío lo verá y se despechará, crujirá los dientes y se repudrirá.",
+      "bibleReference": "Salmos 112:10",
+      "answers": [
+        { "text": "Alabará a Jehová", "isCorrect": false },
+        { "text": "Esparcirá su hacienda", "isCorrect": false },
+        { "text": "Crujirá los dientes", "isCorrect": true },
+        { "text": "Confiará en Jehová", "isCorrect": false }
+      ]
+    }
+  ]
+}

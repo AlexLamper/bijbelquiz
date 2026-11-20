@@ -1,0 +1,242 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 135",
+  "description": "Diez preguntas sobre Salmos 135: la alabanza en la casa de Jehová, las plagas de Egipto, los reyes vencidos y los ídolos que no hablan.",
+  "slug": "psalms-quiz-part-135",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Dónde están los siervos a quienes se llama a alabar?",
+      "explanation": "El versículo 2 dice que están en la casa de Jehová, en los atrios de la casa de nuestro Dios.",
+      "bibleReference": "Salmos 135:1-2",
+      "answers": [
+        {
+          "text": "Junto a los ríos de Babilonia",
+          "isCorrect": false
+        },
+        {
+          "text": "En los campos del bosque",
+          "isCorrect": false
+        },
+        {
+          "text": "En la casa de Jehová y en sus atrios",
+          "isCorrect": true
+        },
+        {
+          "text": "Sobre los montes de Hermón",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el versículo 3, ¿por qué hay que cantar salmos a su nombre?",
+      "explanation": "El versículo dice: \"cantad salmos á su nombre, porque es suave\".",
+      "bibleReference": "Salmos 135:3",
+      "answers": [
+        {
+          "text": "Porque es suave",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque es temible",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque es antiguo",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque es secreto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quién ha escogido JAH para sí, según el versículo 4?",
+      "explanation": "El versículo dice que JAH ha escogido a Jacob para sí, a Israel por posesión suya.",
+      "bibleReference": "Salmos 135:4",
+      "answers": [
+        {
+          "text": "A Edom",
+          "isCorrect": false
+        },
+        {
+          "text": "A Basán",
+          "isCorrect": false
+        },
+        {
+          "text": "A Faraón",
+          "isCorrect": false
+        },
+        {
+          "text": "A Jacob",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el versículo 5 del Señor nuestro?",
+      "explanation": "Dice que Jehová es grande y que el Señor nuestro es mayor que todos los dioses.",
+      "bibleReference": "Salmos 135:5",
+      "answers": [
+        {
+          "text": "Que calla ante los ídolos",
+          "isCorrect": false
+        },
+        {
+          "text": "Que es mayor que todos los dioses",
+          "isCorrect": true
+        },
+        {
+          "text": "Que habita en Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "Que es semejante a los ídolos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿A quiénes hirió en Egipto, según el versículo 8?",
+      "explanation": "El versículo dice que hirió a los primogénitos de Egipto, desde el hombre hasta la bestia.",
+      "bibleReference": "Salmos 135:8",
+      "answers": [
+        {
+          "text": "A los sacerdotes de los ídolos",
+          "isCorrect": false
+        },
+        {
+          "text": "A los reyes de Canaán",
+          "isCorrect": false
+        },
+        {
+          "text": "A los primogénitos de Egipto",
+          "isCorrect": true
+        },
+        {
+          "text": "A los centinelas de la noche",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dos reyes nombra el versículo 11?",
+      "explanation": "El versículo nombra a Sehón rey Amorrheo y a Og rey de Basán.",
+      "bibleReference": "Salmos 135:11",
+      "answers": [
+        {
+          "text": "Faraón de Egipto y el rey de Edom",
+          "isCorrect": false
+        },
+        {
+          "text": "Og de Hermón y Sehón de Sión",
+          "isCorrect": false
+        },
+        {
+          "text": "Jacob de Israel y Aarón de Leví",
+          "isCorrect": false
+        },
+        {
+          "text": "Sehón rey Amorrheo y Og rey de Basán",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dio Jehová en heredad a Israel su pueblo?",
+      "explanation": "El versículo 12 dice que dio en heredad la tierra de aquellos reyes.",
+      "bibleReference": "Salmos 135:12",
+      "answers": [
+        {
+          "text": "La tierra de aquellos reyes",
+          "isCorrect": true
+        },
+        {
+          "text": "El arca de su fortaleza",
+          "isCorrect": false
+        },
+        {
+          "text": "Los atrios de su casa",
+          "isCorrect": false
+        },
+        {
+          "text": "Los tesoros de Faraón",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el versículo 13 del nombre de Jehová?",
+      "explanation": "El versículo dice: \"Oh Jehová, eterno es tu nombre\".",
+      "bibleReference": "Salmos 135:13",
+      "answers": [
+        {
+          "text": "Que está escondido",
+          "isCorrect": false
+        },
+        {
+          "text": "Que es eterno",
+          "isCorrect": true
+        },
+        {
+          "text": "Que fue olvidado",
+          "isCorrect": false
+        },
+        {
+          "text": "Que es nuevo cada día",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el salmo de la boca de los ídolos?",
+      "explanation": "El versículo 16 dice que tienen boca y no hablan, ojos y no ven.",
+      "bibleReference": "Salmos 135:16",
+      "answers": [
+        {
+          "text": "Que hablan y engañan al pueblo",
+          "isCorrect": false
+        },
+        {
+          "text": "Que responden de noche",
+          "isCorrect": false
+        },
+        {
+          "text": "Que cantan en los atrios",
+          "isCorrect": false
+        },
+        {
+          "text": "Que tienen boca y no hablan",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿A qué casas se llama a bendecir a Jehová en los versículos 19 y 20?",
+      "explanation": "Se llama a la casa de Israel, a la casa de Aarón y a la casa de Leví.",
+      "bibleReference": "Salmos 135:19-20",
+      "answers": [
+        {
+          "text": "A las de Israel, Aarón y Leví",
+          "isCorrect": true
+        },
+        {
+          "text": "A las de Edom, Basán y Canaán",
+          "isCorrect": false
+        },
+        {
+          "text": "A las de Jacob, Sehón y Og",
+          "isCorrect": false
+        },
+        {
+          "text": "A las de Faraón, Sión y Hermón",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

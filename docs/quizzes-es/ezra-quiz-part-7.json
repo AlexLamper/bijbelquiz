@@ -14,12 +14,12 @@
       "bibleReference": "Esdras 7:1",
       "answers": [
         {
-          "text": "De Seraías",
-          "isCorrect": true
-        },
-        {
           "text": "De Hilcías",
           "isCorrect": false
+        },
+        {
+          "text": "De Seraías",
+          "isCorrect": true
         },
         {
           "text": "De Sadoc",
@@ -37,12 +37,12 @@
       "bibleReference": "Esdras 7:5",
       "answers": [
         {
-          "text": "A Eleazar",
-          "isCorrect": false
-        },
-        {
           "text": "A Aarón",
           "isCorrect": true
+        },
+        {
+          "text": "A Eleazar",
+          "isCorrect": false
         },
         {
           "text": "A Phinees",
@@ -83,8 +83,8 @@
       "bibleReference": "Esdras 7:7-8",
       "answers": [
         {
-          "text": "En el año veinte",
-          "isCorrect": false
+          "text": "En el año séptimo",
+          "isCorrect": true
         },
         {
           "text": "En el año primero",
@@ -95,8 +95,8 @@
           "isCorrect": false
         },
         {
-          "text": "En el año séptimo",
-          "isCorrect": true
+          "text": "En el año veinte",
+          "isCorrect": false
         }
       ]
     },
@@ -106,12 +106,12 @@
       "bibleReference": "Esdras 7:9",
       "answers": [
         {
-          "text": "El día primero del primer mes",
-          "isCorrect": true
-        },
-        {
           "text": "El doce del mes primero",
           "isCorrect": false
+        },
+        {
+          "text": "El día primero del primer mes",
+          "isCorrect": true
         },
         {
           "text": "El catorce del mes quinto",
@@ -129,12 +129,12 @@
       "bibleReference": "Esdras 7:10",
       "answers": [
         {
-          "text": "Para reunir un ejército y defender la ciudad de Jerusalem",
-          "isCorrect": false
-        },
-        {
           "text": "Para inquirir la ley de Jehová y para enseñar a Israel mandamientos y juicios",
           "isCorrect": true
+        },
+        {
+          "text": "Para reunir un ejército y defender la ciudad de Jerusalem",
+          "isCorrect": false
         },
         {
           "text": "Para edificar de nuevo el muro y las puertas de Jerusalem",
@@ -160,12 +160,12 @@
           "isCorrect": false
         },
         {
-          "text": "Siete",
-          "isCorrect": true
-        },
-        {
           "text": "Veinte",
           "isCorrect": false
+        },
+        {
+          "text": "Siete",
+          "isCorrect": true
         }
       ]
     },
@@ -183,12 +183,12 @@
           "isCorrect": false
         },
         {
-          "text": "El trigo",
-          "isCorrect": false
-        },
-        {
           "text": "La sal",
           "isCorrect": true
+        },
+        {
+          "text": "El trigo",
+          "isCorrect": false
         }
       ]
     },
@@ -198,12 +198,12 @@
       "bibleReference": "Esdras 7:24",
       "answers": [
         {
-          "text": "Que se les impusiera tributo, pecho o renta",
-          "isCorrect": true
-        },
-        {
           "text": "Que entrasen en la casa de Dios en Jerusalem",
           "isCorrect": false
+        },
+        {
+          "text": "Que se les impusiera tributo, pecho o renta",
+          "isCorrect": true
         },
         {
           "text": "Que saliesen de la provincia de Babilonia",
@@ -225,16 +225,16 @@
           "isCorrect": false
         },
         {
-          "text": "Juntó a los principales de Israel para que subiesen con él",
-          "isCorrect": true
+          "text": "Se quedó en Babilonia hasta el año siguiente",
+          "isCorrect": false
         },
         {
           "text": "Repartió la plata entre los sacerdotes de Babilonia",
           "isCorrect": false
         },
         {
-          "text": "Se quedó en Babilonia hasta el año siguiente",
-          "isCorrect": false
+          "text": "Juntó a los principales de Israel para que subiesen con él",
+          "isCorrect": true
         }
       ]
     }

@@ -14,16 +14,16 @@
       "bibleReference": "Nehemías 2:1",
       "answers": [
         {
-          "text": "En el mes de Nisán, en el año veinte",
-          "isCorrect": true
+          "text": "En el mes de Elul, en el año segundo",
+          "isCorrect": false
         },
         {
           "text": "En el mes de Chisleu, en el año treinta",
           "isCorrect": false
         },
         {
-          "text": "En el mes de Elul, en el año segundo",
-          "isCorrect": false
+          "text": "En el mes de Nisán, en el año veinte",
+          "isCorrect": true
         },
         {
           "text": "En el mes de Adar, en el año sexto",
@@ -37,12 +37,12 @@
       "bibleReference": "Nehemías 2:2",
       "answers": [
         {
-          "text": "Se alegró en gran manera",
-          "isCorrect": false
-        },
-        {
           "text": "Temió en gran manera",
           "isCorrect": true
+        },
+        {
+          "text": "Se alegró en gran manera",
+          "isCorrect": false
         },
         {
           "text": "Calló y salió del palacio",
@@ -60,16 +60,16 @@
       "bibleReference": "Nehemías 2:3",
       "answers": [
         {
-          "text": "La ciudad de los reyes de Persia",
-          "isCorrect": false
+          "text": "La casa de los sepulcros de sus padres",
+          "isCorrect": true
         },
         {
           "text": "La capital de todo el reino",
           "isCorrect": false
         },
         {
-          "text": "La casa de los sepulcros de sus padres",
-          "isCorrect": true
+          "text": "La ciudad de los reyes de Persia",
+          "isCorrect": false
         },
         {
           "text": "La casa de los tesoros del rey",
@@ -87,16 +87,16 @@
           "isCorrect": false
         },
         {
-          "text": "Llamó a su hermano Hanani",
-          "isCorrect": false
+          "text": "Oró al Dios de los cielos",
+          "isCorrect": true
         },
         {
           "text": "Se enlutó por algunos días",
           "isCorrect": false
         },
         {
-          "text": "Oró al Dios de los cielos",
-          "isCorrect": true
+          "text": "Llamó a su hermano Hanani",
+          "isCorrect": false
         }
       ]
     },
@@ -106,12 +106,12 @@
       "bibleReference": "Nehemías 2:6",
       "answers": [
         {
-          "text": "La reina",
-          "isCorrect": true
-        },
-        {
           "text": "Asaph",
           "isCorrect": false
+        },
+        {
+          "text": "La reina",
+          "isCorrect": true
         },
         {
           "text": "Hanani",
@@ -129,12 +129,12 @@
       "bibleReference": "Nehemías 2:8",
       "answers": [
         {
-          "text": "Para que le diese plata y oro para la obra",
-          "isCorrect": false
-        },
-        {
           "text": "Para que le diese madera",
           "isCorrect": true
+        },
+        {
+          "text": "Para que le diese plata y oro para la obra",
+          "isCorrect": false
         },
         {
           "text": "Para que le diese tropa y gente de a caballo",
@@ -198,8 +198,8 @@
       "bibleReference": "Nehemías 2:14",
       "answers": [
         {
-          "text": "No había lugar por donde pasase la cabalgadura",
-          "isCorrect": true
+          "text": "Allí se juntaron con él los sacerdotes",
+          "isCorrect": false
         },
         {
           "text": "Los guardas no le dejaron pasar de noche",
@@ -210,8 +210,8 @@
           "isCorrect": false
         },
         {
-          "text": "Allí se juntaron con él los sacerdotes",
-          "isCorrect": false
+          "text": "No había lugar por donde pasase la cabalgadura",
+          "isCorrect": true
         }
       ]
     },

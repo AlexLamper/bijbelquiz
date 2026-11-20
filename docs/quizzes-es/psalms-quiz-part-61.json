@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 61",
+  "description": "Diez preguntas sobre Salmos 61: el clamor desde el cabo de la tierra, la peña más alta, el tabernáculo de Dios y los votos pagados cada día.",
+  "slug": "psalms-quiz-part-61",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Con qué petición empieza este salmo, en el versículo 1?",
+      "explanation": "El versículo 1 dice: Oye, oh Dios, mi clamor; á mi oración atiende.",
+      "bibleReference": "Salmos 61:1",
+      "answers": [
+        { "text": "Que Dios juzgue a los pueblos con equidad", "isCorrect": false },
+        { "text": "Que Dios oiga su clamor y atienda a su oración", "isCorrect": true },
+        { "text": "Que Dios quiebre los dientes de los impíos", "isCorrect": false },
+        { "text": "Que Dios haga temblar la tierra", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 2, ¿desde dónde clamará a Dios cuando su corazón desmayare?",
+      "explanation": "El versículo 2 dice: Desde el cabo de la tierra clamaré á ti, cuando mi corazón desmayare.",
+      "bibleReference": "Salmos 61:2",
+      "answers": [
+        { "text": "Desde el desierto de Judá", "isCorrect": false },
+        { "text": "Desde la puerta del templo", "isCorrect": false },
+        { "text": "Desde la cueva donde se esconde", "isCorrect": false },
+        { "text": "Desde el cabo de la tierra", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 2, ¿a dónde pide el salmista que Dios lo conduzca?",
+      "explanation": "El versículo 2 pide: á la peña más alta que yo me conduzcas.",
+      "bibleReference": "Salmos 61:2",
+      "answers": [
+        { "text": "A la peña más alta que él", "isCorrect": true },
+        { "text": "A la casa de su padre", "isCorrect": false },
+        { "text": "A los atrios de los reyes", "isCorrect": false },
+        { "text": "Al valle de Succoth", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 3, ¿qué ha sido Dios para él delante del enemigo?",
+      "explanation": "El versículo 3 dice: Porque tú has sido mi refugio, y torre de fortaleza delante del enemigo.",
+      "bibleReference": "Salmos 61:3",
+      "answers": [
+        { "text": "Un juez justo", "isCorrect": false },
+        { "text": "Un cántico en la noche", "isCorrect": false },
+        { "text": "Su refugio y torre de fortaleza", "isCorrect": true },
+        { "text": "Una bandera por la verdad", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 4, ¿dónde dice el salmista que habitará para siempre?",
+      "explanation": "El versículo 4 dice: Yo habitaré en tu tabernáculo para siempre.",
+      "bibleReference": "Salmos 61:4",
+      "answers": [
+        { "text": "En la ciudad fortalecida", "isCorrect": false },
+        { "text": "En el tabernáculo de Dios", "isCorrect": true },
+        { "text": "En los montes de Basán", "isCorrect": false },
+        { "text": "En la casa del rey", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 4, ¿bajo qué estará seguro?",
+      "explanation": "El versículo 4 dice: estaré seguro bajo la cubierta de tus alas.",
+      "bibleReference": "Salmos 61:4",
+      "answers": [
+        { "text": "Bajo la sombra de los montes", "isCorrect": false },
+        { "text": "Bajo el techo de su casa", "isCorrect": false },
+        { "text": "Bajo el escudo de los fuertes", "isCorrect": false },
+        { "text": "Bajo la cubierta de las alas de Dios", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 5, ¿a quiénes ha dado Dios heredad?",
+      "explanation": "El versículo 5 dice que Dios ha oído sus votos y ha dado heredad á los que temen su nombre.",
+      "bibleReference": "Salmos 61:5",
+      "answers": [
+        { "text": "A los que temen su nombre", "isCorrect": true },
+        { "text": "A los príncipes de Judá", "isCorrect": false },
+        { "text": "A los cantores del santuario", "isCorrect": false },
+        { "text": "A los que son fuertes en batalla", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 6, ¿qué le añadirá Dios al rey?",
+      "explanation": "El versículo 6 dice: Días sobre días añadirás al rey: sus años serán como generación y generación.",
+      "bibleReference": "Salmos 61:6",
+      "answers": [
+        { "text": "Carros y caballos", "isCorrect": false },
+        { "text": "Plata y oro", "isCorrect": false },
+        { "text": "Días sobre días", "isCorrect": true },
+        { "text": "Ciudades y heredades", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 7, ¿qué prepara Dios para que lo conserven delante de él?",
+      "explanation": "El versículo 7 dice: Estará para siempre delante de Dios: misericordia y verdad prepara que lo conserven.",
+      "bibleReference": "Salmos 61:7",
+      "answers": [
+        { "text": "Fuerza y riqueza", "isCorrect": false },
+        { "text": "Misericordia y verdad", "isCorrect": true },
+        { "text": "Sacrificios y holocaustos", "isCorrect": false },
+        { "text": "Muros y torres", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 8, ¿qué dice el salmista que pagará cada día mientras canta el nombre de Dios?",
+      "explanation": "El versículo 8 dice: Así cantaré tu nombre para siempre, pagando mis votos cada día.",
+      "bibleReference": "Salmos 61:8",
+      "answers": [
+        { "text": "Sus deudas a los hombres", "isCorrect": false },
+        { "text": "El tributo de los reyes", "isCorrect": false },
+        { "text": "Los diezmos de la tierra", "isCorrect": false },
+        { "text": "Sus votos", "isCorrect": true }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Proverbios Quiz bíblico - Capítulo 12",
+  "description": "Diez preguntas sobre Proverbios 12: la corrección, la mujer virtuosa, el que labra su tierra y la lengua de los sabios.",
+  "slug": "proverbs-quiz-part-12",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el primer versículo, ¿qué ama el que ama la corrección?",
+      "explanation": "Proverbios 12:1 dice: El que ama la corrección ama la sabiduría: mas el que aborrece la reprensión, es ignorante.",
+      "bibleReference": "Proverbios 12:1",
+      "answers": [
+        {
+          "text": "La reprensión de los necios",
+          "isCorrect": false
+        },
+        {
+          "text": "La sabiduría",
+          "isCorrect": true
+        },
+        {
+          "text": "El engaño",
+          "isCorrect": false
+        },
+        {
+          "text": "La necedad",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué es la mujer virtuosa para su marido, según el texto?",
+      "explanation": "Proverbios 12:4 dice: La mujer virtuosa corona es de su marido: mas la mala, como carcoma en sus huesos.",
+      "bibleReference": "Proverbios 12:4",
+      "answers": [
+        {
+          "text": "Carcoma en sus huesos",
+          "isCorrect": false
+        },
+        {
+          "text": "Una raíz que no será movida",
+          "isCorrect": false
+        },
+        {
+          "text": "Un manantial de vida",
+          "isCorrect": false
+        },
+        {
+          "text": "Una corona",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el texto que es mejor?",
+      "explanation": "Proverbios 12:9 dice: Mejor es el que es menospreciado y tiene servidores, que el que se precia, y carece de pan.",
+      "bibleReference": "Proverbios 12:9",
+      "answers": [
+        {
+          "text": "Ser menospreciado y tener servidores",
+          "isCorrect": true
+        },
+        {
+          "text": "Preciarse mucho y carecer de pan",
+          "isCorrect": false
+        },
+        {
+          "text": "Tener pan y no tener casa",
+          "isCorrect": false
+        },
+        {
+          "text": "Ser alabado y no tener raíz",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿a qué atiende el justo?",
+      "explanation": "Proverbios 12:10 dice: El justo atiende á la vida de su bestia: mas las entrañas de los impíos son crueles.",
+      "bibleReference": "Proverbios 12:10",
+      "answers": [
+        {
+          "text": "A la red de los malos",
+          "isCorrect": false
+        },
+        {
+          "text": "Al fruto de su boca",
+          "isCorrect": false
+        },
+        {
+          "text": "A la vida de su bestia",
+          "isCorrect": true
+        },
+        {
+          "text": "A los consejos de los impíos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Qué dice el texto del que labra su tierra?",
+      "explanation": "Proverbios 12:11 dice: El que labra su tierra, se hartará de pan: mas el que sigue los vagabundos es falto de entendimiento.",
+      "bibleReference": "Proverbios 12:11",
+      "answers": [
+        {
+          "text": "Que es falto de entendimiento",
+          "isCorrect": false
+        },
+        {
+          "text": "Que se hartará de pan",
+          "isCorrect": true
+        },
+        {
+          "text": "Que será tributario",
+          "isCorrect": false
+        },
+        {
+          "text": "Que carecerá de pan",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué hace el necio luego al punto?",
+      "explanation": "Proverbios 12:16 dice: El necio luego al punto da á conocer su ira: mas el que disimula la injuria es cuerdo.",
+      "bibleReference": "Proverbios 12:16",
+      "answers": [
+        {
+          "text": "Encubre la ciencia",
+          "isCorrect": false
+        },
+        {
+          "text": "Disimula la injuria",
+          "isCorrect": false
+        },
+        {
+          "text": "Da a conocer su ira",
+          "isCorrect": true
+        },
+        {
+          "text": "Obedece al consejo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué compara el texto la lengua de los sabios?",
+      "explanation": "Proverbios 12:18 dice: Hay quienes hablan como dando estocadas de espada: mas la lengua de los sabios es medicina.",
+      "bibleReference": "Proverbios 12:18",
+      "answers": [
+        {
+          "text": "Con una medicina",
+          "isCorrect": true
+        },
+        {
+          "text": "Con estocadas de espada",
+          "isCorrect": false
+        },
+        {
+          "text": "Con una red escondida",
+          "isCorrect": false
+        },
+        {
+          "text": "Con la carcoma en los huesos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿cuánto permanece la lengua de mentira?",
+      "explanation": "Proverbios 12:19 dice: El labio de verdad permanecerá para siempre: mas la lengua de mentira por un momento.",
+      "bibleReference": "Proverbios 12:19",
+      "answers": [
+        {
+          "text": "Para siempre",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta el día de la ira",
+          "isCorrect": false
+        },
+        {
+          "text": "Todos los días de su vida",
+          "isCorrect": false
+        },
+        {
+          "text": "Un momento",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el texto, ¿qué alegra al corazón abatido por el cuidado congojoso?",
+      "explanation": "Proverbios 12:25 dice: El cuidado congojoso en el corazón del hombre, lo abate; mas la buena palabra lo alegra.",
+      "bibleReference": "Proverbios 12:25",
+      "answers": [
+        {
+          "text": "La diligencia de las manos",
+          "isCorrect": false
+        },
+        {
+          "text": "La buena palabra",
+          "isCorrect": true
+        },
+        {
+          "text": "El haber precioso",
+          "isCorrect": false
+        },
+        {
+          "text": "La raíz de los justos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el último versículo, ¿qué hay en el camino de la justicia?",
+      "explanation": "Proverbios 12:28 dice: En el camino de la justicia está la vida; y la senda de su vereda no es muerte.",
+      "bibleReference": "Proverbios 12:28",
+      "answers": [
+        {
+          "text": "Engaño",
+          "isCorrect": false
+        },
+        {
+          "text": "Tributo",
+          "isCorrect": false
+        },
+        {
+          "text": "La vida",
+          "isCorrect": true
+        },
+        {
+          "text": "Carcoma",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

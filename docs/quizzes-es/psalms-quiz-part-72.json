@@ -1,0 +1,242 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 72",
+  "description": "Diez preguntas sobre Salmos 72: los juicios dados al rey, el dominio de mar a mar, los presentes de los reyes y el final de las oraciones de David.",
+  "slug": "psalms-quiz-part-72",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué pide el salmo a Dios en su primer verso?",
+      "explanation": "El texto dice: Oh Dios, da tus juicios al rey, y tu justicia al hijo del rey.",
+      "bibleReference": "Salmos 72:1",
+      "answers": [
+        {
+          "text": "Que levante un profeta en Israel",
+          "isCorrect": false
+        },
+        {
+          "text": "Que reparta la tierra entre las tribus",
+          "isCorrect": false
+        },
+        {
+          "text": "Que quite el trono al rey injusto",
+          "isCorrect": false
+        },
+        {
+          "text": "Que dé sus juicios y su justicia al rey",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "Según el salmo, ¿qué llevarán los montes al pueblo?",
+      "explanation": "El texto dice: Los montes llevarán paz al pueblo, y los collados justicia.",
+      "bibleReference": "Salmos 72:3",
+      "answers": [
+        {
+          "text": "Lluvia",
+          "isCorrect": false
+        },
+        {
+          "text": "Riqueza",
+          "isCorrect": false
+        },
+        {
+          "text": "Paz",
+          "isCorrect": true
+        },
+        {
+          "text": "Temor",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Hasta cuándo dice el salmo que temerán al rey?",
+      "explanation": "El texto dice: Temerte han mientras duren el sol y la luna, por generación de generaciones.",
+      "bibleReference": "Salmos 72:5",
+      "answers": [
+        {
+          "text": "Hasta que se acabe la cosecha",
+          "isCorrect": false
+        },
+        {
+          "text": "Mientras duren el sol y la luna",
+          "isCorrect": true
+        },
+        {
+          "text": "Hasta que vuelva del destierro",
+          "isCorrect": false
+        },
+        {
+          "text": "Durante los días de su vejez",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué se compara en el salmo la venida del rey?",
+      "explanation": "El texto dice: Descenderá como la lluvia sobre la hierba cortada; como el rocío que destila sobre la tierra.",
+      "bibleReference": "Salmos 72:6",
+      "answers": [
+        {
+          "text": "Con la lluvia sobre la hierba cortada",
+          "isCorrect": true
+        },
+        {
+          "text": "Con el viento que viene del desierto",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el fuego que corre por el monte",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el sol que sale por la mañana",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el salmo, ¿hasta dónde llegará el dominio del rey?",
+      "explanation": "El texto dice: Y dominará de mar á mar, y desde el río hasta los cabos de la tierra.",
+      "bibleReference": "Salmos 72:8",
+      "answers": [
+        {
+          "text": "Solo hasta los montes de Judá",
+          "isCorrect": false
+        },
+        {
+          "text": "Hasta las puertas de Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "De mar a mar y hasta los cabos de la tierra",
+          "isCorrect": true
+        },
+        {
+          "text": "Hasta el desierto y no más allá",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "¿Quiénes se postrarán delante del rey, según el salmo?",
+      "explanation": "El texto dice: Delante de él se postrarán los Etiopes; y sus enemigos lamerán la tierra.",
+      "bibleReference": "Salmos 72:9",
+      "answers": [
+        {
+          "text": "Los Filisteos",
+          "isCorrect": false
+        },
+        {
+          "text": "Los Amonitas",
+          "isCorrect": false
+        },
+        {
+          "text": "Los Moabitas",
+          "isCorrect": false
+        },
+        {
+          "text": "Los Etiopes",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Qué traerán los reyes de Tharsis y de las islas?",
+      "explanation": "El texto dice: Los reyes de Tharsis y de las islas traerán presentes.",
+      "bibleReference": "Salmos 72:10",
+      "answers": [
+        {
+          "text": "Presentes",
+          "isCorrect": true
+        },
+        {
+          "text": "Cautivos",
+          "isCorrect": false
+        },
+        {
+          "text": "Caballos",
+          "isCorrect": false
+        },
+        {
+          "text": "Naves",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el salmo, ¿a quién librará el rey?",
+      "explanation": "El texto dice: Porque él librará al menesteroso que clamare, y al afligido que no tuviere quien le socorra.",
+      "bibleReference": "Salmos 72:12",
+      "answers": [
+        {
+          "text": "A los sacerdotes del santuario",
+          "isCorrect": false
+        },
+        {
+          "text": "Al menesteroso que clamare",
+          "isCorrect": true
+        },
+        {
+          "text": "A los fuertes de su ejército",
+          "isCorrect": false
+        },
+        {
+          "text": "A los que le traen presentes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "text": "Según el salmo, ¿con qué se compara el ruido que hará su fruto?",
+      "explanation": "El texto dice: su fruto hará ruido como el Líbano, y los de la ciudad florecerán como la hierba de la tierra.",
+      "bibleReference": "Salmos 72:16",
+      "answers": [
+        {
+          "text": "Con el trueno del cielo",
+          "isCorrect": false
+        },
+        {
+          "text": "Con las olas de la mar",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el carro de guerra",
+          "isCorrect": false
+        },
+        {
+          "text": "Con el Líbano",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "text": "¿Con qué frase termina este salmo?",
+      "explanation": "El último verso dice: Acábanse las oraciones de David, hijo de Isaí.",
+      "bibleReference": "Salmos 72:20",
+      "answers": [
+        {
+          "text": "Alabad a Jehová todas las gentes",
+          "isCorrect": false
+        },
+        {
+          "text": "Jehová reina para siempre, Selah",
+          "isCorrect": false
+        },
+        {
+          "text": "Acábanse las oraciones de David, hijo de Isaí",
+          "isCorrect": true
+        },
+        {
+          "text": "Cantad a Dios un cántico nuevo",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

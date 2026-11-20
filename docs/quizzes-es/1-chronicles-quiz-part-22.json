@@ -37,8 +37,8 @@
       "answers": [
         { "text": "Para las armas del ejército", "isCorrect": false },
         { "text": "Para el mar de bronce", "isCorrect": false },
-        { "text": "Para la clavazón de las puertas", "isCorrect": true },
-        { "text": "Para los carros del rey", "isCorrect": false }
+        { "text": "Para los carros del rey", "isCorrect": false },
+        { "text": "Para la clavazón de las puertas", "isCorrect": true }
       ]
     },
     {
@@ -48,8 +48,8 @@
       "answers": [
         { "text": "Los Filisteos y Moabitas", "isCorrect": false },
         { "text": "Los Ammonitas y Idumeos", "isCorrect": false },
-        { "text": "Los Siros de Damasco", "isCorrect": false },
-        { "text": "Los Sidonios y Tirios", "isCorrect": true }
+        { "text": "Los Sidonios y Tirios", "isCorrect": true },
+        { "text": "Los Siros de Damasco", "isCorrect": false }
       ]
     },
     {
@@ -69,8 +69,8 @@
       "bibleReference": "1 Crónicas 22:8",
       "answers": [
         { "text": "Porque era ya viejo y cansado", "isCorrect": false },
-        { "text": "Porque había derramado mucha sangre", "isCorrect": true },
         { "text": "Porque no tenía oro bastante", "isCorrect": false },
+        { "text": "Porque había derramado mucha sangre", "isCorrect": true },
         { "text": "Porque el arca estaba en Gabaón", "isCorrect": false }
       ]
     },
@@ -80,8 +80,8 @@
       "bibleReference": "1 Crónicas 22:9",
       "answers": [
         { "text": "Porque será rey sobre Israel", "isCorrect": false },
-        { "text": "Porque edificará la casa", "isCorrect": false },
         { "text": "Porque será varón de reposo", "isCorrect": true },
+        { "text": "Porque edificará la casa", "isCorrect": false },
         { "text": "Porque será sabio entre todos", "isCorrect": false }
       ]
     },

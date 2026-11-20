@@ -32,24 +32,24 @@
       ]
     },
     {
-      "text": "¿Qué sorprendió a Ahimelech cuando vio llegar a David?",
-      "explanation": "Ahimelech se sorprendió de su encuentro y le preguntó cómo venía él solo, sin nadie con él.",
-      "bibleReference": "1 Samuel 21:1",
+      "text": "¿Por qué dijo David que no había tomado en su mano su espada ni sus armas?",
+      "explanation": "David pidió a Ahimelech una lanza o una espada, y explicó que no había tomado su espada ni sus armas porque el mandamiento del rey era apremiante.",
+      "bibleReference": "1 Samuel 21:8",
       "answers": [
         {
-          "text": "Que traía la espada del Filisteo",
+          "text": "Porque las había dejado con los criados en aquel lugar",
           "isCorrect": false
         },
         {
-          "text": "Que venía solo, sin nadie con él",
+          "text": "Porque el mandamiento del rey era apremiante",
           "isCorrect": true
         },
         {
-          "text": "Que venía vestido como un siervo del rey",
+          "text": "Porque el sacerdote le había mandado entrar sin armas",
           "isCorrect": false
         },
         {
-          "text": "Que llegaba de noche al santuario",
+          "text": "Porque se las habían quitado en el camino",
           "isCorrect": false
         }
       ]

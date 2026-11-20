@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 110",
+  "description": "Diez preguntas sobre Salmos 110: la palabra de Jehová a mi Señor, la vara de fortaleza enviada desde Sión y el sacerdocio según el orden de Melchîsedech.",
+  "slug": "psalms-quiz-part-110",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "Según el encabezado del versículo 1, ¿de quién es este salmo?",
+      "explanation": "El encabezado dice: Salmo de David.",
+      "bibleReference": "Salmos 110:1",
+      "answers": [
+        { "text": "De Melchîsedech", "isCorrect": false },
+        { "text": "De los hijos de Coré", "isCorrect": false },
+        { "text": "De David", "isCorrect": true },
+        { "text": "Del Músico principal", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 1, ¿qué le dijo Jehová a mi Señor?",
+      "explanation": "El versículo 1 dice: Jehová dijo á mi Señor: Siéntate á mi diestra.",
+      "bibleReference": "Salmos 110:1",
+      "answers": [
+        { "text": "Siéntate a mi diestra", "isCorrect": true },
+        { "text": "Domina en medio de tus enemigos", "isCorrect": false },
+        { "text": "Bebe del arroyo en el camino", "isCorrect": false },
+        { "text": "Juzga en medio de las gentes", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 1, ¿qué hará Jehová con los enemigos?",
+      "explanation": "El versículo 1 dice que Jehová pondrá sus enemigos por estrado de sus pies.",
+      "bibleReference": "Salmos 110:1",
+      "answers": [
+        { "text": "Los esparcirá por las tierras", "isCorrect": false },
+        { "text": "Los juntará delante de Sión", "isCorrect": false },
+        { "text": "Les enviará la vara de su fortaleza", "isCorrect": false },
+        { "text": "Los pondrá por estrado de sus pies", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 2, ¿desde dónde enviará Jehová la vara de tu fortaleza?",
+      "explanation": "El versículo 2 dice: La vara de tu fortaleza enviará Jehová desde Sión.",
+      "bibleReference": "Salmos 110:2",
+      "answers": [
+        { "text": "Desde el arroyo", "isCorrect": false },
+        { "text": "Desde Sión", "isCorrect": true },
+        { "text": "Desde la aurora", "isCorrect": false },
+        { "text": "Desde los cielos", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 3, ¿cómo será tu pueblo en el día de tu poder?",
+      "explanation": "El versículo 3 dice: Tu pueblo serálo de buena voluntad en el día de tu poder, en la hermosura de la santidad.",
+      "bibleReference": "Salmos 110:3",
+      "answers": [
+        { "text": "Lleno de temor", "isCorrect": false },
+        { "text": "Rebelde a su palabra", "isCorrect": false },
+        { "text": "De buena voluntad", "isCorrect": true },
+        { "text": "Esparcido entre las gentes", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 3, ¿qué tienes desde el seno de la aurora?",
+      "explanation": "El versículo 3 dice: desde el seno de la aurora, tienes tú el rocío de tu juventud.",
+      "bibleReference": "Salmos 110:3",
+      "answers": [
+        { "text": "La vara de tu fortaleza", "isCorrect": false },
+        { "text": "El estrado de tus pies", "isCorrect": false },
+        { "text": "La hermosura de las gentes", "isCorrect": false },
+        { "text": "El rocío de tu juventud", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 4, ¿según qué orden eres sacerdote para siempre?",
+      "explanation": "El versículo 4 dice: Tú eres sacerdote para siempre según el orden de Melchîsedech.",
+      "bibleReference": "Salmos 110:4",
+      "answers": [
+        { "text": "Según el orden de Melchîsedech", "isCorrect": true },
+        { "text": "Según el orden de los reyes de Sión", "isCorrect": false },
+        { "text": "Según el orden de los jueces de las gentes", "isCorrect": false },
+        { "text": "Según el orden de los príncipes del pueblo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 4, ¿qué dice el salmo que Jehová no hará después de haber jurado?",
+      "explanation": "El versículo 4 dice: Juró Jehová, y no se arrepentirá.",
+      "bibleReference": "Salmos 110:4",
+      "answers": [
+        { "text": "No callará", "isCorrect": false },
+        { "text": "No se arrepentirá", "isCorrect": true },
+        { "text": "No se levantará", "isCorrect": false },
+        { "text": "No descansará", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 6, ¿de qué llenará a las gentes al juzgarlas?",
+      "explanation": "El versículo 6 dice que juzgará en las gentes, las llenará de cadáveres y herirá las cabezas en muchas tierras.",
+      "bibleReference": "Salmos 110:6",
+      "answers": [
+        { "text": "De temor", "isCorrect": false },
+        { "text": "De rocío", "isCorrect": false },
+        { "text": "De santidad", "isCorrect": false },
+        { "text": "De cadáveres", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 7, ¿de dónde beberá en el camino?",
+      "explanation": "El versículo 7 dice: Del arroyo beberá en el camino: por lo cual levantará cabeza.",
+      "bibleReference": "Salmos 110:7",
+      "answers": [
+        { "text": "Del arroyo", "isCorrect": true },
+        { "text": "De la peña", "isCorrect": false },
+        { "text": "Del estanque", "isCorrect": false },
+        { "text": "Del manantial", "isCorrect": false }
+      ]
+    }
+  ]
+}

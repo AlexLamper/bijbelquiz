@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 94",
+  "description": "Diez preguntas sobre Salmos 94: el Dios de las venganzas, los necios que creen que JAH no ve, y Jehová como refugio del justo.",
+  "slug": "psalms-quiz-part-94",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Con qué nombre se dirige el salmista a Jehová en el primer versículo?",
+      "explanation": "Salmos 94:1 llama a Jehová Dios de las venganzas y le pide que se muestre.",
+      "bibleReference": "Salmos 94:1",
+      "answers": [
+        { "text": "Dios de los ejércitos", "isCorrect": false },
+        { "text": "Dios de las venganzas", "isCorrect": true },
+        { "text": "Dios de los cielos", "isCorrect": false },
+        { "text": "Dios de la paz", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué le pide el salmista al Juez de la tierra en el versículo 2?",
+      "explanation": "Salmos 94:2 pide: Ensálzate, oh Juez de la tierra: da el pago a los soberbios.",
+      "bibleReference": "Salmos 94:2",
+      "answers": [
+        { "text": "Que dé el pago a los soberbios", "isCorrect": true },
+        { "text": "Que perdone a los soberbios", "isCorrect": false },
+        { "text": "Que calle ante los soberbios", "isCorrect": false },
+        { "text": "Que reparta la tierra", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 5, ¿qué hacen los impíos al pueblo de Jehová?",
+      "explanation": "Salmos 94:5 dice que quebrantan a su pueblo y afligen a su heredad.",
+      "bibleReference": "Salmos 94:5",
+      "answers": [
+        { "text": "Los compran por plata", "isCorrect": false },
+        { "text": "Los bendicen", "isCorrect": false },
+        { "text": "Los quebrantan", "isCorrect": true },
+        { "text": "Los dejan en paz", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 6, ¿a quiénes quitan la vida los que obran iniquidad?",
+      "explanation": "Salmos 94:6 dice que a los huérfanos quitan la vida.",
+      "bibleReference": "Salmos 94:6",
+      "answers": [
+        { "text": "A los sacerdotes", "isCorrect": false },
+        { "text": "A los reyes", "isCorrect": false },
+        { "text": "A los ancianos", "isCorrect": false },
+        { "text": "A los huérfanos", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué dijeron los impíos en el versículo 7?",
+      "explanation": "Salmos 94:7 dice que afirmaron: No verá JAH, ni entenderá el Dios de Jacob.",
+      "bibleReference": "Salmos 94:7",
+      "answers": [
+        { "text": "Que JAH no verá ni entenderá", "isCorrect": true },
+        { "text": "Que JAH los castigará pronto", "isCorrect": false },
+        { "text": "Que no hay juez en la tierra", "isCorrect": false },
+        { "text": "Que el Dios de Jacob es grande", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué pregunta hace el salmo sobre el que plantó el oído?",
+      "explanation": "Salmos 94:9 pregunta: El que plantó el oído, ¿no oirá? el que formó el ojo, ¿no verá?",
+      "bibleReference": "Salmos 94:9",
+      "answers": [
+        { "text": "Si podrá hablar", "isCorrect": false },
+        { "text": "Si no oirá", "isCorrect": true },
+        { "text": "Si se acordará", "isCorrect": false },
+        { "text": "Si tendrá piedad", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 11, ¿qué conoce Jehová de los hombres?",
+      "explanation": "Salmos 94:11 dice que Jehová conoce los pensamientos de los hombres, que son vanidad.",
+      "bibleReference": "Salmos 94:11",
+      "answers": [
+        { "text": "Sus riquezas", "isCorrect": false },
+        { "text": "El número de sus días", "isCorrect": false },
+        { "text": "Sus caminos ocultos", "isCorrect": false },
+        { "text": "Sus pensamientos", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿A quién llama bienaventurado el versículo 12?",
+      "explanation": "Salmos 94:12 llama bienaventurado al hombre a quien JAH castiga y a quien instruye en su ley.",
+      "bibleReference": "Salmos 94:12",
+      "answers": [
+        { "text": "Al que hace muchos sacrificios", "isCorrect": false },
+        { "text": "Al que juzga a los pueblos", "isCorrect": false },
+        { "text": "Al que JAH castiga e instruye en su ley", "isCorrect": true },
+        { "text": "Al que nunca sufre aflicción", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dice el versículo 14 sobre el pueblo y la heredad de Jehová?",
+      "explanation": "Salmos 94:14 dice que Jehová no dejará su pueblo ni desamparará su heredad.",
+      "bibleReference": "Salmos 94:14",
+      "answers": [
+        { "text": "Que no los dejará ni desamparará", "isCorrect": true },
+        { "text": "Que los entregará a los impíos", "isCorrect": false },
+        { "text": "Que los enviará al desierto", "isCorrect": false },
+        { "text": "Que los olvidará por un tiempo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué ha sido Jehová para el salmista, según el versículo 22?",
+      "explanation": "Salmos 94:22 dice que Jehová le ha sido por refugio, y su Dios por roca de su confianza.",
+      "bibleReference": "Salmos 94:22",
+      "answers": [
+        { "text": "Un juez severo", "isCorrect": false },
+        { "text": "Un camino en el desierto", "isCorrect": false },
+        { "text": "Un hoyo cavado", "isCorrect": false },
+        { "text": "Un refugio", "isCorrect": true }
+      ]
+    }
+  ]
+}

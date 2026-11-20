@@ -68,12 +68,12 @@
           "isCorrect": false
         },
         {
-          "text": "Por su criado, con una carta abierta en su mano",
-          "isCorrect": true
-        },
-        {
           "text": "Por boca de Tobías el Ammonita",
           "isCorrect": false
+        },
+        {
+          "text": "Por su criado, con una carta abierta en su mano",
+          "isCorrect": true
         }
       ]
     },
@@ -87,16 +87,16 @@
           "isCorrect": false
         },
         {
-          "text": "De tomar mujeres extranjeras",
-          "isCorrect": false
+          "text": "De pensar rebelarse y de querer ser rey",
+          "isCorrect": true
         },
         {
           "text": "De haber dejado la obra del muro",
           "isCorrect": false
         },
         {
-          "text": "De pensar rebelarse y de querer ser rey",
-          "isCorrect": true
+          "text": "De tomar mujeres extranjeras",
+          "isCorrect": false
         }
       ]
     },
@@ -133,12 +133,12 @@
           "isCorrect": false
         },
         {
-          "text": "Juntarse en el templo y cerrar sus puertas",
-          "isCorrect": true
-        },
-        {
           "text": "Huir al campo de Ono",
           "isCorrect": false
+        },
+        {
+          "text": "Juntarse en el templo y cerrar sus puertas",
+          "isCorrect": true
         },
         {
           "text": "Pedir tropa al rey Artajerjes",
@@ -156,12 +156,12 @@
           "isCorrect": false
         },
         {
-          "text": "Que llevaría consigo a los sacerdotes",
-          "isCorrect": false
-        },
-        {
           "text": "Que no entraría en el templo",
           "isCorrect": true
+        },
+        {
+          "text": "Que llevaría consigo a los sacerdotes",
+          "isCorrect": false
         },
         {
           "text": "Que cerraría las puertas de la ciudad",
@@ -183,12 +183,12 @@
           "isCorrect": false
         },
         {
-          "text": "Porque era yerno de Sechânías hijo de Ara",
-          "isCorrect": false
-        },
-        {
           "text": "Porque Tobías y Sanballat le habían alquilado por salario",
           "isCorrect": true
+        },
+        {
+          "text": "Porque era yerno de Sechânías hijo de Ara",
+          "isCorrect": false
         }
       ]
     },
@@ -198,8 +198,8 @@
       "bibleReference": "Nehemías 6:15",
       "answers": [
         {
-          "text": "En cincuenta y dos días",
-          "isCorrect": true
+          "text": "En veinticinco días",
+          "isCorrect": false
         },
         {
           "text": "En doce días",
@@ -210,8 +210,8 @@
           "isCorrect": false
         },
         {
-          "text": "En veinticinco días",
-          "isCorrect": false
+          "text": "En cincuenta y dos días",
+          "isCorrect": true
         }
       ]
     },
@@ -221,12 +221,12 @@
       "bibleReference": "Nehemías 6:16",
       "answers": [
         {
-          "text": "Que el rey había enviado soldados",
-          "isCorrect": false
-        },
-        {
           "text": "Que aquella obra había sido hecha por Dios",
           "isCorrect": true
+        },
+        {
+          "text": "Que el rey había enviado soldados",
+          "isCorrect": false
         },
         {
           "text": "Que los Judíos habían pagado tributo",

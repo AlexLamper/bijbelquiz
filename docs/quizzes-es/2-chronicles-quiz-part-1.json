@@ -13,10 +13,22 @@
       "explanation": "El capítulo empieza diciendo que Salomón fue afirmado en su reino, y que Jehová su Dios fue con él y le engrandeció sobremanera.",
       "bibleReference": "2 Crónicas 1:1",
       "answers": [
-        { "text": "Que fue afirmado en su reino", "isCorrect": true },
-        { "text": "Que edificó la casa en Moria", "isCorrect": false },
-        { "text": "Que reinó en Hebrón siete años", "isCorrect": false },
-        { "text": "Que juntó carros en Egipto", "isCorrect": false }
+        {
+          "text": "Que fue afirmado en su reino",
+          "isCorrect": true
+        },
+        {
+          "text": "Que edificó la casa en Moria",
+          "isCorrect": false
+        },
+        {
+          "text": "Que reinó en Hebrón siete años",
+          "isCorrect": false
+        },
+        {
+          "text": "Que juntó carros en Egipto",
+          "isCorrect": false
+        }
       ]
     },
     {
@@ -24,10 +36,22 @@
       "explanation": "Salomón fue, y con él toda la junta, al alto que había en Gabaón, donde estaba el tabernáculo del testimonio de Dios.",
       "bibleReference": "2 Crónicas 1:3",
       "answers": [
-        { "text": "Al monte Moria", "isCorrect": false },
-        { "text": "Al alto que había en Gabaón", "isCorrect": true },
-        { "text": "A la ciudad de David", "isCorrect": false },
-        { "text": "A Chîriath-jearim", "isCorrect": false }
+        {
+          "text": "Al monte Moria",
+          "isCorrect": false
+        },
+        {
+          "text": "A la ciudad de David",
+          "isCorrect": false
+        },
+        {
+          "text": "Al alto que había en Gabaón",
+          "isCorrect": true
+        },
+        {
+          "text": "A Chîriath-jearim",
+          "isCorrect": false
+        }
       ]
     },
     {
@@ -35,10 +59,22 @@
       "explanation": "David había traído el arca de Dios de Chîriath-jearim al lugar que él le había preparado, pues le había tendido una tienda en Jerusalem.",
       "bibleReference": "2 Crónicas 1:4",
       "answers": [
-        { "text": "Del alto que había en Gabaón", "isCorrect": false },
-        { "text": "De la tierra de Egipto", "isCorrect": false },
-        { "text": "De Chîriath-jearim", "isCorrect": true },
-        { "text": "Del tabernáculo del testimonio", "isCorrect": false }
+        {
+          "text": "De Chîriath-jearim",
+          "isCorrect": true
+        },
+        {
+          "text": "De la tierra de Egipto",
+          "isCorrect": false
+        },
+        {
+          "text": "Del alto que había en Gabaón",
+          "isCorrect": false
+        },
+        {
+          "text": "Del tabernáculo del testimonio",
+          "isCorrect": false
+        }
       ]
     },
     {
@@ -46,10 +82,22 @@
       "explanation": "El altar de bronce que estaba allí lo había hecho Bezaleel, hijo de Uri, hijo de Hur.",
       "bibleReference": "2 Crónicas 1:5",
       "answers": [
-        { "text": "Moisés siervo de Jehová", "isCorrect": false },
-        { "text": "David padre de Salomón", "isCorrect": false },
-        { "text": "Hiram rey de Tiro", "isCorrect": false },
-        { "text": "Bezaleel hijo de Uri", "isCorrect": true }
+        {
+          "text": "Moisés siervo de Jehová",
+          "isCorrect": false
+        },
+        {
+          "text": "Bezaleel hijo de Uri",
+          "isCorrect": true
+        },
+        {
+          "text": "Hiram rey de Tiro",
+          "isCorrect": false
+        },
+        {
+          "text": "David padre de Salomón",
+          "isCorrect": false
+        }
       ]
     },
     {
@@ -57,10 +105,22 @@
       "explanation": "Salomón subió allá delante de Jehová, al altar de bronce del tabernáculo del testimonio, y ofreció sobre él mil holocaustos.",
       "bibleReference": "2 Crónicas 1:6",
       "answers": [
-        { "text": "Mil holocaustos", "isCorrect": true },
-        { "text": "Cien holocaustos", "isCorrect": false },
-        { "text": "Doce holocaustos", "isCorrect": false },
-        { "text": "Siete holocaustos", "isCorrect": false }
+        {
+          "text": "Siete holocaustos",
+          "isCorrect": false
+        },
+        {
+          "text": "Cien holocaustos",
+          "isCorrect": false
+        },
+        {
+          "text": "Doce holocaustos",
+          "isCorrect": false
+        },
+        {
+          "text": "Mil holocaustos",
+          "isCorrect": true
+        }
       ]
     },
     {
@@ -68,10 +128,22 @@
       "explanation": "Aquella noche apareció Dios a Salomón y le dijo: Demanda lo que quisieres que yo te dé.",
       "bibleReference": "2 Crónicas 1:7",
       "answers": [
-        { "text": "Edifica una casa a mi nombre", "isCorrect": false },
-        { "text": "Demanda lo que quisieres que yo te dé", "isCorrect": true },
-        { "text": "Vuelve pronto a Jerusalem", "isCorrect": false },
-        { "text": "Cuenta a todo el pueblo de Israel", "isCorrect": false }
+        {
+          "text": "Edifica una casa a mi nombre",
+          "isCorrect": false
+        },
+        {
+          "text": "Demanda lo que quisieres que yo te dé",
+          "isCorrect": true
+        },
+        {
+          "text": "Vuelve pronto a Jerusalem",
+          "isCorrect": false
+        },
+        {
+          "text": "Cuenta a todo el pueblo de Israel",
+          "isCorrect": false
+        }
       ]
     },
     {
@@ -79,10 +151,22 @@
       "explanation": "Salomón pidió sabiduría y ciencia para salir y entrar delante de aquel pueblo tan grande.",
       "bibleReference": "2 Crónicas 1:10",
       "answers": [
-        { "text": "Muchos días de vida", "isCorrect": false },
-        { "text": "Riquezas y hacienda", "isCorrect": false },
-        { "text": "Sabiduría y ciencia", "isCorrect": true },
-        { "text": "El alma de sus enemigos", "isCorrect": false }
+        {
+          "text": "Sabiduría y ciencia",
+          "isCorrect": true
+        },
+        {
+          "text": "Riquezas y hacienda",
+          "isCorrect": false
+        },
+        {
+          "text": "Muchos días de vida",
+          "isCorrect": false
+        },
+        {
+          "text": "El alma de sus enemigos",
+          "isCorrect": false
+        }
       ]
     },
     {
@@ -90,10 +174,22 @@
       "explanation": "Dios le dijo que, además de sabiduría y ciencia, le daría riquezas, hacienda y gloria, cual nunca hubo en los reyes antes de él.",
       "bibleReference": "2 Crónicas 1:12",
       "answers": [
-        { "text": "Muchos hijos e hijas", "isCorrect": false },
-        { "text": "Paz con todos sus vecinos", "isCorrect": false },
-        { "text": "Una casa edificada en Gabaón", "isCorrect": false },
-        { "text": "Riquezas, hacienda y gloria", "isCorrect": true }
+        {
+          "text": "Muchos hijos e hijas",
+          "isCorrect": false
+        },
+        {
+          "text": "Riquezas, hacienda y gloria",
+          "isCorrect": true
+        },
+        {
+          "text": "Una casa edificada en Gabaón",
+          "isCorrect": false
+        },
+        {
+          "text": "Paz con todos sus vecinos",
+          "isCorrect": false
+        }
       ]
     },
     {
@@ -101,10 +197,22 @@
       "explanation": "Salomón juntó carros y gente de a caballo, y tuvo mil y cuatrocientos carros y doce mil jinetes.",
       "bibleReference": "2 Crónicas 1:14",
       "answers": [
-        { "text": "Mil y cuatrocientos carros", "isCorrect": true },
-        { "text": "Doce mil carros", "isCorrect": false },
-        { "text": "Seiscientos carros", "isCorrect": false },
-        { "text": "Ciento cincuenta carros", "isCorrect": false }
+        {
+          "text": "Seiscientos carros",
+          "isCorrect": false
+        },
+        {
+          "text": "Doce mil carros",
+          "isCorrect": false
+        },
+        {
+          "text": "Mil y cuatrocientos carros",
+          "isCorrect": true
+        },
+        {
+          "text": "Ciento cincuenta carros",
+          "isCorrect": false
+        }
       ]
     },
     {
@@ -112,10 +220,22 @@
       "explanation": "Subían y sacaban de Egipto un carro por seiscientas piezas de plata, y un caballo por ciento y cincuenta.",
       "bibleReference": "2 Crónicas 1:17",
       "answers": [
-        { "text": "Por ciento y cincuenta piezas de plata", "isCorrect": false },
-        { "text": "Por seiscientas piezas de plata", "isCorrect": true },
-        { "text": "Por mil y cuatrocientas piezas de plata", "isCorrect": false },
-        { "text": "Por doce mil piezas de plata", "isCorrect": false }
+        {
+          "text": "Por ciento y cincuenta piezas de plata",
+          "isCorrect": false
+        },
+        {
+          "text": "Por doce mil piezas de plata",
+          "isCorrect": false
+        },
+        {
+          "text": "Por mil y cuatrocientas piezas de plata",
+          "isCorrect": false
+        },
+        {
+          "text": "Por seiscientas piezas de plata",
+          "isCorrect": true
+        }
       ]
     }
   ]

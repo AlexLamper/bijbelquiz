@@ -129,12 +129,12 @@
       "bibleReference": "1 Samuel 23:19",
       "answers": [
         {
-          "text": "Que David estaba escondido en el collado de Hachîla",
-          "isCorrect": true
-        },
-        {
           "text": "Que David había salido de la tierra de Judá",
           "isCorrect": false
+        },
+        {
+          "text": "Que David estaba escondido en el collado de Hachîla",
+          "isCorrect": true
         },
         {
           "text": "Que David se había metido en Keila con los suyos",

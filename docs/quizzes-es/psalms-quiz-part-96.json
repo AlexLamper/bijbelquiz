@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 96",
+  "description": "Diez preguntas sobre Salmos 96: la canción nueva, la gloria contada entre las gentes y el juicio con que Jehová viene a la tierra.",
+  "slug": "psalms-quiz-part-96",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué manda cantar a Jehová el primer versículo?",
+      "explanation": "Salmos 96:1 dice: Cantad a Jehová canción nueva; cantad a Jehová, toda la tierra.",
+      "bibleReference": "Salmos 96:1",
+      "answers": [
+        { "text": "Un lamento", "isCorrect": false },
+        { "text": "Una canción nueva", "isCorrect": true },
+        { "text": "El cántico de Moisés", "isCorrect": false },
+        { "text": "Un salmo de David", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 2, ¿qué se debe anunciar de día en día?",
+      "explanation": "Salmos 96:2 manda bendecir su nombre y anunciar de día en día su salud.",
+      "bibleReference": "Salmos 96:2",
+      "answers": [
+        { "text": "Su ley", "isCorrect": false },
+        { "text": "Su ira", "isCorrect": false },
+        { "text": "Su salud", "isCorrect": true },
+        { "text": "Su pacto", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué se debe contar entre las gentes, según el versículo 3?",
+      "explanation": "Salmos 96:3 dice: Contad entre las gentes su gloria, en todos los pueblos sus maravillas.",
+      "bibleReference": "Salmos 96:3",
+      "answers": [
+        { "text": "Su gloria", "isCorrect": true },
+        { "text": "Su silencio", "isCorrect": false },
+        { "text": "Sus mandamientos", "isCorrect": false },
+        { "text": "Sus juicios pasados", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué dice el versículo 5 acerca de todos los dioses de los pueblos?",
+      "explanation": "Salmos 96:5 dice que todos los dioses de los pueblos son ídolos, pero que Jehová hizo los cielos.",
+      "bibleReference": "Salmos 96:5",
+      "answers": [
+        { "text": "Que son fuertes", "isCorrect": false },
+        { "text": "Que hicieron los cielos", "isCorrect": false },
+        { "text": "Que reinan en sus pueblos", "isCorrect": false },
+        { "text": "Que son ídolos", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el versículo 6, ¿qué hay en el santuario de Jehová?",
+      "explanation": "Salmos 96:6 dice que delante de él hay alabanza y magnificencia, y en su santuario fortaleza y gloria.",
+      "bibleReference": "Salmos 96:6",
+      "answers": [
+        { "text": "Plata y oro", "isCorrect": false },
+        { "text": "Fortaleza y gloria", "isCorrect": true },
+        { "text": "Nube y oscuridad", "isCorrect": false },
+        { "text": "Panes y aceite", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 8, ¿qué deben tomar los que vienen a sus atrios?",
+      "explanation": "Salmos 96:8 manda dar a Jehová la honra debida a su nombre, tomar presentes y venir a sus atrios.",
+      "bibleReference": "Salmos 96:8",
+      "answers": [
+        { "text": "Presentes", "isCorrect": true },
+        { "text": "Trompetas", "isCorrect": false },
+        { "text": "Vestiduras nuevas", "isCorrect": false },
+        { "text": "Lámparas", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué manda el versículo 9 a toda la tierra en la hermosura de su santuario?",
+      "explanation": "Salmos 96:9 dice: Encorvaos a Jehová en la hermosura de su santuario: temed delante de él, toda la tierra.",
+      "bibleReference": "Salmos 96:9",
+      "answers": [
+        { "text": "Cantar en voz baja", "isCorrect": false },
+        { "text": "Edificar un altar", "isCorrect": false },
+        { "text": "Callar siete días", "isCorrect": false },
+        { "text": "Encorvarse y temer", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "¿Qué se debe decir en las gentes, según el versículo 10?",
+      "explanation": "Salmos 96:10 dice: Decid en las gentes: Jehová reinó, también afirmó el mundo, no será conmovido.",
+      "bibleReference": "Salmos 96:10",
+      "answers": [
+        { "text": "Que la tierra será destruida", "isCorrect": false },
+        { "text": "Que los ídolos callaron", "isCorrect": false },
+        { "text": "Que Jehová reinó", "isCorrect": true },
+        { "text": "Que el templo fue edificado", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el versículo 12, ¿qué harán todos los árboles del bosque?",
+      "explanation": "Salmos 96:12 dice que se regocije el campo y que entonces todos los árboles del bosque rebosarán de contento.",
+      "bibleReference": "Salmos 96:12",
+      "answers": [
+        { "text": "Rebosarán de contento", "isCorrect": true },
+        { "text": "Se secarán", "isCorrect": false },
+        { "text": "Caerán a tierra", "isCorrect": false },
+        { "text": "Darán su fruto", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Para qué vino Jehová, según el último versículo?",
+      "explanation": "Salmos 96:13 dice que vino a juzgar la tierra, y que juzgará al mundo con justicia y a los pueblos con su verdad.",
+      "bibleReference": "Salmos 96:13",
+      "answers": [
+        { "text": "Para edificar su santuario", "isCorrect": false },
+        { "text": "Para repartir la tierra", "isCorrect": false },
+        { "text": "Para reunir a las islas", "isCorrect": false },
+        { "text": "Para juzgar la tierra", "isCorrect": true }
+      ]
+    }
+  ]
+}

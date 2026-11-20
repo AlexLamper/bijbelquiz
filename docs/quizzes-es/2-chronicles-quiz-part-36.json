@@ -14,16 +14,16 @@
       "bibleReference": "2 Crónicas 36:1-2",
       "answers": [
         {
-          "text": "A Eliacim, y reinó once años",
-          "isCorrect": false
+          "text": "A Joachâz, y reinó tres meses",
+          "isCorrect": true
         },
         {
           "text": "A Joachîn, y reinó tres meses y diez días",
           "isCorrect": false
         },
         {
-          "text": "A Joachâz, y reinó tres meses",
-          "isCorrect": true
+          "text": "A Eliacim, y reinó once años",
+          "isCorrect": false
         },
         {
           "text": "A Sedecías, y reinó once años",
@@ -37,8 +37,8 @@
       "bibleReference": "2 Crónicas 36:3",
       "answers": [
         {
-          "text": "En mil talentos de plata",
-          "isCorrect": false
+          "text": "En cien talentos de plata y uno de oro",
+          "isCorrect": true
         },
         {
           "text": "En cien talentos de oro y uno de plata",
@@ -49,8 +49,8 @@
           "isCorrect": false
         },
         {
-          "text": "En cien talentos de plata y uno de oro",
-          "isCorrect": true
+          "text": "En mil talentos de plata",
+          "isCorrect": false
         }
       ]
     },
@@ -60,12 +60,12 @@
       "bibleReference": "2 Crónicas 36:4",
       "answers": [
         {
-          "text": "Joacim",
-          "isCorrect": true
-        },
-        {
           "text": "Joachîn",
           "isCorrect": false
+        },
+        {
+          "text": "Joacim",
+          "isCorrect": true
         },
         {
           "text": "Sedecías",
@@ -87,12 +87,12 @@
           "isCorrect": false
         },
         {
-          "text": "Lo llevó atado con cadenas á Babilonia y puso los vasos en su templo allí",
-          "isCorrect": true
-        },
-        {
           "text": "Lo dejó reinar en paz y le dio vasos de oro y plata",
           "isCorrect": false
+        },
+        {
+          "text": "Lo llevó atado con cadenas á Babilonia y puso los vasos en su templo allí",
+          "isCorrect": true
         },
         {
           "text": "Lo llevó á Egipto junto con los vasos de la casa",
@@ -106,16 +106,16 @@
       "bibleReference": "2 Crónicas 36:9",
       "answers": [
         {
-          "text": "De veinte y tres años, y reinó tres meses",
-          "isCorrect": false
+          "text": "De ocho años, y reinó tres meses y diez días",
+          "isCorrect": true
         },
         {
           "text": "De veinte y un años, y reinó once años",
           "isCorrect": false
         },
         {
-          "text": "De ocho años, y reinó tres meses y diez días",
-          "isCorrect": true
+          "text": "De veinte y tres años, y reinó tres meses",
+          "isCorrect": false
         },
         {
           "text": "De veinte y cinco años, y reinó once años",
@@ -133,16 +133,16 @@
           "isCorrect": false
         },
         {
-          "text": "A Joachâz, hijo de Josías",
-          "isCorrect": false
+          "text": "A Sedecías, hermano de Joachîn",
+          "isCorrect": true
         },
         {
           "text": "A Jeremías, el profeta",
           "isCorrect": false
         },
         {
-          "text": "A Sedecías, hermano de Joachîn",
-          "isCorrect": true
+          "text": "A Joachâz, hijo de Josías",
+          "isCorrect": false
         }
       ]
     },
@@ -152,8 +152,8 @@
       "bibleReference": "2 Crónicas 36:12",
       "answers": [
         {
-          "text": "Delante de Jeremías profeta",
-          "isCorrect": true
+          "text": "Delante de Hulda profetisa",
+          "isCorrect": false
         },
         {
           "text": "Delante de Nabucodonosor",
@@ -164,8 +164,8 @@
           "isCorrect": false
         },
         {
-          "text": "Delante de Hulda profetisa",
-          "isCorrect": false
+          "text": "Delante de Jeremías profeta",
+          "isCorrect": true
         }
       ]
     },
@@ -179,12 +179,12 @@
           "isCorrect": false
         },
         {
-          "text": "Hacía escarnio de ellos y se burlaba de sus profetas",
-          "isCorrect": true
-        },
-        {
           "text": "Los enviaba á Babilonia con los vasos de la casa",
           "isCorrect": false
+        },
+        {
+          "text": "Hacía escarnio de ellos y se burlaba de sus profetas",
+          "isCorrect": true
         },
         {
           "text": "Los escondía en las cámaras de la casa de Jehová",
@@ -206,12 +206,12 @@
           "isCorrect": false
         },
         {
-          "text": "Quemaron la casa de Dios y rompieron el muro de Jerusalem",
-          "isCorrect": true
-        },
-        {
           "text": "Dejaron la casa y el muro sin daño",
           "isCorrect": false
+        },
+        {
+          "text": "Quemaron la casa de Dios y rompieron el muro de Jerusalem",
+          "isCorrect": true
         }
       ]
     },
@@ -225,16 +225,16 @@
           "isCorrect": false
         },
         {
-          "text": "Prohibió volver á la tierra de Judá",
-          "isCorrect": false
+          "text": "Hizo pasar pregón por todo su reino, y también por escrito",
+          "isCorrect": true
         },
         {
           "text": "Tomó para sí los vasos de la casa de Jehová",
           "isCorrect": false
         },
         {
-          "text": "Hizo pasar pregón por todo su reino, y también por escrito",
-          "isCorrect": true
+          "text": "Prohibió volver á la tierra de Judá",
+          "isCorrect": false
         }
       ]
     }

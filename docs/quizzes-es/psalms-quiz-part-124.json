@@ -1,0 +1,122 @@
+{
+  "title": "Salmos Quiz bíblico - Capítulo 124",
+  "description": "Diez preguntas sobre Salmos 124: lo que habría pasado si Jehová no hubiera estado por nosotros, las aguas soberbias y el lazo quebrado.",
+  "slug": "psalms-quiz-part-124",
+  "categorySlug": "old-testament",
+  "rewardXp": 100,
+  "difficulty": "medium",
+  "isPremium": true,
+  "status": "draft",
+  "questions": [
+    {
+      "text": "¿Qué frase manda el salmo que diga Israel?",
+      "explanation": "El verso 1 dice: A no haber estado Jehová por nosotros, diga ahora Israel.",
+      "bibleReference": "Salmos 124:1",
+      "answers": [
+        { "text": "Bendito sea el nombre de Jehová", "isCorrect": false },
+        { "text": "Jehová reina sobre las naciones", "isCorrect": false },
+        { "text": "A no haber estado Jehová por nosotros", "isCorrect": true },
+        { "text": "Nuestro socorro viene de los montes", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el verso 2, ¿quiénes se levantaron contra nosotros?",
+      "explanation": "El verso dice: cuando se levantaron contra nosotros los hombres.",
+      "bibleReference": "Salmos 124:2",
+      "answers": [
+        { "text": "Los hombres", "isCorrect": true },
+        { "text": "Las naciones", "isCorrect": false },
+        { "text": "Los cazadores", "isCorrect": false },
+        { "text": "Las aguas", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Qué habría pasado cuando se encendió su furor, según el verso 3?",
+      "explanation": "El verso dice: Vivos nos habrían entonces tragado.",
+      "bibleReference": "Salmos 124:3",
+      "answers": [
+        { "text": "Nos habrían llevado cautivos", "isCorrect": false },
+        { "text": "Nos habrían cercado como abejas", "isCorrect": false },
+        { "text": "Nos habrían dejado sin pan", "isCorrect": false },
+        { "text": "Nos habrían tragado vivos", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el verso 4, ¿qué nos habrían hecho las aguas?",
+      "explanation": "El verso dice: Entonces nos habrían inundado las aguas.",
+      "bibleReference": "Salmos 124:4",
+      "answers": [
+        { "text": "Nos habrían escondido", "isCorrect": false },
+        { "text": "Nos habrían inundado", "isCorrect": true },
+        { "text": "Nos habrían levantado", "isCorrect": false },
+        { "text": "Nos habrían refrescado", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el verso 4, ¿qué habría pasado sobre nuestra alma?",
+      "explanation": "El verso dice: sobre nuestra alma hubiera pasado el torrente.",
+      "bibleReference": "Salmos 124:4",
+      "answers": [
+        { "text": "El torrente", "isCorrect": true },
+        { "text": "El furor", "isCorrect": false },
+        { "text": "La red", "isCorrect": false },
+        { "text": "El viento", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Cómo llama el verso 5 a las aguas que hubieran pasado sobre nuestra alma?",
+      "explanation": "El verso dice: Hubieran entonces pasado sobre nuestra alma las aguas soberbias.",
+      "bibleReference": "Salmos 124:5",
+      "answers": [
+        { "text": "Aguas amargas", "isCorrect": false },
+        { "text": "Aguas profundas", "isCorrect": false },
+        { "text": "Aguas soberbias", "isCorrect": true },
+        { "text": "Aguas de reposo", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Por qué se bendice a Jehová en el verso 6?",
+      "explanation": "El verso dice: Bendito Jehová, que no nos dio por presa a sus dientes.",
+      "bibleReference": "Salmos 124:6",
+      "answers": [
+        { "text": "Porque quebró las puertas de la ciudad", "isCorrect": false },
+        { "text": "Porque no nos dio por presa a sus dientes", "isCorrect": true },
+        { "text": "Porque hizo callar a los cazadores", "isCorrect": false },
+        { "text": "Porque secó las aguas del torrente", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "¿Con qué compara el verso 7 la escapada de nuestra alma?",
+      "explanation": "El verso dice: Nuestra alma escapó cual ave del lazo de los cazadores.",
+      "bibleReference": "Salmos 124:7",
+      "answers": [
+        { "text": "Con un siervo librado de su señor", "isCorrect": false },
+        { "text": "Con un pez sacado de las aguas", "isCorrect": false },
+        { "text": "Con una oveja sacada del río", "isCorrect": false },
+        { "text": "Con un ave escapada del lazo", "isCorrect": true }
+      ]
+    },
+    {
+      "text": "Según el verso 7, ¿qué pasó con el lazo?",
+      "explanation": "El verso dice: quebróse el lazo, y escapamos nosotros.",
+      "bibleReference": "Salmos 124:7",
+      "answers": [
+        { "text": "Se endureció", "isCorrect": false },
+        { "text": "Quedó entero", "isCorrect": false },
+        { "text": "Se quebró", "isCorrect": true },
+        { "text": "Se hizo mayor", "isCorrect": false }
+      ]
+    },
+    {
+      "text": "Según el último verso, ¿en qué está nuestro socorro?",
+      "explanation": "El verso 8 dice: Nuestro socorro es en el nombre de Jehová, que hizo el cielo y la tierra.",
+      "bibleReference": "Salmos 124:8",
+      "answers": [
+        { "text": "En el nombre de Jehová", "isCorrect": true },
+        { "text": "En la fuerza del arco", "isCorrect": false },
+        { "text": "En los muros de la ciudad", "isCorrect": false },
+        { "text": "En los príncipes de Israel", "isCorrect": false }
+      ]
+    }
+  ]
+}
